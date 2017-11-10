@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+	<parameter name="cc" type="string"></parameter>
+	<parameter name="bcc" type="string"></parameter>
+	<parameter name="from" type="string"></parameter>
+	<parameter name="to" type="string"></parameter>
+	<parameter name="author_email" type="string">0</parameter>
+</document>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+	<plugin name="plxMyMultiLingue"></plugin>
+	<plugin name="vignette"></plugin>
+	<plugin name="plxEditor"></plugin>
+	<plugin name="html5uploader"></plugin>
+	<plugin name="plxMyAkismet"></plugin>
+	<plugin name="plxMyCapchaImage"></plugin>
+	<plugin name="plxMySearch"></plugin>
+	<plugin name="plxMyMailComment"></plugin>
+	<plugin name="linkMyComments"></plugin>
+</document>

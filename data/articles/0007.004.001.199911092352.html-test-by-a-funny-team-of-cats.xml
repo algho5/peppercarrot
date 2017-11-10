@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+	<title><![CDATA[Html test by a funny team of cats]]></title>
+	<allow_com>1</allow_com>
+	<template><![CDATA[article.php]]></template>
+	<chapo><![CDATA[]]></chapo>
+	<content><![CDATA[<h1>Header style 1</h1><h2 style="color: #111111;">Header style 2</h2><div style="color: #111111;"><br /><h3>Header style 3</h3></div><br /><div style="color: #111111;">This sentence is normal.</div><br /><div style="color: #111111;"><strong>This word is bold.</strong></div><br /><div style="color: #111111;"><em>This one is italic.</em></div><br /><div style="color: #111111;">This one is underlined.</div><br /><div style="color: #111111;">This one was removed.</div><br /><div style="color: #111111;"><a href="https://www.davidrevoy.com" title="This is a link.">This is a link.</a>&nbsp;<br /></div><div style=""><ul style=""><li style="">This</li><li style="">is&nbsp;</li><li style="">a</li><li style="">list</li></ul><div style="text-align: right;">Signed : <font color="#009900">The green cat</font></div></div>]]></content>
+	<tags><![CDATA[Gmic, greetings, krita]]></tags>
+	<meta_description><![CDATA[]]></meta_description>
+	<meta_keywords><![CDATA[]]></meta_keywords>
+	<title_htmltag><![CDATA[]]></title_htmltag>
+	<thumbnail><![CDATA[data/images/derivations/derivation-cover-B-with-c0mple%E2%93%8D%20title%20%C3%A9%C3%A8%C3%A0.jpg]]></thumbnail>
+	<thumbnail_alt><![CDATA[]]></thumbnail_alt>
+	<thumbnail_title><![CDATA[]]></thumbnail_title>
+	<date_creation><![CDATA[199911092352]]></date_creation>
+	<date_update><![CDATA[199911092352]]></date_update>
+</document>

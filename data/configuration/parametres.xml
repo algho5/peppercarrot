@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+	<parametre name="title"><![CDATA[Pepper&Carrot]]></parametre>
+	<parametre name="description"><![CDATA[the Open Webcomic by David Revoy]]></parametre>
+	<parametre name="meta_description"><![CDATA[Official homepage of Pepper&Carrot, a free/libre and open-source webcomic about "Pepper", a young witch and her cat, "Carrot". They live in a fantasy universe of potions, magics, and creatures.]]></parametre>
+	<parametre name="meta_keywords"><![CDATA[david, revoy, deevad, open-source, comic, webcomic, creative commons, patreon, pepper, carrot, pepper&carrot, libre, artist]]></parametre>
+	<parametre name="allow_com">1</parametre>
+	<parametre name="mod_com">0</parametre>
+	<parametre name="capcha">1</parametre>
+	<parametre name="style"><![CDATA[peppercarrot-theme_v2]]></parametre>
+	<parametre name="bypage">36</parametre>
+	<parametre name="bypage_admin">99</parametre>
+	<parametre name="bypage_admin_coms">50</parametre>
+	<parametre name="bypage_feed">10</parametre>
+	<parametre name="tri"><![CDATA[desc]]></parametre>
+	<parametre name="racine_articles"><![CDATA[data/articles/]]></parametre>
+	<parametre name="racine_commentaires"><![CDATA[data/commentaires/]]></parametre>
+	<parametre name="racine_statiques"><![CDATA[data/statiques/]]></parametre>
+	<parametre name="passwords"><![CDATA[data/configuration/passwords.xml]]></parametre>
+	<parametre name="tri_coms"><![CDATA[asc]]></parametre>
+	<parametre name="urlrewriting">0</parametre>
+	<parametre name="gzip">0</parametre>
+	<parametre name="feed_chapo">0</parametre>
+	<parametre name="feed_footer"><![CDATA[]]></parametre>
+	<parametre name="homestatic">001</parametre>
+	<parametre name="clef"><![CDATA[yVIEzMNtfveW5ta]]></parametre>
+	<parametre name="miniatures_l">800</parametre>
+	<parametre name="miniatures_h">500</parametre>
+	<parametre name="version">5.5</parametre>
+	<parametre name="bypage_archives">45</parametre>
+	<parametre name="userfolders">0</parametre>
+	<parametre name="default_lang"><![CDATA[en]]></parametre>
+	<parametre name="images_l">1920</parametre>
+	<parametre name="images_h">1920</parametre>
+	<parametre name="racine_plugins"><![CDATA[plugins/]]></parametre>
+	<parametre name="racine_themes"><![CDATA[themes/]]></parametre>
+	<parametre name="mod_art">0</parametre>
+	<parametre name="display_empty_cat">0</parametre>
+	<parametre name="timezone"><![CDATA[Europe/Berlin]]></parametre>
+	<parametre name="thumbs">0</parametre>
+	<parametre name="hometemplate"><![CDATA[home.php]]></parametre>
+	<parametre name="plugins"><![CDATA[data/configuration/plugins.xml]]></parametre>
+	<parametre name="custom_admincss_file"><![CDATA[]]></parametre>
+	<parametre name="medias"><![CDATA[data/images/]]></parametre>
+</document>

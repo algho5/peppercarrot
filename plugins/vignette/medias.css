@@ -1,0 +1,295 @@
+html, body{
+     position: absolute;
+     height: 100%;
+     max-height: 100%;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+}
+
+body {
+	color: #444;
+	font-family: arial, helvetica, sans-serif;
+	font-size:0.72em;
+}
+
+#content {
+	margin: 10px 10px 30px 10px;
+}
+
+a {
+	color:#2175bd;
+	text-decoration:none;
+	font-weight:bold;
+	outline:none;
+}
+a:link, a:visited {color:#2175bd;}
+a:hover { text-decoration:none; color:#db2020; }
+p#medias_back a:before  {content:"\00AB\00A0"; }
+img {border: 0 }
+
+a.hcolumn {
+	color:#000;
+	text-decoration:underline;
+}
+a.hcolumn:hover {
+	color:#000;
+	text-decoration:none;
+}
+
+/* -------------
+   Medias
+------------- */
+
+#files_manager{
+	margin-top: 15px;
+	min-width:700px;
+}
+#files_manager ul {
+	list-style: none;
+}
+#files_manager .manager {
+	margin-bottom: 10px;
+	float:left;
+	width:100%;
+}
+#files_manager .uploader {
+	margin-bottom: 10px;
+	float:right;
+}
+#files_manager .browser {
+	float:left;
+	margin:10px 0 20px 0;
+}
+#files_manager .browser  .folder {
+	width: 300px;
+}
+#files_manager .create {
+	float:right;
+}
+#files_manager .files {
+	float:left;
+	width:100%;
+}
+#files_manager .files table {
+	margin:0 0 15px 0;
+}
+/*---*/
+#files_uploader {
+	margin-top: 15px;
+	display:none;
+}
+#files_uploader .manager {
+	float:left;
+}
+#files_uploader .uploader {
+	float:right;
+}
+#files_uploader .files_list{
+	margin: 15px 0 15px 0;
+}
+#files_uploader .options1{
+	clear:both;
+	float:left;
+	width: 300px;
+}
+#files_uploader .options2{
+	float:left;
+	width: 300px;
+}
+#files_uploader ul {
+	list-style:none;
+}
+#files_uploader ul li {
+	margin: 3px 0 0 3px !important;
+}
+.rowfile {
+	clear:both;
+	float:left;
+	margin:0;
+	padding:0 0 5px;
+}
+a.btnDelete{
+	margin:0;
+	padding:0;
+	outline: none;
+	float:left;
+	display:inline;
+}
+.divtitle {
+	margin: 2px 0 0 5px;
+	padding:0;
+	float:left;
+}
+#btn_upload {
+	clear:both;
+	float:left;
+}
+
+/* -----------------------------
+   Dropdown list File Browser
+----------------------------- */
+
+.folder  {
+	background-color: #FFF;
+}
+
+.level_0 {
+	text-decoration:none;
+	font-weight:bold;
+	background-color: #AED0F8;
+	color: black;
+}
+
+.level_1 {
+	text-decoration:none;
+	font-weight:bold;
+	background-color: #E8F3FF;
+	color: black;
+}
+
+.level_2 {
+	text-decoration:none;
+	color: black;
+}
+
+.level_3, .level_4 , .level_5 {
+	color: #666;
+	font-style:italic
+}
+
+
+/* -------------------
+   Form et fieldset
+------------------- */
+
+fieldset {
+	border:0;
+	margin:0 0 10px;
+	padding:0 0 14px 0;
+	width:100%;
+}
+fieldset p {
+	padding:20px 0 2px 0;
+}
+fieldset p.field {
+	clear:both;
+	margin:0;
+	padding:20px 0 2px 0;
+}
+fieldset p.field label {
+	float:left;
+	width:250px;
+	padding-right: 5px;
+}
+fieldset.config  input[type=text] {
+	width: 300px;
+}
+textarea {
+	width:98%;
+	border:1px solid #bbb;
+}
+input {
+	border:1px solid #bbb;
+	cursor:pointer;
+
+}
+input:hover {
+    background:#DDF0F8;
+}
+input[type=checkbox], input[type=radio] {
+	border:0;
+}
+input[type=text] {
+	padding:3px 5px 3px 5px !important;
+}
+input[type=text]:focus, textarea:focus, select:focus {
+	outline:none;
+	color:#222;
+	border:1px solid #77BACE;
+}
+input[type=submit] {
+	margin: 0 2px 0 2px;
+	background-color:#dedede;
+	border:1px solid #A8A9A8;
+	color:#555;
+}
+input[type=submit]:hover {
+	color:#000;
+	background-color: #bbb ;
+}
+.select {
+	background-color:#333 !important;
+	color:#fff !important;
+}
+.readonly, .readonly:hover {
+	background-color:#dedede;
+}
+
+/* -------------
+   Table
+------------- */
+
+.table {
+	width:100%;
+	border: 1px #dedede solid;
+	margin:15px 0 10px 0;
+	border-collapse:collapse;
+}
+
+thead {
+	background-color:#ddd;
+	color:#000;
+	text-align:left;
+}
+th {
+	text-align:left; /* IE */
+}
+th, tr, td {
+	padding: 8px 4px 8px 4px;
+}
+
+tr.line-0 {
+	background-color:#ffffff;
+}
+tr.line-1 {
+	background-color:#f5f5f5;
+}
+
+th.checkbox { width: 5px; }
+th.date { width:65px; }
+th.action { width: 150px; }
+th.image { width: 60px; }
+th.infos {width:90px;}
+th.description { width: 100% }
+th.icon { width: 50px; }
+
+/* -------------
+   Messages
+------------- */
+.warning {
+	margin: 10px 320px 10px 0;
+	padding: 10px 5px 10px 20px;
+	border: 1px solid #df8f8f;
+	font-size: 13px;
+	width:96%;
+	background-color: #ffcece;
+}
+.notification {
+	position:absolute;
+	top:-5px;
+	z-index:9999;
+	padding: 2px 15px 2px 15px;
+	border: 1px solid;
+	font-size: 13px;
+	font-weight:bold;
+	color:#000 !important;
+}
+.error {
+	background-color: #ffcfcf;
+	border-color: #df8f8f;
+}
+.success {
+	background-color: #fff1a8;
+	border-color: #e6db55;
+}

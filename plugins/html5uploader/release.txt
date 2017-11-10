@@ -1,0 +1,23 @@
+#19/11/15 - version 1.21
+fixe dans this.uploadPlace.addEventListener('dragover',..
+suppression de this.uploadPlace.addEventListener('dragenter'...
+
+#18/11/15 -  version 1.2
+Mise à jour pour Pluxml 5.4
+Divers fixes.
+
+26/03/14 - Version 1.1
+- Abandon de FileReader, sa fonction readAsBinaryString classé déprécated
+- Emploi de FormData: compatible Firefox, Chrome, Internet Explorer,  plus simple à utiliser (pas de file de fichiers à gérer)
+Affiche un panneau pour préciser les restrictions du serveur (nombre de fichiers, taille indivduelle des fichiers, taille de l'upload)
+- Affiche un message en fin de transfert
+- A voir: afficher périodiquement l'état d'avancement du traitement des fichiers
+
+#25/03/2014
+Correction Bug: les rédacteurs peuvent sauver les médias dans leurs dossiers perso. + qq modifs CSS + traduction supp.
+
+#25/03/2014 bis
+Correction Bug mineur : Fonctionne avec Chrome. Ne marche pas avec IE. Utiliser un navigateur respectueux des standarts du W3C.
+
+#15/03/14
+version initiale

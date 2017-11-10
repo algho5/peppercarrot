@@ -1,0 +1,23 @@
+.searchform {
+	margin: 10px 0 0 10px;
+}
+.searchtitle {
+}
+input.searchfield[type=text] {
+	padding:1px;
+	width: 200px;
+}
+input.searchbutton[type=submit] {
+	padding:2px;
+	margin:0;
+}
+.searchform ul {
+	margin: 0;
+}
+
+.searchform ul li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+

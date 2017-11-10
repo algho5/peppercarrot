@@ -1,0 +1,13 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="32" width="32" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 100 100">
+ <defs>
+  <linearGradient id="linearGradient4198" y2="9.32" gradientUnits="userSpaceOnUse" y1="93.3" x2="53.2" x1="52.1">
+   <stop stop-color="#f1f1f1" offset="0"/>
+   <stop stop-color="#c3c3c3" offset=".5"/>
+   <stop stop-color="#e5e5e5" offset="1"/>
+  </linearGradient>
+ </defs>
+ <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" d="m94 52.1a42.1 41.5 0 0 1 -42.1 41.5 42.1 41.5 0 0 1 -42.1 -41.5 42.1 41.5 0 0 1 42.1 -41.5 42.1 41.5 0 0 1 42.1 41.5z" stroke="#4d4d4d" stroke-width="4.18" fill="url(#linearGradient4198)"/>
+ <g stroke="#fff" stroke-width="111" transform="matrix(-.0270 -.00184 .002 -.0258 78.4 71)" fill="#4d4d4d">
+  <path stroke="#fff" stroke-width="111" d="m2.59e3 2.4e3c46.7 0 87.5-15.5 122-46.5 35-31 52.5-69.8 52.5-116 0-42-15-92.3-45-151-220-420-1.35e3 -1.54e3 -1.44e3 -1.62e3 -60-61-140-91-220-91-82 0-154 31-214 93-61 61-91 134-91 219 0 85.3 30.7 156 92 212l1.62e3 1.44e3c39.3 36 82.7 54 130 54zm-1.94e3 -1.91e3c21.1-53.1 52.4-99.9 93.8-140 41.4-40.4 88.9-70.8 143-91.1l-5.63-70.8c-11-142-65-253-162-333s-216-113-359-98c-81 8-152 31-212 69-60.2 37-107 84.4-140 142-32.9 57.8-55.9 122-68.8 191-12.9 69.7-15.6 144-8.3 222 4.33-3.8 17-15.2 38-34.1s40.1-35.8 57.5-50.6c17.3-14.9 35.8-29 55.3-42.4s34.2-20.6 44.2-21.6c27.2-2.79 46.6 7.63 58.1 31.2 20.7 42.1 43.2 77.5 67.7 106 24.4 28.7 49.8 51.5 76.2 68.6s57 29.9 91.9 38.3c34.9 8.49 69.9 13.5 105 14.9 34.9 1.45 76.7 0.684 125-2.29z" fill="#4d4d4d"/>
+ </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+	<parameter name="frmDisplay" type="numeric">0</parameter>
+	<parameter name="frmLibButton" type="string">Go</parameter>
+	<parameter name="mnuDisplay" type="numeric">0</parameter>
+	<parameter name="mnuName" type="string">Search</parameter>
+	<parameter name="mnuPos" type="numeric">2</parameter>
+	<parameter name="template" type="string">static.php</parameter>
+	<parameter name="url" type="string">search</parameter>
+	<parameter name="savesearch" type="numeric">0</parameter>
+	<parameter name="sTitle" type="numeric">1</parameter>
+	<parameter name="sChapo" type="numeric">1</parameter>
+	<parameter name="sContent" type="numeric">1</parameter>
+	<parameter name="sTags" type="numeric">1</parameter>
+	<parameter name="mnuName_en" type="string">Search</parameter>
+	<parameter name="placeholder_en" type="string"></parameter>
+	<parameter name="frmLibButton_en" type="string">Ok</parameter>
+	<parameter name="checkboxes_en" type="string"></parameter>
+	<parameter name="mnuName_fr" type="string">Search</parameter>
+	<parameter name="placeholder_fr" type="string"></parameter>
+	<parameter name="frmLibButton_fr" type="string">Ok</parameter>
+	<parameter name="checkboxes_fr" type="string"></parameter>
+</document>

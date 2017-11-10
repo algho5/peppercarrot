@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+	<title><![CDATA[Comment test by Diana Lee]]></title>
+	<allow_com>1</allow_com>
+	<template><![CDATA[article-novignette.php]]></template>
+	<chapo><![CDATA[]]></chapo>
+	<content><![CDATA[<div align="center"><a href="0_sources/0ther/artworks/hi-res/1998-06-18_red-abstract-koala_by-Diana-Lee.jpg" title=""><img src="0_sources/0ther/artworks/low-res/1998-06-18_red-abstract-koala_by-Diana-Lee.jpg" alt="" /></a><br /><font color="#999999"><em>click to enlarge</em></font></div><br /><div>This is an artwork visible on the public part, but not visible in the WYSWYG editor in admin...</div>]]></content>
+	<tags><![CDATA[krita, inkscape]]></tags>
+	<meta_description><![CDATA[]]></meta_description>
+	<meta_keywords><![CDATA[]]></meta_keywords>
+	<title_htmltag><![CDATA[]]></title_htmltag>
+	<thumbnail><![CDATA[0_sources/0ther/artworks/low-res/1998-06-18_red-abstract-koala_by-Diana-Lee.jpg]]></thumbnail>
+	<thumbnail_alt><![CDATA[]]></thumbnail_alt>
+	<thumbnail_title><![CDATA[]]></thumbnail_title>
+	<date_creation><![CDATA[201711092306]]></date_creation>
+	<date_update><![CDATA[201711100020]]></date_update>
+</document>

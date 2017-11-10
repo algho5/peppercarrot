@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<comment>
+	<author><![CDATA[admin]]></author>
+	<type>admin</type>
+	<ip>::1</ip>
+	<mail><![CDATA[]]></mail>
+	<site><![CDATA[http://localhost/website/]]></site>
+	<content><![CDATA[Hehe.
+The date is written on the article.]]></content>
+	<parent><![CDATA[1]]></parent>
+</comment>

@@ -1,0 +1,10 @@
+* [Home](https://github.com/Deevad/peppercarrot/wiki)
+* [Characters](https://github.com/Deevad/peppercarrot/wiki/Characters)
+* [Creatures](https://github.com/Deevad/peppercarrot/wiki/Creatures)
+* [Places](https://github.com/Deevad/peppercarrot/wiki/Places)
+* [Magic system](https://github.com/Deevad/peppercarrot/wiki/Magic-System)
+* [History](https://github.com/Deevad/peppercarrot/wiki/History)
+* [Time System](https://github.com/Deevad/peppercarrot/wiki/Time-system)
+* [Translation Dictionary](https://docs.google.com/spreadsheets/d/1zRqVAj8q1iHwOXQBplXp_DaoZyDgJ3uA0_st_iZEDGg/edit#gid=0)
+
+[Official Website](https://www.peppercarrot.com)

@@ -1,0 +1,6 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="28" width="28" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 100 100">
+ <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" d="m12.2-0.05h75.5c6.68 0 12.1 5.38 12.1 12.1v75.9c0 6.68-5.38 12.1-12.1 12.1h-75.5c-6.67 0-12-5-12-11.6v-75.9c-0.05-6.65 5.33-12 12-12z" fill="#314358"/>
+ <g fill="#fff" transform="matrix(.0429 0 0 -.0429 25.3 78.8)">
+  <path fill="#fff" d="m944 207 80-237q-23-35-111-66t-177-32q-104-2-190 26-83 28-139 74t-95 106-56 120q-16 60-16 118v544h-168v215q72 26 129 69.5t91 90 58 102 34 99 15 88.5q1 5 4.5 8.5t7.5 3.5h244v-424h333v-252h-334v-518q0-30 6.5-56 5-34 21-60 16-27 49-42 34-15 82-14 78 2 134 29z"/>
+ </g>
+</svg>

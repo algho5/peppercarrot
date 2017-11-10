@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+	<parameter name="disable_auto" type="numeric">1</parameter>
+</document>
