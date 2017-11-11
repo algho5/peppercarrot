@@ -454,7 +454,7 @@ if(isset($_GET['page'])) {
     echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
 
     $path = '0_sources/';
-    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New');
+    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git');
     $mainfolders = array_diff(scandir($path), $hide);
     sort($mainfolders);
     # Loop on the folders
