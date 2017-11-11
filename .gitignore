@@ -1,19 +1,9 @@
 # Pepper&Carrot website specific
 # ==============================
-# Don't commit new generated cat avatar
-/tmp/cache/*.jpg
-
-# Don't commit anything in cache
-/tmp/cache/*
-
-# Don't commit anything in tmp
-/tmp/*
-
-# Don't commit comment test
-/data/commentaires/*.xml
-
-# Don't commit article test
-/data/articles/*.xml
+# Don't track my local database
+tmp/
+data/
+0_sources/
 
 # OS generated
 # ============
