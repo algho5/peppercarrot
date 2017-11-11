@@ -22,7 +22,7 @@ $statushome="";
     $statushome="active";
   }
 
-// add library to parse markdown Github files
+// add library to parse markdown files
 include(dirname(__FILE__).'/lib-parsedown.php');
 
 // add header
@@ -120,14 +120,14 @@ include(dirname(__FILE__).'/header.php');
       <div style="clear:both"></div>
     <br/>
       <div class="edit" >
-          <a href="https://github.com/Deevad/peppercarrot/wiki/<?php echo $wikipage; ?>/_edit" target="_blank" title="Edit this page with an external editor" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/edit.svg" alt=""/>&nbsp;&nbsp; Edit this page</a>
+          <a href="https://framagit.org/peppercarrot/wiki/edit/master/<?php echo $wikipage; ?>.md" target="_blank" title="Edit this page with an external editor" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/edit.svg" alt=""/>&nbsp;&nbsp; Edit this page</a>
           <br/><br/>
           <?php
-          echo '<a href="https://github.com/Deevad/peppercarrot/wiki/'.$wikipage.'/_history" target="_blank" title="External history link to see all changes made to this page" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history.svg" alt=""/>&nbsp;&nbsp;Page history</a>';
+          echo '<a href="https://framagit.org/peppercarrot/wiki/commits/master/'.$wikipage.'.md" target="_blank" title="External history link to see all changes made to this page" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history.svg" alt=""/>&nbsp;&nbsp;Page history</a>';
           echo '<br/>';
-          echo '<a href="https://github.com/Deevad/peppercarrot/wiki/'.$wikipage.'" target="_blank" title="External repository link" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/>&nbsp;&nbsp;Repository</a>';
+          echo '<a href="https://framagit.org/peppercarrot/wiki" target="_blank" title="External repository link" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/>&nbsp;&nbsp;Repository</a>';
           echo '<br/>';
-          echo '<a href="https://github.com/Deevad/peppercarrot/wiki/_history" target="_blank" title="External history link to see all changes made to the Wiki" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/log.svg" alt=""/>&nbsp;&nbsp;full log</a>';
+          echo '<a href="https://framagit.org/peppercarrot/wiki/commits/master" target="_blank" title="External history link to see all changes made to the Wiki" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/log.svg" alt=""/>&nbsp;&nbsp;full log</a>';
           ?>      
       </div>
       
