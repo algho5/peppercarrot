@@ -91,7 +91,7 @@ include(dirname(__FILE__).'/header.php');
                     // page starting with '_' found, do nothing.
                   } else {
                     // Check if the page is Home, we don't display it here to keep it hardcoded on the top
-                    if ($wikifile === 'Home.md') {
+                    if ($wikifile === 'Home.md' OR $wikifile === 'README.md') {
                     // Home.md found, do nothing
                     } else {
                       // We have a valid markdown page
