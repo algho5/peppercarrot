@@ -265,9 +265,9 @@ if(isset($_GET['page'])) {
 
     echo '<div class="col sml-12 med-8 lrg-8">';
     
-    # KRITA SOURCE ZIP
+    # KRITA SOURCE PACK (Self hosted)
     #
-    $search = glob($projectpath."/zip/ep*.zip");
+    $search = glob($projectpath."/zip/*_art-pack.zip");
     if (!empty($search)){ 
       echo '<div class="buttonkrazip">'; 
       echo '<img style="float:left; margin-right:10px;" src="themes/peppercarrot-theme_v2/ico/paint.svg" alt=""/> ';
@@ -282,9 +282,9 @@ if(isset($_GET['page'])) {
       echo '</div>';
     } 
     
-    # GITHUB LANGPACK
+    # LANG PACK (Self hosted)
     #
-    $search = glob($projectpath."/low-res/gfx-only/gfx_*E??.jpg");
+    $search = glob($projectpath."/zip/*_lang-pack.zip");
     if (!empty($search)){ 
       echo '<div class="buttonlangzip">';  
       echo '<img style="float:left; margin-right:10px;" src="themes/peppercarrot-theme_v2/ico/lang.svg" alt=""/>  ';
@@ -292,13 +292,9 @@ if(isset($_GET['page'])) {
       echo ' <span style="font-size:0.8em">(<a href="index.php?fr/article267/translation-tutorial">?</a>)</span><br/>';
       foreach ($search as $filepath) {
         $filename = basename($filepath);
-        $filename = str_replace('_by-David-Revoy', '', $filename);
-        # regex to extract $matches[1] the number 01, 02, 03 :)
-        if(preg_match('#(\d+)#',$filename,$matches))
-        # link pattern https://github.com/Deevad/peppercarrot_ep##_translation/archive/master.zip
         $fileweight = (filesize($filepath) / 1024) / 1024;
-        echo '<a href="https://github.com/Deevad/peppercarrot_ep'.$matches[1].'_translation/archive/master.zip">
-        peppercarrot_ep'.$matches[1].'_translation-master.zip</a><br />';
+        echo '<a href="'.$filepath.'" target="_blank" >
+        '.$filename.' <em class="filesize">'.round($fileweight, 2).'MB </em></a><br />';
       }
       echo '</div>';
     } 
