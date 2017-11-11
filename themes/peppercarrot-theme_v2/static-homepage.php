@@ -36,15 +36,7 @@ $lang = $plxShow->defaultLang($echo);
           </div>
         </div>
       </section>  
-      <!--
-      <a href="http://www.peppercarrot.com/article380/motion-comic-project-by-nikolai-mamashev">
-      <figure class="banner col sml-12 med-12 lrg-12 sml-centered" >
-        featured blog post: <span class="bannertext">
-        Episode 6 goes <br/>ANIMATED!
-        </span>
-      </figure>
-      </a> -->
-      
+
       <section class="col sml-12 med-4 lrg-4">
         <div class="homebox">
           <h2><?php $plxShow->lang('HOMEPAGE_LAST_EPISODE') ?></h2>
