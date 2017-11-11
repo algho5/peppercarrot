@@ -4,6 +4,8 @@
 tmp/
 data/
 0_sources/
+# itself
+.gitignore
 
 # OS generated
 # ============

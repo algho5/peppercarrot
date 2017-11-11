@@ -43,6 +43,19 @@ To translate just duplicate the en.php file and rename it to your country code (
 
 ## Install
 
+### Preparing repo
+
+The website will not run as it is after a fresh clone. You'll need a database of blog post, comments, artworks, comics, etc... This repository comes with it, but you need to copy the folders manually. In the git repository, do:
+```
+cp .0_sources 0_sources
+cp .data data
+cp .tmp tmp
+cp .gitignore-sample .gitignore
+```
+This will allow you to create your own datas and password without the file in this folders being tracked by git and pushed to the repository ( **0_sources**, **data** and **tmp** are all ".gitignored" ). You can also host other folders in this directory and customize **.gitignore** to not push them.
+
+### Hosting
+
 Hosting this website needs PHP, GD image library, XML support for PHP, URL rewrite, ZIP. The database is made of flat-file, no MySQL. For a local install on a Ubuntu machine, I usually do it this way:
 
 ```
@@ -77,10 +90,6 @@ Enjoy!
 ## Contribution
 
 I'm open to any type of enhancement! Better code, cleaner code identation, code comment, new features, bug fixes, update to newer version, security test, etc... You can also find a TODO.md text at the root with my various idea. Do not hesitate to open a bug report ticket to just talk about something if you are not sure. The credit for the contributors of the website will be written on the [Author](https://www.peppercarrot.com/en/static7/author) page. (edited via **CONTRIBUTOR.md** in the peppercarrot/webcomics repository).
-
-## Reusing this repo for your own webcomic
-
-Sure! I advice to add a custom gitignore and filter the content of **data/**, **0_sources/** and the **themes/** ( to add/tweak your own theme ). This way, in theory, you can update your git repository and get only the enhancement. That's how I'll run this repo on my disk ( I'm mirroring it with via FTP ).
 
 ## License
 
