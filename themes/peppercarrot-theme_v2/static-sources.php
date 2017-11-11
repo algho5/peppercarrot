@@ -215,56 +215,12 @@ if(isset($_GET['page'])) {
     }
     }
     }
-    
-    # GITHUB REPO LINK
-    #
-    $search = glob($projectpath."/low-res/gfx-only/gfx_*E??.jpg");
-    if (!empty($search)){ 
-      foreach ($search as $filepath) {
-        $filename = basename($filepath);
-        $filename = str_replace('_by-David-Revoy', '', $filename);
-        # regex to extract $matches[1] the number 01, 02, 03 :)
-        if(preg_match('#(\d+)#',$filename,$matches))
-        # link pattern https://github.com/Deevad/peppercarrot_ep##_translation/archive/master.zip
-        echo '<br/><img src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/><a href="https://github.com/Deevad/peppercarrot_ep'.$matches[1].'_translation"> Git Repository</a><br />';
-      }
-    }
-    
-    # PARSE README.MD FROM GITHUB AND DISPLAY BEST-OF OF IT
-    #
-    # pattern: https://raw.githubusercontent.com/Deevad/peppercarrot_ep04_translation/master/README.md
-    $filepath = 'https://raw.githubusercontent.com/Deevad/peppercarrot_ep'.$matches[1].'_translation/master/README.md';
-    $contents = file_get_contents($filepath);
-    $contents = strstr($contents, 'License');
-    $contents = strstr($contents, '## Downloads', true);
-    $Parsedown = new Parsedown();
-    echo '<div class="readme">';
-    
-    echo $Parsedown->text($contents);
-    echo '<h1>Fonts</h1>';
-    echo '<ul>';
-    echo '<li><a href="https://github.com/Deevad/peppercarrot_fonts/blob/master/README.md">Licenses</a></li>';
-    echo '<li><a href="https://github.com/Deevad/peppercarrot_fonts">Repository</a></li>';
-    echo '</ul>';
-    echo '</div><br/>';
-    
-    # GITHUB README LINK
-    #
-    $search = glob($projectpath."/low-res/gfx-only/gfx_*E??.jpg");
-    if (!empty($search)){ 
-      foreach ($search as $filepath) {
-        $filename = basename($filepath);
-        $filename = str_replace('_by-David-Revoy', '', $filename);
-        # regex to extract $matches[1] the number 01, 02, 03 :)
-        if(preg_match('#(\d+)#',$filename,$matches))
-        # link pattern https://github.com/Deevad/peppercarrot_ep##_translation/archive/master.zip
-        echo '<img src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/><a href="https://github.com/Deevad/peppercarrot_ep'.$matches[1].'_translation/blob/master/README.md"> Full Credits for this episode</a><br /><br/>';
-      }
-    } 
+
         
     # === COVER ===
     $search = glob($projectpath."/low-res/*E??.jpg");
     if (!empty($search)){ 
+      echo '<br/>';
       echo ''.$plxShow->Getlang('SOURCE_COVER').'<br/>';
       foreach ($search as $filepath) {
         $filename = basename($filepath);
