@@ -1119,7 +1119,7 @@ if(isset($_GET['page'])) {
     echo '<article class="col sml-12 med-12 lrg-10 sml-centered" role="article" >';
       $plxShow->lang('SOURCES_TOP');
       $plxShow->lang('SOURCES_BOTTOM');
-      echo '<a class="button blue" href="https://github.com/search?q=user%3ADeevad+peppercarrot">Pepper&amp;Carrot repositories</a>';
+      echo '<a class="button blue" href="https://framagit.org/peppercarrot">Pepper&amp;Carrot Gitlab repository group on Framagit</a>';
       echo '<br/><br/>';
 
         echo '<section class="col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
