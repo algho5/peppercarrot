@@ -89,13 +89,13 @@ echo "-->";
       <div class="grid">
         <div class="col sml-12 med-12 lrg-12 sml-text-center med-text-right lrg-text-right">
           <div class="follow">
-          <a class="logo fbook" href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="Follow Pepper&amp;Carrot on Facebook">
+          <a class="logo fbook" href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="<?php $plxShow->lang('FOLLOW')?> Facebook">
             <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_fb.svg" alt="Fb"/>
           </a>
-          <a class="logo twit" href="http://twitter.com/davidrevoy" title="Follow Pepper&amp;Carrot on Twitter">
+          <a class="logo twit" href="http://twitter.com/davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Twitter">
             <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_tw.svg" alt="Twi"/>
           </a>
-          <a class="logo gplus" href="https://plus.google.com/u/0/110962949352937565678/" title="Pepper&amp;Carrot Google + profile">
+          <a class="logo gplus" href="https://plus.google.com/u/0/110962949352937565678/" title="<?php $plxShow->lang('FOLLOW')?> Google +">
             <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_go.svg" alt="G+"/>
           </a>
           <a class="logo rss" href="<?php $plxShow->urlRewrite('feed.php?rss') ?>" title="RSS 2.0" target="blank">
