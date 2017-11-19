@@ -21,7 +21,7 @@
         <!-- Facebook -->
         <figure class="thumbnail col sml-6 med-3 lrg-3">
           <a href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903">
-            <img src="data/images/static/facebook.jpg" alt="IRC" >
+            <img src="data/images/static/facebook.jpg" alt="Facebook" >
           </a>
           <figcaption class="text-center">
             <a href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="<?php $plxShow->lang('FOLLOW') ?> Facebook">
@@ -34,7 +34,7 @@
         <!-- Google+ -->
         <figure class="thumbnail col sml-6 med-3 lrg-3">
           <a href="https://plus.google.com/u/0/110962949352937565678/">
-            <img src="data/images/static/googleplus.jpg" alt="IRC" >
+            <img src="data/images/static/googleplus.jpg" alt="Google+" >
           </a>
           <figcaption class="text-center">
             <a href="https://plus.google.com/u/0/110962949352937565678/" title="<?php $plxShow->lang('FOLLOW') ?> Google+">
@@ -47,7 +47,7 @@
         <!-- Twitter -->
         <figure class="thumbnail col sml-6 med-3 lrg-3">
           <a href="http://twitter.com/davidrevoy">
-            <img src="data/images/static/twitter.jpg" alt="IRC" >
+            <img src="data/images/static/twitter.jpg" alt="Twitter" >
           </a>
           <figcaption class="text-center">
             <a href="http://twitter.com/davidrevoy" title="<?php $plxShow->lang('FOLLOW') ?> Twitter">
