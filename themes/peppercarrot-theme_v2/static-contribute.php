@@ -24,7 +24,7 @@
             <img src="data/images/static/facebook.jpg" alt="IRC" >
           </a>
           <figcaption class="text-center">
-            <a href="#art_url" title="#art_title">
+            <a href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="<?php $plxShow->lang('FOLLOW') ?> Facebook">
             Facebook<br/>
             </a>
             <span class="detail">4.5K</span>
@@ -37,7 +37,7 @@
             <img src="data/images/static/googleplus.jpg" alt="IRC" >
           </a>
           <figcaption class="text-center">
-            <a href="#art_url" title="#art_title">
+            <a href="https://plus.google.com/u/0/110962949352937565678/" title="<?php $plxShow->lang('FOLLOW') ?> Google+">
             Google+<br/>
             </a>
             <span class="detail">8.5K</span>
@@ -50,7 +50,7 @@
             <img src="data/images/static/twitter.jpg" alt="IRC" >
           </a>
           <figcaption class="text-center">
-            <a href="#art_url" title="#art_title">
+            <a href="http://twitter.com/davidrevoy" title="<?php $plxShow->lang('FOLLOW') ?> Twitter">
             Twitter<br/>
             </a>
             <span class="detail">6K</span>
@@ -63,7 +63,7 @@
             <img src="data/images/static/irc.jpg" alt="IRC" >
           </a>
           <figcaption class="text-center">
-            <a href="#art_url" title="#art_title">
+            <a href="http://webchat.freenode.net/?channels=%23pepper%26carrot" title="<?php $plxShow->lang('FOLLOW') ?> IRC">
             IRC #pepper&amp;carrot, Freenode<br/>
             </a>
             <span class="detail"><?php $plxShow->lang('HOMEPAGE_ALTERNATIVES') ?> <a href="https://telegram.me/joinchat/BLVsYz_DIz-S-TJZB9XW7A">Telegram</a>, <a href="https://framateam.org/signup_user_complete/?id=gcaq67sntfgr5jbmoaogsgdfqc">Framateam</a></span>
