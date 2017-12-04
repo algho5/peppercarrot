@@ -18,7 +18,8 @@ $statushome="";
     // page found
   }else{
     // no page found, we propose homepage by default and active status
-    $wikipage = "Home";
+    // new homepage is README.md
+    $wikipage = "README";
     $statushome="active";
   }
 
