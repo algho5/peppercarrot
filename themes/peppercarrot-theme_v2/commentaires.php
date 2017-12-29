@@ -47,6 +47,12 @@
     $userstatus = 'Contributor';
     $permission = 'admin';
     
+    # Midgard
+    } elseif ($seed=="Midgard") {
+    $permission = 'admin';
+    $userstatus = 'Contributor';
+    $avatarpath = ''.$templatepath.'/avatars/static_avatar_midgard.png';
+    
     # Nartance
     } elseif ($seed=="CGand" OR $seed=="cgand" OR $seed=="Cgand" ) {
     $userstatus = 'Translator';
