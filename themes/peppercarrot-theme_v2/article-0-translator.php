@@ -1,50 +1,26 @@
 <?php include(dirname(__FILE__) . '/header.php'); ?>
+<?php include(dirname(__FILE__).'/lib-parsedown.php'); ?>
+
   <div class="container">
 	<main class="main grid" role="main">
     
 		<section class="col sml-12" >
-			<article class="article" role="article" id="post-<?php echo $plxShow->artId(); ?>">
-            
-
-				<header class="col sml-12 med-12 lrg-12 text-center">
-            
-					<h1>
-						<?php $plxShow->artTitle(); ?>
-					</h1>
-					<small>
-						<time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>"><?php $plxShow->artDate('#num_day #month #num_year(4)'); ?></time> 
-					</small>
-				</header>
+			<article style="max-width: 850px; margin: 0 auto; " class="article" role="article" id="post-<?php echo $plxShow->artId(); ?>">
         
-                  <!-- vignette -->
-                  <figure class="col sml-12 med-12 lrg-12 text-center">
-                    <a href="<?php eval($plxShow->callHook('showVignette', 'true')); ?>"><?php eval($plxShow->callHook('showVignette')); ?></a>
-                  </figure>
-                  
-                  <!-- Content -->
-                  <section class="col sml-12 med-12 lrg-12">
-                      <div class="content">
-                      <?php $plxShow->artContent(); ?>
-                      </div>
-                  </section>
-          
-              </article>
-        </section>
-        
-  <div style="clear:both"></div>
-  <br/><br/>
-  
-  <div class="col sml-12 med-12 lrg-12 text-center">
-    <h2>Check the translation
-      <a  class="button blue" href="<?php $plxShow->urlRewrite('index.php?fr/static6/sources&page=translation') ?>" id="status">
-        translation status table here
-      </a>
-    &nbsp;&nbsp;for an overview.</h2>
-      <br/><br/>  <br/><br/>
-
+              <?php
+              # Dynamic: can be edited here: 
+              # https://framagit.org/peppercarrot/webcomics/blob/master/CONTRIBUTING.md
+              $contributorfilepath = '0_sources/CONTRIBUTING.md';
+              $contents = file_get_contents($contributorfilepath);
+              $Parsedown = new Parsedown();
+              echo '<div style="text-align:left;">';
+              echo $Parsedown->text($contents);
+              echo '</div>';
+              ?>
+              
+      </article>
+    </section>
 </div>
-
-  <?php include(dirname(__FILE__).'/commentaires.php'); ?>
       
 	</main>
   </div>
