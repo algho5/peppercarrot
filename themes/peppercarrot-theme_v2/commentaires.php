@@ -58,7 +58,7 @@
     $userstatus = 'Translator';
     $permission = 'admin';
     
-    # Misty Tales : http://www.peppercarrot.com/en/article391/cat-avatar-generator#c0391-722
+    # Misty Tales: http://www.peppercarrot.com/en/article391/cat-avatar-generator#c0391-722
     } elseif ($seed=="MistyTales") {
     $seed = '583f7b02633e4';
     $permission = 'normal';
@@ -128,7 +128,7 @@
 
 			<div class="grid">
 				<div class="col sml-12">
-					<label for="id_name">Name :</label>
+					<label for="id_name">Name:</label>
 					<input id="id_name" name="name" type="text" size="20" value="<?php $plxShow->comGet('name',''); ?>" maxlength="30" />
 				</div>
 			</div>
@@ -145,11 +145,11 @@
 			<div class="grid">
 				<div class="col sml-12">
           <div id="id_answer"></div>
-					<label for="id_content" class="lab_com">Your comment : </label>
+					<label for="id_content" class="lab_com">Your comment: </label>
 					<textarea id="id_content" name="content" cols="35" rows="6"><?php $plxShow->comGet('content',''); ?></textarea>
 				</div>
-        <p style="color:#CCC; margin: 0 0 1rem 0;">Notice : URL allowed ( auto-clickable ). Pictures URL too ( gif,jpg,png auto-displayed )</p>
-      </div>
+				<p style="color:#CCC; margin: 0 0 1rem 0;">Notice: URLs allowed (auto-clickable). URLs to pictures too (gif, jpg, png; auto-displayed)</p>
+			</div>
 
 			<?php $plxShow->comMessage('<p class="text-red"><strong>#com_message</strong></p>'); ?>
 
@@ -177,7 +177,7 @@
 
     <script>
     function replyCom(idCom) {
-      document.getElementById('id_answer').innerHTML='Reply to :';
+      document.getElementById('id_answer').innerHTML='Reply to:';
       document.getElementById('id_answer').innerHTML+=document.getElementById('com-'+idCom).innerHTML;
       document.getElementById('id_answer').innerHTML+='<a rel="nofollow" href="<?php $plxShow->artUrl(); ?>#form" onclick="cancelCom()"> (cancel)</a>';
       document.getElementById('id_answer').style.display='inline-block';
