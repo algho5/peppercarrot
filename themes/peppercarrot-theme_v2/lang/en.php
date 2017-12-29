@@ -107,7 +107,7 @@ $LANG = array(
     No mature content, no violence. Free and open-source, Pepper&amp;Carrot is a proud example of how cool free-culture could be.<br/>
     I&#39;m focusing a lot on quality, because free and open-source doesn&#39;t mean bad or amateur. Quite the contrary.</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="Illustration representing comic pages flying around the world" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
 
     <h2>Let&#39;s change comic industry!</h2>
 
