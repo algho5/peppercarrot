@@ -927,7 +927,7 @@ if(isset($_GET['page'])) {
     echo $languagecounter.' languages ! ';
     echo "</strong><br/>";
     echo "<br/>";
-    $contributorfilepath = 'http://www.peppercarrot.com/0_sources/CONTRIBUTORS.md';
+    $contributorfilepath = 'http://www.peppercarrot.com/0_sources/AUTHORS.md';
     $contents = file_get_contents($contributorfilepath);
     $Parsedown = new Parsedown();
     echo '<h2>Translators</h2>';

@@ -62,8 +62,8 @@
     
     <?php
     # Dynamic: can be edited here: 
-    # https://framagit.org/peppercarrot/webcomics/blob/master/CONTRIBUTORS.md
-    $contributorfilepath = '0_sources/CONTRIBUTORS.md';
+    # https://framagit.org/peppercarrot/webcomics/blob/master/AUTHORS.md
+    $contributorfilepath = '0_sources/AUTHORS.md';
     $contents = file_get_contents($contributorfilepath);
     $Parsedown = new Parsedown();
     echo '<div style="text-align:left;">';
