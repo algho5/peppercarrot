@@ -90,9 +90,7 @@
           </strong>&nbsp;
           <small>
             <?php if($userstatus): ?>
-                    <span style="color: #85BF25;">
-                      <?php echo $userstatus; ?>,
-                    </span>
+                    <span style="color: #85BF25;"><?php echo $userstatus; ?></span>,
             <?php else: ?>
                     &nbsp;
             <?php endif; ?>
@@ -145,7 +143,7 @@
 			<div class="grid">
 				<div class="col sml-12">
           <div id="id_answer"></div>
-					<label for="id_content" class="lab_com">Your comment: </label>
+					<label for="id_content" class="lab_com">Your comment:</label>
 					<textarea id="id_content" name="content" cols="35" rows="6"><?php $plxShow->comGet('content',''); ?></textarea>
 				</div>
 				<p style="color:#CCC; margin: 0 0 1rem 0;">Notice: URLs allowed (auto-clickable). URLs to pictures too (gif, jpg, png; auto-displayed)</p>
