@@ -89,10 +89,16 @@
             <?php $plxShow->comAuthor('link'); ?>
           </strong>&nbsp;
           <small>
-            <span style="color: #85BF25;"><?php echo $userstatus; ?></span> ,
+            <?php if($userstatus): ?>
+                    <span style="color: #85BF25;">
+                      <?php echo $userstatus; ?>,
+                    </span>
+            <?php else: ?>
+                    &nbsp;
+            <?php endif; ?>
 
             <time datetime="<?php $plxShow->comDate('#num_year(4)-#num_month-#num_day #hour:#minute'); ?>">
-            <?php $plxShow->comDate('#num_day #month #num_year(4) , #hour:#minute'); ?></time> -
+            <?php $plxShow->comDate('#num_day #month #num_year(4), #hour:#minute'); ?></time> -
 
             <?php if($plxShow->plxMotor->plxRecord_arts->f('allow_com') AND $plxShow->plxMotor->aConf['allow_com']): ?>
                     <a rel="nofollow" href="<?php $plxShow->artUrl(); ?>#form" onclick="replyCom('<?php $plxShow->comIndex() ?>')">Reply</a>
