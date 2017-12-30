@@ -55,6 +55,7 @@ $language_codes = array(
         'gd' => 'Scots/Gaelic' , 
         'gl' => 'Galician' , 
         'gn' => 'Guarani' , 
+        'go' => 'Gallo' , 
         'gu' => 'Gujarati' , 
         'ha' => 'Hausa' , 
         'hi' => 'Hindi' , 
