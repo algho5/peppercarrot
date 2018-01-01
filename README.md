@@ -89,7 +89,7 @@ Enjoy!
 
 ## Contribution
 
-I'm open to any type of enhancement! Better code, cleaner code identation, code comment, new features, bug fixes, update to newer version, security test, etc... You can also find a TODO.md text at the root with my various idea. Do not hesitate to open a bug report ticket to just talk about something if you are not sure. The credit for the contributors of the website will be written on the [Author](https://www.peppercarrot.com/en/static7/author) page. (edited via **CONTRIBUTOR.md** in the peppercarrot/webcomics repository).
+I'm open to any type of enhancement! Better code, cleaner code identation, code comment, new features, bug fixes, update to newer version, security test, etc... You can also find a TODO.md text at the root with my various idea. Do not hesitate to open a bug report ticket to just talk about something if you are not sure. The credit for the contributors of the website will be written on the [Author](https://www.peppercarrot.com/en/static7/author) page. (edited via **AUTHORS.md** in the peppercarrot/webcomics repository).
 
 ## License
 
