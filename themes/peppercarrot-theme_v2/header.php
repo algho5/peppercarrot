@@ -68,7 +68,18 @@ V.<?php echo $version ?>, 11/2016
   // conditional: we embed the javascript only if the CMS detect we are displaying a webcomic
   if( $idCats=="003" AND $idMode=="article" ){?>
  <?php } ?>
+ 
 </head>
+
+ <?php
+  if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
+    echo '<div style="position: fixed; font-size: 0.8rem; text-align: right; width: 100%; bottom: 0px; padding: 2px 8px 2px 8px; background: #000000; color: #FFFFFF; opacity: 0.75; z-index: 500 !important;">';
+    $currenturl=$_SERVER['REQUEST_URI'];
+    $currenturl=str_replace('/peppercarrot','',$currenturl);
+    echo 'Notice: you are browsing localhost: <a href="https://www.peppercarrot.com'.$currenturl.'">online version is here</a>';
+    echo '</div>';
+  }
+  ?>
 
 <?php // récupération de l'identifiant de la page static
 $idStat = $plxShow->staticId();
