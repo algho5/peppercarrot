@@ -63,10 +63,23 @@
             <img src="data/images/static/irc.jpg" alt="IRC" >
           </a>
           <figcaption class="text-center">
-            <a href="http://webchat.freenode.net/?channels=%23pepper%26carrot" title="<?php $plxShow->lang('FOLLOW') ?> IRC">
-            IRC #pepper&amp;carrot, Freenode<br/>
-            </a>
-            <span class="detail"><?php $plxShow->lang('HOMEPAGE_ALTERNATIVES') ?> <a href="https://telegram.me/joinchat/BLVsYz_DIz-S-TJZB9XW7A">Telegram</a>, <a href="https://framateam.org/signup_user_complete/?id=gcaq67sntfgr5jbmoaogsgdfqc">Framateam</a></span>
+              <a href="http://webchat.freenode.net/?channels=%23pepper%26carrot" title="Main Irc channel: #pepper&amp;carrot on Freenode">
+                Irc
+              </a>
+            <span class="detail">|</span>
+              <a href="https://riot.im/app/#/room/#freenode_#pepper&carrot:matrix.org" title="Bridged Irc channel for Riot, a Matrix client">
+                Riot
+              </a>
+            <span class="detail">|</span>
+              <a href="https://framateam.org/signup_user_complete/?id=gcaq67sntfgr5jbmoaogsgdfqc" title="Bridged Irc channel for Framateam, Mattermost client hosted by Framasoft">
+                Framateam
+              </a>
+            <span class="detail">|</span>
+              <a href="https://telegram.me/joinchat/BLVsYz_DIz-S-TJZB9XW7A" title="Bridged Irc channel for Telegram client">
+                Telegram
+              </a>
+            <br/>
+            <span class="detail">Online chat</span>
           </figcaption>
         </figure>
         
