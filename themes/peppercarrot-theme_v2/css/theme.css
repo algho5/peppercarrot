@@ -49,7 +49,7 @@ h4{font-size:1.2rem}
 .responsive-menu label { color: #3A2619; background-color: transparent; font: normal 2rem 'ComicSpice', cursive; }
 
 /* translation pills */
-.translabar { padding: 0 0 0 0; margin: 0.5rem 0; max-width: 950px }
+.translabar { padding: 0 0 0 0; margin: 0.5rem 0; max-width: 990px }
 .translabar li { background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px }
 .translabar li.active { background-color: #D7EBFA; border: solid 1px #B1D6F2;}
 .translabar a { text-decoration: none; font-size: 0.9rem; }
