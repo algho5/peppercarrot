@@ -107,7 +107,7 @@ $LANG = array(
     Neniu enhavo por plenkreskuloj, sen brutaleco. Libera kaj malfermkoda, Pipro kaj Karoĉjo estas imitinda ekzemplo kiel ŝatindega la libera kulturo povas esti.<br/>
     Mi koncentriĝas precipe sur kvalito, ĉar libera kaj malfermkoda kulturo ne devas esti amatoraĉa. Tute kontraŭe.</p>
 
-        <img alt="ilustraĵo montranta mondon" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="ilustraĵo montranta komiksajn paĝojn flugantaj ĉirkaŭ la mondo" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
 
     <h2>Ni ŝanĝu la sektoron de bildrakontoj!</h2>
 
