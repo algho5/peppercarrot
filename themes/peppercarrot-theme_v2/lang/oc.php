@@ -91,7 +91,7 @@ $LANG = array(
     <p>Vòli donar als autres lo drech d’utilizar, de cambiar e mai de comercialisar lors projèctes en utilizar Pepper&amp;Carrot.<br/>
     Totas las paginas, dessenhs e autres contenguts son estats creats amb de logicials liures (Gnu/Linux), e totas las fonts son sus aqueste site (menú  \'Fonts\').<br/>
     L’utilizacion comerciala, las traduccions, los fan-arts, l’impression, los films, los jòcs-vidèo e lo re-partatge sul net son encoratjats.<br/>
-    Vos demandi pas que de mencionar lo(s) autor(s) de las òbras (artistas, correctors, traductors investit()s dins la creacion de l’òbra), d’integrar un ligam cap a la licéncia e indicar se de modificacions son estadas fachas. Podètz ensenhar aquelas informacions d’un biais rasonable sens indicar que los autors vos sostenon dins lo cambiament de lors òbras.</p>
+    Vos demandi pas que de mencionar lo(s) autor(s) de las òbras (artistas, correctors, traductors investits dins la creacion de l’òbra), d’integrar un ligam cap a la licéncia e indicar se de modificacions son estadas fachas. Podètz ensenhar aquelas informacions d’un biais rasonable sens indicar que los autors vos sostenon dins lo cambiament de lors òbras.</p>
 
     <div class="philobutton">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" title="Mai d‘informacion en francés tocant Creative Commons Attribution 4.0">
@@ -175,9 +175,9 @@ $LANG = array(
 
     <p>Tot lo monde pòt aportar sa participacion : <br/>
         <b>Desvolopaires :</b> Creacion d’aplicacions amb los grafismes de Pepper&amp;Carrot.<br />
-        <b>Musicians :</b> Creacion de tèmas musicals per la seria Pepper&amp;Carrot.<br />
+        <b>Musicaires :</b> Creacion de tèmas musicals per la seria Pepper&amp;Carrot.<br />
         <b>Escrivans : </b> Proposicion de roman, o novèl scenari per Pepper&amp;Carrot.<br />
-        <b>Jornalistas : </b> Informacions sobre lo projècte Pepper&amp;Carrot als mèdias tradicionals (premsa escricha, television, etc.)<br />
+        <b>Jornalistas : </b> Informacions sul projècte Pepper&amp;Carrot als mèdias tradicionals (premsa escricha, television, etc.)<br />
         <b>Estampaires :</b> Impression de postèrs o d’objèctes pichons sul tèma de Pepper&amp;Carrot.<br />
     </p>
 ',
