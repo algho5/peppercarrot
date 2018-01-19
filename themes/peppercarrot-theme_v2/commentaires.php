@@ -86,7 +86,7 @@
             <img class="svg" src="themes/peppercarrot-theme_v2/ico/link.svg" alt="link"/>
           </a>&nbsp;
           <strong>
-            <?php $plxShow->comAuthor('link'); ?>
+            <?php $plxShow->comAuthor(); ?>
           </strong>&nbsp;
           <small>
             <?php if($userstatus): ?>
@@ -131,13 +131,9 @@
 				</div>
 			</div>
 			<div class="grid">
-				<div class="col sml-12 lrg-6">
+				<div class="col sml-12">
 					<label for="id_mail">Email (optional):</label>
 					<input id="id_mail" name="mail" type="text" size="20" value="<?php $plxShow->comGet('mail',''); ?>" />
-				</div>
-				<div class="col sml-12 lrg-6">
-					<label for="id_site">Website (optional):</label>
-					<input id="id_site" name="site" type="text" size="20" value="<?php $plxShow->comGet('site',''); ?>" />
 				</div>
 			</div>
 			<div class="grid">
