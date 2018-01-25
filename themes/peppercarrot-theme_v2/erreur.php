@@ -12,7 +12,7 @@
           <div class="alert blue" style="margin: 0 auto; text-align:center; max-width: 910px; margin-bottom: 1.5rem;">
             <img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt=""/>
             <strong> Error : Page not found.</strong><br/>
-            But!.. Carrot is diving in our database to propose you alternatives:
+            But!.. Carrot is diving into our database to show you alternatives:
           </div>
         </div>
         
