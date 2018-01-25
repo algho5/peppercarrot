@@ -6,13 +6,17 @@
 
       <div class="grid">
         
-        <div class="alert blue" style="margin-top: 1rem;">
-            <a href="#" title=""><img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt=""/><strong> Error </strong></a> : Page not found.
-        </div>
+        <div class="col sml-12 center" style="text-align:center; padding-top: 1rem;">
+          <img src="0_sources/ep04_Stroke-of-genius/low-res/en_Pepper-and-Carrot_by-David-Revoy_E04P05.gif" />
           
-        <h2 style="padding-top:0; margin-top: 0;">
-            &nbsp; Browse all content :
-        </h2>
+          <div class="alert blue" style="margin: 0 auto; text-align:center; max-width: 910px; margin-bottom: 1.5rem;">
+            <img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt=""/>
+            <strong> Error : Page not found.</strong><br/>
+            But!.. Carrot is diving in our database to propose you alternatives:
+          </div>
+        </div>
+        
+        <div style="clear:both;"></div>
         
         <?php eval($plxShow->callHook("vignetteArtList", array('
         <!-- #art_title -->
