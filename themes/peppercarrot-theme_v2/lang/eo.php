@@ -39,11 +39,11 @@ $LANG = array(
     subtenata rekte de ĝiaj patronoj<br/>
     por ŝanĝi la sektoron de bildrakontoj!<br/>
 ',
-'HOMEPAGE_PATREON_INFO'     =>  'Nur po 1$ por nova rakontaĵo, iĝu patrono nun per Patreon',
+'HOMEPAGE_PATREON_INFO'     =>  'Nur po 1$ por nova rakonteto, iĝu patrono nun per Patreon',
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'Pli da informoj',
 'HOMEPAGE_PATREON_BUTTON'   =>  'Iĝi patrono de Pipro kaj Karoĉjo per Patreon',
 'HOMEPAGE_PATREON_BOX'      =>  'Iĝi patrono de Pipro kaj Karoĉjo per:',
-'HOMEPAGE_LAST_EPISODE'     =>  'Plej nova rakontaĵo:',
+'HOMEPAGE_LAST_EPISODE'     =>  'Plej nova rakonteto:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Novaĵoj kaj ĝisdatigoj:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Pli da afiŝoj',
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
@@ -72,7 +72,7 @@ $LANG = array(
  <h2>Subtenata de patronoj</h2>
 
     <p>La projekto “Pipro kaj Karoĉjo” estas financata nur de ĝiaj patronoj de la tuta mondo.<br/>
-    Ĉiu patrono sendas iomete da mono por ĉiu nov-publikigita rakontaĵo kaj ricevas agnoskon sube nova bildrakonto.<br/>
+    Ĉiu patrono sendas iomete da mono por ĉiu nov-publikigita rakonteto kaj ricevas agnoskon sube nova bildrakonto.<br/>
     Danke al tiu ĉi sistemo, Pipro kaj Karoĉjo povas esti sendependa kaj por ĉiam restos libera de iuj reklamaĉoj.</p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
@@ -119,7 +119,7 @@ $LANG = array(
         <img alt="ilustraĵo: sektoro de bildrakontoj kontraŭ subteno de patronoj" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
 
     <div class="philobutton">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="nur po 1$ por nova rakontaĵo, iĝu patrono de Pipro kaj Karoĉjo">
+        <a class="h4" href="https://www.patreon.com/davidrevoy" title="nur po 1$ por nova rakonteto, iĝu patrono de Pipro kaj Karoĉjo">
             Bonvolu helpi al mi plibonigi kreadon de Pipro kaj Karoĉjo nun.
         </a>
     </div>
@@ -140,14 +140,14 @@ $LANG = array(
     <h2>Patroneco, donacoj</h2>
 
     <p>Mi precizigis en la <a href="?static2/philosophy" title="malfermi paĝon pri filozofio">paĝo pri filozofio</a> preskaŭ ĉion pri financado.<br/>
-    Estas facile iĝi patrono de Pipro kaj Karoĉjo nur po 1$ por nova rakontaĵo <a href="https://www.patreon.com/davidrevoy">per Patreon</a>.<br/>
-    Patreon akceptas monkartojn de la tuta mondo kaj vi eĉ povas pagi per PayPal-konton al Patreon.<br/>
+    Estas facile iĝi patrono de Pipro kaj Karoĉjo nur po 1$ por nova rakonteto <a href="https://www.patreon.com/davidrevoy">per Patreon</a>.<br/>
+    Patreon akceptas monkartojn de la tuta mondo kaj vi eĉ povas pagi per PayPal-konto al Patreon.<br/>
     </p>
 ',
 'CONTRIBUTE_FANART'	    => '
     <h2>Fanatikul-artaĵo</h2>
     
-    <p>Pipro kaj Karoĉjo estas malferma al fanatikul-artaĵo: desegnaĵoj, scenaroj, skulptaĵoj, 3-dimensiaj modeloj, rakontaĵoj. Bonvolu sendi ilin al mi (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, aŭ sciigu min per interkonaj retejoj) por ke ili aperu en la galerio de fanatikul-artaĵo:</p>
+    <p>Pipro kaj Karoĉjo estas malferma al fanatikul-artaĵo: desegnaĵoj, scenaroj, skulptaĵoj, 3-dimensiaj modeloj, fanatik-fikcioj. Bonvolu sendi ilin al mi (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, aŭ sciigu min per interkonaj retejoj) por ke ili aperu en la galerio de fanatikul-artaĵo:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Idoj:</h2>
@@ -213,7 +213,7 @@ $LANG = array(
 # Page: Author
 'AUTHOR_TITLE'		=> 'Pri David REVOY',
 'AUTHOR_BIO'	    => '
-    <p>Saluton, mi nomiĝas David REVOY kaj mi estas 39-jaraĝa franca artisto naskita je 1981. Mi estas meminstruulo kaj fanatikulo pri desegnado, pentrado, katoj, komputiloj, GNU/Linuksa libera kulturo, Interreto, eksmodaj rolludaj videoludoj, malnovaj mangaoj kaj animeoj, tradicia arto, japana kulturo, fantasto&nbsp;.&nbsp;.&nbsp;.&nbsp;<br/>
+    <p>Saluton, mi nomiĝas David REVOY kaj mi estas franca artisto naskita je 1981. Mi estas meminstruulo kaj fanatikulo pri desegnado, pentrado, katoj, komputiloj, GNU/Linuksa libera kulturo, Interreto, eksmodaj rolludaj videoludoj, malnovaj mangaoj kaj animeoj, tradicia arto, japana kulturo, fantasto&nbsp;.&nbsp;.&nbsp;.&nbsp;<br/>
     <br/>
     Post pli ol 10 jaroj da liberlaborado en cifereca desegnado, instruado, koncept-grafiko, ilustrado, artestreco, mi decidiĝis komenci mian propran projekton. Finfine mi trovis kielon por miksi ĉiujn miajn pasiojn kune, kaj ties rezulto estas la projekto Pipro kaj Karoĉjo.</p>
 
@@ -230,7 +230,7 @@ $LANG = array(
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Ricevi bildon pri rolkostumado kiel Pipro.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Ricevi bildon de ruĝa kato nomita Karoĉjo.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Esti subtenata de 500 patronoj.</a><br/>
-    ☐ Atingi rakontaĵon 100!<br/>
+    ☐ Atingi rakonteton 100!<br/>
     </p>
 ',
 
@@ -248,9 +248,9 @@ $LANG = array(
 
 ################################################################################
 # various utils:
-'UTIL_NEXT_EPISODE'      =>  'sekva rakontaĵo',
-'UTIL_PREVIOUS_EPISODE'  =>  'antaŭa rakontaĵo',
-'UTIL_EPISODE'   =>  'rakontaĵo',
+'UTIL_NEXT_EPISODE'      =>  'sekva rakonteto',
+'UTIL_PREVIOUS_EPISODE'  =>  'antaŭa rakonteto',
+'UTIL_EPISODE'   =>  'rakonteto',
 'UTIL_BACK_TO_GALLERY'      =>  'reen al galerio',
 'UTIL_MORE'      =>  'pli',
 'UTIL_PAGE'      =>  'paĝo',
