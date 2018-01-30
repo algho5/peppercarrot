@@ -346,10 +346,10 @@ class plxFeed extends plxMotor {
 		echo '<channel>'."\n";
 		echo '<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="' . $this->urlRewrite('feed.php?rss/commentaires/') . '" />'."\n";
 
-		$entry .= "\t\t".'<title>'.strip_tags(html_entity_decode($title, ENT_QUOTES, PLX_CHARSET)).'</title> '."\n";
+		echo "\t".'<title>Pepper&amp;Carrot comments</title> '."\n";
 		echo "\t".'<link>'.$link.'</link>'."\n";
 		echo "\t".'<language>' . $this->aConf['default_lang'] . '</language>'."\n";
-		echo "\t".'<description>'.plxUtils::strCheck($this->aConf['description']).'</description>'."\n";
+		echo "\t".'<description>RSS feed for the comments of Pepper&amp;Carrot</description>'."\n";
 
 		$last_updated = plxDate::dateIso2rfc822($last_updated);
 		echo "\t".'<lastBuildDate>'.$last_updated.'</lastBuildDate>'."\n";
