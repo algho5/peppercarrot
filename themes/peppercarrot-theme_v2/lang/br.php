@@ -156,7 +156,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Troidigezhio&ugrave; ha reizhadenno&ugrave; :</h2>
 
-    <p> Savet eo lec\'hienn Pepper&amp;Carrot evit beza&ntilde; liesyezhek hag aotren forzh peseurt yezh (reo&ugrave; varv ha reo&ugrave; faltaziek en o zouez). Mammenno&ugrave; ar bajenn a zo roet deoc\'h evit ma c\'hallfec\'h trei&ntilde; anezhi. Lennit ar <a href="index.php?fr/article267/translation-tutorial">c\'helennskrid dave</a> evit kaout muioc\'h a ditouro&ugrave; diwar-benn an doare da ouzhpenna&ntilde; ho troidigezh.</p>
+    <p> Savet eo lec\'hienn Pepper&amp;Carrot evit beza&ntilde; liesyezhek hag aotren forzh peseurt yezh (reo&ugrave; varv ha reo&ugrave; faltaziek en o zouez). Mammenno&ugrave; ar bajenn a zo roet deoc\'h evit ma c\'hallfec\'h trei&ntilde; anezhi. Lennit ar <a href="/article267/how-to-add-a-translation-or-a-correction">c\'helennskrid dave</a> evit kaout muioc\'h a ditouro&ugrave; diwar-benn an doare da ouzhpenna&ntilde; ho troidigezh.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Rouedado&ugrave; kevredadel;',

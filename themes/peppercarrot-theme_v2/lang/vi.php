@@ -157,7 +157,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Dịch và chỉnh sửa:</h2>
     
-    <p> trang web Hạt Tiêu&amp;Cà Rốt được thiết kể với nhiều ngôn ngữ và chấp nhận mọi ngôn ngữ (kể cả những ngôn ngữ đã biến mất hay tưởng tượng ra). Nguồn của trang này được dịch tùy ý bạn. Xem <a href="index.php?fr/article267/translation-tutorial"> Hướng dẫn</a> để biết thêm thông tin cho việc dịch ngôn ngữ.</p>
+    <p> trang web Hạt Tiêu&amp;Cà Rốt được thiết kể với nhiều ngôn ngữ và chấp nhận mọi ngôn ngữ (kể cả những ngôn ngữ đã biến mất hay tưởng tượng ra). Nguồn của trang này được dịch tùy ý bạn. Xem <a href="/article267/how-to-add-a-translation-or-a-correction"> Hướng dẫn</a> để biết thêm thông tin cho việc dịch ngôn ngữ.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Mạng xã hội:',

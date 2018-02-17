@@ -159,7 +159,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Vertalingen en correcties:</h2>
     
-    <p>De Pepper&amp;Carrot-website is meertalig en accepteert iedere taal (ook dode talen, of fictieve). De broncode van deze pagina zijn beschikbaar zodat je ze kunt vertalen. Bekijk de <a href="index.php?fr/article267/translation-tutorial">tutorial</a> voor meer informatie over het toevoegen van een vertaling.</p>
+    <p>De Pepper&amp;Carrot-website is meertalig en accepteert iedere taal (ook dode talen, of fictieve). De broncode van deze pagina zijn beschikbaar zodat je ze kunt vertalen. Bekijk de <a href="/article267/how-to-add-a-translation-or-a-correction">tutorial</a> voor meer informatie over het toevoegen van een vertaling.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Sociale media:',
