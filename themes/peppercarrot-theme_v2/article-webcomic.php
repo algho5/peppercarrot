@@ -45,7 +45,7 @@ $lang = $plxShow->defaultLang($echo);
   <ul class="menu" role="toolbar">
     <?php eval($plxShow->callHook('MyMultiLingueComicLang')) ?>
     <li <?php echo ''.$ButtonStatus.''; ?>><a id="hdbutton" href="<?php $plxShow->artUrl() ?><?php echo ''.$LinkVariable.''; ?>" class="lang option"><img src="themes/peppercarrot-theme_v2/ico/full.svg" alt=">"/> HD</a></li>
-    <li><a class="lang option" href="/article267/how-to-add-a-translation-or-a-correction"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
+    <li><a class="lang option" href="index.php?article267/how-to-add-a-translation-or-a-correction"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
   </ul>
 </div>
 

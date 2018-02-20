@@ -165,7 +165,7 @@ $LANG = array(
     <h2>Oversettelser eller korrekturlesning:</h2>
 
     <p>Pepper&amp;Gulrot er laget for &aring; v&aelig;re flerspr&aring;klig og aksepterer alle spr&aring;k (inkludert utd&oslash;dde og oppdiktede). Kildefilene til denne siden ligger klart til alle som &oslash;nsker &aring;
-	oversette. Se <a href="/article267/how-to-add-a-translation-or-a-correction">reference tutorial</a> for mere informasjon om hvordan du kan legge til din oversettelse.</p>
+	oversette. Se <a href="index.php?article267/how-to-add-a-translation-or-a-correction">reference tutorial</a> for mere informasjon om hvordan du kan legge til din oversettelse.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Og sosiale medier:',

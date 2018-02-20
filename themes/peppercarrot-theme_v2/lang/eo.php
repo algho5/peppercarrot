@@ -158,7 +158,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Tradukoj kaj korektoj</h2>
 
-    <p>Retejo de Pipro kaj Karoĉjo estas projektita por esti plurlingva kaj akceptas iun ajn lingvon (eĉ mortintajn aŭ fikciajn). Fontoj de tiu ĉi retejo estas disponeblaj al vi por ilin traduki. Vidu la <a href="/article267/how-to-add-a-translation-or-a-correction">gvidilon</a> por pli da informoj pri kiel aldoni vian tradukon.</p>
+    <p>Retejo de Pipro kaj Karoĉjo estas projektita por esti plurlingva kaj akceptas iun ajn lingvon (eĉ mortintajn aŭ fikciajn). Fontoj de tiu ĉi retejo estas disponeblaj al vi por ilin traduki. Vidu la <a href="index.php?article267/how-to-add-a-translation-or-a-correction">gvidilon</a> por pli da informoj pri kiel aldoni vian tradukon.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Interkonaj retejoj:',

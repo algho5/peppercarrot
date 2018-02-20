@@ -292,7 +292,7 @@ if(isset($_GET['page'])) {
       echo '<div class="buttonlangzip">';  
       echo '<img style="float:left; margin-right:10px;" src="themes/peppercarrot-theme_v2/ico/lang.svg" alt=""/>  ';
       $plxShow->lang('SOURCE_TRANSLATOR');
-      echo ' <span style="font-size:0.8em">(<a href="/article267/how-to-add-a-translation-or-a-correction">?</a>)</span><br/>';
+      echo ' <span style="font-size:0.8em">(<a href="index.php?article267/how-to-add-a-translation-or-a-correction">?</a>)</span><br/>';
       foreach ($search as $filepath) {
         $filename = basename($filepath);
         $fileweight = (filesize($filepath) / 1024) / 1024;
@@ -1071,7 +1071,7 @@ if(isset($_GET['page'])) {
       echo '<ul class="menu" role="toolbar">';
       eval($plxShow->callHook('MyMultiLingueStaticLang'));
       echo '<li>';
-      echo '<a class="lang" href="/article267/how-to-add-a-translation-or-a-correction">';
+      echo '<a class="lang" href="index.php?article267/how-to-add-a-translation-or-a-correction">';
       echo '<img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$plxShow->Getlang('ADD_TRANSLATION').'';
       echo '</a>';
       echo '</li>';

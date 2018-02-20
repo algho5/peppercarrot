@@ -161,7 +161,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>翻译与校对</h2>
     
-    <p>小辣椒与萝卜头网站为多语言设计（甚至是虚拟语言或者绝迹的语言）。网页的源文件为任何翻译者或校对者开放。在<a href="/article267/how-to-add-a-translation-or-a-correction">教程</a>页面里可以找到如何添加新语言以及如何优化已有翻译文本等详细信息。</p>
+    <p>小辣椒与萝卜头网站为多语言设计（甚至是虚拟语言或者绝迹的语言）。网页的源文件为任何翻译者或校对者开放。在<a href="index.php?article267/how-to-add-a-translation-or-a-correction">教程</a>页面里可以找到如何添加新语言以及如何优化已有翻译文本等详细信息。</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => '社交网',

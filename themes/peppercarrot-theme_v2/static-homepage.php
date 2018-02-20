@@ -11,7 +11,7 @@ $lang = $plxShow->defaultLang($echo);
       <div class="translabar col sml-12 med-12 lrg-12 sml-centered sml-text-center">
         <ul class="menu" role="toolbar">
           <?php eval($plxShow->callHook('MyMultiLingueStaticLang')) ?>
-          <li><a class="lang" href="/article267/how-to-add-a-translation-or-a-correction"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
+          <li><a class="lang" href="index.php?article267/how-to-add-a-translation-or-a-correction"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
         </ul>
       </div>
       

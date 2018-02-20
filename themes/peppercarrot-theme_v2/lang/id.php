@@ -155,7 +155,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Penerjemahan dan koreksi:</h2>
     
-    <p>Situs Pepper&amp;Carrot dibuat untuk mendukung semua bahasa (termasuk bahasa yang sudah langka, atau fiktif). Kunjungi <a href="/article267/how-to-add-a-translation-or-a-correction">halaman tutorial</a> untuk informasi lengkap mengenai bagaimana cara menambahkan terjemahan maupun melakukan koreksi.</p>
+    <p>Situs Pepper&amp;Carrot dibuat untuk mendukung semua bahasa (termasuk bahasa yang sudah langka, atau fiktif). Kunjungi <a href="index.php?article267/how-to-add-a-translation-or-a-correction">halaman tutorial</a> untuk informasi lengkap mengenai bagaimana cara menambahkan terjemahan maupun melakukan koreksi.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Media sosial:',

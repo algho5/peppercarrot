@@ -157,7 +157,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Przekład i korekta:</h2>
 
-    <p>Strona Pepper&amp;Carrot jest wielojęzykowa i akceptuje każdy z nich (nawet wymarłe i fikcyjne). Źródła strony są dostępne do przekładu. Przeczytaj <a href="/article267/how-to-add-a-translation-or-a-correction">tutorial</a>, by dowiedzieć się, jak dodać własny przekład.</p>
+    <p>Strona Pepper&amp;Carrot jest wielojęzykowa i akceptuje każdy z nich (nawet wymarłe i fikcyjne). Źródła strony są dostępne do przekładu. Przeczytaj <a href="index.php?article267/how-to-add-a-translation-or-a-correction">tutorial</a>, by dowiedzieć się, jak dodać własny przekład.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Sieci społecznosciowe:',
