@@ -156,7 +156,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Překlady a korekce</h2>
 
-    <p>Pepper&amp;Carrot je multijazyčný web, schopný přijmout jakýkoliv jazyk (včetně těch vymřelých nebo fiktivních). Zdroje potřebné k překladu jsou volně k dostání tady na stránkách. Pro víc informací si přečtěte <a href="index.php?fr/article267/translation-tutorial">návod pro překladatele</a>.</p>
+    <p>Pepper&amp;Carrot je multijazyčný web, schopný přijmout jakýkoliv jazyk (včetně těch vymřelých nebo fiktivních). Zdroje potřebné k překladu jsou volně k dostání tady na stránkách. Pro víc informací si přečtěte <a href="/article267/how-to-add-a-translation-or-a-correction">návod pro překladatele</a>.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Sociální sítě:',

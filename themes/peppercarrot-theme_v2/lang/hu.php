@@ -157,7 +157,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Fordítások, javítások:</h2>
     
-    <p>A Paprika&amp;Sárgarépa weboldala készítése közben figyeltem, hogy könnyű legyen lefordítani, és bármely nyelvet elfogad (beleértve kihalt és kitalált nyelveket is). Az oldal forrása a rendelkezésedre áll, az ezzel kapcsolatos információért nézd meg a <a href="index.php?fr/article267/translation-tutorial">fordítói tutorial-t</a>.</p>
+    <p>A Paprika&amp;Sárgarépa weboldala készítése közben figyeltem, hogy könnyű legyen lefordítani, és bármely nyelvet elfogad (beleértve kihalt és kitalált nyelveket is). Az oldal forrása a rendelkezésedre áll, az ezzel kapcsolatos információért nézd meg a <a href="/article267/how-to-add-a-translation-or-a-correction">fordítói tutorial-t</a>.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Közösségi oldalak:',
