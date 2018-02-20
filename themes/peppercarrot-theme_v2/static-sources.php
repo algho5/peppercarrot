@@ -818,7 +818,7 @@ if(isset($_GET['page'])) {
         echo '<th><a href="';
         $plxShow->urlRewrite('?static6/sources&page='.$foldername);
         echo'" title="'.$projectpath.'"> ep'.$episodenumber.'';
-        echo'<img src="plugins/vignette/plxthumbnailer.php?src='.$projectpath.'/low-res/Pepper-and-Carrot_by-David-Revoy_E'.$episodenumber.'.jpg&amp;h=40&amp;w=75&amp;s=1&amp;q=84&amp"></a></th>';
+        echo'<img src="plugins/vignette/plxthumbnailer.php?src='.$projectpath.'/low-res/gfx-only/gfx_Pepper-and-Carrot_by-David-Revoy_E'.$episodenumber.'.jpg&amp;h=40&amp;w=75&amp;s=1&amp;q=84&amp"></a></th>';
         $totalepisodecount = $totalepisodecount + 1;
         }
     }
