@@ -97,10 +97,10 @@
         </a>
           <figcaption class="text-center"><a href="#art_url" title="#art_title">#art_supertitle #art_date</span></a></figcaption>
       </figure>
-      ',12,'004', "...", "rsort"))); ?>
+      ',8,'004', "...", "rsort"))); ?>
   </article>
           
-          
+<?php # =========== Derivations ================ ?>
   <section class="col sml-12 med-12 lrg-12 text-center">
   <br/>
   <div class="moreposts" style="margin-top: 0.3rem;">
@@ -109,9 +109,40 @@
     </a>
   </div>
   </section>
-          
 
-         
+<?php # =========== Webcomics ================ 
+$lang = $plxShow->getLang('LANGUAGE_ISO_CODE_2_LETTER');
+$ccbystring = $plxShow->getLang('UTIL_BY');
+$pathcommunityfolder = '0_sources/0ther/community';
+echo "<h2>";
+  $plxShow->lang('WEBCOMICS');
+  echo "</h2>";
+
+  $hide = array('.', '..');
+  $mainfolders = array_diff(scandir($pathcommunityfolder), $hide);
+  sort($mainfolders);
+  
+  # we loop on found episodes
+  foreach ($mainfolders as $folderpath) {
+    # Name extraction
+    $filename = basename($folderpath);
+    $filenameclean = str_replace('_', ' ', $filename);
+    $filenameclean = str_replace('-', ' ', $filenameclean);
+    $filenameclean = str_replace('featured', '', $filenameclean);
+    $filenameclean = str_replace('by', '</a><br/><span class="detail">'.$ccbystring.'', $filenameclean);
+    $filenamezip = str_replace('jpg', 'zip', $filename);
+    echo '<figure class="thumbnail col sml-6 med-6 lrg-6">';
+    echo '<a href="?static11/community-webcomics&page='.$folderpath.'/" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=470&amp;h=270&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    echo '<figcaption class="text-center" >
+    <a href="0_sources/0ther/fan-art/'.$filename.'" >
+    '.$filenameclean.'
+    '.$dateextracted.'</span><br/>
+    </figcaption>';
+    echo '</figure>';
+  }
+?>
+
+<?php # ===========  Fan Art ================ ?>
 <article class="col sml-12 med-12 lrg-12" role="article">
   <br/><br/>
   <?php
@@ -126,7 +157,7 @@
   # we loop on found episodes
   if (!empty($search)){ 
     foreach ($search as $filepath) {
-      if ( $fanartcounter < 12 ){
+      if ( $fanartcounter < 8 ){
         # filename extraction
         $fileweight = (filesize($filepath) / 1024) / 1024;
         $fanartcounter = $fanartcounter + 1;
