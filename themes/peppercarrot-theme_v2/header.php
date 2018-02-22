@@ -103,6 +103,9 @@ echo "-->";
           <a class="logo fbook" href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="<?php $plxShow->lang('FOLLOW')?> Facebook">
             <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_fb.svg" alt="Fb"/>
           </a>
+          <a class="logo mast" href="https://framapiaf.org/@davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Mastodon">
+            <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_mast.svg" alt="Mast"/>
+          </a>
           <a class="logo twit" href="http://twitter.com/davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Twitter">
             <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_tw.svg" alt="Twi"/>
           </a>
