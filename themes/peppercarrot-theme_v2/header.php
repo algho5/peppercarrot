@@ -98,35 +98,34 @@ echo "-->";
     <div class="container">
 
       <div class="grid">
-        <div class="col sml-12 med-12 lrg-12 sml-text-center med-text-right lrg-text-right">
-          <div class="follow">
-          <?php $plxShow->lang('FOLLOW')?><br/>
-          <a class="logo fbook" href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="<?php $plxShow->lang('FOLLOW')?> Facebook">
-            <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_fb.svg" alt="Fb"/>
-          </a>
-          <a class="logo mast" href="https://framapiaf.org/@davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Mastodon">
-            <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_mast.svg" alt="Mast"/>
-          </a>
-          <a class="logo twit" href="http://twitter.com/davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Twitter">
-            <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_tw.svg" alt="Twi"/>
-          </a>
-          <a class="logo gplus" href="https://plus.google.com/u/0/110962949352937565678/" title="<?php $plxShow->lang('FOLLOW')?> Google +">
-            <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_go.svg" alt="G+"/>
-          </a>
-          <a class="logo rss" href="<?php $plxShow->urlRewrite('feed.php?rss') ?>" title="RSS 2.0" target="blank">
-            <img class="svg" src="themes/peppercarrot-theme_v2/ico/rss.svg" alt="Rss"/>
-          </a>
-        </div>
-        </div>
-      </div>
-
-      <div class="grid">
-          <div class="title col sml-12 med-12 lrg-12 sml-text-center med-text-center lrg-text-center">
+          <div class="col sml-12 med-3 lrg-3 sml-text-center med-text-center lrg-text-center">
+          </div>
+          <div class="title col sml-12 med-6 lrg-6 sml-text-center med-text-center lrg-text-center">
             <a href="<?php $plxShow->racine() ?>">
               <img src="<?php $plxShow->template(); ?>/img/en_pepper-carrot_title.svg" width="362px" height="76px" alt="Pepper&ampCarrot" title="<?php $plxShow->lang('PEPPERCARROT_VEGETABLE') ?>">
             </a>
             <h1 class="no-margin sml-hide med-hide lrg-hide"><?php $plxShow->mainTitle('link'); ?></h1>
           </div>
+          <div class="col sml-12 med-3 lrg-3 sml-text-center med-text-right lrg-text-right">
+            <div class="follow">
+            <?php $plxShow->lang('FOLLOW')?>&nbsp;<br/>
+            <a class="logo fbook" href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="<?php $plxShow->lang('FOLLOW')?> Facebook">
+              <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_fb.svg" alt="Fb"/>
+            </a>
+            <a class="logo mast" href="https://framapiaf.org/@davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Mastodon">
+              <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_mast.svg" alt="Mast"/>
+            </a>
+            <a class="logo twit" href="http://twitter.com/davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Twitter">
+              <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_tw.svg" alt="Twi"/>
+            </a>
+            <a class="logo gplus" href="https://plus.google.com/u/0/110962949352937565678/" title="<?php $plxShow->lang('FOLLOW')?> Google +">
+              <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_go.svg" alt="G+"/>
+            </a>
+            <a class="logo rss" href="<?php $plxShow->urlRewrite('feed.php?rss') ?>" title="RSS 2.0" target="blank">
+              <img class="svg" src="themes/peppercarrot-theme_v2/ico/rss.svg" alt="Rss"/>
+            </a>
+          </div>
+        </div>
       </div>
           
         <div class="grid">
