@@ -118,7 +118,7 @@ echo "-->";
             <a class="logo twit" href="http://twitter.com/davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Twitter">
               <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_tw.svg" alt="Twi"/>
             </a>
-            <a class="logo gplus" href="https://plus.google.com/u/0/110962949352937565678/" title="<?php $plxShow->lang('FOLLOW')?> Google +">
+            <a class="logo gplus" href="https://plus.google.com/communities/108146253353928738338" title="<?php $plxShow->lang('FOLLOW')?> Google +">
               <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_go.svg" alt="G+"/>
             </a>
             <a class="logo rss" href="<?php $plxShow->urlRewrite('feed.php?rss') ?>" title="RSS 2.0" target="blank">

@@ -33,7 +33,7 @@
         
         <!-- Google+ -->
         <figure class="thumbnail col sml-6 med-3 lrg-3">
-          <a href="https://plus.google.com/u/0/110962949352937565678/">
+          <a href="https://plus.google.com/communities/108146253353928738338">
             <img src="data/images/static/googleplus.jpg" alt="Google+" >
           </a>
           <figcaption class="text-center">
