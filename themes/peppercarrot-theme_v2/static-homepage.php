@@ -28,9 +28,9 @@ $lang = $plxShow->defaultLang($echo);
               <br/>
               <div id="alternatives">
                 <?php $plxShow->lang('HOMEPAGE_ALTERNATIVES') ?>
-                <a href="https://liberapay.com/davidrevoy/" class="link">Liberapay</a>,
-                <a href="https://www.tipeee.com/pepper-carrot" class="link">Tipeee</a>,
-                <a href="https://paypal.me/davidrevoy" class="link">Paypal</a><?php $plxShow->lang('UTIL_DOT') ?>
+                <a href="https://liberapay.com/davidrevoy/" class="link liberapay">Liberapay</a>,
+                <a href="https://www.tipeee.com/pepper-carrot" class="link tipeee">Tipeee</a>,
+                <a href="https://paypal.me/davidrevoy" class="link paypal">Paypal</a><?php $plxShow->lang('UTIL_DOT') ?>
               </div>
             </div>
           </div>

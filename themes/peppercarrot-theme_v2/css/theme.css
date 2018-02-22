@@ -137,7 +137,7 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 /* EPISODE END */
 /* ----------- */
 /* link to sources */
-.sourcebutton { font-size: 1rem; display: block; max-width: 780px; padding: 0 auto; margin: 0 auto; background: url('../img/source-carrot-illustration.png') no-repeat center left; min-height: 80px; text-align: center;}
+.sourcebutton { margin: 0 auto; background: #D7EBFA url('../ico/dl_sources.svg') no-repeat center left 10px; padding: 0.6rem 0.7rem 0.6rem 3rem; border-radius: 10px }
 
 /* Follow me footer webcomic */
 .followcomic { padding: 0 0; margin: 0 0; font-size: 1.3rem; color: #000; font-family: 'ComicSpice';}
@@ -146,10 +146,10 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .followbutton:hover { text-decoration: underline; color: #FFF; }
 
 /* Support */
-.patreon { box-shadow: inset 0 0 1em #CCC; padding: 1.5rem 0 0 0; margin: 0 auto; background: url('../img/followbackground_patreon-logo.png') no-repeat center left; background-color: #FFF; min-height: 80px; max-width:650px; text-align: center; color: #111; font-size: 1.5rem; }
-.patreon:hover { color: #111; }
-.supportmetxt { color: #C8C8C8; font: 0.8rem ubuntu,Arial,sans ;}
-.supportmetxt a { color: #C8C8C8; text-decoration: underline; }
+.patreon { padding: 1.5rem 0 0 2.5rem; margin: 0 auto; background: url('../img/followbackground_patreon-logo.png') no-repeat center left; background-color: #F96854; min-height: 80px; max-width:480px; text-align: center; color: #111; font-size: 1.5rem; margin-bottom: 0.8rem; color: #FFF; }
+.patreon:hover { text-decoration: none; }
+.supportmetxt { color: #999; font: 1rem ubuntu,Arial,sans ;}
+.supportmetxt a { color: #2B92D7; text-decoration: underline; }
 .donationillustration { display: block; min-height: 280px; background: url('../img/followbackground_patreon_illu.jpg') no-repeat center;}
 .paypal { min-height: 45px; text-align: center;}
 div.paypal form { margin-bottom: 0; display: inline;}
@@ -161,8 +161,8 @@ div.paypal form input { padding: 0; background: transparent; border: 2px inset #
 .googleplus { background: url('../img/followbackground_googleplus.jpg') no-repeat center left; background-color: #DA5E3C; min-height: 80px; text-align: right;}
 
 /* Share */
-.share { padding-top: 0.5rem; color: #C8C8C8; }
-.share a { color: #C8C8C8; }
+.share { padding-top: 0.5rem; color: #999; }
+.share a { color: #2B92D7; text-decoration: underline;}
 .share a:hover { text-decoration: underline; }
 
 /* More */

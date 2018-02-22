@@ -907,16 +907,11 @@ public function MyMultiLingueSourceLinkDisplay() {
   $episode_source_directory = implode('/', $parts);
   # pattern : index.php?fr/static6/sources&page=ep02_Rainbow-potions
   $sourcelink = basename($episode_source_directory);
-  echo '<div class="col sml-12 med-12 lrg-12">';
   echo '<a class="sourcebutton" href="';
   $plxShow->urlRewrite('?static6/sources&page='.$sourcelink);
-  echo '"><br/>'; 
-  echo '<b>'.$plxShow->Getlang('SOURCES_TITLE').':</b> '; 
-  echo ''.$plxShow->Getlang('SOURCE_KRITA').', ';
-  # echo ''.$plxShow->Getlang('SOURCE_TRANSLATOR').', '; 
-  echo ''.$plxShow->Getlang('SOURCE_MONTAGE').' ...<br/>'; 
-  echo '<br/></a>';
-  echo '</div>';
+  echo '">'; 
+  echo ''.$plxShow->Getlang('SOURCES_TITLE').': '.$sourcelink.''; 
+  echo '</a>';
 }
 
 }

@@ -61,16 +61,14 @@ $lang = $plxShow->defaultLang($echo);
   <small>
     <time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>"><?php $plxShow->artDate('#num_day #month #num_year(4)'); ?></time>
   </small>
-<?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>
+
 </section>
-
 </article>
-
 <div class="content">
-
   <!-- Footer infos -->
   <div style="clear:both;"><br/></div>
   <footer class="col sml-12 med-12 lrg-12 text-center">
+  <?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>
   <?php include(dirname(__FILE__).'/share.php'); ?>  
   <?php include(dirname(__FILE__).'/supportme.php'); ?>
   <?php include(dirname(__FILE__).'/navigation.php'); ?>
