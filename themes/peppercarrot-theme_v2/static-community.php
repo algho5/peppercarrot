@@ -6,6 +6,7 @@ include(dirname(__FILE__).'/lib-parsedown.php');
 $lang = $plxShow->getLang('LANGUAGE_ISO_CODE_2_LETTER');
 $ccbystring = $plxShow->getLang('UTIL_BY');
 $episodestring = $plxShow->getLang('UTIL_EPISODE');
+$addatranslationstring = $plxShow->getlang('ADD_TRANSLATION');
 
 # get new variable 'folder'
 $activefolder = htmlspecialchars($_GET["page"]);
@@ -28,11 +29,46 @@ $pathcommunityfolder = '0_sources/0ther/community';
 if(isset($_GET['page'])) {
 
     $foldername = $activefolder;
+    $pathartworks = $pathcommunityfolder .'/'.$activefolder;
+    $detectedlangs=array();
     
+    # Prepare the lang detection
+    $searchfiles = glob($pathartworks."/????-??-??_*.jpg");
+    foreach ($searchfiles as $file) {
+      $filename = basename($file);
+      $filenameclean = substr($filename, 11); // rm iso date
+      $filenameclean =  substr($filenameclean, 0, 2); // keep two letter ep number
+      array_push($detectedlangs,$filenameclean);
+    }
+    $detectedlangscleaned = array_unique($detectedlangs);
+    $langISOurl = "0_sources/lang-ISO.json";
+    $contents = file_get_contents($langISOurl);
+    $contents = utf8_encode($contents);
+    $langprettyname = json_decode($contents); 
+
     # + [display] datas are in the URL
     # Viewer mode : display the comic
     if(isset($_GET['display'])) {
         $imagename = $activeimage;
+        
+        # lang pills
+        echo '<div class="grid">';
+          echo '<div class="translabar col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
+            echo '<ul class="menu" role="toolbar">';
+              foreach ($detectedlangscleaned as $langavailable) {
+              
+                $langimagenamepart1 = substr($imagename, 0, 11); // rm iso date
+                $langimagenamepart2 = substr($imagename, 13); // rm iso date
+                $langimagename = $langimagenamepart1.''.$langavailable.''.$langimagenamepart2;
+                echo '<li><a href="?'.$langavailable.'/static11/community-webcomics&page='.$activefolder.'&display='.$langimagename.'">';
+                echo $langprettyname->$langavailable;
+                echo '</a></li>';
+              }
+            echo '<li><a class="lang option" href="'.$pathartworks.'"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
+            echo '</ul>';
+          echo '</div>';
+        echo '</div>';
+        
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
         echo '<br/><br/>';
         echo '</div>';
@@ -43,10 +79,10 @@ if(isset($_GET['page'])) {
         echo '<div class="col sml-12 med-12 lrg-12">';
         echo '<a class="sourcebutton" href="';
         echo ''.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'';
-        echo '"><br/>'; 
-        echo '<b>'.$plxShow->Getlang('SOURCES_TITLE').':</b> '; 
+        echo '">'; 
+        echo ''.$plxShow->Getlang('SOURCES_TITLE').': '; 
         echo ''.$imagename.'';
-        echo '<br/><br/></a>';
+        echo '</a>';
         echo '</div><br/>';
     
         echo '</section>';
@@ -55,14 +91,28 @@ if(isset($_GET['page'])) {
     } else {
     
         # === Thumbnails of episodes ===
-        $pathartworks = $pathcommunityfolder .'/'.$activefolder;
+        
+        # lang pills
+        echo '<div class="grid">';
+          echo '<div class="translabar col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
+            echo '<ul class="menu" role="toolbar">';
+              foreach ($detectedlangscleaned as $langavailable) {
+                echo '<li><a href="?'.$langavailable.'/static11/community-webcomics&page='.$activefolder.'">';
+                echo $langprettyname->$langavailable;
+                echo '</a></li>';
+              }
+            echo '<li><a class="lang option" href="'.$pathartworks.'"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
+            echo '</ul>';
+          echo '</div>';
+        echo '</div>';
+    
         $foldernameclean = str_replace('_', ' ', $foldername);
         $foldernameclean = str_replace('-', ' ', $foldernameclean);
 
         $foldernameclean = str_replace('by', '</h2><span class="font-size: 0.5rem;">'.$ccbystring.'', $foldernameclean);
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
         echo '<h2>'.$foldernameclean.'</span>';
-
+        
         $hide = array('.', '..');
         $mainfolders = array_diff(scandir($pathartworks), $hide);
         
@@ -78,7 +128,7 @@ if(isset($_GET['page'])) {
         }
         $Parsedown = new Parsedown();
         echo $Parsedown->text($contents);
-        
+
         echo '<br/><br/>';
         echo '</div>';
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
@@ -143,7 +193,9 @@ if(isset($_GET['page'])) {
     echo '</figure>';
   }
 }
+
 ?>
+
     </section>
 	</main>
 </div>
