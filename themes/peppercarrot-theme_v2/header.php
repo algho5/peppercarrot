@@ -100,6 +100,7 @@ echo "-->";
       <div class="grid">
         <div class="col sml-12 med-12 lrg-12 sml-text-center med-text-right lrg-text-right">
           <div class="follow">
+          <?php $plxShow->lang('FOLLOW')?><br/>
           <a class="logo fbook" href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="<?php $plxShow->lang('FOLLOW')?> Facebook">
             <img class="svg" src="themes/peppercarrot-theme_v2/ico/s_fb.svg" alt="Fb"/>
           </a>

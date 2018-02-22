@@ -33,7 +33,7 @@ h4{font-size:1.2rem}
 .title { min-width: 280px; }
 
 /* network on top */
-.follow { margin-top: 0.3rem; }
+.follow { margin-top: 0.3rem; font-size: 0.85rem; }
 .follow .logo { margin-right: 3px; }
 .follow a { color: #FFF;}
 .follow a:hover { opacity: 1; }
