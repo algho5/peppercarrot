@@ -41,6 +41,22 @@ if(isset($_GET['page'])) {
       array_push($detectedlangs,$filenameclean);
     }
     $detectedlangscleaned = array_unique($detectedlangs);
+    
+    $matchinglang = 0;
+    foreach ($detectedlangscleaned as $proposedlang) {
+      if ($lang == $proposedlang){
+        $matchinglang = 1;
+      }
+    }
+    if ($matchinglang !== 1){
+      echo '<div class="grid">';
+      echo '<br/><div class="col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center alert blue">';
+      echo '  <img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt="info:"/> Content not available in the selected language. Falling back to English.';
+      echo '</div>';
+      echo '</div>';
+      
+    }
+    
     $langISOurl = "0_sources/lang-ISO.json";
     $contents = file_get_contents($langISOurl);
     $contents = utf8_encode($contents);
@@ -74,6 +90,10 @@ if(isset($_GET['page'])) {
         echo '</div>';
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
         # display picture
+        if ($matchinglang !== 1){
+          $lang = "en";
+        }
+        $imagename = $langimagenamepart1.''.$lang.''.$langimagenamepart2;
         echo '<a href="'.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
         #link source
         echo '<div class="col sml-12 med-12 lrg-12">';
@@ -116,16 +136,13 @@ if(isset($_GET['page'])) {
         $hide = array('.', '..');
         $mainfolders = array_diff(scandir($pathartworks), $hide);
         
-        # TODO: Real lang selector. 
-        # $search = glob($pathartworks."/????-??-??_".$lang."*.jpg");
-        if ($lang == "fr" ){ 
-            $search = glob($pathartworks."/????-??-??_fr*.jpg");
-            $contents = file_get_contents($pathartworks."/fr_infos.md");
-
-        } else {
-            $search = glob($pathartworks."/????-??-??_en*.jpg");
-            $contents = file_get_contents($pathartworks."/en_infos.md");
+        if ($matchinglang !== 1){
+        $langavailable = "en";
         }
+        
+        $search = glob($pathartworks.'/????-??-??_'.$langavailable.'*.jpg');
+        $contents = file_get_contents($pathartworks.'/'.$langavailable.'_infos.md');
+
         $Parsedown = new Parsedown();
         echo $Parsedown->text($contents);
 
