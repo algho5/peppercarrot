@@ -137,11 +137,11 @@ if(isset($_GET['page'])) {
         $mainfolders = array_diff(scandir($pathartworks), $hide);
         
         if ($matchinglang !== 1){
-        $langavailable = "en";
+        $lang = "en";
         }
         
-        $search = glob($pathartworks.'/????-??-??_'.$langavailable.'*.jpg');
-        $contents = file_get_contents($pathartworks.'/'.$langavailable.'_infos.md');
+        $search = glob($pathartworks.'/????-??-??_'.$lang.'*.jpg');
+        $contents = file_get_contents($pathartworks.'/'.$lang.'_infos.md');
 
         $Parsedown = new Parsedown();
         echo $Parsedown->text($contents);
