@@ -22,6 +22,9 @@
   <a class="social" href="http://www.tumblr.com/share/link?url=<?php $plxShow->artUrl() ?>&name=<?php urlencode($plxShow->artTitle()); ?>" title="Share on Tumblr">
     Tumblr
   </a>   
-  <br/><br/>
+  &nbsp;|&nbsp;  
+  <a class="social" href="https://share.diasporafoundation.org/?title=<?php $plxShow->artTitle() ?>%20%23peppercarrot&url=<?php $plxShow->artUrl() ?>" title="Share on Diaspora">
+    Diaspora
+  </a>
   
 </div>
