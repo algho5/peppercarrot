@@ -51,7 +51,8 @@ if(isset($_GET['page'])) {
     if ($matchinglang !== 1){
       echo '<div class="grid">';
       echo '<br/><div class="col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center alert blue">';
-      echo '  <img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt="info:"/> Content not available in the selected language. Falling back to English.';
+      echo '  <img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt="info:"/>';
+      echo $plxShow->Getlang(LIMITATIONS);
       echo '</div>';
       echo '</div>';
       
@@ -135,13 +136,17 @@ if(isset($_GET['page'])) {
         
         $hide = array('.', '..');
         $mainfolders = array_diff(scandir($pathartworks), $hide);
-        
-        if ($matchinglang !== 1){
-        $lang = "en";
+                
+        if (!file_exists($pathartworks.'/'.$lang.'_infos.md')) {
+          if ($matchinglang !== 1){
+            $lang = "en";
+          }
         }
-        
-        $search = glob($pathartworks.'/????-??-??_'.$lang.'*.jpg');
         $contents = file_get_contents($pathartworks.'/'.$lang.'_infos.md');
+        if ($matchinglang !== 1){
+          $lang = "en";
+        }
+        $search = glob($pathartworks.'/????-??-??_'.$lang.'*.jpg');
 
         $Parsedown = new Parsedown();
         echo $Parsedown->text($contents);
