@@ -102,7 +102,7 @@ echo "-->";
           </div>
           <div class="title col sml-12 med-6 lrg-6 sml-text-center med-text-center lrg-text-center">
             <a href="<?php $plxShow->racine() ?>">
-              <img src="<?php $plxShow->template(); ?>/img/en_pepper-carrot_title.svg" width="362px" height="76px" alt="Pepper&ampCarrot" title="<?php $plxShow->lang('PEPPERCARROT_VEGETABLE') ?>">
+              <img src="<?php $plxShow->template(); ?>/img/en_pepper-carrot_title.svg" width="362px" height="76px" alt="Pepper&amp;Carrot" title="<?php $plxShow->lang('PEPPERCARROT_VEGETABLE') ?>">
             </a>
             <h1 class="no-margin sml-hide med-hide lrg-hide"><?php $plxShow->mainTitle('link'); ?></h1>
           </div>
