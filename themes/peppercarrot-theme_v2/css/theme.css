@@ -59,7 +59,7 @@ h4{font-size:1.2rem}
 .covertextoverlay { position: absolute; right: 2.5rem; top: 1.6rem; text-align:right; }
 #coverpatronbox { color: #222; background-color: #FFF; width: 375px; height: 170px; padding: 10px 4px; margin: 2.5rem 0 0 auto; text-align: center; font-size: 1.2rem; box-shadow: 0 3px 3px rgba(0,0,0,0.3); }
 #coverpatronbox img{ margin-top: 6px; }
-#alternativesbox { color: #8F8F8F; position: absolute; bottom: 13px; right: 1px; width: 360px; font-size: 0.95rem; line-height: 1.8; text-align: left;  }
+#alternativesbox { color: #8F8F8F; position: absolute; bottom: 13px; right: 6px; width: 360px; font-size: 0.95rem; line-height: 1.8; text-align: center;  }
 
 .custombigbutton	{ font-weight: bold; display:block; background-color: #777;	border-color: transparent; color: #fff; cursor: pointer; padding: .7rem 1.2rem; box-shadow: 0 3px 3px rgba(23,23,23,0.3); border-radius: 0.6rem; text-shadow: 0 2px rgba(18,18,18,0.3);}
 .custombigbutton:hover	{ opacity: 0.8;}
