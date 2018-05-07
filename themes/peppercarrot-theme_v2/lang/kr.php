@@ -166,7 +166,7 @@ $LANG = array(
 'CONTRIBUTE_PRESS'	    => '
     <h2>출판:</h2>
 
-    <p>후추&당근을 출판해 주세요! 기사를 작성하고, 웹사이트에 게시물을 올리고, 당신이 즐겨 찾는 SNS에서 커뮤니티를 구축하고 내용을 공유하세요. <a href="?static6/sources" title="소스 페이지">보도 자료</a>는 "소스" 탭에서 받으실 수 있습니다..</p>
+    <p>후추와 당근을 출판해 주세요! 기사를 작성하고, 웹사이트에 게시물을 올리고, 당신이 즐겨 찾는 SNS에서 커뮤니티를 구축하고 내용을 공유하세요. <a href="?static6/sources" title="소스 페이지">보도 자료</a>는 "소스" 탭에서 받으실 수 있습니다..</p>
 ',
 
 'CONTRIBUTE_OTHER'	    => '
@@ -197,13 +197,13 @@ $LANG = array(
 ',
 'SOURCES_BOTTOM'	=> '
     <p>이 파일들을 다운로드하고 사용함으로써 당신은<br/>
-    <a href="http://creativecommons.org/licenses/by/4.0/deed.ko">크리에이티브 커먼즈 라이선스</a>를 준수함에 동의합니다.<br/>
+    <a href="http://creativecommons.org/licenses/by/4.0/deed.ko">크리에이티브 커먼즈 저작자표시 4.0</a>을 준수함에 동의합니다.<br/>
     자세한 사항은 각 프로젝트의 README 파일에 있습니다.<br/></p>
   
     <p><b>번역, 스크립트, 웹 사이트, 그래픽 등을 위한 코드저장소：</b><br/></p>
 ',
 'SOURCE_COVER'   =>  '표지',
-'SOURCE_KRITA'   =>  'Krita 소스',
+'SOURCE_KRITA'   =>  '크리타 원본',
 'SOURCE_TRANSLATOR'=>  '번역 팩',
 'SOURCE_WEB'      =>  '웹 <span class="sourceinfos"> 90ppi，저용량 jpg</span>',
 'SOURCE_PRINT'        =>  '인쇄 <span class="sourceinfos"> 300ppi，무손실</span>',
@@ -244,7 +244,7 @@ $LANG = array(
 ################################################################################
 # Website General : Footer
 'FOOTER_CONTENT'		=> '
-    <p>만화과 작품 그리고 모든 글은 별도로 명시되지 않은 경우 <a href="https://creativecommons.org/licenses/by/4.0/deed.ko" title="자세한 내용을 원하신다면, 크리에이티브 커먼즈 저작자 표시 4.0 을 참조하십시오">크리에이티브 커먼즈 저작자 표시 4.0</a>라이선스를 따릅니다.<br/>
+    <p>만화와 작품 그리고 모든 글은 별도로 명시되지 않은 경우 <a href="https://creativecommons.org/licenses/by/4.0/deed.ko" title="자세한 내용을 원하신다면 크리에이티브 커먼즈 저작자 표시 4.0 을 참조하십시오">크리에이티브 커먼즈 저작자 표시 4.0</a>라이선스를 따릅니다.<br/>
     작가：David Revoy，www.davidrevoy.com 더 많은 정보를 원하신다면，<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>로 연락주세요.</p>
     
     <p>이 웹사이트는 <a href="http://www.pluxml.org" title="PluXml">PluXml</a>에서 제공합니다</p> 
