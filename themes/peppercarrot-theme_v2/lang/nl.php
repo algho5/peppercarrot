@@ -39,7 +39,7 @@ $LANG = array(
     direct ondersteund door zijn patrons<br/>
     om de stripboek-industrie te veranderen!<br/>
 ',
-'HOMEPAGE_PATREON_INFO'     => 'Voor slechts 1€ per aflevering kun je patron worden op Patreon',
+'HOMEPAGE_PATREON_INFO'     => 'Voor slechts €1 per aflevering kun je patron worden op Patreon',
 'HOMEPAGE_MOREINFO_BUTTON'  => 'Meer informatie',
 'HOMEPAGE_PATREON_BUTTON'   => 'Word een patron van Pepper&amp;Carrot op Patreon',
 'HOMEPAGE_PATREON_BOX'      => 'Word een patron van Pepper&amp;Carrot op:',
@@ -105,7 +105,7 @@ $LANG = array(
     <h2>Kwaliteits-entertainment voor iedereen, overal</h2>
 
     <p>Pepper&amp;Carrot is een comedy/humor-webcomic voor iedereen, van iedere leeftijd.<br/>
-    Geen inhoud voor volwassenen, geen geweld. Pepper&amp;Carrot is, als vrij beschikbare strip, een trots voorbeeld van hoe mooi vrije cultuur kan zijn.<br/>
+    Geen expliciete inhoud, geen geweld. Pepper&amp;Carrot is, als vrij beschikbare strip, een trots voorbeeld van hoe mooi vrije cultuur kan zijn.<br/>
     Ik focus op kwaliteit, want vrij en open-bron betekent niet dat iets slecht of amateuristisch is. Integendeel!</p>
 
         <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
@@ -120,13 +120,13 @@ $LANG = array(
         <img alt="afbeelding: de stripboeken-industrie versus ondersteuning door patrons" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
 
     <div class="philobutton">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="Voor maar 1€,- per aflevering kun je patron van Pepper&amp;Carrot worden">
+        <a class="h4" href="https://www.patreon.com/davidrevoy" title="Voor maar €1 per aflevering kun je patron van Pepper&amp;Carrot worden">
             help me om de productie van Pepper&amp;Carrot sneller te maken
         </a>
     </div>
 
     <p>Bedankt voor het lezen!<br/>
-    -David Revoy</p>
+    –David Revoy</p>
 
  ',
 
@@ -134,32 +134,32 @@ $LANG = array(
 # Page : Contribute
 'CONTRIBUTE_TITLE'       => 'Bijdragen',
 'CONTRIBUTE_TOP'         => '
-    <p>Dankzij de <a href="?static6/sources" title="Sources page">open bronbestanden</a> en de <a href="http://creativecommons.org/licenses/by/4.0/">
+    <p>Dankzij de <a href="?static6/sources" title="Sources page">beschikbare bronbestanden</a> en de <a href="http://creativecommons.org/licenses/by/4.0/">
     Creative Commons-licentie</a> kun je op vele manieren bijdragen aan Pepper&amp;Carrot:</p>
 ',
 'CONTRIBUTE_DONATION'    => '
     <h2>Als patron, donaties</h2>
 
     <p>Op de pagina <a href="?static2/philosophy" title="open de Filosofie-pagina">Filosofie</a> leg ik alles uit over donaties.<br/>
-    Het is makkelijk om patron van Pepper&amp;Carrot te worden voor slechts 1€,- per nieuwe aflevering <a href="https://www.patreon.com/davidrevoy">op Patreon</a>.<br/>
+    Het is makkelijk om patron van Pepper&amp;Carrot te worden voor slechts €1 per nieuwe aflevering <a href="https://www.patreon.com/davidrevoy">op Patreon</a>.<br/>
     Patreon accepteert creditcards uit de hele wereld, en je kunt betalen met een PayPal-account op Patreon.<br/>
     </p>
 ',
 'CONTRIBUTE_FANART'      => '
     <h2>Fanart</h2>
 
-    <p>Pepper&amp;Carrot staat open voor fanart: tekeningen, scenario\'s, beelden, 3D-modellen, fanfictions. Als je ze naar mij opstuurt, dan (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, of via de sociale netwerken) zet ik ze in de fanart-galerij:</p>
+    <p>Pepper&amp;Carrot staat open voor fanart: tekeningen, scenario\'s, beelden, 3D-modellen, fanfictions … Als je ze naar mij opstuurt (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, of via de sociale netwerken), dan zet ik ze in de fanart-galerij:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Afgeleide werken:</h2>
 
-    <p>Pepper&amp;Carrot kan worden gebruikt bij vele projecten or producten, waarom gebruik je het niet bij je eigen project, of doe je mee met een bestaand project?</p>
+    <p>Pepper&amp;Carrot kan gebruikt worden bij vele projecten or producten, waarom gebruik je het niet bij je eigen project, of doe je mee met een bestaand project?</p>
 ',
 
 'CONTRIBUTE_TRANSLATION' => '
     <h2>Vertalingen en correcties:</h2>
 
-    <p>De Pepper&amp;Carrot-website is meertalig en accepteert iedere taal (ook dode talen, of fictieve). De broncode van deze pagina zijn beschikbaar zodat je ze kunt vertalen. Bekijk de <a href="index.php?article267/how-to-add-a-translation-or-a-correction">tutorial</a> voor meer informatie over het toevoegen van een vertaling.</p>
+    <p>De Pepper&amp;Carrot-website is meertalig en accepteert iedere taal (ook dode talen, of fictieve). De broncode van deze pagina\'s is beschikbaar zodat je ze kunt vertalen. Bekijk de <a href="index.php?article267/how-to-add-a-translation-or-a-correction">tutorial</a> voor meer informatie over het toevoegen van een vertaling.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'      => 'Sociale media:',
@@ -167,11 +167,11 @@ $LANG = array(
 'CONTRIBUTE_PRESS'       => '
     <h2>Pers:</h2>
 
-    <p>Word de uitgever van Pepper&amp;Carrot! Schrijf artikelen, zet een post op je website, deel het op je favoriete sociale medium. Je kunt de <a href="?static6/sources" title="Bronnen-pagina">pers-kit</a> downloaden op de bronnen-pagina.</p>
+    <p>Word uitgever van Pepper&amp;Carrot! Schrijf artikelen, zet een post op je website, deel het op je favoriete sociale medium. Je kunt de <a href="?static6/sources" title="Bronnen-pagina">pers-kit</a> downloaden op de bronnen-pagina.</p>
 ',
 
 'CONTRIBUTE_OTHER'       => '
-    <h2>Andere ideeën...</h2>
+    <h2>Andere ideeën …</h2>
 
     <p>Iedereen kan bijdragen op verschillende manieren:<br/>
         <b>Ontwikkelaars:</b> Maak een applicatie om Pepper&amp;Carrot te lezen op mobiele apparaten.<br />
@@ -185,7 +185,7 @@ $LANG = array(
 'CONTRIBUTE_IRC'         => '
     <h2>IRC-kanaal:</h2>
 
-    <p>Chat hier om over Pepper&amp;Carrot te discussiëren. Ik ben overdag (Europese tijd) online (met schermnaam deevad).<br/>
+    <p>Chat hier om over Pepper&amp;Carrot te discussiëren. Ik ben overdag (Franse tijd) online (met schermnaam deevad).<br/>
 ',
 
 ################################################################################
@@ -198,44 +198,44 @@ $LANG = array(
 ',
 'SOURCES_BOTTOM'    => '
     <p>Door deze bestanden te downloaden en ermee te werken, ga je ermee akkoord de termen van de<br/>
-    <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Naamsvermelding-licentie</a> te respecteren.
+    <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons 4.0 Naamsvermelding-licentie</a> te respecteren.
     Bekijk de README-bestanden in ieder project voor meer informatie.</p>
 
-    <p><b> Code-repository\'s voor vertalingen, scripts, de website, tekeningen, enzovoorts:</b><br/></p>
+    <p><b>Code-repository\'s voor vertalingen, scripts, de website, tekeningen, enzovoorts:</b><br/></p>
 ',
 'SOURCE_COVER'      => 'Cover-afbeeldingen',
 'SOURCE_KRITA'      => 'Krita-bronbestanden',
 'SOURCE_TRANSLATOR' => 'Bestanden voor vertalers',
 'SOURCE_WEB'        => 'Web <span class="sourceinfos">90ppi, klein JPEG-formaat</span>',
 'SOURCE_PRINT'      => 'Print <span class="sourceinfos">300ppi, verliesloze compressie</span>',
-'SOURCE_MONTAGE'    => 'Montage <span class="sourceinfos">Alle plaatjes op één pagina</span>',
+'SOURCE_MONTAGE'    => 'Montage <span class="sourceinfos">alle plaatjes op één pagina</span>',
 
 ################################################################################
 # Page : Author
 'AUTHOR_TITLE'                       => 'Over David Revoy',
 'AUTHOR_BIO'                         => '
-    <p>Hoi, mijn naam is David Revoy en ik ben een Franse kunstenaar geboren in 1981. Ik heb mezelf leren tekenen, en ik heb een passie voor schilderen, tekenen, katten, computers, de GNU/Linux-open-bron-cultuur, het internet, ouderwetse RPG-spelletjes, oude manga en anime, traditionele kunst, Japanse cultuur, fantasy...<br />
+    <p>Hoi, mijn naam is David Revoy en ik ben een Franse kunstenaar geboren in 1981. Ik heb mezelf leren tekenen, en ik heb een passie voor schilderen, tekenen, katten, computers, de GNU/Linux-open-bron-cultuur, het internet, ouderwetse RPG-spelletjes, oude manga en anime, traditionele kunst, Japanse cultuur, fantasy …<br />
     <br />
     Na meer dan 10 jaar freelancen in digitaal tekenen, onderwijzen, concept-art, illustratie en regie, heb ik besloten mijn eigen project te beginen. Ik heb eindelijk een manier gevonden om mijn passies met elkaar te combineren; het resultaat is Pepper&amp;Carrot.</p>
 
     <p>Mijn portfolio:</p>
 ',
 'AUTHOR_TODO_DREAM'                  => '
-    <h3>Mijn TODO-lijst met dromen:</h3>
+    <h3>Mijn TODO-lijst met dromen</h3>
 
     <p>
     ☐ Een praatje geven op een Japanse stripconferentie over Pepper&amp;Carrot<br/>
-    ☐ Een Pepper&amp;Carrot videospel spelen met een gamepad<br/>
+    ☐ Een Pepper&amp;Carrot-videospel spelen met een gamepad<br/>
     ☐ Een galerij met honderd fanarts bereiken<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Een Wikipedia-pagina krijgen</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Een foto toegestuurd krijgen van een cosplay van Pepper</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Een foto toegestuurd krijgen van een rode kat met de naam Carrot</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Ondersteund worden door 500 patreons</a><br/>
+    ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Een foto toegestuurd krijgen van een rosse kat met de naam Carrot</a><br/>
+    ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Ondersteund worden door 500 patrons</a><br/>
     ☐ De honderdste aflevering bereiken<br/>
     </p>
 ',
 
-'AUTHOR_CARREER_TITLE'               => 'mijn carrière in 7 bubbels:',
+'AUTHOR_CARREER_TITLE'               => 'Mijn carrière in 7 bubbels',
 'AUTHOR_CARREER_BUBBLE_DESCRIPTIONS' => '<p></p>',
 
 ################################################################################
@@ -244,7 +244,7 @@ $LANG = array(
     <p>De strip, tekeningen en teksten zijn vrijgegeven onder de <a href="https://creativecommons.org/licenses/by/4.0/deed.nl" title="Lees voor meer informatie de Creative Commons Naamsvermelding-licentie 4.0">Creative Commons Naamsvermelding 4.0</a>-licentie, tenzij anders vermeld op de pagina.<br/>
     Gebruik de naamsvermelding "David Revoy, www.davidrevoy.com". Je kunt me bereiken op <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> voor meer informatie.</p>
 
-    <p>Website mogelijk gemaakt door <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
+    <p>Website mogelijk gemaakt door <a href="http://www.pluxml.org" title="PluXml">PluXml</a></p>
 ',
 
 ################################################################################
