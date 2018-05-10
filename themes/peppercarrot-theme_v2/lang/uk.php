@@ -59,13 +59,13 @@ $LANG = array(
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Галерея робіт',
 'WEBCOMIC_SKETCHES'		    =>  'Ескізи',
-'WEBCOMIC_OLDER_COMICS'         => 'Старі вебкомікси від цього же автора'',
+'WEBCOMIC_OLDER_COMICS'         => 'Старі вебкомікси від цього же автора',
 
 ################################################################################
 # Page: Blog
 # when contents are not English (no need to warn user the content is english only here):
 #'LIMITATIONS' 	=> ' Content available in english only ',
-'LIMITATIONS' 		=> '  Зміст доступний тільки на англійскій мові',
+'LIMITATIONS' 		=> '  Зміст доступний лише английською мовою',
 
 ################################################################################
 # Page: Philosophy
