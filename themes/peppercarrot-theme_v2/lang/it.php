@@ -53,6 +53,9 @@ $LANG = array(
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galleria dei lavori artistici',
 'WEBCOMIC_SKETCHES'		    =>  'Schizzi',
+# TODO translate this:
+'WEBCOMIC_OLDER_COMICS'         => 'Older webcomics by the same author',
+
 ################################################################################
 # Page: Blog
 # when content are not English (no need to warn user the content is english only here):

@@ -58,6 +58,8 @@ $LANG = array(
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galeria',
 'WEBCOMIC_SKETCHES'		    =>  'Rascunhos',
+# TODO translate this:
+'WEBCOMIC_OLDER_COMICS'         => 'Older webcomics by the same author',
 
 ################################################################################
 # Page : Blog

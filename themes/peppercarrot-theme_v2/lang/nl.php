@@ -59,6 +59,7 @@ $LANG = array(
 ',
 'WEBCOMIC_ARTWORK'              => 'Galerij',
 'WEBCOMIC_SKETCHES'             => 'Schetsen',
+'WEBCOMIC_OLDER_COMICS'         => 'Oudere webcomics van dezelfde auteur',
 
 ################################################################################
 # Page : Blog

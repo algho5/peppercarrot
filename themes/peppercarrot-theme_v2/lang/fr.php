@@ -59,6 +59,7 @@ $LANG = array(
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galerie d\'illustrations',
 'WEBCOMIC_SKETCHES'		    =>  'Croquis',
+'WEBCOMIC_OLDER_COMICS'         => 'Plus vieux webcomics du même auteur',
 
 ################################################################################
 # Page : Blog
