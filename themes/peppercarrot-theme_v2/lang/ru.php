@@ -3,7 +3,7 @@
 $LANG = array(
 
 # Global
-'TRANSLATED_BY' 		    => 'Перевел: <a href="mailto:phobos1402@gmail.com">uncle Night</a>',
+'TRANSLATED_BY' 		    => 'Перевели: <a href="mailto:phobos1402@gmail.com">uncle Night</a> и <a href="mailto:zverilla7@gmail.com">Zveryok</a>',
 'LANGUAGE_NAME' 			=> 'Русский',
 'LANGUAGE_ISO_CODE_2_LETTER'=> 'ru',
 # http://www.w3schools.com/tags/ref_language_codes.asp --> full list
@@ -42,7 +42,7 @@ $LANG = array(
 'HOMEPAGE_PATREON_INFO'     =>  'За только 1$ за новый эпизод, стань сегодня спонсором на Patreon',
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'Узнать больше',
 'HOMEPAGE_PATREON_BUTTON'   =>  'Стань спонсором Pepper&amp;Carrot на Patreon',
-'HOMEPAGE_PATREON_BOX'      =>  'Стань спонсором Pepper&amp;Carrot на:',
+'HOMEPAGE_PATREON_BOX'      =>  'Стань спонсором Pepper&amp;Carrot на',
 'HOMEPAGE_LAST_EPISODE'     =>  'Последний выпуск',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Новости и обновления',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Другие посты',
@@ -177,7 +177,7 @@ $LANG = array(
         <b>Музыкант:</b>  Написать музыку для Pepper&amp;Carrot.<br />
         <b>Писатель: </b>  Предлагайте новые сценарии для Pepper&amp;Carrot.<br />
         <b>Журналист: </b> Рассказывайте про Pepper&amp;Carrot в традиционном медиа (печатные издания, телевидение, и т.п.)<br />
-        <b>Типограф:</b> напечатать постеры или атрибутику с Pepper&amp;Carrot.<br />
+        <b>Типограф:</b>  Напечатать постеры или атрибутику с Pepper&amp;Carrot.<br />
     </p> 
 ',
 
