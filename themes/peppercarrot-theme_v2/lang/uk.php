@@ -42,8 +42,8 @@ $LANG = array(
 'HOMEPAGE_PATREON_INFO'     =>  'За тільки 1$ за новий епізод, стань сьогодні спонсором на Patreon',
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'Дізнатися більше',
 'HOMEPAGE_PATREON_BUTTON'   =>  'Стати спонсором Pepper&amp;Carrot на Patreon',
-'HOMEPAGE_PATREON_BOX'      =>  'Стати спонсором Pepper&amp;Carrot на:',
-'HOMEPAGE_LAST_EPISODE'     =>  'Останній випуск:',
+'HOMEPAGE_PATREON_BOX'      =>  'Стати спонсором Pepper&amp;Carrot на',
+'HOMEPAGE_LAST_EPISODE'     =>  'Останній випуск',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Новини та оновлення',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Інши пости',
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
@@ -59,7 +59,7 @@ $LANG = array(
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Галерея робіт',
 'WEBCOMIC_SKETCHES'		    =>  'Ескізи',
-'WEBCOMIC_OLDER_COMICS'         => 'Старі вебкомікси від цього же автора',
+'WEBCOMIC_OLDER_COMICS'         => 'Старі вебкомікси від цього ж автора',
 
 ################################################################################
 # Page: Blog
@@ -105,7 +105,7 @@ $LANG = array(
     <h2>Розваги для усіх та й усюди - з упором на якість</h2>
     
     <p>Pepper&amp;Carrot - комедійний/юмористичний веб-комікс, який підійде кожному, незалежно від віку.<br/>
-    Без насильства, без дорослої тематики. Безкоштовний та вільно росповсюджуємий, Pepper&amp;Carrot - чудовий приклад того, якою може быти культура з відкритим вихідним кодом.<br/>
+    Без насильства, без дорослої тематики. Безкоштовний та вільно росповсюджуємий, Pepper&amp;Carrot - чудовий приклад того, якою може бути культура з відкритим вихідним кодом.<br/>
     Я зосереджусь на якості, так як "безкоштовний та вільний" зовсім не означає "плохий" або "аматорський". Зовсім навпаки.</p>
 
         <img alt="ілюстрація: сторінки коміксу літають навколо світу" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
@@ -177,7 +177,7 @@ $LANG = array(
         <b>Музикант:</b>  Написати музику для Pepper&amp;Carrot.<br />
         <b>Письменник: </b>  Запропонувати нові сценарії для Pepper&amp;Carrot.<br />
         <b>Журналіст: </b> Розповідайте про Pepper&amp;Carrot в традіційних медіа (печатні видання, телебачення, тощо)<br />
-        <b>Друкар:</b> надрукувати постери або атрибутику з Pepper&amp;Carrot.<br />
+        <b>Друкар:</b> Надрукувати постери або атрибутику з Pepper&amp;Carrot.<br />
     </p> 
 ',
 
@@ -228,7 +228,7 @@ $LANG = array(
     ☐ Зібрати галерею з 100 фан-артів<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Мати свою сторінку в Вікіпедії</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Отримати фото косплею Перчинки</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Отримати фото рижого кота на і\'мя Морквик</a><br/>
+    ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Отримати фото рудого кота на і\'мя Морквик</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Отримати підтримку 500 добровольців з Patreon</a><br/>
     ☐ Випустити 100 епизодів<br/>
     </p>
