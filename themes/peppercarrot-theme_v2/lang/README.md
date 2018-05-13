@@ -19,6 +19,8 @@ License
 
 * French: David Revoy
 
+* Low German: Rebecca Breu
+
 * Polish: Sölve Svartskogen
 
 * Português: Frederico Batista
