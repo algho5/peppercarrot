@@ -39,12 +39,12 @@ $LANG = array(
     direktemang dör sien Förderer finanzeert<br/>
     üm de Comic-Industrie to verännern!<br/>
 ',
-'HOMEPAGE_PATREON_INFO'     =>  'Warr hüüt noch Förderer op Patreon för man blots 1€ per ne'e Folg',
+'HOMEPAGE_PATREON_INFO'     =>  'Warr hüüt noch Förderer op Patreon för man blots 1€ per ne\'e Folg',
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'Mehr lesen',
 'HOMEPAGE_PATREON_BUTTON'   =>  'Förderer vun Pepper&amp;Wuddel warrn op Patreon',
 'HOMEPAGE_PATREON_BOX'      =>  'Förderer vun P&amp;W warrn op:',
 'HOMEPAGE_LAST_EPISODE'     =>  'Neeste Folg:',
-'HOMEPAGE_NEWS_UPDATE'      =>  'Ne'e Bidrääg:',
+'HOMEPAGE_NEWS_UPDATE'      =>  'Ne\'e Bidrääg:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Mehr Narichten',
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
 'HOMEPAGE_SUPPORTED_BY'     =>  'mööglich maakt dör Förderer.',
@@ -82,14 +82,14 @@ $LANG = array(
 
     <p>Allens, wat ik to Pepper&amp;Wuddel maken do, kann jedereen hier op de Websteed free rünnerladen.<br/>
     Ik behannel ji all glieks: mit oder sünner Geld. All de extra Togaven, de ik för mien Förderer maak, warrt dat ok hier för Jan un Allemann geven.<br/>
-    Pepper&amp;Wuddel warrt nienich vun di verlangen, dat du Geld betahlst oder en Abo afsluttst, üm ne'e Dingen to sehn.
+    Pepper&amp;Wuddel warrt nienich vun di verlangen, dat du Geld betahlst oder en Abo afsluttst, üm ne\'e Dingen to sehn.
 
         <img alt="Bild, dat en Paywall verkloort" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
 
     <h2>Open Source un permissiv</h2>
 
     <p>Ik will Lüüd dat Recht geven, wat se dat, wat ik maakt heff, för ehr egen Projekten bruken köönt, ännern köönt oder sogor Geld dormit verdenen köönt.<br/>
-    All Sieden, Kunstwarken un annern Kraam sünd mit fre'e Open Source Software op GNU/Linux <br/>
+    All Sieden, Kunstwarken un annern Kraam sünd mit fre\'e Open Source Software op GNU/Linux <br/>
     maakt worrn un all de Dateien kannst du op de Websteed hier in dat Menü &#39;Originaldateien&#39; finnen.<br/>
     Geern dörvt ji de Saken kommerziell bruken, översetten, wiedergeven oder Fan-Art, Drucke, Films, Videospelen usw. maken.<br/>
     Ji mööt man blots mien Naam - David Revoy - as Autor nömen.</p>
@@ -106,7 +106,7 @@ $LANG = array(
 
     <p>Pepper&amp;Wuddel is en lustigen Webcomic för Jan un Allemann, egal, wo olt.<br/>
 
-    Allens is passlich för junge Lüüd, dat gifft keen Gewalt. Free un Open Source as Pepper&amp;Wuddel is, is dat en stolt Bispill dorför, wo cool fre'e Kultur ween kunn.<br/>
+    Allens is passlich för junge Lüüd, dat gifft keen Gewalt. Free un Open Source as Pepper&amp;Wuddel is, is dat en stolt Bispill dorför, wo cool fre\'e Kultur ween kunn.<br/>
     Qualität is för mi wichtig, denn "free" un "Open Source" heet nich slecht oder amateurhaftig. Ganz in \'t Gegendeel!</p>
 
         <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
@@ -121,7 +121,7 @@ $LANG = array(
 
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Warr en Patreon vun Pepper&amp;Wuddel för man blots 1€ per Folg.">
-            Help mi hüüt, dat ik gauer ne'e Folgen vun Pepper&amp;Wuddel maken kann.
+            Help mi hüüt, dat ik gauer ne\'e Folgen vun Pepper&amp;Wuddel maken kann.
         </a>
     </div>
 
@@ -207,7 +207,7 @@ $LANG = array(
 'SOURCE_KRITA'   =>  'Krita-Originaltdateien',
 'SOURCE_TRANSLATOR'=>  'Paket för Översetter',
 'SOURCE_WEB'      =>  'Nett <span class="sourceinfos">90ppi, komprimeert JPEG</span>',
-'SOURCE_PRINT'        =>  'Drucken <span class="sourceinfos">300ppi, verlustfre'e Qualität</span>',
+'SOURCE_PRINT'        =>  'Drucken <span class="sourceinfos">300ppi, verlustfre\'e Qualität</span>',
 'SOURCE_MONTAGE'   =>  'Allens tosamen <span class="sourceinfos">All Biller op en Siet</span>',
 
 ################################################################################
