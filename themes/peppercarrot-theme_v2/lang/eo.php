@@ -25,7 +25,7 @@ $LANG = array(
 'WIKI'          =>  'Vikio',
 'SOURCES'       =>  'Fontoj',
 'AUTHOR'        =>  'Aŭtoro',
-'FOLLOW'        =>  'Sekvi Pipron kaj Karoĉjon je:',
+'FOLLOW'        =>  'Sekvi Pipron kaj Karoĉjon ĉe:',
 
 ################################################################################
 # Top and bottom translation panel
@@ -60,7 +60,7 @@ $LANG = array(
 'WEBCOMIC_ARTWORK'		    =>  'Galerio de artaĵoj',
 'WEBCOMIC_SKETCHES'		    =>  'Skizoj',
 # TODO translate this:
-'WEBCOMIC_OLDER_COMICS'         => 'Older webcomics by the same author',
+'WEBCOMIC_OLDER_COMICS'         => 'Antaŭaj retkomiksoj de la sama aŭtoro',
 
 ################################################################################
 # Page: Blog
