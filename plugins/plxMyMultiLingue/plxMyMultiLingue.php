@@ -825,16 +825,11 @@ public function MyMultiLingueComicDisplay($params) {
     ## debug: to test
     #echo "<b>&#36;pagenumber</b> [" . $comicpage_number . "] <br />";
 
-    # Managing conditional title and alt text for <img> html tag
-    ## in case of a cover (page 00)
-    if ( $comicpage_number == "00" ) {
-      $comicpage_title = ''.$plxShow->Getlang('SOURCE_COVER').'';                                 
-    ## else it's a normal page  
-    } else {
+    # Managing conditional alt text for <img> html tag
+    ## only in case of a normal page
+    if ( $comicpage_number != "00" ) {
       # Remove the 0 in front of double digit page number
       $comicpage_number = ltrim($comicpage_number, '0');
-      # Build a clean title regionalised
-      $comicpage_title = ''.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number.' '.$plxShow->Getlang('UTIL_EPISODE').' '.$episode_number.' ['.$this->lang.'], Pepper&amp;Carrot'; 
       # Build a usefull alternative link in case of a page do not load...    
       $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$comicpage_number.' , '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number.'';
     
@@ -846,11 +841,11 @@ public function MyMultiLingueComicDisplay($params) {
 
     # Display of the resulting HTML code
     #   <a href="#'.$comicpage_anchorlink.'" id="'.$comicpage_anchorlink.'" >
-    #     <img class="comicpage" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'" title="'.$comicpage_title.'">
+    #     <img class="comicpage" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">
     #   </a>
     echo '
     <div class="panel" align="center">
-        <img class="comicpage" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'" title="'.$comicpage_title.'">
+        <img class="comicpage" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">
     </div>
     ';
     }
@@ -903,10 +898,8 @@ public function MyMultiLingueComicHeader() {
     echo '</div>';
     }
 
-    $comicpage_title = ''.$plxShow->Getlang('SOURCE_COVER').'';                                 
     # Remove the 0 in front of double digit page number
     $comicpage_number = '0';
-    $comicpage_title = ''.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number.' '.$plxShow->Getlang('UTIL_EPISODE').' '.$episode_number.' ['.$this->lang.'], Pepper&amp;Carrot'; 
     # Build a usefull alternative link in case of a page do not load...    
     $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$comicpage_number.' , '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number.'';
     # Define the anchor link
@@ -917,7 +910,7 @@ public function MyMultiLingueComicHeader() {
     # Display of the resulting HTML code of the header
     echo '
     <div class="panel" align="center">
-        <img class="comicpage" src="'.$comicpage_header.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'" title="'.$comicpage_title.'">
+        <img class="comicpage" src="'.$comicpage_header.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">
     </div>
     ';
 }
