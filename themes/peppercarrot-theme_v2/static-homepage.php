@@ -29,7 +29,7 @@ $lang = $plxShow->defaultLang($echo);
                 <a href="https://www.patreon.com/davidrevoy" title="<?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?> Patreon" class="custombutton minipatreon">Patreon</a>
                 <a href="https://www.tipeee.com/pepper-carrot" title="<?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?> Tipeee" class="custombutton tipeee">Tipeee</a>
                 <a href="https://paypal.me/davidrevoy" title="Send money via Paypal" class="custombutton paypal">Paypal</a>
-                <a href="<?php $plxShow->urlRewrite('?static12/iban-and-mail-adress') ?>" title="Send money via IBAN or Send goods via mail." class="custombutton iban">IBAN/Mail</a>
+                <a href="<?php $plxShow->urlRewrite('?static12/iban-and-mail-adress') ?>" title="Send money via IBAN or Send goods via mail" class="custombutton iban">IBAN/Mail</a>
               </div>
             </div>
           </div>
@@ -45,9 +45,9 @@ $lang = $plxShow->defaultLang($echo);
             <div class="lastep">
               <figure>
                 <a href="#art_url" title="#art_title">
-                  <img src="plugins/vignette/plxthumbnailer.php?src=#episode_vignette&amp;w=630&amp;h=550&amp;s=1&amp;q=65" alt="#art_title" title="#art_title , click to read" >
+                  <img src="plugins/vignette/plxthumbnailer.php?src=#episode_vignette&amp;w=630&amp;h=550&amp;s=1&amp;q=65" alt="#art_title" title="#art_title, click to read" >
                 </a>
-                <figcaption><a href="#art_url" title="#art_title"><span class="detail">#art_date #art_nbcoms</span></a></figcaption>
+                <figcaption><a href="#art_url" title="#art_title"><span class="detail">#art_date#art_nbcoms</span></a></figcaption>
               </figure>
             </div>
           </div>
@@ -70,7 +70,7 @@ $lang = $plxShow->defaultLang($echo);
                 <div class="homethumbnail">
                 <figure>
                   <a href="#art_url" title="#art_title">
-                    <img src="plugins/vignette/plxthumbnailer.php?src=#art_vignette&amp;w=270&amp;h=160&amp;s=1&amp;q=60&amp;a=t" alt="#art_title" title="#art_title , click to read" >
+                    <img src="plugins/vignette/plxthumbnailer.php?src=#art_vignette&amp;w=270&amp;h=160&amp;s=1&amp;q=60&amp;a=t" alt="#art_title" title="#art_title, click to read" >
                   </a>
                   <figcaption><a href="#art_url" title="#art_title">#art_supertitle #art_date#art_nbcoms</span></a></figcaption>
                 </figure>
