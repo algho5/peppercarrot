@@ -59,6 +59,7 @@ $LANG = array(
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Artwork-Galerie',
 'WEBCOMIC_SKETCHES'		    =>  'Teknungen',
+'WEBCOMIC_OLDER_COMICS'             =>  'Öllere Webcomis vun de sülvige Autor',
 
 ################################################################################
 # Page : Blog
@@ -114,7 +115,7 @@ $LANG = array(
     <h2>Laat uns de Comic-Industrie verännern!</h2>
 
     <p>Wiel dat weniger Arbeit för de Organisatschoon twischen Lesers un Künstler gifft, betahlt ji weniger un ik verdeen mehr. Ji geevt mi direktemang Stütt.<br/>
-    Keen Redakteur/Verlag/Marketing un keen Mood kann mi dwingen, Pepper&amp;Wuddel to verännern un an &#39;den Markt&#39; antopassen.<br/>
+    Keen Redakteur/Verlag/Marketing un keen Mood kann mi dwingen, Pepper&amp;Wuddel to verännern un an &#39;de Markt&#39; antopassen.<br/>
     ... Worüm schull nich en enkelde Comic, de allerbest löppt, en Lawien in Gang setten, de de hele Industrie in de Knee dwingt? Laat uns dat versöken!</p>
 
         <img alt="Illustration: Comic-Industrie VS Patreon-Unterstützung" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
@@ -174,7 +175,7 @@ $LANG = array(
     <h2>Annere Ideen to \'n Mitmaken...</h2>
 
     <p>Jedereen kann mitmaken op vele verschedene Oorden:<br/>
-        <b>Programmerer:</b> Maakt en App, mit de een Pepper&amp;Wuddel op mobile Geräten lesen kann.<br />
+        <b>Programmerer:</b> Maakt en App, mit de de Lüüd Pepper&amp;Wuddel op mobile Geräten lesen köönt.<br />
         <b>Muskanten:</b> Nehmt musikaalsche Themen för Pepper&amp;Wuddel op.<br />
         <b>Texter: </b> Sleit ne\'e Szenarien för Pepper&amp;Wuddel vör.<br />
         <b>Journalisten:</b> Schrievt över Pepper&amp;Wuddel in traditionelle Medien (druckte Press, Feernsehn, usw...)<br />
@@ -212,11 +213,11 @@ $LANG = array(
 
 ################################################################################
 # Page : Author
-'AUTHOR_TITLE'		=> 'över David Revoy',
+'AUTHOR_TITLE'		=> 'Över David Revoy',
 'AUTHOR_BIO'	    => '
     <p>Hi, ik heet David Revoy, ik bün en franzööschen Künstler un 1981 op de Welt kamen. Ik bün Autodidakt un heff groot Vermaak för dat Teken un Malen, för Katten, Computer, GNU/Linux Open Source, Kultur, Internet, old-school Computer-RPGs, olle Mangas un Anime, traditionelle Kunst, japaansche Kultur, Fantasy...<br/>
     <br />
-    Na över teihn Johr Arbeit in de Rebeden digitaal Malen, Lehren, Concept Art, Illustration un Art-Direction heff ik nu mien egen Projekt in \'t Leven ropen. Dormit heff ik endlich en Weg funnen, allens ünner en Hoot to kriegen, wat ik geern mag; un dorbi rutsuert is Pepper&amp;Wuddel.<p/>
+    Na över teihn Johr Arbeit in de Rebeden digitaal Malen, Lehren, Concept Art, Illustration un Art-Direction heff ik nu mien egen Projekt in \'t Leven ropen. Dormit heff ik endlich en Weg funnen, allens ünner en Hoot to kriegen, wat ik geern mag – un dorbi rutsuert is Pepper&amp;Wuddel.<p/>
 
     <p>Mien Portfolio:</p>
 ',
@@ -228,7 +229,7 @@ $LANG = array(
     ☐ Mit \'n Gamepad en Pepper&amp;Wuddel-Videospeel spelen<br/>
     ☐ En Galerie vun 100 Fan-Art-Bidrääg tohoopdregen<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">En egen Siet op Wikipedia</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">En Foto vun en Pepper-Cosplay tostüert kriegen><br/>
+    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">En Foto vun en Pepper-Cosplay tostüert kriegen</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">En Foto vun en rode Katt, de Wuddel heet, tostüert kriegen</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Vun 500 Patreons Stütt kregen</a><br/>
     ☐ Bet na Folg 100 kamen<br/>
@@ -241,7 +242,7 @@ $LANG = array(
 ################################################################################
 # Website General : Footer
 'FOOTER_CONTENT'    => '
-    <p>Webcomics, Kunstwarken un Wöör staht ünner de <a href="https://creativecommons.org/licenses/by/4.0/deed.de" title="Wullt du mehr weten, kiek: Creative Commons Namensnennung 4.0 Unported">Creative Commons Namensnennung 4.0 Unported</a>, wenn dor nix anners op de Siet seggt warrt.<br/>
+    <p>Webcomics, Kunstwarken un Wöör staht ünner de Lizenz <a href="https://creativecommons.org/licenses/by/4.0/deed.de" title="Wullt du mehr weten, kiek: Creative Commons Namensnennung 4.0 Unported">Creative Commons Namensnennung 4.0 Unported</a>, wenn dor nix anners op de Siet seggt warrt.<br/>
     Nöömt de Naam vun "David Revoy, www.davidrevoy.com". Snackt mit mi: <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, wenn ji mehr weten wullt.</p>
 
     <p>Website powered by <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
