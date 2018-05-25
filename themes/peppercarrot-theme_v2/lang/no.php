@@ -3,7 +3,7 @@
 $LANG = array(
 
 # Global
-'TRANSLATED_BY' 		    => 'Oversatt av: <a href="https://3dnett.no">Thomas Nordstrøm</a>',
+'TRANSLATED_BY' 		    => 'Oversatt av: <a href="http://3dnett.no">Thomas Nordstrøm</a>',
 'LANGUAGE_NAME' 			=> 'Norsk',
 'LANGUAGE_ISO_CODE_2_LETTER'=> 'no',
 # http://www.w3schools.com/tags/ref_language_codes.asp --> full list
@@ -21,7 +21,7 @@ $LANG = array(
 'BLOG'          =>  'Blogg',
 'PHILOSOPHY'    =>  'Filosofi',
 'CONTRIBUTE'    =>  'Bidra',
-'COMMUNITY'     =>  'Gemeinschaft',
+'COMMUNITY'     =>  'Samfunn',
 'WIKI'          =>  'Wiki',
 'SOURCES'       =>  'Kildefiler',
 'AUTHOR'        =>  'Forfatter',
@@ -59,8 +59,7 @@ $LANG = array(
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galleri',
 'WEBCOMIC_SKETCHES'		    =>  'Skisser',
-# TODO translate this:
-'WEBCOMIC_OLDER_COMICS'         => 'Older webcomics by the same author',
+'WEBCOMIC_OLDER_COMICS'         => 'Eldre nettstriper av samme forfatter',
 
 ################################################################################
 # Page: Blog
@@ -74,7 +73,7 @@ $LANG = array(
  <h2>Støttet av sponsorer</h2>
 
     <p>Pepper&amp;Gulrot er finansiert ene og alene av sponsorer verden over.<br/>
-	Hver sponsor sender en liten slant med penger for hver nye episode som blir laget og blir kreditert på slutten av hver episode.<br/>
+	Sponsorene sender en liten slant med penger for hver nye episode som blir laget og blir kreditert på slutten av hver episode.<br/>
 	Dette systemet tillater Pepper&amp;Gulrot &aring; v&aelig;re 100 prosent uavhengig uten &aring; måtte ty til reklame eller andre triks som kan
 	ødelegge seriens orginalitet.</p>
 ',
@@ -83,7 +82,7 @@ $LANG = array(
 
     <h2>100% gratis, for alltid, ingen betalingsmur</h2>
 
-    <p>Alt Pepper&amp;gulrot materiale jeg produserer er tilgjengelig p&aring; denne nettsiden fritt og tilgjengelig for alle.<br/>
+    <p>Alt Pepper&amp;gulrot materiale jeg produserer legges ut p&aring; denne nettsiden fritt og tilgjengelig for alle.<br/>
 	Jeg har like mye respekt for dere alle enten dere bidrar eller ikke. Alt ekstramateriale jeg lager for mine sponsorer blir ogs&aring; gjort tilgjengelig her.<br/>
     Pepper&amp;Gulrot kommer aldri til å be deg om hverken penger eller noen form for abonnement for &aring; f&aring; tilgang til nytt innhold.</p>
 
@@ -91,7 +90,7 @@ $LANG = array(
 
     <h2>Åpent og givende</h2>
 
-    <p>Jeg ønsker å gi alle full rett til å dele, bruke, endre og tilogmed tjene penger på materialet jeg har produsert.<br/>
+    <p>Jeg ønsker å gi alle full rett til å dele, bruke, endre og til og med tjene penger på materialet jeg har produsert.<br/>
 	Alle sider og alt innhold er laget med fri/libre åpen kildekode programmer på GNU/Linux. Alt kildemateriale er tilgjengelig her, &#39;Kildefiler&#39; i menyen.<br />
 	Jeg oppmuntrer til kommersiel bruk, fan-art, utskrifter, filmer, videospill og videredeling<br/>
 	Det eneste jeg vil ha tilbake er kreditering av skaperne (Kunstnere, korrekturlesere og oversettere involvert i materialet du &oslash;nsker &aring; bruke).
@@ -120,7 +119,7 @@ $LANG = array(
 
     <p>
 	Ettersom det ikke er noe mellomledd mellom tegner og publikum, betaler du mindre og f&aring;r mer. Din st&oslash;tte g&aring;r til meg direkte.</br>
-	Ingen utgivere distribut&oslash;rer eller markedsf&oslash;rere kan tvinge meg til &aring; forandre Pepper&amp;Gulrot for &aring; tilpasses til deres markedsvisjon.</br>
+	Ingen utgivere distribut&oslash;rer eller markedsf&oslash;rere kan tvinge meg til &aring; forandre Pepper&amp;Gulrot for &aring; tilpasses deres markedsvisjon.</br>
 	Er der mulig for en enslig seriesuksess &aring; skape en sn&oslash;balleffekt som forandrer en industri i krise? Det gjenst&aring;r &aring; se...</p>
 	
         <img alt="illustration: comic book industry VS patreon support" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
@@ -239,7 +238,7 @@ $LANG = array(
     ☐ F&aring; over 100 fan-arts i galleriet<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">F&aring; en egen Wikipedia side</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Motta bilde av en Pepper cosplay</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">F&aring; et bilde av en r&oslash;d kat som heter Gulrot</a><br/>
+    ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">F&aring; et bilde av en r&oslash;d katt som heter Gulrot</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">bli st&oslash;ttet av 500 f&oslash;lgere p&aring; Patreon</a><br/>
     ☐ N&aring; episode 100<br/>
     </p>
