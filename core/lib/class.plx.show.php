@@ -508,7 +508,9 @@ class plxShow {
 			$url = $this->plxMotor->plxRecord_arts->f('url');
 			# On effectue l'affichage
 			echo '<a href="'.$this->plxMotor->urlRewrite('?article'.$id.'/'.$url).'" title="'.$title.'">'.$title.'</a>';
-		} else { # Type normal
+		} elseif($type == 'url') { # Type urlencode (Pepper&Carrot specific)
+      echo urlencode(plxUtils::strCheck($this->plxMotor->plxRecord_arts->f('title')));
+		} else {
 			echo plxUtils::strCheck($this->plxMotor->plxRecord_arts->f('title'));
 		}
 	}
