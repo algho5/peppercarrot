@@ -47,42 +47,37 @@ h4{font-size:1.2rem}
 .responsive-menu label { color: #3A2619; background-color: transparent; font: normal 2rem 'ComicSpice', cursive; }
 
 /* translation pills */
-.translabar { padding: 0 0 0 0; margin: 0.5rem 0; max-width: 990px }
+.translabar { padding: 0 0 0 0; margin: 0.5rem 0; max-width: 1060px }
 .translabar li { background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px }
 .translabar li.active { background-color: #D7EBFA; border: solid 1px #B1D6F2;}
 .translabar a { text-decoration: none; font-size: 0.9rem; }
 
 /* HOMEPAGE */
+
 /* cover */
 .cover { height: 400px; border-radius: 0.4rem; color:#DDD; margin-bottom: 0.3rem; background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat center left; }
-.cover h1 { color: #FFF; text-shadow: 0 2px 2px #000; margin: 0.4rem; line-height: 2.6rem; font-size: 2.4rem; text-align:right; }
-.covertextoverlay { position: absolute; right: 2.5rem; top: 1.6rem; text-align:right; }
-#coverpatronbox { color: #222; background-color: #FFF; width: 375px; height: 170px; padding: 10px 4px; margin: 2.5rem 0 0 auto; text-align: center; font-size: 1.2rem; box-shadow: 0 3px 3px rgba(0,0,0,0.3); }
-#coverpatronbox img{ margin-top: 6px; }
-#alternativesbox { color: #8F8F8F; position: absolute; bottom: 13px; right: 6px; width: 360px; font-size: 0.95rem; line-height: 1.8; text-align: center;  }
-
-.custombigbutton	{ font-weight: bold; display:block; background-color: #777;	border-color: transparent; color: #fff; cursor: pointer; padding: .7rem 1.2rem; box-shadow: 0 3px 3px rgba(23,23,23,0.3); border-radius: 0.6rem; text-shadow: 0 2px rgba(18,18,18,0.3);}
-.custombigbutton:hover	{ opacity: 0.8;}
-.liberapay { width: 220px; font-size: 1.8rem; color: #fff; padding-left: 3.5rem; background: #f6c914 url('../img/logo-liberapay.svg') no-repeat center left; margin: 0.4rem auto 0 auto; }
-
-.custombutton	{ font-weight: bold; font-size: 0.85rem; background-color: #777;	border-color: transparent; color: #fff; cursor: pointer; padding: .3rem 0.4rem; margin-right: 0.1rem; box-shadow: 0 2px 2px rgba(18,18,18,0.3); border-radius: 0.3rem; text-shadow: 0 1px rgba(18,18,18,0.3);}
-.custombutton:hover	{ opacity: 0.8;}
-.minipatreon { color: #fff; padding-left: 1.9rem; background: #f96854 url('../img/logo-patreon.svg') no-repeat center left 3px; }
-.tipeee { color: #fff; padding-left: 1.9rem; background: #d84759 url('../img/logo-tipeee.svg') no-repeat center left 3px; }
-.paypal { color: #fff; padding-left: 1.9rem; background: #FFC438 url('../img/logo-paypal.svg') no-repeat center left 3px; }
-.iban { color: #fff; padding-left: 1.9rem; background: #4595e0 url('../img/logo-iban.svg') no-repeat center left 3px; }
-
-#alternatives .link { color: #8F8F8F; text-decoration: underline; }
-#alternatives .link:hover { color: #333; }
+.cover h1 { color: #FFF; margin: 0.4rem; line-height: 2.6rem; font-size: 2.4rem; text-align:right; text-shadow: 0 1px 1px rgba(0,0,0,0.4), 0 2px 2px rgba(0,0,0,0.3), 0 4px 2px rgba(0,0,0,0.4);}
+.covertextoverlay { position: absolute; right: 5.5rem; top: 3rem; text-align:right; }
+#coversupportbox { position: absolute; right: -0.85rem; top: 9.5rem; color: #222; width: 450px; height: 190px; text-align: center; }
 .homepage-title { font-family: 'ComicSpice', cursive; font-size:1.5rem;}
-.joinnow { color: #fff; background-color: #232D32; padding:0.8rem 0.7rem 0.6rem 0.7rem; border-radius: 0.4rem; box-shadow: 0 5px 5px rgba(23,23,23,0.3);}
-.joinnow:hover { color: #fff; text-decoration: none; background-color: #223B48; }
-.moreinfo { color: #587930; background: #a7e059; background: linear-gradient(#baf765, #a7e059); padding:0.8rem 0.7rem 0.6rem 0.7rem; border-radius: 0.4rem; box-shadow: 0 5px 5px rgba(23,23,23,0.3);}
-.moreinfo:hover { color: #82C036; text-decoration: none; background: #a7e059; background: linear-gradient(#EDFFA6, #a7e059); }
+
+/* Support box */
+.bigbuttonpatreon { font-size: 1.8rem; font-weight: bold; font-family: ubuntu, helvetica, arial, sans-serif; color: #FFFFFF; text-align: center; min-height: 80px; min-width: 374px; padding: 0 0 10px 0; margin: 0 auto; display: inline-block; text-decoration: none; border-radius: 10px; box-shadow: 0 2px 3px rgba(23,23,23,0.3);  background: #F96854 url('../img/logo-patreon.svg') no-repeat 120px 36px; background-size: 42px 42px; text-shadow: 0 1px 1px rgba(0,0,0,0.4) }
+.bigbuttonpatreon:hover { color: #FFF; text-decoration: none;}
+.alternatives {font-size: 0.8rem; font-weight: normal; font-family: ubuntu, helvetica, arial, sans-serif; color: rgba(0,0,0,0.5); margin: 0.5rem 0;}
+.custombutton	{ font-size: 0.85rem; font-weight: bold; font-family: ubuntu, helvetica, arial, sans-serif; color: #FFFFFF; text-align: center; padding: .3rem 0.4rem; margin-right: 0.1rem; background-color: #777;	border-color: transparent; box-shadow: 0 2px 2px rgba(18,18,18,0.3); border-radius: 0.3rem; cursor: pointer; text-shadow: 0 1px 1px rgba(0,0,0,0.4);  }
+.custombutton:hover	{ color: #FFF; opacity: 0.8; }
+.tipeee { padding-left: 32px; background: #d84759 url('../img/logo-tipeee.svg') no-repeat center left 3px; }
+.paypal { padding-left: 28px; background: #FFC438 url('../img/logo-paypal.svg') no-repeat center left 3px; }
+.liberapay { padding-left: 28px; background: #ffd115 url('../img/logo-liberapay.svg') no-repeat center left 3px; }
+.G1 { padding-left: 28px; background: #2873B7 url('../img/logo-g1.svg') no-repeat center left 3px; }
+.iban { padding-left: 28px; background: #4595e0 url('../img/logo-iban.svg') no-repeat center left 3px; }
+
 /* box */
 .homebox { position: relative;}
 .homebox h2 { font: normal 1.5rem 'ComicSpice', cursive; margin: 0 0 0.4rem 0; padding: 0 0; min-height: 1rem; text-decoration: none; overflow: hidden; white-space: nowrap; }
 .news {margin-bottom: 1rem;}
+
 /* last episode */
 .lastep { position: relative; border-radius: 0.4rem; }
 .lastep img { border: solid 1px #EFEFEF; border-radius: 0.4rem; border: solid 1px #EFEFEF; width:100% }
@@ -150,22 +145,6 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 /* ----------- */
 /* link to sources */
 .sourcebutton { margin: 0 auto; background: #D7EBFA url('../ico/dl_sources.svg') no-repeat center left 10px; padding: 0.6rem 0.7rem 0.6rem 3rem; border-radius: 10px }
-
-/* Follow me footer webcomic */
-.followcomic { padding: 0 0; margin: 0 0; font-size: 1.3rem; color: #000; font-family: 'ComicSpice';}
-.followcomic b{ font-size: 1.5rem;}
-.followbutton { display: block; text-decoration: none; color: #FFFFFF; width: 100%; padding: 0.1rem 0.5rem; margin: 0.1rem 0rem; border-radius: 10px; box-shadow: 0 2px 3px rgba(23,23,23,0.3); }
-.followbutton:hover { text-decoration: underline; color: #FFF; }
-
-/* Support */
-.patreon { padding: 1.5rem 0 0 2.5rem; margin: 0 auto; background: url('../img/followbackground_patreon-logo.png') no-repeat center left; background-color: #F96854; min-height: 80px; max-width:480px; text-align: center; color: #111; font-size: 1.5rem; margin-bottom: 0.8rem; color: #FFF; }
-.patreon:hover { text-decoration: none; }
-.supportmetxt { color: #999; font: 1rem ubuntu,Arial,sans ;}
-.supportmetxt a { color: #2B92D7; text-decoration: underline; }
-.donationillustration { display: block; min-height: 280px; background: url('../img/followbackground_patreon_illu.jpg') no-repeat center;}
-.paypal { min-height: 45px; text-align: center;}
-div.paypal form { margin-bottom: 0; display: inline;}
-div.paypal form input { padding: 0; background: transparent; border: 2px inset #D9D9D9; width: auto; border-radius: 0; }
 
 /* Network */
 .twitter { background: url('../img/followbackground_twitter.jpg') no-repeat center left; background-color: #3DB8E4; min-height: 80px; text-align: right;}
@@ -282,14 +261,14 @@ a:hover { text-decoration:none;}
 @media (max-width: 900px) {
 input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .cover h1 { font-size: 2.2rem; margin: 1rem 0 0.4rem 0; }
-.cover { background: url('../img/pepper-carrot-cover2_by-david-revoy.jpg') no-repeat 25% 80%; }
+.cover { background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 25% 80%; }
 .moreposts { text-align: center; margin: 1rem 0 0 0; }
 }
 
 /* vertical++ */
 @media (max-width: 700px) {
 .cover h1 { font-size: 1.8rem; margin: 0.3rem 0 0.4rem 0; }
-.cover { height: 350px; background: url('../img/pepper-carrot-cover2_by-david-revoy.jpg') no-repeat 35% 5%; }
+.cover { height: 350px; background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 35% 5%; }
 .covertextoverlay { right: 1.3rem;}
 }
 
@@ -316,8 +295,9 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .cover h1 { font-size: 1.48rem; color: #111; margin: 0.3rem 0 1.1rem 0; text-shadow:none; }
 .joinnow { font-size: 0.8rem }
 .moreinfo { font-size: 0.8rem }
-.cover { background: url('../img/pepper-carrot-cover2_by-david-revoy.jpg') no-repeat 28% bottom; }
+.cover { background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 28% bottom; }
 .buttoncoverbox { top: 0px; right: 1.3rem; padding-right: 0.5rem} 
+.bigbuttonpatreon { min-width: 360px;}
 }
 
 /* footer */

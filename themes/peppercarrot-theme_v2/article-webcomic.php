@@ -58,6 +58,7 @@ $lang = $plxShow->defaultLang($echo);
 <!-- Content -->
 <section class="text-center">
 <?php eval($plxShow->callHook("MyMultiLingueComicDisplay", array(''.$UrlAdressOption.''))) ?>
+  <?php include(dirname(__FILE__).'/share.php'); ?>    
   <small>
     <time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>"><?php $plxShow->artDate('#num_day #month #num_year(4)'); ?></time>
   </small>
@@ -69,7 +70,6 @@ $lang = $plxShow->defaultLang($echo);
   <div style="clear:both;"><br/></div>
   <footer class="col sml-12 med-12 lrg-12 text-center">
   <?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>
-  <?php include(dirname(__FILE__).'/share.php'); ?>  
   <?php include(dirname(__FILE__).'/supportme.php'); ?>
   <?php include(dirname(__FILE__).'/navigation.php'); ?>
   </div>

@@ -19,18 +19,8 @@ $lang = $plxShow->defaultLang($echo);
         <div class="cover">
           <div class="covertextoverlay">
             <h1><?php $plxShow->lang('HOMEPAGE_BIG_TEXT') ?></h1>
-            <div id="coverpatronbox">
-              <?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?>
-              <br/>
-                <a href="https://liberapay.com/davidrevoy/" title="<?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?> Liberapay" class="custombigbutton liberapay">Liberapay</a>
-              <br/>
-              <div id="alternativesbox">
-                <?php $plxShow->lang('HOMEPAGE_ALTERNATIVES') ?><br/>
-                <a href="https://www.patreon.com/davidrevoy" title="<?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?> Patreon" class="custombutton minipatreon">Patreon</a>
-                <a href="https://www.tipeee.com/pepper-carrot" title="<?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?> Tipeee" class="custombutton tipeee">Tipeee</a>
-                <a href="https://paypal.me/davidrevoy" title="Send money via Paypal" class="custombutton paypal">Paypal</a>
-                <a href="<?php $plxShow->urlRewrite('?static12/iban-and-mail-adress') ?>" title="Send money via IBAN or Send goods via mail" class="custombutton iban">IBAN/Mail</a>
-              </div>
+            <div id="coversupportbox">
+            <?php include(dirname(__FILE__).'/supportme.php'); ?>
             </div>
           </div>
         </div>
