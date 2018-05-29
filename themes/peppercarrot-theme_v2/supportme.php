@@ -1,6 +1,6 @@
 <?php if(!defined('PLX_ROOT')) exit;?>
 <div style="padding: 0.8rem 0 0.8rem 0;">
-  <a class="bigbuttonpatreon" href="https://www.patreon.com/davidrevoy">
+  <a class="bigbuttonpatreon" href="https://www.patreon.com/davidrevoy" title="<?php $plxShow->lang('HOMEPAGE_PATREON_INFO') ?>">
     <span style="font-size: 65%; font-weight: normal;"><?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?></span><br>
     <span style="padding-left: 50px;">Patreon</span>
   </a>
