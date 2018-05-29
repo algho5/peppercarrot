@@ -1,20 +1,5 @@
 <?php if (!defined('PLX_ROOT')) exit;
-$version = "5.0.0";
-# Changelog
-#
-# 5.0.0 - nov2017 - fix and rewrite for standalone on it's own Git. Open-source!
-# 4.0.0 - jul2017 - improves homepage, blog, link, cleaning.
-# 3.0.4 - dec2016 - improved commments on smartphones, refactoring of comments in DOM
-# 3.0.3 - dec2016 - New home page optimization and progress bar for funding, improved caching of cat-avatar, improved commments
-# 3.0.0 - nov2016 - Removed CDN, Font-awesome, Social-network, GoogleFont.... So big work! Pepper&Carrot is now 100% clean.
-# 2.5.0 - nov2016 - background for blog, wiki and fix meta + new share for diaspora
-# 2.4.0 - nov2016 - Split homepage and webcomic, rewrite the blog, wiki sidebar, share, top menu links, article styles, plug fan-art in sidebar , smartphone homepage scaling
-# 2.3.0 - nov2016 - Split CSS, update plucss, redo the cover + update + fan-art on homepage, change font for ubuntu by default, better japanese rounded font
-# 2.2.0 - oct2016 - Change homepage layout
-# 2.1.2 Featured banner homepage, better blog figcaption homapage, fix cyrilic nav
-# 2.1.1 Comments new style, avoid tartine
-# 2.1   Php7+Pluxml5.5+refactor-sources
-
+$version = "180529";
 $idStat = $plxShow->staticId();
 $idCats = $plxShow->catId();
 $idMode = $plxShow->mode();

@@ -57,10 +57,9 @@ $lang = $plxShow->defaultLang($echo);
 
 <!-- Content -->
 <section class="text-center">
-<?php eval($plxShow->callHook("MyMultiLingueComicDisplay", array(''.$UrlAdressOption.''))) ?>
-  <?php include(dirname(__FILE__).'/share.php'); ?>    
+<?php eval($plxShow->callHook("MyMultiLingueComicDisplay", array(''.$UrlAdressOption.''))) ?>  
   <small>
-    <time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>"><?php $plxShow->artDate('#num_day #month #num_year(4)'); ?></time>
+    <time style="color: rgba(0,0,0,0.6);" datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>"><?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?></time>
   </small>
 
 </section>
@@ -69,8 +68,14 @@ $lang = $plxShow->defaultLang($echo);
   <!-- Footer infos -->
   <div style="clear:both;"><br/></div>
   <footer class="col sml-12 med-12 lrg-12 text-center">
-  <?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>
+
   <?php include(dirname(__FILE__).'/supportme.php'); ?>
+  
+  <div style="margin: 70px auto 0 auto;">
+    <?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>
+    <?php include(dirname(__FILE__).'/share.php'); ?>  
+  </div>
+  
   <?php include(dirname(__FILE__).'/navigation.php'); ?>
   </div>
   </footer>

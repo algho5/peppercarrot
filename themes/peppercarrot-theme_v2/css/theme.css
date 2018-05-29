@@ -30,7 +30,7 @@ h4{font-size:1.2rem}
 .title { min-width: 280px; }
 .title img { margin-top: 15px;}
 
-/* network on top */
+/* Follow */
 .follow { margin-top: 0.3rem; font-size: 0.85rem; }
 .follow .logo { margin-right: 3px; }
 .follow a { color: #FFF;}
@@ -55,23 +55,26 @@ h4{font-size:1.2rem}
 /* HOMEPAGE */
 
 /* cover */
-.cover { height: 400px; border-radius: 0.4rem; color:#DDD; margin-bottom: 0.3rem; background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat center left; }
-.cover h1 { color: #FFF; margin: 0.4rem; line-height: 2.6rem; font-size: 2.4rem; text-align:right; text-shadow: 0 1px 1px rgba(0,0,0,0.4), 0 2px 2px rgba(0,0,0,0.3), 0 4px 2px rgba(0,0,0,0.4);}
-.covertextoverlay { position: absolute; right: 5.5rem; top: 3rem; text-align:right; }
-#coversupportbox { position: absolute; right: -0.85rem; top: 9.5rem; color: #222; width: 450px; height: 190px; text-align: center; }
+.cover { height: 400px; border-radius: 0.4rem; margin-bottom: 0.3rem; background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat center left; }
+.cover h1 { color: #414141; margin: 0.4rem; line-height: 2.8rem; font-size: 2.4rem; text-align:right; text-shadow: 0 0 4px rgba(255,255,255,0.5), 0 0 2px rgba(255,255,255,0.7);}
 .homepage-title { font-family: 'ComicSpice', cursive; font-size:1.5rem;}
+.covertextoverlay { position: absolute; right: 5.5rem; top: 1.8rem; text-align:right; }
+#supportmebox { position: absolute; right: -1.5rem; top: 9.4rem; color: #222; width: 450px; height: 170px; text-align: center; border-radius: 0.4rem; }
+#moreinfobox { position: absolute; right: 0rem; top: 21rem; color: #222; width: 450px; height: 170px; text-align: right; border-radius: 0.4rem; }
+.moreinfobutton	{ color: #FFF; background: #258fd6 url('../ico/go.svg') no-repeat center right 8px; font-size: 0.85rem; font-family: ubuntu, helvetica, arial, sans-serif; text-align: center; padding: 8px 24px 8px 8px; margin: 0 4px 0 0;	border-radius: 6px; cursor: pointer; }
+.moreinfobutton:hover	{ color: #FFF; background-color: #1c6ea5; }
 
 /* Support box */
-.bigbuttonpatreon { font-size: 1.8rem; font-weight: bold; font-family: ubuntu, helvetica, arial, sans-serif; color: #FFFFFF; text-align: center; min-height: 80px; min-width: 374px; padding: 0 0 10px 0; margin: 0 auto; display: inline-block; text-decoration: none; border-radius: 10px; box-shadow: 0 2px 3px rgba(23,23,23,0.3);  background: #F96854 url('../img/logo-patreon.svg') no-repeat 120px 36px; background-size: 42px 42px; text-shadow: 0 1px 1px rgba(0,0,0,0.4) }
+.bigbuttonpatreon { font-size: 1.8rem; font-weight: bold; font-family: ubuntu, helvetica, arial, sans-serif; color: #FFFFFF; text-align: center; min-height: 80px; min-width: 374px; padding: 0 0 10px 0; margin: 0 auto 8px auto; display: inline-block; text-decoration: none; border-radius: 10px; box-shadow: 0 2px 3px rgba(23,23,23,0.3);  background: #F96854 url('../img/logo-patreon.svg') no-repeat 120px 36px; background-size: 42px 42px; text-shadow: 0 1px 1px rgba(0,0,0,0.4) }
 .bigbuttonpatreon:hover { color: #FFF; text-decoration: none;}
-.alternatives {font-size: 0.8rem; font-weight: normal; font-family: ubuntu, helvetica, arial, sans-serif; color: rgba(0,0,0,0.5); margin: 0.5rem 0;}
-.custombutton	{ font-size: 0.85rem; font-weight: bold; font-family: ubuntu, helvetica, arial, sans-serif; color: #FFFFFF; text-align: center; padding: .3rem 0.4rem; margin-right: 0.1rem; background-color: #777;	border-color: transparent; box-shadow: 0 2px 2px rgba(18,18,18,0.3); border-radius: 0.3rem; cursor: pointer; text-shadow: 0 1px 1px rgba(0,0,0,0.4);  }
-.custombutton:hover	{ color: #FFF; opacity: 0.8; }
-.tipeee { padding-left: 32px; background: #d84759 url('../img/logo-tipeee.svg') no-repeat center left 3px; }
-.paypal { padding-left: 28px; background: #FFC438 url('../img/logo-paypal.svg') no-repeat center left 3px; }
-.liberapay { padding-left: 28px; background: #ffd115 url('../img/logo-liberapay.svg') no-repeat center left 3px; }
-.G1 { padding-left: 28px; background: #2873B7 url('../img/logo-g1.svg') no-repeat center left 3px; }
-.iban { padding-left: 28px; background: #4595e0 url('../img/logo-iban.svg') no-repeat center left 3px; }
+.alternatives {font-size: 0.8rem; font-weight: normal; font-family: ubuntu, helvetica, arial, sans-serif; color: rgba(0,0,0,0.5); margin: 0 0 8px 0;}
+.alternativesbutton	{ font-size: 0.85rem; font-family: ubuntu, helvetica, arial, sans-serif; text-align: center; padding: 8px 8px 8px 24px; margin: 0 2px 0 0; background-color: #777;	border: solid 1px #D7EBFA; border-radius: 10px; cursor: pointer; }
+.alternativesbutton:hover	{ color: #111; }
+.tipeee { padding-left: 26px; background: #FFF url('../img/logo-tipeee.svg') no-repeat center left 5px; background-size: 18px 18px;}
+.paypal { background: #FFF url('../img/logo-paypal.svg') no-repeat center left 5px; background-size: 18px 18px;}
+.liberapay { background: #FFF url('../img/logo-liberapay.svg') no-repeat center left 5px; background-size: 18px 18px;}
+.G1 { background: #FFF url('../img/logo-g1.svg') no-repeat center left 5px; background-size: 18px 18px;}
+.iban { background: #FFF url('../img/logo-iban.svg') no-repeat center left 5px; background-size: 18px 18px;}
 
 /* box */
 .homebox { position: relative;}
@@ -143,8 +146,8 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 
 /* EPISODE END */
 /* ----------- */
-/* link to sources */
-.sourcebutton { margin: 0 auto; background: #D7EBFA url('../ico/dl_sources.svg') no-repeat center left 10px; padding: 0.6rem 0.7rem 0.6rem 3rem; border-radius: 10px }
+/* Sources */
+.sourcebutton { background: #D7EBFA url('../ico/dl_sources.svg') no-repeat center left 10px; padding: 0.6rem 0.7rem 0.6rem 3rem; border-radius: 10px }
 
 /* Network */
 .twitter { background: url('../img/followbackground_twitter.jpg') no-repeat center left; background-color: #3DB8E4; min-height: 80px; text-align: right;}
@@ -247,34 +250,41 @@ a:hover { text-decoration:none;}
 .menu.expanded a { font-size: 1.5rem; }
 }
 
-/* pad */
+/* tablet horyzontal */
 @media (max-width: 1050px) {
 .cover h1 { font-size: 2.2rem; }
 }
-
-/* phone */
 @media (max-width: 980px) {
 .menu.expanded a { font-size: 1.3rem; }
 }
 
-/* vertical */
+/* tablet vertical */
 @media (max-width: 900px) {
+.menu.expanded a { font-size: 1.15rem; }
 input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
-.cover h1 { font-size: 2.2rem; margin: 1rem 0 0.4rem 0; }
-.cover { background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 25% 80%; }
+.cover h1 { font-size: 2.2rem; margin: 1rem 0 0.4rem 0;}
+.cover { background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 32% 80%; }
 .moreposts { text-align: center; margin: 1rem 0 0 0; }
+.follow {font-size: 0.65rem;}
+.follow img {width: 22px;}
 }
 
-/* vertical++ */
+/* small devices */
 @media (max-width: 700px) {
+.cover { background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 35% 5%; }
 .cover h1 { font-size: 1.8rem; margin: 0.3rem 0 0.4rem 0; }
-.cover { height: 350px; background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 35% 5%; }
 .covertextoverlay { right: 1.3rem;}
 }
 
-/* small */
+/* vertical smartphone */
 @media (max-width: 500px) {
-.cover { height: 600px; }
+.cover { color: #FFF; background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 75% 5%; height: 430px; width: 100%; margin: 0 auto; }
+.percentdomain {width:295px;}
+.cover h1 { font-size: 1.48rem; margin: 0.3rem 0 1.1rem 0; }
+.bigbuttonpatreon { min-width: 280px; height: 72px; font-size: 1.4rem; background: #F96854 url('../img/logo-patreon.svg') no-repeat 80px 24px; background-size: 42px 42px; }
+#supportmebox {width: 380px; right: -4,2rem;}
+.alternativesbutton {line-height: 2.6rem;}
+#moreinfobox {top: 24rem; right: 6.5rem;}
 /* Comments */
 .singlecom { padding: 0.5rem 0; text-align: justify; }
 .com_content { padding-right:0.5rem; }
@@ -288,16 +298,9 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .nbcom {background-color: #258fd6;color: #fff;padding: .2rem .3rem;}
 }
 
-/* miniphone */
-@media (max-width: 400px) {
-.cover { color: #FFF; height: 800px; }
-.percentdomain {width:295px;}
-.cover h1 { font-size: 1.48rem; color: #111; margin: 0.3rem 0 1.1rem 0; text-shadow:none; }
-.joinnow { font-size: 0.8rem }
-.moreinfo { font-size: 0.8rem }
-.cover { background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 28% bottom; }
-.buttoncoverbox { top: 0px; right: 1.3rem; padding-right: 0.5rem} 
-.bigbuttonpatreon { min-width: 360px;}
+/* grille-pain */
+@media (max-width: 350px) {
+.cover { display:none; }
 }
 
 /* footer */

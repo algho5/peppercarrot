@@ -19,8 +19,11 @@ $lang = $plxShow->defaultLang($echo);
         <div class="cover">
           <div class="covertextoverlay">
             <h1><?php $plxShow->lang('HOMEPAGE_BIG_TEXT') ?></h1>
-            <div id="coversupportbox">
+            <div id="supportmebox">
             <?php include(dirname(__FILE__).'/supportme.php'); ?>
+            </div>
+            <div id="moreinfobox">
+              <a class="moreinfobutton" href="<?php $plxShow->urlRewrite('?static2/philosophy') ?>" title="<?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?>"><?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?></a>
             </div>
           </div>
         </div>

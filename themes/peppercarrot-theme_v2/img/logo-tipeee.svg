@@ -1,13 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 80 80">
- <path stroke-width=".83" d="m80.1 72.4c0 4.27-3.46 7.74-7.74 7.74h-64.6c-4.27 0-7.74-3.46-7.74-7.74v-64.6c0-4.27 3.46-7.74 7.74-7.74h64.5c4.27 0 7.74 3.46 7.74 7.74v64.6" fill="#d84759"/>
- <g fill="#fff">
-  <g opacity=".9" transform="matrix(.634 0 0 1 2.69 -.678)" stroke-width="1.58">
-   <path fill-rule="evenodd" d="m20.2 18.1-9.36 2.52v6.43h-2.53v7.41h2.66v17.2c0 2.24 2.65 5.87 5.31 5.87s8.8-1.82 10.2-2.66c0-2.66-0.278-7.27-0.278-7.27l-6.01 0.84v-13.8l6.15 0.139v-7.55h-6.15z"/>
-   <circle style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" r="4.26" cy="21" cx="37.5"/>
-   <path fill-rule="evenodd" d="m29.9 31.3 11.5-3.91v22.1h3.63v7.6h-16.1l0.14-7.69h4.05v-10.6h-3.91z"/>
-   <path fill-rule="evenodd" d="m56.9 25.9-12.2 0.139-0.141 8.94 3.49 0.281-0.278 27-3.22-0.559-0.139 7.83h17l-0.6-8h-3.6l0.139-4.47s7.51 0.715 9.92-0.698c13.8-8.11 6.57-28.1-1.96-28.4-7.33-0.24-8.39-0.42-8.39-0.42zm6.22 9.08a5.1 7.55 0 0 1 5.1 7.55 5.1 7.55 0 0 1 -5.1 7.55 5.1 7.55 0 0 1 -5.1 -7.55 5.1 7.55 0 0 1 5.1 -7.55z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="0 0 80 80"
+   id="svg20"
+   sodipodi:docname="logo-tipeee.svg"
+   inkscape:version="0.92.3 (unknown)">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1272"
+     inkscape:window-height="773"
+     id="namedview22"
+     showgrid="false"
+     inkscape:zoom="2.95"
+     inkscape:cx="11.016949"
+     inkscape:cy="37.966102"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg20" />
+  <g
+     id="g18"
+     fill="#fff"
+     style="fill:#44a7e8;fill-opacity:1">
+    <g
+       transform="matrix(.634 0 0 1 2.69 -.678)"
+       id="g12"
+       stroke-width="1.58"
+       opacity=".9"
+       style="fill:#44a7e8;fill-opacity:1">
+      <path
+         d="M 25.827888,13.75435 9.5121017,16.560937 v 7.161254 H 5.1019589 v 8.252704 h 4.6367518 v 19.156074 c 0,2.494745 4.6193193,6.537567 9.2560713,6.537567 4.636751,0 15.339627,-2.02698 17.780023,-2.962509 0,-2.962509 -0.484592,-8.096782 -0.484592,-8.096782 l -10.47627,0.935528 V 32.175366 l 10.720308,0.154808 V 23.921548 H 25.813943 Z"
+         id="path4"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd;stroke-width:1.58000016;fill:#44a7e8;fill-opacity:1" />
+      <ellipse
+         style="color:#000000;isolation:auto;mix-blend-mode:normal;solid-color:#000000;stroke-width:1.58000016;paint-order:normal;color-rendering:auto;image-rendering:auto;shape-rendering:auto;fill:#44a7e8;fill-opacity:1"
+         cy="18.479616"
+         cx="55.852959"
+         id="circle6"
+         rx="6.548286"
+         ry="4.4514813" />
+      <path
+         d="M 44.170573,29.242587 61.84787,25.156838 v 23.093364 h 5.579877 v 7.94161 H 42.679531 l 0.215202,-8.035655 h 6.225483 V 37.079702 h -6.010281 z"
+         id="path8"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd;stroke-width:1.58000016;fill:#44a7e8;fill-opacity:1" />
+      <path
+         d="m 87.233648,25.633763 -16.620789,0.134449 -0.192092,8.647263 4.754635,0.271799 -0.378736,26.115897 -4.386798,-0.540695 -0.189368,7.573609 h 23.160115 l -0.817416,-7.738043 h -4.904495 l 0.189368,-4.323632 c 0,0 10.231321,0.691588 13.514608,-0.675144 18.80057,-7.844442 8.95071,-27.179879 -2.670225,-27.470055 C 88.706359,27.39707 87.262257,27.222964 87.262257,27.222964 Z m 7.40453,7.765731 c 5.018461,0 9.086732,3.5731 9.086732,7.980744 0,4.407644 -4.06827,7.980745 -9.086732,7.980745 -5.018462,0 -9.086729,-3.573102 -9.086728,-7.980745 0,-4.407643 4.068266,-7.980744 9.086728,-7.980744 z"
+         id="path10"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd;stroke-width:1.58000016;fill:#44a7e8;fill-opacity:1"
+         sodipodi:nodetypes="cccccccccccccccsssss" />
+    </g>
+    <path
+       style="color:#000000;opacity:0.9;isolation:auto;mix-blend-mode:normal;solid-color:#000000;stroke:none;stroke-width:3.01999998;paint-order:normal;color-rendering:auto;image-rendering:auto;shape-rendering:auto;fill:#44a7e8;fill-opacity:1"
+       d="m 79.333064,67.576581 h 7.26 v 4.47 h -7.26 z"
+       transform="matrix(1,0,-0.173,0.985,0,0)"
+       id="path16"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
   </g>
-  <path opacity=".9" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;font-variant-numeric:normal;shape-rendering:auto;font-variant-ligatures:normal;text-decoration-line:none;font-variant-position:normal;mix-blend-mode:normal;solid-color:#000000;font-feature-settings:normal;shape-padding:0;font-variant-alternates:normal;text-indent:0;dominant-baseline:auto;font-variant-caps:normal;image-rendering:auto;white-space:normal;text-decoration-style:solid;text-orientation:mixed;isolation:auto;text-transform:none" d="m71.1 26.5c-0.356-0.0225-0.695 0.0311-0.977 0.119-1.11 0.347-1.85 1.08-2.49 1.92-1.99 2.41-2.41 4.56-3.54 7.13l-0.0234 0.0508-0.0176 0.0527c-1.53 4.31-2.76 9.08-2.61 14l0.002 0.0039v0.0039c0.0266 0.746 0.258 1.54 0.377 2.33-0.0509 0.0563-0.0954 0.128-0.146 0.184l-0.0606 0.0644-0.0508 0.0723c-0.551 0.763-1.59 1.61-2.71 2.17-1.11 0.563-2.3 0.816-2.94 0.744l-0.0527-0.0059-0.0547-0.002c-0.346-0.0139-0.684-0.202-1.04-0.732-0.174-0.261-0.192-0.718-0.301-1.09 0.153-0.15 0.346-0.247 0.488-0.408l0.0078-0.0078 0.0078-0.0098c1.78-2.07 3.11-4.53 4.33-6.92l0.0098-0.0195 0.0098-0.0195c2.19-4.62 3.49-9.98 3.49-15.4v-0.0488c-0.0468-1.42-0.641-2.72-1.89-3.38-0.624-0.328-1.47-0.419-2.2-0.141-0.729 0.278-1.29 0.842-1.7 1.53l-0.0332 0.0547-0.0273 0.0566c-0.711 1.46-1.46 2.56-2.19 4.34l-0.0137 0.0312-0.0098 0.0312c-2.08 5.81-4.14 12.3-3.59 19.1-0.42 0.225-0.848 0.411-1.25 0.479-0.928 0.155-1.68-0.0181-2.42-0.818l-2.2 2.04c1.4 1.5 3.36 2.03 5.11 1.73 0.492-0.0824 0.931-0.333 1.39-0.518 0.15 0.349 0.262 0.72 0.471 1.03 0.73 1.1 1.92 1.98 3.38 2.05 1.55 0.156 3.11-0.307 4.56-1.04 0.922-0.467 1.75-1.09 2.51-1.77 0.53 1.11 1.22 2.15 2.37 2.79l0.0352 0.0215 0.0391 0.0176c1.56 0.762 3.26 0.48 4.56-0.195 1.31-0.675 2.37-1.7 3.25-2.71l0.0254-0.0312 0.0254-0.0312c1.54-1.98 2.99-4.15 4.21-6.52l0.0137-0.0254 0.0117-0.0273c0.529-1.13 0.969-2.36 1.24-3.67l-2.94-0.6c-0.21 1.03-0.565 2.03-1.01 2.97-1.11 2.14-2.44 4.14-3.87 5.98-0.718 0.826-1.58 1.6-2.33 1.99-0.742 0.384-1.24 0.439-1.81 0.18-0.609-0.353-1.13-1.08-1.5-2.18-0.0488-0.146-0.0357-0.345-0.0781-0.5 3.52-4.25 6.44-9.76 7.35-15.8l-0.0176 0.0996c0.561-2.54 1.45-5.31 1.01-8.51l-0.0039-0.0254-0.0039-0.0234c-0.119-0.699-0.447-1.44-1.13-1.88-0.342-0.218-0.713-0.317-1.07-0.34zm-0.801 3.62c0.071 2.08-0.409 4.15-0.928 6.51l-0.0117 0.0488-0.0078 0.0508c-0.648 4.3-2.48 8.42-4.8 11.9 0.0606-4.01 0.99-8.04 2.33-11.8 0.000683-0.0019 0.0013-0.0039 0.002-0.0059 1.22-2.78 1.53-4.47 3.08-6.34l0.0234-0.0293 0.0215-0.0293c0.103-0.138 0.169-0.142 0.295-0.26zm-10.7 0.2c0.000087 0.000128 0.0019-0.000129 0.002 0 0.0774 0.115 0.172 0.192 0.191 0.547-0.0051 4.88-1.2 9.82-3.19 14-0.768 1.5-1.59 2.91-2.45 4.23 0.197-5.02 1.7-9.99 3.4-14.8 0.592-1.44 1.27-2.45 2.05-4.04zm-8.46 22.1c-0.000004 0.0155 0.0058 0.0295 0.0059 0.0449 0.0025 0.0297-0.0026 0.0582 0 0.0879zm12.8 1.8-0.111 0.137c0.035-0.038 0.0648-0.0867 0.0996-0.125 0.0032-0.0044 0.0085-0.0073 0.0117-0.0117z" fill-rule="evenodd"/>
-  <path opacity=".9" style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" d="m77.4 66.2h7.26v4.47h-7.26z" transform="matrix(1 0 -.173 .985 0 0)" stroke="#fff" stroke-width="3.02"/>
- </g>
 </svg>
