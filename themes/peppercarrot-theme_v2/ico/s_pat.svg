@@ -1,6 +1,9 @@
-<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="28" width="28" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 100 100">
- <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" d="m12.1 0.424h75.5c6.68 0 12.1 5.38 12.1 12.1v75.9c0 6.68-5.38 12.1-12.1 12.1h-75.5c-6.72 0-12.1-5-12.1-11.6v-75.9c1.24e-7 -6.7 5.38-12.1 12.1-12.1z" fill="#404c51"/>
- <g transform="matrix(.765 0 0 .765 13.6 12.8)">
-  <path fill="#e54519" d="m52.8 9.41c-12.9-0.5-25.9 5.49-33.7 15.8-4.97 6.49-8.06 14.6-7.83 22.8-0.265 13.1-0.00015 26.1-0.0959 39.2 3.21 0 6.42 0.0086 9.63 0-0.0121-11.9 0.0214-23.8-0.024-35.7-0.72-9.08 2.73-18.5 9.51-24.6 9.31-8.56 23.9-10.8 35.3-5.06 9.07 4.37 16 13.4 16.9 23.6 1.08 10.4-3.94 21.2-12.7 27-7.72 5.25-17.8 7.07-26.8 4.37 0.0302-3.61-0.0938-7.23 0.0537-10.8 0.595-2.16 2.98-0.389 4.4-0.236 7.6 1.74 16.3-1.5 20.3-8.38 3.73-6.01 3.37-14.4-1.26-19.8-5.2-6.6-14.9-9.1-22.5-5.5-6.2 2.8-11.1 9.2-10.8 16.2-0.233 13 0.0122 25.9-0.111 38.9 6.04-0.0286 12.1 0.0284 18.1 0.0611 8.81-0.0462 17.7-2.55 24.8-7.85 10.2-7.3 16.8-19.6 16.3-32.1-0.4-11.6-6.2-22.8-15.4-29.7-6.9-5.2-15.5-8.02-24.1-8.29z"/>
+<svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" version="1.1" viewBox="0 0 100 100">
+ <g style="font-variant-east_asian:normal" transform="matrix(.949 0 0 .941 28.1 -45.8)" fill="#f96854">
+  <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;font-variant-east_asian:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="#f96854" d="m-14.7 51.8h75.5c6.68 0 12.1 5.38 12.1 12.1v75.9c0 6.68-5.38 12.1-12.1 12.1h-75.5c-6.72 0-12.1-5-12.1-11.6v-75.6c0-6.7 5.38-12.6 12.1-12.6z"/>
+ </g>
+ <g stroke-width="3.23" transform="matrix(1.17 0 0 1.17 1.79 3.83)">
+  <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" height="53.1" width="10.5" y="15.2" x="16.9" fill="#042d49"/>
+  <circle style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" r="16.9" cy="31.8" cx="50.2" fill="#fff"/>
  </g>
 </svg>

@@ -12,78 +12,148 @@
           <li><a class="lang" href="index.php?article267/how-to-add-a-translation-or-a-correction"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
         </ul>
       </div>   
+      
+      <article class="col sml-12 med-12 lrg-12" role="article">
+        <h1><?php $plxShow->lang('COMMUNITY') ?></h1>
+        <?php $plxShow->lang('CONTRIBUTE_TOP') ?>
+        <br/>
+        <div class="col sml-12 med-12 lrg-12 sml-centered sml-text-center">
+          <a href="0_sources/0ther/misc/hi-res/2016-05-28_pepper-and-carrot_fixing-the-project_by-David-Revoy.jpg" alt="illustration: picture of Pepper and Carrot fixing a big machine"><img src="0_sources/0ther/misc/low-res/2016-05-28_pepper-and-carrot_fixing-the-project_by-David-Revoy.jpg" ></a>
+        </div>
+      </article>
 
       <article class="col sml-12 med-12 lrg-12" role="article">
+        <?php $plxShow->lang('CONTRIBUTE_IRC') ?>
+        
+        <div class="buttonlist col sml-12 med-12 lrg-12 sml-centered sml-text-center">
+        <ul class="menu">
+          <li>
+            <a href="http://webchat.freenode.net?channels=%23pepper%26carrot" title="#pepper&amp;Carrot , freenode.net">
+              <b>IRC</b> #pepper&amp;carrot
+            </a>
+          </li>
+          <li>
+            <a href="https://telegram.me/joinchat/BLVsYz_DIz-S-TJZB9XW7A" title="Bridged Irc channel for Telegram client">
+              <b>Telegram</b> (IRC bridge)
+            </a>
+          </li>
+          <li>
+            <a href="https://riot.im/app/#/room/#freenode_#pepper&carrot:matrix.org" title="Bridged Irc channel for Riot, a Matrix client">
+              <b>Matrix</b> (IRC bridge)
+            </a>
+          </li>
+          <li>
+            <a href="https://framateam.org/signup_user_complete/?id=gcaq67sntfgr5jbmoaogsgdfqc" title="Bridged Irc channel for Framateam, Mattermost client hosted by Framasoft">
+              <b>Framateam</b> (IRC bridge)
+            </a>
+          </li>
+        </ul>
+        </div>
+      </article>
+      
+
+      <article class="col sml-12 med-12 lrg-12" role="article">
+        <br/>
         <h2><?php $plxShow->lang('CONTRIBUTE_SOCIAL') ?></h2>
         <p><?php $plxShow->lang('FOLLOW') ?></p>
+        
+        <div class="buttonlist col sml-12 med-12 lrg-12 sml-centered sml-text-center">
+        <ul class="menu">
+          <li>
+            <a href="https://www.peppercarrot.com/data/images/static/facebook.jpg">
+              <b>Facebook</b>
+            </a>
+          </li>
+          <li>
+            <a href="https://framapiaf.org/@davidrevoy">
+              <b>Mastodon</b>
+            </a>
+          </li>
+          <li>
+            <a href="http://twitter.com/davidrevoy">
+              <b>Twitter</b>
+            </a>
+          </li>
+          <li>
+            <a href="https://framasphere.org/people/f36d0ea092e50134ec422a0000053625">
+              <b>Diaspora</b>
+            </a>
+          </li>
+          <li>
+            <a href="https://deevad.deviantart.com/">
+              <b>deviantArt</b>
+            </a>
+          </li>
+          <li>
+            <a href="https://davidrevoy.tumblr.com/">
+              <b>Tumblr</b>
+            </a>
+          </li>
+          <!-- Unmaintained
+          <li>
+            <a href="https://www.artstation.com/deevad">
+              <b>Artstation</b>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pixiv.net/member.php?id=6028237">
+              <b>Pixiv</b>
+            </a>
+          </li>
+          -->
+          <li>
+            <a href="https://www.youtube.com/channel/UCnAbNwJjusY7zQ__sQyJlSA">
+              <b>Youtube</b>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </article>
+      
+      <article class="col sml-12 med-12 lrg-12" role="article">
+        <?php $plxShow->lang('CONTRIBUTE_PRESS') ?>
+        <div class="buttonlist col sml-12 med-12 lrg-12 sml-centered sml-text-center">
+        <ul class="menu">
+          <li>
+            <a href="https://plus.google.com/communities/108146253353928738338">
+              <b>Google+</b> Community
+            </a>
+          </li>
+          <li>
+            <a href="https://peertube.touhoppai.moe/videos/search?search=david%20revoy">
+              <b>Peertube</b> Videos
+            </a>
+          </li>
+          <li>
+            <a href="https://funnyjunk.com/channel/pepperandcarrot">
+              <b>Funnyjunk</b> Community
+            </a>
+          </li>
+          <li>
+            <a href="https://imgur.com/gallery/8ABWs">
+              <b>Imgur</b> Community
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/r/PepperCarrot/">
+              <b>Reddit</b> Community
+            </a>
+          </li>
+          <li>
+            <a href="https://storyberries.com/author/david-revoy/">
+              <b>Storyberries</b> Online Publishing
+            </a>
+          </li>
+          <li>
+            <a href="https://storyberries.com/author/david-revoy/">
+              <b>Pipro k. Karoĉjo</b> Forum Esperanto
+            </a>
+          </li>
+        </ul>
+        </div>
       </article>
         
-        <!-- Facebook -->
-        <figure class="thumbnail col sml-6 med-3 lrg-3">
-          <a href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903">
-            <img src="data/images/static/facebook.jpg" alt="Facebook" >
-          </a>
-          <figcaption class="text-center">
-            <a href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="<?php $plxShow->lang('FOLLOW') ?> Facebook">
-            Facebook<br/>
-            </a>
-            <span class="detail">4.5K</span>
-          </figcaption>
-        </figure>
-        
-        <!-- Google+ -->
-        <figure class="thumbnail col sml-6 med-3 lrg-3">
-          <a href="https://plus.google.com/communities/108146253353928738338">
-            <img src="data/images/static/googleplus.jpg" alt="Google+" >
-          </a>
-          <figcaption class="text-center">
-            <a href="https://plus.google.com/u/0/110962949352937565678/" title="<?php $plxShow->lang('FOLLOW') ?> Google+">
-            Google+<br/>
-            </a>
-            <span class="detail">8.5K</span>
-          </figcaption>
-        </figure>
-        
-        <!-- Twitter -->
-        <figure class="thumbnail col sml-6 med-3 lrg-3">
-          <a href="http://twitter.com/davidrevoy">
-            <img src="data/images/static/twitter.jpg" alt="Twitter" >
-          </a>
-          <figcaption class="text-center">
-            <a href="http://twitter.com/davidrevoy" title="<?php $plxShow->lang('FOLLOW') ?> Twitter">
-            Twitter<br/>
-            </a>
-            <span class="detail">6K</span>
-          </figcaption>
-        </figure>
-        
-        <!-- IRC -->
-        <figure class="thumbnail col sml-6 med-3 lrg-3">
-          <a href="http://webchat.freenode.net/?channels=%23pepper%26carrot">
-            <img src="data/images/static/irc.jpg" alt="IRC" >
-          </a>
-          <figcaption class="text-center">
-              <a href="http://webchat.freenode.net/?channels=%23pepper%26carrot" title="Main Irc channel: #pepper&amp;carrot on Freenode">
-                Irc
-              </a>
-            <span class="detail">|</span>
-              <a href="https://riot.im/app/#/room/#freenode_#pepper&carrot:matrix.org" title="Bridged Irc channel for Riot, a Matrix client">
-                Riot
-              </a>
-            <span class="detail">|</span>
-              <a href="https://framateam.org/signup_user_complete/?id=gcaq67sntfgr5jbmoaogsgdfqc" title="Bridged Irc channel for Framateam, Mattermost client hosted by Framasoft">
-                Framateam
-              </a>
-            <span class="detail">|</span>
-              <a href="https://telegram.me/joinchat/BLVsYz_DIz-S-TJZB9XW7A" title="Bridged Irc channel for Telegram client">
-                Telegram
-              </a>
-            <br/>
-            <span class="detail">Online chat</span>
-          </figcaption>
-        </figure>
-        
-      </article>
+       
          
  <article class="col sml-12 med-12 lrg-12" role="article">
   <br/>
@@ -97,7 +167,7 @@
         </a>
           <figcaption class="text-center"><a href="#art_url" title="#art_title">#art_supertitle #art_date</span></a></figcaption>
       </figure>
-      ',8,'004', "...", "rsort"))); ?>
+      ',12,'004', "...", "rsort"))); ?>
   </article>
           
 <?php # =========== Derivations ================ ?>
@@ -109,38 +179,10 @@
     </a>
   </div>
   </section>
-
-<?php # =========== Webcomics ================ 
-$lang = $plxShow->getLang('LANGUAGE_ISO_CODE_2_LETTER');
-$ccbystring = $plxShow->getLang('UTIL_BY');
-$pathcommunityfolder = '0_sources/0ther/community';
-echo "<h2>";
-  $plxShow->lang('WEBCOMICS');
-  echo "</h2>";
-
-  $hide = array('.', '..');
-  $mainfolders = array_diff(scandir($pathcommunityfolder), $hide);
-  sort($mainfolders);
   
-  # we loop on found episodes
-  foreach ($mainfolders as $folderpath) {
-    # Name extraction
-    $filename = basename($folderpath);
-    $filenameclean = str_replace('_', ' ', $filename);
-    $filenameclean = str_replace('-', ' ', $filenameclean);
-    $filenameclean = str_replace('featured', '', $filenameclean);
-    $filenameclean = str_replace('by', '</a><br/><span class="detail">'.$ccbystring.'', $filenameclean);
-    $filenamezip = str_replace('jpg', 'zip', $filename);
-    echo '<figure class="thumbnail col sml-6 med-6 lrg-6">';
-    echo '<a href="?static11/community-webcomics&page='.$folderpath.'/" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=470&amp;h=270&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
-    echo '<figcaption class="text-center" >
-    <a href="0_sources/0ther/fan-art/'.$filename.'" >
-    '.$filenameclean.'
-    '.$dateextracted.'</span><br/>
-    </figcaption>';
-    echo '</figure>';
-  }
-?>
+  <article class="col sml-12 med-12 lrg-12" role="article">
+    <?php $plxShow->lang('CONTRIBUTE_TRANSLATION') ?>
+  </article>
 
 <?php # ===========  Fan Art ================ ?>
 <article class="col sml-12 med-12 lrg-12" role="article">
@@ -157,7 +199,7 @@ echo "<h2>";
   # we loop on found episodes
   if (!empty($search)){ 
     foreach ($search as $filepath) {
-      if ( $fanartcounter < 8 ){
+      if ( $fanartcounter < 24 ){
         # filename extraction
         $fileweight = (filesize($filepath) / 1024) / 1024;
         $fanartcounter = $fanartcounter + 1;
@@ -173,8 +215,8 @@ echo "<h2>";
         $title = stristr($filenameclean, 'by', true);
         $filenameclean = str_replace('featured', '', $filenameclean);
         $filenamezip = str_replace('jpg', 'zip', $filename);      
-        echo '<figure class="thumbnail col sml-3 med-3 lrg-3">';
-        echo '<a href="0_sources/0ther/fan-art/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/fan-art/'.$filename.'&amp;w=230&amp;h=180&amp;s=1&amp;q=92" alt="'.$filenameclean.'" title="'.$filenameclean.', '.$dateextracted.'" ></a>';
+        echo '<figure class="thumbnail col sml-3 med-3 lrg-2">';
+        echo '<a href="0_sources/0ther/fan-art/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/fan-art/'.$filename.'&amp;w=130&amp;h=130&amp;s=1&amp;q=92" alt="'.$filenameclean.'" title="'.$filenameclean.', '.$dateextracted.'" ></a>';
         echo '<figcaption class="text-center" >
         <a href="0_sources/0ther/original/'.$filename.'" >
         '.$title.'
@@ -202,35 +244,17 @@ echo "<h2>";
   </section>
   
       <article class="col sml-12 med-12 lrg-12" role="article">
-        <h1><?php $plxShow->lang('CONTRIBUTE') ?></h1>
-        <?php $plxShow->lang('CONTRIBUTE_TOP') ?>
-      </article>
-      
-      <article class="col sml-12 med-12 lrg-12" role="article">
-        <?php $plxShow->lang('CONTRIBUTE_TRANSLATION') ?>
-      </article>
-      
-      <article class="col sml-12 med-12 lrg-12" role="article">
-        <?php $plxShow->lang('CONTRIBUTE_PRESS') ?>
-      </article>
-      
-      <article class="col sml-12 med-12 lrg-12" role="article">
         <?php $plxShow->lang('CONTRIBUTE_DONATION') ?> 
       </article>
       <section class="col sml-12 med-12 lrg-12">
         <?php $plxShow->lang('HOMEPAGE_ALTERNATIVES') ?>
-          <a href="https://liberapay.com/davidrevoy/" class="link">Liberapay</a>,
-          <a href="https://www.tipeee.com/pepper-carrot" class="link">Tipeee</a>,
-          <!-- <a href="<?php $plxShow->template(); ?>/bitcoin.txt" class="link">Bitcoin</a>,
-          <a href="https://flattr.com/submit/auto?user_id=davidrevoy&url=http%3A%2F%2Fwww.peppercarrot.com%2F">Flattr</a>, -->
-          <a href="https://paypal.me/davidrevoy" class="link">Paypal</a><?php $plxShow->lang('UTIL_DOT') ?>
+              <a href="https://paypal.me/davidrevoy" title="Send money via Paypal" class="alternativesbutton paypal">Paypal</a>
+              <a href="https://www.tipeee.com/pepper-carrot" title="<?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?> Tipeee" class="alternativesbutton tipeee">Tipeee</a>
+              <a href="https://liberapay.com/davidrevoy/" title="<?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?> Liberapay" class="alternativesbutton liberapay">Liberapay</a>
+              <a href="https://g1.duniter.fr/#/app/wot/4nosBEwT8xQfMY11sq32AnZF1XcoqzG9tArXJq9mu8Wc/DavidRevoy" title="Send G1 to David Revoy" class="alternativesbutton G1">G1</a>
+              <a href="<?php $plxShow->urlRewrite('?static12/iban-and-mail-adress') ?>" title="Send money via IBAN or Send goods via mail" class="alternativesbutton iban">Bank/Mail</a>
           <br/><br/>
       </section> 
-      
-      <article class="col sml-12 med-12 lrg-12" role="article">
-        <?php $plxShow->lang('CONTRIBUTE_IRC') ?>
-        <a href="http://webchat.freenode.net?channels=%23pepper%26carrot" title="Chat with me and the team!"> #pepper&amp;carrot , Freenode.net &nbsp;</a>     
-      </article>
   
       <article class="col sml-12 med-12 lrg-12" role="article">
         <?php $plxShow->lang('CONTRIBUTE_OTHER') ?>

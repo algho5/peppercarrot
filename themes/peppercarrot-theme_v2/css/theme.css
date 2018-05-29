@@ -31,7 +31,7 @@ h4{font-size:1.2rem}
 .title img { margin-top: 15px;}
 
 /* Follow */
-.follow { margin-top: 0.3rem; font-size: 0.85rem; }
+.follow { margin-top: 0.3rem; font-size: 0.85rem; color:#453224; }
 .follow .logo { margin-right: 3px; }
 .follow a { color: #FFF;}
 .follow a:hover { opacity: 1; }
@@ -149,11 +149,6 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 /* Sources */
 .sourcebutton { background: #D7EBFA url('../ico/dl_sources.svg') no-repeat center left 10px; padding: 0.6rem 0.7rem 0.6rem 3rem; border-radius: 10px }
 
-/* Network */
-.twitter { background: url('../img/followbackground_twitter.jpg') no-repeat center left; background-color: #3DB8E4; min-height: 80px; text-align: right;}
-.facebook { background: url('../img/followbackground_facebook.jpg') no-repeat center left; background-color: #345695; min-height: 80px; text-align: right;}
-.googleplus { background: url('../img/followbackground_googleplus.jpg') no-repeat center left; background-color: #DA5E3C; min-height: 80px; text-align: right;}
-
 /* Share */
 .share { padding-top: 0.5rem; color: #999; }
 .share a { color: #2B92D7; text-decoration: underline;}
@@ -233,6 +228,11 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .readme ul {  margin: 0; padding: 0; }
 .readme li { margin: 0; padding: 0; }
 .readme h1,.readme h2 { font-size: 1.4rem;}
+
+/* Contribute/Community */
+.buttonlist { padding: 0 0 0 0; margin: 0.5rem 0; max-width: 1060px }
+.buttonlist li { background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px }
+.buttonlist a { text-decoration: none; font-size: 0.9rem; }
 
 .cc { font-weight: bold; color: #111; padding: 0.1rem 0.3rem 0.3rem 0.3rem;}
 .license { margin: 0 0 1.2rem 0;}

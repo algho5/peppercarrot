@@ -1,6 +1,8 @@
-<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="28" width="28" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 100 100">
- <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" d="m12.3 0.424h75.5c6.68 0 12.1 5.38 12.1 12.1v75.9c0 6.68-5.38 12.1-12.1 12.1h-75.5c-6.68 0-12.1-5.38-12.1-12.1v-75.9c0.012-6.2 5.39-11.6 12.1-11.6z" fill="#00aced"/>
- <g transform="matrix(.0433 0 0 -.0433 16.1 80.3)">
-  <path fill="#fff" d="m1.62e3 1.13e3q-67-98-162-167 1-14 1-42 0-130-38-260-40-131-110-250-80-119-190-211-110-91-257-146-151-54-323-54-271 0-496 145 35-4 78-4 225 0 401 138-105 2-188 64.5t-114 160q33-5 61-5 43 0 85 11-112 23-185 111-74 89-74 206v4q68-38 146-41-66 44-105 115t-39 154q0 88 44 163 121-150 294-238 174-89 372-99-8 38-8 74 0 134 94.5 228 94.5 94.5 228 94.5 140 0 236-102 109 21 205 78-37-115-142-178 93 10 186 50z"/>
+<svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" version="1.1" viewBox="0 0 100 100">
+ <g fill="#826046" transform="matrix(.949 0 0 .941 28.1 -45.8)">
+  <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="#826046" d="m-14.7 51.8h75.5c6.68 0 12.1 5.38 12.1 12.1v75.9c0 6.68-5.38 12.1-12.1 12.1h-75.5c-6.72 0-12.1-5-12.1-11.6v-75.6c0-6.7 5.38-12.6 12.1-12.6z"/>
+ </g>
+ <g style="font-variant-east_asian:normal" transform="matrix(.0433 0 0 -.0433 16.1 80.3)" fill="#d7d2cf">
+  <path style="font-variant-east_asian:normal" d="m1.62e3 1.13e3q-67-98-162-167 1-14 1-42 0-130-38-260-40-131-110-250-80-119-190-211-110-91-257-146-151-54-323-54-271 0-496 145 35-4 78-4 225 0 401 138-105 2-188 64.5t-114 160q33-5 61-5 43 0 85 11-112 23-185 111-74 89-74 206v4q68-38 146-41-66 44-105 115t-39 154q0 88 44 163 121-150 294-238 174-89 372-99-8 38-8 74 0 134 94.5 228 94.5 94.5 228 94.5 140 0 236-102 109 21 205 78-37-115-142-178 93 10 186 50z" fill="#d7d2cf"/>
  </g>
 </svg>
