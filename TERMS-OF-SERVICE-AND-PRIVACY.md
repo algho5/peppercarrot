@@ -12,7 +12,7 @@ The contributors of the project are all listed here: https://framagit.org/pepper
 
 Therefore, I, David Revoy, I'm the only responsible for managing your datas collected on the websites mentioned (exept about "embedded content from other websites", read under). 
 
-You can contact me at [info@davidrevoy.com](mailto:info@davidrevoy.com) to discuss any issue in relation to the .
+You can contact me at [info@davidrevoy.com](mailto:info@davidrevoy.com) to discuss any issue in relation to your data displayed on the websites.
 
 ## What personal data we collect why we collect it and how long we retain your data
 
