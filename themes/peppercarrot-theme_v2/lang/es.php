@@ -37,7 +37,7 @@ $LANG = array(
 'HOMEPAGE_BIG_TEXT'		    =>  '
     Un webcomic gratuito, libre y de codigo abierto<br/>
     apoyado directamente por sus patrocinadores<br/>
-    ¡para cambiar la industria del cómic!<br/>
+    ¡ para cambiar la industria del cómic!<br/>
 ',
 'HOMEPAGE_PATREON_INFO'     =>  'Por sólo 1€ por cada nuevo episodio, conviértete hoy en un patrocinador en Patreon',
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'Más información',
