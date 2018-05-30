@@ -122,8 +122,20 @@ class vignette extends plxPlugin {
                     $filename = $vignette_parts['filename'];
                     $filename = substr($filename, 3);
                     $episodedir = $vignette_parts['dirname'].'/';
-                    $lang = $_SESSION['lang'];
                     
+                    # Guess active lang: try many scenario
+                    $lang = '';
+                    $get = plxUtils::getGets();
+                    if(preg_match('/^([a-zA-Z]{2})\/(.*)/', $get, $capture)) {
+                      $lang = $capture[1];
+                    } elseif(isset($_SESSION['lang'])) {
+                      $lang = $_SESSION['lang'];
+                    } elseif(isset($_COOKIE["plxMyMultiLingue"])) {
+                      $lang = $_COOKIE["plxMyMultiLingue"];
+                    } else {
+                      $lang = $default_lang;
+                    }
+
                     $translation_check = $episodedir.''.$lang.'_'.$filename.'.'.$vignette_parts['extension'];
                     
                     if (file_exists($translation_check)) {
