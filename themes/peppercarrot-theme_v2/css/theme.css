@@ -234,7 +234,14 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .buttonlist li { background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px }
 .buttonlist a { text-decoration: none; font-size: 0.9rem; }
 
-.cc { font-weight: bold; color: #111; padding: 0.1rem 0.3rem 0.3rem 0.3rem;}
+/* TOS/Privacy */
+.tosprivacy { font-size: 1.02rem; max-width: 600px; margin: 0 auto; }
+.tosprivacy h1{ font-family: ubuntu, helvetica, arial, sans-serif; font-size: 2.5rem; border-bottom: solid 1px #444; text-align: center; margin-bottom: 2.6rem;}
+.tosprivacy h2{ font-family: ubuntu, helvetica, arial, sans-serif; font-size: 2rem; margin-bottom: 2rem;}
+.tosprivacy h3{ font-family: ubuntu, helvetica, arial, sans-serif; font-size: 1.6rem; margin-top: 2.6rem;}
+.tosprivacy img{ margin-top: 0.7rem; }
+
+.cc { font-weight: bold; color: #111; padding: 0.1rem 0.3rem 0.3rem 0.3rem; }
 .license { margin: 0 0 1.2rem 0;}
 ul.menu.tag li a.button{ margin: 0 0 1.2rem 0;}
 
