@@ -33,7 +33,7 @@ V.<?php echo $version ?>, 11/2016
      <meta property="og:image" content="<?php $plxShow->racine() ?><?php eval($plxShow->callHook('showVignette', 'true')); ?>"/>
      <meta property="og:image:type" content="image/jpeg" />
   <?php } else { ?>
-     <meta property="og:image" content="https://www.peppercarrot.com/0_sources/0ther/press/low-res/2015-10-12_logo_by-David-Revoy.jpg"/>
+     <meta property="og:image" content="<?php $plxShow->racine() ?>data/images/static/preview/<?php $plxShow->staticTitle() ?>.jpg"/>
      <meta property="og:image:type" content="image/jpeg" />
   <?php } ?>
   <title><?php $plxShow->pageTitle(); ?></title>

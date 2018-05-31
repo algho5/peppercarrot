@@ -80,5 +80,6 @@ $lang = $plxShow->defaultLang($echo);
       </section>
 
 	</main>
+          <?php include(dirname(__FILE__).'/share-static.php'); ?>  <br/>
 </div>
 <?php include(dirname(__FILE__).'/footer.php'); ?>
