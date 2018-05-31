@@ -133,7 +133,7 @@ echo "-->";
 
       <?php if($idStat=="008"){ $status = "active"; } else { $status = "no-active"; }?>
 			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static8/author') ?>" id="active"><?php $plxShow->lang('WIKI') ?></a>
+			<a href="<?php $plxShow->urlRewrite('?static8/wiki') ?>" id="active"><?php $plxShow->lang('WIKI') ?></a>
 			</li>
 
 			<?php if($idStat=="006"){ $status = "active"; } else { $status = "no-active"; }?>
