@@ -45,6 +45,7 @@ $lang = $plxShow->defaultLang($echo);
           
           </div>
         </div>
+        <?php include(dirname(__FILE__).'/share-static.php'); ?>  
       </section>
 	</main>
 </div>
