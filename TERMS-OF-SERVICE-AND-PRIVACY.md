@@ -1,30 +1,30 @@
 # Terms of service and Privacy
 
-This document was added to the website on May 2018 in order to assure compliance with the General Data Protection Regulation https://en.wikipedia.org/wiki/General_Data_Protection_Regulation ; a regulation in EU law on data protection and privacy for all individuals within the European Union (EU) and the European Economic Area (EEA). 
+This document was added to the website in May 2018 in order to assure compliance with the [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation); a regulation in the European Union on data protection and privacy for all individuals within the European Union (EU) and the European Economic Area (EEA). 
 
-https://www.peppercarrot.com/ and http://www.davidrevoy.com/ are both website hosted in France and subject to this regulation.
+The websites https://www.peppercarrot.com/ and http://www.davidrevoy.com/ are hosted in France and subject to this regulation.
 
 ## Who we are
 
-My name is David Revoy, founder/author/artist of Pepper&Carrot and I own the websites published at this address: https://www.peppercarrot.com/ and http://www.davidrevoy.com/. The sources of https://www.peppercarrot.com/ are available here https://framagit.org/peppercarrot/website and distributed under the GPL3 https://framagit.org/peppercarrot/website/blob/master/LICENSE . The datas (comments/avatar...etc... are excluded from this repository). You'll find on this repository only the "engine" of this website. 
+My name is David Revoy, founder/author/artist of Pepper&Carrot and I own the websites published at the addresses https://www.peppercarrot.com/ and http://www.davidrevoy.com/. The sources of https://www.peppercarrot.com/ are available at https://framagit.org/peppercarrot/website and distributed under the [GPL3](https://framagit.org/peppercarrot/website/blob/master/LICENSE). The data (comments, avatars etc.) are not in this repository, it only contains this website's the "engine".
 
-The contributors of the project are all listed here: https://framagit.org/peppercarrot/webcomics/blob/master/AUTHORS.md and most of them have access to modify the sources code (artworks, translations, engine) of the websites I put online but no access to the data collected (comment system: email/name/(cat)avatar(generated)/IP ; log of the website).
+The contributors to the project are listed at https://framagit.org/peppercarrot/webcomics/blob/master/AUTHORS.md. Most of them have the ability to modify the source code of the artworks, translations and engine of the websites I put online, but they do not have access to the data that's collected (comment system: email, name, (cat)avatar(generated), IP; log of the website).
 
-Therefore, I, David Revoy, I'm the only responsible for managing your datas collected on the websites mentioned (exept about "embedded content from other websites", read under). 
+Therefore, I, David Revoy, am the only responsible for managing your data collected on the mentioned websites (except about "embedded content from other websites", see below). 
 
 You can contact me at [info@davidrevoy.com](mailto:info@davidrevoy.com) to discuss any issue in relation to your data displayed on the websites.
 
-## What personal data we collect why we collect it and how long we retain your data
+## What personal data we collect, why we collect it, and how long we retain it
 
 ### Comments
 
 When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address. We also generate a catavatar picture from the name of the commenter and keep the picture on a cached folder.
 
-If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue. Removing a comment or editing is not possible for the user via the web interface because the engine of the website PluXML doesn't allows it. In case you want the modification or deletion of a comment, please just add another comment from the same machine (so I can see your IP, this prevent having someone else wanting to edit or delete your message) and ask David Revoy to edit or remove your comment. I'll do it manually as soon as possible. 
+If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue. Removing a comment or editing is not possible for the user via the web interface because the engine of the website PluXML doesn't allow it. In case you want the modification or deletion of a comment, please just add another comment from the same machine (so I can see your IP, this prevents having someone else wanting to edit or delete your message) and ask David Revoy to edit or remove your comment. I'll do it manually as soon as possible. 
 
 ### Cookies
 
-We use only store cookie on your webbrowser to let your webbrowser remember your last selected language and a session ID represented by a hash to allows continuity in the page you browse on the website. The session ID expire in less than 24h then get renew. The language cookie labeled with plxMyMultiLingue keeps around for a month. You can check yourself the content by entering this address on the Firefox browser: chrome://browser/content/preferences/cookies.xul , then filter the website by entering peppercarrot. Navigating the website without cookie is not a problem; exept the website will fallback on the detected language (the one declared by the webrowser). Comment system doesn't remember your name. If the field to enter a comment already propose a name or an email; it is done by your webbrowser.
+We use only store cookies on your webbrowser to let your webbrowser remember your last selected language, and a session ID represented by a hash to allow continuity in the page you browse on the website. The session ID expires in less than 24 hours, after that a new one is generated. The language cookie labeled with plxMyMultiLingue keeps around for a month. You can check yourself the content by entering this address on the Firefox browser: chrome://browser/content/preferences/cookies.xul, then filter the website by entering `peppercarrot`. Navigating the website without cookies is not a problem; it will just fall back to the detected language (the one declared by your web browser). The comment system doesn't remember your name. If the field to enter a comment already proposes a name or an email, it is done by your web browser.
 
 ### Embedded content from other websites
 
@@ -32,21 +32,21 @@ Articles on this site may include embedded content (e.g. videos, images, article
 
 ### Analytics
 
-I don't use analytic services, so I can't share the visitor statistic with no-one or no third-party (I don't use Google Analytic or other script to collect your datas). The hosting company of the website OVH https://www.ovh.com and domain-name registrar http://www.gandi.net are the owner of the machine were the website are hosted or the traffic adress. Therefore, only this companies might have access or possibilities to log your entries. I also don't do any automated decision making and/or profiling on the user data. 
+I don't use analytic services, so I can't share the visitor statistics with anyone (I don't use Google Analytics or other scripts to track you). I don't do any automated decision making and/or profiling on the user data. The hosting company of the website [OVH](https://www.ovh.com) and domain-name registrar [Gandi](http://www.gandi.net) own respectively the machine where the website is hosted and its internet address. Therefore, these companies might log your access to the site.
 
 ### How I protect your data
 
-The folder containing (comment system: email/name/(cat)avatar(generated)/IP ; log of the website) is protected and the file can be accessed only via FTP/SSH with code access of the server. I am the only person with this access right now. It is not possible to access this folder via public access.
+The data (email, name, avatar, IP when you leave a comment; the log of the website) are protected and the files can be accessed only via FTP/SSH with code access of the server. I am the only person with this access right now. It is not possible to access this folder via public access.
 
 ### What data breach/moderation procedures we have in place
 
-As I don't collect any sensible information about our visitors (only IP and optional email for the comment system) a big hack of our database couldn't affect really our end-user. In worst case, hacker could... send you an email, or duplicate your comment. No password can be stolen as no password will ever be asked for leaving a comment on www.peppercarrot or davidrevoy.com website. In case of getting evidence of impersonation threw the comments, modification of the content of your comment from an external entities ; I'll moderate the comment.
+As I don't collect any sensible information about our visitors (only IP and optional email for the comment system) a big hack of our database couldn't affect really our end-user. In the worst case, a hacker could discover your email address, or duplicate your comment. No password can be stolen as no password will ever be asked for leaving a comment on www.peppercarrot or davidrevoy.com. In case of getting evidence of impersonation through the comments, or modification of the content of your comment by someone else; I'll moderate the comment.
 
 Thank you for reading.
 
 ---
 
-**Contact information** : [info@davidrevoy.com](mailto:info@davidrevoy.com)
+**Contact information**: [info@davidrevoy.com](mailto:info@davidrevoy.com)
 
 ---
 
