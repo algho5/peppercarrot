@@ -17,7 +17,7 @@ body { background-color: #fff; }
 .menu.expanded li.active:hover { background-color: rgba(255,255,255,0); color: rgba(255,255,255,0);; }
 
 /* general styles */
-body { color: #232323; font-family: ubuntu, helvetica, arial, sans-serif; }
+body { color: #232323; font-family: ubuntu, arial, sans-serif; }
 h1, h2, h3, h4, h5, h6 { font-family: 'ComicSpice', cursive, sans-serif;}
 h1{font-size:2.4rem}
 h2{font-size:2.0rem;}
@@ -61,14 +61,14 @@ h4{font-size:1.2rem}
 .covertextoverlay { position: absolute; right: 5.5rem; top: 1.8rem; text-align:right; }
 #supportmebox { position: absolute; right: -1.5rem; top: 9.4rem; color: #222; width: 450px; height: 170px; text-align: center; border-radius: 0.4rem; }
 #moreinfobox { position: absolute; right: 0rem; top: 21rem; color: #222; width: 450px; height: 170px; text-align: right; border-radius: 0.4rem; }
-.moreinfobutton	{ color: #FFF; background: #258fd6 url('../ico/go.svg') no-repeat center right 8px; font-size: 0.85rem; font-family: ubuntu, helvetica, arial, sans-serif; text-align: center; padding: 8px 24px 8px 8px; margin: 0 4px 0 0;	border-radius: 6px; cursor: pointer; }
+.moreinfobutton	{ color: #FFF; background: #258fd6 url('../ico/go.svg') no-repeat center right 8px; font-size: 0.85rem; font-family: ubuntu, arial, sans-serif; text-align: center; padding: 8px 24px 8px 8px; margin: 0 4px 0 0;	border-radius: 6px; cursor: pointer; }
 .moreinfobutton:hover	{ color: #FFF; background-color: #1c6ea5; }
 
 /* Support box */
-.bigbuttonpatreon { font-size: 1.8rem; font-weight: bold; font-family: ubuntu, helvetica, arial, sans-serif; color: #FFFFFF; text-align: center; min-height: 80px; min-width: 374px; padding: 0 0 10px 0; margin: 0 auto 8px auto; display: inline-block; text-decoration: none; border-radius: 10px; box-shadow: 0 2px 3px rgba(23,23,23,0.3);  background: #F96854 url('../img/logo-patreon.svg') no-repeat 120px 36px; background-size: 42px 42px; text-shadow: 0 1px 1px rgba(0,0,0,0.4) }
+.bigbuttonpatreon { font-size: 1.8rem; font-weight: bold; font-family: ubuntu, arial, sans-serif; color: #FFFFFF; text-align: center; min-height: 80px; min-width: 374px; padding: 0 0 10px 0; margin: 0 auto 8px auto; display: inline-block; text-decoration: none; border-radius: 10px; box-shadow: 0 2px 3px rgba(23,23,23,0.3);  background: #F96854 url('../img/logo-patreon.svg') no-repeat 120px 36px; background-size: 42px 42px; text-shadow: 0 1px 1px rgba(0,0,0,0.4) }
 .bigbuttonpatreon:hover { color: #FFF; text-decoration: none;}
-.alternatives {font-size: 0.8rem; font-weight: normal; font-family: ubuntu, helvetica, arial, sans-serif; color: rgba(0,0,0,0.5); margin: 0 0 8px 0;}
-.alternativesbutton	{ font-size: 0.85rem; font-family: ubuntu, helvetica, arial, sans-serif; text-align: center; padding: 8px 8px 8px 24px; margin: 0 2px 0 0; background-color: #777;	border: solid 1px #D7EBFA; border-radius: 10px; cursor: pointer; }
+.alternatives {font-size: 0.8rem; font-weight: normal; font-family: ubuntu, arial, sans-serif; color: rgba(0,0,0,0.5); margin: 0 0 8px 0;}
+.alternativesbutton	{ font-size: 0.85rem; font-family: ubuntu, arial, sans-serif; text-align: center; padding: 8px 8px 8px 24px; margin: 0 2px 0 0; background-color: #777;	border: solid 1px #D7EBFA; border-radius: 10px; cursor: pointer; }
 .alternativesbutton:hover	{ color: #111; }
 .tipeee { padding-left: 26px; background: #FFF url('../img/logo-tipeee.svg') no-repeat center left 5px; background-size: 18px 18px;}
 .paypal { background: #FFF url('../img/logo-paypal.svg') no-repeat center left 5px; background-size: 18px 18px;}
@@ -236,9 +236,9 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 
 /* TOS/Privacy */
 .tosprivacy { font-size: 1.02rem; max-width: 600px; margin: 0 auto; }
-.tosprivacy h1{ font-family: ubuntu, helvetica, arial, sans-serif; font-size: 2.5rem; border-bottom: solid 1px #444; text-align: center; margin-bottom: 2.6rem;}
-.tosprivacy h2{ font-family: ubuntu, helvetica, arial, sans-serif; font-size: 2rem; margin-bottom: 2rem;}
-.tosprivacy h3{ font-family: ubuntu, helvetica, arial, sans-serif; font-size: 1.6rem; margin-top: 2.6rem;}
+.tosprivacy h1{ font-family: ubuntu, arial, sans-serif; font-size: 2.5rem; border-bottom: solid 1px #444; text-align: center; margin-bottom: 2.6rem;}
+.tosprivacy h2{ font-family: ubuntu, arial, sans-serif; font-size: 2rem; margin-bottom: 2rem;}
+.tosprivacy h3{ font-family: ubuntu, arial, sans-serif; font-size: 1.6rem; margin-top: 2.6rem;}
 .tosprivacy img{ margin-top: 0.7rem; }
 
 .cc { font-weight: bold; color: #111; padding: 0.1rem 0.3rem 0.3rem 0.3rem; }
@@ -312,7 +312,7 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 
 /* footer */
 .footer { background: url('../img/header-bg.jpg') center center; box-shadow: inset 0 0.5em 3em #3A2619; color: #3A2619; }
-.footer p{ font: normal 0.8rem Helvetica,arial,sans-serif; }
+.footer p{ font: normal 0.8rem ubuntu, arial, sans-serif; }
 .footer .button{ background-color: #444; }
 .footer li a{ border:none; }
 .footer a{ color: #3A2619; text-decoration: underline; }
