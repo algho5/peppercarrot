@@ -6,3 +6,4 @@ Disallow: /themes/peppercarrot-theme_v2/cat-avatar-generator.php
 Disallow: /plugins/vignette/plxthumbnailer.php
 Disallow: /XYZ/
 Disallow: /XYZ/index.php
+Disallow: /extras/html/2016_cat-generator/index.php
