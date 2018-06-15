@@ -45,8 +45,8 @@ function build_cat($seed=''){
 $imageurl = $_GET["seed"];
 $imageurl = preg_replace('/[^A-Za-z0-9\._-]/', '', $imageurl); 
 $imageurl = substr($imageurl,0,35).'';
-$cachefile = '../../tmp/cache/'.$imageurl.'.jpg';
-$cachetime = 604800; # 1 week (1 day = 86400)
+$cachefile = '../../tmp/cache/cat-avatar-generator/'.$imageurl.'.jpg';
+$cachetime = 5184000; # = 2 monthes | 604800 = 1 week | 86400 = 1 day
 
 // Serve from the cache if it is younger than $cachetime
 if (file_exists($cachefile) && time() - $cachetime < filemtime($cachefile)) {
