@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /tmp/
+Disallow: /tmp/cache/
+Disallow: /downloader.php
+Disallow: /themes/peppercarrot-theme_v2/cat-avatar-generator.php
+Disallow: /plugins/vignette/plxthumbnailer.php
