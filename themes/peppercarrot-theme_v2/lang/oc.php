@@ -59,8 +59,7 @@ $LANG = array(
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galariá d’illustracions',
 'WEBCOMIC_SKETCHES'		    =>  'Croquís',
-# TODO translate this:
-'WEBCOMIC_OLDER_COMICS'         => 'Older webcomics by the same author',
+'WEBCOMIC_OLDER_COMICS'     => 'Ancians webcomics del meteis autor',
 
 ################################################################################
 # Page : Blog
@@ -217,9 +216,9 @@ $LANG = array(
 # Page : Author
 'AUTHOR_TITLE'		    => 'Tocant lo David Revoy',
 'AUTHOR_BIO'	        => '
-    <p>Bonjonrn, m’apèli David Revoy e soi un artista francés nascut a Reims en 1981 e vivent  Montalban. Soi autodidacte e passionat d\'un fum de causas : lo dessenh, la pintura, los cats, l\'informatica, l\'open-source, Gnu/Linux, Internet, los vidèo-jòc vièlhs, los mangas vièlhs, l\'art, la cultura japonesa e la fantasiá...<br />
+    <p>Bonjorn, m’apèli David Revoy e soi un artista francés nascut a Reims en 1981 e vivent a  Montalban. Soi autodidacte e passionat d\'un fum de causas : lo dessenh, la pintura, los cats, l\'informatica, l\'open-source, Gnu/Linux, Internet, los vidèo-jòc vièlhs, los mangas vièlhs, l\'art, la cultura japonesa e la fantasiá...<br />
     <br />
-    Aprèp mai de 10 de trabalh coma independent en far de comanda per l’edicion, l’ensenhament, los estúdios de jòc-vidèo o de films d\'animacion, trobèri mon camin amb un projècte personal que mescla totas mas passions ; e aqueste projècte, s\'apèla Pepper&amp;Carrot.</p>
+    Aprèp mai de 10 ans de trabalh coma independent en far de comandas per l’edicion, l’ensenhament, los estúdios de jòc-vidèo o de films d\'animacion, trobèri mon camin amb un projècte personal que mescla totas mas passions ; e aqueste projècte, s\'apèla Pepper&amp;Carrot.</p>
 
     <p>Mon portfolio :</p>
 ',
