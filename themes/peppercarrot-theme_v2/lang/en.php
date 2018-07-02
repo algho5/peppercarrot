@@ -11,7 +11,7 @@ $LANG = array(
 ################################################################################
 # Header HTML infos for search engine and title in tab:
 'PEPPERCARROT_VEGETABLE' => 'Pepper and Carrot', // literal translation of the spice and the vegetable
-'Website_DESCRIPTION'    => 'Official homepage of Pepper&amp;Carrot, a free/libre and open-source webcomic about Pepper, a young witch and her cat, Carrot. They live in a fantasy universe of potions, magic, and creatures.',
+'Website_DESCRIPTION'    => 'Official homepage of Pepper&amp;Carrot, a free(libre) and open-source webcomic about Pepper, a young witch and her cat, Carrot. They live in a fantasy universe of potions, magic, and creatures.',
 'SUBTITLE'               => 'the Open Webcomic by David Revoy',
 
 ################################################################################
@@ -35,7 +35,7 @@ $LANG = array(
 ################################################################################
 # Page: Homepage
 'HOMEPAGE_BIG_TEXT'         => '
-    A free, libre and open-source webcomic<br/>
+    A free(libre) and open-source webcomic<br/>
     supported directly by its patrons<br/>
     to change the comic book industry!<br/>
 ',
@@ -79,9 +79,9 @@ $LANG = array(
 'PHILOSOPHY_BOTTOM' => '
     <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
 
-    <h2>100% free, forever, no paywall</h2>
+    <h2>100% free(libre), forever, no paywall</h2>
 
-    <p>All the content I produce about Pepper&amp;Carrot is on this website, free and available to everyone.<br/>
+    <p>All the content I produce about Pepper&amp;Carrot is on this website, free(libre) and available to everyone.<br/>
     I respect all of you equally: with or without money. All special bonuses I make for my patrons are also posted here.<br/>
     Pepper&amp;Carrot will never ask you to pay anything or to get a subscription to get access to new content.</p>
 
@@ -90,7 +90,7 @@ $LANG = array(
     <h2>Open-source and permissive</h2>
 
     <p>I want to give people the right to share, use, build and even make money upon the work I&#39;ve created.<br/>
-    All pages, artworks and content were made with Free/Libre Open-Sources Software on GNU/Linux, and all sources are on this website, &#39;Source&#39; menu.<br/>
+    All pages, artworks and content were made with Free(Libre) Open-Sources Software on GNU/Linux, and all sources are on this website, &#39;Source&#39; menu.<br/>
     Commercial usage, translations, fan-art, prints, movies, video-games, sharing, and reposts are encouraged.<br/>
     You just need to give appropriate credit to the authors (artists, correctors, translators involved in the artwork you want to use), provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the authors endorse you or your use.</p>
 
@@ -105,8 +105,8 @@ $LANG = array(
     <h2>Quality entertainment for everyone, everywhere</h2>
 
     <p>Pepper&amp;Carrot is a comedy/humor webcomic suited for everyone, every age.<br/>
-    No mature content, no violence. Free and open-source, Pepper&amp;Carrot is a proud example of how cool free-culture can be.<br/>
-    I focus a lot on quality, because free and open-source doesn&#39;t mean bad or amateur. Quite the contrary.</p>
+    No mature content, no violence. Free(libre) and open-source, Pepper&amp;Carrot is a proud example of how cool free-culture can be.<br/>
+    I focus a lot on quality, because free(libre) and open-source doesn&#39;t mean bad or amateur. Quite the contrary.</p>
 
         <img alt="Illustration representing comic pages flying around the world" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
 

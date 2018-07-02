@@ -11,7 +11,7 @@ $LANG = array(
 ################################################################################
 # Header HTML infos for search engine and title in tab:
 'PEPPERCARROT_VEGETABLE'    =>  'Poivron et Carotte', // litteral translation of spices + vegetable
-'Website_DESCRIPTION'       =>  'Site officiel de Pepper&amp;Carrot, un webcomic libre, open-source et gratuit au sujet de Pepper, une jeune sorcière et son chat, Carrot. Ils vivent dans un univers de potions, de magies et de créatures.',
+'Website_DESCRIPTION'       =>  'Site officiel de Pepper&amp;Carrot, un webcomic libre et open-source au sujet de Pepper, une jeune sorcière et son chat, Carrot. Ils vivent dans un univers de potions, de magies et de créatures.',
 'SUBTITLE'                  =>  'le webcomic libre de David Revoy',
 
 ################################################################################
@@ -35,7 +35,7 @@ $LANG = array(
 ################################################################################
 # Page : Homepage
 'HOMEPAGE_BIG_TEXT'		    =>  '
-    Un webcomic libre, gratuit et open-source<br/>
+    Un webcomic libre et open-source<br/>
     financé directement par ses lecteurs<br/>
     pour changer l\'industrie de la BD !<br/>
 ',
@@ -79,9 +79,9 @@ $LANG = array(
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="Illustration représentant le mécénat moderne" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
 
-    <h2>100% gratuit, pour toujours</h2>
+    <h2>100% libre, pour toujours</h2>
     
-    <p>Tous les contenus que je crée autour et pour Pepper&amp;Carrot sont sur ce site, gratuits et disponibles pour tous.<br/>
+    <p>Tous les contenus que je crée autour et pour Pepper&amp;Carrot sont sur ce site, libres et disponibles pour tous.<br/>
     Je vous respecte tous au même niveau : avec ou sans argent. Tous les bonus que je fais pour mes mécènes sont ici également.<br/>
     Pepper&amp;Carrot ne vous demandera jamais de payer quoi que ce soit ou de s\'inscrire quelque part pour avoir accès au contenu.</p>
     
@@ -105,7 +105,7 @@ $LANG = array(
     <h2>Un divertissement de qualité, partout et pour tous</h2>
     
     <p>Pepper&amp;Carrot est un webcomic (une BD sur Internet) humoristique convenant pour tous les âges.<br/>
-    Aucune scène de violence, ni de sexualité ne sera publiée ici. Gratuit et open-source, Pepper&amp;Carrot<br/>
+    Aucune scène de violence, ni de sexualité ne sera publiée ici. Libre et open-source, Pepper&amp;Carrot<br/>
     se veut être un exemple responsable de médias libres. L\' accent est mis sur la qualité, l\'éthique et le<br/>
     professionnalisme, parce que "libre et open-source" ne signifie pas "au rabais ou à l\'arrache". Au contraire.</p>
 

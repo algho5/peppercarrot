@@ -11,7 +11,7 @@ $LANG = array(
 ################################################################################
 # Header HTML infos for search engine and title in tab:
 'PEPPERCARROT_VEGETABLE'    =>  '', // litteral translation of spices + vegetable
-'Website_DESCRIPTION'        =>  'Página oficial de Pepper&amp;Carrot, un webcomic gratuito/libre de código abierto acerca de Pepper, una joven bruja y su gato, Carrot. Ellos viven en un universo de fantasía con pociones, magia y criaturas.',
+'Website_DESCRIPTION'        =>  'Página oficial de Pepper&amp;Carrot, un webcomic libre de código abierto acerca de Pepper, una joven bruja y su gato, Carrot. Ellos viven en un universo de fantasía con pociones, magia y criaturas.',
 'SUBTITLE'                  =>  'Webcomic Abierto por David Revoy',
 
 ################################################################################
@@ -35,7 +35,7 @@ $LANG = array(
 ################################################################################
 # Page: Homepage
 'HOMEPAGE_BIG_TEXT'		    =>  '
-    Un webcomic gratuito, libre y de codigo abierto<br/>
+    Un webcomic libre y de codigo abierto<br/>
     apoyado directamente por sus patrocinadores<br/>
     ¡ para cambiar la industria del cómic!<br/>
 ',
@@ -80,9 +80,9 @@ $LANG = array(
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="ilustración representando el patrocinio" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
 
-    <h2>100% gratis, por siempre, sin Paywall</h2>
+    <h2>100% libre, por siempre, sin Paywall</h2>
     
-    <p>Cada contenido que produzco sobre Pepper&amp;Carrot en este sitio web son gratuitos y están disponibles para todos.<br/>
+    <p>Cada contenido que produzco sobre Pepper&amp;Carrot en este sitio web son libres y están disponibles para todos.<br/>
     Respeto a todos ustedes por igual: con o sin dinero. Todas las bonificaciones especiales que hago para mis patrocinadores también se publican aquí.<br/>
     Pepper&amp;Carrot nunca te pedirá pagar algo u obtener una suscripción para acceder a un nuevo contenido.</p>
     
@@ -91,7 +91,7 @@ $LANG = array(
     <h2>De código abierto y permisivo</h2>
     
     <p>Quiero darle a la gente el derecho a compartir, utilizar, desarrollar e incluso ganar dinero con el trabajo que he creado.<br/>
-    Todas las páginas, ilustraciones y contenido se hicieron con Software Gratuito/Libre de código abierto en GNU/Linux, y todas las fuentes están en este sitio web, en el menú &#39;Fuentes&#39;.<br/>
+    Todas las páginas, ilustraciones y contenido se hicieron con Software Libre de código abierto en GNU/Linux, y todas las fuentes están en este sitio web, en el menú &#39;Fuentes&#39;.<br/>
     Se anima el uso comercial, traducciones, fan-arts, impresiones, películas, videojuegos, distribuciones y re-publicaciones.<br/>
     Solo tienes que atribuir la obra a los autores (artistas, correctores, traductores o cualquier persona implicado en la obra que quieras utilizar), proporcionar un enlace a la licencia e indicar si se han realizado cambios en la obra. Puedes hacer esto de cualquier manera razonable, pero no de forma que sugiera que los autores te dan su respaldo.</p>
     
@@ -106,7 +106,7 @@ $LANG = array(
     <h2>Entretenimiento de calidad para todos, en cualquier lugar</h2>
     
     <p>Pepper&amp;Carrot es un webcomic  de comedia/humor adecuado para todo el mundo, todas las edades.<br/>
-    Sin contenido para adultos, sin violencia. Gratuito y de código abierto, Pepper&amp;Carrot es un orgulloso ejemplo de lo genial que podría ser la cultura libre.<br/>
+    Sin contenido para adultos, sin violencia. Libre y de código abierto, Pepper&amp;Carrot es un orgulloso ejemplo de lo genial que podría ser la cultura libre.<br/>
     Me estoy centrando mucho en la calidad, porque lo libre y de código abierto no significa malo o aficionado. Au contraire.</p>
 
         <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">

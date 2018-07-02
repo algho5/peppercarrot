@@ -73,9 +73,9 @@ $LANG = array(
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
 
-    <h2>100% gratuito, per sempre</h2>
+    <h2>100% libero, per sempre</h2>
 
-    <p>Ogni contenuto prodotto su Pepper&amp;Carrot &#232; disponibile in questo sito web, gratuito e fruibile da chiunque.<br/>
+    <p>Ogni contenuto prodotto su Pepper&amp;Carrot &#232; disponibile in questo sito web, libero e fruibile da chiunque.<br/>
     Rispetto tutti alla stessa maniera: con o senza denaro. Anche tutti i regali speciali che faccio per i miei lettori sono inseriti qui.<br/>
     Pepper&amp;Carrot non vi chieder&#224; mai di pagare oppure di sottoscrivere un abbonamento per accedere a nuovi contenuti.</p>
     
@@ -96,7 +96,7 @@ $LANG = array(
     <h2>Divertimento di qualit&#224; per chiunque, dovunque</h2>
     
     <p>Pepper&amp;Carrot &#232; un webcomic umoristico adatto per tutte le et&#224;<br/>
-    Qui nessuna oscenit&#224; o scena di violenza sar&#224; pubblicata. Gratuito e open-source, Pepper&amp;Carrot rappresenta un esempio orgoglioso su come pu&#242; essere affascinante la free-culture.<br/>
+    Qui nessuna oscenit&#224; o scena di violenza sar&#224; pubblicata. Libero e open-source, Pepper&amp;Carrot rappresenta un esempio orgoglioso su come pu&#242; essere affascinante la free-culture.<br/>
     Desidero porre l&#39;accento sulla qualit&#224;, l&#39;etica e la professionalit&#224;, in quanto libero e open-source non significa essere brutti oppure dilettanti. Au contraire.</p>
         <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
     <h2>Spingiamo l&#39;industria del fumetto al cambiamento!</h2>
