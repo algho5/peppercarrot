@@ -79,9 +79,9 @@ $LANG = array(
 'PHILOSOPHY_BOTTOM' => '
     <img alt="afbeelding die patrons voorstelt" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
 
-    <h2>100% gratis, altijd, zonder paywall</h2>
+    <h2>100% vrij, altijd, zonder paywall</h2>
 
-    <p>Alles wat ik produceer van Pepper&amp;Carrot staat op deze website, gratis en voor iedereen beschikbaar.<br/>
+    <p>Alles wat ik produceer van Pepper&amp;Carrot staat op deze website, vrij en voor iedereen beschikbaar.<br/>
     Ik respecteer iedereen even veel: of je geld geeft of niet. Alle speciale bonussen die ik maak voor mijn patrons zet ik ook hier.<br/>
     Pepper&amp;Carrot zal je nooit vragen om iets te betalen of een abonnement te nemen om toegang te krijgen tot nieuwe dingen.</p>
 
