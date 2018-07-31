@@ -68,13 +68,53 @@ include(dirname(__FILE__).'/header.php');
     
       <aside class="aside col sml-12 med-3" role="complementary">
       
-      <?php
-      $contents = file_get_contents('data/documentation/_sidebar.md');
-      $contents = str_replace("](", "](index.php?static14/documentation&page=", $contents);
-      $contents = str_replace(".md", "", $contents);
-      $Parsedown = new Parsedown();
-      echo $Parsedown->text($contents);
-      ?>
+<div class="homebox">
+        <section class="catbuttonmenu col sml-12 med-12 lrg-12" style="padding:0 0;">
+          <a class="catbutton <?php echo $statushome; ?>" href="<?php $plxShow->urlRewrite('?static14/documentation'); ?> " title=""><img src="themes/peppercarrot-theme_v2/ico/home.svg" alt="Home"/> Home</a>
+          <?php
+            // dynamic menu generation for sidebar
+    
+              # we scan all markdown in folder
+              $search = glob("data/documentation/*.md");
+
+              # we loop on found files
+              if (!empty($search)){ 
+                foreach ($search as $docfile) {
+                  
+                  // clean path to filename only
+                  $docfile = basename($docfile);
+                  
+                  // _Footer and _Sidebar are special page, they start with '_' exclude them
+                  if (substr($docfile, 0, 1) === '_') {
+                    // page starting with '_' found, do nothing.
+                  } else {
+                    // Check if the page is Home, we don't display it here to keep it hardcoded on the top
+                    if ($docfile === 'Home.md' OR $docfile === 'README.md') {
+                    // Home.md found, do nothing
+                    } else {
+                      // We have a valid markdown page
+                      // Clean filename to get only name without extension :
+                      $docfile = preg_replace('/\\.[^.\\s]{2,4}$/', '', $docfile);
+                      // reset the status of active page.
+                      $status="";
+                      // Is there a chance we display the page of this button now? time to set status actif!
+                      if ($docfile === $docpage) {
+                        $status="active";
+                      }
+                      // Ok, we have all, diplay this button now :
+                      // Better name
+                      $docfilehuman = str_replace('_', ' ', $docfile);
+                      $docfilehuman = preg_replace('/[0-9.]+/', '', $docfilehuman);
+                      echo '<a class="catbutton '.$status.'" href="';
+                      $plxShow->urlRewrite('?static14/documentation&page='.$docfile);
+                      echo '" title="">'.$docfilehuman.'</a>';
+                    }
+                  }
+                }
+              }
+          ?>
+          </section>
+        </div>
       
       <div style="clear:both"></div>
     <br/>
