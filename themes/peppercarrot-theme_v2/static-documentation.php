@@ -87,9 +87,9 @@ include(dirname(__FILE__).'/header.php');
         <?php
           echo '<a href="https://framagit.org/peppercarrot/documentation/commits/master/'.$docpage.'.md" target="_blank" title="External history link to see all changes made to this page" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history.svg" alt=""/>&nbsp;&nbsp;Page history</a>';
           echo '<br/>';
-          echo '<a href="https://framagit.org/peppercarrot/documentation" target="_blank" title="External repository link" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/>&nbsp;&nbsp;Repository</a>';
+          echo '<a href="https://framagit.org/peppercarrot/documentation" target="_blank" title="External repository link" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/>&nbsp;&nbsp;Git repository</a>';
           echo '<br/>';
-          echo '<a href="https://framagit.org/peppercarrot/documentation/commits/master" target="_blank" title="External history link to see all changes made to the documentation" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/log.svg" alt=""/>&nbsp;&nbsp;full log</a>';
+          echo '<a href="https://framagit.org/peppercarrot/documentation/commits/master" target="_blank" title="External history link to see all changes made to the documentation" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/log.svg" alt=""/>&nbsp;&nbsp;Git log</a>';
         ?>      
       </div>
 
@@ -110,10 +110,8 @@ include(dirname(__FILE__).'/header.php');
       $Parsedown = new Parsedown();
       echo $Parsedown->text($contents);
     ?>
-    <br/>
-    <br/>
-    <!-- Footer -->
-    <footer class="col sml-12 med-12 lrg-12 text-center">
+
+    <footer class="col docfoot sml-12 med-12 lrg-12 text-center">
     <?php
       $contents = file_get_contents('data/documentation/_footer.md');
       $Parsedown = new Parsedown();
