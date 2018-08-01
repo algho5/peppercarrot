@@ -150,7 +150,7 @@ if(isset($_GET['page'])) {
       echo '<div class="buttonlangzip">';  
       echo '<img style="float:left; margin-right:10px;" src="themes/peppercarrot-theme_v2/ico/lang.svg" alt=""/>  ';
       $plxShow->lang('SOURCE_TRANSLATOR');
-      echo ' <span style="font-size:0.8em">(<a href="index.php?article267/how-to-add-a-translation-or-a-correction">?</a>)</span><br/>';
+      echo ' <span style="font-size:0.8em">(<a href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>">?</a>)</span><br/>';
       foreach ($search as $filepath) {
         $filename = basename($filepath);
         $fileweight = (filesize($filepath) / 1024) / 1024;
@@ -929,7 +929,7 @@ if(isset($_GET['page'])) {
       echo '<ul class="menu" role="toolbar">';
       eval($plxShow->callHook('MyMultiLingueStaticLang'));
       echo '<li>';
-      echo '<a class="lang" href="index.php?article267/how-to-add-a-translation-or-a-correction">';
+      echo '<a class="lang" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>">';
       echo '<img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$plxShow->Getlang('ADD_TRANSLATION').'';
       echo '</a>';
       echo '</li>';
@@ -938,7 +938,11 @@ if(isset($_GET['page'])) {
     echo '<article class="col sml-12 med-12 lrg-10 sml-centered" role="article" >';
       $plxShow->lang('SOURCES_TOP');
       $plxShow->lang('SOURCES_BOTTOM');
-      echo '<a class="button blue" href="https://framagit.org/peppercarrot">Pepper&amp;Carrot Gitlab repository group on Framagit</a>';
+      echo '<a class="button blue" href="https://framagit.org/peppercarrot">View Git repositories</a>';
+      echo '&nbsp;&nbsp;&nbsp;&nbsp;';
+      echo '<a class="button blue" href="';
+      $plxShow->urlRewrite('?static14/documentation');
+      echo '">View Documentation for contributors</a>';
       echo '<br/><br/>';
 
         echo '<section class="col sml-12 med-12 lrg-12 sml-centered sml-text-center">';

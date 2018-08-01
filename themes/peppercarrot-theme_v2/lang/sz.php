@@ -162,7 +162,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Przekłŏd i korekta:</h2>
 
-    <p>Plac Pepper&amp;Carrot je wielogodkowy i akceptuje kożdõ z nich (aji wymarłe i fikcyjne). Źrōdła ôd zajty sōm dostympne do przekłŏdu. Przeczytej <a href="index.php?article267/how-to-add-a-translation-or-a-correction">instrukcyjõ</a>, coby przewiedzieć sie, jak przidać włŏsny przekłŏd.</p>
+    <p>Plac Pepper&amp;Carrot je wielogodkowy i akceptuje kożdõ z nich (aji wymarłe i fikcyjne). Źrōdła ôd zajty sōm dostympne do przekłŏdu. Przeczytej <a href="?static14/documentation&page=010_Translate_the_comic">instrukcyjõ</a>, coby przewiedzieć sie, jak przidać włŏsny przekłŏd.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Nece społecznościowe:',

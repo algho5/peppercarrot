@@ -159,7 +159,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>翻訳と修正:</h2>
     
-    <p> ペッパー&amp;キャロットウェブサイトは多言語対応のデザインになっていて、どの言語(既に使われなくなった言語でも、創作言語でも)も受け入れます。翻訳用のページのソースが用意されています。翻訳の追加方法については<a href="index.php?article267/how-to-add-a-translation-or-a-correction">翻訳チュートリアル</a>を参照してください。</p>
+    <p> ペッパー&amp;キャロットウェブサイトは多言語対応のデザインになっていて、どの言語(既に使われなくなった言語でも、創作言語でも)も受け入れます。翻訳用のページのソースが用意されています。翻訳の追加方法については<a href="?static14/documentation&page=010_Translate_the_comic">翻訳チュートリアル</a>を参照してください。</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'ソーシャルネットワークでのシェア :',

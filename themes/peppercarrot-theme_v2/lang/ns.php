@@ -160,7 +160,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Översetten un Korrekturen:</h2>
 
-    <p>De Websteed vun Pepper&amp;Wuddel is dorför maakt worrn, mit vele Spraken ümtogahn un laat all Spraken to (ok Spraken, de utstorven oder utdacht sünd). De Dateien för düsse Websteed köönt ji rünnerladen un denn översetten. Kiekt de <a href="index.php?article267/how-to-add-a-translation-or-a-correction">Anleden för Översetter</a> an, de verkloort ji, woneem ji joon Översetten online stellen köönt.</p>
+    <p>De Websteed vun Pepper&amp;Wuddel is dorför maakt worrn, mit vele Spraken ümtogahn un laat all Spraken to (ok Spraken, de utstorven oder utdacht sünd). De Dateien för düsse Websteed köönt ji rünnerladen un denn översetten. Kiekt de <a href="?static14/documentation&page=010_Translate_the_comic">Anleden för Översetter</a> an, de verkloort ji, woneem ji joon Översetten online stellen köönt.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Soziale Nettwarken:',

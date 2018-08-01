@@ -160,7 +160,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>번역 및 수정</h2>
 
-    <p>후추와 당근 웹사이트는 다국어로 사용할 수 있도록 되어 있으며 어떤 언어든(사멸어 혹은 가상어 포함) 허용합니다. 이 페이지의 소스는 번역할 수 있도록 항상 준비되어 있습니다. 번역 방법에 대한 자세한 내용은<a href="index.php?article267/how-to-add-a-translation-or-a-correction">참조 안내서</a>를 확인하세요.</p>
+    <p>후추와 당근 웹사이트는 다국어로 사용할 수 있도록 되어 있으며 어떤 언어든(사멸어 혹은 가상어 포함) 허용합니다. 이 페이지의 소스는 번역할 수 있도록 항상 준비되어 있습니다. 번역 방법에 대한 자세한 내용은<a href="?static14/documentation&page=010_Translate_the_comic">참조 안내서</a>를 확인하세요.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => '소셜 네트워크:',

@@ -159,7 +159,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Translations and corrections:</h2>
     
-    <p> La plana web de Pepper&amp;Carrot està dissenyada per tal de ser multilíngüe i accepta qualsevol llengua (incloent-hi les extingides i les inventades!). Les fonts són a la teva disposició per tal que les puguis traduir. Mira la <a href="index.php?article267/how-to-add-a-translation-or-a-correction">reference tutorial</a> per tal de trobar més informació sobre com afegir una traducció.</p>
+    <p> La plana web de Pepper&amp;Carrot està dissenyada per tal de ser multilíngüe i accepta qualsevol llengua (incloent-hi les extingides i les inventades!). Les fonts són a la teva disposició per tal que les puguis traduir. Mira la <a href="?static14/documentation&page=010_Translate_the_comic">reference tutorial</a> per tal de trobar més informació sobre com afegir una traducció.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Xarxa social:',

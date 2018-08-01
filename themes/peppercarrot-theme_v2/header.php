@@ -136,7 +136,7 @@ echo "-->";
 			<a href="<?php $plxShow->urlRewrite('?static8/wiki') ?>" id="active"><?php $plxShow->lang('WIKI') ?></a>
 			</li>
 
-			<?php if($idStat=="006"){ $status = "active"; } else { $status = "no-active"; }?>
+			<?php if($idStat=="006" OR $idStat=="014"){ $status = "active"; } else { $status = "no-active"; }?>
 			<li class="<?php echo $status; ?>" >
 			<a href="<?php $plxShow->urlRewrite('?static6/sources') ?>"><?php $plxShow->lang('SOURCES') ?></a>
 			</li>
