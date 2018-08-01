@@ -260,7 +260,7 @@ ul.menu.tag li a.button{ margin: 0 0 1.2rem 0;}
 .docmenuitemnumber { color: #6F5341; padding:0 0.2rem; border-radius: 0.3rem; margin: 0 0 0 0.2rem; font-size: 0.9rem; text-shadow: none; }
 .edit {line-height: 1.6;}
 .edit img {opacity: 0.6; }
-.docbox h1{ font-family: ubuntu, arial, sans-serif; font-size: 2.2rem; margin-bottom: 1.4rem; padding-top: 0px; margin-top: 0px; }
+.docbox h1{ font-family: ubuntu, arial, sans-serif; font-size: 2.2rem; margin-bottom: 1.4rem; padding-top: 0px; margin-top: 10px; }
 .docbox h2{ font-family: ubuntu, arial, sans-serif; font-size: 1.9rem; margin-bottom: 1.4rem;}
 .docbox h3{ font-family: ubuntu, arial, sans-serif; font-size: 1.6rem; margin-top: 2.6rem;}
 .docbox img{ margin-top: 0.7rem; }
