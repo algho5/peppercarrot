@@ -73,20 +73,7 @@ include(dirname(__FILE__).'/header.php');
         }
         ?>
       </section>
-
       <div style="clear:both"></div>
-
-      <br/>
-      <div class="edit" >
-        <?php
-          echo '<br/>';
-          echo '<a href="https://framagit.org/peppercarrot/documentation" target="_blank" title="External repository link" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/>&nbsp;&nbsp;Documentation repository</a>';
-          echo '<br/>';
-          echo '<a href="https://framagit.org/peppercarrot/documentation/commits/master" target="_blank" title="External history link to see all changes made to the documentation" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/log.svg" alt=""/>&nbsp;&nbsp;Documentation log</a><br/><br/>';
-        ?>      
-      </div>
-
-      </section>
     </aside>
 
     <section class="docbox col sml-12 med-8">
