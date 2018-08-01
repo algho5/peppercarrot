@@ -150,7 +150,9 @@ if(isset($_GET['page'])) {
       echo '<div class="buttonlangzip">';  
       echo '<img style="float:left; margin-right:10px;" src="themes/peppercarrot-theme_v2/ico/lang.svg" alt=""/>  ';
       $plxShow->lang('SOURCE_TRANSLATOR');
-      echo ' <span style="font-size:0.8em">(<a href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>">?</a>)</span><br/>';
+      echo ' <span style="font-size:0.8em">(<a href="';
+      $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic');
+      echo'">?</a>)</span><br/>';
       foreach ($search as $filepath) {
         $filename = basename($filepath);
         $fileweight = (filesize($filepath) / 1024) / 1024;
@@ -929,7 +931,9 @@ if(isset($_GET['page'])) {
       echo '<ul class="menu" role="toolbar">';
       eval($plxShow->callHook('MyMultiLingueStaticLang'));
       echo '<li>';
-      echo '<a class="lang" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>">';
+      echo '<a class="lang" href="';
+      $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic');
+      echo '">';
       echo '<img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$plxShow->Getlang('ADD_TRANSLATION').'';
       echo '</a>';
       echo '</li>';

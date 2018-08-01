@@ -264,7 +264,7 @@ ul.menu.tag li a.button{ margin: 0 0 1.2rem 0;}
 .docbox h2{ font-family: ubuntu, arial, sans-serif; font-size: 1.9rem; margin-bottom: 1.4rem;}
 .docbox h3{ font-family: ubuntu, arial, sans-serif; font-size: 1.6rem; margin-top: 2.6rem;}
 .docbox img{ margin-top: 0.7rem; }
-.docbox code { color: #C6FF65; background-color: #4A5357; padding: 1em; line-height: 1.45; border-radius: 3px; font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace; #0074E8overflow:auto; }
+.docbox code { color: #333; background-color: #eee; padding: 3px; line-height: 1.45; border-radius: 3px; font: 0.85rem Consolas, "Liberation Mono", Menlo, Courier, monospace; overflow:auto; }
 
 /* Banner ( hidden )  */
 .banner { height: 120px; max-width: 1180px; margin-top: 1rem; background: url('../img/banner_001.jpg') no-repeat center left; border-radius: 0.4rem; color:#505E61; text-align:center; border: solid 1px #FFF;}
