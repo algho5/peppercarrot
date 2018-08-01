@@ -29,7 +29,7 @@ include(dirname(__FILE__).'/header.php');
 <div class="container">
 	<main class="docall grid" role="main">
 
-    <aside class="aside docbar col sml-12 med-3" role="complementary">
+    <aside class="aside col sml-12 med-4" role="complementary">
       <section class="docmenuitemmenu col sml-12 med-12 lrg-12" style="padding:0 0;">
         <a class="docmenuitem <?php echo $statushome; ?>" href="<?php $plxShow->urlRewrite('?static14/documentation'); ?> " title="">
           Introduction
@@ -78,25 +78,18 @@ include(dirname(__FILE__).'/header.php');
 
       <br/>
       <div class="edit" >
-        <a href="https://framagit.org/peppercarrot/documentation/edit/master/<?php echo $docpage; ?>.md" target="_blank" title="Edit this page with an external editor" >
-        <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/edit.svg" alt=""/>
-        &nbsp;&nbsp; Edit this page
-        </a>
-        <br/>
-        <br/>
         <?php
-          echo '<a href="https://framagit.org/peppercarrot/documentation/commits/master/'.$docpage.'.md" target="_blank" title="External history link to see all changes made to this page" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history.svg" alt=""/>&nbsp;&nbsp;Page history</a>';
           echo '<br/>';
-          echo '<a href="https://framagit.org/peppercarrot/documentation" target="_blank" title="External repository link" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/>&nbsp;&nbsp;Git repository</a>';
+          echo '<a href="https://framagit.org/peppercarrot/documentation" target="_blank" title="External repository link" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/>&nbsp;&nbsp;Documentation repository</a>';
           echo '<br/>';
-          echo '<a href="https://framagit.org/peppercarrot/documentation/commits/master" target="_blank" title="External history link to see all changes made to the documentation" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/log.svg" alt=""/>&nbsp;&nbsp;Git log</a>';
+          echo '<a href="https://framagit.org/peppercarrot/documentation/commits/master" target="_blank" title="External history link to see all changes made to the documentation" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/log.svg" alt=""/>&nbsp;&nbsp;Documentation log</a><br/><br/>';
         ?>      
       </div>
 
       </section>
     </aside>
 
-    <section class="docbox col sml-12 med-9">
+    <section class="docbox col sml-12 med-8">
     <?php 
     # English only notification:
       if ($lang !== 'en') {
@@ -105,6 +98,11 @@ include(dirname(__FILE__).'/header.php');
         $plxShow->lang('LIMITATIONS');
         echo '</div>';
       }
+    # buttons
+    echo '<div class="doctopbuttons">';
+     echo '<a href="https://framagit.org/peppercarrot/documentation/commits/master/'.$docpage.'.md" target="_blank" title="External history link to see all changes made to this page" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history_b.svg" alt=""/>&nbsp;View history</a>&nbsp;&nbsp;&nbsp;&nbsp;';
+     echo '<a class="button blue" href="https://framagit.org/peppercarrot/documentation/edit/master/'.$docpage.'.md" target="_blank" title="Edit this page with an external editor" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/edit_w.svg" alt=""/>&nbsp;Edit</a>';
+    echo '</div>';
     # Display content:
       $contents = file_get_contents('data/documentation/'. $docpage .'.md');
       $Parsedown = new Parsedown();
