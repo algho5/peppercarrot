@@ -245,6 +245,23 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .license { margin: 0 0 1.2rem 0;}
 ul.menu.tag li a.button{ margin: 0 0 1.2rem 0;}
 
+/* Documentation */
+.docall { max-width:920px; margin: auto; }
+.docbox { position: relative; font-size: 1.02rem; margin: 0 auto; }
+.docbar { background: #C6E1EE;}
+.docmenuitem { padding: 0.2rem 0 0.2rem 0; box-sizing: border-box; display: block; }
+.docmenuitem.active { color: #000; background: #E7F5FC;}
+.docmenuitem:hover { color: #000;}
+.docmenuitem { color: #0094E8; }
+.docmenuitemnumber { color: #6F5341; padding:0 0.2rem; border-radius: 0.3rem; margin: 0 0 0 0.2rem; font-size: 0.9rem; text-shadow: none; }
+.edit {padding-left: 1.2rem; line-height: 1.6;}
+.edit img {opacity: 0.8; }
+.docbox h1{ font-family: ubuntu, arial, sans-serif; font-size: 1.9rem; margin-bottom: 1.4rem;}
+.docbox h2{ font-family: ubuntu, arial, sans-serif; font-size: 1.9rem; margin-bottom: 1.4rem;}
+.docbox h3{ font-family: ubuntu, arial, sans-serif; font-size: 1.6rem; margin-top: 2.6rem;}
+.docbox img{ margin-top: 0.7rem; }
+.docbox code { color: #C6FF65; background-color: #4A5357; padding: 1em; line-height: 1.45; border-radius: 3px; font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace; #0074E8overflow:auto; }
+
 /* Banner ( hidden )  */
 .banner { height: 120px; max-width: 1180px; margin-top: 1rem; background: url('../img/banner_001.jpg') no-repeat center left; border-radius: 0.4rem; color:#505E61; text-align:center; border: solid 1px #FFF;}
 a:hover { text-decoration:none;}
