@@ -73,6 +73,7 @@ class plxMyMultiLingue extends plxPlugin {
     # Specific rules for Pepper&Carrot :
     $this->addHook('MyMultiLingueComicLang', 'MyMultiLingueComicLang');
     $this->addHook('MyMultiLingueStaticLang', 'MyMultiLingueStaticLang');
+    $this->addHook('MyMultiLingueStaticAllLang', 'MyMultiLingueStaticAllLang');
     $this->addHook('MyMultiLingueComicDisplay', 'MyMultiLingueComicDisplay');
     $this->addHook('MyMultiLingueComicHeader', 'MyMultiLingueComicHeader');
     $this->addHook('MyMultiLingueSourceLinkDisplay', 'MyMultiLingueSourceLinkDisplay');
@@ -696,6 +697,38 @@ public function MyMultiLingueStaticLang() {
       # Lang exist, we build the HTML for the language item
       $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'. $aLabels[$lang].'</a></li>"; ?>';
      }
+  }   
+  # Display the resulting full list
+  echo $LangString;
+}
+
+
+/********************************************************************************************/
+/* Display the pills of all available lang, even webcomic (static: for frontpage/webcomics) */
+/********************************************************************************************/
+/**
+ * Method to display a list of the available all langage for static pages
+ * @author: David Revoy
+ **/  
+public function MyMultiLingueStaticAllLang() {
+  $plxMotor = plxMotor::getInstance();
+  $aLabels = unserialize($this->getParam('labels'));
+  # loop on all the lang pluxml know
+  foreach($this->aLangs as $idx=>$lang) {
+    # Build a pattern to find a hypothetic translation (eg. en.php, jp.php) in theme/lang/ folder 
+    $LangAvailable = PLX_ROOT.$plxMotor->aConf['racine_themes'].$plxMotor->style.'/lang/'.$lang.'.php';
+    # If the label display active lang, let CSS know for highlight via class 'active'
+    $sel = $this->lang==$lang ? ' active':'';
+    # if we detect cover of episode 01 exists in a active language:
+    $episode01_tester = '0_sources/ep01_Potion-of-Flight/low-res/'.$lang.'_Pepper-and-Carrot_by-David-Revoy_E01.jpg';
+    if (file_exists($LangAvailable)) {
+      # Lang exist, we build the HTML for the language item
+      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\" title=\"'.$aLabels[$lang].'\" >'.$aLabels[$lang].'</a></li>"; ?>';
+     } else if (file_exists($episode01_tester)) {
+      # Lang exist but only for webcomic. 
+      $sel = 'notfull';
+      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("index.php?'.$lang.'/article234/potion-of-flight")."\" title=\"'.$aLabels[$lang].' - Note: Translation of webcomic only \">'.$aLabels[$lang].'</a></li>"; ?>';
+    }
   }   
   # Display the resulting full list
   echo $LangString;

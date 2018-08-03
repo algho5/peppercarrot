@@ -7,7 +7,7 @@
 
       <div class="grid">
 
-      <div class="translabar col sml-12 med-12 lrg-12 sml-centered sml-text-center">
+      <div class="translabar col sml-12 med-12 lrg-10 sml-centered sml-text-center">
         <ul class="menu" role="toolbar">
           <?php eval($plxShow->callHook('MyMultiLingueStaticLang')) ?>
           <li><a class="lang" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>

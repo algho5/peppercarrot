@@ -47,13 +47,15 @@ h4{font-size:1.2rem}
 .responsive-menu label { color: #3A2619; background-color: transparent; font: normal 2rem 'ComicSpice', cursive; }
 
 /* translation pills */
-.translabar { padding: 0 0 0 0; margin: 0.5rem 0; max-width: 1060px }
+.translabar { padding: 0 0 0 0; margin: 0.5rem 0; }
+.comicwidth { max-width: 1060px }
 .translabar li { background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px }
 .translabar li.active { background-color: #D7EBFA; border: solid 1px #B1D6F2;}
+.translabar li.notfull { opacity: 0.75; }
+.translabar li.notfull a { opacity: 0.75; }
 .translabar a { text-decoration: none; font-size: 0.9rem; }
 
 /* HOMEPAGE */
-
 /* cover */
 .cover { height: 400px; border-radius: 0.4rem; margin-bottom: 0.3rem; background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat center left; }
 .cover h1 { color: #414141; margin: 0.4rem; line-height: 2.8rem; font-size: 2.4rem; text-align:right; text-shadow: 0 0 4px rgba(255,255,255,0.5), 0 0 2px rgba(255,255,255,0.7);}
@@ -106,6 +108,7 @@ h4{font-size:1.2rem}
 .thumbnail figcaption a { color: #444; }
 .thumbnail figcaption a:hover { text-decoration: none; color: #258fd6; }
 .thumbnail .detail, .thumbnail .detail a{ color: #BBB; font-size: 0.8rem; }
+.notranslation { opacity: 0.5; }
 
 /* Protect SVG icons */
 .lastep .svg, .lastep .svg:hover, .homethumbnail .svg, .thumbnail .svg:hover, .thumbnail .svg { width: auto; border:none; }

@@ -10,7 +10,7 @@ $lang = $plxShow->defaultLang($echo);
 
       <div class="translabar col sml-12 med-12 lrg-12 sml-centered sml-text-center">
         <ul class="menu" role="toolbar">
-          <?php eval($plxShow->callHook('MyMultiLingueStaticLang')) ?>
+          <?php eval($plxShow->callHook('MyMultiLingueStaticAllLang')) ?>
           <li><a class="lang" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
         </ul>
       </div>
@@ -22,7 +22,7 @@ $lang = $plxShow->defaultLang($echo);
           <?php eval($plxShow->callHook("vignetteArtList", array('
           <figure class="thumbnail col sml-12 med-4 lrg-4" style="padding:0 1rem 0 0;">
             <a href="#art_url" title="#art_title">
-              <img src="plugins/vignette/plxthumbnailer.php?src=#episode_vignette&amp;w=400&amp;h=270&amp;s=1&amp;q=92" alt="#art_title" title="#art_title, click to read" >
+              <img class="#translationstatus" src="plugins/vignette/plxthumbnailer.php?src=#episode_vignette&amp;w=400&amp;h=270&amp;s=1&amp;q=92" alt="#art_title" title="#art_title, click to read #translationmessage" >
             </a>
             <figcaption class="text-center"><a href="#art_url" title="#art_title"><span class="detail">#art_date#art_nbcoms</span></a></figcaption>
           </figure>

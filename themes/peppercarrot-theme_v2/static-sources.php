@@ -927,7 +927,7 @@ if(isset($_GET['page'])) {
   
 # Nothing found: we display main Intro
   echo '<!-- Intro -->';
-    echo '<div class="translabar col sml-12 med-12 lrg-9 sml-centered sml-text-center">';
+    echo '<div class="translabar col sml-12 med-12 lrg-10 sml-centered sml-text-center">';
       echo '<ul class="menu" role="toolbar">';
       eval($plxShow->callHook('MyMultiLingueStaticLang'));
       echo '<li>';

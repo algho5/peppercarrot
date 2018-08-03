@@ -41,7 +41,7 @@ $lang = $plxShow->defaultLang($echo);
 
     
 <!-- Translation webcomic-->
-<div class="translabar col sml-12 sml-centered sml-text-center">
+<div class="translabar comicwidth col sml-12 sml-centered sml-text-center">
   <ul class="menu" role="toolbar">
     <?php eval($plxShow->callHook('MyMultiLingueComicLang')) ?>
     <li <?php echo ''.$ButtonStatus.''; ?>><a id="hdbutton" href="<?php $plxShow->artUrl() ?><?php echo ''.$LinkVariable.''; ?>" class="lang option"><img src="themes/peppercarrot-theme_v2/ico/full.svg" alt=">"/> HD</a></li>
