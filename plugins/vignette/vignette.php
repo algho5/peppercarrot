@@ -142,9 +142,11 @@ class vignette extends plxPlugin {
                     $episode_vignette = $episodedir.''.$lang.'_'.$filename.'.'.$vignette_parts['extension'];
                     $translationstatus = 'translated';
                     $translationmessage = '';
+                    $overlay = '';
                     } else {
                     $episode_vignette = $episodedir.'en_'.$filename.'.'.$vignette_parts['extension'];
                     $translationstatus = 'notranslation';
+                    $overlay = '(English) ';
                     $translationmessage = '(Content not available in the selected language. Falling back to English.)';
                     }
 				
@@ -173,6 +175,7 @@ class vignette extends plxPlugin {
 				$row = str_replace('#art_status',$status,$row);
 				$row = str_replace('#translationstatus',$translationstatus,$row);
 				$row = str_replace('#translationmessage',$translationmessage,$row);
+				$row = str_replace('#overlay',$overlay,$row);
 				$author = plxUtils::getValue($plxShow->plxMotor->aUsers[$art['author']]['name']);
 				$row = str_replace('#art_author',plxUtils::strCheck($author),$row);
 				$strlength = preg_match('/#art_title\(([0-9]+)\)/',$row,$capture) ? $capture[1] : '65';
