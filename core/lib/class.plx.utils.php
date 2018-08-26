@@ -6,6 +6,9 @@
  * @package PLX
  * @author	Florent MONTHEL et Stephane F
  **/
+
+include_once(PLX_ROOT.'plugins/cache.php');
+
 class plxUtils {
 
 	/**
@@ -400,8 +403,10 @@ class plxUtils {
 		# On place les bons droits
 		chmod($filename,0644);
 		# On vérifie le résultat
-		if(file_exists($filename) AND !file_exists($filename.'.tmp'))
+		if(file_exists($filename) AND !file_exists($filename.'.tmp')) {
+			cache_expire();
 			return true;
+		}
 		else
 			return false;
 	}

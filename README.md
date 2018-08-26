@@ -51,6 +51,8 @@ cp .0_sources 0_sources
 cp .data data
 cp .tmp tmp
 cp .gitignore-sample .gitignore
+chmod 777 tmp/plxcache
+chmod 666 tmp/plxcache/last_updated
 ```
 This will allow you to create your own datas and password without the file in this folders being tracked by git and pushed to the repository ( **0_sources**, **data** and **tmp** are all ".gitignored" ). You can also host other folders in this directory and customize **.gitignore** to not push them.
 

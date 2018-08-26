@@ -8,6 +8,8 @@
  **/
 
 define('PLX_ADMIN', true);
+include_once(PLX_ROOT.'plugins/cache.php');
+
 
 class plxAdmin extends plxMotor {
 
@@ -973,6 +975,7 @@ RewriteRule ^feed\/(.*)$ feed.php?$1 [L]
 		# Suppression du commentaire
 		if(file_exists($filename)) {
 			unlink($filename);
+			cache_expire();
 		}
 		# On refait un test file_exists pour savoir si unlink à fonctionner
 		if(!file_exists($filename))
