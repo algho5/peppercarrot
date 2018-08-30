@@ -21,6 +21,7 @@
 
 	Before running these functions, make sure this file and its
 	parent directory exist: PLX_ROOT."tmp/plxcache/last_updated"
+	The parent directory must also have write permissions.
 	Otherwise caching won't happen.
 */
 
@@ -79,6 +80,7 @@ function cache_expire() {
 // Global variables shared between cache_starthook and cache_endhook
 $cache_active = TRUE;
 $cache_pagehash = FALSE;
+$validLangsPath = PLX_ROOT."tmp/plxcache/valid_langs";
 
 function cache_starthook() {
 	global $cache_active;
@@ -99,11 +101,34 @@ function cache_starthook() {
 		header("PluXml-Cache-Active: Yes");
 	}
 
-	// Cache each translation separately
-	if($_COOKIE["plxMyMultiLingue"])
+	$query_cleaned = str_replace('^index.php?', '', $_SERVER['QUERY_STRING']);
+	$query_cleaned = ltrim($query_cleaned, '/');
+	$query_parts = explode('/', $query_cleaned);
+
+	global $validLangsPath;
+	$validLangs = explode(',', file_get_contents($validLangsPath));
+	$default_lang = "en";
+
+	/*
+	  Language detection works like this:
+	  1. Choose the language in the URL
+	  2. Otherwise choose the plxMyMultiLingue cookie
+	  3. Otherwise choose the default language
+	  4. Set the user's cookie to the language for 30 days
+	  5. If the chosen language isn't valid, choose the default
+	  Step 4 and 5 would be reversed, but plxMyMultiLingue accidentally
+	  sets its default_lang to the language chosen in step 4 by
+	  calling its parent constructor with the wrong argument.
+	*/
+	if(preg_match('/^[a-zA-Z]{2}$/', $query_parts[0], $capture))
+		$language = $query_parts[0];
+	else if($_COOKIE["plxMyMultiLingue"])
 		$language = $_COOKIE["plxMyMultiLingue"];
 	else
-		$language = "en";
+		$language = $default_lang;
+	$cookie_language = $language;
+	if($validLangs[0] != "" AND !in_array($language, $validLangs))
+		$language = $default_lang;
 
 	/*
 	  HD comic displaying work like this:
@@ -123,16 +148,8 @@ function cache_starthook() {
 
 	// HD is a cache key now, so remove redundant &option= from the page URL
 	// This saves duplicating cache entries for each comic
-	$query_cleaned = str_replace('&option=hd',  '', $_SERVER['QUERY_STRING']);
+	$query_cleaned = str_replace('&option=hd',  '', $query_cleaned);
 	$query_cleaned = str_replace('&option=low', '', $query_cleaned);
-
-	/**
-	  TODO: Emulate language handling better
-
-	  Language cookies only affect output when the language isn't in the URL.
-	  Language cookies are updated to a page's language when visited in PluXml.
-	  $_SESSION['lang'] should probably be set as well.
-	**/
 
 	$cache_pagekey = array(
 		"query" => $query_cleaned,
@@ -145,6 +162,7 @@ function cache_starthook() {
 	if($cache_html) {
 		header("PluXml-Cache-Status: Hit");
 		header("PluXml-Cache-Hash: " . $cache_pagehash);
+		setcookie("plxMyMultiLingue", $cookie_language, time()+3600*24*30);
 		// Handle some CAPCHA logic since PluXML no longer does it
 		$fixed_html = capcha_updateHTML($cache_html);
 		print($fixed_html);
@@ -158,6 +176,13 @@ function cache_endhook($output) {
 	if($cache_active AND cache_write($cache_pagehash, $output)) {
 		header("PluXml-Cache-Status: Create");
 		header("PluXml-Cache-Hash: " . $cache_pagehash);
+		// Update the valid languages for the cache lookup to use
+		global $validLangsPath;
+		$plxMotor = plxMotor::getInstance();
+		$langPlugin = $plxMotor->plxPlugins->aPlugins['plxMyMultiLingue'];
+		$validLangs = $langPlugin->getParam("flags");
+		file_put_contents($validLangsPath + ".tmp", $validLangs);
+		rename($validLangsPath + ".tmp", $validLangsPath);
 	}
 }
 
