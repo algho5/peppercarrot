@@ -92,14 +92,6 @@ if($plxMotor->aConf['urlrewriting']) {
 
 cache_endhook($output);
 
-# On applique la compression gzip si nécessaire et disponible
-if($plxMotor->aConf['gzip']) {
-	if($encoding=plxUtils::httpEncoding()) {
-		header('Content-Encoding: '.$encoding);
-		$output = gzencode($output,-1,FORCE_GZIP);
-    }
-}
-
 # Restitution écran
 echo $output;
 exit;
