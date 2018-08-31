@@ -15,15 +15,16 @@ define('PLX_ROOT', './');
 define('PLX_CORE', PLX_ROOT.'core/');
 include(PLX_ROOT.'config.php');
 include(PLX_CORE.'lib/config.php');
+include(PLX_ROOT.'plugins/cache.php');
+
+session_start();
+cache_starthook();
 
 # On verifie que PluXml est installé
 if(!file_exists(path('XMLFILE_PARAMETERS'))) {
 	header('Location: '.PLX_ROOT.'install.php');
 	exit;
 }
-
-# On démarre la session
-session_start();
 
 # On inclut les librairies nécessaires
 include(PLX_CORE.'lib/class.plx.date.php');
@@ -89,13 +90,7 @@ if($plxMotor->aConf['urlrewriting']) {
 	$output = plxUtils::rel2abs($plxMotor->aConf['racine'], $output);
 }
 
-# On applique la compression gzip si nécessaire et disponible
-if($plxMotor->aConf['gzip']) {
-	if($encoding=plxUtils::httpEncoding()) {
-		header('Content-Encoding: '.$encoding);
-		$output = gzencode($output,-1,FORCE_GZIP);
-    }
-}
+cache_endhook($output);
 
 # Restitution écran
 echo $output;
