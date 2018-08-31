@@ -20,7 +20,7 @@
 	- cache_expire: Update last_updated to mark the cache as stale.
 
 	Before running these functions, make sure this file and its
-	parent directory exist: PLX_ROOT."tmp/plxcache/last_updated"
+	parent directory exist: PLX_ROOT."0_sources/last_updated.txt"
 	The parent directory must also have write permissions.
 	Otherwise caching won't happen.
 */
@@ -38,7 +38,7 @@ function cache_filepath($hash) {
 function cache_read($hash) {
 	$path = cache_filepath($hash);
 	$cached_mtime = @filemtime($path);
-	$latest_mtime = @filemtime(PLX_ROOT."tmp/plxcache/last_updated");
+	$latest_mtime = @filemtime(PLX_ROOT."0_sources/last_updated.txt");
 	if($cached_mtime AND $latest_mtime AND $latest_mtime < $cached_mtime)
 		return file_get_contents(cache_filepath($hash));
 	else
@@ -54,7 +54,7 @@ function cache_write($hash, $data) {
 
 function cache_expire() {
 	header("PluXml-Cache-Status: Expired");
-	touch(PLX_ROOT."tmp/plxcache/last_updated");
+	touch(PLX_ROOT."0_sources/last_updated.txt");
 }
 
 /**

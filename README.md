@@ -45,14 +45,16 @@ To translate just duplicate the en.php file and rename it to your country code (
 
 ### Preparing repo
 
-The website will not run as it is after a fresh clone. You'll need a database of blog post, comments, artworks, comics, etc... This repository comes with it, but you need to copy the folders manually. In the git repository, do:
+The website will not run as it is after a fresh clone. You'll need a temporary cache folder and a database of blog post, comments, artworks, comics, etc... This repository comes with it, but you need to copy the folders manually. In the git repository, do:
 ```
 cp .0_sources 0_sources
 cp .data data
 cp .tmp tmp
 cp .gitignore-sample .gitignore
+mkdir -p tmp/plxcache
 chmod 777 tmp/plxcache
-chmod 666 tmp/plxcache/last_updated
+touch 0_sources/last_updated.txt
+chmod 666 0_sources/last_updated.txt
 ```
 This will allow you to create your own datas and password without the file in this folders being tracked by git and pushed to the repository ( **0_sources**, **data** and **tmp** are all ".gitignored" ). You can also host other folders in this directory and customize **.gitignore** to not push them.
 
