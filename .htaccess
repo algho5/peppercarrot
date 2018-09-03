@@ -1,3 +1,9 @@
+# SSH auto redirection from http to https
+# uncommented on official website:
+# RewriteEngine On
+# RewriteCond %{SERVER_PORT} 80
+# RewriteRule ^(.*)$ https://www.peppercarrot.com/$1 [R=301,L]
+
 # BEGIN -- Pluxml
 Options -Multiviews
 <IfModule mod_rewrite.c>
