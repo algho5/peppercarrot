@@ -7,10 +7,10 @@ if (!defined('ABSPATH')) define('ABSPATH', dirname(__FILE__).'/');
 
 # tableau contenant les fontes disponibles
 $fonts=array();
-if ($dh = opendir(ABSPATH.'fonts')) {
+if ($dh = opendir(ABSPATH.'tff')) {
 	while (($file = readdir($dh)) !== false) {
 		if(strtolower(strrchr($file,'.'))=='.ttf')
-			$fonts[] = ABSPATH.'fonts/'.$file;
+			$fonts[] = ABSPATH.'ttf/'.$file;
 	}
 	closedir($dh);
 }
