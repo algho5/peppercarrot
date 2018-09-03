@@ -18,7 +18,7 @@
 	<parametre name="racine_statiques"><![CDATA[data/statiques/]]></parametre>
 	<parametre name="passwords"><![CDATA[data/configuration/passwords.xml]]></parametre>
 	<parametre name="tri_coms"><![CDATA[asc]]></parametre>
-	<parametre name="urlrewriting">0</parametre>
+	<parametre name="urlrewriting">1</parametre>
 	<parametre name="gzip">0</parametre>
 	<parametre name="feed_chapo">0</parametre>
 	<parametre name="feed_footer"><![CDATA[]]></parametre>
