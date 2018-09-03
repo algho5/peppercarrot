@@ -7,20 +7,20 @@ if (!defined('ABSPATH')) define('ABSPATH', dirname(__FILE__).'/');
 
 # tableau contenant les fontes disponibles
 $fonts=array();
-if ($dh = opendir(ABSPATH.'tff')) {
+if ($dh = opendir(ABSPATH.'lib')) {
 	while (($file = readdir($dh)) !== false) {
 		if(strtolower(strrchr($file,'.'))=='.ttf')
-			$fonts[] = ABSPATH.'ttf/'.$file;
+			$fonts[] = ABSPATH.'lib/'.$file;
 	}
 	closedir($dh);
 }
 
 # tableau contenant les fonds d'images pour le capcha
 $images=array();
-if ($dh = opendir(ABSPATH.'images')) {
+if ($dh = opendir(ABSPATH.'lib')) {
 	while (($file = readdir($dh)) !== false) {
 		if(strtolower(strrchr($file,'.'))=='.png')
-			$images[] = ABSPATH.'images/'.$file;
+			$images[] = ABSPATH.'lib/'.$file;
 	}
 	closedir($dh);
 }
