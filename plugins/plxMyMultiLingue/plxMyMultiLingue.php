@@ -214,6 +214,8 @@ class plxMyMultiLingue extends plxPlugin {
 					}
 				} else {
 					$url = $_SERVER["HTTP_REFERER"];
+					if ($url == "")
+						$url = plxUtils::getRacine();
 				}
 
 				header("Location: ".plxUtils::strCheck($url));
