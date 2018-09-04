@@ -4,6 +4,7 @@
 tmp/
 data/
 0_sources/
+.htaccess
 # itself
 .gitignore
 

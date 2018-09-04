@@ -50,7 +50,9 @@ The website will not run as it is after a fresh clone. You'll need a temporary c
 cp .0_sources 0_sources
 cp .data data
 cp .tmp tmp
-cp .gitignore-sample .gitignore
+cp .gitignore.template .gitignore
+cp .htaccess.template .htaccess
+# Note: You might need to adjust .htaccess Rewrite base, more information in the comment of .htaccess.template
 mkdir -p tmp/plxcache
 chmod 777 tmp/plxcache
 touch 0_sources/last_updated.txt
