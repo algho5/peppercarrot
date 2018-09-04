@@ -112,16 +112,21 @@ function cache_starthook() {
 	/*
 	  Language detection works like this:
 	  1. Choose the language in the URL
-	  2. Otherwise choose the plxMyMultiLingue cookie
-	  3. Otherwise choose the default language
-	  4. Set the user's cookie to the language for 30 days
-	  5. If the chosen language isn't valid, choose the default
-	  Step 4 and 5 would be reversed, but plxMyMultiLingue accidentally
-	  sets its default_lang to the language chosen in step 4 by
-	  calling its parent constructor with the wrong argument.
+	  2. Otherwise choose the language in the user's session
+	  3. Otherwise choose the plxMyMultiLingue cookie
+	  4. Otherwise choose the default language
+	  5. Set the user's cookie to the language for 30 days
+	  6. If the chosen language isn't valid, choose the default
+	  (Step 5 and 6 would be reversed, but plxMyMultiLingue accidentally
+	  sets its default_lang to the language chosen in step 5 by
+	  calling its parent constructor with the wrong argument.)
+	  The session contains the user's last selected language.
+	  The cookie contains the language of the user's last visited page.
 	*/
 	if(preg_match('/^[a-zA-Z]{2}$/', $query_parts[0], $capture))
 		$language = $query_parts[0];
+	else if($_SESSION["lang"])
+		$language = $_SESSION["lang"];
 	else if($_COOKIE["plxMyMultiLingue"])
 		$language = $_COOKIE["plxMyMultiLingue"];
 	else
