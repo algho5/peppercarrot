@@ -206,7 +206,7 @@ function capcha_updateHTML($html) {
 	if($tag_pos) {
 		$_SESSION['capcha_token'] = sha1(uniqid(rand(), true));
 		$_SESSION['capcha'] = capcha_getCode(4);
-		$token_len = strlen($_SESSION['capcha']);
+		$token_len = strlen($_SESSION['capcha_token']);
 		$fixed_html  = substr($html, 0, $tag_pos + $tag_len);
 		$fixed_html .= $_SESSION['capcha_token'];
 		$fixed_html .= substr($html, $tag_pos + $tag_len + $token_len);
