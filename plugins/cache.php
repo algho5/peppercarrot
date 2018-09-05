@@ -160,6 +160,7 @@ function cache_starthook() {
 		"query" => $query_cleaned,
 		"lang"  => $language,
 		"hd"    => $HD,
+		"host"  => getRacine()
 	);
 	$cache_pagehash = cache_hash($cache_pagekey);
 	$cache_html = cache_read($cache_pagehash);
@@ -228,6 +229,23 @@ function capcha_getCode($length) {
 		$rand_str .= $chars{ mt_rand( 0, strlen($chars)-1 ) };
 	}
 	return strtolower($rand_str);
+}
+
+/**
+	pluXml site root emulation code
+	This code fixes the problem of serving multiple hosts with the same cache
+
+	getRacine is copied mostly verbatim from core/lib/class.plx.utils.php
+	By using this as a key the website won't serve content for HTTP on HTTPS.
+**/
+
+function getRacine() {
+        $protocol = (!empty($_SERVER['HTTPS']) AND strtolower($_SERVER['HTTPS']) == 'on') || (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) AND strtolower($_SERVER['HTTP_X_FORWARDED_PROTO']) == 'https' )?        'https://' : "http://";
+        $servername = $_SERVER['HTTP_HOST'];
+        $serverport = (preg_match('/:[0-9]+/', $servername) OR $_SERVER['SERVER_PORT'])=='80' ? '' : ':'.$_SERVER['SERVER_PORT'];
+        $dirname = preg_replace('/\/(core|plugins)\/(.*)/', '', dirname($_SERVER['SCRIPT_NAME']));
+        $racine = rtrim($protocol.$servername.$serverport.$dirname, '/\\').'/';
+        return $racine;
 }
 
 ?>
