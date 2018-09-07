@@ -15,6 +15,9 @@ define('PLX_ROOT', './');
 define('PLX_CORE', PLX_ROOT.'core/');
 include(PLX_ROOT.'config.php');
 include(PLX_CORE.'lib/config.php');
+include(PLX_ROOT.'plugins/cache.php');
+
+cache_starthook();
 
 # On verifie que PluXml est installé
 if(!file_exists(path('XMLFILE_PARAMETERS'))) {
@@ -48,6 +51,8 @@ $output = ob_get_clean();
 
 # Hook Plugins
 eval($plxFeed->plxPlugins->callHook('FeedEnd'));
+
+cache_endhook($output);
 
 # Restitution écran
 echo $output;

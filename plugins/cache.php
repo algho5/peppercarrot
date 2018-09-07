@@ -160,7 +160,8 @@ function cache_starthook() {
 		"query" => $query_cleaned,
 		"lang"  => $language,
 		"hd"    => $HD,
-		"host"  => getRacine()
+		"host"  => getRacine(),
+		"script" => $_SERVER["SCRIPT_NAME"]
 	);
 	$cache_pagehash = cache_hash($cache_pagekey);
 	$cache_html = cache_read($cache_pagehash);
