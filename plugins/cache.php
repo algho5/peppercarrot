@@ -19,6 +19,9 @@
 	- cache_write: Writes data to the filesystem, identified by a hash.
 	- cache_expire: Update last_updated to mark the cache as stale.
 
+	There's 1 global variable:
+	- cache_lastupdated: The time of last_updated.
+
 	Before running these functions, make sure this file and its
 	parent directory exist: PLX_ROOT."0_sources/last_updated.txt"
 	The parent directory must also have write permissions.
@@ -36,10 +39,10 @@ function cache_filepath($hash) {
 }
 
 function cache_read($hash) {
+	global $cache_lastupdated;
 	$path = cache_filepath($hash);
 	$cached_mtime = @filemtime($path);
-	$latest_mtime = @filemtime(PLX_ROOT."0_sources/last_updated.txt");
-	if($cached_mtime AND $latest_mtime AND $latest_mtime < $cached_mtime)
+	if($cached_mtime AND $cache_lastupdated < $cached_mtime)
 		return file_get_contents(cache_filepath($hash));
 	else
 		return FALSE;
@@ -56,6 +59,8 @@ function cache_expire() {
 	header("PluXml-Cache-Status: Expired");
 	touch(PLX_ROOT."0_sources/last_updated.txt");
 }
+
+$cache_lastupdated = @filemtime(PLX_ROOT."0_sources/last_updated.txt");
 
 /**
 	PluXml caching hooks
@@ -85,8 +90,14 @@ $validLangsPath = PLX_ROOT."tmp/plxcache/valid_langs";
 function cache_starthook() {
 	global $cache_active;
 	global $cache_pagehash;
+	global $cache_lastupdated;
 
-	if(!empty($_POST)) {
+	if(!$cache_lastupdated) {
+		// Can't work the cache without last_updated
+		$cache_active = FALSE;
+		header("PluXml-Cache-Active: No, unable to read last_updated");
+		return;
+	} else if(!empty($_POST)) {
 		// Don't cache POST requests
 		$cache_active = FALSE;
 		header("PluXml-Cache-Active: No, POST request");
@@ -99,6 +110,12 @@ function cache_starthook() {
 	} else {
 		$cache_active = TRUE;
 		header("PluXml-Cache-Active: Yes");
+	}
+
+	// Avoid sending the page if it hasn't been updated
+	if($cache_lastupdated <= strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE'])) {
+		header('HTTP/1.0 304 Not Modified');
+		exit;
 	}
 
 	$query_cleaned = str_replace('^index.php?', '', $_SERVER['QUERY_STRING']);
@@ -167,6 +184,7 @@ function cache_starthook() {
 	$cache_html = cache_read($cache_pagehash);
 
 	if($cache_html) {
+		header("Last-Modified: " . gmdate('D, d M Y H:i:s T', $cache_lastupdated));
 		header("PluXml-Cache-Status: Hit");
 		header("PluXml-Cache-Hash: " . $cache_pagehash);
 		setcookie("plxMyMultiLingue", $cookie_language, time()+3600*24*30);
