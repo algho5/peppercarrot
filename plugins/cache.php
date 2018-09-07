@@ -1,6 +1,6 @@
 <?php
 // Copyright 2018 Jookia <166291@gmail.com>
-// SPDX-License-Identifier: MIT
+// Cache plugin is licensed under MIT but includes GPL3 functions
 
 /**
 	Low-level cache API
@@ -238,6 +238,9 @@ function capcha_getCode($length) {
 
 	getRacine is copied mostly verbatim from core/lib/class.plx.utils.php
 	By using this as a key the website won't serve content for HTTP on HTTPS.
+
+	The original author of this code is Florent MONTHEL and Stéphane F.
+	It's unclear what the license of the code is, but I assume GPL3.
 **/
 
 function getRacine() {
