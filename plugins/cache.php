@@ -184,6 +184,10 @@ function cache_starthook() {
 	$cache_html = cache_read($cache_pagehash);
 
 	if($cache_html) {
+		if (strpos($_SERVER["SCRIPT_NAME"], "feed.php"))
+			header('Content-Type: application/rss+xml; charset='.PLX_CHARSET);
+		else
+			header('Content-Type: text/html; charset='.PLX_CHARSET);
 		header("Last-Modified: " . gmdate('D, d M Y H:i:s T', $cache_lastupdated));
 		header("PluXml-Cache-Status: Hit");
 		header("PluXml-Cache-Hash: " . $cache_pagehash);
