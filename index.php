@@ -18,7 +18,11 @@ include(PLX_CORE.'lib/config.php');
 include(PLX_ROOT.'plugins/cache.php');
 
 session_start();
-cache_starthook();
+# Start cache if not on localhost
+if (strpos($_SERVER['SERVER_NAME'], "localhost") === false){
+  cache_starthook();
+}
+
 
 # On verifie que PluXml est installé
 if(!file_exists(path('XMLFILE_PARAMETERS'))) {
@@ -90,7 +94,9 @@ if($plxMotor->aConf['urlrewriting']) {
 	$output = plxUtils::rel2abs($plxMotor->aConf['racine'], $output);
 }
 
-cache_endhook($output);
+if (strpos($_SERVER['SERVER_NAME'], "localhost") === false){
+  cache_endhook($output);
+}
 
 # Restitution écran
 echo $output;
