@@ -49,6 +49,7 @@ $LANG = array(
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'olvasók által támogatott.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternatívák:',
+'HOMEPAGE_FANART'           =>  'Származtatott művek',
 
 ################################################################################
 # Page: Webcomics

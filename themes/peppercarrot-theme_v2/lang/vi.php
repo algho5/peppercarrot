@@ -49,6 +49,7 @@ $LANG = array(
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'được giúp đỡ bởi các nhà tài trợ.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Các lựa chọn thay thế:',
+'HOMEPAGE_FANART'           =>  'Fan-art',
 
 ################################################################################
 # Page: Webcomics

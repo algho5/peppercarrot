@@ -49,6 +49,7 @@ $LANG = array(
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://fr.tipeee.com/pepper-carrot',
 'HOMEPAGE_SUPPORTED_BY'     =>  'financé par ses lecteurs.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternatives:',
+'HOMEPAGE_FANART'           =>  'Fan-art',
 
 ################################################################################
 # Page : Webcomics

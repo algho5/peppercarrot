@@ -49,6 +49,7 @@ $LANG = array(
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'spiyrany bez patrōnōw.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternatywy:',
+'HOMEPAGE_FANART'           =>  'Fan-art',
 
 ################################################################################
 # Page: Webcomics
