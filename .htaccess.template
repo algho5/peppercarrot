@@ -1,8 +1,14 @@
-# SSH auto redirection from http to https
+# SSH auto redirection from http to https and to www
 # uncommented on official website:
 # RewriteEngine On
+#
 # RewriteCond %{SERVER_PORT} 80
-# RewriteRule ^(.*)$ https://www.peppercarrot.com/$1 [R=301,L]
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,QSA,L]
+#
+# RewriteCond %{SERVER_PORT} 443
+# RewriteCond %{HTTP_HOST} ^peppercarrot\.com
+# RewriteRule ^(.*)$ https://www.peppercarrot.com/$1 [R=301,QSA,L]
+#
 # Adapt RewriteBase to the folder name (Eg. on localhost and my peppercarrot subfolder: RewriteBase /peppercarrot/)
 
 # BEGIN -- Pluxml
