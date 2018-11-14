@@ -839,15 +839,15 @@ public function MyMultiLingueComicDisplay($params) {
     # Get the geometry size of the comic page for correct display ratio on HTML  
     $comicpage_size = getimagesize($comicpage_link);
 
-    # Display of the resulting HTML code
-    #   <a href="#'.$comicpage_anchorlink.'" id="'.$comicpage_anchorlink.'" >
-    #     <img class="comicpage" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">
-    #   </a>
-    echo '
-    <div class="panel" align="center">
-        <img class="comicpage" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">
-    </div>
-    ';
+    # Display (add a special rule to detect gif in HD mode and upscale them on webbrowser).
+      if ($definition == "hd" AND strpos($comicpage_link, 'gif') !== false) {
+        echo '<div class="panel" align="center">';
+        echo '<img class="comicpage" style="max-width:2276px;" width="92%" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
+      } else {
+        echo '<div class="panel" align="center">';
+        echo '<img class="comicpage" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
+      }
+      echo '</div>';
     }
   }
 }
