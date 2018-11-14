@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+	<title><![CDATA[A meta tutorial]]></title>
+	<allow_com>1</allow_com>
+	<template><![CDATA[article-blog.php]]></template>
+	<chapo><![CDATA[]]></chapo>
+	<content><![CDATA[This page is supposed to represent a tutorial. This is a placeholder. If you joined this website by accident, please visit <a href="https://www.peppercarrot.com">https://www.peppercarrot.com</a>.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse magna ligula, bibendum eget orci nec, mollis imperdiet dolor. Nunc aliquet, lacus id hendrerit pulvinar, tellus turpis consectetur est, eget molestie justo mi vitae magna. Curabitur vel risus mi. Donec ultricies pretium maximus. Nulla fringilla ut quam nec consectetur. Cras id ipsum ultrices, dapibus erat sed, vulputate arcu. Pellentesque ut aliquet diam. Maecenas dictum imperdiet pellentesque. In et tempus velit. Praesent ullamcorper lacus quis ligula interdum, a eleifend purus dictum. Aliquam erat volutpat.
+
+Sed ac nulla maximus, bibendum arcu a, vestibulum odio. Sed tincidunt elit vel egestas commodo. Suspendisse nec leo mollis, maximus metus vitae, tincidunt neque. Sed laoreet ullamcorper tristique. Aenean feugiat enim lacus, quis varius erat mollis vel. Proin pulvinar purus purus, at pharetra est tincidunt non. Proin ut ornare diam. Proin laoreet arcu et pharetra facilisis. Donec gravida felis ut volutpat sollicitudin. Phasellus at rutrum neque, ut malesuada ipsum.
+
+Quisque imperdiet convallis lobortis. In non molestie orci. Praesent placerat eros eu nibh finibus aliquam. Duis fringilla massa et facilisis pulvinar. Curabitur lorem elit, vestibulum sollicitudin nunc vel, blandit tempus leo. Suspendisse tortor lectus, luctus a vulputate non, facilisis non enim. Aenean euismod massa libero, et egestas orci dictum vitae. Vivamus sit amet auctor odio. Vivamus sagittis augue leo, sed ornare purus pharetra et. Etiam vulputate dolor sagittis nibh condimentum, ac commodo dui sollicitudin. Nulla scelerisque, elit eget sagittis aliquam, ipsum augue hendrerit velit, vel iaculis neque lorem vitae justo.
+
+Aliquam auctor nunc non risus hendrerit volutpat. Aenean porttitor elit at convallis faucibus. Praesent vehicula nulla vitae viverra tristique. Curabitur a ligula at lacus semper fringilla at vel purus. Proin a urna porta, auctor turpis at, facilisis massa. Sed ac erat molestie, sagittis diam ut, porta neque. Cras scelerisque tortor non dolor convallis aliquet. Nunc euismod gravida pulvinar. Cras pulvinar erat a augue finibus elementum. Etiam nisi mauris, eleifend eget nunc vel, tempor imperdiet neque.
+
+In laoreet pellentesque leo at pulvinar. Praesent at vehicula libero. Curabitur a porta diam. Etiam fermentum, nunc at gravida tempus, quam enim finibus nunc, eu euismod lectus purus in felis. Cras dui quam, tincidunt eget finibus in, porttitor a metus. Fusce ornare sodales leo quis tempor. Fusce fringilla commodo sapien, vitae bibendum diam auctor rutrum. In a urna nec tellus lacinia condimentum. Duis quis turpis quis purus lacinia ultricies vel nec erat. Donec rhoncus urna ut elit posuere gravida. Aliquam aliquam tincidunt euismod. Sed non laoreet dolor. Aenean congue consectetur diam, in bibendum ex tempor et.]]></content>
+	<tags><![CDATA[]]></tags>
+	<meta_description><![CDATA[]]></meta_description>
+	<meta_keywords><![CDATA[]]></meta_keywords>
+	<title_htmltag><![CDATA[]]></title_htmltag>
+	<thumbnail><![CDATA[data/images/derivations/tutorial.jpg]]></thumbnail>
+	<thumbnail_alt><![CDATA[]]></thumbnail_alt>
+	<thumbnail_title><![CDATA[]]></thumbnail_title>
+	<date_creation><![CDATA[201811141621]]></date_creation>
+	<date_update><![CDATA[201811141621]]></date_update>
+</document>
