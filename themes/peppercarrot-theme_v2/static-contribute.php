@@ -21,6 +21,13 @@
           <a href="0_sources/0ther/misc/hi-res/2016-05-28_pepper-and-carrot_fixing-the-project_by-David-Revoy.jpg" alt="illustration: picture of Pepper and Carrot fixing a big machine"><img src="0_sources/0ther/misc/low-res/2016-05-28_pepper-and-carrot_fixing-the-project_by-David-Revoy.jpg" ></a>
         </div>
       </article>
+      
+      
+<?php 
+#####################################
+# ===========  Chat ================#
+#####################################
+?>
 
       <article class="col sml-12 med-12 lrg-12" role="article">
         <?php $plxShow->lang('CONTRIBUTE_IRC') ?>
@@ -51,6 +58,11 @@
         </div>
       </article>
       
+<?php 
+################################################
+# ===========  Social networks ================#
+################################################
+?>
 
       <article class="col sml-12 med-12 lrg-12" role="article">
         <br/>
@@ -108,6 +120,12 @@
         </div>
       </article>
       
+<?php 
+######################################
+# ===========  Press ================#
+######################################
+?>
+      
       <article class="col sml-12 med-12 lrg-12" role="article">
         <?php $plxShow->lang('CONTRIBUTE_PRESS') ?>
         <div class="buttonlist col sml-12 med-12 lrg-12 sml-centered sml-text-center">
@@ -151,7 +169,11 @@
         </div>
       </article>
         
-       
+<?php 
+############################################
+# ===========  Derivations ================#
+############################################
+?>
          
  <article class="col sml-12 med-12 lrg-12" role="article">
   <br/>
@@ -168,7 +190,7 @@
       ',12,'004', "...", "rsort"))); ?>
   </article>
           
-<?php # =========== Derivations ================ ?>
+
   <section class="col sml-12 med-12 lrg-12 text-center">
   <br/>
   <div class="moreposts" style="margin-top: 0.3rem;">
@@ -178,11 +200,21 @@
   </div>
   </section>
   
+<?php 
+############################################
+# ===========  Translation ================#
+############################################
+?>
+  
   <article class="col sml-12 med-12 lrg-12" role="article">
     <?php $plxShow->lang('CONTRIBUTE_TRANSLATION') ?>
   </article>
 
-<?php # ===========  Fan Art ================ ?>
+<?php 
+########################################
+# ===========  Fan Art ================#
+########################################
+?>
 <article class="col sml-12 med-12 lrg-12" role="article">
   <br/><br/>
   <?php
@@ -241,9 +273,16 @@
   </div>
   </section>
   
+<?php 
+#########################################
+# ===========  Donation ================#
+#########################################
+?>
+  
       <article class="col sml-12 med-12 lrg-12" role="article">
         <?php $plxShow->lang('CONTRIBUTE_DONATION') ?> 
       </article>
+      
       <section class="col sml-12 med-12 lrg-12">
         <?php $plxShow->lang('HOMEPAGE_ALTERNATIVES') ?>
               <a href="https://paypal.me/davidrevoy" title="Send money via Paypal" class="alternativesbutton paypal">Paypal</a>
@@ -254,6 +293,11 @@
           <br/><br/>
       </section> 
   
+<?php 
+########################################
+# ===========  Other ==================#
+########################################
+?>
       <article class="col sml-12 med-12 lrg-12" role="article">
         <?php $plxShow->lang('CONTRIBUTE_OTHER') ?>
       </article>
