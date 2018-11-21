@@ -89,7 +89,6 @@
               <b>Tumblr</b>
             </a>
           </li>
-          <!-- Unmaintained
           <li>
             <a href="https://www.artstation.com/deevad">
               <b>Artstation</b>
@@ -100,7 +99,6 @@
               <b>Pixiv</b>
             </a>
           </li>
-          -->
           <li>
             <a href="https://www.youtube.com/channel/UCnAbNwJjusY7zQ__sQyJlSA">
               <b>Youtube</b>
