@@ -128,7 +128,7 @@ echo "-->";
 
 			<?php if($idStat=="004" OR $idStat=="011"){ $status = "active"; } else { $status = "no-active"; }?>
 			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static4/community') ?>"><?php $plxShow->lang('COMMUNITY') ?></a>
+			<a href="<?php $plxShow->urlRewrite('?static4/contribute') ?>"><?php $plxShow->lang('CONTRIBUTE') ?></a>
 			</li>
 
       <?php if($idStat=="008"){ $status = "active"; } else { $status = "no-active"; }?>
