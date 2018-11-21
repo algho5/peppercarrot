@@ -197,7 +197,7 @@
   # we loop on found episodes
   if (!empty($search)){ 
     foreach ($search as $filepath) {
-      if ( $fanartcounter < 24 ){
+      if ( $fanartcounter < 4 ){
         # filename extraction
         $fileweight = (filesize($filepath) / 1024) / 1024;
         $fanartcounter = $fanartcounter + 1;
@@ -213,8 +213,8 @@
         $title = stristr($filenameclean, 'by', true);
         $filenameclean = str_replace('featured', '', $filenameclean);
         $filenamezip = str_replace('jpg', 'zip', $filename);      
-        echo '<figure class="thumbnail col sml-3 med-3 lrg-2">';
-        echo '<a href="0_sources/0ther/fan-art/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/fan-art/'.$filename.'&amp;w=130&amp;h=130&amp;s=1&amp;q=92" alt="'.$filenameclean.'" title="'.$filenameclean.', '.$dateextracted.'" ></a>';
+        echo '<figure class="thumbnail col sml-3 med-3 lrg-3">';
+        echo '<a href="0_sources/0ther/fan-art/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/fan-art/'.$filename.'&amp;w=220&amp;h=150&amp;s=1&amp;q=88" alt="'.$filenameclean.'" title="'.$filenameclean.', '.$dateextracted.'" ></a>';
         echo '<figcaption class="text-center" >
         <a href="0_sources/0ther/original/'.$filename.'" >
         '.$title.'
