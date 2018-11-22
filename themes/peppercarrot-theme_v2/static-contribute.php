@@ -25,7 +25,9 @@
           <a href="https://liberapay.com/davidrevoy/" title="<?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?> Liberapay" class="alternativesbutton liberapay">Liberapay</a>
           <a href="https://g1.duniter.fr/#/app/wot/4nosBEwT8xQfMY11sq32AnZF1XcoqzG9tArXJq9mu8Wc/DavidRevoy" title="Send G1 to David Revoy" class="alternativesbutton G1">G1</a>
           <a href="<?php $plxShow->urlRewrite('?static12/iban-and-mail-adress') ?>" title="Send money via IBAN or Send goods via mail" class="alternativesbutton iban">Bank/Mail</a>
-          <br/><br/>
+          <br/>
+          <br/>
+          <img src="https://www.peppercarrot.com/0_sources/0ther/misc/low-res/2018-11-22_contribute_01-donation_by-David-Revoy.jpg" alt="A monochromatic illustration representing Pepper being happy after going to various shops. Carrot holds money." title="Illustration: CC-By David Revoy | Sources: Sources→Misc.">
         </article>
         
         <article class="col sml-12 med-12 lrg-12" role="article">
