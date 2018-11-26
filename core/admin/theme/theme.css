@@ -504,8 +504,8 @@ tr.checked {
 }
 /* image d'accroche */
 #id_thumbnail_img {
-	margin-top:10px;
+	margin-top:0px;
 }
 #id_thumbnail_img img {
-	max-width: 100%;
+	max-width: 10%;
 }

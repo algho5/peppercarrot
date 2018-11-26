@@ -320,14 +320,43 @@ $cat_id='000';
 						<?php plxUtils::printInput('title',plxUtils::strCheck($title),'text','42-255',false,'full-width'); ?>
 					</div>
 				</div>
-				<div class="grid">
+        	<div class="grid gridthumb">
+				<div class="col sml-12">
+					<label for="id_thumbnail">
+						<?php echo L_THUMBNAIL ?>&nbsp;:&nbsp;
+						<a title="<?php echo L_THUMBNAIL_SELECTION ?>" id="toggler_thumbnail" href="javascript:void(0)" onclick="mediasManager.openPopup('id_thumbnail', true)" style="outline:none; text-decoration: none">+</a>
+					</label>
+					<?php plxUtils::printInput('thumbnail',plxUtils::strCheck($thumbnail),'text','255-255',false,'full-width'); ?>
+					<!--
+           <div class="grid" style="padding-top:10px">
+						<div class="col sml-12 lrg-6">
+							<label for="id_thumbnail_alt"><?php echo L_THUMBNAIL_TITLE ?>&nbsp;:</label>
+							<?php plxUtils::printInput('thumbnail_title',plxUtils::strCheck($thumbnail_title),'text','255-255',false,'full-width'); ?>
+						</div>
+						<div class="col sml-12 lrg-6">
+							<label for="id_thumbnail_alt"><?php echo L_THUMBNAIL_ALT ?>&nbsp;:</label>
+							<?php plxUtils::printInput('thumbnail_alt',plxUtils::strCheck($thumbnail_alt),'text','255-255',false,'full-width'); ?>
+						</div>
+					</div>
+          -->
+					<?php
+					$imgUrl = PLX_ROOT.$thumbnail;
+					if(is_file($imgUrl)) {
+						echo '<div id="id_thumbnail_img"><img src="'.$imgUrl.'" alt="" /></div>';
+					} else {
+						echo '<div id="id_thumbnail_img"></div>';
+					}
+					?>
+				</div>
+			</div>
+				<!--<div class="grid">
 					<div class="col sml-12">
 						<label for="id_chapo"><?php echo L_HEADLINE_FIELD ?>&nbsp;:&nbsp;<a id="toggler_chapo" href="javascript:void(0)" onclick="toggleDiv('toggle_chapo', 'toggler_chapo', '<?php echo L_ARTICLE_CHAPO_DISPLAY ?>','<?php echo L_ARTICLE_CHAPO_HIDE ?>')"><?php echo $chapo==''?L_ARTICLE_CHAPO_DISPLAY:L_ARTICLE_CHAPO_HIDE ?></a></label>
 						<div id="toggle_chapo"<?php echo $chapo!=''?'':' style="display:none"' ?>>
 						<?php plxUtils::printArea('chapo',plxUtils::strCheck($chapo),35,8,false,'full-width'); ?>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="grid">
 					<div class="col sml-12">
 						<label for="id_content"><?php echo L_CONTENT_FIELD ?>&nbsp;:</label>
@@ -344,33 +373,7 @@ $cat_id='000';
 				</div>
 				<?php endif; ?>
 			</fieldset>
-			<div class="grid gridthumb">
-				<div class="col sml-12">
-					<label for="id_thumbnail">
-						<?php echo L_THUMBNAIL ?>&nbsp;:&nbsp;
-						<a title="<?php echo L_THUMBNAIL_SELECTION ?>" id="toggler_thumbnail" href="javascript:void(0)" onclick="mediasManager.openPopup('id_thumbnail', true)" style="outline:none; text-decoration: none">+</a>
-					</label>
-					<?php plxUtils::printInput('thumbnail',plxUtils::strCheck($thumbnail),'text','255-255',false,'full-width'); ?>
-					<div class="grid" style="padding-top:10px">
-						<div class="col sml-12 lrg-6">
-							<label for="id_thumbnail_alt"><?php echo L_THUMBNAIL_TITLE ?>&nbsp;:</label>
-							<?php plxUtils::printInput('thumbnail_title',plxUtils::strCheck($thumbnail_title),'text','255-255',false,'full-width'); ?>
-						</div>
-						<div class="col sml-12 lrg-6">
-							<label for="id_thumbnail_alt"><?php echo L_THUMBNAIL_ALT ?>&nbsp;:</label>
-							<?php plxUtils::printInput('thumbnail_alt',plxUtils::strCheck($thumbnail_alt),'text','255-255',false,'full-width'); ?>
-						</div>
-					</div>
-					<?php
-					$imgUrl = PLX_ROOT.$thumbnail;
-					if(is_file($imgUrl)) {
-						echo '<div id="id_thumbnail_img"><img src="'.$imgUrl.'" alt="" /></div>';
-					} else {
-						echo '<div id="id_thumbnail_img"></div>';
-					}
-					?>
-				</div>
-			</div>
+		
 			<?php eval($plxAdmin->plxPlugins->callHook('AdminArticleContent')) ?>
 			<?php echo plxToken::getTokenPostMethod() ?>
 		</div>
@@ -405,6 +408,12 @@ $cat_id='000';
 						?>
 					</div>
 				</div>
+        <div class="grid">
+					<div class="col sml-12">
+						<label for="id_template"><?php echo L_ARTICLE_TEMPLATE_FIELD ?>&nbsp;:</label>
+						<?php plxUtils::printSelect('template', $aTemplates, $template); ?>
+					</div>
+				</div>
 				<div class="grid">
 					<div class="col sml-12">
 						<label><?php echo L_ARTICLE_DATE ?>&nbsp;:</label>
@@ -419,7 +428,7 @@ $cat_id='000';
 						</div>
 					</div>
 				</div>
-			<div class="grid">
+			<!-- <div class="grid">
 				<div class="col sml-12">
 					<label><?php echo L_DATE_CREATION ?>&nbsp;:</label>
 					<div class="inline-form creation">
@@ -447,7 +456,7 @@ $cat_id='000';
 						</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 				<div class="grid">
 					<div class="col sml-12">
@@ -470,7 +479,7 @@ $cat_id='000';
 
 				<?php if($_SESSION['profil'] < PROFIL_WRITER) : ?>
 
-				<div class="grid">
+				<!-- <div class="grid">
 					<div class="col sml-12">
 						<label for="id_new_catname"><?php echo L_NEW_CATEGORY ?>&nbsp;:</label>
 						<div class="inline-form">
@@ -479,6 +488,7 @@ $cat_id='000';
 						</div>
 					</div>
 				</div>
+        -->
 
 				<?php endif; ?>
 
@@ -534,12 +544,6 @@ $cat_id='000';
 							<?php echo L_ARTICLE_URL_FIELD ?>&nbsp;:&nbsp;<a class="hint"><span><?php echo L_ARTICLE_URL_FIELD_TITLE ?></span></a>
 						</label>
 						<?php plxUtils::printInput('url',$url,'text','27-255'); ?>
-					</div>
-				</div>
-				<div class="grid">
-					<div class="col sml-12">
-						<label for="id_template"><?php echo L_ARTICLE_TEMPLATE_FIELD ?>&nbsp;:</label>
-						<?php plxUtils::printSelect('template', $aTemplates, $template); ?>
 					</div>
 				</div>
 				<div class="grid">
