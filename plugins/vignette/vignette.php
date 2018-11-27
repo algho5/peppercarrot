@@ -24,6 +24,7 @@ class vignette extends plxPlugin {
 
   # Déclarations des hooks
   $this->addHook('showVignette', 'showVignette');
+  $this->addHook('showVignettePlus', 'showVignettePlus');
   $this->addHook('vignetteArtList', 'vignetteArtList');
   $this->addHook('artPrevNext', 'artPrevNext');
   $this->addHook('artLicense', 'artLicense');
@@ -75,6 +76,61 @@ class vignette extends plxPlugin {
 		}
 		
 	}
+  
+	/**
+	 * Method that display a thumbnail linked to high-res with title, link to the zip and license.
+	 *
+	 * @return	html
+	 * @author	Deevad based on Rockyhorror's showVignette
+	 **/
+
+	public function showVignettePlus() {
+		$plxMotor = plxMotor::getInstance();
+		
+    # Get the low-res path from the XML's "thumbnail", user fill it.
+		$inputpath = $plxMotor->plxRecord_arts->f('thumbnail');
+    $root_dir = empty($plxMotor->aConf['racine'])?$plxMotor->aConf['racine']:$plxMotor->aConf['racine'];
+    # check if the field is filled.
+		if(empty($inputpath)) { 
+      return; 
+    }
+		
+    # Search/replace masks
+    $lowrespattern = array("/low-res/", ".jpg");
+    $hirespattern = array("/hi-res/", ".jpg");
+    $zippattern = array("/zip/", ".zip");
+    
+    # Build collections of links and data
+    $lowreslink = $inputpath;
+    $hireslink = str_replace($lowrespattern, $hirespattern, $inputpath);
+    // Get hires size infos
+    list($width, $height) = getimagesize($hireslink);
+    $lastmodification=date ("d-M-Y", filemtime($lowreslink));	
+    $sourceslink = str_replace($lowrespattern, $zippattern, $inputpath);
+    $sourcesweight = (filesize($sourceslink) / 1024) / 1024;
+    $title = $plxMotor->plxRecord_arts->f('title');
+
+    # Display the artwork
+    echo '<a href="'.$hireslink.'">';
+    echo '<img src="'.$lowreslink.'" alt="" title=""/>';
+    echo '</a>';
+    echo '<span style="color:#888; font-size:0.85rem;">';
+    echo '<b>"'.$title.'"</b> by David Revoy';
+    echo ' | ';
+    echo '<a href="'.$hireslink.'">Full resolution</a> ('.$width.'x'.$height.'px)';
+    echo ' | ';
+    echo '<a href="'.$sourceslink.'">Krita sources</a> ('.round($sourcesweight, 2).'MB) ';
+    echo ' | ';
+    echo 'License: <a href="'.$root_dir.'/en/static14/documentation&page=950_License_attribution_good_practise">CC-By</a>';
+    echo '</span>';
+    echo '<br/><br/>';
+
+    
+
+    
+    
+  }
+
 	
 	public function vignetteArtList($params) {
     $plxMotor = plxMotor::getInstance();
