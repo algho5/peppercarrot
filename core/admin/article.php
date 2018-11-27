@@ -323,8 +323,10 @@ $cat_id='000';
         	<div class="grid gridthumb">
 				<div class="col sml-12">
 					<label for="id_thumbnail">
-						<?php echo L_THUMBNAIL ?>&nbsp;:&nbsp;
-						<a title="<?php echo L_THUMBNAIL_SELECTION ?>" id="toggler_thumbnail" href="javascript:void(0)" onclick="mediasManager.openPopup('id_thumbnail', true)" style="outline:none; text-decoration: none">+</a>
+						Cover 
+						<a title="<?php echo L_THUMBNAIL_SELECTION ?>" id="toggler_thumbnail" href="javascript:void(0)" onclick="mediasManager.openPopup('id_thumbnail', true)" style="outline:none; text-decoration: none"><small>[media-manager]</small> </a> 
+            <a href="../../0_sources/" target="_blank"> <small>[0_sources]</small></a>
+            <small style="color:#aaa;"> (from root, starts with data/ or sources/)</small>
 					</label>
 					<?php plxUtils::printInput('thumbnail',plxUtils::strCheck($thumbnail),'text','255-255',false,'full-width'); ?>
 					<!--
@@ -428,7 +430,7 @@ $cat_id='000';
 						</div>
 					</div>
 				</div>
-			<!-- <div class="grid">
+			<div class="grid">
 				<div class="col sml-12">
 					<label><?php echo L_DATE_CREATION ?>&nbsp;:</label>
 					<div class="inline-form creation">
@@ -456,7 +458,7 @@ $cat_id='000';
 						</a>
 					</div>
 				</div>
-			</div> -->
+			</div>
 
 				<div class="grid">
 					<div class="col sml-12">
