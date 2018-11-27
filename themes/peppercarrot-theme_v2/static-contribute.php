@@ -32,6 +32,7 @@
         
         <article class="col sml-12 med-12 lrg-12" role="article">
           <?php $plxShow->lang('CONTRIBUTE_TRANSLATION') ?>
+          <img src="https://www.peppercarrot.com/0_sources/0ther/misc/low-res/2018-11-22_contribute_02-translation_by-David-Revoy.jpg" alt="A monochromatic illustration representing Carrot holding a long flag tagged with Thank you in many languages." title="Illustration: CC-By David Revoy | Sources: Sources→Misc.">
         </article>
         
         <article class="col sml-12 med-12 lrg-12" role="article">
