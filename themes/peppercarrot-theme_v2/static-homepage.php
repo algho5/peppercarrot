@@ -63,7 +63,7 @@ $lang = $plxShow->defaultLang($echo);
                 <div class="homethumbnail">
                 <figure>
                   <a href="#art_url" title="#art_title">
-                    <img src="plugins/vignette/plxthumbnailer.php?src=#art_vignette&amp;w=270&amp;h=160&amp;s=1&amp;q=60&amp;a=t" alt="#art_title" title="#art_title, click to read" >
+                    <img src="plugins/vignette/plxthumbnailer.php?src=#art_vignette&amp;w=270&amp;h=160&amp;s=1&amp;q=60" alt="#art_title" title="#art_title, click to read" >
                   </a>
                   <figcaption><a href="#art_url" title="#art_title">#art_supertitle #art_date#art_nbcoms</span></a></figcaption>
                 </figure>
