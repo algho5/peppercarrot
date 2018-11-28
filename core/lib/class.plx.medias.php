@@ -138,29 +138,34 @@ class plxMedias {
 	/**
 	 * Méthode qui formate l'affichage de la liste déroulante des dossiers
 	 *
-	 * @return	string	chaine formatée à afficher
-	 * @author	Stephane F, Danielsan
+	 * @return	string	balise select à afficher
+	 * @author	J.P. Pourrez (bazooka07)
 	 **/
 	public function contentFolder() {
-
-		$str  = "\n".'<select class="folder" id="folder" size="1" name="folder">'."\n";
-		$selected = (empty($this->dir)?'selected="selected" ':'');
-		$str .= '<option '.$selected.'value=".">('.L_PLXMEDIAS_ROOT.') &nbsp; </option>'."\n";
-		# Dir non vide
+		$currentFolder = $this->dir;
 		if(!empty($this->aDirs)) {
-			foreach($this->aDirs as $k => $v) {
-				$i = 0;
-				while($i < $v['level']) {
-					$i++;
-				}
-				$selected = ($v['path']==$this->dir?'selected="selected" ':'');
-				$str .= '<option class="level_'.$v['level'].'" '.$selected.'value="'.$v['path'].'">/'.$v['path'].'</option>'."\n";
-			}
+			$options = array_map(
+				function($item) use($currentFolder) {
+					$selected = ($item['path'] == $currentFolder) ? ' selected' : '';
+					return <<< OPTION
+			<option class="level_{$item['level']}" value="${item['path']}"$selected>/${item['path']}</option>
+OPTION;
+				},
+				$this->aDirs
+			);
 		}
-		$str  .= '</select>'."\n";
-		# On retourne la chaine
-		return $str;
+		$selectedRoot = (empty($this->dir)) ? ' selected' : '';
+		$caption = L_PLXMEDIAS_ROOT;
+		$start = <<< START
+		<select class="folder" id="folder" name="folder">
+			<option value="."$selectedRoot>($caption)</option>\n
+START;
+		$stop = <<< STOP
+		</select>\n
+STOP;
+		return $start . ((!empty($options)) ? implode("\n", $options) : '') . $stop;
 	}
+
 
 	/**
 	 * Méthode qui supprime un fichier (et sa vignette si elle existe dans le cas d'une image)
