@@ -14,12 +14,14 @@ class plxMedias {
 	public $aFiles = array(); # liste des fichiers d'un dossier
 	public $maxUpload = array(); # taille maxi des images
 
+  /**
 	public $thumbQuality = 60; # qualité image
 	public $thumbWidth = 60; # largeur des miniatures
 	public $thumbHeight = 60; # hauteur des miniatures
+  **/
 
-	public $img_exts = '/\.(jpg|gif|png|bmp|jpeg)$/i';
-	public $doc_exts = '/\.(7z|aiff|asf|avi|csv|doc|docx|epub|fla|flv|gz|gzip|m4a|m4v|mid|mov|mp3|mp4|mpc|mpeg|mpg|ods|odt|odp|ogg|pdf|ppt|pptx|pxd|qt|ram|rar|rm|rmi|rmvb|rtf|svg|swf|sxc|sxw|tar|tgz|txt|vtt|wav|webm|wma|wmv|xcf|xls|xlsx|zip)$/i';
+	public $img_exts = '/\.(jpe?g|png|gif|bmp)$/i';
+	public $doc_exts = '/\.(7z|aiff|asf|avi|csv|docx?|epub|fla|flv|gz|gzip|m4a|m4v|mid|mov|mp3|mp4|mpc|mpe?g|ods|odt|odp|ogg|pdf|pptx?|ppt|pxd|qt|ram|rar|rm|rmi|rmvb|rtf|svg|swf|sxc|sxw|tar|tgz|txt|vtt|wav|webm|wma|wmv|xcf|xlsx?|zip)$/i';
 
 	/**
 	 * Constructeur qui initialise la variable de classe
@@ -45,7 +47,7 @@ class plxMedias {
 			mkdir($this->path.'.thumbs/'.$this->dir,0755,true);
 		}
 
-		$this->aDirs = $this->_getAllDirs($this->path);
+		$this->aDirs = $this->_getAllDirs();
 		$this->aFiles = $this->_getDirFiles($this->dir);
 
 		# Taille maxi pour l'upload de fichiers sur le serveur
@@ -59,42 +61,32 @@ class plxMedias {
 	}
 
 	/**
-	 * Méthode récursive qui retourne un tableau de tous les dossiers et sous dossiers dans un répertoire
-	 *
-	 * @param	dir		répertoire de lecture
-	 * @param	level	profondeur du répertoire
-	 * @return	folders	tableau contenant la liste de tous les dossiers et sous dossiers
-	 * @author	Stephane F
+   * Méthode qui retourne un tableau de tous les dossiers et sous-dossiers d'un répertoire.
+   *
+	 * @author	J.P. Pourrez (bazooka07)
 	 **/
-	private function _getAllDirs($dir,$level=0) {
-
-		# Initialisation
-		$folders = array();
-
-		$alldirs = scandir($dir);
-		natsort($alldirs);
-
-		foreach($alldirs as $folder) {
-			if($folder[0] != '.') {
-				if(is_dir(($dir!=''?$dir.'/':$dir).$folder)) {
-					$dir = (substr($dir, -1)!='/' AND $dir!='') ? $dir.'/' : $dir;
-					$path = str_replace($this->path, '',$dir.$folder.'/');
-					$folders[] = array(
-							'level' => $level,
-							'name' => $folder,
-							'path' => $path
-						);
-
-					$folders = array_merge($folders, $this->_getAllDirs($dir.$folder, $level+1) );
-				}
+	private function _getAllDirs() {
+		$result = array();
+		$pattern = '*/';
+		$offset = strlen($this->path);
+		for($i=1; $i<10; $i++) {
+			$dirs = glob($this->path . str_repeat($pattern, $i), GLOB_ONLYDIR);
+			if(empty($dirs)) { break; }
+			foreach($dirs as $d) {
+				$path = substr($d, $offset);
+				$result[] = array(
+					'level' => $i,
+					/* 'name'	=> '/'.$path, // totalement inutile et jamais utilisé ! */
+					'path'	=> $path
+				);
 			}
 		}
-
-		return $folders;
+		usort($result, function($a, $b) { return strcasecmp($a['path'], $b['path']); });
+		return $result;
 	}
 
 	/**
-	 * Méthode qui retourne la liste des des fichiers d'un répertoire
+	 * Méthode qui retourne la liste des fichiers d'un répertoire
 	 *
 	 * @param	dir		répertoire de lecture
 	 * @return	files	tableau contenant la liste de tous les fichiers d'un dossier

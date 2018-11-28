@@ -223,6 +223,11 @@ tr:nth-child(even):hover {
 #plugins-table img,
 #medias-table img {
 	max-width: 48px;
+  vertical-align: bottom;
+}
+#medias-table img{
+  max-width: initial !important;
+	vertical-align: bottom;
 }
 #medias-table {
 	margin-top: 10px;
