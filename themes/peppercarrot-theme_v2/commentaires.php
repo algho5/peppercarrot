@@ -142,7 +142,6 @@
 					<label for="id_content" class="lab_com">Your comment:</label>
 					<textarea id="id_content" name="content" cols="35" rows="6"><?php $plxShow->comGet('content',''); ?></textarea>
 				</div>
-				<p style="color:#CCC; margin: 0 0 1rem 0;">Notice: URLs allowed (auto-clickable). URLs to pictures too (gif, jpg, png; auto-displayed)</p>
 			</div>
 
 			<?php $plxShow->comMessage('<p class="text-red"><strong>#com_message</strong></p>'); ?>
