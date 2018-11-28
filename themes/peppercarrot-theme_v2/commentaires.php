@@ -143,6 +143,8 @@
 					<textarea id="id_content" name="content" cols="35" rows="6"><?php $plxShow->comGet('content',''); ?></textarea>
 				</div>
 			</div>
+      
+      <span style="color:#888; font-size:0.85rem;">(Note: Comments incompatible with Pepper&amp;Carrot's <a href="<?php $plxShow->urlRewrite('?static14/documentation&page=409_Code_of_Conduct') ?>" title="link to the Code of Conduct in the Documentation" target="_blank">Code of Conduct</a> will be moderated.)</span>
 
 			<?php $plxShow->comMessage('<p class="text-red"><strong>#com_message</strong></p>'); ?>
 

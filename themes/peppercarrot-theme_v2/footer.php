@@ -15,7 +15,7 @@
                 <a class="logo" href="<?php $plxShow->urlRewrite('feed.php?rss') ?>" title="RSS 2.0" target="blank"><img class="svg" src="themes/peppercarrot-theme_v2/ico/rss.svg" alt="Rss"/></a>
               </div>
               
-              <p><a href="<?php $plxShow->urlRewrite('?static13/terms-of-service-and-privacy') ?>">Terms of Services and Privacy (GDPR)</a></p> 
+              <p><a href="<?php $plxShow->urlRewrite('?static13/terms-of-service-and-privacy') ?>" target="_blank">Terms of Services and Privacy (GDPR)</a> - <a href="<?php $plxShow->urlRewrite('?static14/documentation&page=409_Code_of_Conduct') ?>" title="link to the Code of Conduct in the Documentation" target="_blank">Code of Conduct (CoC)</a></p> 
               
               <p>
                 <p><?php $plxShow->lang('TRANSLATED_BY')?></p>
