@@ -260,7 +260,7 @@ ul.menu.tag li a.button{ margin: 0 0 1.2rem 0;}
 .docall { max-width:920px; margin: auto; }
 .docbox { position: relative; font-size: 1.02rem; margin: 0 auto;}
 .docbar { background: #C6E1EE;}
-.doctopbuttons { text-align: right;}
+.doctopbuttons { text-align: right; background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border-bottom: solid 1px #D7EBFA;}
 .docfoot { font-family: ubuntu, arial, sans-serif; font-size: 0.8rem; color: #999; margin-top: 60px; border-top: solid 1px #eee; }
 .docfoot a { color: #999; text-decoration: underline; }
 .docfoot img { opacity: 0.3; }

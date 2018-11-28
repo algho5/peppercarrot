@@ -85,10 +85,10 @@ include(dirname(__FILE__).'/header.php');
         $plxShow->lang('LIMITATIONS');
         echo '</div>';
       }
-    # buttons
+    # toolbar buttons
     echo '<div class="doctopbuttons">';
-     echo '<a href="https://framagit.org/peppercarrot/documentation/commits/master/'.$docpage.'.md" target="_blank" title="External history link to see all changes made to this page" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history_b.svg" alt=""/>&nbsp;View history</a>&nbsp;&nbsp;&nbsp;&nbsp;';
-     echo '<a class="button blue" href="https://framagit.org/peppercarrot/documentation/edit/master/'.$docpage.'.md" target="_blank" title="Edit this page with an external editor" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/edit_w.svg" alt=""/>&nbsp;Edit</a>';
+     echo '<a href="https://framagit.org/peppercarrot/documentation/commits/master/'.$docpage.'.md" target="_blank" title="External history link to see all changes made to this page" ><img width="16px" height="16px" style="padding:0px;margin:0px" src="themes/peppercarrot-theme_v2/ico/history_b.svg" alt=""/>&nbsp;View history</a>&nbsp;&nbsp;&nbsp;&nbsp;';
+     echo '<a href="https://framagit.org/peppercarrot/documentation/edit/master/'.$docpage.'.md" target="_blank" title="Edit this page with an external editor" ><img width="16px" height="16px" style="padding:0px;margin:0px" src="themes/peppercarrot-theme_v2/ico/edit_b.svg" alt=""/>&nbsp;Edit</a>';
     echo '</div>';
     # Display content:
       $contents = file_get_contents('data/documentation/'. $docpage .'.md');
