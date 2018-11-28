@@ -831,7 +831,7 @@ public function MyMultiLingueComicDisplay($params) {
       # Remove the 0 in front of double digit page number
       $comicpage_number = ltrim($comicpage_number, '0');
       # Build a usefull alternative link in case of a page do not load...    
-      $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$comicpage_number.' , '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number.'';
+      $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$episode_number.' ['.$this->lang.'], '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
     
 
     # Define the anchor link
@@ -901,7 +901,7 @@ public function MyMultiLingueComicHeader() {
     # Remove the 0 in front of double digit page number
     $comicpage_number = '0';
     # Build a usefull alternative link in case of a page do not load...    
-    $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$comicpage_number.' , '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number.'';
+    $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$episode_number.' ['.$this->lang.'], '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
     # Define the anchor link
     $comicpage_anchorlink = ''.$plxShow->Getlang('UTIL_PAGE').''.$comicpage_number.'';
     # Get the geometry size of the comic page for correct display ratio on HTML  
