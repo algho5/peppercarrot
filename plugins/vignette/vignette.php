@@ -123,14 +123,8 @@ class vignette extends plxPlugin {
     echo ' | ';
     echo 'License: <a href="'.$root_dir.'/en/static14/documentation&page=950_License_attribution_good_practise">CC-By</a>';
     echo '</span>';
-    echo '<br/><br/>';
-
-    
-
-    
-    
+    echo '<br/><br/>';    
   }
-
 	
 	public function vignetteArtList($params) {
     $plxMotor = plxMotor::getInstance();
