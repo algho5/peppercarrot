@@ -184,7 +184,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_IRC'	    => '
-    <h2>Canal de discussion</h2>
+    <h2 id="irc">Canal de discussion</h2>
 
     <p>Un canal de discussion IRC (* Internet Chat Relay) existís en anglés sul servidor Freenode, apelat #pepper&carrot. Aqueste canal es a vòstra man per charrar de Pepper&amp;Carrot. I soi sovent connectat (escais : deevad). Aqueste ligam foncionarà dins vòstre navigator internet sens cap d\'installacion.<br/>
 ',

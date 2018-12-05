@@ -182,7 +182,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_IRC'	    => '
-    <h2> Sanell IRC:</h2>
+    <h2 id="irc"> Sanell IRC:</h2>
 
     <p> Kaozeit ha divizit diwar-benn Pepper&amp;Carrot. Tremen a rin d\'an eurio&ugrave; European (lesanv : deevad) <br/>
 ',

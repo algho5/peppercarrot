@@ -184,7 +184,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_IRC'	    => '
-    <h2>IRC 채널:</h2>
+    <h2 id="irc">IRC 채널:</h2>
 
     <p>후추와 당근에 대해 이야기하고 토론하세요. 저는 유럽 낮 시간대에 종종 참여할 겁니다.(닉네임: deevad)<br/>
 ',

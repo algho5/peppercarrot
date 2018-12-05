@@ -183,7 +183,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_IRC'	    => '            
-    <h2>IRC csatorna</h2>
+    <h2 id="irc">IRC csatorna</h2>
     
     <p>Chatelj és beszélgess a Paprika&amp;Sárgarépáról. Európai idő szerint napközben vagyok fenn (nick: deevad).<br/> 
 ',
