@@ -184,7 +184,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_IRC'	    => '
-    <h2>IRC kanalo:</h2>
+    <h2 id="irc">IRC kanalo:</h2>
 
     <p>Babilu kaj diskutu pri Pipro kaj Karoĉjo. Mi ĉeestos ĉirkaŭ tagaj horoj de eŭropa tempo (kaŝnomo:deevad).<br/>
 ',

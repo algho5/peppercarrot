@@ -187,7 +187,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_IRC'	    => '            
-    <h2>交流频道</h2>
+    <h2 id="irc">交流频道</h2>
     
     <p>Freenode服务器中有一个英语环境的IRC（*Internet Chat Relay）交流频道，叫#pepper&carrot。这个频道是专门供您用以讨论和小辣椒与萝卜头有关的内容的。我（昵称：deevad）经常去关注频道里的讨论话题。以下链接可以直接在您的浏览器里打开，而不需要安装任何插件。<br/> 
 ',

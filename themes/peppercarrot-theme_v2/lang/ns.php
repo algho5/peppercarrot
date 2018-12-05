@@ -184,7 +184,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_IRC'	    => '
-    <h2>IRC-Channel:</h2>
+    <h2 id="irc">IRC-Channel:</h2>
 
     <p>Snackt un klöönt över Pepper&amp;Wuddel. Ik bün över Dag (na europääsche Tiet) dor (mien Brukernaam: deevad) <br/>
 ',

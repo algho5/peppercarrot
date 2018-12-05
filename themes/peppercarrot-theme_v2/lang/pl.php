@@ -183,7 +183,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_IRC'	    => '
-    <h2>Kanał IRC:</h2>
+    <h2 id="irc">Kanał IRC:</h2>
 
     <p>Rozmawiaj o Pepper&amp;Carrot. Jestem dostępny w godzinach dziennych (czasu europejskiego) (nick: deevad)<br/>
 ',
