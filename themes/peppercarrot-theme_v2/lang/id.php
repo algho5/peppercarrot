@@ -224,7 +224,7 @@ $LANG = array(
     <p>
     ☐ Menjadi pembicara dalam konvensi komik Jepang tentang Pepper&amp;Carrot<br/>
     ☐ Bermain permainan Pepper&amp;Carrot<br/>
-    ☐ Mendapatkan 100 gambar karya penggemar<br/>
+    ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Mendapatkan 100 gambar karya penggemar</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Memiliki halaman Wikipedia</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Mendapatkan foto cosplay Pepper</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Mendapatkan foto kucing merah yang bernama Carrot</a><br/>

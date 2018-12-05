@@ -235,7 +235,7 @@ $LANG = array(
     <p>
     ☐ Tale p&aring; en japansk tegneseriekonferanse om Pepper&amp;Gulrot<br/>
     ☐ Spille et Pepper&amp;Gulrot spill p&aring; en spillkonsoll<br/>
-    ☐ F&aring; over 100 fan-arts i galleriet<br/>
+    ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> F&aring; over 100 fan-arts i galleriet</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">F&aring; en egen Wikipedia side</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Motta bilde av en Pepper cosplay</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">F&aring; et bilde av en r&oslash;d katt som heter Gulrot</a><br/>

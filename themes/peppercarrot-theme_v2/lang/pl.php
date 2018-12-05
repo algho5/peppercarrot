@@ -226,7 +226,7 @@ $LANG = array(
     <p>
     ☐ Wygłosić mowę o Pepper&Carrot na japońskim konwencie komiksowym<br/>
     ☐ Zagrać na padzie w grę o Pepper&amp;Carrot<br/>
-    ☐ Posiadać galerię 100 fan-artów<br/>
+    ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Posiadać galerię 100 fan-artów</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Posiadać stronę na Wikipedii</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Otrzymać fotografię cosplayu Pepper</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Otrzymać fotografię rudego kota o imieniu Carrot</a><br/>

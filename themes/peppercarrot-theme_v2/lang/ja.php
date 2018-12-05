@@ -226,7 +226,7 @@ $LANG = array(
     <p>
     ☐ 日本のコミックイベントで、ペッパー&amp;キャロットの話をする<br/>
     ☐ ペッパー&amp;キャロットのビデオゲームをゲームパッドで遊ぶ<br/>
-    ☐ ギャラリーに100枚のファンアートが登録される<br/>
+    ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> ギャラリーに100枚のファンアートが登録される</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Wikipediaにページができる</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">ペッパーコスプレの写真を送ってもらう</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">キャロットという名前の赤毛の猫の写真を送ってもらう</a><br/>

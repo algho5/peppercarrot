@@ -225,7 +225,7 @@ $LANG = array(
     <p>
     ☐ Mít projev o Pepper&amp;Carrot na japonském comic-conu.<br/>
     ☐ Zahrát si na gamepadu Pepper&amp;Carrot videohru.<br/>
-    ☐ Mít v galerii 100 fan-artů.<br/>
+    ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Mít v galerii 100 fan-artů.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Mít stránku na Wikipedii.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Dostat fotku cosplaye Feferonky.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Dostat fotku zrzavého kocoura pojmenovaného Karotka.</a><br/>

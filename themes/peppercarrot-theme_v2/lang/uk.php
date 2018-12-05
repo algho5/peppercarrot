@@ -225,7 +225,7 @@ $LANG = array(
     <p>
     ☐ Розповісти про Pepper&amp;Carrot на Японському з\'їзді комиксів<br/>
     ☐ Пограти на геймпаді в відеогру Pepper&amp;Carrot<br/>
-    ☐ Зібрати галерею з 100 фан-артів<br/>
+    ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Зібрати галерею з 100 фан-артів</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Мати свою сторінку в Вікіпедії</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Отримати фото косплею Перчинки</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Отримати фото рудого кота на і\'мя Морквик</a><br/>

@@ -227,7 +227,7 @@ $LANG = array(
     <p>
     ☐ Paroladi en japana bildrakonta kongreso pri Pipro kaj Karoĉjo.<br/>
     ☐ Ludi per ludstirilo videoludon Pipro kaj Karoĉjo.<br/>
-    ☐ Havigi galerion kun 100 fanatikul-artaĵoj.<br/>
+    ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Havigi galerion kun 100 fanatikul-artaĵoj.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Posedi paĝon en Vikipedio.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Ricevi bildon pri rolkostumado kiel Pipro.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Ricevi bildon de ruĝa kato nomita Karoĉjo.</a><br/>

@@ -229,7 +229,7 @@ $LANG = array(
     <p>
     ☐ 在日本的某个漫画大会上进行一次有关小辣椒与萝卜头的会议。<br/>
     ☐ 用手柄玩一个以小辣椒与萝布头为创作原型的电子游戏。<br/>
-    ☐ 在本站画廊里拥有100个粉丝的艺术作品。<br/>
+    ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> 在本站画廊里拥有100个粉丝的艺术作品。</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">拥有专属的维基页面。</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">收到一张小辣椒的cosplay照片。</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">收到一张以萝卜头命名的黄色背毛猫的照片。</a><br/>

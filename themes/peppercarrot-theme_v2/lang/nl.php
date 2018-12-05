@@ -227,7 +227,7 @@ $LANG = array(
     <p>
     ☐ Een praatje geven op een Japanse stripconferentie over Pepper&amp;Carrot<br/>
     ☐ Een Pepper&amp;Carrot-videospel spelen met een gamepad<br/>
-    ☐ Een galerij met honderd fanarts bereiken<br/>
+    ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Een galerij met honderd fanarts bereiken</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Een Wikipedia-pagina krijgen</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Een foto toegestuurd krijgen van een cosplay van Pepper</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Een foto toegestuurd krijgen van een rosse kat met de naam Carrot</a><br/>
