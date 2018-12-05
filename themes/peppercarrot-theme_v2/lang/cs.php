@@ -170,7 +170,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_OTHER'	    => '
-    <h2>Další možnosti, jak se podílet&nbsp;.&nbsp;.&nbsp;.&nbsp;</h2>
+    <h2 id="dream">Další možnosti, jak se podílet&nbsp;.&nbsp;.&nbsp;.&nbsp;</h2>
 
     <p>Každý se může zapojit jinak:<br/>
         <b>Vývojáři:</b> Vytvořit aplikaci, která umožní čtení Pepper&amp;Carrot na mobilu.<br/>

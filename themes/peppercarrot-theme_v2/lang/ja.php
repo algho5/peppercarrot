@@ -221,7 +221,7 @@ $LANG = array(
     <p>私のポートフォリオ :</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
-    <h3>夢のTODOリスト :</h3>
+    <h3 id="dream">夢のTODOリスト :</h3>
 
     <p>
     ☐ 日本のコミックイベントで、ペッパー&amp;キャロットの話をする<br/>

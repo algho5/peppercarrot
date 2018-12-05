@@ -230,7 +230,7 @@ $LANG = array(
     <p>Min portef&oslash;lge:</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
-    <h3>Dr&oslash;mme-TO-DO liste:</h3>
+    <h3 id="dream">Dr&oslash;mme-TO-DO liste:</h3>
 
     <p>
     ☐ Tale p&aring; en japansk tegneseriekonferanse om Pepper&amp;Gulrot<br/>

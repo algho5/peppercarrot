@@ -221,7 +221,7 @@ $LANG = array(
     <p>Danh mục đầu tư của tôi:</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
-    <h3>Danh sách mong ước:</h3>
+    <h3 id="dream">Danh sách mong ước:</h3>
 
     <p>
     ☐ Tạo một cuộc nói chuyện tại một hội nghị ở Nhật về Hạt Tiêu&amp;Cà Rốt<br/>

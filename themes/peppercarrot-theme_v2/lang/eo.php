@@ -222,7 +222,7 @@ $LANG = array(
     <p>Mia bildarujo:</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
-    <h3>Farindaĵoj:</h3>
+    <h3 id="dream">Farindaĵoj:</h3>
 
     <p>
     ☐ Paroladi en japana bildrakonta kongreso pri Pipro kaj Karoĉjo.<br/>

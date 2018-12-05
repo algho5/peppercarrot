@@ -222,7 +222,7 @@ $LANG = array(
     <p>Mijn portfolio:</p>
 ',
 'AUTHOR_TODO_DREAM'                  => '
-    <h3>Mijn TODO-lijst met dromen</h3>
+    <h3 id="dream">Mijn TODO-lijst met dromen</h3>
 
     <p>
     ☐ Een praatje geven op een Japanse stripconferentie over Pepper&amp;Carrot<br/>

@@ -220,7 +220,7 @@ $LANG = array(
     <p>Ma portfolio:</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
-    <h3>Va hu&ntilde;vreo&ugrave;  evit ar raktres-ma&ntilde;:</h3>
+    <h3 id="dream">Va hu&ntilde;vreo&ugrave;  evit ar raktres-ma&ntilde;:</h3>
 
     <p>
     ☐ Ober ur brezegenn diwar-benn Pepper&amp;Carrot en ur c\'henedalc\'h banno&ugrave;-treset Japanad.<br/>

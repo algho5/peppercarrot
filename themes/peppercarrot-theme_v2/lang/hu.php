@@ -222,7 +222,7 @@ $LANG = array(
     <p>A portfólióm:</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
-    <h3>Az álom-listám</h3>
+    <h3 id="dream">Az álom-listám</h3>
 
     <p>
     ☐ Előadni egy Japán Comic Con-on a Paprika&amp;Sárgarépáról<br/>

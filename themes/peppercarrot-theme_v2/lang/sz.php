@@ -224,7 +224,7 @@ $LANG = array(
     <p>moje portfolio:</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
-    <h3>Lista marzyń:</h3>
+    <h3 id="dream">Lista marzyń:</h3>
 
     <p>
     ☐ Pedzieć ô Pepper&amp;Carrot na japōńskim kōnwyncie kōmiksowym<br/>

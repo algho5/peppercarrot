@@ -223,7 +223,7 @@ $LANG = array(
     <p>Mon portfolio :</p>
 ',
 'AUTHOR_TODO_DREAM'	    => '
-    <h3>Mos sòmis per aqueste projècte :</h3>
+    <h3 id="dream">Mos sòmis per aqueste projècte :</h3>
 
     <p>
     ☐ Donar una conferéncia al Japon a convencion Manga sobre Pepper&amp;Carrot.<br/>

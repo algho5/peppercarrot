@@ -222,7 +222,7 @@ $LANG = array(
     <p>Mien Portfolio:</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
-    <h3>Droom-To-Do-List:</h3>
+    <h3 id="dream">Droom-To-Do-List:</h3>
 
     <p>
     ☐ Op en japaansche Comic-Mess en Reed över Pepper&amp;Wuddel holen<br/>
