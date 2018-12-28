@@ -19,6 +19,8 @@ License
 
 * French: David Revoy
 
+* Galician: Xosé M. Lamas
+
 * Low German: Rebecca Breu
 
 * Polish: Sölve Svartskogen
