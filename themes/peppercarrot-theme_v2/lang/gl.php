@@ -8,6 +8,8 @@ $LANG = array(
 'LANGUAGE_ISO_CODE_2_LETTER' => 'gl',
 # http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
+// inicialmente utilizaba formas verbais formais pero un tono máis próximo acae mellor co autor falandolle en primeira persoa ao lector/a
+
 ################################################################################
 # Header HTML infos for search engine and title in tab:
 'PEPPERCARROT_VEGETABLE' => 'Pepa e Ciro', // Non traduzo os nomes porque ninguén me axudou :( Eu propuxen Pepa & Ciro
@@ -20,29 +22,29 @@ $LANG = array(
 'WEBCOMICS'  => 'Webcomics',
 'BLOG'       => 'Blog',
 'PHILOSOPHY' => 'Ideario',
-'CONTRIBUTE' => 'Contribuir',
+'CONTRIBUTE' => 'Contribuír',
 'COMMUNITY'  => 'Comunidade',
 'WIKI'       => 'Wiki',
 'SOURCES'    => 'Fontes',
 'AUTHOR'     => 'Autor',
-'FOLLOW'     => 'Siga a Pepper&amp;Carrot en:',
+'FOLLOW'     => 'Segue a Pepper&amp;Carrot en:',
 
 ################################################################################
 # Top and bottom translation panel
-'ADD_TRANSLATION' => 'engada unha tradución',
-'CORRECTIONS'     => 'propoña correccións',
+'ADD_TRANSLATION' => 'engade unha tradución',
+'CORRECTIONS'     => 'propón correccións',
 
 ################################################################################
 # Page: Homepage
 'HOMEPAGE_BIG_TEXT'         => '
-    Un webcomic libre e código aberto<br/>
+    Un webcomic libre de código aberto<br/>
     coa axuda directa dos seus patrocinadores<br/>
     para cambiar a industria da banda deseñada!<br/>
 ',
-'HOMEPAGE_PATREON_INFO'     => 'Por só $1 por novo episodio, fágase patrocinador agora en Patreon',
+'HOMEPAGE_PATREON_INFO'     => 'Por só $1 por novo episodio, fáite patrocinador agora en Patreon',
 'HOMEPAGE_MOREINFO_BUTTON'  => 'Máis información',
-'HOMEPAGE_PATREON_BUTTON'   => 'Convértase en patrocinador de Pepper&amp;Carrot en Patreon',
-'HOMEPAGE_PATREON_BOX'      => 'Convértase en patrocinador de Pepper&amp;Carrot en:',
+'HOMEPAGE_PATREON_BUTTON'   => 'Fáite patrocinador de Pepper&amp;Carrot en Patreon', // "faite" en lugar de "Convértete" polo tamaño do banner
+'HOMEPAGE_PATREON_BOX'      => 'Fáite patrocinador de Pepper&amp;Carrot en:',
 'HOMEPAGE_LAST_EPISODE'     => 'Último episodio',
 'HOMEPAGE_NEWS_UPDATE'      => 'Novas e actualizacións',
 'HOMEPAGE_MOREPOSTS_BUTTON' => 'Máis artigos',
@@ -92,7 +94,7 @@ $LANG = array(
     <p>Quero darlle a xente o dereito de compartir, utilizar, construír e incluso facer cartos a partir do traballo creado por min.<br/>
     Todas as páxinas, traballos artísticos e contido son creados con Software Libre e de fontes abertas en Linux, e todas as fontes están en este sitio web, menú &#39;Fontes&#39;<br/>
     Anímote a facer un uso comercial, traducións, fan-art, impresións, películas, video xogos, compartir e republicar.<br/>
-    Só precisa dar o crédito axeitado a/os autores (artístas, correctores, tradutores implicados no traballo que quere utilizar), proporcionar unha ligazón a licenza, e indicar os cambios realizados si procede. Pode facelo de varios xeitos apropiados, pero non dun xeito que implique que os autores propoñen o que vostede fixo.</p>
+    Só precisas dar o crédito axeitado a/os autores (artístas, correctores, tradutores implicados no traballo que queres utilizar), proporcionar unha ligazón a licenza, e indicar os cambios realizados se procede. Podes facelo de varios xeitos apropiados, pero non dun xeito que implique que os autores propoñen o que ti fixeches.</p>
 
     <div class="philobutton">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="Para máis información, lea a Creative Commons Attribution 4.0">
@@ -106,13 +108,13 @@ $LANG = array(
 
     <p>Pepper&amp;Carrot é un webcomic de humor/comedia axeitado para todas as persoas, de calquer idade.<br/>
     Sen contidos adultos ou violentos. Libre e de fontes abertas, Pepper&amp;Carrot é orguioso exemplo do fantástica que pode ser a cultura libre.<br/>
-    Céntrome moito na calidade, xa que a libre e aberto non significa afeccionado. Moi ao contrario.</p>
+    Céntrome moito na calidade, xa que ser libre e aberto non significa afeccionado. Moi ao contrario.</p>
 
         <img alt="Illustration representing comic pages flying around the world" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
 
     <h2>Cambiemos a industria da banda deseñada!</h2>
 
-    <p>Sen intermediarios entre artista e audiencia vostede paga menos e eu benefíciome máis. Vostede axúdame directamente.<br/>
+    <p>Sen intermediarios entre artista e audiencia, ti pagas menos e eu benefíciome máis. Axúdasme directamente.<br/>
     Ningunha editora, distribuidora, equipo de publicidade ou moda de turno pode forzarme a cambiar Pepper&amp;Carrot para axustarme a súa visión do &#39; mercado&#39;.<br/>
     Por que non podería unha soa historia de éxito mudar toda unha industria en crise? Xa veremos…</p>
 
@@ -120,7 +122,7 @@ $LANG = array(
 
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only $1 per new episode, become a patreon of Pepper&amp;Carrot">
-            Axúdeme a aumentar a produción de Pepper&amp;Carrot.
+            Axúdame a aumentar a produción de Pepper&amp;Carrot.
         </a>
     </div>
 
@@ -131,10 +133,10 @@ $LANG = array(
 
 ################################################################################
 # Page: Contribute
-'CONTRIBUTE_TITLE'       => 'Contribuir',
+'CONTRIBUTE_TITLE'       => 'Contribuír',
 'CONTRIBUTE_TOP'         => '
     <p>Grazas as <a href="?static6/sources" title="Sources page">fontes libres</a> e a <a href="http://creativecommons.org/licenses/by/4.0/">
-    Licenza creative commons</a> vostede pode contribuir a Pepper&amp;Carrot de moitos xeitos:</p>
+    Licenza Creative Commons</a> podes contribuír a Pepper&amp;Carrot de moitos xeitos:</p>
 ',
 'CONTRIBUTE_DONATION'    => '
     <h2>Patrocinio, doazóns</h2>
@@ -152,13 +154,13 @@ $LANG = array(
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Derivados</h2>
 
-    <p>Pepper&amp;Carrot pódese adaptar a moitos proxectos e produtos, porque non facer o seu propio ou unirse a un existente?</p>
+    <p>Pepper&amp;Carrot pódese adaptar a moitos proxectos e produtos, por que non iniciar o teu propio proxecto ou unirse a un existente?</p>
 ',
 
 'CONTRIBUTE_TRANSLATION' => '
     <h2>Traducións e correccións</h2>
 
-    <p>O sitio web Pepper&amp;Carrot está deseñado para ser multi-idioma e aceptar calquer idioma (incluídos os extintos ou os ficticios). As fontes de esta páxina están a súa disposición para traducilas. Lea o <a href="?static14/documentation&page=010_Translate_the_comic">titorial de referencia</a> para ter máis información sobre como engadir a súa tradución.</p>
+    <p>O sitio web Pepper&amp;Carrot está deseñado para ser multi-idioma e aceptar calquer idioma (incluídos os extintos ou os ficticios). As fontes de esta páxina están a túa disposición para traducilas. Le o <a href="?static14/documentation&page=010_Translate_the_comic">titorial de referencia</a> para ter máis información sobre como engadir a túa tradución.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'      => 'Redes sociais',
@@ -166,18 +168,18 @@ $LANG = array(
 'CONTRIBUTE_PRESS'       => '
     <h2>Prensa</h2>
 
-    <p>Publique Pepper&amp;Carrot! Escriba artigos, deseñe posters para sitios web, comparta e constrúa unha comunidade nas súas redes sociais favoritas. Pode descargar o <a href="?static6/sources" title="Sources page">kit de prensa</a> na páxina de "fontes".</p>
+    <p>Publicita Pepper&amp;Carrot! Escribe artigos, deseña posters para sitios web, comparte e constrúe unha comunidade nas túas redes sociais favoritas. Podes descargar o <a href="?static6/sources" title="Sources page">kit de prensa</a> na páxina de "fontes".</p>
 ',
 
 'CONTRIBUTE_OTHER'       => '
-    <h2>Outros xeitos de contribuir…</h2>
+    <h2>Outros xeitos de contribuír…</h2>
 
-    <p>Calquera pode contribuir de diferentes xeitos:<br/>
-        <b>Desenvolvedores:</b> Crear unha aplicación para ler Pepper&amp;Carrot no dispositivo móbil.<br/>
-        <b>Músicos:</b> Crear temas musicais Pepper&amp;Carrot.<br/>
-        <b>Escritores:</b> Propoñer novos escenarios para Pepper&amp;Carrot.<br/>
-        <b>Xornalistas:</b> Reseñar a Pepper&amp;Carrot nos medios tradicionais (prensa impresa, tv, etc.)<br/>
-        <b>Impresores:</b> Imprimir posters e mercadotecnia con Pepper&amp;Carrot en eles.<br/>
+    <p>Calquera pode contribuír de diferentes xeitos:<br/>
+        <b>Desenvolver:</b> Crear unha aplicación para ler Pepper&amp;Carrot no dispositivo móbil.<br/>
+        <b>Música:</b> Crear temas musicais Pepper&amp;Carrot.<br/>
+        <b>Escribir:</b> Propoñer novos escenarios para Pepper&amp;Carrot.<br/>
+        <b>Xornalismo:</b> Reseñar a Pepper&amp;Carrot nos medios tradicionais (prensa impresa, tv, etc.)<br/>
+        <b>Imprimir:</b> Imprimir posters e mercadotecnia con Pepper&amp;Carrot en eles.<br/>
     </p>
 ',
 
@@ -192,13 +194,13 @@ $LANG = array(
 'SOURCES_TITLE'     => 'Fontes',
 'SOURCES_TOP'       => '
     <p><b>Benvida ao centro de descarga das fontes!</b><br/>
-    Aquí atopará os ficheiros fonte de Pepper&amp;Carrot e máis elementos.<br/>
+    Aquí atoparás os ficheiros das fontes de Pepper&amp;Carrot e máis elementos.<br/>
     Todos os ficheiros dixitais de debuxo que hai aquí son compatibles coa última versión de <a href="https://krita.org/">Krita</a>.</p>
 ',
 'SOURCES_BOTTOM'    => '
-    <p>Descargando e traballando con estes ficheiros vostede acepta respetar os termos da <br/>
+    <p>Descargando e traballando con estes ficheiros aceptas respetar os termos da <br/>
     <a href="http://creativecommons.org/licenses/by/4.0/">Licenza Creative Commons Attribution</a>.
-    Lea os ficheiros README en cada proxecto para máis información.</p>
+    Le os ficheiros README en cada proxecto para máis información.</p>
 
     <p><b>Repositorios de código para traducións, guións, o sitio web, grafismos, etc.:</b><br/></p>
 ',
@@ -213,9 +215,9 @@ $LANG = array(
 # Page: Author
 'AUTHOR_TITLE'                       => 'Sobre David Revoy',
 'AUTHOR_BIO'                         => '
-    <p>Ola, o menu nome é David Revoy e son un artista francés nacido en 1981. Son autodidacta e apaixoado do debuxo, pintura, gatos, computadoras, cultura libre, Internet, video xogos RPG clásicos, manga e anime clásico, arte tradicional, cultura xaponesa, fantasía…<br/>
+    <p>Ola, o menu nome é David Revoy e son un artista francés nacido en 1981. Son autodidacta e apaixonado do debuxo, pintura, gatos, computadoras, cultura libre, Internet, video xogos RPG clásicos, manga e anime clásico, arte tradicional, cultura xaponesa, fantasía…<br/>
     <br/>
-    Despois de máis de 10 anos de deseño dixital como freelance, ensinando, arte conceptual, ilustrando e como director de arte decidín iniciar o meu propio proxecto. Finalmente atopei un xeito para misturar todas as miñas paixóns, o resultado é Pepper&amp;Carrot.</p>
+    Despois de máis de 10 anos de deseño dixital como freelance, dedicado ao ensino, arte conceptual, ilustrando e como director de arte decidín iniciar o meu propio proxecto. Finalmente atopei un xeito para misturar todas as miñas paixóns, o resultado é Pepper&amp;Carrot.</p>
 
     <p>O meu traballo:</p>
 ',
