@@ -62,11 +62,6 @@
           <div class="buttonlist col sml-12 med-12 lrg-12 sml-centered sml-text-center">
           <ul class="menu">
             <li>
-              <a href="https://plus.google.com/communities/108146253353928738338">
-                <b>Google+</b> <?php $plxShow->lang('COMMUNITY') ?>
-              </a>
-            </li>
-            <li>
               <a href="https://peertube.touhoppai.moe/videos/search?search=david%20revoy">
                 <b>Peertube</b> <?php $plxShow->lang('COMMUNITY') ?>
               </a>
