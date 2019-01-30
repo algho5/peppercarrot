@@ -32,22 +32,27 @@ if(isset($_GET['page'])) {
     $pathartworks = $pathcommunityfolder .'/'.$activefolder;
     $detectedlangs=array();
     
-    # Prepare the lang detection
-    $searchfiles = glob($pathartworks."/????-??-??_*.jpg");
+# Check available languages
+# =========================
+    
+    # Detect the amount of language to display by scanning threw available files
+    $searchfiles = glob($pathartworks."/??_*by-*.jpg");
     foreach ($searchfiles as $file) {
       $filename = basename($file);
-      $filenameclean = substr($filename, 11); // rm iso date
-      $filenameclean =  substr($filenameclean, 0, 2); // keep two letter ep number
+      $filenameclean =  substr($filename, 0, 2); // keeps only two letter ISO lang
       array_push($detectedlangs,$filenameclean);
     }
     $detectedlangscleaned = array_unique($detectedlangs);
     
     $matchinglang = 0;
+    # We check if content exist for user with active lang selected
     foreach ($detectedlangscleaned as $proposedlang) {
       if ($lang == $proposedlang){
         $matchinglang = 1;
       }
     }
+
+    # When no lang available, display a message:
     if ($matchinglang !== 1){
       echo '<div class="grid">';
       echo '<br/><div class="col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center alert blue">';
@@ -63,55 +68,51 @@ if(isset($_GET['page'])) {
     $contents = utf8_encode($contents);
     $langprettyname = json_decode($contents); 
 
-    # + [display] datas are in the URL
-    # Viewer mode : display the comic
+
+# Image viewer mode : display the artwork
+# =======================================
+# (a "page" variable passed)
+# (a "display" variable passed)
+
     if(isset($_GET['display'])) {
         $imagename = $activeimage;
         
-        # lang pills
+        # Write lang pills for the viewer
+        # Challenge: the pills must translate the image displayed.
         echo '<div class="grid">';
           echo '<div class="translabar col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
             echo '<ul class="menu" role="toolbar">';
               foreach ($detectedlangscleaned as $langavailable) {
-              
-                $langimagenamepart1 = substr($imagename, 0, 11); // rm iso date
-                $langimagenamepart2 = substr($imagename, 13); // rm iso date
-                $langimagename = $langimagenamepart1.''.$langavailable.''.$langimagenamepart2;
+                $langimagewithoutlang = substr($imagename, 2); // rm old lang
+                $langimagename = $langavailable.''.$langimagewithoutlang;
+                if (file_exists($pathartworks.'/'.$langimagename.'')) {
                 echo '<li><a href="?'.$langavailable.'/static11/community-webcomics&page='.$activefolder.'&display='.$langimagename.'">';
                 echo $langprettyname->$langavailable;
                 echo '</a></li>';
+                }
               }
             echo '<li><a class="lang option" href="'.$pathartworks.'"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
             echo '</ul>';
           echo '</div>';
         echo '</div>';
         
+        # Write the viewer:
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
         echo '<br/><br/>';
         echo '</div>';
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
-        # display picture
-        if ($matchinglang !== 1){
-          $lang = "en";
-        }
-        $imagename = $langimagenamepart1.''.$lang.''.$langimagenamepart2;
+
+        $imagename = $activeimage;
         echo '<a href="'.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
-        #link source
-        echo '<div class="col sml-12 med-12 lrg-12">';
-        echo '<a class="sourcebutton" href="';
-        echo ''.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'';
-        echo '">'; 
-        echo ''.$plxShow->Getlang('SOURCES_TITLE').': '; 
-        echo ''.$imagename.'';
-        echo '</a>';
-        echo '</div><br/>';
-    
         echo '</section>';
         echo '<br/><br/><br/><br/><br/></div>';
     
     } else {
     
-        # === Thumbnails of episodes ===
+# Thumbnails mode
+# ===============
+# (a "page" variable passed)
+# (no "display" variable passed)
         
         # lang pills
         echo '<div class="grid">';
@@ -126,47 +127,41 @@ if(isset($_GET['page'])) {
             echo '</ul>';
           echo '</div>';
         echo '</div>';
-    
+        
+        # Display the title of the project and markdown:   
         $foldernameclean = str_replace('_', ' ', $foldername);
         $foldernameclean = str_replace('-', ' ', $foldernameclean);
-
         $foldernameclean = str_replace('by', '</h2><span class="font-size: 0.5rem;">'.$ccbystring.'', $foldernameclean);
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
         echo '<h2>'.$foldernameclean.'</span>';
-        
         $hide = array('.', '..');
         $mainfolders = array_diff(scandir($pathartworks), $hide);
-                
-        if (!file_exists($pathartworks.'/'.$lang.'_infos.md')) {
-          if ($matchinglang !== 1){
-            $lang = "en";
-          }
+        echo '   DEBUG :'.$lang;
+        if (file_exists($pathartworks.'/'.$lang.'_infos.md')) {
+          $contents = file_get_contents($pathartworks.'/'.$lang.'_infos.md');
+        } else {
+          $contents = file_get_contents($pathartworks.'/en_infos.md');
         }
-        $contents = file_get_contents($pathartworks.'/'.$lang.'_infos.md');
-        if ($matchinglang !== 1){
-          $lang = "en";
-        }
-        $search = glob($pathartworks.'/????-??-??_'.$lang.'*.jpg');
-
         $Parsedown = new Parsedown();
+        echo '<div style="max-width: 910px; margin: 0 auto;">';
         echo $Parsedown->text($contents);
-
+        echo '</div>';
         echo '<br/><br/>';
         echo '</div>';
-        echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
 
+        # Display episodes
+        echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
+        $search = glob($pathartworks.'/'.$lang.'*.jpg');
         rsort($search);
         # we loop on found episodes
         if (!empty($search)){ 
           foreach ($search as $filepath) {
-            # filename extraction
-            $fileweight = (filesize($filepath) / 1024) / 1024;
+            # episode number extraction
             $filename = basename($filepath);
             $fullpath = dirname($filepath);
-            $dateextracted = substr($filename,0,10).'';
             $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
-            $filenameclean = substr($filenameclean, 13); // rm iso date
-            $filenameclean =  substr($filenameclean, 0, 3); // keep two letter ep number
+            $filenameclean = substr($filenameclean, 11); // remove 11 first characters
+            $filenameclean =  substr($filenameclean, 0, 2); // keeps two numbers
             $filenameclean = str_replace('_', ' ', $filenameclean);
             $filenameclean = str_replace('-', ' ', $filenameclean);
 
@@ -175,7 +170,6 @@ if(isset($_GET['page'])) {
             echo '<figcaption class="text-center" >
             <a href="0_sources/0ther/fan-art/'.$filename.'" >
             '.$episodestring.' '.$filenameclean.'
-            <br/><span class="detail">'.$dateextracted.'</span><br/>
             </figcaption>
             <br/><br/>';
             echo '</figure>';
@@ -186,7 +180,11 @@ if(isset($_GET['page'])) {
     }
     
 } else {
-# === Main menu, listing folders ===
+
+# Main menu
+# =========
+# (no "page" variable passed)
+
   echo "<h2>";
   $plxShow->lang('WEBCOMICS');
   echo "</h2>";
