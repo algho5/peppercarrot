@@ -136,7 +136,6 @@ if(isset($_GET['page'])) {
         echo '<h2>'.$foldernameclean.'</span>';
         $hide = array('.', '..');
         $mainfolders = array_diff(scandir($pathartworks), $hide);
-        echo '   DEBUG :'.$lang;
         if (file_exists($pathartworks.'/'.$lang.'_infos.md')) {
           $contents = file_get_contents($pathartworks.'/'.$lang.'_infos.md');
         } else {
