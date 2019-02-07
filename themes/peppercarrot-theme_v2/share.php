@@ -12,8 +12,6 @@
   
   <a class="social" href="http://www.tumblr.com/share/link?url=<?php echo rawurlencode($plxShow->artUrl()); ?>&name=<?php $plxShow->artTitle('url'); ?>" target="_blank" title="Share on Tumblr">Tumblr</a>   
   
-  <a class="social" href="https://plus.google.com/share?url=<?php echo rawurlencode($plxShow->artUrl()); ?>" target="_blank" title="Share on Google+">Google+</a>   
-
   <a class="social" href="https://share.diasporafoundation.org/?title=<?php $plxShow->artTitle('url') ?>%20%23peppercarrot&url=<?php echo rawurlencode($plxShow->artUrl()); ?>" target="_blank" title="Share on Diaspora">Diaspora</a>
   
   <a class="social" href="http://reddit.com/submit?url=<?php echo rawurlencode($plxShow->artUrl()); ?>title=<?php $plxShow->artTitle('url'); ?>" target="_blank" title="Share on Reddit">Reddit</a>
