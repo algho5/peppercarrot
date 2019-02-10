@@ -191,7 +191,7 @@
     <?php else: ?>
 
     <p>
-      <h4> Comments are closed for this article</h4>.
+      <h4>Website maintainance: Adding new comments removed for the next 48h.</h4>
     </p>
 
     <?php endif; # Fin du if sur l'autorisation des commentaires ?>
