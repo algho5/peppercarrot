@@ -47,12 +47,12 @@ h4{font-size:1.2rem}
 .responsive-menu label { color: #3A2619; background-color: transparent; font: normal 2rem 'ComicSpice', cursive; }
 
 /* translation pills */
-.translabar { padding: 0 0 0 0; margin: 0.5rem 0; }
+.translabar { padding: 0 0.5rem 0 0.5rem; margin: 0.5rem 0; }
 .comicwidth { max-width: 1060px }
-.translabar li { background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px }
+.translabar li { background-color: #FFF; margin: 0.15rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px }
 .translabar li.active { background-color: #D7EBFA; border: solid 1px #B1D6F2;}
-.translabar li.notfull { opacity: 0.75; }
-.translabar li.notfull a { opacity: 0.75; }
+.translabar li.notfull { }
+.translabar li.notfull a { }
 .translabar a { text-decoration: none; font-size: 0.9rem; }
 
 /* HOMEPAGE */
@@ -108,7 +108,7 @@ h4{font-size:1.2rem}
 .thumbnail figcaption a { color: #444; }
 .thumbnail figcaption a:hover { text-decoration: none; color: #258fd6; }
 .thumbnail .detail, .thumbnail .detail a{ color: #BBB; font-size: 0.8rem; }
-.notranslation { opacity: 0.5; }
+.notranslation { display:none; }
 
 /* Protect SVG icons */
 .lastep .svg, .lastep .svg:hover, .homethumbnail .svg, .thumbnail .svg:hover, .thumbnail .svg { width: auto; border:none; }
