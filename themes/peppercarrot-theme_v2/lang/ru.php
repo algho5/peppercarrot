@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Последний выпуск',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Новости и обновления',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Другие посты',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'поддерживается добровольцами.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Альтернативы:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Выпуски веб-комикса',
 'WEBCOMIC_MAKINGOF'		    =>  'О создании',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p>О создании комикса и <a href="http://www.davidrevoy.com/categorie5/tutorials"> обучение рисунку</a>  - особый бонус благодаря моим <a href="https://www.patreon.com/davidrevoy">героическим помощникам</a></p>
+    <p>О создании комикса и <a href="http://www.davidrevoy.com/categorie5/tutorials"> обучение рисунку</a>  - особый бонус благодаря моим <a href="https://www.patreon.com/join/davidrevoy?">героическим помощникам</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Галерея работ',
 'WEBCOMIC_SKETCHES'		    =>  'Эскизы',
@@ -73,8 +73,14 @@ $LANG = array(
  <h2>Поддерживается добровольцами</h2>
     
     <p>Проект Pepper&amp;Carrot спонсируется исключительно добровольцами со всего мира.<br/>
-    Каждый спонсор присылает немного денег на каждый новый опубликованный выпуск, и я выношу ему благодарность в конце нового эпизода.<br/>
+    Каждый спонсор присылает немного денег на каждый новый опубликованный выпуск, и я выношу ему благодарность в конце нового эпизода.
     Благодаря такой системе, Pepper&amp;Carrot может быть независимым и не пользоваться рекламой или какой-либо маркетинговой ерундой.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Стать спонсором Pepper&amp;Carrot легко: всего по 1$ за новый выпуск <a href="https://www.patreon.com/join/davidrevoy?">на Patreon</a>.
+    Patreon принимает кредитные карты со всего мира и также Paypal.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="иллюстрация:спонсорство" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -136,14 +142,7 @@ $LANG = array(
     <p>Благодаря <a href="?static6/sources" title="Страница исходников">открытым исходникам</a> и <a href="http://creativecommons.org/licenses/by/4.0/">
     лицензии Creative Commons</a> Вы можете помочь Pepper&amp;Carrot многими способами:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Спонсорство и взносы</h2> 
-    
-    <p>Подробнее на странице <a href="?static2/philosophy" title="открыть страницу Философии">Философии</a> рассказано почти все о взносах.<br/>
-    Стать спонсором Pepper&amp;Carrot легко: всего по 1$ за новый выпуск <a href="https://www.patreon.com/davidrevoy">на Patreon</a>.<br/>
-    Patreon принимает кредитные карты со всего мира и также Paypal.<br/>
-    </p>
-',
+
 'CONTRIBUTE_FANART'	    => '
     <h2>Фан-арт</h2>
     

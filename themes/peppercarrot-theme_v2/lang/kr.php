@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  '최근 화：',
 'HOMEPAGE_NEWS_UPDATE'      =>  '뉴스와 업데이트：',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  '게시물 더 보기',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  '후원자들.',
 'HOMEPAGE_ALTERNATIVES'     =>  '기타 방법:',
 
@@ -76,7 +76,13 @@ $LANG = array(
     각 후원자는 새 에피소드가 게시 될 때마다 소정의 돈을 보내고, 새 에피소드의 마지막에 감사의 말을 받습니다.<br/>
     이 시스템 덕분에 후추와 당근은 스스로 자립할 수 있고, 광고나 마케팅에 의존할 팔요가 없습니다.</p>
     
-',    
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    <a href="https://www.patreon.com/join/davidrevoy?">Patreon</a>에서 후추와 당근을 매 회차당 단돈 1$로 쉽게 후원하실 수 있습니다.
+    Patreon에서는 전 세계 신용카드를 모두 사용할 수 있으며, Paypal 계정으로도 결제할 수 있습니다.
+    </p>
+',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="후원을 나타내는 삽화" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
 
@@ -138,14 +144,7 @@ $LANG = array(
     <p><a href="?static6/sources" title="소스 페이지">오픈소스</a> 와 <a href="http://creativecommons.org/licenses/by/4.0/">
     크리에이티브 커먼즈 라이선스</a> 덕분에 후추와 당근을 많은 방법으로 후원할 수 있습니다:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '           
-    <h2>후원 및 기부</h2> 
-    
-    <p>저는 <a href="?static2/philosophy" title="철학">철학</a> 페이지에서 후원과 관련된 거의 모든 것을 설명하고 있습니다.<br/>
-    <a href="https://www.patreon.com/davidrevoy">Patreon</a>에서 후추와 당근을 매 회차당 단돈 1$로 쉽게 후원하실 수 있습니다.<br/>
-    Patreon에서는 전 세계 신용카드를 모두 사용할 수 있으며, Paypal 계정으로도 결제할 수 있습니다.<br/>
-    </p>
-',
+
 'CONTRIBUTE_FANART'	    => '
     <h2>팬아트</h2>
 

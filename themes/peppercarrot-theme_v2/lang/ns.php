@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Neeste Folg:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Ne\'e Bidrääg:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Mehr Narichten',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'mööglich maakt dör Förderer.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Annere Mööglichkeiten:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Webcomic-Folgen',
 'WEBCOMIC_MAKINGOF'		    =>  'Making-of',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p>Making-of un <a href="http://www.davidrevoy.com/categorie5/tutorials">Kunst-Tutorials</a> sünd en extra Togaav, mööglich maakt dör mien <a href="https://www.patreon.com/davidrevoy">Patreon-&#39;Helden&#39;</a></p>
+    <p>Making-of un <a href="http://www.davidrevoy.com/categorie5/tutorials">Kunst-Tutorials</a> sünd en extra Togaav, mööglich maakt dör mien <a href="https://www.patreon.com/join/davidrevoy?">Patreon-&#39;Helden&#39;</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Artwork-Galerie',
 'WEBCOMIC_SKETCHES'		    =>  'Teknungen',
@@ -75,6 +75,12 @@ $LANG = array(
     <p>Dat Pepper&amp;Wuddel-Projekt warrt alleen vun sien Förderer ut de hele Welt finanzeert.<br/>
     Jede Förderer gifft en beten Geld för jede ne\'e Folg un warrt denn an \'t Enn vun de ne\'e Folg nöömt.<br/>
     Dordör kann Pepper&amp;Wuddel op egen Been stahn un free blieven vun Warf oder driest Marketing.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Dat is eenfach, för man blots 1€ per Folg Pepper&amp;Wuddel-Förderer <a href="https://www.patreon.com/join/davidrevoy?">op Patreon</a> to warrn.
+    Patreon nimmt Kreditkoorten ut de hele Welt an un ji köönt dor ok mit PayPal betahlen.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="Bild, dat verkloort, wo dat Fördern funkschoneert" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -138,14 +144,7 @@ $LANG = array(
     <p>Ümdat ji de <a href="?static6/sources" title="Siet mit de Originaldateien">Originaldateien</a> ünner de <a href="http://creativecommons.org/licenses/by/4.0/">
     Creative Commons-Lizenz</a> rünnerladen köönt, köönt ji op vele Oorden bi Pepper&amp;Wuddel mitmaken:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Fördern, Spennen</h2>
 
-    <p>Op de <a href="?static2/philosophy" title="na de Philosophie-Siet gahn">Philosophie-Siet</a> heff ik meist allens verkloort vunwegen woneem dat Geld herkummt.<br/>
-    Dat is eenfach, för man blots 1€ per Folg Pepper&amp;Wuddel-Förderer <a href="https://www.patreon.com/davidrevoy">op Patreon</a> to warrn.<br/>
-    Patreon nimmt Kreditkoorten ut de hele Welt an un ji köönt dor ok mit PayPal betahlen.<br/>
-    </p>
-',
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-Art</h2>
 

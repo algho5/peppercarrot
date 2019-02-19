@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Nejnovější epizoda:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Novinky a aktualizace:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Další příspěvky',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'podporovaný fanoušky.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternativy:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Epizody komiksu',
 'WEBCOMIC_MAKINGOF'		    =>  'Za scénou',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p> Nahlédnutí za scénu a <a href="http://www.davidrevoy.com/categorie5/tutorials">návody</a> jsou speciálním bonusem, sponzorovaným mými fanoušky na <a href="https://www.patreon.com/davidrevoy">Patreonu</a></p>
+    <p> Nahlédnutí za scénu a <a href="http://www.davidrevoy.com/categorie5/tutorials">návody</a> jsou speciálním bonusem, sponzorovaným mými fanoušky na <a href="https://www.patreon.com/join/davidrevoy?">Patreonu</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galerie ilustrací',
 'WEBCOMIC_SKETCHES'		    =>  'Skicy',
@@ -76,6 +76,12 @@ $LANG = array(
     <p>Pepper&amp;Carrot je projekt sponzorovaný jen svými fanoušky z celého světa.<br/>
     Každý fanoušek na nově vydanou epizodu přispěje 1 dollar a za to bude jeho jméno napsáno v poděkování autora na konci nové epizody.<br/>
     Díky tomuto systému může Pepper&amp;Carrot zůstat nezávislým komiksem bez jakýkoliv otravných reklam.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Fanouškem Pepper&amp;Carrot se <a href="https://www.patreon.com/join/davidrevoy?">na Patreonu</a> můžete stát už za 1 dollar na epizodu.
+    Patreon přijímá všechny platební karty z celého světa a dokonce můžete platit i přes PayPal.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -138,14 +144,7 @@ $LANG = array(
     <p>Díky <a href="?static6/sources" title="Sources page">open source</a> a <a href="http://creativecommons.org/licenses/by/4.0/">
     licenci Creative commons </a> se můžete na Pepper&amp;Carrot podílet mnoha způsoby:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Patreon</h2>
 
-    <p>Všechno ohledně financování rozepisuji do detailu na <a href="?static2/philosophy" title="otevřít stránku Pojetí">stránce Pojetí</a>.<br/>
-    Fanouškem Pepper&amp;Carrot se <a href="https://www.patreon.com/davidrevoy">na Patreonu</a> můžete stát už za 1 dollar na epizodu.<br/>
-    Patreon přijímá všechny platební karty z celého světa a dokonce můžete platit i přes PayPal.<br/>
-    </p>
-',
 'CONTRIBUTE_FANART'	    => '
     <h2>Tvorba fanoušků</h2>
     <p>Pepper&amp;Carrot podporuje vlastní tvorbu svých fanoušků: kresby, scénáře, sošky, 3D modely, fanfiction. Pošlete mi je na (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, nebo mi dejte vědět přes sociální sítě), a objeví se v galerii fanouškovských výtvorů:</p>

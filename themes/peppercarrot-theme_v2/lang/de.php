@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Neueste Episode:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Neuigkeiten und Updates:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Mehr Nachrichten',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'unterst&uuml;tzt durch F&ouml;rderer.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternativen:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Webcomic Episoden',
 'WEBCOMIC_MAKINGOF'		    =>  'Making-of',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p> Making-of und <a href="http://www.davidrevoy.com/categorie5/tutorials"> Kunst-Tutorials</a>  sind ein spezieller Bonus, gesponsert durch meine <a href="https://www.patreon.com/davidrevoy">Patreons &#39;Helden&#39;</a></p>
+    <p> Making-of und <a href="http://www.davidrevoy.com/categorie5/tutorials"> Kunst-Tutorials</a>  sind ein spezieller Bonus, gesponsert durch meine <a href="https://www.patreon.com/join/davidrevoy?">Patreons &#39;Helden&#39;</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Artwork Galerie',
 'WEBCOMIC_SKETCHES'		    =>  'Zeichnungen',
@@ -76,6 +76,12 @@ $LANG = array(
     <p>Das Pepper&amp;Carrot Projekt wird nur von seinen F&ouml;rderern aus aller Welt finanziert.<br/>
     Jeder F&ouml;rderer gibt ein bisschen Geld f&uuml;r jede neue Episode, und wird daf&uuml;r am Ende der neuen Episode genannt.<br/>
     Durch dieses System kann Pepper&amp;Carrot unabh&auml;ngig bleiben und ohne Werbung oder Verschmutzung durch Marketing auskommen.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Es ist einfach, f&uuml;r nur 1€ pro Episode Pepper&amp;Carrot F&ouml;rderer <a href="https://www.patreon.com/join/davidrevoy?">auf Patreon</a> zu werden.
+    Patreon akzeptiert Kreditkarten aus aller Welt und ihr k&ouml;nnt sogar mit PayPal auf Patreon bezahlen.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="Illustration, die die F&ouml;rderung beschreibt" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -139,14 +145,7 @@ $LANG = array(
     <p>Dank der <a href="?static6/sources" title="Quellen Seite">Offenen Quellen</a> und der <a href="http://creativecommons.org/licenses/by/4.0/">
     Creative Commons Lizenz</a> k&ouml;nnt ihr auf vielf&auml;ltige Weise an Pepper&amp;Carrot mitwirken :</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>F&ouml;rdern, Spenden</h2> 
-    
-    <p>Auf der <a href="?static2/philosophy" title="open the Sources page">Philosophie Seite</a> habe ich fast alles zum Thema Finanzierung ausgebreitet.<br/>
-    Es ist einfach, f&uuml;r nur 1€ pro Episode Pepper&amp;Carrot F&ouml;rderer <a href="https://www.patreon.com/davidrevoy">auf Patreon</a> zu werden.<br/>
-    Patreon akzeptiert Kreditkarten aus aller Welt und ihr k&ouml;nnt sogar mit PayPal auf Patreon bezahlen.<br/>
-    </p>
-',
+
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-Art</h2>
     

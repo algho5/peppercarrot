@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Ôstatniŏ tajla:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Nowiny i uwiadōmiynia:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Wiyncyj postōw',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'spiyrany bez patrōnōw.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternatywy:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Tajle kōmiksu',
 'WEBCOMIC_MAKINGOF'		    =>  'Produkcyjŏ',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p> Produkcyjŏ i <a href="http://www.davidrevoy.com/categorie5/tutorials">tutoriale</a> sōm ekstra bonusym, kery szpōnzorujōm moje <a href="https://www.patreon.com/davidrevoy">Patreōnowe &#39;bohatyry&#39;</a></p>
+    <p> Produkcyjŏ i <a href="http://www.davidrevoy.com/categorie5/tutorials">tutoriale</a> sōm ekstra bonusym, kery szpōnzorujōm moje <a href="https://www.patreon.com/join/davidrevoy?">Patreōnowe &#39;bohatyry&#39;</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galeryjŏ grafik',
 'WEBCOMIC_SKETCHES'		    =>  'Cechōnki',
@@ -76,6 +76,12 @@ $LANG = array(
     <p>Projekt Pepper&amp;Carrot je fundowany bez czytŏczōw ze cołkigo świata.<br/>
     Kożdy z patrōnōw przelywŏ trochã pijyndzy na nowõ tajlã, za co dostŏwŏ podziynkowanie na kōńcu kożdyj tajle.<br/>
     Dziynki tymu Pepper&amp;Carrot może być niyznŏleżny i swobodny ôd zmaraszyniŏ ryklamami i marketingym.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Patrōnym Pepper&amp;Carrot idzie być za 1$ <a href="https://www.patreon.com/join/davidrevoy?">na Patreōnie</a>.
+    Patreon akceptuje szkarty borgowe z cołkigo świata, a tyż płaty bez Paypal.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="ôbrŏzek sparciŏ" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -140,14 +146,7 @@ $LANG = array(
     <p>Dziynki <a href="?static6/sources" title="Źrōdła">ôdewrzōnym źrōdłōm</a> i <a href="http://creativecommons.org/licenses/by/4.0/">
     licyncyje creative commons</a> możesz pōmōc Pepper&amp;Carrot na moc knifōw:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Patrōnat, dŏwki</h2>
 
-    <p>Na zajcie ze <a href="?static2/philosophy" title="ôdewrzij zajtã filozofije">filozofijōm</a> wyeklerowołch bezma wszyjsko ô financowaniu.<br/>
-    Patrōnym Pepper&amp;Carrot idzie być za 1$ <a href="https://www.patreon.com/davidrevoy">na Patreōnie</a>.<br/>
-    Patreon akceptuje szkarty borgowe z cołkigo świata, a tyż płaty bez Paypal.<br/>
-    </p>
-',
 'CONTRIBUTE_FANART'	    => '
     <h2>Ôd fanōw:</h2>
     
