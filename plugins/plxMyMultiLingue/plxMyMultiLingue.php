@@ -725,11 +725,10 @@ public function MyMultiLingueStaticAllLang() {
     $episode01_tester = '0_sources/ep01_Potion-of-Flight/low-res/'.$lang.'_Pepper-and-Carrot_by-David-Revoy_E01.jpg';
     if (file_exists($LangAvailable)) {
       # Lang exist, we build the HTML for the language item
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\" title=\"'.$aLabels[$lang].'\" >'.$aLabels[$lang].'</a></li>"; ?>';
+      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/")."\" title=\"'.$aLabels[$lang].'\" >'.$aLabels[$lang].'</a></li>"; ?>';
      } else if (file_exists($episode01_tester)) {
       # Lang exist but only for webcomic. 
-      $sel = 'notfull';
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("index.php?'.$lang.'/static3/webcomics")."\" title=\"'.$aLabels[$lang].' - Note: Translation of webcomic only \">'.$aLabels[$lang].'</a></li>"; ?>';
+      $LangString .= '<?php echo "<li class=\"'.$sel.' notfull\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/")."\" title=\"'.$aLabels[$lang].' - Note: Translation of webcomic only \">'.$aLabels[$lang].'</a></li>"; ?>';
     }
   }   
   # Display the resulting full list
