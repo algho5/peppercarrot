@@ -167,7 +167,7 @@ if(isset($_GET['page'])) {
             echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
             echo '<a href="?static11/community-webcomics&page='.$activefolder.'&display='.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
             echo '<figcaption class="text-center" >
-            <a href="0_sources/0ther/fan-art/'.$filename.'" >
+            <a href="?static11/community-webcomics&page='.$activefolder.'&display='.$filename.'" >
             '.$episodestring.' '.$filenameclean.'
             </figcaption>
             <br/><br/>';
