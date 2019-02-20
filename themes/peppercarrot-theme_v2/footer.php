@@ -20,10 +20,9 @@
               <p>
                 <p><?php $plxShow->lang('TRANSLATED_BY')?></p>
                 <?php $plxShow->lang('FOOTER_CONTENT') ?> 
-              </p>
+              
                   
               <br/>      
-            </p>
             </div>
 
             <br/>

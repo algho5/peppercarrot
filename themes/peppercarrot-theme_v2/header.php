@@ -54,8 +54,10 @@ V.<?php echo $version ?>, 11/2016
   // conditional: we embed the javascript only if the CMS detect we are displaying a webcomic
   if( $idCats=="003" AND $idMode=="article" ){?>
  <?php } ?>
- 
+
 </head>
+<body id="top">
+ 
 
  <?php
   if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
@@ -78,7 +80,6 @@ echo "| idMode :"; echo $idMode;
 echo "-->";
 ?>
 
-<body id="top">
 
   <header class="header " role="banner">
     <div class="container">
@@ -173,8 +174,8 @@ echo "-->";
         </div>
 
     </div>
-
-    <div style="clear:both;">
+    
+    <div style="clear:both;"></div>
 
   </header>
 

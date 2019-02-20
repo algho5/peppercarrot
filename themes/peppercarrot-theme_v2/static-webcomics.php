@@ -40,11 +40,12 @@ echo "<!-- LANG DEBUG:".$lang." -->";
           </figure>
           ',99,'003', "...", "rsort"))); ?>
           
-        <div style="clear:both;"></div>
-          
+          <div style="clear:both;"></div>
           </div>
-        </div>
         <?php include(dirname(__FILE__).'/share-static.php'); ?>  
+          </div>
+          </section>
+        </div>
       </section>
 	</main>
 </div>
