@@ -176,9 +176,7 @@ class vignette extends plxPlugin {
                     # Guess active lang: try many scenario
                     $lang = '';
                     $get = plxUtils::getGets();
-                    if(preg_match('/^([a-zA-Z]{2})\/(.*)/', $get, $capture)) {
-                      $lang = $capture[1];
-                    } elseif(isset($_SESSION['lang'])) {
+                    if(isset($_SESSION['lang'])) {
                       $lang = $_SESSION['lang'];
                     } elseif(isset($_COOKIE["plxMyMultiLingue"])) {
                       $lang = $_COOKIE["plxMyMultiLingue"];
