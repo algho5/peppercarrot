@@ -63,8 +63,8 @@ h4{font-size:1.2rem}
 .covertextoverlay { position: absolute; right: 5.5rem; top: 1.8rem; text-align:right; }
 #supportmebox { position: absolute; right: -1.5rem; top: 9.4rem; color: #222; width: 450px; height: 170px; text-align: center; border-radius: 0.4rem; }
 #moreinfobox { position: absolute; right: 0rem; top: 21rem; color: #222; width: 450px; height: 170px; text-align: right; border-radius: 0.4rem; }
-.moreinfobutton	{ color: #FFF; background: #258fd6 url('../ico/go.svg') no-repeat center right 8px; font-size: 0.85rem; font-family: ubuntu, arial, sans-serif; text-align: center; padding: 8px 24px 8px 8px; margin: 0 4px 0 0;	border-radius: 6px; cursor: pointer; }
-.moreinfobutton:hover	{ color: #FFF; background-color: #1c6ea5; }
+.moreinfobutton	{ color: #FFF; background: #8ac752 url('../ico/go.svg') no-repeat center right 12px; font-size: 1rem; font-family: ubuntu, arial, sans-serif; text-align: center; padding: 8px 28px 9px 8px; margin: 0 4px 0 0;	border-radius: 6px; cursor: pointer; box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.6); }
+.moreinfobutton:hover	{ background-color: #FFBB3E; color: #fff;}
 
 /* Support box */
 .bigbuttonpatreon { font-size: 1.8rem; font-weight: bold; font-family: ubuntu, arial, sans-serif; color: #FFFFFF; text-align: center; min-height: 80px; min-width: 374px; padding: 0 0 10px 0; margin: 0 auto 8px auto; display: inline-block; text-decoration: none; border-radius: 10px; box-shadow: 0 2px 3px rgba(23,23,23,0.3);  background: #F96854 url('../img/logo-patreon.svg') no-repeat 120px 36px; background-size: 42px 42px; text-shadow: 0 1px 1px rgba(0,0,0,0.4) }
