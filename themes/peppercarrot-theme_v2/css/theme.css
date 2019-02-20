@@ -213,9 +213,8 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .philosophy { text-align: center; }
 .philosophy h2{ font-size: 2.6rem; }
 .philosophy img{ padding-bottom: 3.8rem; }
-.philobutton { text-align: center; padding: 0.9rem; margin: 0 auto; max-width: 570px;  }
-.philobutton a{ color: #ED7E78; }
-.philobutton:hover { background-color:#FFF; }
+.philosophy a{ color: #E15F6F; text-decoration: underline; }
+.philosophy a:hover { color: #FC7888; }
 
 /* Contribute page */
 .contribute { text-align: center; }

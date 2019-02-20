@@ -16,19 +16,6 @@
         <article class="col sml-12 med-12 lrg-12" role="article">
           <?php $plxShow->lang('CONTRIBUTE_TOP') ?>
         </article>
-
-        <article class="col sml-12 med-12 lrg-12" role="article">
-          <?php $plxShow->lang('CONTRIBUTE_DONATION') ?> 
-          <?php $plxShow->lang('HOMEPAGE_ALTERNATIVES') ?>
-          <a href="https://paypal.me/davidrevoy" title="Send money via Paypal" class="alternativesbutton paypal">Paypal</a>
-          <a href="https://www.tipeee.com/pepper-carrot" title="<?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?> Tipeee" class="alternativesbutton tipeee">Tipeee</a>
-          <a href="https://liberapay.com/davidrevoy/" title="<?php $plxShow->lang('HOMEPAGE_PATREON_BOX') ?> Liberapay" class="alternativesbutton liberapay">Liberapay</a>
-          <a href="https://g1.duniter.fr/#/app/wot/4nosBEwT8xQfMY11sq32AnZF1XcoqzG9tArXJq9mu8Wc/DavidRevoy" title="Send G1 to David Revoy" class="alternativesbutton G1">G1</a>
-          <a href="<?php $plxShow->urlRewrite('?static12/iban-and-mail-adress') ?>" title="Send money via IBAN or Send goods via mail" class="alternativesbutton iban">Bank/Mail</a>
-          <br/>
-          <br/>
-          <img src="https://www.peppercarrot.com/0_sources/0ther/misc/low-res/2018-11-22_contribute_01-donation_by-David-Revoy.jpg" alt="A monochromatic illustration representing Pepper being happy after going to various shops. Carrot holds money." title="Illustration: CC-By David Revoy | Sources: Sources→Misc.">
-        </article>
         
         <article class="col sml-12 med-12 lrg-12" role="article">
           <?php $plxShow->lang('CONTRIBUTE_TRANSLATION') ?>
@@ -38,8 +25,7 @@
         <article class="col sml-12 med-12 lrg-12" role="article">
           <?php $plxShow->lang('CONTRIBUTE_DERIVATIONS') ?>
           <a class="contributelink" href="<?php $plxShow->urlRewrite('?categorie4/derivations') ?>" title="Go to the blog page">
-            <b><?php $plxShow->catList('','#art_nb',4); ?> derivatives projects</b> on the Blog &nbsp;&nbsp;<img class="svg" src="themes/peppercarrot-theme_v2/ico/go.svg" alt="→"/>
-          </a>
+            <b><?php $plxShow->catList('','#art_nb',4); ?> derivatives projects</b></a>
         </article>
         
         <article class="col sml-12 med-12 lrg-12" role="article">
@@ -53,8 +39,7 @@
             }
           }?>
           <a class="contributelink" href="<?php $plxShow->urlRewrite('?static10/fanart-gallery') ?>" title="Go to the blog page">
-            <b><?php echo ''.$fanartcounter.''; ?> fan-arts</b> on the Blog&nbsp;&nbsp;<img class="svg" src="themes/peppercarrot-theme_v2/ico/go.svg" alt="→"/>
-          </a>
+            <b><?php echo ''.$fanartcounter.''; ?> fan-arts</b></a>
         </article>
   
         <article class="col sml-12 med-12 lrg-12" role="article">
