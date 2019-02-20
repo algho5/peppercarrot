@@ -140,32 +140,7 @@ class plxMotor {
 		elseif($this->get AND preg_match('/^article([0-9]+)\/?([a-z0-9-]+)?/',$this->get,$capture)) {
 			$this->mode = 'article'; # Mode article
 			$this->template = 'article.php';
-      
-      ################################################
-      # Plugin: Rules for redirecting legacy         #
-      # davidrevoy.com article IDs                   #
-      ################################################
-      # 1) we check the server name
-      if (strpos($_SERVER['SERVER_NAME'], "dr.peppercarrot.com") === false){
-      # 2) This is not davidrevoy.com, running normal:
-        $this->cible = str_pad($capture[1],4,'0',STR_PAD_LEFT); # On complete sur 4 caracteres
-      } else {
-        # 3) We are on davidrevoy.com, we redirect request of article ID with old adress
-        if ( $capture[1] == 267 ) {
-          $newarticleid = 1267;
-        } elseif ( $capture[1] == 1 ) {
-          $newarticleid = 6;
-        } elseif ( $capture[1] == 8 ) {
-          $newarticleid = 5;
-        } elseif ( $capture[1] == 4 ) {
-          $newarticleid = 7;
-        } else {
-        $newarticleid = $capture[1];
-        }
-      $this->cible = str_pad($newarticleid,4,'0',STR_PAD_LEFT); # On complete sur 4 caracteres
-      }
-      ###################    End    ##################
-      
+			$this->cible = str_pad($capture[1],4,'0',STR_PAD_LEFT); # On complete sur 4 caracteres
 			$this->motif = '/^'.$this->cible.'.((?:[0-9]|home|,)*(?:'.$this->activeCats.'|home)(?:[0-9]|home|,)*).[0-9]{3}.[0-9]{12}.[a-z0-9-]+.xml$/'; # Motif de recherche
 			if($this->getArticles()) {
 				# Redirection 301
