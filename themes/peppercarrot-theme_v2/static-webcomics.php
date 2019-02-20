@@ -1,5 +1,8 @@
 <?php include(dirname(__FILE__).'/header.php'); 
 $lang = $plxShow->defaultLang($echo);
+
+echo "<!-- LANG DEBUG:".$lang." -->";
+
 ?>
 <div class="container">
 <main class="main grid" role="main">

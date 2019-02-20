@@ -181,7 +181,7 @@ class vignette extends plxPlugin {
                     } elseif(isset($_COOKIE["plxMyMultiLingue"])) {
                       $lang = $_COOKIE["plxMyMultiLingue"];
                     } else {
-                      $lang = $default_lang;
+                      $lang = "en";
                     }
 
                     $translation_check = $episodedir.''.$lang.'_'.$filename.'.'.$vignette_parts['extension'];
