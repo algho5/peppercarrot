@@ -301,23 +301,29 @@ a:hover { text-decoration:none;}
 @media (max-width: 900px) {
 .menu.expanded a { font-size: 1.15rem; }
 input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
-.cover h1 { font-size: 2.2rem; margin: 1rem 0 0.4rem 0;}
-.cover { background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 32% 80%; }
+.cover h1 { position: absolute; top: 1rem; right: 0; font-size: 2rem; width: 420px; }
+.cover { background: url('../img/pepper-carrot-cover4_by-david-revoy.jpg') no-repeat 11% 80%; text-align: right;}
 .moreposts { text-align: center; margin: 1rem 0 0 0; }
+.moreinfobutton {position: absolute; top: 200px; right: 0; width: 180px; }
+
 }
 
 /* small devices */
 @media (max-width: 700px) {
-.cover { background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 35% 5%; }
-.cover h1 { font-size: 1.8rem; margin: 0.3rem 0 0.4rem 0; }
+.cover { background: url('../img/pepper-carrot-cover4_by-david-revoy.jpg') no-repeat 15% 80%; }
+.cover h1 { font-size: 1.8rem; margin: 0.3rem 0 0.4rem 0; width: 380px; }
 .covertextoverlay { right: 1.3rem;}
+}
+
+@media (max-width: 770px) {
+.thumbnail, .thumbnail img {width: 100%;}
 }
 
 /* vertical smartphone */
 @media (max-width: 500px) {
-.cover { color: #FFF; background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 75% 5%; height: 430px; width: 100%; margin: 0 auto; }
+.cover { color: #FFF; background: url('../img/pepper-carrot-cover4_by-david-revoy.jpg') no-repeat 25% 5%; height: 430px; width: 100%; margin: 0 auto; }
 .percentdomain {width:295px;}
-.cover h1 { font-size: 1.48rem; margin: 0.3rem 0 1.1rem 0; }
+.cover h1 { font-size: 1.48rem; margin: 0.3rem 0 1.1rem 0; width: 300px; }
 .bigbuttonpatreon { min-width: 280px; height: 72px; font-size: 1.4rem; background: #F96854 url('../img/logo-patreon.svg') no-repeat 80px 24px; background-size: 42px 42px; }
 #supportmebox {width: 380px; right: -4,2rem;}
 .alternativesbutton {line-height: 2.6rem;}
@@ -333,11 +339,6 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .level-4 {margin-left: 1.5rem; border-left: double 5px #F5F9FC; }
 .level-5,.level-max {margin-left: 1.5rem; border-left: double 5px #F5F9FC; }
 .nbcom {background-color: #258fd6;color: #fff;padding: .2rem .3rem;}
-}
-
-/* grille-pain */
-@media (max-width: 350px) {
-.cover { display:none; }
 }
 
 /* footer */
