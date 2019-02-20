@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Legújabb rész:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Hírek és frissítések',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'További bejegyzések',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'olvasók által támogatott.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternatívák:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Elkészült epizódok',
 'WEBCOMIC_MAKINGOF'		    =>  'Így készült',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p>Az &quot;Így készült&quot; és a <a href="http://www.davidrevoy.com/categorie5/tutorials">grafikai tutorial</a> egy különleges bónusz, amit a <a href="https://www.patreon.com/davidrevoy">Patreons &quot;hőseim&quot;</a> szponzoráltak.</p>
+    <p>Az &quot;Így készült&quot; és a <a href="http://www.davidrevoy.com/categorie5/tutorials">grafikai tutorial</a> egy különleges bónusz, amit a <a href="https://www.patreon.com/join/davidrevoy?">Patreons &quot;hőseim&quot;</a> szponzoráltak.</p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galéria',
 'WEBCOMIC_SKETCHES'		    =>  'Vázlatok, skiccek',
@@ -76,6 +76,12 @@ $LANG = array(
     <p>A Paprika&amp;Sárgarépa projektet kizárólag az olvasói támogatják, a világ minden részéről.<br/>
     Minden pártfogó egy csekély összeggel hozzájárul, amiért cserébe a rész végén megemlítésre kerül.<br/>
     Ennek a rendszernek köszönhetően a képregény független maradhat és nem kell reklámokhoz, egyéb marketing-eszközhöz fordulnia.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Könnyű a Paprika&amp;Sárgarépa pártfogójává válni a <a href="https://www.patreon.com/join/davidrevoy?">Patreon-on</a>, mindössze $1-ért epizódonként.
+    A Patreon a világ minden részéről elfogad bankkártyát, és még PayPal-lal is fizethetsz.
+    <p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="pártfogást jelképező illusztráció" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -137,14 +143,7 @@ $LANG = array(
     <p>A <a href="?static6/sources" title="Forráskód oldal">nyílt forráskódnak</a> és a <a href="https://creativecommons.org/licenses/by/4.0/deed.hu">
     creative commons licencnek</a> köszönhetően Te is közreműködhetsz a Paprika&amp;Sárgarépában, számos módon:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Pártfogás, adomány:</h2> 
-    
-    <p>A <a href="?static2/philosophy">Filozófia oldalon</a> részletesebben is leírtam majdnem mindent, amit a finanszírozásról tudni érdemes.<br/>
-    Könnyű a Paprika&amp;Sárgarépa pártfogójává válni a <a href="https://www.patreon.com/davidrevoy">Patreon-on</a>, mindössze $1-ért epizódonként.<br/>
-    A Patreon a világ minden részéről elfogad bankkártyát, és még PayPal-lal is fizethetsz.<br/>
-    <p>
-',
+
 'CONTRIBUTE_FANART'	    => '
     <h2>Rajongói művek</h2>
     

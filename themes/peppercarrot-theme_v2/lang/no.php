@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Siste episode:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Nyheter &amp; oppdateringer:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Flere innlegg',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'støttet av sponsorer.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternativer:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Nettstripe episoder',
 'WEBCOMIC_MAKINGOF'		    =>  'Hvordan den lages',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p> Hvordan den lages <a href="http://www.davidrevoy.com/categorie5/tutorials">art tutorials</a> er ekstramateriale sponset av <a href="https://www.patreon.com/davidrevoy">Patreons &#39;heroes&#39;</a></p>
+    <p> Hvordan den lages <a href="http://www.davidrevoy.com/categorie5/tutorials">art tutorials</a> er ekstramateriale sponset av <a href="https://www.patreon.com/join/davidrevoy?">Patreons &#39;heroes&#39;</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galleri',
 'WEBCOMIC_SKETCHES'		    =>  'Skisser',
@@ -76,6 +76,13 @@ $LANG = array(
 	Sponsorene sender en liten slant med penger for hver nye episode som blir laget og blir kreditert på slutten av hver episode.<br/>
 	Dette systemet tillater Pepper&amp;Gulrot &aring; v&aelig;re 100 prosent uavhengig uten &aring; måtte ty til reklame eller andre triks som kan
 	ødelegge seriens orginalitet.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+  <p>
+	Det er en smal sak &aring; bli en Pepper&amp;Gulrot-sponsor og det for bare 1$ per nye episode. G&aring; til <a href="https://www.patreon.com/join/davidrevoy?">Patreon</a>.
+	Patreon godtar kredittkort fra hele verden s&aring; vel som betaling via Paypal.
+	</p>
+
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -142,15 +149,7 @@ $LANG = array(
     <p>Takket v&aelig;re <a href="?static6/sources" title="Sources page">&aring;pen kildekode</a> og <a href="http://creativecommons.org/licenses/by/4.0/">
     creative commons lisensene</a> kan du bist&aring; Pepper&amp;Gulrot p&aring; mange m&aring;ter:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Donasjoner fra f&oslash;lgere</h2>
 
-    <p>P&aring; <a href="?static2/philosophy" title="open the Sources page">Filosofi-siden</a> kan du lese i detaljer det meste som ang&aring;r finansiering av serien.<br/>
-	Det er en smal sak &aring; bli en Pepper&amp;Gulrot-sponsor og det for bare 1$ per nye episode. G&aring; til <a href="https://www.patreon.com/davidrevoy">Patreon</a>.<br/>
-	Patreon godtar kredittkort fra hele verden s&aring; vel som betaling via Paypal.<br/>
-	</p>
-
-',
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-art</h2>
     

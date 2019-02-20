@@ -728,8 +728,7 @@ public function MyMultiLingueStaticAllLang() {
       $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\" title=\"'.$aLabels[$lang].'\" >'.$aLabels[$lang].'</a></li>"; ?>';
      } else if (file_exists($episode01_tester)) {
       # Lang exist but only for webcomic. 
-      $sel = 'notfull';
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("index.php?'.$lang.'/static3/webcomics")."\" title=\"'.$aLabels[$lang].' - Note: Translation of webcomic only \">'.$aLabels[$lang].'</a></li>"; ?>';
+      $LangString .= '<?php echo "<li class=\"'.$sel.' notfull\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\" title=\"'.$aLabels[$lang].' - Note: Translation of webcomic only \">'.$aLabels[$lang].'</a></li>"; ?>';
     }
   }   
   # Display the resulting full list

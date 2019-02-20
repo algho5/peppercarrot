@@ -11,6 +11,14 @@
 #
 # ------------------- END LICENSE BLOCK -------------------
 
+# [hack] redirect the RSS to blog content:
+$url = 'https://www.davidrevoy.com/feed/rss';
+# Redirect:
+ob_start();
+header('Location: '.$url);
+ob_end_flush();
+die();
+    
 define('PLX_ROOT', './');
 define('PLX_CORE', PLX_ROOT.'core/');
 include(PLX_ROOT.'config.php');

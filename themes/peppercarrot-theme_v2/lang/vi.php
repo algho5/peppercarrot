@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Tập mới nhất:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Tin Tức và Cập Nhật:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Các bài đăng khác',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'được giúp đỡ bởi các nhà tài trợ.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Các lựa chọn thay thế:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Các tập truyện',
 'WEBCOMIC_MAKINGOF'		    =>  'Chế tác',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p> Các chế tác và <a href="http://www.davidrevoy.com/categorie5/tutorials"> hướng dẫn vẽ</a> được ủng hộ đặc biệt bởi <a href="https://www.patreon.com/davidrevoy">Nhà tài trợ &#39;heroes&#39;</a> của tôi</p>
+    <p> Các chế tác và <a href="http://www.davidrevoy.com/categorie5/tutorials"> hướng dẫn vẽ</a> được ủng hộ đặc biệt bởi <a href="https://www.patreon.com/join/davidrevoy?">Nhà tài trợ &#39;heroes&#39;</a> của tôi</p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Các Bản Vẽ',
 'WEBCOMIC_SKETCHES'		    =>  'Bản Phác Họa',
@@ -76,6 +76,12 @@ $LANG = array(
     <p>Dự án Hạt Tiêu&amp;Cà Rốt được tài trỡ bởi những người ủng hộ trên khắp thế giới<br/>
     Những người ủng hộ tài trợ cho những tập truyện mới phát hành, được ghi nhận ở cuối mỗi tập truyện.<br/>
     Cảm ơn hệ thống này, Hạt Tiêu&amp;Cà Rốt có thể hoạt động độc lập và không phải dùng quảng cáo khó chịu.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Rất dễ dàng để trở thành nhà tài trợ cho Hạt Tiêu&amp;Cà Rốt chỉ với 1$ cho mỗi tập truyện <a href="https://www.patreon.com/join/davidrevoy?">qua Patreon</a>.
+    Patreon nhận thẻ tín dụng từ khắp thế giới, và bạn cũng có thể trả với tài khoản Paypal qua Patreon.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -137,14 +143,7 @@ $LANG = array(
     <p>Cảm ơn <a href="?static6/sources" title="Sources page">Mã nguồn mở</a> này và <a href="http://creativecommons.org/licenses/by/4.0/">
     creative commons license</a> mà các bạn có thể đóng góp cho Hạt Tiêu&amp;Cà Rốt bằng rất nhiều cách:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Ủng hộ, Tài trợ</h2> 
-    
-    <p>Tôi đã viết chi tiết trong <a href="?static2/philosophy" title="open the Sources page">trang Philosophy</a> hầu như tất cả về cách ủng hộ.<br/>
-    Rất dễ dàng để trở thành nhà tài trợ cho Hạt Tiêu&amp;Cà Rốt chỉ với 1$ cho mỗi tập truyện <a href="https://www.patreon.com/davidrevoy">qua Patreon</a>.<br/>
-    Patreon nhận thẻ tín dụng từ khắp thế giới, và bạn cũng có thể trả với tài khoản Paypal qua Patreon.<br/>
-    </p>
-',
+
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-art</h2>
     

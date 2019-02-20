@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Plej nova rakonteto:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Novaĵoj kaj ĝisdatigoj:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Pli da afiŝoj',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'subtenata de patronoj.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternativoj:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Bildrakontoj',
 'WEBCOMIC_MAKINGOF'		    =>  'Kreado',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p>Genezo de kreado kaj <a href="http://www.davidrevoy.com/categorie5/tutorials">art-gvidiloj</a> estas ekstraĵoj subtenitaj de miaj karaj <a href="https://www.patreon.com/davidrevoy">Patreon-aj &apos;herooj&apos;</a></p>
+    <p>Genezo de kreado kaj <a href="http://www.davidrevoy.com/categorie5/tutorials">art-gvidiloj</a> estas ekstraĵoj subtenitaj de miaj karaj <a href="https://www.patreon.com/join/davidrevoy?">Patreon-aj &apos;herooj&apos;</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galerio de artaĵoj',
 'WEBCOMIC_SKETCHES'		    =>  'Skizoj',
@@ -76,6 +76,12 @@ $LANG = array(
     <p>La projekto “Pipro kaj Karoĉjo” estas financata nur de ĝiaj patronoj de la tuta mondo.<br/>
     Ĉiu patrono sendas iomete da mono por ĉiu nov-publikigita rakonteto kaj ricevas agnoskon sube nova bildrakonto.<br/>
     Danke al tiu ĉi sistemo, Pipro kaj Karoĉjo povas esti sendependa kaj por ĉiam restos libera de iuj reklamaĉoj.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Estas facile iĝi patrono de Pipro kaj Karoĉjo nur po 1$ por nova rakonteto <a href="https://www.patreon.com/join/davidrevoy?">per Patreon</a>.
+    Patreon akceptas monkartojn de la tuta mondo kaj vi eĉ povas pagi per PayPal-konto al Patreon.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="ilustraĵo montranta patronecon" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -138,14 +144,7 @@ $LANG = array(
     <p>Danke al <a href="?static6/sources" title="paĝo de fontoj">malfermaj fontoj</a> kaj al la <a href="https://creativecommons.org/licenses/by/4.0/deed.eo">
     permesilo Krea Komunaĵo</a> vi povas kontribui al Pipro kaj Karoĉjo multmaniere:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Patroneco, donacoj</h2>
 
-    <p>Mi precizigis en la <a href="?static2/philosophy" title="malfermi paĝon pri filozofio">paĝo pri filozofio</a> preskaŭ ĉion pri financado.<br/>
-    Estas facile iĝi patrono de Pipro kaj Karoĉjo nur po 1$ por nova rakonteto <a href="https://www.patreon.com/davidrevoy">per Patreon</a>.<br/>
-    Patreon akceptas monkartojn de la tuta mondo kaj vi eĉ povas pagi per PayPal-konto al Patreon.<br/>
-    </p>
-',
 'CONTRIBUTE_FANART'	    => '
     <h2>Fanatikul-artaĵo</h2>
     

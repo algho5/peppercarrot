@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Darrièr episòdi :',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Novetats e mesas a jorn :',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Ne veire mai',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'finançat per sos legeires.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternativas :',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Episòdis',
 'WEBCOMIC_MAKINGOF'		    =>  'Creacion',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p>La creacion <a href="http://www.davidrevoy.com/categorie5/tutorials"> e los tutorials artistics</a> son de bonus especials finançats participativament gràcia al sosten dels mecènas sus <a href="https://www.patreon.com/davidrevoy">Patreons</a></p>
+    <p>La creacion <a href="http://www.davidrevoy.com/categorie5/tutorials"> e los tutorials artistics</a> son de bonus especials finançats participativament gràcia al sosten dels mecènas sus <a href="https://www.patreon.com/join/davidrevoy?">Patreons</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galariá d’illustracions',
 'WEBCOMIC_SKETCHES'		    =>  'Croquís',
@@ -75,6 +75,13 @@ $LANG = array(
     Quin que siá legeire pòt mandar un pichon quicòm per finançar la publicacion d’un episòdi novèl.<br/>
     Apareisserà dins los remerciaments d’aqueste episòdi. Gràcia a aqueste sistèma, Pepper&amp;Carrot<br/>
     demòra independent e protegit del monde editorial, de la publicitat e del marketing agressiu.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Per mai de comoditat e mens de despensas bancàrias pel public francofòns, metèri en plaça <a href="https://www.tipeee.com/pepper-carrot" title="Pepper&amp;Carrot on tipeee">una pagina sus Tipeee</a>.
+    Òm pòt tanben <a href="https://www.patreon.com/join/davidrevoy?">sosténer lo projècte via Patreon</a> (internacional).
+    Patreon e Tipeee acceptan las Cartas Blavas, Visa e Paypal, etc.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="Illustracion d’un mecenat modèrne" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -135,16 +142,7 @@ $LANG = array(
     <p>Gràcia al partiment de las <a href="?static6/sources" title="Sources page">fonts</a> e a sa <a href="http://creativecommons.org/licenses/by/4.0/">
     licéncia Creative Commons Attribution</a>, podètz contribuir a Pepper&amp;Carrot de mai d’un biais :</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Mecenat e donacions</h2>
 
-    <p>Trobaretz totas las informacions sul fiançament de Pepper&amp;Carrot a la pagina
-    <a href="?static2/philosophy" title="Filisofia">Filisofia</a>.<br/>
-    Per mai de comoditat e mens de despensas bancàrias pel public francofòns en Euròpa, metèri en plaça <a href="https://www.tipeee.com/pepper-carrot" title="Pepper&amp;Carrot on tipeee">una pagina sus Tipeee</a>.<br/>
-    Òm pòt tanben <a href="https://www.patreon.com/davidrevoy">sosténer lo projècte via Patreon</a> (internacional).
-    Patreon e Tipeee acceptan las Cartas Blavas, Visa e Paypal, etc.<br/>
-    </p>
-',
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-art</h2>
     <p>Los fan-arts de Pepper&amp;Carrot son benvenguts : dessenhs, scenaris, esculturas, 3D, fan-ficcions... e me’ls podètz mandar perque aimi aquò :

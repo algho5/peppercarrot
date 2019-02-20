@@ -68,20 +68,19 @@ $lang = $plxShow->defaultLang($echo);
   <!-- Footer infos -->
   <div style="clear:both;"><br/></div>
   <footer class="col sml-12 med-12 lrg-12 text-center">
-
-  <?php include(dirname(__FILE__).'/supportme.php'); ?>
+  <h3>Comments have moved <a href="https://www.davidrevoy.com/categorie2/webcomics">on the blog</a></h3>
   
   <div style="margin: 70px auto 0 auto;">
     <?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>
-    <?php include(dirname(__FILE__).'/share.php'); ?>  
   </div>
   
   <?php include(dirname(__FILE__).'/navigation.php'); ?>
   </div>
   </footer>
   <div style="clear:both;"><br/></div>
-
-<?php include(dirname(__FILE__).'/commentaires.php'); ?>
+  
+<section class="comments col sml-12 sml-centered text-center" >
+</section>
 
 </div>
 

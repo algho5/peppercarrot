@@ -39,14 +39,14 @@ $LANG = array(
     financé directement par ses lecteurs<br/>
     pour changer l\'industrie de la BD !<br/>
 ',
-'HOMEPAGE_PATREON_INFO'     =>  'Pour moins d\' 1€ par nouvel épisode, devenez mécène de Pepper&amp;Carrot sur Patreon.',
+'HOMEPAGE_PATREON_INFO'     =>  'Pour moins d\' 1€ par nouvel épisode, devenez mécène de Pepper&amp;Carrot sur Tipeee.',
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'Plus d\'informations',
-'HOMEPAGE_PATREON_BUTTON'   =>  'Devenez mécène de Pepper&amp;Carrot sur Patreon',
+'HOMEPAGE_PATREON_BUTTON'   =>  'Devenez mécène de Pepper&amp;Carrot sur Tipeee',
 'HOMEPAGE_PATREON_BOX'      =>  'Devenez mécène de Pepper&amp;Carrot sur:',
 'HOMEPAGE_LAST_EPISODE'     =>  'Dernier épisode :',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Nouvelles et mises à jour :',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Voir tout',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://fr.tipeee.com/pepper-carrot',
 'HOMEPAGE_SUPPORTED_BY'     =>  'financé par ses lecteurs.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternatives:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Épisodes',
 'WEBCOMIC_MAKINGOF'		    =>  'Making-of',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p>Les Making-of et <a href="http://www.davidrevoy.com/categorie5/tutorials"> les tutoriels artistiques</a> sont des suppléments spéciaux financés participativement grâce au soutien des mécènes sur <a href="https://www.patreon.com/davidrevoy">Patreons</a></p>
+    <p>Les Making-of et <a href="http://www.davidrevoy.com/categorie5/tutorials"> les tutoriels artistiques</a> sont des suppléments spéciaux financés participativement grâce au soutien des mécènes sur <a href="https://www.patreon.com/join/davidrevoy?">Patreons</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galerie d\'illustrations',
 'WEBCOMIC_SKETCHES'		    =>  'Croquis',
@@ -75,6 +75,13 @@ $LANG = array(
     Tout lecteur peut envoyer une petite pièce pour mécéner la publication d\'un nouvel épisode.<br/>
     Il apparaît ensuite dans les remerciements de cet épisode. Grâce à ce système, Pepper&amp;Carrot<br/>
     reste indépendant et protégé du monde éditorial, de la pub et du marketing agressif.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Pour plus de commodité et moins de frais bancaires pour l\'audience francophone, j\'ai mis en place <a href="https://www.tipeee.com/pepper-carrot" title="Pepper&amp;Carrot on tipeee">une page sur Tipeee</a>.
+    Il est également possible <a href="https://www.patreon.com/join/davidrevoy?">de soutenir le projet via Patreon</a> (international).
+    Patreon et Tipeee acceptent les Cartes Bleues, Visa et Paypal, etc.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="Illustration représentant le mécénat moderne" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -135,16 +142,7 @@ $LANG = array(
     <p>Grâce au partage des <a href="?static6/sources" title="Sources page">sources</a> et à sa <a href="http://creativecommons.org/licenses/by/4.0/">
     licence Creative Commons Attribution</a>, vous pouvez contribuer à Pepper&amp;Carrot de multiples manières :</p>
 ',
-'CONTRIBUTE_DONATION'		=> '           
-    <h2>Mécénat et donations</h2> 
-    
-    <p>Vous trouverez toutes les informations sur le financement de Pepper&amp;Carrot dans la page 
-    <a href="?static2/philosophy" title="Philosophie">Philosophie</a>.<br/>
-    Pour plus de commodité et moins de frais bancaires pour l\'audience francophone en Europe, j\'ai mis en place <a href="https://www.tipeee.com/pepper-carrot" title="Pepper&amp;Carrot on tipeee">une page sur Tipeee</a>.<br/>
-    Il est également possible <a href="https://www.patreon.com/davidrevoy">de soutenir le projet via Patreon</a> (international).
-    Patreon et Tipeee acceptent les Cartes Bleues, Visa et Paypal, etc.<br/>
-    </p>
-',
+
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-art</h2>
     <p>Pepper&amp;Carrot est ouvert aux fan-arts : dessins, scénarios, sculptures, 3D, fan-fictions... et vous pouvez me les envoyer car j\'adore ça :

@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  '最新エピソード:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'ニュースと更新情報:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'もっと見る',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'パトロンによる支援。',
 'HOMEPAGE_ALTERNATIVES'     =>  '代替案：',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'ウェブコミックエピソードリスト',
 'WEBCOMIC_MAKINGOF'		    =>  'メイキング',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p> メイキングと<a href="http://www.davidrevoy.com/categorie5/tutorials">チュートリアル</a>は、<a href="https://www.patreon.com/davidrevoy">パトロンの&#39;ヒーロー達&#39;</a>の支援に支えられている特別ボーナスです。</p>
+    <p> メイキングと<a href="http://www.davidrevoy.com/categorie5/tutorials">チュートリアル</a>は、<a href="https://www.patreon.com/join/davidrevoy?">パトロンの&#39;ヒーロー達&#39;</a>の支援に支えられている特別ボーナスです。</p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'アートワークギャラリー',
 'WEBCOMIC_SKETCHES'		    =>  'スケッチ',
@@ -76,6 +76,12 @@ $LANG = array(
     <p>ペッパー&amp;キャロットプロジェクトは、世界中からのパトロンからの資金援助だけによって支えられています。<br/>
     パトロンは新しいエピソードが公開される度にちょっとしたお金を送金します。パトロンは各エピソードの最後にクレジットされます。<br/>
     このシステムのおかげで、ペッパー&amp;キャロットは広告やマーケティングPRなしに、独立した運営が可能です。</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    ペッパー&amp;キャロットのパトロンになるのは簡単です。<a href="https://www.patreon.com/join/davidrevoy?">Patreon</a>で、1エピソード$1からパトロンになることができます。
+    Patreonでは世界中のクレジットカードが使えます。PatreonではPaypalでの支払いも可能です。
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="パトロンシステムの説明イラスト" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -137,14 +143,7 @@ $LANG = array(
     <p><a href="?static6/sources" title="Sources page">オープンソース</a>であることと、<a href="http://creativecommons.org/licenses/by/4.0/">
     クリエイティブコモンズライセンス</a>のおかげで、読者のあなたもいろいろな方法でペッパー&amp;キャロットに協力、参加ができます:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>パトロン、寄付</h2> 
-    
-    <p><a href="?static2/philosophy" title="open the Sources page">理念のページ</a>に資金援助に関する内容のほぼすべてがあります。<br/>
-    ペッパー&amp;キャロットのパトロンになるのは簡単です。<a href="https://www.patreon.com/davidrevoy">Patreon</a>で、1エピソード$1からパトロンになることができます。<br/>
-    Patreonでは世界中のクレジットカードが使えます。PatreonではPaypalでの支払いも可能です。<br/>
-    </p>
-',
+
 'CONTRIBUTE_FANART'	    => '
     <h2>ファンアート</h2>
     

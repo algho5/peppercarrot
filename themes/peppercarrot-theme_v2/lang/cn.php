@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  '最新一集：',
 'HOMEPAGE_NEWS_UPDATE'      =>  '新闻及更新：',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  '查看更多',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  '由读者提供资金支持。',
 'HOMEPAGE_ALTERNATIVES'     =>  '替代方案：',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  '漫画集',
 'WEBCOMIC_MAKINGOF'		    =>  '制作过程',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p>制作过程和<a href="http://www.davidrevoy.com/categorie5/tutorials">美工教程</a>的项目基金是由赞助者额外给予的。具体请参见<a href="https://www.patreon.com/davidrevoy">Patreons网站</a></p>
+    <p>制作过程和<a href="http://www.davidrevoy.com/categorie5/tutorials">美工教程</a>的项目基金是由赞助者额外给予的。具体请参见<a href="https://www.patreon.com/join/davidrevoy?">Patreons网站</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  '画廊',
 'WEBCOMIC_SKETCHES'		    =>  '素描',
@@ -76,6 +76,12 @@ $LANG = array(
     所有读者都可以以一集漫画为单位给予一小笔赞助。<br/>
     这些给予赞助的读者将会被列在该集漫画的鸣谢名单中。由于此系统的健康运作，小辣椒与萝卜头<br/>
     得以继续以自由独立漫画的形式存在从而摆脱漫画产业，广告和商业运作的影响。</p>
+',
+'PHILOSOPHY_DONATION'		=> '           
+    <p>
+    成为小辣椒与萝卜头的赞助者很容易，只要在<a href="https://www.patreon.com/join/davidrevoy?">Patreon</a>网站上支付1美元/集就可以了。
+    Patreon接受全球的信用卡，您也可以在Patreon上使用Paypal账户。
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="Illustration représentant le mécénat moderne" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -139,14 +145,7 @@ $LANG = array(
     <p>借助于<a href="?static6/sources" title="Sources page">源文件</a>的分享及其<a href="http://creativecommons.org/licenses/by/4.0/">
     Creative Commons Attribution</a>发行许可，您可以通过多种途径为小辣椒与萝卜头做出贡献：</p>
 ',
-'CONTRIBUTE_DONATION'		=> '           
-    <h2>赞助和捐助</h2> 
-    
-    <p>您可以在<a href="?static2/philosophy" title="Philosophie">理念</a>页面找到所有有关小辣椒与萝卜头的资助信息。<br/>
-    成为小辣椒与萝卜头的赞助者很容易，只要在<a href="https://www.patreon.com/davidrevoy">Patreon</a>网站上支付1美元/集就可以了。<br/>
-    Patreon接受全球的信用卡，您也可以在Patreon上使用Paypal账户。<br/>
-    </p>
-',
+
 'CONTRIBUTE_FANART'	    => '
     <h2>粉丝作品</h2>
     

@@ -48,7 +48,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     => 'Último episodio',
 'HOMEPAGE_NEWS_UPDATE'      => 'Novas e actualizacións',
 'HOMEPAGE_MOREPOSTS_BUTTON' => 'Máis artigos',
-'HOMEPAGE_MAINSERVICE_LINK' => 'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' => 'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     => 'axudado por patrocinio.',
 'HOMEPAGE_ALTERNATIVES'     => 'Alternativas:',
 
@@ -57,7 +57,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'              => 'Episodios do webcomic',
 'WEBCOMIC_MAKINGOF'             => 'Cómo se fixo',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' => '
-<p>O Cómo se fixo e os <a href="http://www.davidrevoy.com/categorie5/tutorials">Titoriais artísticos</a> son contidos extra patrocinados polos meus <a href="https://www.patreon.com/davidrevoy">heroes en Patreon</a></p>
+<p>O Cómo se fixo e os <a href="http://www.davidrevoy.com/categorie5/tutorials">Titoriais artísticos</a> son contidos extra patrocinados polos meus <a href="https://www.patreon.com/join/davidrevoy?">heroes en Patreon</a></p>
 ',
 'WEBCOMIC_ARTWORK'              => 'Galería artística',
 'WEBCOMIC_SKETCHES'             => 'Esbozos',
@@ -77,6 +77,12 @@ $LANG = array(
     <p>O proxecto Pepper&amp;Carrot está financiado só por patrocinadores, desde todo o mundo.<br/>
     Cada patrocinador envía unha pequena cantidade de cartos por cada novo episodio e obtén aparecer nos créditos ao final de cada novo episodio.<br/>
     Grazas a este sistema, Pepper&amp;Carrot pode permanecer autónomo e non depender da publicidade ou contaminarse coa propaganda.</p>
+',
+'PHILOSOPHY_DONATION'    => '
+    <p>
+    É doado converterse en patrocinador de Pepper&amp;Carrot por só $1 por cada novo episodio <a href="https://www.patreon.com/join/davidrevoy?">en Patreon</a>.
+    Patreon acepta tarxetas de crédito de todo o mundo e tamén PayPal.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM' => '
     <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -138,14 +144,7 @@ $LANG = array(
     <p>Grazas as <a href="?static6/sources" title="Sources page">fontes libres</a> e a <a href="http://creativecommons.org/licenses/by/4.0/">
     Licenza Creative Commons</a> podes contribuír a Pepper&amp;Carrot de moitos xeitos:</p>
 ',
-'CONTRIBUTE_DONATION'    => '
-    <h2>Patrocinio, doazóns</h2>
 
-    <p>Na páxina <a href="?static2/philosophy" title="open the Philosophy page">Ideario</a> detallo prácticamente todo o relativo a financiación.<br/>
-    É doado converterse en patrocinador de Pepper&amp;Carrot por só $1 por cada novo episodio <a href="https://www.patreon.com/davidrevoy">en Patreon</a>.<br/>
-    Patreon acepta tarxetas de crédito de todo o mundo e tamén PayPal.<br/>
-    </p>
-',
 'CONTRIBUTE_FANART'      => '
     <h2>Fan-art</h2>
 

@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Останній випуск',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Новини та оновлення',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Інши пости',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'підтримується добровольцями.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Альтернативи:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Випуски веб-комиксу',
 'WEBCOMIC_MAKINGOF'		    =>  'Про створення',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p>Про створення коміксу та <a href="http://www.davidrevoy.com/categorie5/tutorials"> навчання малюнку</a>  - особливий бонус завдяки моім <a href="https://www.patreon.com/davidrevoy">героічним помічникам</a></p>
+    <p>Про створення коміксу та <a href="http://www.davidrevoy.com/categorie5/tutorials"> навчання малюнку</a>  - особливий бонус завдяки моім <a href="https://www.patreon.com/join/davidrevoy?">героічним помічникам</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Галерея робіт',
 'WEBCOMIC_SKETCHES'		    =>  'Ескізи',
@@ -75,6 +75,12 @@ $LANG = array(
     <p>Проект Pepper&amp;Carrot спонсується виключно добровольцями з усього світу.<br/>
     Кожний спонсор надсилає трішки грошей на кожний новий опублікований випуск, та я виношу йому подяку в кінці нового епізоду.<br/>
     Завдяки такої системи, Pepper&amp;Carrot може бути незалежним та й не користуватися рекламою або якої-небудь маркетинговою дурницею.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Стати спонсором Pepper&amp;Carrot легко: усього по 1$ за новий випуск <a href="https://www.patreon.com/join/davidrevoy?">на Patreon</a>.
+    Patreon приймає кредитні картки з усього світу, і також Paypal.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="ілюстрація: спонсорство" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -136,14 +142,7 @@ $LANG = array(
     <p>Завдяки <a href="?static6/sources" title="Сторінка вихідників">відкритим вихідникам</a> та <a href="http://creativecommons.org/licenses/by/4.0/">
     ліцензії Creative Commons</a> Ви зможете допомогти Pepper&amp;Carrot багатьма способами:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Спонсорство та взнески</h2> 
-    
-    <p>Подробніше на сторінці <a href="?static2/philosophy" title="відкрити сторінку Філософії">Філософії</a> розказано майже усе про взнески.<br/>
-    Стати спонсором Pepper&amp;Carrot легко: усього по 1$ за новий випуск <a href="https://www.patreon.com/davidrevoy">на Patreon</a>.<br/>
-    Patreon приймає кредитні картки з усього світу, і також Paypal.<br/>
-    </p>
-',
+
 'CONTRIBUTE_FANART'	    => '
     <h2>Фан-арт</h2>
     

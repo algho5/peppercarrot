@@ -989,6 +989,26 @@ class plxShow {
 		else
 			return $id;
 	}
+  
+  /** [hack] for quick admin **/
+	public function artBlogRedirect() {
+
+    # Build the new ID:
+		$id = intval($this->plxMotor->plxRecord_arts->f('numero'));
+    if ( $id > 200 ){
+    $id = $id + 200;
+    }
+    $id = str_pad($id,4,'0',STR_PAD_LEFT);
+    
+    # Build the new URL:
+    $url = 'https://www.davidrevoy.com/article'.$id.'/';
+    
+    # Redirect:
+    ob_start();
+    header('Location: '.$url);
+    ob_end_flush();
+    die();
+	}
 
 	/**
 	 * Méthode qui affiche l'url du commentaire de type relatif ou absolu

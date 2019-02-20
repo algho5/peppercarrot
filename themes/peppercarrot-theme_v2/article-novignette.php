@@ -1,4 +1,6 @@
+<?php $plxShow->artBlogRedirect(); ?>
 <?php include(dirname(__FILE__) . '/header.php'); ?>
+
   <div class="container">
   
 	<main class="main grid" role="main">

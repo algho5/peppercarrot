@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Rann ziwezha&ntilde; :',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Keleier ha nevesadurio&ugrave; :',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Muioc\'h a bennado&ugrave; :',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'harpet gant paeroned.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Erlec\'hiañ:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Ranno&ugrave; ar Webcomic',
 'WEBCOMIC_MAKINGOF'		    =>  'Making-of',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p> Ar making-of hag ar <a href="http://www.davidrevoy.com/categorie5/tutorials">c\'helennskrido&ugrave; arz</a> a zo trao&ugrave; ouzhpenn paeroniet gant va <a href="https://www.patreon.com/davidrevoy">&#39;harozed&#39; Patreon</a></p>
+    <p> Ar making-of hag ar <a href="http://www.davidrevoy.com/categorie5/tutorials">c\'helennskrido&ugrave; arz</a> a zo trao&ugrave; ouzhpenn paeroniet gant va <a href="https://www.patreon.com/join/davidrevoy?">&#39;harozed&#39; Patreon</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Skeudennaoueg Labour arzel',
 'WEBCOMIC_SKETCHES'		    =>  'Brastreso&ugrave;',
@@ -76,6 +76,12 @@ $LANG = array(
     <p>Pepper&amp;Carrot a zo ur raktres arc\'hantet gant e baeroned nemetken, gant tud o tont eus pep lec\'h er bed.<br/>
     Ur sammadig arc\'hant a vez roet gant pep paeron evit kement rann nevez embannet, ha lakaet e vez o anv e dibenn ar rann nevez.<br/>
     A-drugarez d\'an aozadur-ma&ntilde; ez eo dizalc\'h Pepper&amp;Carrot ha ne vez morse saotret gant bruderezh.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Aes eo dont da veza&ntilde; paeron Pepper&amp;Carrot evit 1€ dre rann nevez <a href="https://www.patreon.com/join/davidrevoy?">war Patreon</a>.
+    Asantet e vez gant Patreon ar c\'hartenno&ugrave; gred eus ar bed a-bezh, ha tu \'zo deoc\'h zoken paea&ntilde; gant ur gont Paypal.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="skeudenn o taolenni&ntilde; ar baeroniezh" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -136,14 +142,7 @@ $LANG = array(
     <p>A-drugarez d\'ar <a href="?static6/sources" title="Pajenn mammenn&ugrave;">mammenno&ugrave; digor</a> ha d\'al <a href="http://creativecommons.org/licenses/by/4.0/">
     la&ntilde;vaz Creative Commons 4.0</a> e c\'hallit kemer perzh e Pepper&amp;Carrot e meur a zoare dishe&ntilde;vel :</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Paeroniezh, roadurio&ugrave;</h2>
 
-    <p>Displega&ntilde; a ran er <a href="?static2/philosophy" title="digor ar bajenn Preder">bajenn Preder</a> kazi pep tra a-zivout va arc\'hantaoui&ntilde;.<br/>
-    Aes eo dont da veza&ntilde; paeron Pepper&amp;Carrot evit 1€ dre rann nevez <a href="https://www.patreon.com/davidrevoy">war Patreon</a>.<br/>
-    Asantet e vez gant Patreon ar c\'hartenno&ugrave; gred eus ar bed a-bezh, ha tu \'zo deoc\'h zoken paea&ntilde; gant ur gont Paypal.</br>
-    </p>
-',
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-art</h2>
     

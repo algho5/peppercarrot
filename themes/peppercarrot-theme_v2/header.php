@@ -3,6 +3,7 @@ $version = "190108";
 $idStat = $plxShow->staticId();
 $idCats = $plxShow->catId();
 $idMode = $plxShow->mode();
+$lang = $plxShow->getLang('LANGUAGE_ISO_CODE_2_LETTER');
 
 if($idMode=="home"){ $status = "active"; } else { $status = "no-active"; }
 ?>
@@ -92,12 +93,26 @@ echo "-->";
             <h1 class="no-margin sml-hide med-hide lrg-hide"><?php $plxShow->mainTitle('link'); ?></h1>
           </div>
           <div class="col sml-12 med-3 lrg-3 sml-text-center med-text-right lrg-text-right">
-            <div class="follow">
-              <?php $plxShow->lang('FOLLOW')?>&nbsp;<br/>
-              <a class="logo" href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="<?php $plxShow->lang('FOLLOW')?> Facebook"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_fb.svg" alt="Facebook"/></a>
+            <div class="follow"><br/>
+              <?php
+              if ($lang == "fr" OR $lang == "oc" OR $lang == "go" ){
+              # French, display Tipeee
+              echo '<a class="logo" href="https://www.tipeee.com/pepper-carrot" title="';
+              $plxShow->lang('HOMEPAGE_PATREON_BUTTON');
+              echo '" target="blank"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_tip-large.svg" alt="SOUTENIR SUR TIPEEE"/></a>';
+              } else {
+              # Else, display Patreon
+              echo '<a class="logo" href="https://www.patreon.com/join/davidrevoy?" title="';
+              $plxShow->lang('HOMEPAGE_PATREON_BUTTON');
+              echo '" target="blank"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_pat-large.svg" alt="BECOME MY PATRON"/></a>';
+              }
+              ?>
+              <br/>
               <a class="logo" href="https://framapiaf.org/@davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Mastodon"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_mast.svg" alt="Mastodon"/></a>
-              <a class="logo" href="http://twitter.com/davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Twitter"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_tw.svg" alt="Twitter"/></a>
-              <a class="logo" href="<?php $plxShow->urlRewrite('feed.php?rss') ?>" title="RSS 2.0" target="blank"><img class="svg" src="themes/peppercarrot-theme_v2/ico/rss.svg" alt="Rss"/></a>
+              <a class="logo" href="https://framasphere.org/people/f36d0ea092e50134ec422a0000053625" title="<?php $plxShow->lang('FOLLOW')?> Diaspora"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_dia.svg" alt="Diaspora"/></a>
+              <a class="logo" href="http://twitter.com/davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Twitter"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_tw.svg" alt="Twitter"/></a>      
+              <a class="logo" href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="<?php $plxShow->lang('FOLLOW')?> Facebook"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_fb.svg" alt="Facebook"/></a>              
+              <a class="logo" href="https://www.davidrevoy.com/static4/rss-options" title="RSS 2.0" target="blank"><img class="svg" src="themes/peppercarrot-theme_v2/ico/rss.svg" alt="Rss"/></a>              
           </div>
         </div>
       </div>
@@ -111,14 +126,9 @@ echo "-->";
                 <input type="checkbox" id="menu">
 		<ul class="menu expanded">
 
-			<?php if($idStat=="001"){ $status = "active"; } else { $status = "no-active"; }?>
-			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static1/homepage') ?>"><img src="themes/peppercarrot-theme_v2/ico/home.svg" alt="Home"/></a>
-			</li>
-
 			<?php if($idStat=="003" OR $idCats=="003" AND $idMode=="article" OR $idCats=="005" AND $idMode=="article" OR $idCats=="009" AND $idMode=="article" ){ $status = "active"; } else { $status = "no-active"; }?>
 			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static3/webcomics') ?>"><?php $plxShow->lang('WEBCOMICS') ?></a>
+			<a href="<?php $plxShow->urlRewrite('?static3/webcomics') ?>"><img src="themes/peppercarrot-theme_v2/ico/home.svg" alt="Home"/> <?php $plxShow->lang('WEBCOMICS') ?></a>
 			</li>
 
       <?php if($idStat=="002"){ $status = "active"; } else { $status = "no-active"; }?>
@@ -129,6 +139,11 @@ echo "-->";
 			<?php if($idStat=="004" OR $idStat=="011"){ $status = "active"; } else { $status = "no-active"; }?>
 			<li class="<?php echo $status; ?>" >
 			<a href="<?php $plxShow->urlRewrite('?static4/contribute') ?>"><?php $plxShow->lang('CONTRIBUTE') ?></a>
+			</li>
+      
+			<?php if($idCats=="004"){ $status = "active"; } else { $status = "no-active"; }?>
+			<li class="<?php echo $status; ?>" >
+			<a href="<?php $plxShow->urlRewrite('?categorie4/community') ?>"><?php $plxShow->lang('COMMUNITY') ?></a>
 			</li>
 
       <?php if($idStat=="008"){ $status = "active"; } else { $status = "no-active"; }?>
@@ -141,18 +156,14 @@ echo "-->";
 			<a href="<?php $plxShow->urlRewrite('?static6/sources') ?>"><?php $plxShow->lang('SOURCES') ?></a>
 			</li>
 
-      <?php if($idMode=="home" OR $idMode=="categorie" OR $idCats=="012" OR $idCats=="001" OR $idCats=="013" OR $idCats == "008" OR $idCats=="004" OR $idCats=="006" OR $idCats=="007" OR $idStat=="010"){ $status = "active"; } else { $status = "no-active"; }?>
-      <li class="<?php echo $status; ?>" >
-      <?php $plxShow->pageBlog('<a class="#page_status" href="#page_url">') ?><?php $plxShow->lang('BLOG') ?></a></li>
-
-            <?php if($idStat=="007"){ $status = "active"; } else { $status = "no-active"; }?>
+      <?php if($idStat=="007"){ $status = "active"; } else { $status = "no-active"; }?>
 			<li class="<?php echo $status; ?>" >
 			<a href="<?php $plxShow->urlRewrite('?static7/author') ?>" id="active"><?php $plxShow->lang('AUTHOR') ?></a>
 			</li>
 
 
 
-            <li class="external"><a href="http://www.davidrevoy.com/categorie5/tutorials" target="blank"><?php $plxShow->lang('WEBCOMIC_MAKINGOF') ?> <img src="themes/peppercarrot-theme_v2/ico/external.svg" alt=""/></a></li>
+            <li class="external"><a href="https://www.davidrevoy.com/blog" target="blank"><?php $plxShow->lang('BLOG') ?> <img src="themes/peppercarrot-theme_v2/ico/external.svg" alt=""/></a></li>
 
 		</ul>
               </div>

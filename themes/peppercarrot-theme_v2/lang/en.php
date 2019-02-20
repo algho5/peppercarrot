@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     => 'Latest episode',
 'HOMEPAGE_NEWS_UPDATE'      => 'News and updates',
 'HOMEPAGE_MOREPOSTS_BUTTON' => 'More posts',
-'HOMEPAGE_MAINSERVICE_LINK' => 'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' => 'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     => 'supported by patrons.',
 'HOMEPAGE_ALTERNATIVES'     => 'Alternatives:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'              => 'Webcomic episodes',
 'WEBCOMIC_MAKINGOF'             => 'Making-of',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' => '
-<p>Making-of and <a href="http://www.davidrevoy.com/categorie5/tutorials">art tutorials</a> are special bonuses sponsored by my <a href="https://www.patreon.com/davidrevoy">Patreons &#39;heroes&#39;</a></p>
+<p>Making-of and <a href="http://www.davidrevoy.com/categorie5/tutorials">art tutorials</a> are special bonuses sponsored by my <a href="https://www.patreon.com/join/davidrevoy?">Patreons &#39;heroes&#39;</a></p>
 ',
 'WEBCOMIC_ARTWORK'              => 'Artwork gallery',
 'WEBCOMIC_SKETCHES'             => 'Sketches',
@@ -75,6 +75,12 @@ $LANG = array(
     <p>Pepper&amp;Carrot project is only funded by its patrons, from all around the world.<br/>
     Each patron sends a little money for each new episode published and gets a credit at the end of the new episode.<br/>
     Thanks to this system, Pepper&amp;Carrot can stay independent and never have to resort to advertising or any marketing pollution.</p>
+',
+'PHILOSOPHY_DONATION'    => '
+    <p>
+    It&#39;s easy to become the patron of Pepper&amp;Carrot for only $1 per new episode <a href="https://www.patreon.com/join/davidrevoy?">on Patreon</a>.
+    Patreon accepts credit cards from all around the world and also PayPal.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM' => '
     <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -136,14 +142,7 @@ $LANG = array(
     <p>Thanks to the <a href="?static6/sources" title="Sources page">open sources</a> and the <a href="http://creativecommons.org/licenses/by/4.0/">
     creative commons license</a> you can contribute to Pepper&amp;Carrot in many ways:</p>
 ',
-'CONTRIBUTE_DONATION'    => '
-    <h2>Patronage, donations</h2>
 
-    <p>I detail in the <a href="?static2/philosophy" title="open the Philosophy page">Philosophy page</a> almost everything concerning funding.<br/>
-    It&#39;s easy to become the patron of Pepper&amp;Carrot for only $1 per new episode <a href="https://www.patreon.com/davidrevoy">on Patreon</a>.<br/>
-    Patreon accepts credit cards from all around the world and also PayPal.<br/>
-    </p>
-',
 'CONTRIBUTE_FANART'      => '
     <h2>Fan-art</h2>
 

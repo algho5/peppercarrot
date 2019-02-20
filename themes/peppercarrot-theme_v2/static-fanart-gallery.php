@@ -2,7 +2,7 @@
 <div class="container">
 	<main class="grid" role="main">
         
-    <section class="col sml-12 med-9" style="padding: 0 0;">
+    <section class="col sml-12 med-12" style="padding: 0 0;">
       
 <?php 
   $plxShow->lang('CONTRIBUTE_FANART');
@@ -51,8 +51,6 @@
   }
 ?>
     </section>
-
-		<?php include(dirname(__FILE__).'/sidebar.php'); ?>
 
 	</main>
 </div>

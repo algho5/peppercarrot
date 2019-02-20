@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     =>  'Episode terbaru:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Berita terbaru:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Post lainnya',
-'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'didukung oleh sukarelawan.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternatif:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'		    =>  'Serial komik',
 'WEBCOMIC_MAKINGOF'		    =>  'Cara membuat',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p> Bagaimana cara membuat dan <a href="http://www.davidrevoy.com/categorie5/tutorials">tutorial</a> merupakan bonus spesial untuk <a href="https://www.patreon.com/davidrevoy">donatur di Patreon</a></p>
+    <p> Bagaimana cara membuat dan <a href="http://www.davidrevoy.com/categorie5/tutorials">tutorial</a> merupakan bonus spesial untuk <a href="https://www.patreon.com/join/davidrevoy?">donatur di Patreon</a></p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galeri',
 'WEBCOMIC_SKETCHES'		    =>  'Sketsa',
@@ -76,6 +76,12 @@ $LANG = array(
     <p>Pepper&amp;Carrot mendapatkan dana dari para sukarelawan (), yang berasal dari seluruh dunia.<br/>
     Setiap sukarelawan dapat berdonasi untuk setiap episode baru yang akan dibuat dan nama mereka akan dicantumkan pada akhir halaman komik.<br/>
     Pepper&amp;Carrot tidak menggunakan iklan maupun media yang serupa untuk tetap hidup.</p>
+',
+'PHILOSOPHY_DONATION'		=> '
+    <p>
+    Sangat mudah untuk menjadi donatur Pepper&amp;Carrot, hanya 1$ untuk setiap episode baru <a href="https://www.patreon.com/join/davidrevoy?">melalui Patreon</a>.
+    Patreon menerima kartu kredit dari seluruh dunia, dan Anda juga dapat membayar dengan akun PayPal di Patreon.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -137,14 +143,7 @@ $LANG = array(
     <p>Terima kasih kepada <a href="?static6/sources" title="Sumber halaman">sumber terbuka</a> dan <a href="http://creativecommons.org/licenses/by/4.0/">
     Lisensi Creative Commons</a>, Anda dapat berkontribusi untuk Pepper&amp;Carrot dengan berbagai macam cara:</p>
 ',
-'CONTRIBUTE_DONATION'		=> '
-    <h2>Donasi melalui Patron</h2> 
-    
-    <p>Saya menjelaskan secara detail di <a href="?static2/philosophy" title="buka halaman Perihal">halaman Perihal</a> mengenai segalanya tentang berdonasi.<br/>
-    Sangat mudah untuk menjadi donatur Pepper&amp;Carrot, hanya 1$ untuk setiap episode baru <a href="https://www.patreon.com/davidrevoy">melalui Patreon</a>.<br/>
-    Patreon menerima kartu kredit dari seluruh dunia, dan Anda juga dapat membayar dengan akun PayPal di Patreon.<br/>
-    </p>
-',
+
 'CONTRIBUTE_FANART'	    => '
     <h2>Karya dari penggemar</h2>
     <p> Pepper&amp;Carrot terbuka untuk karya penggemar: gambar, skenario, patung, model 3D, dan lainnya. Kirimkan semuanya ke <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> atau hubungi saya melalui media sosial untuk menampilkan karya dari penggemar buatan Anda:</p>

@@ -47,12 +47,12 @@ h4{font-size:1.2rem}
 .responsive-menu label { color: #3A2619; background-color: transparent; font: normal 2rem 'ComicSpice', cursive; }
 
 /* translation pills */
-.translabar { padding: 0 0 0 0; margin: 0.5rem 0; }
+.translabar { padding: 0 0.5rem 0 0.5rem; margin: 0.5rem 0; }
 .comicwidth { max-width: 1060px }
-.translabar li { background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px }
+.translabar li { background-color: #FFF; margin: 0.15rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px }
 .translabar li.active { background-color: #D7EBFA; border: solid 1px #B1D6F2;}
-.translabar li.notfull { opacity: 0.75; }
-.translabar li.notfull a { opacity: 0.75; }
+.translabar li.notfull { }
+.translabar li.notfull a { }
 .translabar a { text-decoration: none; font-size: 0.9rem; }
 
 /* HOMEPAGE */
@@ -63,8 +63,8 @@ h4{font-size:1.2rem}
 .covertextoverlay { position: absolute; right: 5.5rem; top: 1.8rem; text-align:right; }
 #supportmebox { position: absolute; right: -1.5rem; top: 9.4rem; color: #222; width: 450px; height: 170px; text-align: center; border-radius: 0.4rem; }
 #moreinfobox { position: absolute; right: 0rem; top: 21rem; color: #222; width: 450px; height: 170px; text-align: right; border-radius: 0.4rem; }
-.moreinfobutton	{ color: #FFF; background: #258fd6 url('../ico/go.svg') no-repeat center right 8px; font-size: 0.85rem; font-family: ubuntu, arial, sans-serif; text-align: center; padding: 8px 24px 8px 8px; margin: 0 4px 0 0;	border-radius: 6px; cursor: pointer; }
-.moreinfobutton:hover	{ color: #FFF; background-color: #1c6ea5; }
+.moreinfobutton	{ color: #FFF; background: #8ac752 url('../ico/go.svg') no-repeat center right 12px; font-size: 1rem; font-family: ubuntu, arial, sans-serif; text-align: center; padding: 8px 28px 9px 8px; margin: 0 4px 0 0;	border-radius: 6px; cursor: pointer; box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.6); }
+.moreinfobutton:hover	{ background-color: #FFBB3E; color: #fff;}
 
 /* Support box */
 .bigbuttonpatreon { font-size: 1.8rem; font-weight: bold; font-family: ubuntu, arial, sans-serif; color: #FFFFFF; text-align: center; min-height: 80px; min-width: 374px; padding: 0 0 10px 0; margin: 0 auto 8px auto; display: inline-block; text-decoration: none; border-radius: 10px; box-shadow: 0 2px 3px rgba(23,23,23,0.3);  background: #F96854 url('../img/logo-patreon.svg') no-repeat 120px 36px; background-size: 42px 42px; text-shadow: 0 1px 1px rgba(0,0,0,0.4) }
@@ -108,7 +108,7 @@ h4{font-size:1.2rem}
 .thumbnail figcaption a { color: #444; }
 .thumbnail figcaption a:hover { text-decoration: none; color: #258fd6; }
 .thumbnail .detail, .thumbnail .detail a{ color: #BBB; font-size: 0.8rem; }
-.notranslation { opacity: 0.5; }
+.notranslation { display:none; }
 
 /* Protect SVG icons */
 .lastep .svg, .lastep .svg:hover, .homethumbnail .svg, .thumbnail .svg:hover, .thumbnail .svg { width: auto; border:none; }
@@ -213,9 +213,8 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .philosophy { text-align: center; }
 .philosophy h2{ font-size: 2.6rem; }
 .philosophy img{ padding-bottom: 3.8rem; }
-.philobutton { text-align: center; padding: 0.9rem; margin: 0 auto; max-width: 570px;  }
-.philobutton a{ color: #ED7E78; }
-.philobutton:hover { background-color:#FFF; }
+.philosophy a{ color: #E15F6F; text-decoration: underline; }
+.philosophy a:hover { color: #FC7888; }
 
 /* Contribute page */
 .contribute { text-align: center; }
@@ -305,8 +304,6 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .cover h1 { font-size: 2.2rem; margin: 1rem 0 0.4rem 0;}
 .cover { background: url('../img/pepper-carrot-cover3_by-david-revoy.jpg') no-repeat 32% 80%; }
 .moreposts { text-align: center; margin: 1rem 0 0 0; }
-.follow {font-size: 0.65rem;}
-.follow img {width: 22px;}
 }
 
 /* small devices */

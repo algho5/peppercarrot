@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_LAST_EPISODE'     => 'Nieuwste aflevering:',
 'HOMEPAGE_NEWS_UPDATE'      => 'Nieuws en updates:',
 'HOMEPAGE_MOREPOSTS_BUTTON' => 'Meer berichten',
-'HOMEPAGE_MAINSERVICE_LINK' => 'https://www.patreon.com/davidrevoy',
+'HOMEPAGE_MAINSERVICE_LINK' => 'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     => 'ondersteund door patrons.',
 'HOMEPAGE_ALTERNATIVES'     => 'Alternatieven:',
 
@@ -55,7 +55,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'              => 'Webcomic-afleveringen',
 'WEBCOMIC_MAKINGOF'             => 'Achter de schermen',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' => '
-    <p>De achter-de-schermen-pagina\'s en de <a href="http://www.davidrevoy.com/categorie5/tutorials">teken-tutorials</a> zijn een speciale bonus, gesponsord door mijn <a href="https://www.patreon.com/davidrevoy">Patreon-&#39;helden&#39;</a></p>
+    <p>De achter-de-schermen-pagina\'s en de <a href="http://www.davidrevoy.com/categorie5/tutorials">teken-tutorials</a> zijn een speciale bonus, gesponsord door mijn <a href="https://www.patreon.com/join/davidrevoy?">Patreon-&#39;helden&#39;</a></p>
 ',
 'WEBCOMIC_ARTWORK'              => 'Galerij',
 'WEBCOMIC_SKETCHES'             => 'Schetsen',
@@ -75,6 +75,12 @@ $LANG = array(
     <p>Het Pepper&amp;Carrot-project wordt alleen ondersteund door zijn patrons, van over de hele wereld.<br/>
     Alle patrons doneren een klein beetje geld voor iedere nieuwe gepubliceerde aflevering en krijgen credit aan het eind van de aflevering.<br/>
     Door dit systeem kan Pepper&amp;Carrot onafhankelijk zijn en nooit advertenties of andere marketing-vervuiling gebruiken.</p>
+',
+'PHILOSOPHY_DONATION'    => '
+    <p>
+    Het is makkelijk om patron van Pepper&amp;Carrot te worden voor slechts €1 per nieuwe aflevering <a href="https://www.patreon.com/join/davidrevoy?">op Patreon</a>.
+    Patreon accepteert creditcards uit de hele wereld, en je kunt betalen met een PayPal-account op Patreon.
+    </p>
 ',
 'PHILOSOPHY_BOTTOM' => '
     <img alt="afbeelding die patrons voorstelt" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
@@ -138,14 +144,7 @@ $LANG = array(
     <p>Dankzij de <a href="?static6/sources" title="Sources page">beschikbare bronbestanden</a> en de <a href="http://creativecommons.org/licenses/by/4.0/">
     Creative Commons-licentie</a> kun je op vele manieren bijdragen aan Pepper&amp;Carrot:</p>
 ',
-'CONTRIBUTE_DONATION'    => '
-    <h2>Als patron, donaties</h2>
 
-    <p>Op de pagina <a href="?static2/philosophy" title="open de Filosofie-pagina">Filosofie</a> leg ik alles uit over donaties.<br/>
-    Het is makkelijk om patron van Pepper&amp;Carrot te worden voor slechts €1 per nieuwe aflevering <a href="https://www.patreon.com/davidrevoy">op Patreon</a>.<br/>
-    Patreon accepteert creditcards uit de hele wereld, en je kunt betalen met een PayPal-account op Patreon.<br/>
-    </p>
-',
 'CONTRIBUTE_FANART'      => '
     <h2>Fanart</h2>
 
