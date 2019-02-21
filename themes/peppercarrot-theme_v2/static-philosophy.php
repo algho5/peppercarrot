@@ -17,7 +17,6 @@
          <?php $plxShow->lang('PHILOSOPHY_TOP') ?>
          <?php include(dirname(__FILE__).'/supportme.php'); ?>
          <?php $plxShow->lang('PHILOSOPHY_BOTTOM') ?>
-         <?php include(dirname(__FILE__).'/supportme.php'); ?>
        </article> 
 
 <!-- Footer infos -->
