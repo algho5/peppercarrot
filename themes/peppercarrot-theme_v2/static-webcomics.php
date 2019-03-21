@@ -21,8 +21,7 @@ echo "<!-- LANG DEBUG:".$lang." -->";
       <section class="col sml-12 med-12 lrg-12" >
         <div class="cover">
           <div class="covertextoverlay">
-            <h1 style="margin-bottom: 1.4rem;"><?php $plxShow->lang('HOMEPAGE_BIG_TEXT') ?></h1>
-              <a class="moreinfobutton" href="<?php $plxShow->urlRewrite('?static2/philosophy') ?>" title="<?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?>"><?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?></a>
+              <a class="moreinfobutton" href="https://pledge2019.eu/en" title="<?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?>"><?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?></a>
           </div>
         </div>
       </section>
