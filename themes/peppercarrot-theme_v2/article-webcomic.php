@@ -98,6 +98,7 @@ $lang = $plxShow->defaultLang($echo);
   /*26*/ case 445: $path_on_dr_com = "article645/episode-26-books-are-great#comments"; break;
   /*27*/ case 451: $path_on_dr_com = "article651/episode-27-coriander-s-invention#comments"; break;
   /*28*/ case 460: $path_on_dr_com = "article660/episode-28-the-festivities#comments"; break;
+  /*29*/ case 462: $path_on_dr_com = "article717/episode-29-the-underworld-dragon#comments"; break;
   default: $path_on_dr_com = "categorie2/webcomics";
   }
 ?>
