@@ -147,7 +147,7 @@ $LANG = array(
 'CONTRIBUTE_FANART'      => '
     <h2>Fan-art</h2>
 
-    <p>Pepper&amp;Carrot is open to fan-art: drawings, scenarios, scupltures, 3D models, fan-fiction. Send them to me (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, or poke me on social networks) to appear in the fan-art gallery:</p>
+    <p>Pepper&amp;Carrot is open to fan-art: drawings, scenarios, sculptures, 3D models, fan-fiction. Send them to me (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, or poke me on social networks) to appear in the fan-art gallery:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Derivatives</h2>
@@ -176,7 +176,7 @@ $LANG = array(
         <b>Developers:</b> Create an application to read Pepper&amp;Carrot on mobile device.<br/>
         <b>Musician:</b> Create music themes for Pepper&amp;Carrot.<br/>
         <b>Writer:</b> Propose new Pepper&amp;Carrot scenarios.<br/>
-        <b>Journalist:</b> Talk about Pepper&amp;Carrot in traditionnal media (printed press, tv, etc.)<br/>
+        <b>Journalist:</b> Talk about Pepper&amp;Carrot in traditional media (printed press, tv, etc.)<br/>
         <b>Printer:</b> Print posters or goodies with Pepper&amp;Carrot on it.<br/>
     </p>
 ',
@@ -200,7 +200,7 @@ $LANG = array(
     <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license</a>.
     Check the README files in each project for more infos.</p>
 
-    <p><b>Code repositories for translations, scripts, the website, graphism, etc.:</b><br/></p>
+    <p><b>Code repositories for translations, scripts, the website, graphics, etc.:</b><br/></p>
 ',
 'SOURCE_COVER'      => 'Cover images',
 'SOURCE_KRITA'      => 'Krita source files',
@@ -213,7 +213,7 @@ $LANG = array(
 # Page: Author
 'AUTHOR_TITLE'                       => 'About David Revoy',
 'AUTHOR_BIO'                         => '
-    <p>Hi, my name is David Revoy and I&#39;m a French artist born in 1981. I&#39;m self-taught and passionate about drawing, painting, cats, computers, Gnu/Linux open-source culture, Internet, old school RPG video-games, old mangas and anime, traditional art, japanese culture, fantasy…<br/>
+    <p>Hi, my name is David Revoy and I&#39;m a French artist born in 1981. I&#39;m self-taught and passionate about drawing, painting, cats, computers, Gnu/Linux open-source culture, Internet, old school RPG video-games, old mangas and anime, traditional art, Japanese culture, fantasy…<br/>
     <br/>
     After more than 10 years of freelance in digital painting, teaching, concept-art, illustrating and art-direction I decided to start my own project. I finally found a way to mix all my passions together, the result is Pepper&amp;Carrot.</p>
 
@@ -234,14 +234,14 @@ $LANG = array(
     </p>
 ',
 
-'AUTHOR_CARREER_TITLE'               => 'My carreer in 7 bubbles',
+'AUTHOR_CARREER_TITLE'               => 'My career in 7 bubbles',
 'AUTHOR_CARREER_BUBBLE_DESCRIPTIONS' => '<p></p>',
 
 ################################################################################
 # Website General: Footer
 'FOOTER_CONTENT' => '
     <p>Webcomic, artworks and texts are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" title="For more information, read the Creative Commons Attribution 4.0">Creative Commons Attribution 4.0</a> license, unless otherwise noted in the page.<br/>
-    Attribution to "David Revoy, www.davidrevoy.com". Contact me: <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> for more informations.</p>
+    Attribution to "David Revoy, www.davidrevoy.com". Contact me: <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> for more information.</p>
 
     <p>Website powered by <a href="http://www.pluxml.org" title="PluXml">PluXml</a></p>
 ',
