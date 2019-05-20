@@ -17,19 +17,10 @@
         
         <div style="clear:both;"></div>
 
-        
-      <section class="col sml-12 med-12 lrg-12 text-right">
-        <br/>
-          <div class="moreposts" style="margin-top: 0.3rem;">
-            <a class="button blue" href="<?php $plxShow->pageBlog('#page_url') ?>" title="<?php $plxShow->lang('HOMEPAGE_MOREPOSTS_BUTTON') ?> (<?php $plxShow->lang('BLOG') ?>) "><?php $plxShow->lang('HOMEPAGE_MOREPOSTS_BUTTON') ?> (<?php $plxShow->lang('BLOG') ?>) &nbsp;<img class="svg" src="themes/peppercarrot-theme_v2/ico/go.svg" alt="→"/></a>
-          </div>
-      </section>
-                  <div style="clear:both;"></div>
-              <br/><br/><br/><br/>
+        <br/><br/><br/><br/>
 
-          <!-- License / Share / Actions -->
-          <footer class="grid text-center">
-          </footer>
+        <footer class="grid text-center">
+        </footer>
 
 		</section>
 
