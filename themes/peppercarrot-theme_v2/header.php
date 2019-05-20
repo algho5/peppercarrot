@@ -141,11 +141,6 @@ echo "-->";
 			<li class="<?php echo $status; ?>" >
 			<a href="<?php $plxShow->urlRewrite('?static4/contribute') ?>"><?php $plxShow->lang('CONTRIBUTE') ?></a>
 			</li>
-      
-			<?php if($idStat=="005"){ $status = "active"; } else { $status = "no-active"; }?>
-			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static5/community') ?>"><?php $plxShow->lang('COMMUNITY') ?></a>
-			</li>
 
 			<?php if($idStat=="006" OR $idStat=="014"){ $status = "active"; } else { $status = "no-active"; }?>
 			<li class="<?php echo $status; ?>" >

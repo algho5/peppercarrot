@@ -163,10 +163,10 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .more a:hover { background-color: #D7EBFA; color: #659EBD; border: solid 1px #B1D6F2; padding: 6px 8px 6px 8px; border-radius: 10px;}
 .tabletransla td, th {padding: 0.3rem;}
 
+.notice {margin-top:1rem; margin-bottom:1rem; color:#aaa;}
 /*     BLOG    */
 /* ----------- */
 /* Listing */
-.limit {margin-top:1rem; margin-bottom:1rem; color:#aaa;}
 
 /* Sidebar */
 .aside { padding-top: 1rem;  }
