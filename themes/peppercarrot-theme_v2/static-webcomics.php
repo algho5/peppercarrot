@@ -36,7 +36,7 @@ echo "<!-- LANG DEBUG:".$lang." -->";
             <a href="#art_url" title="#art_title">
               <img class="#translationstatus" src="plugins/vignette/plxthumbnailer.php?src=#episode_vignette&amp;w=400&amp;h=270&amp;s=1&amp;q=92" alt="#art_title" title="#art_title, click to read #translationmessage" >
             </a>
-            <figcaption class="#translationstatus text-center"><a href="#art_url" title="#art_title"><span class="detail">#overlay#art_date#art_nbcoms</span></a></figcaption>
+            <figcaption class="#translationstatus text-center"><a href="#art_url" title="#art_title"><span class="detail">#overlay#art_date</span></a></figcaption>
           </figure>
           ',99,'003', "...", "rsort"))); ?>
           
