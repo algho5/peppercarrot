@@ -1,0 +1,11 @@
+{
+   "title": "The Android E-Reader",
+   "by": "by Imsesaok",
+   "img": "data/images/derivations/2018-05-24_ereader-demo-imsesaok_thumb.jpg",
+   "imgalt": "A photo of smartphone demoing the app,",
+   "desc": "The Free/Libre and Open-Source app for reading Pepper&Carrot comics on Android smartphone and tablets.",
+   "link": "Download on F-Droid",
+   "linkurl": "https://f-droid.org/packages/nightlock.peppercarrot/",
+   "src": "Sources on Gitlab",
+   "srcurl": "https://framagit.org/peppercarrot/e-reader"
+}

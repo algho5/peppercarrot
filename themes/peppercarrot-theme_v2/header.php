@@ -142,14 +142,9 @@ echo "-->";
 			<a href="<?php $plxShow->urlRewrite('?static4/contribute') ?>"><?php $plxShow->lang('CONTRIBUTE') ?></a>
 			</li>
       
-			<?php if($idCats=="004"){ $status = "active"; } else { $status = "no-active"; }?>
+			<?php if($idStat=="005"){ $status = "active"; } else { $status = "no-active"; }?>
 			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?categorie4/community') ?>"><?php $plxShow->lang('COMMUNITY') ?></a>
-			</li>
-
-      <?php if($idStat=="008"){ $status = "active"; } else { $status = "no-active"; }?>
-			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static8/wiki') ?>" id="active"><?php $plxShow->lang('WIKI') ?></a>
+			<a href="<?php $plxShow->urlRewrite('?static5/community') ?>"><?php $plxShow->lang('COMMUNITY') ?></a>
 			</li>
 
 			<?php if($idStat=="006" OR $idStat=="014"){ $status = "active"; } else { $status = "no-active"; }?>
