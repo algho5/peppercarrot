@@ -317,7 +317,9 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .cover { background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 11% 80%; text-align: right;}
 .moreposts { text-align: center; margin: 1rem 0 0 0; }
 .moreinfobutton {position: absolute; top: 200px; right: 0; width: 180px; }
-
+.communityblock h3{ font-size: 1.6rem; }
+.communitybutton {font-size: 1rem; }
+.communitybutton a { display: inline; min-width: 250px;}
 }
 
 /* small devices */
