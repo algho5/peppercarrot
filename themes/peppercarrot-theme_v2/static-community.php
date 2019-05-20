@@ -9,7 +9,7 @@ echo '    <section class="col sml-12" style="padding: 0 0;">';
 # Display a frame with language limitations (for other lang than english).
 if ($lang !== "en" ){
   echo '<div class="grid"><br/>';
-  echo '  <div class="col sml-12 sml-centered lrg-centered med-centered sml-text-center alert blue">';
+  echo '  <div class="col sml-12 sml-centered lrg-centered med-centered sml-text-center alert">';
   echo '  <img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt="info:"/>';
   echo $plxShow->Getlang(LIMITATIONS);
   echo '  </div>';
