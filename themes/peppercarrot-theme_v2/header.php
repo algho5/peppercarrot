@@ -81,89 +81,58 @@ echo "-->";
 ?>
 
 
-  <header class="header " role="banner">
-    <div class="container">
-
+  <header class="header" role="banner">
       <div class="grid">
-          <div class="col sml-12 med-3 lrg-3 sml-text-center med-text-center lrg-text-center">
-          </div>
-          <div class="title col sml-12 med-6 lrg-6 sml-text-center med-text-center lrg-text-center">
+      
+          <div class="title col sml-4 med-3 lrg-2 sml-text-left">
             <a href="<?php $plxShow->racine() ?>">
-              <img src="<?php $plxShow->template(); ?>/img/en_pepper-carrot_title.svg" width="362px" height="76px" alt="Pepper&amp;Carrot" title="<?php $plxShow->lang('PEPPERCARROT_VEGETABLE') ?>">
+              <img src="<?php $plxShow->template(); ?>/img/en_pepper-carrot_title.svg" height="30px" alt="Pepper&amp;Carrot" title="<?php $plxShow->lang('PEPPERCARROT_VEGETABLE') ?>">
             </a>
             <h1 class="no-margin sml-hide med-hide lrg-hide"><?php $plxShow->mainTitle('link'); ?></h1>
           </div>
-          <div class="col sml-12 med-3 lrg-3 sml-text-center med-text-right lrg-text-right">
-            <div class="follow"><br/>
-              <?php
-              if ($lang == "fr" OR $lang == "oc" OR $lang == "go" ){
-              # French, display Tipeee
-              echo '<a class="logo" href="https://www.tipeee.com/pepper-carrot" title="';
-              $plxShow->lang('HOMEPAGE_PATREON_BUTTON');
-              echo '" target="blank"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_tip-large.svg" alt="SOUTENIR SUR TIPEEE"/></a>';
-              } else {
-              # Else, display Patreon
-              echo '<a class="logo" href="https://www.patreon.com/join/davidrevoy?" title="';
-              $plxShow->lang('HOMEPAGE_PATREON_BUTTON');
-              echo '" target="blank"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_pat-large.svg" alt="BECOME MY PATRON"/></a>';
-              }
-              ?>
-              <br/>
-              <a class="logo" href="https://framapiaf.org/@davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Mastodon"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_mast.svg" alt="Mastodon"/></a>
-              <a class="logo" href="https://framasphere.org/people/f36d0ea092e50134ec422a0000053625" title="<?php $plxShow->lang('FOLLOW')?> Diaspora"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_dia.svg" alt="Diaspora"/></a>
-              <a class="logo" href="http://twitter.com/davidrevoy" title="<?php $plxShow->lang('FOLLOW')?> Twitter"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_tw.svg" alt="Twitter"/></a>      
-              <a class="logo" href="https://www.facebook.com/pages/Pepper-Carrot/307677876068903" title="<?php $plxShow->lang('FOLLOW')?> Facebook"><img class="svg" src="themes/peppercarrot-theme_v2/ico/s_fb.svg" alt="Facebook"/></a>              
-              <a class="logo" href="https://www.davidrevoy.com/static4/rss-options" title="RSS 2.0" target="blank"><img class="svg" src="themes/peppercarrot-theme_v2/ico/rss.svg" alt="Rss"/></a>              
-          </div>
-        </div>
-      </div>
           
-        <div class="grid">
-
-          <div class="col sml-12 med-12 lrg-12 sml-text-center med-text-center lrg-text-center">
+          <div class="topmenu col sml-4 med-6 lrg-8 sml-text-left med-text-center">
             <nav class="nav" role="navigation">
               <div class="responsive-menu">
-                <label for="menu"><img src="themes/peppercarrot-theme_v2/ico/menu.svg" alt=""/> Menu</label>
+                <label for="menu"><img src="themes/peppercarrot-theme_v2/ico/menu.svg" alt=""/></label>
                 <input type="checkbox" id="menu">
-		<ul class="menu expanded">
-
-			<?php if($idStat=="003" OR $idCats=="003" AND $idMode=="article" OR $idCats=="005" AND $idMode=="article" OR $idCats=="009" AND $idMode=="article" ){ $status = "active"; } else { $status = "no-active"; }?>
-			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static3/webcomics') ?>"><img src="themes/peppercarrot-theme_v2/ico/home.svg" alt="Home"/> <?php $plxShow->lang('WEBCOMICS') ?></a>
-			</li>
-
-      <?php if($idStat=="002"){ $status = "active"; } else { $status = "no-active"; }?>
-			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static2/philosophy') ?>"><?php $plxShow->lang('PHILOSOPHY') ?></a>
-			</li>
-
-			<?php if($idStat=="004" OR $idStat=="011"){ $status = "active"; } else { $status = "no-active"; }?>
-			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static4/contribute') ?>"><?php $plxShow->lang('CONTRIBUTE') ?></a>
-			</li>
-      
-      <?php if($idStat=="008"){ $status = "active"; } else { $status = "no-active"; }?>
-			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static8/wiki') ?>" id="active"><?php $plxShow->lang('WIKI') ?></a>
-			</li>
-
-			<?php if($idStat=="006" OR $idStat=="014"){ $status = "active"; } else { $status = "no-active"; }?>
-			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static6/sources') ?>"><?php $plxShow->lang('SOURCES') ?></a>
-			</li>
-
-      <?php if($idStat=="007"){ $status = "active"; } else { $status = "no-active"; }?>
-			<li class="<?php echo $status; ?>" >
-			<a href="<?php $plxShow->urlRewrite('?static7/author') ?>" id="active"><?php $plxShow->lang('AUTHOR') ?></a>
-			</li>
-
-
-
-            <li class="external"><a href="https://www.davidrevoy.com/blog" target="blank"><?php $plxShow->lang('BLOG') ?> <img src="themes/peppercarrot-theme_v2/ico/external.svg" alt=""/></a></li>
-
-		</ul>
+                <ul class="menu expanded">
+                <?php if($idStat=="003" OR $idCats=="003" AND $idMode=="article" OR $idCats=="005" AND $idMode=="article" OR $idCats=="009" AND $idMode=="article" ){ $status = "active"; } else { $status = "no-active"; }?>
+                <li class="<?php echo $status; ?>" >
+                <a href="<?php $plxShow->urlRewrite('?static3/webcomics') ?>"><?php $plxShow->lang('WEBCOMICS') ?></a>
+                </li>
+                <?php if($idStat=="002"){ $status = "active"; } else { $status = "no-active"; }?>
+                <li class="<?php echo $status; ?>" >
+                <a href="<?php $plxShow->urlRewrite('?static2/philosophy') ?>"><?php $plxShow->lang('PHILOSOPHY') ?></a>
+                </li>
+                <?php if($idStat=="004" OR $idStat=="011"){ $status = "active"; } else { $status = "no-active"; }?>
+                <li class="<?php echo $status; ?>" >
+                <a href="<?php $plxShow->urlRewrite('?static4/contribute') ?>"><?php $plxShow->lang('CONTRIBUTE') ?></a>
+                </li>
+                <?php if($idStat=="008"){ $status = "active"; } else { $status = "no-active"; }?>
+                <li class="<?php echo $status; ?>" >
+                <a href="<?php $plxShow->urlRewrite('?static8/wiki') ?>" id="active"><?php $plxShow->lang('WIKI') ?></a>
+                </li>
+                <?php if($idStat=="006" OR $idStat=="014"){ $status = "active"; } else { $status = "no-active"; }?>
+                <li class="<?php echo $status; ?>" >
+                <a href="<?php $plxShow->urlRewrite('?static6/sources') ?>"><?php $plxShow->lang('SOURCES') ?></a>
+                </li>
+                <?php if($idStat=="007"){ $status = "active"; } else { $status = "no-active"; }?>
+                <li class="<?php echo $status; ?>" >
+                <a href="<?php $plxShow->urlRewrite('?static7/author') ?>" id="active"><?php $plxShow->lang('AUTHOR') ?></a>
+                </li>
+                <li class="external"><a href="https://www.davidrevoy.com/blog" target="blank"><?php $plxShow->lang('BLOG') ?> <img src="themes/peppercarrot-theme_v2/ico/external-menu.svg" alt=""/></a></li>
+                </ul>
               </div>
             </nav>
+          </div>
+          
+          <div class="col sml-4 med-3 lrg-2 sml-text-right">
+            <div class="follow"><br/>
+              <a class="patronbutton" href="TODO-DONATEPAGE" title="TODO">
+              ♥ Donate
+              <?php // echo $plxShow->Getlang(PATRONAGE_BUTTON); ?>
+              </a>
           </div>
 
         </div>

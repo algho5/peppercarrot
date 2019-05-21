@@ -14,7 +14,7 @@ body { background-color: #fff; }
 .button { border-radius: 0.4rem; }
 .containercomic { margin:0 auto; padding-left:1rem; padding-right:1rem; width:100% }
 .menu.expanded li:hover { background-color: rgba(255,255,255,0); }
-.menu.expanded li.active:hover { background-color: rgba(255,255,255,0); color: rgba(255,255,255,0);; }
+.menu.expanded li.active:hover { background-color: rgba(255,255,255,0); color: rgba(255,255,255,0); }
 
 /* general styles */
 body { color: #232323; font-family: ubuntu, arial, sans-serif; }
@@ -23,28 +23,28 @@ h1{font-size:2.4rem}
 h2{font-size:2.0rem;}
 h3{font-size:1.5rem; margin-top:0.6rem;}
 h4{font-size:1.2rem}
+.main {	background-color: #fff;	margin: 55px 0 0 2rem;}
 
-/* title */
-.header { background: url('../img/header-bg.jpg') center center; box-shadow: inset 0 0.5em 3em rgba(58,38,25,0.6); }
+/* Header */
+.header { z-index: 9; position: fixed; top: 0; width: 100%; background-color: rgba(255,255,255,0.95); border: 1px solid rgba(230, 237, 239, 1); }
 .header a { text-decoration: none;}
-.title { min-width: 280px; }
-.title img { margin-top: 15px;}
-
-/* Follow */
-.follow { margin-top: 0.3rem; font-size: 0.85rem; color:#453224; }
-.follow .logo { margin-right: 3px; }
-.follow a { color: #FFF;}
-.follow a:hover { opacity: 1; }
+.title { text-align: center;}
+.title img { margin: 5px 0  0 5px;}
 
 /* main menu */
-.menu.expanded { padding: 0 0 0 0; margin: 1.2rem 0 0 0; font: normal 1.9rem 'ComicSpice', cursive; }
-.menu.expanded li a { box-shadow: 0 0.2rem 0.4rem #3A2619; border-top-left-radius: 0.4rem; border-top-right-radius: 0.4rem; border-top: solid 1px #F3EDE8;  }
-.menu.expanded li a:hover { text-shadow: 1px 0px 20px yellow; color:#fff; transition: all 0.2s ease-in; }
-.menu.expanded a { color: #3A2619; font-size: 1.6rem; }
-.menu.expanded li.active a, .menu.expanded li.active a:hover { color: #000; background-color: #FFF;  }
-.menu.expanded li.external a:hover { color: #FFF; }
+.menu.expanded { font: normal 1.8rem 'ComicSpice', cursive; margin-top: 5px; }
+.menu.expanded li a:hover { text-shadow: 1px 0px 20px yellow; color: #2F3947; transition: all 0.2s ease-in; }
+.menu.expanded a { color: #8092A8; font-size: 1.4rem; }
+.menu.expanded li.active a, .menu.expanded li.active a:hover { color: #2F3947; background-color: rgba(0,0,0,0); }
+.menu.expanded li.external a:hover { color:#1a1a1a; }
 .menu.expanded li.external i { font-size: 0.8rem;}
-.responsive-menu label { color: #3A2619; background-color: transparent; font: normal 2rem 'ComicSpice', cursive; }
+.responsive-menu label { color: #3A2619; background-color: transparent; font: normal 2rem 'ComicSpice', cursive; text-align: left;}
+
+/* Follow */
+.follow { line-height: 0.9; margin: 0 10px 0 5px; }
+.follow .patronbutton { display:inline-block; background-color: #659EBD; color: #FFF; margin-bottom: 0.3rem; padding: 8px 12px; border-radius: 5px; text-decoration: none;}
+.follow .patronbutton:hover { opacity: 0.5; }
+.follow .logo {  margin-right: 3px; }
 
 /* translation pills */
 .translabar { padding: 0 0.5rem 0 0.5rem; margin: 0.5rem 0; }
@@ -54,6 +54,8 @@ h4{font-size:1.2rem}
 .translabar li.notfull { }
 .translabar li.notfull a { }
 .translabar a { text-decoration: none; font-size: 0.9rem; }
+
+
 
 /* HOMEPAGE */
 /* cover */
@@ -298,7 +300,7 @@ a:hover { text-decoration:none;}
 /* RESPONSIVE RULES*/
 /* mini laptop */
 @media (max-width: 1255px) {
-.menu.expanded a { font-size: 1.5rem; }
+.menu.expanded a { font-size: 1.2rem; }
 }
 
 /* tablet horyzontal */
@@ -370,7 +372,7 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .footer .menu.expanded a { color: #FFF; font-size: 1rem; background-color: #444; margin: 0 0.6rem 0.6rem 0 ;}
 .footer hr { border: solid 1px #333;  }
 
-.main {	background-color: #fff;	margin-bottom: 2rem;}
+
 
 /* blog pager */
 .pagination a {	background-color: #258fd6;color: #fff;padding: .525rem .7rem;}
