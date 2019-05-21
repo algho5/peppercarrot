@@ -31,7 +31,7 @@ include(dirname(__FILE__).'/header.php');
 ?>
 
 <div class="container">
-	<main class="grid" role="main">
+	<main class="main grid" role="main">
 
       <section class="col sml-12 med-9">
         
