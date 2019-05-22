@@ -43,7 +43,14 @@ if (!empty($search)){
     } else {
       echo '<div class="communitylink"><br/></div>';
     }
+    $cleanlink = $get->{'linkurl'};
+    if ( substr( $cleanlink, 0, 1 ) === "?" ){
+    echo '<div class="communitybutton"><a href="';
+    $plxShow->urlRewrite($cleanlink);
+    echo '">'.$get->{'link'}.'</a></div>';
+    } else {
     echo '<div class="communitybutton"><a href="'.$get->{'linkurl'}.'">'.$get->{'link'}.'</a></div>';
+    }
     echo '</figure>';
     echo '</div>';
   }
