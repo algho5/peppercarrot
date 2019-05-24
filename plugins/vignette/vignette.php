@@ -185,19 +185,25 @@ class vignette extends plxPlugin {
                     } else {
                       $lang = "en";
                     }
-
-                    $translation_check = $episodedir.''.$lang.'_'.$filename.'.'.$vignette_parts['extension'];
                     
-                    if (file_exists($translation_check)) {
-                      $episode_vignette = $episodedir.''.$lang.'_'.$filename.'.'.$vignette_parts['extension'];
-                      $translationstatus = 'translated';
-                      $translationmessage = '';
-                      $overlay = '';
-                    } else {
-                      $episode_vignette = $episodedir.'en_'.$filename.'.'.$vignette_parts['extension'];
-                      $translationstatus = 'notranslation';
-                      $overlay = '(English) ';
-                      $translationmessage = '(Content not available in the selected language. Falling back to English.)';
+                    # Check for an existing cover in the minimal required lang; english.
+                    $episode_check = $episodedir.'en_'.$filename.'.'.$vignette_parts['extension'];
+                    if (file_exists($episode_check)) {
+                      # We have an episode with cover.
+                      # Check for an existing cover in the target lang.
+                      $lang_check = $episodedir.''.$lang.'_'.$filename.'.'.$vignette_parts['extension'];
+                      if (file_exists($lang_check)) {
+                        # We have a translated cover.
+                        $episode_vignette = $episodedir.''.$lang.'_'.$filename.'.'.$vignette_parts['extension'];
+                        $translationstatus = 'translated';
+                        $translationmessage = '';
+                        $overlay = '';
+                      } else {
+                        $episode_vignette = $episodedir.'en_'.$filename.'.'.$vignette_parts['extension'];
+                        $translationstatus = 'notranslation';
+                        $translationmessage = '(Content not available in the selected language. Falling back to English.)';
+                        $overlay = '(Translation is missing. Falling back to English) ';
+                      }
                     }
 				
 				$num = intval($art['numero']);

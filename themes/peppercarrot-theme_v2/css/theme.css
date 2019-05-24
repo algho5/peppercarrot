@@ -108,7 +108,7 @@ h4{font-size:1.2rem}
 .thumbnail figcaption a { color: #444; }
 .thumbnail figcaption a:hover { text-decoration: none; color: #258fd6; }
 .thumbnail .detail, .thumbnail .detail a{ color: #BBB; font-size: 0.8rem; }
-.notranslation { display:none; }
+.notranslation img { filter: sepia(0.8); opacity: 0.42; }
 
 /* Protect SVG icons */
 .lastep .svg, .lastep .svg:hover, .homethumbnail .svg, .thumbnail .svg:hover, .thumbnail .svg { width: auto; border:none; }
