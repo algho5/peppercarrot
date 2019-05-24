@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" version="1.1" viewBox="0 0 100 100">
- <g fill="#826046" transform="matrix(.949 0 0 .941 28.1 -45.8)">
-  <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="#826046" d="m-14.7 51.8h75.5c6.68 0 12.1 5.38 12.1 12.1v75.9c0 6.68-5.38 12.1-12.1 12.1h-75.5c-6.72 0-12.1-5-12.1-11.6v-75.6c0-6.7 5.38-12.6 12.1-12.6z"/>
+<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" version="1.1" viewBox="0 0 100 100">
+ <g fill="#806C5D" transform="matrix(.949 0 0 .941 28.1 -45.8)">
+  <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="#806C5D" d="m-14.7 51.8h75.5c6.68 0 12.1 5.38 12.1 12.1v75.9c0 6.68-5.38 12.1-12.1 12.1h-75.5c-6.72 0-12.1-5-12.1-11.6v-75.6c0-6.7 5.38-12.6 12.1-12.6z"/>
  </g>
  <g fill="#d7d2cf" transform="matrix(.0436 0 0 -.0436 19.8 81.2)">
   <path d="m959 1.52e3v-264h-157q-86 0-116-36t-30-108v-189h293l-39-296h-254v-759h-306v759h-255v296h255v218q0 186 104 288t277 102q147 0 228-12z" fill="#d7d2cf"/>
