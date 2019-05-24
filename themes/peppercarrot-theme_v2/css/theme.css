@@ -23,27 +23,25 @@ h1{font-size:2.4rem}
 h2{font-size:2.0rem;}
 h3{font-size:1.5rem; margin-top:0.6rem;}
 h4{font-size:1.2rem}
-.main {	background-color: #fff;	margin: 55px 0 0 2rem;}
+.main {	background-color: #fff;	margin: 56px 0 0 2rem;}
 
 /* Header */
-.header { z-index: 9; position: fixed; top: 0; width: 100%; background-color: rgba(255,255,255,0.95); border: 1px solid rgba(230, 237, 239, 1); }
+.header { z-index: 9; position: fixed; top: 0; width: 100%; background: url('../img/header-bg.jpg') top left; border-bottom: 1px solid rgba(64,56,52,0.4); box-shadow: 0 0.1rem 0.1rem rgba(49,20,0,0.3); }
 .header a { text-decoration: none;}
 .title { text-align: center;}
 .title img { margin: 5px 0  0 5px;}
 
 /* main menu */
-.menu.expanded { font: normal 1.8rem 'ComicSpice', cursive; margin-top: 5px; }
-.menu.expanded li a:hover { text-shadow: 1px 0px 20px yellow; color: #2F3947; transition: all 0.2s ease-in; }
-.menu.expanded a { color: #8092A8; font-size: 1.4rem; }
-.menu.expanded li.active a, .menu.expanded li.active a:hover { color: #2F3947; background-color: rgba(0,0,0,0); }
-.menu.expanded li.external a:hover { color:#1a1a1a; }
-.menu.expanded li.external i { font-size: 0.8rem;}
+.menu.expanded { margin-top: 5px; }
+.menu.expanded li a { font: normal 1.5rem 'ComicSpice', cursive; color: #595147; }
+.menu.expanded li a:hover { text-shadow: 1px 0px 20px yellow; color: #604F3E; transition: all 0.2s ease-in; }
+.menu.expanded li.active a, .menu.expanded li.active a:hover { color: #291200; background-color: rgba(0,0,0,0); }
 .responsive-menu label { color: #3A2619; background-color: transparent; font: normal 2rem 'ComicSpice', cursive; text-align: left;}
 
-/* Follow */
+/* top-right */
 .follow { line-height: 0.9; margin: 0 10px 0 5px; }
-.follow .patronbutton { display:inline-block; background-color: #659EBD; color: #FFF; margin-bottom: 0.3rem; padding: 8px 12px; border-radius: 5px; text-decoration: none;}
-.follow .patronbutton:hover { opacity: 0.5; }
+.follow .donatebutton { display:inline-block; background-color: #9B7761; color: #FFF; margin-bottom: 0.3rem; padding: 8px 12px; border-radius: 5px; box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.1); text-decoration: none; transition: background-color 0.5s ease;}
+.follow .donatebutton:hover	{ background-color: #F3708C; color: #fff; transition: background-color 0.5s ease;}
 .follow .logo {  margin-right: 3px; }
 
 /* translation pills */
@@ -300,20 +298,20 @@ a:hover { text-decoration:none;}
 /* RESPONSIVE RULES*/
 /* mini laptop */
 @media (max-width: 1255px) {
-.menu.expanded a { font-size: 1.2rem; }
+.menu.expanded li a { font-size: 1.3rem; padding: 5px 5px 5px 5px; }
 }
 
-/* tablet horyzontal */
-@media (max-width: 1050px) {
+/* tablet horyzontal: and also burger menu theme */
+@media (max-width: 1023px) {
 .cover h1 { font-size: 2.2rem; }
-}
-@media (max-width: 980px) {
-.menu.expanded a { font-size: 1.3rem; }
+.menu.expanded li a { width: 200px; font-size: 1.8rem; margin: 1rem auto 1rem auto; border: 3px solid #ACA497; background-color: white; border-radius: 0.4rem; }
+.menu.expanded li a:hover { border: 3px solid #5A4F40; background-color: white; }
+.menu.expanded li.active a { border: 3px solid orange; background-color: white; }
+.menu.expanded li.active a:hover { border: 3px solid orange; background-color: white; }
 }
 
 /* tablet vertical */
 @media (max-width: 900px) {
-.menu.expanded a { font-size: 1.15rem; }
 input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .cover h1 { position: absolute; top: 1rem; right: 0; font-size: 2rem; width: 420px; }
 .cover { background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 11% 80%; text-align: right;}

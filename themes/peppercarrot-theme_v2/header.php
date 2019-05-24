@@ -109,9 +109,13 @@ echo "-->";
                 <li class="<?php echo $status; ?>" >
                 <a href="<?php $plxShow->urlRewrite('?static4/contribute') ?>"><?php $plxShow->lang('CONTRIBUTE') ?></a>
                 </li>
-                <?php if($idStat=="008"){ $status = "active"; } else { $status = "no-active"; }?>
+                <?php if($idStat=="999"){ $status = "active"; } else { $status = "no-active"; }?>
                 <li class="<?php echo $status; ?>" >
-                <a href="<?php $plxShow->urlRewrite('?static8/wiki') ?>" id="active"><?php $plxShow->lang('WIKI') ?></a>
+                <a href="<?php $plxShow->urlRewrite('?static999/extras') ?>" id="active"><?php $plxShow->lang('Extras') ?></a>
+                </li>
+                <?php if($idStat=="999"){ $status = "active"; } else { $status = "no-active"; }?>
+                <li class="<?php echo $status; ?>" >
+                <a href="<?php $plxShow->urlRewrite('?static999/eshop') ?>" id="active"><?php $plxShow->lang('Eshop') ?></a>
                 </li>
                 <?php if($idStat=="006" OR $idStat=="014"){ $status = "active"; } else { $status = "no-active"; }?>
                 <li class="<?php echo $status; ?>" >
@@ -129,7 +133,7 @@ echo "-->";
           
           <div class="col sml-4 med-3 lrg-2 sml-text-right">
             <div class="follow"><br/>
-              <a class="patronbutton" href="TODO-DONATEPAGE" title="TODO">
+              <a class="donatebutton" href="TODO-DONATEPAGE" title="TODO">
               ♥ Donate
               <?php // echo $plxShow->Getlang(PATRONAGE_BUTTON); ?>
               </a>
