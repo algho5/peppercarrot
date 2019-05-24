@@ -1,0 +1,322 @@
+{
+  "ar": {
+    "translators": ["Mahwiii"],
+    "name": "Arabic",
+    "local_name": "العربية",
+    "iso_code": "ar",
+    "iso_version":1
+  },
+  "bn": {
+    "translators": ["Hulo Biral the Tomcat"],
+    "name": "Bengali",
+    "local_name": "বাংলা",
+    "iso_code": "bn",
+    "iso_version":1
+  },
+  "br": {
+    "translators": ["Stefan Carpentier"],
+    "name": "Breton",
+    "local_name": "Brezhoneg",
+    "iso_code": "br",
+    "iso_version":1
+  },
+  "ca": {
+    "translators": ["Juan José Segura"],
+    "name": "Catalan",
+    "local_name": "Català",
+    "iso_code": "ca",
+    "iso_version":1
+  },
+  "cn": {
+    "translators": ["Ran Zhuang", "Yan Jing"],
+    "name": "Chinese",
+    "local_name": "中文",
+    "iso_code": "zh",
+    "iso_version":1
+  },
+  "cs": {
+    "translators": ["Kateřina Fleknová", "Martin Doucha"],
+    "name": "Czech",
+    "local_name": "Čeština",
+    "iso_code": "cs",
+    "iso_version":1
+  },
+  "da": {
+    "translators": ["Marie Moestrup", "Alexandre Alapetite", "Emmiline Alapetite", "Skaaning Alapetite", "Juan José Segura"],
+    "name": "Danish",
+    "local_name": "Dansk",
+    "iso_code": "da",
+    "iso_version":1
+  },
+  "de": {
+    "translators": ["Alexandra Jordan", "Helmar Suschka", "Carlo Gandolfi", "colognella", "Julian Eric Ain", "Philipp (hapit) Hemmer", "Ret Samys", "Martin Disch"],
+    "name": "German",
+    "local_name": "Deutsch",
+    "iso_code": "de",
+    "iso_version":1
+  },
+  "el": {
+    "translators": ["Dimitris Axiotis", "George Karettas"],
+    "name": "Greek",
+    "local_name": "Ελληνικά",
+    "iso_code": "el",
+    "iso_version":1
+  },
+  "en": {
+    "translators": ["Alex Gryson", "David Revoy", "Amireti"],
+    "name": "English",
+    "local_name": "English",
+    "iso_code": "en",
+    "iso_version":1
+  },
+  "eo": {
+    "translators": ["LibreFan", "Kaoseto kaj Nay Ledofiŝ", "Kaoseto", "Spenĉjo", "Naj Ledofiŝ"],
+    "name": "Esperanto",
+    "local_name": "Esperanto",
+    "iso_code": "eo",
+    "iso_version":1
+  },
+  "es": {
+    "translators": ["TheFaico"],
+    "name": "Spanish",
+    "local_name": "Español",
+    "iso_code": "es",
+    "iso_version":1
+  },
+  "fa": {
+    "translators": ["Aslan Zamanloo"],
+    "name": "Persian",
+    "local_name": "فارسی",
+    "iso_code": "fa",
+    "iso_version":1
+  },
+  "fr": {
+    "translators": ["David Revoy", "Aurélien Gâteau", "Remi Rampin", "Xavier Dolques", "Nartance", "Valvin", "Calimeroteknik"],
+    "name": "French",
+    "local_name": "Français",
+    "iso_code": "fr",
+    "iso_version":1
+  },
+  "fi": {
+    "translators": ["Kari Lehto"],
+    "name": "Finnish",
+    "local_name": "Suomi",
+    "iso_code": "fi",
+    "iso_version":1
+  },
+  "hu": {
+    "translators": ["Halász Gábor \"Hali\""],
+    "name": "Hungarian",
+    "local_name": "Magyar",
+    "iso_code": "hu",
+    "iso_version":1
+  },
+  "id": {
+    "translators": ["Bonaventura Aditya Perdana", "Reinaldo Calvin"],
+    "name": "Indonesian",
+    "local_name": "Bahasa Indonesia",
+    "iso_code": "id",
+    "iso_version":1
+  },
+  "io": {
+    "translators": ["Gilles-Philippe Morin", "Brian E. Drake", "William Johnsson"],
+    "name": "Ido",
+    "local_name": "Ido",
+    "iso_code": "io",
+    "iso_version":1
+  },
+  "it": {
+    "translators": ["Antonio Parisi (Corrections)", "Carlo Gandolfi"],
+    "name": "Italian",
+    "local_name": "Italiano",
+    "iso_code": "it",
+    "iso_version":1
+  },
+  "ja": {
+    "translators": ["guruguru"],
+    "name": "Japanese",
+    "local_name": "日本語",
+    "iso_code": "ja",
+    "iso_version":1
+  },
+  "kr": {
+    "translators": ["Jihoon Kim", "Shikamaru \"initbar\" Yamamoto"],
+    "name": "Korean",
+    "local_name": "한국어",
+    "iso_code": "ko",
+    "iso_version":1
+  },
+  "la": {
+    "translators": ["Guillaume Lestringant"],
+    "name": "Latin",
+    "local_name": "Latina",
+    "iso_code": "la",
+    "iso_version":1
+  },
+  "ml": {
+    "translators": ["Pranav Jerry"],
+    "name": "Malayalam",
+    "local_name": "മലയാളം",
+    "iso_code": "ml",
+    "iso_version":1
+  },
+  "ms": {
+    "translators": ["muhdnurhidayat"],
+    "name": "Malay",
+    "local_name": "Bahasa Melayu",
+    "iso_code": "ms",
+    "iso_version": 1
+  },
+  "mx": {
+    "translators": ["RJ Quiralta"],
+    "name": "Mexican Spanish",
+    "local_name": "Español mexicano",
+    "iso_code": "es",
+    "iso_locale": "MX",
+    "iso_version":1
+  },
+  "nl": {
+    "translators": ["Midgard", "Willem Sonke", "Peter Moonen"],
+    "name": "Dutch",
+    "local_name": "Nederlands",
+    "iso_code": "nl",
+    "iso_version":1
+  },
+  "nn": {
+    "translators": ["Arild Torvund Olsen"],
+    "name": "Nynorsk (New Norwegian)",
+    "local_name": "Nynorsk",
+    "iso_code": "nn",
+    "iso_version": 1
+  },
+  "no": {
+    "translators": ["Thomas Nordstrøm"],
+    "name": "Norwegian Bokmål",
+    "local_name": "Norsk (bokmål)",
+    "iso_code": "nb",
+    "iso_version":1
+  },
+  "pl": {
+    "translators": ["Przemysław \"Kev\" Chudzia", "Sölve Svartskogen"],
+    "name": "Polish",
+    "local_name": "Polski",
+    "iso_code": "pl",
+    "iso_version":1
+  },
+  "pt": {
+    "translators": ["Alexandre E. Almeida", "Frederico Batista"],
+    "name": "Portuguese",
+    "local_name": "Português",
+    "iso_code": "pt",
+    "iso_version":1
+  },
+  "ro": {
+    "translators": ["Costin-Sorin Ionescu"],
+    "name": "Romanian",
+    "local_name": "Română",
+    "iso_code": "ro",
+    "iso_version":1
+  },
+  "ru": {
+    "translators": ["Andrew \"Akari\" Alexeyew", "Denis \"uncle Night\" Prisukhin", "Gleki \"lagleki\" Arxokuna"],
+    "name": "Russian",
+    "local_name": "Русский",
+    "iso_code": "ru",
+    "iso_version":1
+  },
+  "si": {
+    "translators": ["Tharinda Divakara"],
+    "name": "Sinhalese",
+    "local_name": "සිංහල",
+    "iso_code": "si",
+    "iso_version":1
+  },
+  "sk": {
+    "translators": ["talime"],
+    "name": "Slovak",
+    "local_name": "Slovenčina",
+    "iso_code": "sk",
+    "iso_version":1
+  },
+  "sr": {
+    "translators": ["Marko Ivancevic"],
+    "name": "Serbian",
+    "local_name": "Српски",
+    "iso_code": "sr",
+    "iso_version":1
+  },
+  "sv": {
+    "translators": ["Mikael \"Quiphius\" Olofsson", "Quiphius"],
+    "name": "Swedish",
+    "local_name": "Svenska",
+    "iso_code": "sv",
+    "iso_version":1
+  },
+  "uk": {
+    "translators": ["Denis \"uncle Night\" Prisukhin", "Leonid \"Deburger\" Androschuk"],
+    "name": "Ukrainian",
+    "local_name": "Українська",
+    "iso_code": "uk",
+    "iso_version":1
+  },
+  "vi": {
+    "translators": ["Binh Pham", "Hồ Châu", "Phiên bản Tiếng Việt"],
+    "name": "Vietnamese",
+    "local_name": "Tiếng Việt",
+    "iso_code": "vi",
+    "iso_version":1
+  },
+  
+  "jb": {
+    "translators": ["la gleki (ly. Gleki Arxokuna ly.)", "lai krtis", "mezohe"],
+    "name": "Lojban",
+    "local_name": "Lojban",
+    "iso_code": "jbo",
+    "iso_version":2
+  },
+  "ns": {
+    "translators": [],
+    "name": "Low German",
+    "local_name": "Plattdüütsch",
+    "iso_code": "nds",
+    "iso_version":2
+  },
+  "ph": {
+    "translators": ["Paolo Abes"],
+    "name": "Filipino",
+    "local_name": "Filipino",
+    "iso_code": "fil",
+    "iso_version": 2
+  },
+  
+  
+  "kt": {
+    "translators": ["Erwhann-Rouge", "webmistusik", "Mardixuran", "Kotava dokalixo"],
+    "name": "Kotava",
+    "local_name": "Kotava",
+    "iso_code": "avk",
+    "iso_version":3
+  },
+  "sz": {
+    "translators": ["Grzegorz Kulik"],
+    "name": "Silesian",
+    "local_name": "Ślůnski",
+    "iso_code": "szl",
+    "iso_version":3
+  },
+  
+  "go":{
+    "translators": ["Patrik Deriano", "Gwenaelle Lefeuvre"],
+    "name": "Gallo",
+    "local_name": "Galo",
+    "iso_code": "",
+    "iso_version": -1
+  },
+  "sb":{
+    "translators": ["Olivier Simon", "Scott Walters"],
+    "name": "Sambahsa",
+    "local_name": "Sambahsa",
+    "iso_code": "",
+    "iso_version": -1
+  }
+}
