@@ -59,26 +59,21 @@ V.<?php echo $version ?>, 11/2016
 <body id="top">
  
 
- <?php
-  if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
-    echo '<div style="position: fixed; font-size: 0.8rem; text-align: right; width: 100%; bottom: 0px; padding: 2px 8px 2px 8px; background: #000000; color: #FFFFFF; opacity: 0.75; z-index: 500 !important;">';
-    $currenturl=$_SERVER['REQUEST_URI'];
-    $currenturl=str_replace('/peppercarrot','',$currenturl);
-    echo 'Notice: you are browsing localhost: <a href="https://www.peppercarrot.com'.$currenturl.'">online version is here</a>';
-    echo '</div>';
-  }
-  ?>
+<?php
+// Setup a "dev mode" if website runs on localhost.
+if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
 
-<?php // récupération de l'identifiant de la page static
-$idStat = $plxShow->staticId();
-$idCats = $plxShow->catId();
-$idMode = $plxShow->mode();
-echo "<!-- Debug :";
-echo "idStat :"; echo $idStat;
-echo "| idCats :"; echo $idCats;
-echo "| idMode :"; echo $idMode;
-echo "-->";
+  // Add a toolbar on bottom of website to help the webmaster
+  echo '<div style="position: fixed; font-size: 0.8rem; text-align: right; width: 100%; bottom: 0px; padding: 2px 8px 2px 8px; background: #000000; color: #FFFFFF; opacity: 0.75; z-index: 500 !important;">';
+  $currenturl=$_SERVER['REQUEST_URI'];
+  $currenturl=str_replace('/peppercarrot','',$currenturl);
+  echo '<span style="float: left"><b> $lang: '.$lang.' </b>| $idStat: '.$idStat.' | $idMode: '.$idMode.' </span> Notice: you are browsing localhost: <a href="https://www.peppercarrot.com'.$currenturl.'">online version is here</a>';
+  echo '</div>';
+
+}
 ?>
+
+
 
 
   <header class="header" role="banner">
