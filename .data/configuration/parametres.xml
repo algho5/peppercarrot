@@ -22,7 +22,7 @@
 	<parametre name="gzip">0</parametre>
 	<parametre name="feed_chapo">0</parametre>
 	<parametre name="feed_footer"><![CDATA[]]></parametre>
-	<parametre name="homestatic">001</parametre>
+	<parametre name="homestatic">003</parametre>
 	<parametre name="clef"><![CDATA[yVIEzMNtfveW5ta]]></parametre>
 	<parametre name="miniatures_l">800</parametre>
 	<parametre name="miniatures_h">500</parametre>
