@@ -53,7 +53,7 @@ class plxMyMultiLingue extends plxPlugin {
 
 		# déclaration des hooks plxShow
 		$this->addHook('plxShowStaticListEnd', 'plxShowStaticListEnd');
-        $this->addHook('plxShowConstruct', 'plxShowConstruct');
+    $this->addHook('plxShowConstruct', 'plxShowConstruct');
 
 		# déclaration des hooks plxFeed
 		$this->addHook('plxFeedConstructLoadPlugins', 'ConstructLoadPlugins');
@@ -71,6 +71,7 @@ class plxMyMultiLingue extends plxPlugin {
 		$this->addHook('MyMultiLingue', 'MyMultiLingue');
         
     # Specific rules for Pepper&Carrot :
+    $this->addHook('MyMultiLingueGetLang', 'MyMultiLingueGetLang');
     $this->addHook('MyMultiLingueComicLang', 'MyMultiLingueComicLang');
     $this->addHook('MyMultiLingueStaticLang', 'MyMultiLingueStaticLang');
     $this->addHook('MyMultiLingueStaticAllLang', 'MyMultiLingueStaticAllLang');
@@ -141,7 +142,7 @@ class plxMyMultiLingue extends plxPlugin {
 				unset($_SESSION["currentfolder"]);
 			}
 
-			setcookie("plxMyMultiLingue", $this->lang, time()+3600*24*30);  // expire dans 30 jours
+			setcookie("plxMyMultiLingue", $this->lang, time()+3600*24*30);  // expire after 30days
 			$_SESSION["lang"] = $this->lang;
 
 			# redirection avec un minimum de sécurité sur lurl
@@ -643,6 +644,12 @@ class plxMyMultiLingue extends plxPlugin {
 		}
 	}
   
+public function MyMultiLingueGetLang() {
+
+  return $this->lang;
+  
+}
+  
 /**********************************************************/
 /* Display the pills of available lang (article-webcomic) */
 /**********************************************************/
@@ -696,7 +703,7 @@ public function MyMultiLingueStaticLang() {
     $sel = $this->lang==$lang ? ' active':'';
     # if we detect page 01 exist in a active language
     if (file_exists($LangAvailable)) {
-      # Lang exist, we build the HTML for the language item
+      # Lang registered in PLuxXML, we build the HTML for the language item
       $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'. $aLabels[$lang].'</a></li>"; ?>';
      }
   }   
@@ -723,15 +730,41 @@ public function MyMultiLingueStaticAllLang() {
     $sel = $this->lang==$lang ? ' active':'';
     # if we detect cover of episode 01 exists in a active language:
     $episode01_tester = '0_sources/ep01_Potion-of-Flight/low-res/'.$lang.'_Pepper-and-Carrot_by-David-Revoy_E01.jpg';
-    if (file_exists($LangAvailable)) {
-      # Lang exist, we build the HTML for the language item
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/")."\" title=\"'.$aLabels[$lang].'\" >'.$aLabels[$lang].'</a></li>"; ?>';
-     } else if (file_exists($episode01_tester)) {
-      # Lang exist but only for webcomic. 
-      $LangString .= '<?php echo "<li class=\"'.$sel.' notfull\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\" title=\"'.$aLabels[$lang].' - Note: Translation of webcomic only \">'.$aLabels[$lang].'</a></li>"; ?>';
+    if (file_exists($LangAvailable) OR file_exists($episode01_tester)) {
+      $websitetranslated = 0;
+      if (file_exists($LangAvailable)){
+      $websitetranslated = 10;
+      }
+      $totalepisodecount = 0;
+      $translationcompletion = 0;
+      $epfolders = glob("0_sources/ep[0-9][0-9]*");
+      sort($epfolders);
+      foreach($epfolders as $foldername) {   
+        $totalepisodecount = $totalepisodecount + 1;
+        $testfolderpath = $foldername.'/lang/'.$lang;
+        if(is_dir($testfolderpath)) {
+          $translationcompletion = $translationcompletion + 1;
+        }
+      }
+      
+      $percent = ( $translationcompletion / $totalepisodecount ) * 90 + $websitetranslated;
+      $percent = round($percent, 0);
+      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/")."\"';
+      $LangString .= ' title=\"'.$translationcompletion.' on '.$totalepisodecount.' episodes translated, ';
+      if ($websitetranslated == 10 ){
+      $LangString .= 'website is translated.\">';
+      } else {
+      $LangString .= 'website is not translated.\">';      
+      }
+      $LangString .= ''.$aLabels[$lang].' ';
+      $LangString .= '<span class=\"percent\" >'.$percent.'%</span> ';
+      if ($percent == 100 ){
+        $LangString .= '<img src=\"themes/peppercarrot-theme_v2/ico/star.svg\" alt=\"star,\" title=\"Translation complete! Congratulation.\"/>';
+      } 
+      $LangString .= '</a></li>"; ?>';
     }
   }   
-  # Display the resulting full list
+  # Display results
   echo $LangString;
 }
 

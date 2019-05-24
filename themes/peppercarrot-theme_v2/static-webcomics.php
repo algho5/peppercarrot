@@ -1,7 +1,12 @@
 <?php include(dirname(__FILE__).'/header.php'); 
-$lang = $plxShow->defaultLang($echo);
+$lang = $plxShow->callHook('MyMultiLingueGetLang');
 
-echo "<!-- LANG DEBUG:".$lang." -->";
+# Load the langage label
+$lang_ISO = "0_sources/langs.json";
+$lang_ISO_data = file_get_contents($lang_ISO);
+
+$get = json_decode($lang_ISO_data); 
+$langlabel = $get->{$lang}->{'local_name'};
 
 ?>
 <div class="container">
@@ -11,11 +16,17 @@ echo "<!-- LANG DEBUG:".$lang." -->";
 
       <div class="grid">
 
-      <div class="translabar col sml-12 med-12 lrg-12 sml-centered sml-text-center">
-        <ul class="menu" role="toolbar">
-          <?php eval($plxShow->callHook('MyMultiLingueStaticAllLang')) ?>
-          <li><a class="lang" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
-        </ul>
+      <div class="col sml-12 sml-text-right">
+        <nav class="nav" role="navigation">
+          <div class="responsive-langmenu">
+            <label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
+            <input type="checkbox" id="langmenu">
+            <ul class="langmenu expanded">
+            <li><a class="lang addtransla" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
+            <?php eval($plxShow->callHook('MyMultiLingueStaticAllLang')) ?>
+            </ul>
+          </div>
+        </nav>
       </div>
       
       <section class="col sml-12 med-12 lrg-12" >

@@ -53,7 +53,37 @@ h4{font-size:1.2rem}
 .translabar li.notfull a { }
 .translabar a { text-decoration: none; font-size: 0.9rem; }
 
-
+/* Translations dropdown CSS menu */
+.langmenu { font-size: 0rem; margin: 0; padding-left: 0;}
+.langmenu li { display: inline-block; font-size: 1.1rem; list-style-type: none; margin-left: 1rem; text-align: left; }
+.addtransla { color: green; background-color: #E6FAD7; }
+.langmenu li:first-child { margin-left: 0;}
+.langmenu li.active a {	color: #444;}
+.langmenu.vertical li {	display: block;	margin-left: 0;}
+.langmenu.expanded li {	margin-left: 0;}
+.langmenu.expanded li:hover {	background-color: #D7EBFA;}
+.langmenu.expanded li a {	display: block;	padding: .425rem .7rem;}
+.langmenu.expanded li a:hover {	text-decoration: none;}
+.langmenu.breadcrumb li + li:before, .langmenu.expanded.breadcrumb > li + li a:before { content: "/";}
+.langmenu.breadcrumb li + li:before, .langmenu.expanded.breadcrumb > li + li:before, .langmenu.expanded.breadcrumb > li + li a:before { margin-right: .7rem;}
+.langmenu.expanded.breadcrumb > li + li:before { content: none;}
+.langmenu.expanded li.active a, .langmenu.expanded li.active:hover { background-color: #B4D7EF;	color: #444; }
+/* Language Button */
+.responsive-langmenu label { background-color: #FFF;	color: #1a1a1a;	text-align: right; }
+.translabutton { cursor: pointer; display:inline-block; background-color: #FFF; color: #1a1a1a; border: 1px solid #cecece; margin: 0 -0.7rem 0.3rem 0; padding: 8px 12px; border-radius: 5px; box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.1); text-decoration: none; }
+.responsive-langmenu label, .responsive-langmenu input[type=checkbox] {	display: none;}
+.responsive-langmenu label { padding: .425rem .7rem;}
+.responsive-langmenu input[type=checkbox]:checked+ul { display: block;}
+.responsive-langmenu ul { display: none; column-count: 4; margin: 0 0 1rem 0; border: 1px solid #cecece; border-radius: 5px; box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.1); }
+@media (max-width: 1100px) { .responsive-langmenu ul { column-count: 3; }}
+@media (max-width: 700px) { .responsive-langmenu ul { column-count: 2; }}
+.responsive-langmenu label, .responsive-langmenu ul li {display: block; margin-left: 0}
+.responsive-langmenu ul li:hover {background-color: #ddd;}
+.responsive-langmenu ul li a {display: block;padding: .425rem .7rem;}
+.responsive-langmenu ul li a:hover {text-decoration: none;}
+.responsive-langmenu .langmenu.breadcrumb li + li:before, .responsive-langmenu .langmenu.expanded.breadcrumb > li + li a:before {content: none;}
+.responsive-langmenu ul li.active a, .responsive-langmenu ul li.active:hover {background-color: #258fd6;color: #fff;}
+.percent { color: #808080; font-size: 0.8rem; }
 
 /* HOMEPAGE */
 /* cover */

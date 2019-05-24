@@ -3,12 +3,12 @@ $version = "190108";
 $idStat = $plxShow->staticId();
 $idCats = $plxShow->catId();
 $idMode = $plxShow->mode();
-$lang = $plxShow->getLang('LANGUAGE_ISO_CODE_2_LETTER');
+$lang = $plxShow->callHook('MyMultiLingueGetLang');
 
 if($idMode=="home"){ $status = "active"; } else { $status = "no-active"; }
 ?>
 <!DOCTYPE html>
-<html lang="<?php $plxShow->lang('LANGUAGE_ISO_CODE_2_LETTER') ?>">
+<html lang="<?php echo $lang; ?>">
 <!--
 
  ▄▄▄·▄▄▄ . ▄▄▄· ▄▄▄·▄▄▄ .▄▄▄   ▄▄·  ▄▄▄· ▄▄▄  ▄▄▄        ▄▄▄▄▄    ▄▄·       • ▌ ▄ ·.
@@ -85,7 +85,7 @@ echo "-->";
       <div class="grid">
       
           <div class="title col sml-4 med-3 lrg-2 sml-text-left">
-            <a href="<?php $plxShow->racine() ?>">
+            <a href="<?php $plxShow->racine() ?><?php echo $lang; ?>/">
               <img src="<?php $plxShow->template(); ?>/img/en_pepper-carrot_title.svg" height="30px" alt="Pepper&amp;Carrot" title="<?php $plxShow->lang('PEPPERCARROT_VEGETABLE') ?>">
             </a>
             <h1 class="no-margin sml-hide med-hide lrg-hide"><?php $plxShow->mainTitle('link'); ?></h1>
@@ -99,7 +99,7 @@ echo "-->";
                 <ul class="menu expanded">
                 <?php if($idStat=="003" OR $idCats=="003" AND $idMode=="article" OR $idCats=="005" AND $idMode=="article" OR $idCats=="009" AND $idMode=="article" ){ $status = "active"; } else { $status = "no-active"; }?>
                 <li class="<?php echo $status; ?>" >
-                <a href="<?php $plxShow->urlRewrite('?static3/webcomics') ?>"><?php $plxShow->lang('WEBCOMICS') ?></a>
+                <a href="<?php $plxShow->racine() ?><?php echo $lang; ?>/"><?php $plxShow->lang('WEBCOMICS') ?></a>
                 </li>
                 <?php if($idStat=="002"){ $status = "active"; } else { $status = "no-active"; }?>
                 <li class="<?php echo $status; ?>" >
