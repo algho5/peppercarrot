@@ -189,23 +189,24 @@ class vignette extends plxPlugin {
                     $translation_check = $episodedir.''.$lang.'_'.$filename.'.'.$vignette_parts['extension'];
                     
                     if (file_exists($translation_check)) {
-                    $episode_vignette = $episodedir.''.$lang.'_'.$filename.'.'.$vignette_parts['extension'];
-                    $translationstatus = 'translated';
-                    $translationmessage = '';
-                    $overlay = '';
+                      $episode_vignette = $episodedir.''.$lang.'_'.$filename.'.'.$vignette_parts['extension'];
+                      $translationstatus = 'translated';
+                      $translationmessage = '';
+                      $overlay = '';
                     } else {
-                    $episode_vignette = $episodedir.'en_'.$filename.'.'.$vignette_parts['extension'];
-                    $translationstatus = 'notranslation';
-                    $overlay = '(English) ';
-                    $translationmessage = '(Content not available in the selected language. Falling back to English.)';
+                      $episode_vignette = $episodedir.'en_'.$filename.'.'.$vignette_parts['extension'];
+                      $translationstatus = 'notranslation';
+                      $overlay = '(English) ';
+                      $translationmessage = '(Content not available in the selected language. Falling back to English.)';
                     }
 				
 				$num = intval($art['numero']);
 				$date = $art['date'];
-				if(($plxShow->plxMotor->mode == 'article') AND ($art['numero'] == $plxShow->plxMotor->cible))
+				if(($plxShow->plxMotor->mode == 'article') AND ($art['numero'] == $plxShow->plxMotor->cible)) {
 					$status = 'active';
-				else
+				} else {
 					$status = 'noactive';
+        }
 				# Mise en forme de la liste des catégories
 				$catList = array();
 				$catIds = explode(',', $art['categorie']);
@@ -232,9 +233,9 @@ class vignette extends plxPlugin {
 				$title = plxUtils::truncate($art['title'],$strlength,$ending,true,true);
 				$row = str_replace('#art_title('.$strlength.')','#art_title', $row);
         if (strpos($title, 'by') !== false) {
-        $titlecut = str_replace('by', '<br/><span class="detail">by', $title);
+          $titlecut = str_replace('by', '<br/><span class="detail">by', $title);
         } else {
-        $titlecut = $title.'<br/><span class="detail">';
+          $titlecut = $title.'<br/><span class="detail">';
         }
 				$row = str_replace('#art_supertitle',$titlecut,$row);
 				$row = str_replace('#art_title',$title,$row);
