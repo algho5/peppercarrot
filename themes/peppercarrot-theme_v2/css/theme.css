@@ -217,14 +217,8 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .philosophy a:hover { color: #FC7888; }
 
 /* Contribute page */
-.contribute { text-align: center; }
-.contributelink { background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px }
-.contribute h2{ font-size: 2.6rem; margin-top: 2.8rem;}
-.contribute p{ text-align: center; padding: 0 0.9rem 0.9rem 0.9rem; margin: 0 auto; max-width: 750px;  }
-.contribute { text-align: center; padding: 0.9rem; margin: 0 auto;  }
-.contribute:hover { background-color:#FFF; }
-
-/*Community page*/
+.pills { padding: 0 0 0 0; margin: 0 0 1.7rem 0; max-width: 1060px }
+.pills a { background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px; text-decoration: none; font-size: 0.9rem;}
 .communitysocket { min-height: 520px; margin-bottom: 1rem; padding-left: 0.5rem; padding-right: 0.5rem;}
 .communityblock { min-height: 520px; width: 100%; text-align: center; padding: 10px; border: 1px solid #dedede; }
 .communityblockcontent { min-height: 430px; }
@@ -233,8 +227,9 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .communityblock img{ margin-top: 10px; border: 1px solid #dedede; border-radius: 5px; }
 .communitylink {text-align: center; width: 100%; margin-bottom: 0.5rem; color: #ababab; font-size: 0.90rem; }
 .communitybutton {text-align: center; font-size: 1.1rem; }
-.communitybutton a { display:inline-block; min-width: 250px; background-color: #659EBD; color: #FFF; margin-bottom: 0.2rem; padding: 6px 8px 6px 8px; border: solid 1px #659EBD; border-radius: 5px; text-decoration: none; }
+.communitybutton a { display:inline-block; width: 90%; background-color: #659EBD; color: #FFF; margin-bottom: 0.2rem; padding: 6px 8px 6px 8px; border: solid 1px #659EBD; border-radius: 5px; text-decoration: none; }
 .communitybutton a:hover { background-color: #7dc4ea;}
+
 
 /* Sources  */
 .source { background-color: #FFF; margin-bottom: 2rem; font-size: 1rem; }
@@ -251,10 +246,6 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .readme li { margin: 0; padding: 0; }
 .readme h1,.readme h2 { font-size: 1.4rem;}
 
-/* Contribute/Community */
-.buttonlist { padding: 0 0 0 0; margin: 0.5rem 0; max-width: 1060px }
-.buttonlist li { background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px }
-.buttonlist a { text-decoration: none; font-size: 0.9rem; }
 
 /* TOS/Privacy */
 .tosprivacy { font-size: 1.02rem; max-width: 600px; margin: 0 auto; }

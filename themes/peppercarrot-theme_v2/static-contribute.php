@@ -6,23 +6,47 @@ $folder = "pages/contribute";
 
 # Start content
 echo '<div class="container">';
-echo '  <main class="grid" role="main">';
+echo '  <main class="main grid" role="main">';
 echo '    <section class="col sml-12" style="padding: 0 0;">';
 
 # Intro
 echo '<div class="grid"><br/>';
-echo '  <div class="col sml-6 sml-centered sml-text-center">';
-echo $plxShow->Getlang(CONTRIBUTE_TOP);
+echo '  <div class="col sml-12 med-8 lrg-6 sml-centered sml-text-center">';
 if ($lang !== "en" ){
   echo '<div class="notice"><img src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt="info:"/> ';
   echo $plxShow->Getlang(LIMITATIONS);
   echo '</div>';
 }
+?>
+
+<p>
+  I always welcome new contributors! You can help me to make Pepper&amp;Carrot a better 
+  webcomic. If you have any question, <a href="http://webchat.freenode.net/?channels=%23pepper%26carrot">
+  ask on the Pepper&amp;Carrot channel</a>.
+</p>
+
+<div class="pills">
+  <a href="http://webchat.freenode.net?channels=%23pepper%26carrot" title="#pepper&amp;Carrot , freenode.net">
+    IRC
+  </a>
+  <a href="https://telegram.me/joinchat/BLVsYz_DIz-S-TJZB9XW7A" title="Bridged Irc channel for Telegram client">
+    Telegram
+  </a>
+  <a href="https://riot.im/app/#/room/#freenode_#pepper&carrot:matrix.org" title="Bridged Irc channel for Riot, a Matrix client">
+    Matrix
+  </a>
+  <a href="https://framateam.org/signup_user_complete/?id=gcaq67sntfgr5jbmoaogsgdfqc" title="Bridged Irc channel for Framateam, Mattermost client hosted by Framasoft">
+    Framateam
+  </a>
+</div>
+  
+<?php 
+
 echo '  </div>';
 echo '</div>';
 
 # Start scanning community/*.json to feed our frames
-$search = glob("community/*.json");
+$search = glob("".$folder."/*.json");
 if (!empty($search)){ 
   foreach ($search as $jsonpath) {
     $contents = file_get_contents($jsonpath);
