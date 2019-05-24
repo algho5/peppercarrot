@@ -79,14 +79,14 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
   <header class="header" role="banner">
       <div class="grid">
       
-          <div class="title col sml-4 med-3 lrg-2 sml-text-left">
+          <div class="title col sml-hide med-show med-3 lrg-2 sml-text-left">
             <a href="<?php $plxShow->racine() ?><?php echo $lang; ?>/">
               <img src="<?php $plxShow->template(); ?>/img/en_pepper-carrot_title.svg" height="30px" alt="Pepper&amp;Carrot" title="<?php $plxShow->lang('PEPPERCARROT_VEGETABLE') ?>">
             </a>
             <h1 class="no-margin sml-hide med-hide lrg-hide"><?php $plxShow->mainTitle('link'); ?></h1>
           </div>
           
-          <div class="topmenu col sml-4 med-6 lrg-8 sml-text-left med-text-center">
+          <div class="topmenu col sml-7 med-6 lrg-8 sml-text-left med-text-center">
             <nav class="nav" role="navigation">
               <div class="responsive-menu">
                 <label for="menu"><img src="themes/peppercarrot-theme_v2/ico/menu.svg" alt=""/></label>
@@ -126,7 +126,7 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
             </nav>
           </div>
           
-          <div class="col sml-4 med-3 lrg-2 sml-text-right">
+          <div class="col sml-5 med-3 lrg-2 sml-text-right">
             <div class="follow"><br/>
               <a class="donatebutton" href="TODO-DONATEPAGE" title="TODO">
               ♥ Donate

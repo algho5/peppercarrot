@@ -23,7 +23,7 @@ h1{font-size:2.4rem}
 h2{font-size:2.0rem;}
 h3{font-size:1.5rem; margin-top:0.6rem;}
 h4{font-size:1.2rem}
-.main {	background-color: #fff;	margin: 56px 0 0 2rem;}
+.main {	background-color: #fff;	margin: 56px 0 1rem 0;}
 
 /* Header */
 .header { z-index: 9; position: fixed; top: 0; width: 100%; background: url('../img/header-bg.jpg') top left; border-bottom: 1px solid rgba(64,56,52,0.4); box-shadow: 0 0.1rem 0.1rem rgba(49,20,0,0.3); }
@@ -75,8 +75,6 @@ h4{font-size:1.2rem}
 .responsive-langmenu label { padding: .425rem .7rem;}
 .responsive-langmenu input[type=checkbox]:checked+ul { display: block;}
 .responsive-langmenu ul { display: none; column-count: 4; margin: 0 0 1rem 0; border: 1px solid #cecece; border-radius: 5px; box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.1); }
-@media (max-width: 1100px) { .responsive-langmenu ul { column-count: 3; }}
-@media (max-width: 700px) { .responsive-langmenu ul { column-count: 2; }}
 .responsive-langmenu label, .responsive-langmenu ul li {display: block; margin-left: 0}
 .responsive-langmenu ul li:hover {background-color: #ddd;}
 .responsive-langmenu ul li a {display: block;padding: .425rem .7rem;}
@@ -88,7 +86,7 @@ h4{font-size:1.2rem}
 /* HOMEPAGE */
 /* cover */
 .cover { height: 400px; border-radius: 0.4rem; margin-bottom: 0.3rem; background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat bottom left; }
-.cover h1 { color: #222228; margin: 0.4rem; line-height: 2.8rem; font-size: 2.4rem; text-align:right; text-shadow: 0 0 4px rgba(255,255,255,0.5), 0 0 2px rgba(255,255,255,0.7);}
+.cover h1 { color: #222228; margin: 0.4rem 0.4rem 1.4rem 0.4rem; line-height: 2.8rem; font-size: 2.4rem; text-align:right; text-shadow: 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF; }
 .homepage-title { font-family: 'ComicSpice', cursive; font-size:1.5rem;}
 .covertextoverlay { position: absolute; right: 5.5rem; top: 1.8rem; text-align:right; }
 #supportmebox { position: absolute; right: -1.5rem; top: 9.4rem; color: #222; width: 450px; height: 170px; text-align: center; border-radius: 0.4rem; }
@@ -315,67 +313,6 @@ a:hover { text-decoration:none;}
 .banner:hover { border: solid 1px #258fd6; }
 .bannertext { font-family: 'ComicSpice'; color: #FFF; text-shadow: 0 2px 2px #000; margin: 0.4rem; font-size: 2.4rem; }
 
-/* RESPONSIVE RULES*/
-/* mini laptop */
-@media (max-width: 1255px) {
-.menu.expanded li a { font-size: 1.3rem; padding: 5px 5px 5px 5px; }
-}
-
-/* tablet horyzontal: and also burger menu theme */
-@media (max-width: 1023px) {
-.cover h1 { font-size: 2.2rem; }
-.menu.expanded li a { width: 200px; font-size: 1.8rem; margin: 1rem auto 1rem auto; border: 3px solid #ACA497; background-color: white; border-radius: 0.4rem; }
-.menu.expanded li a:hover { border: 3px solid #5A4F40; background-color: white; }
-.menu.expanded li.active a { border: 3px solid orange; background-color: white; }
-.menu.expanded li.active a:hover { border: 3px solid orange; background-color: white; }
-}
-
-/* tablet vertical */
-@media (max-width: 900px) {
-input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
-.cover h1 { position: absolute; top: 1rem; right: 0; font-size: 2rem; width: 420px; }
-.cover { background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 11% 80%; text-align: right;}
-.moreposts { text-align: center; margin: 1rem 0 0 0; }
-.moreinfobutton {position: absolute; top: 200px; right: 0; width: 180px; }
-.communityblock h3{ font-size: 1.6rem; }
-.communitybutton {font-size: 1rem; }
-.communitybutton a { display:inline-block; min-width: 100%;}
-}
-
-/* small devices */
-@media (max-width: 700px) {
-.cover { background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 15% 80%; }
-.cover h1 { font-size: 1.8rem; margin: 0.3rem 0 0.4rem 0; width: 380px; }
-.covertextoverlay { right: 1.3rem;}
-.communitysocket { min-height: 550px;}
-.communityblock { min-height: 550px;}
-}
-
-@media (max-width: 770px) {
-.thumbnail, .thumbnail img {width: 100%;}
-}
-
-/* vertical smartphone */
-@media (max-width: 500px) {
-.percentdomain {width:295px;}
-.cover h1 { font-size: 1.48rem; margin: 0.3rem 0 1.1rem 0; width: 300px; }
-.bigbuttonpatreon { min-width: 280px; height: 72px; font-size: 1.4rem; background: #F96854 url('../img/logo-patreon.svg') no-repeat 80px 24px; background-size: 42px 42px; }
-#supportmebox {width: 380px; right: -4,2rem;}
-.alternativesbutton {line-height: 2.6rem;}
-#moreinfobox {top: 24rem; right: 6.5rem;}
-/* Comments */
-.singlecom { padding: 0.5rem 0; text-align: justify; }
-.com_content { padding-right:0.5rem; }
-.admin { background-color: #F5F9FC; }
-.level-0 {margin-left: 0; border-top: solid 1px #EEE;}
-.level-1 {margin-left: 1.5rem; border-left: double 5px #F5F9FC; }
-.level-2 {margin-left: 1.5rem; border-left: double 5px #F5F9FC; }
-.level-3 {margin-left: 1.5rem; border-left: double 5px #F5F9FC; }
-.level-4 {margin-left: 1.5rem; border-left: double 5px #F5F9FC; }
-.level-5,.level-max {margin-left: 1.5rem; border-left: double 5px #F5F9FC; }
-.nbcom {background-color: #258fd6;color: #fff;padding: .2rem .3rem;}
-}
-
 /* footer */
 .footer { color: #3A2619; background: url('../img/header-bg.jpg') center center; border-top: 1px solid rgba(64,56,52,0.1); box-shadow: 0 -0.1rem 0.2rem rgba(49,20,0,0.2); padding: 0.6rem 0 1rem 0; }
 .footer img { margin: 0.2rem 0.2rem 0 0; }
@@ -390,3 +327,38 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .pagination span:first-letter,.pagination a:first-letter {text-transform: uppercase;}
 .p_first,.p_prev,.p_current,.p_next,.p_last {display: inline-block;}
 
+/* RESPONSIVE RULES*/
+/* ----------------*/
+/* Tablet mode */
+/* (1023=plucss-med) */
+@media (max-width: 1140px) {
+.cover h1 { font-size: 2.2rem; }
+.menu.expanded li a { font-size: 1.6rem; padding: 2px 0 2px 30px;}
+input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
+.cover h1 { position: absolute; top: 1rem; right: 0; font-size: 2rem; width: 500px; }
+.cover { background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 11% 80%; text-align: right;}
+.moreposts { text-align: center; margin: 1rem 0 0 0; }
+.moreinfobutton {position: absolute; top: 200px; right: 0; width: 180px; }
+.communityblock h3{ font-size: 1.6rem; }
+.communitybutton {font-size: 1rem; }
+.communitybutton a { display:inline-block; min-width: 100%;}
+.responsive-langmenu ul { column-count: 3; }
+}
+/* (767=plucss-sml) Tablet mode: vertical */
+@media (max-width: 767px) {
+.thumbnail, .thumbnail img {width: 100%;}
+.cover { background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 15% 80%; }
+.cover h1 { top: -1rem; font-size: 1.8rem; margin: 0.3rem 0 0.4rem 0; width: 500px;}
+.covertextoverlay { right: 1.3rem;}
+.communitysocket { min-height: 550px;}
+.communityblock { min-height: 550px;}
+.header { background: rgba(255,255,255,0.95) url('../img/header-small.jpg') no-repeat top center ; }
+}
+
+/* Smartphones: vertical */
+@media (max-width: 500px) {
+.container {padding: 0;}
+.cover { background: rgba(225, 231, 227, 1) url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 15% 0; }
+.cover h1 { top: -1.5rem; font-size: 1.4rem; margin: 0.3rem 0 1.1rem 0;}
+.responsive-langmenu ul { column-count: 2; }
+}
