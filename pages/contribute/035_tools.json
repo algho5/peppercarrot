@@ -1,0 +1,11 @@
+{
+   "title": "The tools",
+   "by": "",
+   "img": "0_sources/0ther/misc/low-res/2016-04-13_carrot-updating-or-repairing_by-David-Revoy.jpg",
+   "imgalt": "Carrot repairing things,",
+   "desc": "You'll find on this repository the renderfarm behind Pepper&amp;Carrot and the scripts used to automatize many tasks.",
+   "link": "Tools repo on Gitlab",
+   "linkurl": "https://framagit.org/peppercarrot/tools",
+   "src": "README.md introduction",
+   "srcurl": "https://framagit.org/peppercarrot/tools/blob/master/README.md"
+}

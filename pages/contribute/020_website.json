@@ -1,0 +1,11 @@
+{
+   "title": "The website",
+   "by": "",
+   "img": "0_sources/0ther/misc/low-res/2016-05-28_pepper-and-carrot_fixing-the-project_by-David-Revoy.jpg",
+   "imgalt": "Carrot repairing things,",
+   "desc": "You'll find on this repository the files that display this very website you are reading right now but also a place to report bugs.",
+   "link": "Website repo on Gitlab",
+   "linkurl": "https://framagit.org/peppercarrot/website",
+   "src": "README.md introduction",
+   "srcurl": "https://framagit.org/peppercarrot/website/blob/master/README.md"
+}

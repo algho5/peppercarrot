@@ -1,6 +1,9 @@
 <?php 
 include(dirname(__FILE__).'/header.php'); 
 
+# Setup
+$folder = "pages/contribute";
+
 # Start content
 echo '<div class="container">';
 echo '  <main class="grid" role="main">';
