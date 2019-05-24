@@ -27,7 +27,7 @@ include(dirname(__FILE__).'/header.php');
 ?>
 
 <div class="container">
-	<main class="docall grid" role="main">
+	<main class="main grid" role="main">
 
     <aside class="aside col sml-12 med-4" role="complementary">
       <section class="docmenuitemmenu col sml-12 med-12 lrg-12" style="padding:0 0;">

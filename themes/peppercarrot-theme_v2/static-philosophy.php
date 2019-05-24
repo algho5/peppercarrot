@@ -1,7 +1,6 @@
 <?php include(dirname(__FILE__).'/header.php'); ?>
 <div class="container">
-<main class="main grid" role="main">
-
+  <main class="main grid" role="main">
 		<section class="col sml-12 med-12 lrg-10 sml-centered med-centered lrg-centered">
 
       <div class="grid">

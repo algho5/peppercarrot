@@ -183,7 +183,7 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .sourcebutton { background: #D7EBFA url('../ico/dl_sources.svg') no-repeat center left 10px; padding: 0.6rem 0.7rem 0.6rem 3rem; border-radius: 10px }
 
 /* Share buttons*/
-.share { color: #aaa; }
+.share { color: #aaa; margin-bottom: 1rem;}
 .share a { color: #aaa; background: #FFF url('../ico/share.svg') no-repeat center left 5px;  line-height: 2rem; background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem 0.3rem 22px; border: solid 1px #dedede; border-radius: 10px; }
 .share a:hover { background: #FFF url('../ico/share-hover.svg') no-repeat center left 5px; color: #62A7DC; border: solid 1px #62A7DC;  }
 
@@ -289,7 +289,6 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 ul.menu.tag li a.button{ margin: 0 0 1.2rem 0;}
 
 /* Documentation */
-.docall { max-width:920px; margin: auto; }
 .docbox { position: relative; font-size: 1.02rem; margin: 0 auto;}
 .docbar { background: #C6E1EE;}
 .doctopbuttons { text-align: right; background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border-bottom: solid 1px #D7EBFA;}

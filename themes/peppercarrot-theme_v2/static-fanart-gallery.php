@@ -1,12 +1,13 @@
-<?php include(dirname(__FILE__).'/header.php'); ?>
-<div class="container">
-	<main class="main grid" role="main">
-    <section class="col sml-12 med-12" style="padding: 0 0;">
-      
 <?php 
+include(dirname(__FILE__).'/header.php');
+
+# Start content
+echo '<div class="container">';
+echo '  <main class="main grid" role="main">';
+echo '    <section class="col sml-12" style="padding: 0 0;">';
+
 # Setup
 $pathartworks = '0_sources/0ther/fan-art';
-$lang = $plxShow->getLang('LANGUAGE_ISO_CODE_2_LETTER');
 
 # Count fan-arts
 $fanartcounter = 0;
@@ -20,8 +21,8 @@ $search = glob($pathartworks."/*.jpg");
 # Intro
 echo '<div class="grid"><br/>';
 echo '  <div class="col sml-6 sml-centered sml-text-center">';
-echo ''.$plxShow->Getlang(CONTRIBUTE_FANART).'';
-echo '('.$fanartcounter.' !) <br/><br/>';
+echo '<h2>Fan-Art Gallery</h2>';
+echo ''.$fanartcounter.'! ♥ Thank you! <br/><br/>';
 echo '  </div>';
 echo '</div>';
 
