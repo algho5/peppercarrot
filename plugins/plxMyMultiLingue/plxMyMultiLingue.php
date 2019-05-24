@@ -23,7 +23,17 @@ class plxMyMultiLingue extends plxPlugin {
 
 		# récupération de la langue si présente dans l'url
 		$get = plxUtils::getGets();
-		if(preg_match('/^([a-zA-Z]{2})\/(.*)/', $get, $capture))
+    
+		//if(isset($_COOKIE["plxMyMultiLingue"])) {
+      //$this->lang = $_COOKIE["plxMyMultiLingue"];
+    //} elseif(isset($_SESSION['lang'])) {
+      //$this->lang = $_SESSION['lang'];
+    //} elseif(preg_match('/^([a-zA-Z]{2})\/(.*)/', $get, $capture)) {
+      //$this->lang = $capture[1];
+    //} else {
+      //$this->lang = $default_lang;
+    //}
+    if(preg_match('/^([a-zA-Z]{2})\/(.*)/', $get, $capture))
 			$this->lang = $capture[1];
 		elseif(isset($_SESSION['lang']))
 			$this->lang = $_SESSION['lang'];
@@ -31,6 +41,15 @@ class plxMyMultiLingue extends plxPlugin {
 			$this->lang = $_COOKIE["plxMyMultiLingue"];
 		else
 			$this->lang = $default_lang;
+    
+		//if(preg_match('/^([a-zA-Z]{2})\/(.*)/', $get, $capture))
+		//	$this->lang = $capture[1];
+		//elseif(isset($_SESSION['lang']))
+		//	$this->lang = $_SESSION['lang'];
+		//elseif(isset($_COOKIE["plxMyMultiLingue"]))
+		//	$this->lang = $_COOKIE["plxMyMultiLingue"];
+		//else
+		//	$this->lang = $default_lang;
 
 		# appel du constructeur de la classe plxPlugin (obligatoire)
 		parent::__construct($this->lang);
