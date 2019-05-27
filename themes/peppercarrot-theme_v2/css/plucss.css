@@ -13,6 +13,8 @@
 # ------------------- END LICENSE BLOCK -------------------
 */
 
+/* RESET
+------------------------------ */
 *, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 html { font-size: 93.7%;}
 body { color: #444; font-family: helvetica, arial, sans-serif; line-height: 1.4; margin: 0;}
@@ -20,13 +22,9 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 audio, canvas, progress, video { display: inline-block; vertical-align: baseline;}
 audio:not([controls]) { display: none; height: 0;}
 figure { margin: 0;}
-
-/* TYPOGRAPHY
------------------------------- */
 a { background: transparent; color: #258fd6; text-decoration: none;}
 a:active, a:hover { color: #444; outline: 0; text-decoration: underline;}
 abbr { border-bottom: 1px dotted; cursor: help;}
-address { font-style: normal;}
 b, strong { font-weight: bold;}
 blockquote { font-style: italic;}
 cite:before { content: "— ";}
@@ -49,10 +47,6 @@ small { font-size: .8rem;}
 sub, sup { font-size: .8rem; line-height: 0; position: relative; vertical-align: baseline;}
 sup { top: -0.5rem;}
 sub { bottom: -0.25rem;}
-.text-blue { color: #258fd6;}
-.text-green { color: #239c56;}
-.text-orange { color: #da7418;}
-.text-red { color: #e43d29;}
 ul.inline-list { font-size: 0rem; margin: 1rem 0; padding-left: 0;}
 ul.inline-list li { display: inline-block; list-style-type: none; margin-left: .5rem; font-size: 1rem;}
 ul.inline-list li:first-child { margin-left: 0;}
@@ -71,6 +65,7 @@ tfoot tr:hover, thead tr:hover { background-color: inherit;}
 
 /* FORM
 ------------------------------ */
+/*
 form .col { margin-bottom: 1rem;}
 form.inline-form button, form.inline-form input, form.inline-form label, form.inline-form select, form.inline-form textarea { display: inline-block; width: auto;}
 form .col.label-centered { margin-bottom: 0;}
@@ -98,10 +93,7 @@ button.orange, input[type="button"].orange, input[type="reset"].orange, input[ty
 button.orange:hover, input[type="button"].orange:hover, input[type="reset"].orange:hover, input[type="submit"].orange:hover { background-color: #b46014;}
 button.red, input[type="button"].red, input[type="reset"].red, input[type="submit"].red { background-color: #e43d29; color: #eee;}
 button.red:hover, input[type="button"].red:hover, input[type="reset"].red:hover, input[type="submit"].red:hover { background-color: #bc2818;}
-
-/* IMAGE
------------------------------- */
-img { border: 0; height: auto; max-width: 100%;}
+*/
 
 /* NAVIGATION
 ------------------------------ */
@@ -135,6 +127,7 @@ img { border: 0; height: auto; max-width: 100%;}
 
 /* OTHER COMPONENTS
 ------------------------------ */
+/*
 .gallery { list-style: none; margin-left: -1rem; margin-right: -1rem; overflow: hidden; padding-left: 0;}
 .gallery li { float: left; padding: 0 1rem 1rem 1rem;}
 .alert { margin-bottom: 1rem; padding: 1rem;}
@@ -163,9 +156,11 @@ img { border: 0; height: auto; max-width: 100%;}
 .label { padding: .25rem .4rem;}
 .frame { height: 0; padding-top: 56.25%; position: relative;}
 .frame embed, .frame iframe, .frame object, .frame video { height: 100%; left: 0; position: absolute; top: 0; width: 100%;}
+*/
 
 /* HELPER
 ------------------------------ */
+img { border: 0; height: auto; max-width: 100%;}
 .text-left { text-align: left;}
 .text-center { text-align: center;}
 .text-right { text-align: right;}
