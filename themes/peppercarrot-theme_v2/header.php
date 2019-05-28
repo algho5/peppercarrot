@@ -127,8 +127,8 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
           </div>
           
           <div class="col sml-5 med-3 lrg-2 sml-text-right">
-            <div class="follow"><br/>
-              <a class="donatebutton" href="TODO-DONATEPAGE" title="TODO">
+            <div class="follow button choco"><br/>
+              <a href="TODO-DONATEPAGE" title="TODO">
               ♥ Donate
               <?php // echo $plxShow->Getlang(PATRONAGE_BUTTON); ?>
               </a>

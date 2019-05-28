@@ -25,7 +25,7 @@ if ($lang !== "en" ){
   ask on the Pepper&amp;Carrot channel</a>.
 </p>
 
-<div class="pills">
+<div class="button">
   <a href="http://webchat.freenode.net?channels=%23pepper%26carrot" title="#pepper&amp;Carrot , freenode.net">
     IRC
   </a>
@@ -39,7 +39,8 @@ if ($lang !== "en" ){
     Framateam
   </a>
 </div>
-  
+
+<br/>
 <?php 
 
 echo '  </div>';
@@ -52,31 +53,31 @@ if (!empty($search)){
     $contents = file_get_contents($jsonpath);
     $contents = utf8_encode($contents);
     $get = json_decode($contents); 
-    echo '<div class="communitysocket col sml-6 med-4 lrg-3">';
-    echo '<figure class="communityblock">';
-    echo '<div class="communityblockcontent">';
+    echo '<div class="cardsocket col sml-6 med-4 lrg-3">';
+    echo '<figure class="cardblock">';
+    echo '<div class="cardblockcontent">';
     echo '<h3>'.$get->{'title'}.'</h3>';
     if ($get->{'by'} !== "" ){
-      echo '<span class="communityby">'.$get->{'by'}.'</span>';
+      echo '<span class="cardby">'.$get->{'by'}.'</span>';
     } else {
-      echo '<span class="communityby"><br/></span>';
+      echo '<span class="cardby"><br/></span>';
     }
     
     echo '<a href="'.$get->{'linkurl'}.'"><img src="plugins/vignette/plxthumbnailer.php?src='.$get->{'img'}.'&amp;w=275&amp;h=275&amp;s=1&amp;q=92" alt="'.$get->{'imgalt'}.'"></a><br/>';
     echo '<figcaption>'.$get->{'desc'}.'</figcaption>';
     echo '</div>';
     if ($get->{'src'} !== "" ){
-      echo '<div class="communitylink"><a href="'.$get->{'srcurl'}.'">'.$get->{'src'}.'</a></div>';
+      echo '<div class="cardlink"><a href="'.$get->{'srcurl'}.'">'.$get->{'src'}.'</a></div>';
     } else {
-      echo '<div class="communitylink"><br/></div>';
+      echo '<div class="cardlink"><br/></div>';
     }
     $cleanlink = $get->{'linkurl'};
     if ( substr( $cleanlink, 0, 1 ) === "?" ){
-    echo '<div class="communitybutton"><a href="';
+    echo '<div class="button big"><a href="';
     $plxShow->urlRewrite($cleanlink);
     echo '">'.$get->{'link'}.'</a></div>';
     } else {
-    echo '<div class="communitybutton"><a href="'.$get->{'linkurl'}.'">'.$get->{'link'}.'</a></div>';
+    echo '<div class="button big"><a href="'.$get->{'linkurl'}.'">'.$get->{'link'}.'</a></div>';
     }
     echo '</figure>';
     echo '</div>';

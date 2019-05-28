@@ -1,29 +1,43 @@
 /* Custom theme for peppercarrot.com
  * Copyright (c) 2015 David Revoy,GPL license
- * (http://www.gnu.org/licenses/gpl.html )*/
+ * (http://www.gnu.org/licenses/gpl.html)
+*/
 
-@font-face {
-	font-family: 'PepperCarrot';
-	src: url('../font/PepperCarrot.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
+/* Typo */
+@font-face { font-family: 'PepperCarrot'; src: url('../font/PepperCarrot.woff') format('woff'); font-weight: normal; font-style: normal; }
+body { background-color: #FFFFFF; color: #412813; font-family: ubuntu, arial, sans-serif; }
+a { background: transparent; color: #4f901b; text-decoration: none; }
+a:active, a:hover { color: #444; outline: 0; text-decoration: underline; }
+h1, h2, h3, h4, h5, h6 { font-family: 'PepperCarrot', cursive, sans-serif;}
+h1 { font-size:2.4rem; }
+h2 { font-size:2.0rem; }
+h3 { font-size:1.5rem; margin-top:0.6rem; }
+h4 { font-size:1.2rem }
 
-/* rewrite plucss rules */
-body { background-color: #fff; }
-.button { border-radius: 0.4rem; }
+/* Main style */
+.main {	margin: 56px 0 1rem 0; }
 .containercomic { margin:0 auto; padding-left:1rem; padding-right:1rem; width:100% }
 .menu.expanded li:hover { background-color: rgba(255,255,255,0); }
 .menu.expanded li.active:hover { background-color: rgba(255,255,255,0); color: rgba(255,255,255,0); }
 
-/* general styles */
-body { color: #232323; font-family: ubuntu, arial, sans-serif; }
-h1, h2, h3, h4, h5, h6 { font-family: 'PepperCarrot', cursive, sans-serif;}
-h1{font-size:2.4rem}
-h2{font-size:2.0rem;}
-h3{font-size:1.5rem; margin-top:0.6rem;}
-h4{font-size:1.2rem}
-.main {	background-color: #fff;	margin: 56px 0 1rem 0;}
+/* buttons */
+.button a { text-decoration: none; color: #FFFFFF!important; background: #98C25C url('../img/grain.png');  margin: 0.2rem 0.3rem; padding: 6px 8px; text-align: center; border-radius: 4px; box-shadow: 0 0 0 2px #98C25C inset, 0 0 0 3px rgba(255,255,255,0.80) inset, 2px 2px 3px 0 rgba(20,0,0,0.50); transition: all 0.2s ease-in;}
+.button a:hover { filter: brightness(1.1); transition: all 0.2s ease-in;}
+/* colors */
+.mandarine a { background-color: orange; box-shadow: 0 0 0 2px orange inset, 0 0 0 3px rgba(255,255,255,0.80) inset, 2px 2px 3px 0 rgba(20,0,0,0.50);}
+.choco a { background-color: #9B7761; box-shadow: 0 0 0 2px #9B7761 inset, 0 0 0 3px rgba(255,255,255,0.55) inset, 2px 2px 3px 0 rgba(20,0,0,0.50);}
+
+/* Cards */
+.cardsocket { min-height: 550px; margin-bottom: 1rem; padding-left: 0.5rem; padding-right: 0.5rem;}
+.cardblock { min-height: 520px; background: #F0ECE9 url('../img/bg.jpg'); width: 100%; text-align: center; padding: 10px; border-radius: 4px; box-shadow: 0 0 0 3px #86675A inset, 0 0 0 6px #F0ECE9 inset, 0 0 0 8px #DEA883 inset, 2px 2px 3px 0 rgba(20,0,0,0.50); }
+.cardblockcontent { min-height: 430px; }
+.cardblock h3{ font-size: 1.8rem; margin-bottom: 0;}
+.cardby { color: #ababab; font-size: 0.90rem;}
+.cardblock img{ width: 95%; box-shadow: 2px 2px 3px 0 rgba(20,0,0,0.50); border: 4px solid #FFFFFF; margin: 0 0 10px 0; transition: all 0.2s ease-in;}
+.cardblock img:hover { filter: brightness(1.1); transition: all 0.2s ease-in; }
+.cardlink {text-align: center; width: 100%; margin-bottom: 0.5rem; color: #ababab; font-size: 0.90rem; }
+.cardblock .button a { display:inline-block; font-size:1.1rem; width: 90%; margin-bottom: 10px;}
+
 
 /* Header */
 .header { z-index: 9; position: fixed; top: 0; width: 100%; background: url('../img/header-bg.jpg') top left; border-bottom: 1px solid rgba(64,56,52,0.4); box-shadow: 0 0.1rem 0.1rem rgba(49,20,0,0.3); }
@@ -33,16 +47,13 @@ h4{font-size:1.2rem}
 
 /* main menu */
 .menu.expanded { margin-top: 5px; }
-.menu.expanded li a { font: normal 1.5rem 'PepperCarrot', cursive; color: #595147; }
-.menu.expanded li a:hover { text-shadow: 1px 0px 20px yellow; color: #604F3E; transition: all 0.2s ease-in; }
-.menu.expanded li.active a, .menu.expanded li.active a:hover { color: #291200; background-color: rgba(0,0,0,0); }
+.menu.expanded li a { font: normal 1.5rem 'PepperCarrot', cursive; color: #6A533B; transition: all 1.2s ease-in; }
+.menu.expanded li a:hover { text-shadow: 1px 0px 30px green, 1px 0px 20px yellow, 1px 0px 10px yellow, 1px 0px 5px white, 1px 0px 5px white; color: #604F3E; transition: all 0.2s ease-in; filter: brightness(1.1); }
+.menu.expanded li.active a, .menu.expanded li.active a:hover { color: #412813; background-color: rgba(0,0,0,0); text-shadow: 1px 0px 30px white, 1px 0px 20px white, 1px 0px 10px white, 1px 0px 5px white, 1px 0px 5px white; transition: all 0.2s ease-in; }
 .responsive-menu label { color: #3A2619; background-color: transparent; font: normal 2rem 'PepperCarrot', cursive; text-align: left;}
 
 /* top-right */
-.follow { line-height: 0.9; margin: 0 10px 0 5px; }
-.follow .donatebutton { display:inline-block; background-color: #9B7761; color: #FFF; margin-bottom: 0.3rem; padding: 8px 12px; border-radius: 5px; box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.1); text-decoration: none; transition: background-color 0.5s ease;}
-.follow .donatebutton:hover	{ background-color: #F3708C; color: #fff; transition: background-color 0.5s ease;}
-.follow .logo {  margin-right: 3px; }
+.follow { line-height: 10px; margin: 12px 10px 0 0; }
 
 /* translation pills */
 .translabar { padding: 0 0.5rem 0 0.5rem; margin: 0.5rem 0; }
@@ -53,21 +64,20 @@ h4{font-size:1.2rem}
 .translabar li.notfull a { }
 .translabar a { text-decoration: none; font-size: 0.9rem; }
 
-/* Translations dropdown CSS menu */
+/* Translations dropdown panel */
 .langmenu { font-size: 0rem; margin: 0; padding-left: 0;}
 .langmenu li { display: inline-block; font-size: 1.1rem; list-style-type: none; margin-left: 1rem; text-align: left; }
-.addtransla { color: green; background-color: #E6FAD7; }
 .langmenu li:first-child { margin-left: 0;}
 .langmenu li.active a {	color: #444;}
 .langmenu.vertical li {	display: block;	margin-left: 0;}
 .langmenu.expanded li {	margin-left: 0;}
-.langmenu.expanded li:hover {	background-color: #D7EBFA;}
-.langmenu.expanded li a {	display: block;	padding: .425rem .7rem;}
-.langmenu.expanded li a:hover {	text-decoration: none;}
+.langmenu.expanded li:hover {	background-color: transparent;}
+.langmenu.expanded li a {	color: #412813; display: block;	padding: .425rem .7rem;}
+.langmenu.expanded li a:hover {	text-decoration: none; text-shadow: 1px 0px 30px green, 1px 0px 20px yellow, 1px 0px 10px yellow, 1px 0px 5px white, 1px 0px 5px white; transition: all 0.2s ease-in;}
 .langmenu.breadcrumb li + li:before, .langmenu.expanded.breadcrumb > li + li a:before { content: "/";}
 .langmenu.breadcrumb li + li:before, .langmenu.expanded.breadcrumb > li + li:before, .langmenu.expanded.breadcrumb > li + li a:before { margin-right: .7rem;}
 .langmenu.expanded.breadcrumb > li + li:before { content: none;}
-.langmenu.expanded li.active a, .langmenu.expanded li.active:hover { background-color: #B4D7EF;	color: #444; }
+.langmenu.expanded li.active a, .langmenu.expanded li.active:hover { background-color: transparent; color: #412813; text-shadow: 1px 0px 30px green, 1px 0px 20px yellow, 1px 0px 10px yellow, 1px 0px 5px white, 1px 0px 5px white; transition: all 0.2s ease-in; }
 /* Language Button */
 .responsive-langmenu label { background-color: #FFF;	color: #1a1a1a;	text-align: right; }
 .translabutton { cursor: pointer; display:inline-block; background-color: #FFF; color: #1a1a1a; border: 1px solid #cecece; margin: 0 -0.7rem 0.3rem 0; padding: 8px 12px; border-radius: 5px; box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.1); text-decoration: none; }
@@ -239,24 +249,10 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 /* ------------------- */
 /* Philosophy page */
 .philosophy { text-align: center; }
-.philosophy h2{ font-size: 2.6rem; }
-.philosophy img{ padding-bottom: 3.8rem; }
-.philosophy a{ color: #E15F6F; text-decoration: underline; }
-.philosophy a:hover { color: #FC7888; }
+.philosophy h2 { font-size: 2.6rem; }
+.philosophy img { padding-bottom: 3.8rem; }
 
-/* Contribute page */
-.pills { padding: 0 0 0 0; margin: 0 0 1.7rem 0; max-width: 1060px }
-.pills a { background-color: #FFF; margin: 0.2rem; padding: 0.3rem 0.4rem; border: solid 1px #D7EBFA; border-radius: 10px; text-decoration: none; font-size: 0.9rem;}
-.communitysocket { min-height: 520px; margin-bottom: 1rem; padding-left: 0.5rem; padding-right: 0.5rem;}
-.communityblock { min-height: 520px; width: 100%; text-align: center; padding: 10px; border: 1px solid #dedede; }
-.communityblockcontent { min-height: 430px; }
-.communityblock h3{ font-size: 2rem; margin-bottom: 0;}
-.communityby { color: #ababab; font-size: 0.90rem;}
-.communityblock img{ margin-top: 10px; border: 1px solid #dedede; border-radius: 5px; }
-.communitylink {text-align: center; width: 100%; margin-bottom: 0.5rem; color: #ababab; font-size: 0.90rem; }
-.communitybutton {text-align: center; font-size: 1.1rem; }
-.communitybutton a { display:inline-block; width: 90%; background-color: #659EBD; color: #FFF; margin-bottom: 0.2rem; padding: 6px 8px 6px 8px; border: solid 1px #659EBD; border-radius: 5px; text-decoration: none; }
-.communitybutton a:hover { background-color: #7dc4ea;}
+
 
 
 /* Sources  */
@@ -339,9 +335,9 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .cover { background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 11% 80%; text-align: right;}
 .moreposts { text-align: center; margin: 1rem 0 0 0; }
 .moreinfobutton {position: absolute; top: 200px; right: 0; width: 180px; }
-.communityblock h3{ font-size: 1.6rem; }
-.communitybutton {font-size: 1rem; }
-.communitybutton a { display:inline-block; min-width: 100%;}
+.cardblock h3{ font-size: 1.6rem; }
+.cardblock .button {font-size: 1rem; }
+.cardblock .button a { display:inline-block; min-width: 100%;}
 .responsive-langmenu ul { column-count: 3; }
 }
 /* (767=plucss-sml) Tablet mode: vertical */
@@ -350,8 +346,8 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .cover { background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 15% 80%; }
 .cover h1 { top: -1rem; font-size: 1.8rem; margin: 0.3rem 0 0.4rem 0; width: 500px;}
 .covertextoverlay { right: 1.3rem;}
-.communitysocket { min-height: 550px;}
-.communityblock { min-height: 550px;}
+.cardsocket { min-height: 550px;}
+.cardblock { min-height: 550px;}
 .header { background: rgba(255,255,255,0.95) url('../img/header-small.jpg') no-repeat top center ; }
 }
 

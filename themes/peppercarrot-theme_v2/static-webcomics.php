@@ -22,8 +22,8 @@ $langlabel = $get->{$lang}->{'local_name'};
             <label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
             <input type="checkbox" id="langmenu">
             <ul class="langmenu expanded">
-            <li><a class="lang addtransla" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
             <?php eval($plxShow->callHook('MyMultiLingueStaticAllLang')) ?>
+            <li class="button"><a class="lang" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
             </ul>
           </div>
         </nav>
@@ -33,7 +33,9 @@ $langlabel = $get->{$lang}->{'local_name'};
         <div class="cover">
           <div class="covertextoverlay">
             <h1><?php $plxShow->lang('HOMEPAGE_BIG_TEXT') ?></h1>
-              <a class="moreinfobutton" href="<?php $plxShow->urlRewrite('?static2/philosophy') ?>" title="<?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?>"><?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?></a>
+              <div class="button mandarine">
+                <a href="<?php $plxShow->urlRewrite('?static2/philosophy') ?>" title="<?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?>"><?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?> <img src="themes/peppercarrot-theme_v2/ico/go.svg"/></a>
+              </div>
           </div>
         </div>
       </section>
@@ -47,7 +49,7 @@ $langlabel = $get->{$lang}->{'local_name'};
             <a href="#art_url" title="#art_title">
               <img class="#translationstatus" src="plugins/vignette/plxthumbnailer.php?src=#episode_vignette&amp;w=400&amp;h=270&amp;s=1&amp;q=92" alt="#art_title" title="#art_title, click to read #translationmessage" >
             </a>
-            <figcaption class="#translationstatus text-center"><a href="#art_url" title="#art_title"><span class="detail">#overlay#art_date</span></a></figcaption>
+            <figcaption class="#translationstatus text-center"><a href="#art_url" title="#art_title"><span class="detail">#overlay</span></a></figcaption>
           </figure>
           ',99,'003', "...", "rsort"))); ?>
           
