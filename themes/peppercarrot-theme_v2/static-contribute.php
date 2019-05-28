@@ -25,7 +25,7 @@ if ($lang !== "en" ){
   ask on the Pepper&amp;Carrot channel</a>.
 </p>
 
-<div class="button">
+<div class="button moka">
   <a href="http://webchat.freenode.net?channels=%23pepper%26carrot" title="#pepper&amp;Carrot , freenode.net">
     IRC
   </a>

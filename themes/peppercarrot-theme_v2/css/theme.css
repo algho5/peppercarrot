@@ -23,9 +23,10 @@ h4 { font-size:1.2rem }
 /* buttons */
 .button a { text-decoration: none; color: #FFFFFF!important; background: #98C25C url('../img/grain.png');  margin: 0.2rem 0.3rem; padding: 6px 8px; text-align: center; border-radius: 4px; box-shadow: 0 0 0 2px #98C25C inset, 0 0 0 3px rgba(255,255,255,0.80) inset, 2px 2px 3px 0 rgba(20,0,0,0.50); transition: all 0.2s ease-in;}
 .button a:hover { filter: brightness(1.1); transition: all 0.2s ease-in;}
-/* colors */
+/* button's colors and variant */
 .mandarine a { background-color: orange; box-shadow: 0 0 0 2px orange inset, 0 0 0 3px rgba(255,255,255,0.80) inset, 2px 2px 3px 0 rgba(20,0,0,0.50);}
 .choco a { background-color: #9B7761; box-shadow: 0 0 0 2px #9B7761 inset, 0 0 0 3px rgba(255,255,255,0.55) inset, 2px 2px 3px 0 rgba(20,0,0,0.50);}
+.moka a { color: #806E5B!important; background-color: #F0ECE9; box-shadow: 0 0 0 2px #F0ECE9 inset, 0 0 0 3px rgba(222,168,131,0.55) inset, 1px 1px 2px 0 rgba(20,0,0,0.50);}
 
 /* Cards */
 .cardsocket { min-height: 550px; margin-bottom: 1rem; padding-left: 0.5rem; padding-right: 0.5rem;}
