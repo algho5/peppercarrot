@@ -74,8 +74,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Subtenata de patronoj</h2>
 
-    <p>La projekto “Pipro kaj Karoĉjo” estas financata nur de ĝiaj patronoj de la tuta mondo.<br/>
-    Ĉiu patrono sendas iomete da mono por ĉiu nov-publikigita rakonteto kaj ricevas agnoskon sube nova bildrakonto.<br/>
+    <p>La projekto “Pipro kaj Karoĉjo” estas financata nur de ĝiaj patronoj de la tuta mondo.
+    Ĉiu patrono sendas iomete da mono por ĉiu nov-publikigita rakonteto kaj ricevas agnoskon sube nova bildrakonto.
     Danke al tiu ĉi sistemo, Pipro kaj Karoĉjo povas esti sendependa kaj por ĉiam restos libera de iuj reklamaĉoj.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -89,17 +89,17 @@ $LANG = array(
     
     <h2>100% senpaga, por ĉiam, neniuj &apos;pag-muroj&apos;</h2>
 
-    <p>Ĉiu enhavo farita de mi pri Pipro kaj Karoĉjo estas senpage disponebla per tiu ĉi retejo al ĉiuj.<br/>
-    Mi respektas vin ĉiujn egale: kaj senmonulojn kaj riĉulojn. Ĉiuj ekstraĵoj faritaj de mi por patronoj ankaŭ estas publikigitaj tie ĉi.<br/>
+    <p>Ĉiu enhavo farita de mi pri Pipro kaj Karoĉjo estas senpage disponebla per tiu ĉi retejo al ĉiuj.
+    Mi respektas vin ĉiujn egale: kaj senmonulojn kaj riĉulojn. Ĉiuj ekstraĵoj faritaj de mi por patronoj ankaŭ estas publikigitaj tie ĉi.
     Pipro kaj Karoĉjo neniam petos vin pri pagi pro ion aŭ postulos pagendan abonon por aliri novan enhavon.</p>
 
         <img alt="ilustraĵo montranta pag-murojn" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Malfermkoda kaj ĉiopermesa</h2>
 
-    <p>Mi volas doni al homoj rajton por kunhavigi, uzi, idigi aŭ eĉ profiti monon per miaj laboraĵoj.<br/>
-    Ĉiuj paĝoj, artaĵoj kaj enhavo estas farita de mi per senpaga/libera malfermkoda programaro en GNU/Linukso kaj ĉiuj fontoj estas disponeblaj en tiu ĉi retejo en la menuo &apos;Fontoj&apos;.<br/>
-    Komerca uzado, tradukoj, fanatikul-artaĵoj, presaĵoj, filmoj, videoludoj, kunhavigado kaj reafiŝado estas laŭdindaj.<br/>
+    <p>Mi volas doni al homoj rajton por kunhavigi, uzi, idigi aŭ eĉ profiti monon per miaj laboraĵoj.
+    Ĉiuj paĝoj, artaĵoj kaj enhavo estas farita de mi per senpaga/libera malfermkoda programaro en GNU/Linukso kaj ĉiuj fontoj estas disponeblaj en tiu ĉi retejo en la menuo &apos;Fontoj&apos;.
+    Komerca uzado, tradukoj, fanatikul-artaĵoj, presaĵoj, filmoj, videoludoj, kunhavigado kaj reafiŝado estas laŭdindaj.
     Vi nur devas agnoski aŭtorecon al kreintoj (artistoj, korektintoj kaj tradukintoj kiuj kontribuis al artaĵo, kiun vi volas uzi), meti ligilon al la permesilo kaj indiki se io estas ŝanĝita. Vi povas fari tion en iu ajn aprobinda maniero, tamen ne sugestu, ke aŭtoroj aprobas vin aŭ vian uzadon.</p>
 
     <div class="philobutton">
@@ -112,16 +112,16 @@ $LANG = array(
 
     <h2>Altkvalita amuzo por ĉiuj, ĉie</h2>
 
-    <p>Pipro kaj Karoĉjo estas komedia/ŝerca retkomikso, kiu taŭgas al ĉiu, de ĉiu aĝo.<br/>
-    Neniu enhavo por plenkreskuloj, sen brutaleco. Libera kaj malfermkoda, Pipro kaj Karoĉjo estas imitinda ekzemplo kiel ŝatindega la libera kulturo povas esti.<br/>
+    <p>Pipro kaj Karoĉjo estas komedia/ŝerca retkomikso, kiu taŭgas al ĉiu, de ĉiu aĝo.
+    Neniu enhavo por plenkreskuloj, sen brutaleco. Libera kaj malfermkoda, Pipro kaj Karoĉjo estas imitinda ekzemplo kiel ŝatindega la libera kulturo povas esti.
     Mi koncentriĝas precipe sur kvalito, ĉar libera kaj malfermkoda kulturo ne devas esti amatoraĉa. Tute kontraŭe.</p>
 
         <img alt="ilustraĵo montranta komiksajn paĝojn flugantaj ĉirkaŭ la mondo" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Ni ŝanĝu la sektoron de bildrakontoj!</h2>
 
-    <p>Sen perantoj inter artisto kaj spektantoj vi pagas malpli kaj mi profitas pli. Vi subtenas min senpere.<br/>
-    Neniu eldonisto/distribuisto/reklamisto povas devigi min ŝanĝi Pipron kaj Karoĉjon por kongrui kun lia aspekto de ‘merkato’.<br/>
+    <p>Sen perantoj inter artisto kaj spektantoj vi pagas malpli kaj mi profitas pli. Vi subtenas min senpere.
+    Neniu eldonisto/distribuisto/reklamisto povas devigi min ŝanĝi Pipron kaj Karoĉjon por kongrui kun lia aspekto de ‘merkato’.
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Ĉu estas eble por ke unu eta sukceso influu la tutan sektoron? Ni provu!</p>
     
 
@@ -133,7 +133,7 @@ $LANG = array(
         </a>
     </div>
 
-    <p>Dankon al vi por (tra)legi! <br/>
+    <p>Dankon al vi por (tra)legi! 
     -David REVOY</p>
 
  ',

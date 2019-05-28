@@ -74,8 +74,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Spiyrany bez patrōnōw</h2>
 
-    <p>Projekt Pepper&amp;Carrot je fundowany bez czytŏczōw ze cołkigo świata.<br/>
-    Kożdy z patrōnōw przelywŏ trochã pijyndzy na nowõ tajlã, za co dostŏwŏ podziynkowanie na kōńcu kożdyj tajle.<br/>
+    <p>Projekt Pepper&amp;Carrot je fundowany bez czytŏczōw ze cołkigo świata.
+    Kożdy z patrōnōw przelywŏ trochã pijyndzy na nowõ tajlã, za co dostŏwŏ podziynkowanie na kōńcu kożdyj tajle.
     Dziynki tymu Pepper&amp;Carrot może być niyznŏleżny i swobodny ôd zmaraszyniŏ ryklamami i marketingym.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -89,20 +89,20 @@ $LANG = array(
 
     <h2>We 100% darmy, bez płacyniŏ</h2>
 
-    <p>Wszyjsko, co tworzã ô Pepper&amp;Carrot, je dostympne sam za darmo i dlŏ wszyjskich.<br/>
-    Mōm reszpekt dlŏ Wŏs wszyjskich: z geldym abo bez. Wszyjske bōnusy dlŏ patrōnōw idzie znojś sam.<br/>
+    <p>Wszyjsko, co tworzã ô Pepper&amp;Carrot, je dostympne sam za darmo i dlŏ wszyjskich.
+    Mōm reszpekt dlŏ Wŏs wszyjskich: z geldym abo bez. Wszyjske bōnusy dlŏ patrōnōw idzie znojś sam.
     Pepper&amp;Carrot nikej niy poprosi Wŏs ô płat abo zaabōniyrowanie, cobyście mogli ôbejzdrzeć nowõ treść.</p>
 
         <img alt="ôbrŏzek płatu" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Ôdewrzōny i liberalny</h2>
 
-    <p>Chcã dŏć ludziom prawo do dzielyniŏ, użytku, budowaniŏ, aji zarŏbianiŏ na robocie, kerõ stworzōłch.<br/>
-    Wszyjske zajty, grafiki i treść były sprŏwiōne w ôdewrzōnym/liberalnym softwerze na GNU/Linuksie.<br/>
-    Źrōdła dostympne sōm tukej, dostyknie ôbrać \'Źrōdła\' z myni. Zachyncōm do użyciŏ kōmercyjnego, przekłŏdu,<br/>
-    tworzyniŏ fanartōw, drukowaniŏ, wyużyciŏ w filmach, szpilach wideo i ladowaniŏ na inksze zajty.<br/>
-    Dostyknie, byście pedzieli, fto je autorami (kōnsztlery, korektōry, tumacze, kerzi mieli swōj wkłŏd w dzieło),<br/>
-    podali link do licyncyje i naporynczyli wkludzōne pōmiany. Możecie zrobić to w kożdy usōndny knif, jak dugo niy sugeruje ôn<br/>
+    <p>Chcã dŏć ludziom prawo do dzielyniŏ, użytku, budowaniŏ, aji zarŏbianiŏ na robocie, kerõ stworzōłch.
+    Wszyjske zajty, grafiki i treść były sprŏwiōne w ôdewrzōnym/liberalnym softwerze na GNU/Linuksie.
+    Źrōdła dostympne sōm tukej, dostyknie ôbrać \'Źrōdła\' z myni. Zachyncōm do użyciŏ kōmercyjnego, przekłŏdu,
+    tworzyniŏ fanartōw, drukowaniŏ, wyużyciŏ w filmach, szpilach wideo i ladowaniŏ na inksze zajty.
+    Dostyknie, byście pedzieli, fto je autorami (kōnsztlery, korektōry, tumacze, kerzi mieli swōj wkłŏd w dzieło),
+    podali link do licyncyje i naporynczyli wkludzōne pōmiany. Możecie zrobić to w kożdy usōndny knif, jak dugo niy sugeruje ôn
     dŏwaniŏ bez licyncjodŏwcy sparciŏ dlŏ Ciebie abo Twojigo knifu wyużyciŏ dzieła.</p>
 
     <div class="philobutton">
@@ -115,16 +115,16 @@ $LANG = array(
 
     <h2>Wysokij jakości szpas dlŏ wszyjskich i wszyndy</h2>
 
-    <p>Pepper&amp;Carrot je uciesznym kōmiksym, przipasowanym do kożdego czytŏcza.<br/>
-    Niy ma w nim treści dlŏ majoryntnych ani gwołtōw. Pepper&amp;Carrot je blank ôdewrzōny, ale je tyż dumnym przikłŏdym,<br/>
+    <p>Pepper&amp;Carrot je uciesznym kōmiksym, przipasowanym do kożdego czytŏcza.
+    Niy ma w nim treści dlŏ majoryntnych ani gwołtōw. Pepper&amp;Carrot je blank ôdewrzōny, ale je tyż dumnym przikłŏdym,
     jak szumne mogōm być darme rzeczy. Skupiōm sie na zwielgij jakości, pōniywŏż darme niy musi ôznŏczać złe abo amatorske. Blank ôpacznie.</p>
 
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Pōdźcie zmiyniymy branżã kōmiksu!</h2>
 
-    <p>Bez zmyńszynie wielości postrzednikōw miyndzy czytŏczami i kōnsztlerym, płacisz mynij, a jŏ dostŏwōm wiyncyj. Spōmŏgŏsz mie dyrekt.<br/>
-    Żŏdyn wydŏwca/dystrybutōr niy może prziginōńć mie do pōmiany Pepper&amp;Carrot, cobych napasowoł go do ôd niygo wizyje&#39;rynku&#39;.<br/>
+    <p>Bez zmyńszynie wielości postrzednikōw miyndzy czytŏczami i kōnsztlerym, płacisz mynij, a jŏ dostŏwōm wiyncyj. Spōmŏgŏsz mie dyrekt.
+    Żŏdyn wydŏwca/dystrybutōr niy może prziginōńć mie do pōmiany Pepper&amp;Carrot, cobych napasowoł go do ôd niygo wizyje&#39;rynku&#39;.
      &nbsp;.&nbsp;.&nbsp;.&nbsp;Czymu jedyn sukces niy miołby pociōngnōńć za sobōm reszty industryje we kryzysie? Ôbejzdrzimy...</p>
 
         <img alt="ôbrŏzek: branża kōmiksu a sparcie patrōnōw" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -135,7 +135,7 @@ $LANG = array(
         </a>
     </div>
 
-    <p>Dziynkujã za czytanie!<br/>
+    <p>Dziynkujã za czytanie!
     -David Revoy</p>
 
  ',

@@ -74,8 +74,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Unterst&uuml;tzt durch F&ouml;rderer</h2>
     
-    <p>Das Pepper&amp;Carrot Projekt wird nur von seinen F&ouml;rderern aus aller Welt finanziert.<br/>
-    Jeder F&ouml;rderer gibt ein bisschen Geld f&uuml;r jede neue Episode, und wird daf&uuml;r am Ende der neuen Episode genannt.<br/>
+    <p>Das Pepper&amp;Carrot Projekt wird nur von seinen F&ouml;rderern aus aller Welt finanziert.
+    Jeder F&ouml;rderer gibt ein bisschen Geld f&uuml;r jede neue Episode, und wird daf&uuml;r am Ende der neuen Episode genannt.
     Durch dieses System kann Pepper&amp;Carrot unabh&auml;ngig bleiben und ohne Werbung oder Verschmutzung durch Marketing auskommen.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -89,18 +89,18 @@ $LANG = array(
     
     <h2>100% dauerhaft kostenlos, keine Paywall</h2>
     
-    <p>Jeder Inhalt, den ich zu Pepper&amp;Carrot produziere, ist auf dieser Webseite f&uuml;r jeden frei verf&uuml;gbar.<br/> 
-    Ich respektiere euch alle gleicherma&szlig;en: mit oder ohne Geld. Alle speziellen Boni, die ich f&uuml;r meine F&ouml;rderer erstelle, werden auch hier ver&ouml;ffentlicht.<br/>
+    <p>Jeder Inhalt, den ich zu Pepper&amp;Carrot produziere, ist auf dieser Webseite f&uuml;r jeden frei verf&uuml;gbar. 
+    Ich respektiere euch alle gleicherma&szlig;en: mit oder ohne Geld. Alle speziellen Boni, die ich f&uuml;r meine F&ouml;rderer erstelle, werden auch hier ver&ouml;ffentlicht.
     Pepper&amp;Carrot wird dich nie dazu auffordern etwas zu bezahlen oder ein Abo abzuschlie&szlig;en, um Zugriff auf neue Inhalte zu bekommen.
     
         <img alt="Illustration einer Paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-Source und permissiv</h2>
     
-    <p>Ich m&ouml;chte den Leuten das Recht geben, das, was ich produziert habe, zu verwenden, zu erweitern und sogar Geld damit zu verdienen.<br/>    
-    Alle Seiten, Kunstwerke und Inhalte wurden mit freier, quelloffener Software unter GNU/Linux <br/>
-    erstellt und alle Quellen sind auf dieser Webseite im &#39;Quellen&#39; Men&uuml; zu finden.<br/>
-    Kommerzielle Verwendung, &Uuml;bersetzungen, Fan-Art, Drucke, Filme, Videospiele, Verteilen und Verbreiten sind erw&uuml;nscht.<br/>
+    <p>Ich m&ouml;chte den Leuten das Recht geben, das, was ich produziert habe, zu verwenden, zu erweitern und sogar Geld damit zu verdienen.    
+    Alle Seiten, Kunstwerke und Inhalte wurden mit freier, quelloffener Software unter GNU/Linux 
+    erstellt und alle Quellen sind auf dieser Webseite im &#39;Quellen&#39; Men&uuml; zu finden.
+    Kommerzielle Verwendung, &Uuml;bersetzungen, Fan-Art, Drucke, Filme, Videospiele, Verteilen und Verbreiten sind erw&uuml;nscht.
     Ihr m&uuml;sst nur meinen Namen - David Revoy - als Autor kenntlich machen.</p>
     
     <div class="philobutton">
@@ -113,17 +113,17 @@ $LANG = array(
 
     <h2>Hochwertige Unterhaltung f&uuml;r jeden, &uuml;berall</h2>
     
-    <p>Pepper&amp;Carrot ist ein lustiger Webcomic f&uuml;r alle, egal welchen Alters.<br/>
+    <p>Pepper&amp;Carrot ist ein lustiger Webcomic f&uuml;r alle, egal welchen Alters.
     
-    Keine Inhalte f&uuml;r Erwachsene, keine Gewalt. Frei und Open-Source, Pepper&amp;Carrot ist ein stolzes Beispiel daf&uuml;r, wie cool freie Kultur sein k&ouml;nnte.<br/> 
+    Keine Inhalte f&uuml;r Erwachsene, keine Gewalt. Frei und Open-Source, Pepper&amp;Carrot ist ein stolzes Beispiel daf&uuml;r, wie cool freie Kultur sein k&ouml;nnte. 
     Ich konzentriere mich sehr auf Qualit&auml;t, denn "frei" und "Open-Source" bedeutet nicht schlecht oder amateurhaft. Ganz im Gegenteil!</p>
 
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Lasst uns die Comic-Industrie ver&auml;ndern!</h2>
     
-    <p>Mit weniger Organisationsaufwand zwischen dem Publikum und dem K&uuml;nstler, bezahlt ihr weniger und ich profitiere mehr. Ihr unterst&uuml;tzt mich direkt.<br/>
-    Kein Redakteur/Verlag/Marketing, keine Modeerscheinung kann mich zwingen, Pepper&amp;Carrot zu ver&auml;ndern, um es ihrer Sicht des Marktes anzupassen.<br/>
+    <p>Mit weniger Organisationsaufwand zwischen dem Publikum und dem K&uuml;nstler, bezahlt ihr weniger und ich profitiere mehr. Ihr unterst&uuml;tzt mich direkt.
+    Kein Redakteur/Verlag/Marketing, keine Modeerscheinung kann mich zwingen, Pepper&amp;Carrot zu ver&auml;ndern, um es ihrer Sicht des Marktes anzupassen.
     ... Warum sollte nicht ein einzelner Erfolg eine Lawine ausl&ouml;sen, die eine ganze Industrie in die Knie zwingt? Lasst es uns versuchen!</p>
     
         <img alt="Illustration: Comic-Industrie VS Patreon-Unterst&uuml;tzung" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -134,7 +134,7 @@ $LANG = array(
         </a> 
     </div>
     
-    <p>Danke f&uuml; die Aufmerksamkeit! <br/>
+    <p>Danke f&uuml; die Aufmerksamkeit! 
     -David Revoy</p>
  
  ',

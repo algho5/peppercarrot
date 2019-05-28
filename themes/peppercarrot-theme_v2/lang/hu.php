@@ -74,8 +74,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Olvasók által támogatott</h2>
     
-    <p>A Paprika&amp;Sárgarépa projektet kizárólag az olvasói támogatják, a világ minden részéről.<br/>
-    Minden pártfogó egy csekély összeggel hozzájárul, amiért cserébe a rész végén megemlítésre kerül.<br/>
+    <p>A Paprika&amp;Sárgarépa projektet kizárólag az olvasói támogatják, a világ minden részéről.
+    Minden pártfogó egy csekély összeggel hozzájárul, amiért cserébe a rész végén megemlítésre kerül.
     Ennek a rendszernek köszönhetően a képregény független maradhat és nem kell reklámokhoz, egyéb marketing-eszközhöz fordulnia.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -89,17 +89,17 @@ $LANG = array(
 
     <h2>100% ingyen, örökké, nincs fizetőfal</h2>
 
-    <p>Minden, amit a Paprika&amp;Sárgarépával kapcsolatban készítek, ezen a weboldalon elérhető ingyen, mindenki számára.<br/>
-    Egyformán tisztelek mindenkit, akár van pénze, akár nincs. Minden extrát, amit a pártfogóknak készítek, itt is közzéteszek.<br/>
+    <p>Minden, amit a Paprika&amp;Sárgarépával kapcsolatban készítek, ezen a weboldalon elérhető ingyen, mindenki számára.
+    Egyformán tisztelek mindenkit, akár van pénze, akár nincs. Minden extrát, amit a pártfogóknak készítek, itt is közzéteszek.
     A Paprika&amp;Sárgarépa sosem fog pénzt, előfizetési díjat kérni a hozzáférésért cserébe.</p>
     
         <img alt="fizetőfalat jelképező illusztráció" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Nyílt forráskódú, megengedő</h2>
     
-    <p>Szeretnék mindenkinek jogot adni, hogy megossza, felhasználja, ráépítsen, vagy akár pénzt is kereshessen a művekkel, amit készítettem.<br/>
-    Minden oldalt, illusztrációt stb., nyílt forráskódú szoftverrel készítettem Gnu/Linux-on, és minden forrás elérhető a weboldalon, a &quot;Forráskód&quot; menüpont alatt.<br/>
-    Mindenkit buzdítok a fordításra, nyomtatásra, filmek, videójátékok, rajongói alkotások készítésére, megosztásra és posztolásra - akár üzleti céllal is.<br/>
+    <p>Szeretnék mindenkinek jogot adni, hogy megossza, felhasználja, ráépítsen, vagy akár pénzt is kereshessen a művekkel, amit készítettem.
+    Minden oldalt, illusztrációt stb., nyílt forráskódú szoftverrel készítettem Gnu/Linux-on, és minden forrás elérhető a weboldalon, a &quot;Forráskód&quot; menüpont alatt.
+    Mindenkit buzdítok a fordításra, nyomtatásra, filmek, videójátékok, rajongói alkotások készítésére, megosztásra és posztolásra - akár üzleti céllal is.
     Mindössze a nevemet, mint szerzőt kell megemlítened: David Revoy.</p>
     
     <div class="philobutton">
@@ -112,16 +112,16 @@ $LANG = array(
 
     <h2>Minőségi szórakoztatás mindenkinek, mindenhol</h2>
     
-    <p>A Paprika&amp;Sárgarépa egy humoros képregény minden korosztály számára.<br/>
-    Nincs benne felnőtt tartalom, sem erőszak. Ingyenesen és nyílt forráskóddal, a Paprika&amp;Sárgarépa egy büszke példája, milyen menő tudna lenni a szabad-kultúra.<br/>
+    <p>A Paprika&amp;Sárgarépa egy humoros képregény minden korosztály számára.
+    Nincs benne felnőtt tartalom, sem erőszak. Ingyenesen és nyílt forráskóddal, a Paprika&amp;Sárgarépa egy büszke példája, milyen menő tudna lenni a szabad-kultúra.
     Nagy hangsúlyt helyezek a minőségre, mert az ingyenes és nyílt forrású nem jelenti azt, hogy rossz vagy amatőr. Pont ellenkezőleg.</p>
     
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Változtassuk meg a képregényipart!</h2>
     
-    <p>Ha kevesebb a közvetítő a közönség és a művész között, Te is kevesebbet fizetsz és én is jobban járok. Közvetlenül támogatsz.<br/>
-    Semmilyen kiadó/viszonteladó/marketing/divat nem tud meggyőzni, hogy a képregényt az piacról kialakított képükhöz igazítsam.<br/>
+    <p>Ha kevesebb a közvetítő a közönség és a művész között, Te is kevesebbet fizetsz és én is jobban járok. Közvetlenül támogatsz.
+    Semmilyen kiadó/viszonteladó/marketing/divat nem tud meggyőzni, hogy a képregényt az piacról kialakított képükhöz igazítsam.
     ...Miért ne tudna egyetlen siker egy lavinát indítani, ami egy krízisben lévő iparágat akár meg is változtathat? Próbáljuk meg!</p>
     
         <img alt="illusztráció: képregényipar VS Patreon támogatás" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -132,7 +132,7 @@ $LANG = array(
         </a> 
     </div>
             
-    <p>Köszönöm, hogy elolvastad!<br/>
+    <p>Köszönöm, hogy elolvastad!
     - David Revoy</p>
  
  ',

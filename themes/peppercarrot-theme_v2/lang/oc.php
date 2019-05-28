@@ -72,9 +72,9 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Finançat per sos mecènas</h2>
 
-    <p>De mecènas del monde finançan lo projècte Pepper&amp;Carrot.<br/>
-    Quin que siá legeire pòt mandar un pichon quicòm per finançar la publicacion d’un episòdi novèl.<br/>
-    Apareisserà dins los remerciaments d’aqueste episòdi. Gràcia a aqueste sistèma, Pepper&amp;Carrot<br/>
+    <p>De mecènas del monde finançan lo projècte Pepper&amp;Carrot.
+    Quin que siá legeire pòt mandar un pichon quicòm per finançar la publicacion d’un episòdi novèl.
+    Apareisserà dins los remerciaments d’aqueste episòdi. Gràcia a aqueste sistèma, Pepper&amp;Carrot
     demòra independent e protegit del monde editorial, de la publicitat e del marketing agressiu.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -89,17 +89,17 @@ $LANG = array(
 
     <h2>100% gratuit, per totjorn</h2>
 
-    <p>Totes los contenguts que crèï al torn e per Pepper&amp;Carrot son sus aqueste site, gratuits e disponibles per totes.<br/>
-    Vos respècti totes al meteis nivèl : amb o sens argent. Totes los bonus que fau pels mecènas son tanben aquí.<br/>
+    <p>Totes los contenguts que crèï al torn e per Pepper&amp;Carrot son sus aqueste site, gratuits e disponibles per totes.
+    Vos respècti totes al meteis nivèl : amb o sens argent. Totes los bonus que fau pels mecènas son tanben aquí.
     Pepper&amp;Carrot vos demandarà pas jamai de pagar qui que siá o de vos marcar enlòc per aver accès al contengut.</p>
 
         <img alt="Illustracion dels peatges del net" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-source e fòrça permissiu</h2>
 
-    <p>Vòli donar als autres lo drech d’utilizar, de cambiar e mai de comercialisar lors projèctes en utilizar Pepper&amp;Carrot.<br/>
-    Totas las paginas, dessenhs e autres contenguts son estats creats amb de logicials liures (Gnu/Linux), e totas las fonts son sus aqueste site (menú  \'Fonts\').<br/>
-    L’utilizacion comerciala, las traduccions, los fan-arts, l’impression, los films, los jòcs-vidèo e lo re-partatge sul net son encoratjats.<br/>
+    <p>Vòli donar als autres lo drech d’utilizar, de cambiar e mai de comercialisar lors projèctes en utilizar Pepper&amp;Carrot.
+    Totas las paginas, dessenhs e autres contenguts son estats creats amb de logicials liures (Gnu/Linux), e totas las fonts son sus aqueste site (menú  \'Fonts\').
+    L’utilizacion comerciala, las traduccions, los fan-arts, l’impression, los films, los jòcs-vidèo e lo re-partatge sul net son encoratjats.
     Vos demandi pas que de mencionar lo(s) autor(s) de las òbras (artistas, correctors, traductors investits dins la creacion de l’òbra), d’integrar un ligam cap a la licéncia e indicar se de modificacions son estadas fachas. Podètz ensenhar aquelas informacions d’un biais rasonable sens indicar que los autors vos sostenon dins lo cambiament de lors òbras.</p>
 
     <div class="philobutton">
@@ -112,17 +112,17 @@ $LANG = array(
 
     <h2>Un divertiment de qualitat, pertot e per totes</h2>
 
-    <p>Pepper&amp;Carrot es un webcomic (una BD d’Internet) umoristica que conven a totes los atges.<br/>
-    Cap d’scèna de violéncia nimai de sexualitat serà publicada aicí. Gratuit e open-source, Pepper&amp;Carrot<br/>
-    vòl èsser un exemple responsable de mèdia liure. Çò important es la qualitat, l’etic e lo<br/>
+    <p>Pepper&amp;Carrot es un webcomic (una BD d’Internet) umoristica que conven a totes los atges.
+    Cap d’scèna de violéncia nimai de sexualitat serà publicada aicí. Gratuit e open-source, Pepper&amp;Carrot
+    vòl èsser un exemple responsable de mèdia liure. Çò important es la qualitat, l’etic e lo
     professionalisme, perque "liure e open-source" non significa pas "pas car e mal fach". Al contrari.</p>
 
         <img alt="Illustracion per totes" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Cambiem l’industria de la BD !</h2>
 
-    <p>Amb mens d’intermediaris entre legeires e autors, tot lo monde es ganhant ; me finançatz dirèctament.<br/>
-    Cap d’editor, distributor o comercial pòt realizar de cambiaments sus Pepper&amp;Carrot per lo conhar dins una casa del \'mercat\'.<br/>
+    <p>Amb mens d’intermediaris entre legeires e autors, tot lo monde es ganhant ; me finançatz dirèctament.
+    Cap d’editor, distributor o comercial pòt realizar de cambiaments sus Pepper&amp;Carrot per lo conhar dins una casa del \'mercat\'.
     ...E perque Pepper&amp;Carrot poiriá pas aviar un cambiament e aital inspirar una industria en crisi ? Ensagem !</p>
 
         <img alt="Illustracion : l’industria de la BD VS finançament per mecenat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -131,7 +131,7 @@ $LANG = array(
         Per solament 1€ per episòdi novèl, venètz mecènas de Pepper&amp;Carrot a partir d’uèi sus <a href="https://www.patreon.com/davidrevoy" title="Per solament 1€ per episòdi novèl, venètz mecènas a partir d’uèi sus Patreon">Patreon</a>, site internacional utilizant lo dòlar US, o autrament sus <a href="https://www.tipeee.com/pepper-carrot" title="Per solament 1€ per episòdi novèl, venètz mecènas a partir d’uèi sus Tipeee">Tipeee</a>, site en francés utilizant l’euro.
     </div>
 
-    <p>Mercé de vòstra atencion,  <br/>
+    <p>Mercé de vòstra atencion,  
     David Revoy</p>
 
  ',

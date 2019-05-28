@@ -72,9 +72,9 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Financé par ses lecteurs</h2>
     
-    <p>Le projet Pepper&amp;Carrot est financé par ses lecteurs venant du monde entier.<br/>
-    Tout lecteur peut envoyer une petite pièce pour mécéner la publication d\'un nouvel épisode.<br/>
-    Il apparaît ensuite dans les remerciements de cet épisode. Grâce à ce système, Pepper&amp;Carrot<br/>
+    <p>Le projet Pepper&amp;Carrot est financé par ses lecteurs venant du monde entier.
+    Tout lecteur peut envoyer une petite pièce pour mécéner la publication d\'un nouvel épisode.
+    Il apparaît ensuite dans les remerciements de cet épisode. Grâce à ce système, Pepper&amp;Carrot
     reste indépendant et protégé du monde éditorial, de la pub et du marketing agressif.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -89,17 +89,17 @@ $LANG = array(
 
     <h2>100% libre, pour toujours</h2>
     
-    <p>Tous les contenus que je crée autour et pour Pepper&amp;Carrot sont sur ce site, libres et disponibles pour tous.<br/>
-    Je vous respecte tous au même niveau : avec ou sans argent. Tous les bonus que je fais pour mes mécènes sont ici également.<br/>
+    <p>Tous les contenus que je crée autour et pour Pepper&amp;Carrot sont sur ce site, libres et disponibles pour tous.
+    Je vous respecte tous au même niveau : avec ou sans argent. Tous les bonus que je fais pour mes mécènes sont ici également.
     Pepper&amp;Carrot ne vous demandera jamais de payer quoi que ce soit ou de s\'inscrire quelque part pour avoir accès au contenu.</p>
     
         <img alt="Illustration représentant les péages du net" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-source et très permissif</h2>
     
-    <p>Je veux donner aux autres le droit d\'utiliser, de changer et même de commercialiser leurs projets utilisant Pepper&amp;Carrot.<br/>
-    Toutes pages, dessins et autres contenus ont été fabriqués avec des logiciels libres (Gnu/Linux), et toutes les sources sont sur ce site (menu  \'Sources\').<br/>
-    L\'utilisation commerciale, les traductions, les fan-arts, l\'impression, les films, les jeux-vidéo et le re-partage sur le net sont encouragés.<br/>
+    <p>Je veux donner aux autres le droit d\'utiliser, de changer et même de commercialiser leurs projets utilisant Pepper&amp;Carrot.
+    Toutes pages, dessins et autres contenus ont été fabriqués avec des logiciels libres (Gnu/Linux), et toutes les sources sont sur ce site (menu  \'Sources\').
+    L\'utilisation commerciale, les traductions, les fan-arts, l\'impression, les films, les jeux-vidéo et le re-partage sur le net sont encouragés.
     Je vous demande seulement de créditer les œuvres de leur(s) auteur(s) respectif(s) (artistes, correcteurs, traducteurs investi(e)s dans la création de l\'œuvre), d\'intégrer un lien vers la licence et indiquer si des modifications ont été effectuées à l\'œuvre. Vous devez indiquer ces informations par tous les moyens raisonnables, sans toutefois suggérer que les auteur(s) vous soutiennent ou soutiennent la façon dont vous avez utilisé leurs œuvres.</p>
     
     <div class="philobutton">
@@ -112,17 +112,17 @@ $LANG = array(
 
     <h2>Un divertissement de qualité, partout et pour tous</h2>
     
-    <p>Pepper&amp;Carrot est un webcomic (une BD sur Internet) humoristique convenant pour tous les âges.<br/>
-    Aucune scène de violence, ni de sexualité ne sera publiée ici. Libre et open-source, Pepper&amp;Carrot<br/>
-    se veut être un exemple responsable de médias libres. L\' accent est mis sur la qualité, l\'éthique et le<br/>
+    <p>Pepper&amp;Carrot est un webcomic (une BD sur Internet) humoristique convenant pour tous les âges.
+    Aucune scène de violence, ni de sexualité ne sera publiée ici. Libre et open-source, Pepper&amp;Carrot
+    se veut être un exemple responsable de médias libres. L\' accent est mis sur la qualité, l\'éthique et le
     professionnalisme, parce que "libre et open-source" ne signifie pas "au rabais ou à l\'arrache". Au contraire.</p>
 
         <img alt="Illustration pour tous" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Changeons l\'industrie de la BD !</h2>
     
-    <p>Avec moins d\'intermédiaires entre lecteurs et auteurs, tout le monde y gagne ; vous me financez directement.<br/>
-    Aucun éditeur, distributeur ou commercial ne peut exercer des changements sur Pepper&amp;Carrot afin de le faire rentrer dans une case du \'marché\'.<br/>
+    <p>Avec moins d\'intermédiaires entre lecteurs et auteurs, tout le monde y gagne ; vous me financez directement.
+    Aucun éditeur, distributeur ou commercial ne peut exercer des changements sur Pepper&amp;Carrot afin de le faire rentrer dans une case du \'marché\'.
     ...Et pourquoi Pepper&amp;Carrot ne pourrait-il pas amorcer un changement et ainsi inspirer une industrie en crise ? Essayons !</p>
     
         <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -131,7 +131,7 @@ $LANG = array(
         Pour seulement 1€ par nouvel épisode, devenez dès aujourd\'hui mécène de Pepper&amp;Carrot sur <a href="https://www.patreon.com/davidrevoy" title="Pour seulement 1$ par nouvel épisode, devenez mécéne aujourdh\'ui sur Patreon">Patreon</a>, site international utilisant le dollar US, ou alternativement sur <a href="https://www.tipeee.com/pepper-carrot" title="Pour seulement 1€ par nouvel épisode, devenez mécéne aujourd\'hui sur Tipeee">Tipeee</a>, site en Français utilisant l\'euro.
     </div>
             
-    <p>Merci pour votre attention,  <br/>
+    <p>Merci pour votre attention,  
     David Revoy</p>
  
  ',

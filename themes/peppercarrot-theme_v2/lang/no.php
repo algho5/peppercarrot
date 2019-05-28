@@ -73,8 +73,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Støttet av sponsorer</h2>
 
-    <p>Pepper&amp;Gulrot er finansiert ene og alene av sponsorer verden over.<br/>
-	Sponsorene sender en liten slant med penger for hver nye episode som blir laget og blir kreditert på slutten av hver episode.<br/>
+    <p>Pepper&amp;Gulrot er finansiert ene og alene av sponsorer verden over.
+	Sponsorene sender en liten slant med penger for hver nye episode som blir laget og blir kreditert på slutten av hver episode.
 	Dette systemet tillater Pepper&amp;Gulrot &aring; v&aelig;re 100 prosent uavhengig uten &aring; måtte ty til reklame eller andre triks som kan
 	ødelegge seriens orginalitet.</p>
 ',
@@ -90,17 +90,17 @@ $LANG = array(
 
     <h2>100% gratis, for alltid, ingen betalingsmur</h2>
 
-    <p>Alt Pepper&amp;gulrot materiale jeg produserer legges ut p&aring; denne nettsiden fritt og tilgjengelig for alle.<br/>
-	Jeg har like mye respekt for dere alle enten dere bidrar eller ikke. Alt ekstramateriale jeg lager for mine sponsorer blir ogs&aring; gjort tilgjengelig her.<br/>
+    <p>Alt Pepper&amp;gulrot materiale jeg produserer legges ut p&aring; denne nettsiden fritt og tilgjengelig for alle.
+	Jeg har like mye respekt for dere alle enten dere bidrar eller ikke. Alt ekstramateriale jeg lager for mine sponsorer blir ogs&aring; gjort tilgjengelig her.
     Pepper&amp;Gulrot kommer aldri til å be deg om hverken penger eller noen form for abonnement for &aring; f&aring; tilgang til nytt innhold.</p>
 
         <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Åpent og givende</h2>
 
-    <p>Jeg ønsker å gi alle full rett til å dele, bruke, endre og til og med tjene penger på materialet jeg har produsert.<br/>
+    <p>Jeg ønsker å gi alle full rett til å dele, bruke, endre og til og med tjene penger på materialet jeg har produsert.
 	Alle sider og alt innhold er laget med fri/libre åpen kildekode programmer på GNU/Linux. Alt kildemateriale er tilgjengelig her, &#39;Kildefiler&#39; i menyen.<br />
-	Jeg oppmuntrer til kommersiel bruk, fan-art, utskrifter, filmer, videospill og videredeling<br/>
+	Jeg oppmuntrer til kommersiel bruk, fan-art, utskrifter, filmer, videospill og videredeling
 	Det eneste jeg vil ha tilbake er kreditering av skaperne (Kunstnere, korrekturlesere og oversettere involvert i materialet du &oslash;nsker &aring; bruke).
 	Legg ved lenke til lisensen og formidle om det har blitt gjort endringer. Dette b&oslash;r gj&oslash;res p&aring;
 	en fornuftig m&aring;te, men uten &aring; antyde at forfatterne har hatt noe med deg eller din bruk &aring; gj&oslash;re.</p>
@@ -116,8 +116,8 @@ $LANG = array(
 
     <h2>Kvalitetsunderholdning for alle over alt</h2>
 
-    <p>Pepper&amp;Gulrot er en humoristisk nettstripe myntet p&aring; voksne og barn i alle aldre.<br/>
-    Fritt for upassende innhold. Den &aring;pne nettstripen Pepper&amp;Gulrot er et stolt eksempel p&aring; hvor bra fri og &aring;pen kultur kan v&aelig;re.<br/>
+    <p>Pepper&amp;Gulrot er en humoristisk nettstripe myntet p&aring; voksne og barn i alle aldre.
+    Fritt for upassende innhold. Den &aring;pne nettstripen Pepper&amp;Gulrot er et stolt eksempel p&aring; hvor bra fri og &aring;pen kultur kan v&aelig;re.
 	
 	Jeg har veldig fokus p&aring; kvalitet for &aring; vise at fritt og åpent ikke betyr d&aring;rlig eller amat&oslash;rmessig. Au contraire.</p>
 
@@ -138,7 +138,7 @@ $LANG = array(
         </a>
     </div>
 
-    <p>Takk for at du tok deg tid til &aring; lese dette! <br/>
+    <p>Takk for at du tok deg tid til &aring; lese dette! 
     -David Revoy</p>
 
  ',

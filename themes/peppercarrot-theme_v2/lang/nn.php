@@ -73,8 +73,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    => '
  <h2>Støtta av lesarane</h2>
 
-    <p>Pepar &amp; Gulrot er utelukkande finansiert av lesarar – frå heile verda.<br/>
-    Kvar sponsor betalar litt for kvar nye episode og vert takka i teksten på slutten av episoden.<br/>
+    <p>Pepar &amp; Gulrot er utelukkande finansiert av lesarar – frå heile verda.
+    Kvar sponsor betalar litt for kvar nye episode og vert takka i teksten på slutten av episoden.
     Denne ordninga gjer at Pepar &amp; Gulrot held fram med å vera uavhengig, og nettstaden treng aldri ha reklame eller andre forstyrrande element.</p>
 ',
 'PHILOSOPHY_DONATION'    => '
@@ -88,17 +88,17 @@ $LANG = array(
 
     <h2>100 % fri, for alltid, og utan nokon betalingsmur</h2>
 
-    <p>Alt innhaldet eg lagar om Pepar &amp; Gulrot på denne nettstaden, er fritt tilgjengeleg for alle.<br/>
-    Eg respekterer alle like mykje, både dykk med og dykk utan pengar. Alle bonusane eg lagar for sponsorane, vert òg lagde ut her.<br/>
+    <p>Alt innhaldet eg lagar om Pepar &amp; Gulrot på denne nettstaden, er fritt tilgjengeleg for alle.
+    Eg respekterer alle like mykje, både dykk med og dykk utan pengar. Alle bonusane eg lagar for sponsorane, vert òg lagde ut her.
     Pepar &amp; Gulrot vil aldri forlanga betaling eller abonnement for tilgang til nytt innhald.</p>
 
         <img alt="Illustrasjon på ein betalingsmur" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open kjeldekode og fri tilgang</h2>
 
-    <p>Eg ynskjer å gje alle retten til å dela, bruka, byggja og til og med tena pengar på det eg har laga.<br/>
-    Alle sidene, teikningane og innhaldet er laga med fri programvare på GNU/Linux, og alle tilhøyrande kjeldefiler er tilgjengelege her på nettstaden (sjå «Kjeldefiler» i menyen).<br/>
-    Eg oppfordrar til kommersiell bruk, omsetjing, teikningar av figurane, trykte bøker, filmar, dataspel og anna vidareformidling.<br/>
+    <p>Eg ynskjer å gje alle retten til å dela, bruka, byggja og til og med tena pengar på det eg har laga.
+    Alle sidene, teikningane og innhaldet er laga med fri programvare på GNU/Linux, og alle tilhøyrande kjeldefiler er tilgjengelege her på nettstaden (sjå «Kjeldefiler» i menyen).
+    Eg oppfordrar til kommersiell bruk, omsetjing, teikningar av figurane, trykte bøker, filmar, dataspel og anna vidareformidling.
     Berre hugs å kreditera opphavspersonane (teiknarar, korrekturlesarar og omsetjarar som har vore med på å laga materialet du ynskjer å bruka), oppgje lenkje/adresse til lisensen og opplys om du sjølv har gjort endringar. Alle rimelege måtar å gjera dette på er greitt, men du kan ikkje gjera det på ein måte som gjer at det verkar som at opphavspersonane støttar deg eller måten du har brukt materialet på.</p>
 
     <div class="philobutton">
@@ -111,16 +111,16 @@ $LANG = array(
 
     <h2>Kvalitets­underhaldning for alle, alle stadar</h2>
 
-    <p>Pepar &amp; Gulrot er ein humoristisk teikneserie for alle, uansett alder.<br/>
-    Teikneserien inneheld aldri vakseninnhald eller vald. Som ein fri teikneserie med opne kjelder er Pepar &amp; Gulrot eit flott eksempel på kor kul fri kultur kan vera.<br/>
+    <p>Pepar &amp; Gulrot er ein humoristisk teikneserie for alle, uansett alder.
+    Teikneserien inneheld aldri vakseninnhald eller vald. Som ein fri teikneserie med opne kjelder er Pepar &amp; Gulrot eit flott eksempel på kor kul fri kultur kan vera.
     Eg legg mykje vekt på kvalitet, etikk og profesjonalitet, sidan fri bruk og opne kjelder ikkje tyder sekunda vare – tvert imot!</p>
 
         <img alt="Illustrasjon: Teikneseriesider som svevar rundt jordkloden" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>La oss endra teikneserie­bransjen!</h2>
 
-    <p>Utan ein mellommann mellom serieskaparen og publikum betalar du mindre og eg får meir. Du støttar meg direkte.<br/>
-    Ikkje noko forlag, distributør, PR-team eller motepoliti kan tvinga meg til å endra Pepar &amp; Gulrot til å passa deira syn på «marknaden».<br/>
+    <p>Utan ein mellommann mellom serieskaparen og publikum betalar du mindre og eg får meir. Du støttar meg direkte.
+    Ikkje noko forlag, distributør, PR-team eller motepoliti kan tvinga meg til å endra Pepar &amp; Gulrot til å passa deira syn på «marknaden».
     Kan ikkje ein einskild suksess forandra ein heil bransje i krise? Me får sjå …</p>
 
         <img alt="Illustrasjon på teikneserie­bransjen versus lesarstøtte" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -131,7 +131,7 @@ $LANG = array(
         </a>
     </div>
 
-    <p>Takk for at du tok deg tid til å lesa dette!<br/>
+    <p>Takk for at du tok deg tid til å lesa dette!
     – David Revoy</p>
 
  ',

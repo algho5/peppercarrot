@@ -74,8 +74,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Podporovaný fanoušky</h2>
 
-    <p>Pepper&amp;Carrot je projekt sponzorovaný jen svými fanoušky z celého světa.<br/>
-    Každý fanoušek na nově vydanou epizodu přispěje 1 dollar a za to bude jeho jméno napsáno v poděkování autora na konci nové epizody.<br/>
+    <p>Pepper&amp;Carrot je projekt sponzorovaný jen svými fanoušky z celého světa.
+    Každý fanoušek na nově vydanou epizodu přispěje 1 dollar a za to bude jeho jméno napsáno v poděkování autora na konci nové epizody.
     Díky tomuto systému může Pepper&amp;Carrot zůstat nezávislým komiksem bez jakýkoliv otravných reklam.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -89,17 +89,17 @@ $LANG = array(
     
     <h2>Navždy 100% zdarma, žádný placený přístup</h2>
 
-    <p>Všechen můj obsah vytvořený k Pepper&amp;Carrot je na těchto stránkách zdarma a všem volně k dostání.<br/>
-    Všech z Vás si vážím stejně; ať už platíte nebo ne. Všechny speciální bonusy, které vytvářím pro přispívající fanoušky, zveřejňuji i tady na stránkách.<br/>
+    <p>Všechen můj obsah vytvořený k Pepper&amp;Carrot je na těchto stránkách zdarma a všem volně k dostání.
+    Všech z Vás si vážím stejně; ať už platíte nebo ne. Všechny speciální bonusy, které vytvářím pro přispívající fanoušky, zveřejňuji i tady na stránkách.
     S Pepper&amp;Carrot po Vás nikdy nebudeme chtít, abyste něco platili nebo si přihlásili předplatné, se kterým byste měli přístup k nejnověším epizodám.</p>
 
         <img alt="Illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-source a liberální</h2>
 
-    <p>Chci dát lidem možnost volně sdílet, používat, stavět a dokonce i na mém díle vydělávat.<br/>
-    Všechny stránky, ilustrace a obsah byl vytvořen za pomoci bezplatných/Open-source programů na GNU/Linux a všechny zdroje jsou tady stránkách, stačí v menu kliknout na Zdroje.<br/>
-    Komerční využití, překlady, tvorba fanoušků, tisk, filmy, videohry, sdílení a rozšiřování je podporováno.<br/>
+    <p>Chci dát lidem možnost volně sdílet, používat, stavět a dokonce i na mém díle vydělávat.
+    Všechny stránky, ilustrace a obsah byl vytvořen za pomoci bezplatných/Open-source programů na GNU/Linux a všechny zdroje jsou tady stránkách, stačí v menu kliknout na Zdroje.
+    Komerční využití, překlady, tvorba fanoušků, tisk, filmy, videohry, sdílení a rozšiřování je podporováno.
     Stačí když přiznáte právoplatná práva autorům (umělci, korektoři, překladatelé zapojení do díla, které chcete použít), přiložíte odkaz na licenci a poukážete na provedené změny. To lze provést jakýmkoli rozumným způsobem, ledaže by sdělení naznačovalo podporu ze strany autora (autorů) Vám anebo Vašemu dílu.</p>
 
     <div class="philobutton">
@@ -112,16 +112,16 @@ $LANG = array(
 
     <h2>Kvalitní zábava pro všechny, ať už jsou kdekoliv</h2>
 
-    <p>Pepper&amp;Carrot je zábavný, humorný komiks vhodný pro všechny, bez ohledu na věk.<br/>
-    Žádné 18+, žádné násilí. Zdarma a open-source. Pepper&amp;Carrot je hrdým příkladem toho, jak skvělé mohou být i věci zadarmo.<br/>
+    <p>Pepper&amp;Carrot je zábavný, humorný komiks vhodný pro všechny, bez ohledu na věk.
+    Žádné 18+, žádné násilí. Zdarma a open-source. Pepper&amp;Carrot je hrdým příkladem toho, jak skvělé mohou být i věci zadarmo.
     Hodně se zaměřuji na kvalitu, protože zdarma a open-source neznamená špatně a amatérsky. Právě naopak.</p>
 
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Společně změníme komiksový průmysl!</h2>
 
-    <p>Bez prostředníka mezi umělcem a čtenáři, Vy zaplatíte méně a já víc získám. Podporujete totiž přímo mě.<br/>
-    Žádný vydavatel/distributor/obchod/trend mě nemůže donutit změnit Pepper&amp;Carrot k jejich potřebám.<br/>
+    <p>Bez prostředníka mezi umělcem a čtenáři, Vy zaplatíte méně a já víc získám. Podporujete totiž přímo mě.
+    Žádný vydavatel/distributor/obchod/trend mě nemůže donutit změnit Pepper&amp;Carrot k jejich potřebám.
     &nbsp;.&nbsp;.&nbsp;.&nbsp;proč by nemohl jediný úspěch započít vlnu podobných projektů? Uvidíme...</p>
     
 
@@ -133,7 +133,7 @@ $LANG = array(
         </a>
     </div>
 
-    <p>Díky za přečtení! <br/>
+    <p>Díky za přečtení! 
     -David Revoy</p>
 
  ',

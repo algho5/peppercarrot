@@ -74,8 +74,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Wspierany przez patronów</h2>
 
-    <p>Projekt Pepper&amp;Carrot jest fundowany przez czytelników z całego świata.<br/>
-    Każdy z patronów przelewa część pieniędzy na nowy odcinek, za co jest umieszczony w napisach końcowych.<br/>
+    <p>Projekt Pepper&amp;Carrot jest fundowany przez czytelników z całego świata.
+    Każdy z patronów przelewa część pieniędzy na nowy odcinek, za co jest umieszczony w napisach końcowych.
     Dzięki temu Pepper&amp;Carrot może być niezależny i wolny od zanieczyszczenia reklamami i marketingiem.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -89,17 +89,17 @@ $LANG = array(
 
     <h2>W 100% darmowy, bez ograniczenia dostępu</h2>
 
-    <p>Wszystko, co tworzę o Pepper&amp;Carrot, jest dostępne na tej stronie za darmo i dla wszystkich.<br/>
-    Szanuję Was wszystkich, niezależnie od kwoty w portfelu. Wszystkie bonusy dla patronów są również dostępne tutaj.<br/>
+    <p>Wszystko, co tworzę o Pepper&amp;Carrot, jest dostępne na tej stronie za darmo i dla wszystkich.
+    Szanuję Was wszystkich, niezależnie od kwoty w portfelu. Wszystkie bonusy dla patronów są również dostępne tutaj.
     Pepper&amp;Carrot nigdy nie zechce od Ciebie zapłaty za dodatkową zawartość.</p>
 
         <img alt="ilustracja ograniczeń dostępu" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Otwarty i liberalny</h2>
 
-    <p>Pragnę dać ludziom prawo do podziału, użytku, budowania, a nawet zarobku na pracy, którą stworzyłem.<br/>
-    Wszystkie strony, grafiki i zawartość zostały wykonane w otwartym/liberalnym oprogramowaniu na GNU/Linuksie. Źródła dostępne są tutaj, wystarczy wybrać &#39;Źródła&#39; z menu.<br/>
-    Zachęcam do użycia komercyjnego, przekładu, tworzenia fan-artów, druku, wykorzystania w filmach, grach wideo i uploadu na inne strony.<br/>
+    <p>Pragnę dać ludziom prawo do podziału, użytku, budowania, a nawet zarobku na pracy, którą stworzyłem.
+    Wszystkie strony, grafiki i zawartość zostały wykonane w otwartym/liberalnym oprogramowaniu na GNU/Linuksie. Źródła dostępne są tutaj, wystarczy wybrać &#39;Źródła&#39; z menu.
+    Zachęcam do użycia komercyjnego, przekładu, tworzenia fan-artów, druku, wykorzystania w filmach, grach wideo i uploadu na inne strony.
     Wystarczy, byś wymienił autorów (artystów, korektorów, tłumaczy, którzy mieli swój wkład w dzieło), podał link do licencji i wskazał wprowadzone zmiany. Możesz zrobić to w każdy rozsądny sposób, o ile nie sugeruje on udzielania przez licencjonodawcę poparcia dla Ciebie lub Twojego sposobu wykorzystania dzieła.</p>
 
     <div class="philobutton">
@@ -112,16 +112,16 @@ $LANG = array(
 
     <h2>Rozrywka wysokiej jakości dla wszystkich, wszędzie</h2>
 
-    <p>Pepper&amp;Carrot jest zabawnym komiksem, dostosowanym do każdego czytelnika.<br/>
-    Nie ma w nim zawartości dla dorosłych ani przemocy. Będąc w pełni otwartym, Pepper&amp;Carrot jest dumnym przykładem, jak świetne mogą być darmowe rzeczy.<br/>
+    <p>Pepper&amp;Carrot jest zabawnym komiksem, dostosowanym do każdego czytelnika.
+    Nie ma w nim zawartości dla dorosłych ani przemocy. Będąc w pełni otwartym, Pepper&amp;Carrot jest dumnym przykładem, jak świetne mogą być darmowe rzeczy.
     Skupiam się na wysokiej jakości, ponieważ darmowe nie musi znaczyć złe lub amatorskie. Wręcz przeciwnie.</p>
 
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Zmieńmy branżę komiksu!</h2>
 
-    <p>Zmniejszając ilość pośredników pomiędzy czytelnikami i artystą, płacisz mniej, a ja zyskuję więcej. Wspierasz mnie bezpośrednio.<br/>
-    Żaden wydawca/dystrybutor nie może zmusić mnie do zmiany Pepper&Carrot, by dopasować go do własnej wizji.<br/>
+    <p>Zmniejszając ilość pośredników pomiędzy czytelnikami i artystą, płacisz mniej, a ja zyskuję więcej. Wspierasz mnie bezpośrednio.
+    Żaden wydawca/dystrybutor nie może zmusić mnie do zmiany Pepper&Carrot, by dopasować go do własnej wizji.
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Niby czemu pojedynczy sukces nie może pociągnąć za sobą reszty? Spróbujmy!</p>
 
         <img alt="ilustracja: branża komiksu VS wsparcie patronów" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -132,7 +132,7 @@ $LANG = array(
         </a>
     </div>
 
-    <p>Dziękuję za uwagę!<br/>
+    <p>Dziękuję za uwagę!
     -David Revoy</p>
 
  ',

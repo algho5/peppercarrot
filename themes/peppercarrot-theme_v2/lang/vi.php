@@ -74,8 +74,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Được giúp đỡ bởi các nhà tài trợ</h2>
     
-    <p>Dự án Hạt Tiêu&amp;Cà Rốt được tài trỡ bởi những người ủng hộ trên khắp thế giới<br/>
-    Những người ủng hộ tài trợ cho những tập truyện mới phát hành, được ghi nhận ở cuối mỗi tập truyện.<br/>
+    <p>Dự án Hạt Tiêu&amp;Cà Rốt được tài trỡ bởi những người ủng hộ trên khắp thế giới
+    Những người ủng hộ tài trợ cho những tập truyện mới phát hành, được ghi nhận ở cuối mỗi tập truyện.
     Cảm ơn hệ thống này, Hạt Tiêu&amp;Cà Rốt có thể hoạt động độc lập và không phải dùng quảng cáo khó chịu.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -89,17 +89,17 @@ $LANG = array(
     
     <h2>100% miễn phí, mãi mãi và không yêu cầu trả tiền</h2>
     
-    <p>Mỗi nội dung liên quan đến Hạt Tiêu&amp;Cà Rốt được đăng trên này, miên phí cho tất cả mọi người<br/>
-    Tôi tôn trọng tất cả các bạn một cách công bằng: dù có tiêng hay không đi chăng nữa. Tất cả những bonus đặc biệt cho các nhà tài trợ sẽ được đăng ở đây.<br/>
+    <p>Mỗi nội dung liên quan đến Hạt Tiêu&amp;Cà Rốt được đăng trên này, miên phí cho tất cả mọi người
+    Tôi tôn trọng tất cả các bạn một cách công bằng: dù có tiêng hay không đi chăng nữa. Tất cả những bonus đặc biệt cho các nhà tài trợ sẽ được đăng ở đây.
     Hạt Tiêu&amp;Cà Rốt sẽ không bao giờ yêu cầu bạn trả tiền hay đăng kí để có thể xem nội dung truyện.</p>
     
         <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Mã nguồn mở và dễ dàng</h2>
     
-    <p>Tôi muốn mọi người có quyền để chia sẻ, sử dụng, xây dựng and và kể cả kiếm lợi nhuận từ tắc phẩm Tôi đã làm ra.<br/>
-    Tất cả các trang, bản vẽ và nội dung được làm vơi các công cụ miễn phí và mã nguồn mở, Software trên Gnu/Linux, và tất cả nguồn được viết trên trang web này, &#39;Source&#39; menu.<br/>
-    Các sử dụng thương mại, bản dịch, fan-arts, in-ấn, phim, video-games, sharing, đăng lại luôn được khuyến khích.<br/>
+    <p>Tôi muốn mọi người có quyền để chia sẻ, sử dụng, xây dựng and và kể cả kiếm lợi nhuận từ tắc phẩm Tôi đã làm ra.
+    Tất cả các trang, bản vẽ và nội dung được làm vơi các công cụ miễn phí và mã nguồn mở, Software trên Gnu/Linux, và tất cả nguồn được viết trên trang web này, &#39;Source&#39; menu.
+    Các sử dụng thương mại, bản dịch, fan-arts, in-ấn, phim, video-games, sharing, đăng lại luôn được khuyến khích.
     Bạn chỉ cần nêu tên tôi - David Revoy - là tác giả của truyện.</p>
     
     <div class="philobutton">
@@ -112,16 +112,16 @@ $LANG = array(
 
     <h2>Sự giải trí cao cho tất cả mọi người, ở khắp mọi nơi</h2>
     
-    <p>Hạt Tiêu&amp;Cà Rốt là một câu truyện giải trí và hài hước cho tất cả mọi người ở mọi lứa tuổi<br/>
-    Không chứa nội dung không phù hợp và bạo lực. Miễn phí và nguồn mở, Hạt Tiêu&amp;Cà Rốt tự hào là một ví dụ về sự tuyệt vời khi sử dụng văn hóa-miễn phí .<br/>
+    <p>Hạt Tiêu&amp;Cà Rốt là một câu truyện giải trí và hài hước cho tất cả mọi người ở mọi lứa tuổi
+    Không chứa nội dung không phù hợp và bạo lực. Miễn phí và nguồn mở, Hạt Tiêu&amp;Cà Rốt tự hào là một ví dụ về sự tuyệt vời khi sử dụng văn hóa-miễn phí .
     Tôi chú ý rất nhiều trên chất lượng, bởi vì sự miễn phí không có nghĩa là tồi tệ cùng với sự nghiệp dư. "Au contraire" (mà ngược lại).</p>
 
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Hãy cùng thay đổi nền công nghiệp truyện tranh</h2>
     
-    <p>Với khoảng cách trung gian ngắn hơn giữa người đọc và tác giả, các bạn phải trả ít hơn và tôi nhận được nhiều hơn. Các bạn giúp đỡ tôi một cách trực tiếp.<br/>
-    Không một nhà xuất bản/ nhà phân phối/ marketing/ nhà thiết kế nào có thể bắt tôi thay đổi Hạt Tiêu&amp;Cà Rốt để phù hợp với &#39;thị trường&#39; trong mắt họ.<br/>
+    <p>Với khoảng cách trung gian ngắn hơn giữa người đọc và tác giả, các bạn phải trả ít hơn và tôi nhận được nhiều hơn. Các bạn giúp đỡ tôi một cách trực tiếp.
+    Không một nhà xuất bản/ nhà phân phối/ marketing/ nhà thiết kế nào có thể bắt tôi thay đổi Hạt Tiêu&amp;Cà Rốt để phù hợp với &#39;thị trường&#39; trong mắt họ.
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Tại sao ta không tạo nên một thành công  và &#39;hiệu ứng tuyết lăn&#39; cho cả một nền công nghiệp? Hãy cùng cố gắng nào!</p>
     
         <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -132,7 +132,7 @@ $LANG = array(
         </a> 
     </div>
             
-    <p>Cảm ơn vì đã đọc! <br/>
+    <p>Cảm ơn vì đã đọc! 
     -David Revoy</p>
  
  ',

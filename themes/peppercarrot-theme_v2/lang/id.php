@@ -74,8 +74,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Didukung oleh sukarelawan!</h2>
     
-    <p>Pepper&amp;Carrot mendapatkan dana dari para sukarelawan (), yang berasal dari seluruh dunia.<br/>
-    Setiap sukarelawan dapat berdonasi untuk setiap episode baru yang akan dibuat dan nama mereka akan dicantumkan pada akhir halaman komik.<br/>
+    <p>Pepper&amp;Carrot mendapatkan dana dari para sukarelawan (), yang berasal dari seluruh dunia.
+    Setiap sukarelawan dapat berdonasi untuk setiap episode baru yang akan dibuat dan nama mereka akan dicantumkan pada akhir halaman komik.
     Pepper&amp;Carrot tidak menggunakan iklan maupun media yang serupa untuk tetap hidup.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -89,17 +89,17 @@ $LANG = array(
 
     <h2>100% gratis, selamanya! Sungguh!</h2>
     
-    <p>Setiap konten Pepper&amp;Carrot yang saya buat di situs ini, semuanya gratis dan terbuka untuk semua orang.<br/>
-    Saya akan bersikap adil: bagi yang melakukan donasi maupun tidak. Bonus spesial akan saya berikan untuk siapa saja.<br/>
+    <p>Setiap konten Pepper&amp;Carrot yang saya buat di situs ini, semuanya gratis dan terbuka untuk semua orang.
+    Saya akan bersikap adil: bagi yang melakukan donasi maupun tidak. Bonus spesial akan saya berikan untuk siapa saja.
     Pepper&amp;Carrot tidak akan memaksa Anda untuk membayar atau berlangganan agar mendapatkan konten terbaru.</p>
     
         <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Sumber terbuka dan bebas</h2>
     
-    <p>Saya ingin memberikan kepada orang hak untuk menyebarluaskan, menggunakan, membuat dan menghasilkan keuntungan dari karya yang saya buat.<br/>
-    Semua halaman, karya dan konten dari situs ini dibuat menggunakan program yang bebas dan gratis melalui Gnu/Linux, dan semua sumber dari situs ini tersedia di menu &#39;Sumber&#39;.<br/>
-    Penggunaan komersial, penerjemahan, karya dari penggemar, mencetak, membuat film, permainan video, berbagi, dan menyebarluaskan akan sangat dihargai.<br/>
+    <p>Saya ingin memberikan kepada orang hak untuk menyebarluaskan, menggunakan, membuat dan menghasilkan keuntungan dari karya yang saya buat.
+    Semua halaman, karya dan konten dari situs ini dibuat menggunakan program yang bebas dan gratis melalui Gnu/Linux, dan semua sumber dari situs ini tersedia di menu &#39;Sumber&#39;.
+    Penggunaan komersial, penerjemahan, karya dari penggemar, mencetak, membuat film, permainan video, berbagi, dan menyebarluaskan akan sangat dihargai.
     Anda hanya menyebutkan pihak yang berperan di dalamnya (pembuat, penerjemah, maupun pengoreksi pada karya yang akan Anda gunakan/bagikan) dengan cara memberikan pranala ke lisensi, dan sebutkan perubahan yang Anda lakukan jika ada perubahan yang berarti. Anda dapat membagikan karya ini dengan wajar, namun hal ini tidak berarti Anda akan mendapatkan dukungan penuh dari pemilik karya.</p>
     
     <div class="philobutton">
@@ -112,16 +112,16 @@ $LANG = array(
 
     <h2>Hiburan berkualitas untuk siapa saja dan di mana saja</h2>
     
-    <p>Pepper&amp;Carrot adalah serial komik humor yang sesuai dengan berbagai rentang usia maupun demografi di seluruh dunia.<br/>
-    Tidak ada konten dewasa, maupun kekerasan. Pepper&amp;Carrot merupakan contoh yang baik, di mana saat ini banyak kultur kebebasan yang bersifat negatif.<br/>
+    <p>Pepper&amp;Carrot adalah serial komik humor yang sesuai dengan berbagai rentang usia maupun demografi di seluruh dunia.
+    Tidak ada konten dewasa, maupun kekerasan. Pepper&amp;Carrot merupakan contoh yang baik, di mana saat ini banyak kultur kebebasan yang bersifat negatif.
     Saya berfokus pada kualitas, karena bukan berarti sesuatu yang bebas dan gratis selalu tidak bagus. Benar bukan?</p>
 
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Saatnya melakukan revolusi dalam dunia percetakan!</h2>
     
-    <p>Dengan tidak adanya jarak antara pembaca dengan seniman/pengarang, Anda membayar sedikit dan saya akan mendapatkan keuntungan. Intinya, Anda mendukung saya secara langsung.<br/>
-    Tidak akan ada pihak percetakan/distributor/penjualan yang akan memaksa saya untuk mengubah Pepper&amp;Carrot sesuai &#39;keinginan mereka atau pasar&#39;.<br/>
+    <p>Dengan tidak adanya jarak antara pembaca dengan seniman/pengarang, Anda membayar sedikit dan saya akan mendapatkan keuntungan. Intinya, Anda mendukung saya secara langsung.
+    Tidak akan ada pihak percetakan/distributor/penjualan yang akan memaksa saya untuk mengubah Pepper&amp;Carrot sesuai &#39;keinginan mereka atau pasar&#39;.
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Perubahan kecil dapat membuat hal yang besar. Mari kita coba!</p>
     
         <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -132,7 +132,7 @@ $LANG = array(
         </a> 
     </div>
             
-    <p>Terima kasih sudah membaca! <br/>
+    <p>Terima kasih sudah membaca! 
     -David Revoy</p>
  
  ',

@@ -73,8 +73,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Financiado por patronos</h2>
     
-    <p>O projeto Pepper&amp;Carrot é financiado somente por seus patronos, que estão espalhados pelo mundo.<br/>
-    Cada patrono envia um pouco de dinheiro e ganha um crédito ao fim de cada novo episódio.<br/>
+    <p>O projeto Pepper&amp;Carrot é financiado somente por seus patronos, que estão espalhados pelo mundo.
+    Cada patrono envia um pouco de dinheiro e ganha um crédito ao fim de cada novo episódio.
     Graças a esse sistema, Pepper&amp;Carrot pode ser independentes e nunca usar propagandas ou poluição de marketing.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -88,17 +88,17 @@ $LANG = array(
 
     <h2>100% grátis, para sempre, sem área restrita para membros</h2>
     
-    <p>Cada conteúdo que eu crio sobre a Pepper&amp;Carrot estão disponíveis nesse website, de forma gratuita e para todos.<br/>
-    Eu respeito todos vocês igualmente: com ou sem dinheiro. Todos os materiais especiais que eu preparo para os meus patronos eu também publico aqui.<br/>
+    <p>Cada conteúdo que eu crio sobre a Pepper&amp;Carrot estão disponíveis nesse website, de forma gratuita e para todos.
+    Eu respeito todos vocês igualmente: com ou sem dinheiro. Todos os materiais especiais que eu preparo para os meus patronos eu também publico aqui.
     Pepper&amp;Carrot nunca vai pedir para você pagar ou assinar algo para ter acesso a algum conteúdo.</p>
     
         <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-source and permissivo</h2>
     
-    <p>Eu quero dar às pessoas o direito de distribuir, usar, contruir e até mesmo ganhar dinheiro com o trabalho que eu criei.<br/>
-    Todas as páginas, artes e conteúdo foram feitos com softwares Open-Sources grátis/livres no Gnu/Linux, e todos os sources/desenhos originais estão neste website, no menu &#39;Source&#39;.<br/>
-    Uso comercial, traduções, fan-arts, impressões, filmes, video-games, compartilhamentos e repostagens são encorajados.<br/>
+    <p>Eu quero dar às pessoas o direito de distribuir, usar, contruir e até mesmo ganhar dinheiro com o trabalho que eu criei.
+    Todas as páginas, artes e conteúdo foram feitos com softwares Open-Sources grátis/livres no Gnu/Linux, e todos os sources/desenhos originais estão neste website, no menu &#39;Source&#39;.
+    Uso comercial, traduções, fan-arts, impressões, filmes, video-games, compartilhamentos e repostagens são encorajados.
     Você só precisa me dar - David Revoy - crédito como autor.</p>
     
     <div class="philobutton">
@@ -111,16 +111,16 @@ $LANG = array(
 
     <h2>Entretenimento de qualidade para qualquer um, em qualquer lugar</h2>
     
-    <p>Pepper&amp;Carrot é uma HQ de comédia/humor apropriada para todos, de toda idade.<br/>
-    Sem conteúdo adulto, sem violência. Open-Sources e grátis/livre, Pepper&amp;Carrot é um exemplo, com orgulho, de quão legal uma cultura livre poderia ser.<br/>
+    <p>Pepper&amp;Carrot é uma HQ de comédia/humor apropriada para todos, de toda idade.
+    Sem conteúdo adulto, sem violência. Open-Sources e grátis/livre, Pepper&amp;Carrot é um exemplo, com orgulho, de quão legal uma cultura livre poderia ser.
     Eu me preocupo bastante com a qualidade porque Open-Sources e grátis/livre não quer dizer ruim ou amador. Au contraire.</p>
 
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Vamos mudar a indústria de quadrinhos!</h2>
     
-    <p>Com menos intermediários entre a audiência e o artista, você paga menos e se beneficia mais. Você pode me apoiar diretamente.<br/>
-    Nenhuma editora/distribuidora/empresa de marketing ou moda pode me forçar a mudar Pepper&amp;Carrot para se encaixar na visão deles de &#39;mercado&#39;.<br/>
+    <p>Com menos intermediários entre a audiência e o artista, você paga menos e se beneficia mais. Você pode me apoiar diretamente.
+    Nenhuma editora/distribuidora/empresa de marketing ou moda pode me forçar a mudar Pepper&amp;Carrot para se encaixar na visão deles de &#39;mercado&#39;.
     ...Porque um sucesso solitário não pode causar uma &#39;avalanche&#39; em toda uma indústria em crise? Vamos tentar!</p>
     
         <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -131,7 +131,7 @@ $LANG = array(
         </a> 
     </div>
     
-    <p>Obrigado por ler! <br/>
+    <p>Obrigado por ler! 
     -David Revoy</p>
  
  ',

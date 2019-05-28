@@ -73,8 +73,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    => '
  <h2>Ondersteund door patrons</h2>
 
-    <p>Het Pepper&amp;Carrot-project wordt alleen ondersteund door zijn patrons, van over de hele wereld.<br/>
-    Alle patrons doneren een klein beetje geld voor iedere nieuwe gepubliceerde aflevering en krijgen credit aan het eind van de aflevering.<br/>
+    <p>Het Pepper&amp;Carrot-project wordt alleen ondersteund door zijn patrons, van over de hele wereld.
+    Alle patrons doneren een klein beetje geld voor iedere nieuwe gepubliceerde aflevering en krijgen credit aan het eind van de aflevering.
     Door dit systeem kan Pepper&amp;Carrot onafhankelijk zijn en nooit advertenties of andere marketing-vervuiling gebruiken.</p>
 ',
 'PHILOSOPHY_DONATION'    => '
@@ -88,18 +88,18 @@ $LANG = array(
 
     <h2>100% vrij, altijd, zonder paywall</h2>
 
-    <p>Alles wat ik produceer van Pepper&amp;Carrot staat op deze website, vrij en voor iedereen beschikbaar.<br/>
-    Ik respecteer iedereen even veel: of je geld geeft of niet. Alle speciale bonussen die ik maak voor mijn patrons zet ik ook hier.<br/>
+    <p>Alles wat ik produceer van Pepper&amp;Carrot staat op deze website, vrij en voor iedereen beschikbaar.
+    Ik respecteer iedereen even veel: of je geld geeft of niet. Alle speciale bonussen die ik maak voor mijn patrons zet ik ook hier.
     Pepper&amp;Carrot zal je nooit vragen om iets te betalen of een abonnement te nemen om toegang te krijgen tot nieuwe dingen.</p>
 
         <img alt="afbeelding die een paywall voorstelt" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-bron en vrij beschikbaar</h2>
 
-    <p>Ik wil mensen het recht geven om mijn werk te delen en gebruiken, en zelfs om er geld aan te verdienen.<br/>
-    Alle pagina\'s, tekeningen en andere inhoud zijn gemaakt met vrije open-bron-software op GNU/Linux,<br/>
-    en alle bronbestanden staan op deze website (het &#39;Bronnen&#39;-menu).<br/>
-    Ik moedig commercieel gebruik, vertalingen, fanart, prints, films, videospellen, delen en reposts aan.<br/>
+    <p>Ik wil mensen het recht geven om mijn werk te delen en gebruiken, en zelfs om er geld aan te verdienen.
+    Alle pagina\'s, tekeningen en andere inhoud zijn gemaakt met vrije open-bron-software op GNU/Linux,
+    en alle bronbestanden staan op deze website (het &#39;Bronnen&#39;-menu).
+    Ik moedig commercieel gebruik, vertalingen, fanart, prints, films, videospellen, delen en reposts aan.
     Het enige wat je hoeft te doen is de auteurs (tekenaars, correctoren en vertalers die zijn betrokken bij de tekeningen die je wil gebruiken) te vermelden, een link naar de licentie te plaatsen, en aan te geven of je wijzigingen hebt aangebracht. Je mag dit doen op iedere redelijke manier, zolang je maar niet suggereert dat de auteurs jou of jouw gebruik onderschrijven of steunen.</p>
 
     <div class="philobutton">
@@ -112,17 +112,17 @@ $LANG = array(
 
     <h2>Kwaliteits-entertainment voor iedereen, overal</h2>
 
-    <p>Pepper&amp;Carrot is een comedy/humor-webcomic voor iedereen, van iedere leeftijd.<br/>
-    Geen expliciete inhoud, geen geweld. Pepper&amp;Carrot is, als vrij beschikbare strip, een trots voorbeeld van hoe mooi vrije cultuur kan zijn.<br/>
+    <p>Pepper&amp;Carrot is een comedy/humor-webcomic voor iedereen, van iedere leeftijd.
+    Geen expliciete inhoud, geen geweld. Pepper&amp;Carrot is, als vrij beschikbare strip, een trots voorbeeld van hoe mooi vrije cultuur kan zijn.
     Ik focus op kwaliteit, want vrij en open-bron betekent niet dat iets slecht of amateuristisch is. Integendeel!</p>
 
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Laten we de stripboeken-industrie veranderen!</h2>
 
-    <p>Met minder tussenstappen tussen het publiek en de tekenaar betaal jij minder en verdien ik meer. Je ondersteunt me direct.<br/>
-    Geen enkele uitgever/distributeur/marketingafdeling/trend kan me dwingen om Pepper&amp;Carrot<br/>
-    aan te passen om aan te sluiten bij hun visie op wat &#39;de markt&#39; wil.<br/>
+    <p>Met minder tussenstappen tussen het publiek en de tekenaar betaal jij minder en verdien ik meer. Je ondersteunt me direct.
+    Geen enkele uitgever/distributeur/marketingafdeling/trend kan me dwingen om Pepper&amp;Carrot
+    aan te passen om aan te sluiten bij hun visie op wat &#39;de markt&#39; wil.
     Een enkel succes kan als een &#39;sneeuwbal&#39; de hele industrie veranderen. Laten we het proberen!</p>
 
         <img alt="afbeelding: de stripboeken-industrie versus ondersteuning door patrons" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -133,7 +133,7 @@ $LANG = array(
         </a>
     </div>
 
-    <p>Bedankt voor het lezen!<br/>
+    <p>Bedankt voor het lezen!
     –David Revoy</p>
 
  ',

@@ -73,8 +73,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Mööglich maakt dör Förderer</h2>
 
-    <p>Dat Pepper&amp;Wuddel-Projekt warrt alleen vun sien Förderer ut de hele Welt finanzeert.<br/>
-    Jede Förderer gifft en beten Geld för jede ne\'e Folg un warrt denn an \'t Enn vun de ne\'e Folg nöömt.<br/>
+    <p>Dat Pepper&amp;Wuddel-Projekt warrt alleen vun sien Förderer ut de hele Welt finanzeert.
+    Jede Förderer gifft en beten Geld för jede ne\'e Folg un warrt denn an \'t Enn vun de ne\'e Folg nöömt.
     Dordör kann Pepper&amp;Wuddel op egen Been stahn un free blieven vun Warf oder driest Marketing.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -88,18 +88,18 @@ $LANG = array(
 
     <h2>100% op duer ümsünst, keen Paywall</h2>
 
-    <p>Allens, wat ik to Pepper&amp;Wuddel maken do, kann jedereen hier op de Websteed free rünnerladen.<br/>
-    Ik behannel ji all glieks: mit oder sünner Geld. All de extra Togaven, de ik för mien Förderer maak, warrt dat ok hier för Jan un Allemann geven.<br/>
+    <p>Allens, wat ik to Pepper&amp;Wuddel maken do, kann jedereen hier op de Websteed free rünnerladen.
+    Ik behannel ji all glieks: mit oder sünner Geld. All de extra Togaven, de ik för mien Förderer maak, warrt dat ok hier för Jan un Allemann geven.
     Pepper&amp;Wuddel warrt nienich vun di verlangen, dat du Geld betahlst oder en Abo afsluttst, üm ne\'e Dingen to sehn.
 
         <img alt="Bild, dat en Paywall verkloort" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open Source un permissiv</h2>
 
-    <p>Ik will Lüüd dat Recht geven, wat se dat, wat ik maakt heff, för ehr egen Projekten bruken köönt, ännern köönt oder sogor Geld dormit verdenen köönt.<br/>
-    All Sieden, Kunstwarken un annern Kraam sünd mit fre\'e Open Source Software op GNU/Linux <br/>
-    maakt worrn un all de Dateien kannst du op de Websteed hier in dat Menü &#39;Originaldateien&#39; finnen.<br/>
-    Geern dörvt ji de Saken kommerziell bruken, översetten, wiedergeven oder Fan-Art, Drucke, Films, Videospelen usw. maken.<br/>
+    <p>Ik will Lüüd dat Recht geven, wat se dat, wat ik maakt heff, för ehr egen Projekten bruken köönt, ännern köönt oder sogor Geld dormit verdenen köönt.
+    All Sieden, Kunstwarken un annern Kraam sünd mit fre\'e Open Source Software op GNU/Linux 
+    maakt worrn un all de Dateien kannst du op de Websteed hier in dat Menü &#39;Originaldateien&#39; finnen.
+    Geern dörvt ji de Saken kommerziell bruken, översetten, wiedergeven oder Fan-Art, Drucke, Films, Videospelen usw. maken.
     Ji mööt man blots mien Naam - David Revoy - as Autor nömen.</p>
 
     <div class="philobutton">
@@ -112,17 +112,17 @@ $LANG = array(
 
     <h2>Veel Pläseer för Jan un Allemann, överall</h2>
 
-    <p>Pepper&amp;Wuddel is en lustigen Webcomic för Jan un Allemann, egal, wo olt.<br/>
+    <p>Pepper&amp;Wuddel is en lustigen Webcomic för Jan un Allemann, egal, wo olt.
 
-    Allens is passlich för junge Lüüd, dat gifft keen Gewalt. Free un Open Source as Pepper&amp;Wuddel is, is dat en stolt Bispill dorför, wo cool fre\'e Kultur ween kunn.<br/>
+    Allens is passlich för junge Lüüd, dat gifft keen Gewalt. Free un Open Source as Pepper&amp;Wuddel is, is dat en stolt Bispill dorför, wo cool fre\'e Kultur ween kunn.
     Qualität is för mi wichtig, denn "free" un "Open Source" heet nich slecht oder amateurhaftig. Ganz in \'t Gegendeel!</p>
 
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Laat uns de Comic-Industrie verännern!</h2>
 
-    <p>Wiel dat weniger Arbeit för de Organisatschoon twischen Lesers un Künstler gifft, betahlt ji weniger un ik verdeen mehr. Ji geevt mi direktemang Stütt.<br/>
-    Keen Redakteur/Verlag/Marketing un keen Mood kann mi dwingen, Pepper&amp;Wuddel to verännern un an &#39;de Markt&#39; antopassen.<br/>
+    <p>Wiel dat weniger Arbeit för de Organisatschoon twischen Lesers un Künstler gifft, betahlt ji weniger un ik verdeen mehr. Ji geevt mi direktemang Stütt.
+    Keen Redakteur/Verlag/Marketing un keen Mood kann mi dwingen, Pepper&amp;Wuddel to verännern un an &#39;de Markt&#39; antopassen.
     ... Worüm schull nich en enkelde Comic, de allerbest löppt, en Lawien in Gang setten, de de hele Industrie in de Knee dwingt? Laat uns dat versöken!</p>
 
         <img alt="Illustration: Comic-Industrie VS Patreon-Unterstützung" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -133,7 +133,7 @@ $LANG = array(
         </a>
     </div>
 
-    <p>Velen Dank för dien Vermaak!<br/>
+    <p>Velen Dank för dien Vermaak!
     -David Revoy</p>
 
  ',

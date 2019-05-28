@@ -74,8 +74,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    =>  '
  <h2>Harpet gant paeroned</h2>
 
-    <p>Pepper&amp;Carrot a zo ur raktres arc\'hantet gant e baeroned nemetken, gant tud o tont eus pep lec\'h er bed.<br/>
-    Ur sammadig arc\'hant a vez roet gant pep paeron evit kement rann nevez embannet, ha lakaet e vez o anv e dibenn ar rann nevez.<br/>
+    <p>Pepper&amp;Carrot a zo ur raktres arc\'hantet gant e baeroned nemetken, gant tud o tont eus pep lec\'h er bed.
+    Ur sammadig arc\'hant a vez roet gant pep paeron evit kement rann nevez embannet, ha lakaet e vez o anv e dibenn ar rann nevez.
     A-drugarez d\'an aozadur-ma&ntilde; ez eo dizalc\'h Pepper&amp;Carrot ha ne vez morse saotret gant bruderezh.</p>
 ',
 'PHILOSOPHY_DONATION'		=> '
@@ -89,16 +89,16 @@ $LANG = array(
 
     <h2>100% digoust, da viken</h2>
 
-    <p>Kement endalc\'had krouet ganin diwar-benn Pepper&amp;Carrot a zo war al lec\'hienn-ma&ntilde;, digoust ha hegerz d\'an holl.<br/>
-    Douja&ntilde; a ran d\'an holl : paour pe pinvidik. An holl endalc\'hado&ugrave; ouzhpenn a ran evit va faeroned a vez embannet ama&ntilde; ivez.<br/>
+    <p>Kement endalc\'had krouet ganin diwar-benn Pepper&amp;Carrot a zo war al lec\'hienn-ma&ntilde;, digoust ha hegerz d\'an holl.
+    Douja&ntilde; a ran d\'an holl : paour pe pinvidik. An holl endalc\'hado&ugrave; ouzhpenn a ran evit va faeroned a vez embannet ama&ntilde; ivez.
     Ne vo morse goulennet paea&ntilde; evit koumananti&ntilde; da Pepper&amp;Carrot pe evit kaout trao&ugrave; nevez.</p>
 
         <img alt="skeudenn o taolenni&ntilde; ur moger-paea&ntilde;" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Mammenn digor hag aotre&uuml;s</h2>
 
-    <p>Fellout a ra din rei&ntilde; ar gwir d\'an dud ranna&ntilde;, implij, sevel ha zoken gounid arc\'hant gant al labour a grouan.<br/>
-    An holl bajenno&ugrave;, brastreso&ugrave; hag endalc\'had a zo savet a-drugarez da vezianto&ugrave; frank war GNU/Linux, hag an holl vammenno&ugrave; a zo war al lec\'hienn-ma&ntilde;, el la&ntilde;ser &#39;Mammenno&ugrave;&#39;. <br/>
+    <p>Fellout a ra din rei&ntilde; ar gwir d\'an dud ranna&ntilde;, implij, sevel ha zoken gounid arc\'hant gant al labour a grouan.
+    An holl bajenno&ugrave;, brastreso&ugrave; hag endalc\'had a zo savet a-drugarez da vezianto&ugrave; frank war GNU/Linux, hag an holl vammenno&ugrave; a zo war al lec\'hienn-ma&ntilde;, el la&ntilde;ser &#39;Mammenno&ugrave;&#39;. 
     Gant ma vo meneget va anv – David Revoy - evel oberour e c\'hallit hardizh ober un implij kenwerzhel, trei&ntilde;, sevel fan-art, moulla&ntilde;, sevel filmo&ugrave;, c\'hoario&ugrave video ha ranna&ntilde; kement ha ma fell deoc\'h.</p>
 
     <div class="philobutton">
@@ -111,16 +111,16 @@ $LANG = array(
 
     <h2>Dudi a-zoare evit an holl, e pep lec\'h</h2>
 
-    <p>Ur webcomic fentus graet evit an holl, a bep oad eo Pepper&amp;Carrot.<br/>
-    Ne vez kavet nep danvez revel na tamm feulster ebet. Digoust ha frank, ur skouer eo Pepper&amp;Carrot eus pegen dreist ha dudius e c\'hall ar sevenadur frank beza&ntilde;.<br/>
+    <p>Ur webcomic fentus graet evit an holl, a bep oad eo Pepper&amp;Carrot.
+    Ne vez kavet nep danvez revel na tamm feulster ebet. Digoust ha frank, ur skouer eo Pepper&amp;Carrot eus pegen dreist ha dudius e c\'hall ar sevenadur frank beza&ntilde;.
     Tremen a ran kalz amzer d\'ober pep tra ervat, rak ne dalvez ket mammenn digor kement ha fall pe amatour dre ret. Er c\'hontrol.</p>
 
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Che&ntilde;chomp penn d\'ar vazh e bed ar banno&ugrave;-treset !</h2>
 
-    <p>Ma vez nebeutoc\'h a hanterourien etre an arzour hag al lennerien e paeit nebeutoc\'h hag e c\'hounezan muioc\'h. Harpa&ntilde; a rit ac\'hanon war-eeun.<br/>
-    Embanner/dasparzher/bruder ebet n\'hall lakaat ac\'hanon da che&ntilde;ch Pepper&amp;Carrot evit ma klotfe muioc\'h gant o doare da sellet ar &#39;marc\'had&#39;.<br/>
+    <p>Ma vez nebeutoc\'h a hanterourien etre an arzour hag al lennerien e paeit nebeutoc\'h hag e c\'hounezan muioc\'h. Harpa&ntilde; a rit ac\'hanon war-eeun.
+    Embanner/dasparzher/bruder ebet n\'hall lakaat ac\'hanon da che&ntilde;ch Pepper&amp;Carrot evit ma klotfe muioc\'h gant o doare da sellet ar &#39;marc\'had&#39;.
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Ha ma c\'hallfe un taol berzh e-unan kemma&ntilde; ur greanterezh en he fezh ? Klaskomp \'ta !</p>
 
         <img alt="skeudenn: greanterezh ar banno&ugrave;-dreset VS skoazell patreon" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
@@ -131,7 +131,7 @@ $LANG = array(
         </a>
     </div>
 
-    <p>Trugarez deoc\'h evit beza&ntilde; lennet ! <br/>
+    <p>Trugarez deoc\'h evit beza&ntilde; lennet ! 
     -David Revoy</p>
 
  ',
