@@ -1,14 +1,4 @@
-<?php include(dirname(__FILE__).'/header.php'); 
-$lang = $plxShow->callHook('MyMultiLingueGetLang');
-
-# Load the langage label
-$lang_ISO = "0_sources/langs.json";
-$lang_ISO_data = file_get_contents($lang_ISO);
-
-$get = json_decode($lang_ISO_data); 
-$langlabel = $get->{$lang}->{'local_name'};
-
-?>
+<?php include(dirname(__FILE__).'/header.php'); ?>
 <div class="container">
 <main class="main grid" role="main">
 
@@ -33,7 +23,7 @@ $langlabel = $get->{$lang}->{'local_name'};
         <div class="cover">
           <div class="covertextoverlay">
             <h1><?php $plxShow->lang('HOMEPAGE_BIG_TEXT') ?></h1>
-              <div class="button mandarine">
+              <div class="button mandarine big">
                 <a href="<?php $plxShow->urlRewrite('?static2/philosophy') ?>" title="<?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?>"><?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?> <img src="themes/peppercarrot-theme_v2/ico/go.svg"/></a>
               </div>
           </div>

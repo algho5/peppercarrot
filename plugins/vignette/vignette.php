@@ -326,29 +326,37 @@ $plxShow = plxShow::getInstance();
   $IDlinkcategory = ltrim($IDcategory, '0');
 
   if($prevUrl) {
-    echo '<div class="col sml-6 med-4 lrg-4">';
-    echo '  <a class="readernavbutton" style="text-align:left;" title="'.$prevTitle.'" href="'.$prevUrl.'">';
-    echo '  <img src="themes/peppercarrot-theme_v2/ico/prev.svg" alt=""/>'.$prevLib.'';
-    echo '  </a>';
+    echo '<div class="col sml-6 med-3 lrg-3">';
+    echo '  <div class="button">';
+    echo '    <a class="readernavbutton" style="text-align:left;" title="'.$prevTitle.'" href="'.$prevUrl.'">';
+    echo '       &nbsp; < &nbsp; '.$prevLib.'';
+    echo '    </a>';
+    echo '  </div>';
     echo '</div>';
   } else {
-    echo '<div class="col sml-6 med-4 lrg-4">';
-    echo '  <a class="readernavbutton off" style="text-align:left;" title="'.$prevTitle.'" href="#">';
-    echo '  <img src="themes/peppercarrot-theme_v2/ico/prev.svg" alt=""/>'.$prevLib.'';
+    echo '<div class="col sml-6 med-3 lrg-3">';
+    echo '  <div class="button moka off">';
+    echo '  <a class="readernavbutton" style="text-align:left;" title="'.$prevTitle.'" href="#">';
+    echo '   &nbsp; < &nbsp; '.$prevLib.'';
     echo '  </a>';
+    echo '  </div>';
     echo '</div>';
   }
   if($nextUrl) {
-    echo '<div class="col sml-6 med-4 lrg-4">';
-    echo '  <a class="readernavbutton" style="text-align:right;" title="'.$nextTitle.'" href="'.$nextUrl.'">';
-    echo '  '.$nextLib.'<img src="themes/peppercarrot-theme_v2/ico/next.svg" alt=""/>';
-    echo '  </a>';
+    echo '<div class="col sml-6 med-3 lrg-3">';
+    echo '  <div class="button">';
+    echo '    <a class="readernavbutton" style="text-align:right;" title="'.$nextTitle.'" href="'.$nextUrl.'">';
+    echo '      '.$nextLib.' &nbsp; > &nbsp;';
+    echo '    </a>';
+    echo '  </div>';
     echo '</div>';
   } else {
-    echo '<div class="col sml-6 med-4 lrg-4">';
-    echo '  <a class="readernavbutton off" style="text-align:right;" title="'.$nextTitle.'" href="#">';
-    echo '  '.$nextLib.'<img src="themes/peppercarrot-theme_v2/ico/next.svg" alt=""/>';
-    echo '  </a>';
+    echo '<div class="col sml-6 med-3 lrg-3">';
+    echo '  <div class="button moka off">';
+    echo '    <a class="readernavbutton" style="text-align:right;" title="'.$nextTitle.'" href="#">';
+    echo '  '.$nextLib.' &nbsp; > &nbsp;';
+    echo '    </a>';
+    echo '  </div>';
     echo '</div>';
   } 
   

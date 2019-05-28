@@ -4,10 +4,12 @@
 <div class="readernav col sml-12 med-12 lrg-12 sml-centered">
   <div class="grid">  
 
-  <div class="col sml-hide sml-12 med-2 lrg-2 med-show">
-    <a class="readernavbutton" style="text-align:left;" href="<?php $plxShow->lastArtList('#art_url',1,3,'','sort'); ?>">
-      <img src="themes/peppercarrot-theme_v2/ico/first.svg" alt=""/> <?php $plxShow->lang('FIRST') ?>
-    </a>
+  <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
+    <div class="button moka">
+      <a class="readernavbutton" style="text-align:left;" href="<?php $plxShow->lastArtList('#art_url',1,3,'','sort'); ?>">
+        &nbsp; « &nbsp; <?php $plxShow->lang('FIRST') ?>
+      </a>
+    </div>
   </div>
 
   <?php 
@@ -16,10 +18,12 @@
   eval($plxShow->callHook("artPrevNext", array(''.$prevep.'',''.$nextep.'')));
   ?>
 
-  <div class="col sml-hide sml-12 med-2 lrg-2 med-show">
-    <a class="readernavbutton" style="text-align:right;" href="<?php $plxShow->lastArtList('#art_url',1,3); ?>">
-      <?php $plxShow->lang('LAST') ?> <img src="themes/peppercarrot-theme_v2/ico/last.svg" alt=""/>
-    </a>
+  <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
+    <div class="button moka">
+      <a class="readernavbutton" style="text-align:right;" href="<?php $plxShow->lastArtList('#art_url',1,3); ?>">
+        <?php $plxShow->lang('LAST') ?>&nbsp; » &nbsp;
+      </a>
+    </div>
   </div>
 
   </div>

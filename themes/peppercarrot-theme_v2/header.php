@@ -141,10 +141,13 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
     <div style="clear:both;"></div>
 
   </header>
+  
+<?php
+$lang = $plxShow->callHook('MyMultiLingueGetLang');
 
-<!--
-<div style="position: fixed; right: 0px; bottom: 0px; background: #FFF8BB; color: #B27951; z-index: 500 !important;">
-    <div class="sml-show med-hide lrg-hide"> SML </div>
-    <div class="sml-hide med-show lrg-hide"> MED </div>
-    <div class="sml-hide med-hide lrg-show"> LRG </div>
-</div>-->
+$lang_ISO = "0_sources/langs.json";
+$lang_ISO_data = file_get_contents($lang_ISO);
+
+$get = json_decode($lang_ISO_data); 
+$langlabel = $get->{$lang}->{'local_name'};
+?>

@@ -1,59 +1,55 @@
-<?php include(dirname(__FILE__) . '/header.php'); ?>
-  <div class="containercomic">
-    <main class="main grid" role="main">
-<section>
-
-<?php
-$lang = $plxShow->defaultLang($echo);
+<?php include(dirname(__FILE__) . '/header.php');
 
   # Have we got a new variable 'option' in URL ? grab and security fix it.
   $UrlAdressOption = htmlspecialchars($_GET["option"]);
   $UrlAdressOption = preg_replace('/[^A-Za-z0-9\._-]/', '', $UrlAdressOption);  
 
   if ($UrlAdressOption == "hd") {
-    $ButtonStatus = 'class="active"';
+    $hdstatus = '';
     $LinkVariable = '&option=low';
     
     } elseif ($UrlAdressOption == "low") {
-    $ButtonStatus = 'class=""';
+    $hdstatus = 'moka';
     $LinkVariable = '&option=hd';
     $_SESSION['SessionMemory'] = "RemoveHD";
     
     } else {
-    $ButtonStatus = 'class=""';
+    $hdstatus = 'moka';
     $LinkVariable = '&option=hd';
   }
   
   # Have we got a preference in memory from previous page?
   if ($_SESSION['SessionMemory'] == "KeepHD") {
-    $ButtonStatus = 'class="active"';
+    $hdstatus = '';
     $LinkVariable = '&option=low';
     
     } elseif ( $_SESSION['SessionMemory'] == "RemoveHD") {
     $memoryoption = 'low';
   }
 ?>
-
-
-<article class="article" role="article" id="post-<?php echo $plxShow->artId(); ?>">
-
-
-
-    
-<!-- Translation webcomic-->
-<div class="translabar comicwidth col sml-12 sml-centered sml-text-center">
-  <ul class="menu" role="toolbar">
-    <?php eval($plxShow->callHook('MyMultiLingueComicLang')) ?>
-    <li <?php echo ''.$ButtonStatus.''; ?>><a id="hdbutton" href="<?php $plxShow->artUrl() ?><?php echo ''.$LinkVariable.''; ?>" class="lang option"><img src="themes/peppercarrot-theme_v2/ico/full.svg" alt=">"/> HD</a></li>
-    <li><a class="lang option" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
-  </ul>
-</div>
+  <div class="containercomic">
+    <main class="main grid" role="main">
+      <section>
+      
+        <article class="article" role="article" id="post-<?php echo $plxShow->artId(); ?>">
+        
+          <div class="col sml-12 sml-text-right">
+            <nav class="nav" role="navigation">
+              <div class="responsive-langmenu">
+                <label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
+                <input type="checkbox" id="langmenu">
+                <ul class="langmenu expanded">
+                <?php eval($plxShow->callHook('MyMultiLingueComicLang')) ?>
+                <li class="button"><a class="lang option" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
+                </ul>
+              </div>
+              <div class="button big <?php echo ''.$hdstatus.''; ?>">
+                <a href="<?php $plxShow->artUrl() ?><?php echo ''.$LinkVariable.''; ?>" class="lang option">HD 2400px</a>
+              </div>
+            </nav>
+          </div>
 
 <?php eval($plxShow->callHook('MyMultiLingueComicHeader')) ?>
-
-
-
-<?php include(dirname(__FILE__).'/navigation.php'); ?>
 
 <!-- Content -->
 <section class="text-center">
