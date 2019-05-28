@@ -84,7 +84,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM' => '
-    <img alt="Illustrasjon på sponsorstøtte" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="Illustrasjon på sponsorstøtte" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100 % fri, for alltid, og utan nokon betalingsmur</h2>
 
@@ -92,7 +92,7 @@ $LANG = array(
     Eg respekterer alle like mykje, både dykk med og dykk utan pengar. Alle bonusane eg lagar for sponsorane, vert òg lagde ut her.<br/>
     Pepar &amp; Gulrot vil aldri forlanga betaling eller abonnement for tilgang til nytt innhald.</p>
 
-        <img alt="Illustrasjon på ein betalingsmur" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="Illustrasjon på ein betalingsmur" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open kjeldekode og fri tilgang</h2>
 
@@ -107,7 +107,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="Illustrasjon på mediefiler med opne kjeldefiler" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="Illustrasjon på mediefiler med opne kjeldefiler" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Kvalitets­underhaldning for alle, alle stadar</h2>
 
@@ -115,7 +115,7 @@ $LANG = array(
     Teikneserien inneheld aldri vakseninnhald eller vald. Som ein fri teikneserie med opne kjelder er Pepar &amp; Gulrot eit flott eksempel på kor kul fri kultur kan vera.<br/>
     Eg legg mykje vekt på kvalitet, etikk og profesjonalitet, sidan fri bruk og opne kjelder ikkje tyder sekunda vare – tvert imot!</p>
 
-        <img alt="Illustrasjon: Teikneseriesider som svevar rundt jordkloden" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="Illustrasjon: Teikneseriesider som svevar rundt jordkloden" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>La oss endra teikneserie­bransjen!</h2>
 
@@ -123,7 +123,7 @@ $LANG = array(
     Ikkje noko forlag, distributør, PR-team eller motepoliti kan tvinga meg til å endra Pepar &amp; Gulrot til å passa deira syn på «marknaden».<br/>
     Kan ikkje ein einskild suksess forandra ein heil bransje i krise? Me får sjå …</p>
 
-        <img alt="Illustrasjon på teikneserie­bransjen versus lesarstøtte" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="Illustrasjon på teikneserie­bransjen versus lesarstøtte" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="For berre 1 USD per episode kan du sponsa Pepar &amp; Gulrot">

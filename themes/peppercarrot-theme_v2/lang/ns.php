@@ -84,7 +84,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="Bild, dat verkloort, wo dat Fördern funkschoneert" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="Bild, dat verkloort, wo dat Fördern funkschoneert" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% op duer ümsünst, keen Paywall</h2>
 
@@ -92,7 +92,7 @@ $LANG = array(
     Ik behannel ji all glieks: mit oder sünner Geld. All de extra Togaven, de ik för mien Förderer maak, warrt dat ok hier för Jan un Allemann geven.<br/>
     Pepper&amp;Wuddel warrt nienich vun di verlangen, dat du Geld betahlst oder en Abo afsluttst, üm ne\'e Dingen to sehn.
 
-        <img alt="Bild, dat en Paywall verkloort" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="Bild, dat en Paywall verkloort" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open Source un permissiv</h2>
 
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="Bild, dat Open Source-Medien verkloort" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="Bild, dat Open Source-Medien verkloort" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Veel Pläseer för Jan un Allemann, överall</h2>
 
@@ -117,7 +117,7 @@ $LANG = array(
     Allens is passlich för junge Lüüd, dat gifft keen Gewalt. Free un Open Source as Pepper&amp;Wuddel is, is dat en stolt Bispill dorför, wo cool fre\'e Kultur ween kunn.<br/>
     Qualität is för mi wichtig, denn "free" un "Open Source" heet nich slecht oder amateurhaftig. Ganz in \'t Gegendeel!</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Laat uns de Comic-Industrie verännern!</h2>
 
@@ -125,7 +125,7 @@ $LANG = array(
     Keen Redakteur/Verlag/Marketing un keen Mood kann mi dwingen, Pepper&amp;Wuddel to verännern un an &#39;de Markt&#39; antopassen.<br/>
     ... Worüm schull nich en enkelde Comic, de allerbest löppt, en Lawien in Gang setten, de de hele Industrie in de Knee dwingt? Laat uns dat versöken!</p>
 
-        <img alt="Illustration: Comic-Industrie VS Patreon-Unterstützung" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="Illustration: Comic-Industrie VS Patreon-Unterstützung" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Warr en Patreon vun Pepper&amp;Wuddel för man blots 1€ per Folg.">

@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="ilustraĵo montranta patronecon" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="ilustraĵo montranta patronecon" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
     
     <h2>100% senpaga, por ĉiam, neniuj &apos;pag-muroj&apos;</h2>
 
@@ -93,7 +93,7 @@ $LANG = array(
     Mi respektas vin ĉiujn egale: kaj senmonulojn kaj riĉulojn. Ĉiuj ekstraĵoj faritaj de mi por patronoj ankaŭ estas publikigitaj tie ĉi.<br/>
     Pipro kaj Karoĉjo neniam petos vin pri pagi pro ion aŭ postulos pagendan abonon por aliri novan enhavon.</p>
 
-        <img alt="ilustraĵo montranta pag-murojn" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="ilustraĵo montranta pag-murojn" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Malfermkoda kaj ĉiopermesa</h2>
 
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="ilustraĵo montranta malfermkodajn komunikilojn" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="ilustraĵo montranta malfermkodajn komunikilojn" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Altkvalita amuzo por ĉiuj, ĉie</h2>
 
@@ -116,7 +116,7 @@ $LANG = array(
     Neniu enhavo por plenkreskuloj, sen brutaleco. Libera kaj malfermkoda, Pipro kaj Karoĉjo estas imitinda ekzemplo kiel ŝatindega la libera kulturo povas esti.<br/>
     Mi koncentriĝas precipe sur kvalito, ĉar libera kaj malfermkoda kulturo ne devas esti amatoraĉa. Tute kontraŭe.</p>
 
-        <img alt="ilustraĵo montranta komiksajn paĝojn flugantaj ĉirkaŭ la mondo" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="ilustraĵo montranta komiksajn paĝojn flugantaj ĉirkaŭ la mondo" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Ni ŝanĝu la sektoron de bildrakontoj!</h2>
 
@@ -125,7 +125,7 @@ $LANG = array(
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Ĉu estas eble por ke unu eta sukceso influu la tutan sektoron? Ni provu!</p>
     
 
-        <img alt="ilustraĵo: sektoro de bildrakontoj kontraŭ subteno de patronoj" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="ilustraĵo: sektoro de bildrakontoj kontraŭ subteno de patronoj" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="nur po 1$ por nova rakonteto, iĝu patrono de Pipro kaj Karoĉjo">

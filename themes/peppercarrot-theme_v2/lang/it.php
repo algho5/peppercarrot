@@ -78,7 +78,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="illustration representing patronage" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% libero, per sempre</h2>
 
@@ -86,7 +86,7 @@ $LANG = array(
     Rispetto tutti alla stessa maniera: con o senza denaro. Anche tutti i regali speciali che faccio per i miei lettori sono inseriti qui.<br/>
     Pepper&amp;Carrot non vi chieder&#224; mai di pagare oppure di sottoscrivere un abbonamento per accedere a nuovi contenuti.</p>
     
-        <img alt="illustration representing paywall" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
     <h2>Open-source e permissivo</h2>
     
     <p>Desidero dare l&#8217;opportunit&#224; alle persone di scambiare, utilizzare, modificare e di commercializzare i loro lavori utilizzando Pepper&amp;Carrot.<br/>
@@ -99,20 +99,20 @@ $LANG = array(
             Licenza: Creative Commons Attribution 4.0
         </a>
     </div>
-        <img alt="illustration representing open-source medias" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="illustration representing open-source medias" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
     <h2>Divertimento di qualit&#224; per chiunque, dovunque</h2>
     
     <p>Pepper&amp;Carrot &#232; un webcomic umoristico adatto per tutte le et&#224;<br/>
     Qui nessuna oscenit&#224; o scena di violenza sar&#224; pubblicata. Libero e open-source, Pepper&amp;Carrot rappresenta un esempio orgoglioso su come pu&#242; essere affascinante la free-culture.<br/>
     Desidero porre l&#39;accento sulla qualit&#224;, l&#39;etica e la professionalit&#224;, in quanto libero e open-source non significa essere brutti oppure dilettanti. Au contraire.</p>
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
     <h2>Spingiamo l&#39;industria del fumetto al cambiamento!</h2>
     
     <p>Essendoci meno intermediari tra il pubblico e l&39#;artista, ne guadagnamo tutti e mi supportate direttamente.<br/>
     Nessun editore/distributore/commerciale possono indurmi a modificare Pepper&amp;Carrot per piegarlo alla loro visione del mercato.<br/>
     &nbsp;.&nbsp;.&nbsp;.&nbsp;e perch&#233; un singolo successo non potrebbe causare un cambiamento e ispirare un settore in crisi? Proviamoci!</p>
     
-        <img alt="illustration: comic book industry VS patreon support" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Diventa un lettore di Pepper&amp;Carrot per solo 1€ per ogni nuovo episodio">

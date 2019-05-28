@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="illustration representing patronage" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% gratis, selamanya! Sungguh!</h2>
     
@@ -93,7 +93,7 @@ $LANG = array(
     Saya akan bersikap adil: bagi yang melakukan donasi maupun tidak. Bonus spesial akan saya berikan untuk siapa saja.<br/>
     Pepper&amp;Carrot tidak akan memaksa Anda untuk membayar atau berlangganan agar mendapatkan konten terbaru.</p>
     
-        <img alt="illustration representing paywall" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Sumber terbuka dan bebas</h2>
     
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="illustration representing open-source medias" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="illustration representing open-source medias" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Hiburan berkualitas untuk siapa saja dan di mana saja</h2>
     
@@ -116,7 +116,7 @@ $LANG = array(
     Tidak ada konten dewasa, maupun kekerasan. Pepper&amp;Carrot merupakan contoh yang baik, di mana saat ini banyak kultur kebebasan yang bersifat negatif.<br/>
     Saya berfokus pada kualitas, karena bukan berarti sesuatu yang bebas dan gratis selalu tidak bagus. Benar bukan?</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Saatnya melakukan revolusi dalam dunia percetakan!</h2>
     
@@ -124,7 +124,7 @@ $LANG = array(
     Tidak akan ada pihak percetakan/distributor/penjualan yang akan memaksa saya untuk mengubah Pepper&amp;Carrot sesuai &#39;keinginan mereka atau pasar&#39;.<br/>
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Perubahan kecil dapat membuat hal yang besar. Mari kita coba!</p>
     
-        <img alt="illustration: comic book industry VS patreon support" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Hanya 1$ untuk setiap episode baru, jadilah donatur melalui Patreon">

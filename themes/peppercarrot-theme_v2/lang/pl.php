@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="ilustracja wsparcia" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="ilustracja wsparcia" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>W 100% darmowy, bez ograniczenia dostępu</h2>
 
@@ -93,7 +93,7 @@ $LANG = array(
     Szanuję Was wszystkich, niezależnie od kwoty w portfelu. Wszystkie bonusy dla patronów są również dostępne tutaj.<br/>
     Pepper&amp;Carrot nigdy nie zechce od Ciebie zapłaty za dodatkową zawartość.</p>
 
-        <img alt="ilustracja ograniczeń dostępu" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="ilustracja ograniczeń dostępu" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Otwarty i liberalny</h2>
 
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="ilustracja obrazująca otwarte media" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="ilustracja obrazująca otwarte media" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Rozrywka wysokiej jakości dla wszystkich, wszędzie</h2>
 
@@ -116,7 +116,7 @@ $LANG = array(
     Nie ma w nim zawartości dla dorosłych ani przemocy. Będąc w pełni otwartym, Pepper&amp;Carrot jest dumnym przykładem, jak świetne mogą być darmowe rzeczy.<br/>
     Skupiam się na wysokiej jakości, ponieważ darmowe nie musi znaczyć złe lub amatorskie. Wręcz przeciwnie.</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Zmieńmy branżę komiksu!</h2>
 
@@ -124,7 +124,7 @@ $LANG = array(
     Żaden wydawca/dystrybutor nie może zmusić mnie do zmiany Pepper&Carrot, by dopasować go do własnej wizji.<br/>
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Niby czemu pojedynczy sukces nie może pociągnąć za sobą reszty? Spróbujmy!</p>
 
-        <img alt="ilustracja: branża komiksu VS wsparcie patronów" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="ilustracja: branża komiksu VS wsparcie patronów" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Wystarczy 1$ na Patreonie, by zostać patronem nowego odcinka">

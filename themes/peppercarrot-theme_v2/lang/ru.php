@@ -84,7 +84,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="иллюстрация:спонсорство" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="иллюстрация:спонсорство" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% бесплатный, навсегда, никакого платного доступа</h2>
     
@@ -92,7 +92,7 @@ $LANG = array(
     Всех вас я уважаю одинаково, с вашими деньгами или без них. Все бонусы, сделанные в благодарность моим спонсорам, я размещаю здесь же.<br/>
     Перчинка и Морквик никогда не попросят вас заплатить за что-либо или получить подписку для доступа к новым выпускам.</p>
     
-        <img alt="иллюстрация: платные сервисы (paywall)" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="иллюстрация: платные сервисы (paywall)" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Открытые исходники и свобода распространения</h2>
     
@@ -107,7 +107,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="иллюстрация: открытые медиа" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="иллюстрация: открытые медиа" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Развлечение для всех и всюду - с упором на качество</h2>
     
@@ -115,7 +115,7 @@ $LANG = array(
     Без насилия, без взрослой тематики. Бесплатный и свободно распространяемый, Pepper&amp;Carrot - замечательный пример того, какой может быть культура с открытым исходным кодом.<br/>
     Я сосредоточусь на качестве, т.к. "бесплатный и свободный" вовсе не значит "плохой" или "любительский". Совсем наоборот.</p>
 
-        <img alt="иллюстрация :странички комикса летающие вокруг света" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="иллюстрация :странички комикса летающие вокруг света" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Пора менять комикс-индустрию!</h2>
     
@@ -123,7 +123,7 @@ $LANG = array(
     Никакие издатели, дистрибьюторы, маркетологи или даже полиция моды не заставят меня изменить Pepper&amp;Carrot под их виденье &#39;рынка&#39;.<br/>
     Может ли одиночный успех загнать снежным комом загнать всю индустрию в кризис? Давайте попробуем...</p>
     
-        <img alt="иллюстрация: комикс-индустрия и поддержка добровольцами" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="иллюстрация: комикс-индустрия и поддержка добровольцами" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Стань спонсором Pepper&amp;Carrot - всего 1$ за новый выпуск">

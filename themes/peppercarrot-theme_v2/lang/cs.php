@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="illustration representing patronage" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
     
     <h2>Navždy 100% zdarma, žádný placený přístup</h2>
 
@@ -93,7 +93,7 @@ $LANG = array(
     Všech z Vás si vážím stejně; ať už platíte nebo ne. Všechny speciální bonusy, které vytvářím pro přispívající fanoušky, zveřejňuji i tady na stránkách.<br/>
     S Pepper&amp;Carrot po Vás nikdy nebudeme chtít, abyste něco platili nebo si přihlásili předplatné, se kterým byste měli přístup k nejnověším epizodám.</p>
 
-        <img alt="Illustration representing paywall" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="Illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-source a liberální</h2>
 
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="Illustration representing open-source media" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="Illustration representing open-source media" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Kvalitní zábava pro všechny, ať už jsou kdekoliv</h2>
 
@@ -116,7 +116,7 @@ $LANG = array(
     Žádné 18+, žádné násilí. Zdarma a open-source. Pepper&amp;Carrot je hrdým příkladem toho, jak skvělé mohou být i věci zadarmo.<br/>
     Hodně se zaměřuji na kvalitu, protože zdarma a open-source neznamená špatně a amatérsky. Právě naopak.</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Společně změníme komiksový průmysl!</h2>
 
@@ -125,7 +125,7 @@ $LANG = array(
     &nbsp;.&nbsp;.&nbsp;.&nbsp;proč by nemohl jediný úspěch započít vlnu podobných projektů? Uvidíme...</p>
     
 
-        <img alt="Illustration: comic book industry VS patreon support" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="Illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Jen za 1$ na Patreonu podpořte novou epizodu Pepper&amp;Carrot">

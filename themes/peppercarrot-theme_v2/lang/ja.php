@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="パトロンシステムの説明イラスト" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="パトロンシステムの説明イラスト" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>ずっと100%無料、 課金の壁は無し</h2>
     
@@ -93,7 +93,7 @@ $LANG = array(
     すべての読者に等しく敬意を払います。資金援助に参加した人もそうでない人も。パトロンのために作成したすべてのスペシャルボーナスもこのウェブサイトに投稿されます。<br/>
     ペッパー&amp;キャロットは、新しいコンテンツのためにお金を払うことや有料サブスクリプションを強制することはしません。</p>
     
-        <img alt="課金の壁の説明イラスト" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="課金の壁の説明イラスト" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>オープンソースと寛容なライセンス</h2>
     
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="オープンソースメディアの説明イラスト" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="オープンソースメディアの説明イラスト" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>世界中すべての人のための高品質なエンターテイメント</h2>
     
@@ -116,7 +116,7 @@ $LANG = array(
     成人向けコンテンツも、暴力もありません。フリーでオープンソースで、ペッパー&amp;キャロットはフリー文化がクールであると誇らしく示します。<br/>
     私は高品質を追求しています。フリーでオープンソースだからといって、それは下手だったりアマチュアというわけではありません。むしろその逆です。</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>コミック業界を変化させましょう！</h2>
     
@@ -124,7 +124,7 @@ $LANG = array(
     自分たちの市場のビジョンに合わせてペッパー&amp;キャロットを変えようと圧力をかける出版社、流通業者、マーケティング、ファッションは、ここにはいないのです。<br/>
     …一つでもパトロンの支援による成功例があれば、それが雪崩のように広がることだって不可能ではないでしょう。業界が危機にあるとしたら？挑戦してみましょう！</p>
     
-        <img alt="イラスト：コミック業界vsパトロンの支援" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="イラスト：コミック業界vsパトロンの支援" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
   
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="1エピソードたった1ドルで、ペッパー&amp;キャロットのパトロンになりませんか？">

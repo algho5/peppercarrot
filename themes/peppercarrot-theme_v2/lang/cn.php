@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="Illustration représentant le mécénat moderne" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="Illustration représentant le mécénat moderne" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>永远100%免费</h2>
     
@@ -93,7 +93,7 @@ $LANG = array(
     我对我的读者们给予同等尊重：无论其是不是赞助者。我在此网站为赞助者所创建的额外产品也均如此。<br/>
     小辣椒与萝卜头永远不需要您支付资金或者注册任何账户而获取漫画内容及产品资源。</p>
     
-        <img alt="Illustration représentant les péages du net" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="Illustration représentant les péages du net" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>开源并且非常宽容</h2>
     
@@ -109,7 +109,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="Illustration représentant les médias open-sources" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="Illustration représentant les médias open-sources" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>高质量的娱乐，给任何人，在任何地方</h2>
     
@@ -118,7 +118,7 @@ $LANG = array(
     希望成为自由媒体的一个榜样。作品重点强调品质，道德和专业精神，<br/>
     因为“自由与开源”并不等同于“廉价和敷衍”，恰恰相反。</p>
 
-        <img alt="Illustration pour tous" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="Illustration pour tous" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>让我们一起来改变漫画产业！</h2>
     
@@ -126,7 +126,7 @@ $LANG = array(
     同时不会有任何出版商，发行商或其他商业中介以“市场”的名义来左右小辣椒与萝卜头的创作理念。<br/>
     为什么小辣椒与萝卜头不可以开启一个漫画产业的新时代呢？就让我们大胆的尝试一下吧！</p>
     
-        <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="只要1$一集，通过Patreon网站成为小辣椒与萝卜头的赞助者">

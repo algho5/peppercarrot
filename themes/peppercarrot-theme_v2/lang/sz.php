@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="ôbrŏzek sparciŏ" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="ôbrŏzek sparciŏ" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>We 100% darmy, bez płacyniŏ</h2>
 
@@ -93,7 +93,7 @@ $LANG = array(
     Mōm reszpekt dlŏ Wŏs wszyjskich: z geldym abo bez. Wszyjske bōnusy dlŏ patrōnōw idzie znojś sam.<br/>
     Pepper&amp;Carrot nikej niy poprosi Wŏs ô płat abo zaabōniyrowanie, cobyście mogli ôbejzdrzeć nowõ treść.</p>
 
-        <img alt="ôbrŏzek płatu" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="ôbrŏzek płatu" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Ôdewrzōny i liberalny</h2>
 
@@ -111,7 +111,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="ôbrŏzek, co pokŏzuje ôdewrzōne mydia" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="ôbrŏzek, co pokŏzuje ôdewrzōne mydia" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Wysokij jakości szpas dlŏ wszyjskich i wszyndy</h2>
 
@@ -119,7 +119,7 @@ $LANG = array(
     Niy ma w nim treści dlŏ majoryntnych ani gwołtōw. Pepper&amp;Carrot je blank ôdewrzōny, ale je tyż dumnym przikłŏdym,<br/>
     jak szumne mogōm być darme rzeczy. Skupiōm sie na zwielgij jakości, pōniywŏż darme niy musi ôznŏczać złe abo amatorske. Blank ôpacznie.</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Pōdźcie zmiyniymy branżã kōmiksu!</h2>
 
@@ -127,7 +127,7 @@ $LANG = array(
     Żŏdyn wydŏwca/dystrybutōr niy może prziginōńć mie do pōmiany Pepper&amp;Carrot, cobych napasowoł go do ôd niygo wizyje&#39;rynku&#39;.<br/>
      &nbsp;.&nbsp;.&nbsp;.&nbsp;Czymu jedyn sukces niy miołby pociōngnōńć za sobōm reszty industryje we kryzysie? Ôbejzdrzimy...</p>
 
-        <img alt="ôbrŏzek: branża kōmiksu a sparcie patrōnōw" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="ôbrŏzek: branża kōmiksu a sparcie patrōnōw" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Wystyknie 1$ na Patreōnie, by być patrōnym nowyj tajle">

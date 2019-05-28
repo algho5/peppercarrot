@@ -84,7 +84,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM' => '
-    <img alt="afbeelding die patrons voorstelt" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="afbeelding die patrons voorstelt" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% vrij, altijd, zonder paywall</h2>
 
@@ -92,7 +92,7 @@ $LANG = array(
     Ik respecteer iedereen even veel: of je geld geeft of niet. Alle speciale bonussen die ik maak voor mijn patrons zet ik ook hier.<br/>
     Pepper&amp;Carrot zal je nooit vragen om iets te betalen of een abonnement te nemen om toegang te krijgen tot nieuwe dingen.</p>
 
-        <img alt="afbeelding die een paywall voorstelt" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="afbeelding die een paywall voorstelt" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-bron en vrij beschikbaar</h2>
 
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="afbeelding die open-bron-media voorstelt" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="afbeelding die open-bron-media voorstelt" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Kwaliteits-entertainment voor iedereen, overal</h2>
 
@@ -116,7 +116,7 @@ $LANG = array(
     Geen expliciete inhoud, geen geweld. Pepper&amp;Carrot is, als vrij beschikbare strip, een trots voorbeeld van hoe mooi vrije cultuur kan zijn.<br/>
     Ik focus op kwaliteit, want vrij en open-bron betekent niet dat iets slecht of amateuristisch is. Integendeel!</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Laten we de stripboeken-industrie veranderen!</h2>
 
@@ -125,7 +125,7 @@ $LANG = array(
     aan te passen om aan te sluiten bij hun visie op wat &#39;de markt&#39; wil.<br/>
     Een enkel succes kan als een &#39;sneeuwbal&#39; de hele industrie veranderen. Laten we het proberen!</p>
 
-        <img alt="afbeelding: de stripboeken-industrie versus ondersteuning door patrons" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="afbeelding: de stripboeken-industrie versus ondersteuning door patrons" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Voor maar €1 per aflevering kun je patron van Pepper&amp;Carrot worden">

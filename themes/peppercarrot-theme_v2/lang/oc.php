@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="Illustracion d’un mecenat modèrne" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="Illustracion d’un mecenat modèrne" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% gratuit, per totjorn</h2>
 
@@ -93,7 +93,7 @@ $LANG = array(
     Vos respècti totes al meteis nivèl : amb o sens argent. Totes los bonus que fau pels mecènas son tanben aquí.<br/>
     Pepper&amp;Carrot vos demandarà pas jamai de pagar qui que siá o de vos marcar enlòc per aver accès al contengut.</p>
 
-        <img alt="Illustracion dels peatges del net" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="Illustracion dels peatges del net" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-source e fòrça permissiu</h2>
 
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="Illustracion dels mèdias liures" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="Illustracion dels mèdias liures" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Un divertiment de qualitat, pertot e per totes</h2>
 
@@ -117,7 +117,7 @@ $LANG = array(
     vòl èsser un exemple responsable de mèdia liure. Çò important es la qualitat, l’etic e lo<br/>
     professionalisme, perque "liure e open-source" non significa pas "pas car e mal fach". Al contrari.</p>
 
-        <img alt="Illustracion per totes" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="Illustracion per totes" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Cambiem l’industria de la BD !</h2>
 
@@ -125,7 +125,7 @@ $LANG = array(
     Cap d’editor, distributor o comercial pòt realizar de cambiaments sus Pepper&amp;Carrot per lo conhar dins una casa del \'mercat\'.<br/>
     ...E perque Pepper&amp;Carrot poiriá pas aviar un cambiament e aital inspirar una industria en crisi ? Ensagem !</p>
 
-        <img alt="Illustracion : l’industria de la BD VS finançament per mecenat" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="Illustracion : l’industria de la BD VS finançament per mecenat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
     <div class="philobutton">
         Per solament 1€ per episòdi novèl, venètz mecènas de Pepper&amp;Carrot a partir d’uèi sus <a href="https://www.patreon.com/davidrevoy" title="Per solament 1€ per episòdi novèl, venètz mecènas a partir d’uèi sus Patreon">Patreon</a>, site internacional utilizant lo dòlar US, o autrament sus <a href="https://www.tipeee.com/pepper-carrot" title="Per solament 1€ per episòdi novèl, venètz mecènas a partir d’uèi sus Tipeee">Tipeee</a>, site en francés utilizant l’euro.

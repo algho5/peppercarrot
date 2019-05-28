@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="Illustration représentant le mécénat moderne" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="Illustration représentant le mécénat moderne" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% libre, pour toujours</h2>
     
@@ -93,7 +93,7 @@ $LANG = array(
     Je vous respecte tous au même niveau : avec ou sans argent. Tous les bonus que je fais pour mes mécènes sont ici également.<br/>
     Pepper&amp;Carrot ne vous demandera jamais de payer quoi que ce soit ou de s\'inscrire quelque part pour avoir accès au contenu.</p>
     
-        <img alt="Illustration représentant les péages du net" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="Illustration représentant les péages du net" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-source et très permissif</h2>
     
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="Illustration représentant les médias open-sources" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="Illustration représentant les médias open-sources" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Un divertissement de qualité, partout et pour tous</h2>
     
@@ -117,7 +117,7 @@ $LANG = array(
     se veut être un exemple responsable de médias libres. L\' accent est mis sur la qualité, l\'éthique et le<br/>
     professionnalisme, parce que "libre et open-source" ne signifie pas "au rabais ou à l\'arrache". Au contraire.</p>
 
-        <img alt="Illustration pour tous" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="Illustration pour tous" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Changeons l\'industrie de la BD !</h2>
     
@@ -125,7 +125,7 @@ $LANG = array(
     Aucun éditeur, distributeur ou commercial ne peut exercer des changements sur Pepper&amp;Carrot afin de le faire rentrer dans une case du \'marché\'.<br/>
     ...Et pourquoi Pepper&amp;Carrot ne pourrait-il pas amorcer un changement et ainsi inspirer une industrie en crise ? Essayons !</p>
     
-        <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
     <div class="philobutton">
         Pour seulement 1€ par nouvel épisode, devenez dès aujourd\'hui mécène de Pepper&amp;Carrot sur <a href="https://www.patreon.com/davidrevoy" title="Pour seulement 1$ par nouvel épisode, devenez mécéne aujourdh\'ui sur Patreon">Patreon</a>, site international utilisant le dollar US, ou alternativement sur <a href="https://www.tipeee.com/pepper-carrot" title="Pour seulement 1€ par nouvel épisode, devenez mécéne aujourd\'hui sur Tipeee">Tipeee</a>, site en Français utilisant l\'euro.

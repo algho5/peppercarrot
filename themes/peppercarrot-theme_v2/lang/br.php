@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="skeudenn o taolenni&ntilde; ar baeroniezh" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="skeudenn o taolenni&ntilde; ar baeroniezh" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% digoust, da viken</h2>
 
@@ -93,7 +93,7 @@ $LANG = array(
     Douja&ntilde; a ran d\'an holl : paour pe pinvidik. An holl endalc\'hado&ugrave; ouzhpenn a ran evit va faeroned a vez embannet ama&ntilde; ivez.<br/>
     Ne vo morse goulennet paea&ntilde; evit koumananti&ntilde; da Pepper&amp;Carrot pe evit kaout trao&ugrave; nevez.</p>
 
-        <img alt="skeudenn o taolenni&ntilde; ur moger-paea&ntilde;" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="skeudenn o taolenni&ntilde; ur moger-paea&ntilde;" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Mammenn digor hag aotre&uuml;s</h2>
 
@@ -107,7 +107,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="skeudenn o taolenni&ntilde; ar media open-source" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="skeudenn o taolenni&ntilde; ar media open-source" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Dudi a-zoare evit an holl, e pep lec\'h</h2>
 
@@ -115,7 +115,7 @@ $LANG = array(
     Ne vez kavet nep danvez revel na tamm feulster ebet. Digoust ha frank, ur skouer eo Pepper&amp;Carrot eus pegen dreist ha dudius e c\'hall ar sevenadur frank beza&ntilde;.<br/>
     Tremen a ran kalz amzer d\'ober pep tra ervat, rak ne dalvez ket mammenn digor kement ha fall pe amatour dre ret. Er c\'hontrol.</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Che&ntilde;chomp penn d\'ar vazh e bed ar banno&ugrave;-treset !</h2>
 
@@ -123,7 +123,7 @@ $LANG = array(
     Embanner/dasparzher/bruder ebet n\'hall lakaat ac\'hanon da che&ntilde;ch Pepper&amp;Carrot evit ma klotfe muioc\'h gant o doare da sellet ar &#39;marc\'had&#39;.<br/>
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Ha ma c\'hallfe un taol berzh e-unan kemma&ntilde; ur greanterezh en he fezh ? Klaskomp \'ta !</p>
 
-        <img alt="skeudenn: greanterezh ar banno&ugrave;-dreset VS skoazell patreon" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="skeudenn: greanterezh ar banno&ugrave;-dreset VS skoazell patreon" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title=" Paeronit Pepper&Carrot war Patreon evit 1$ dre rann nevez ">

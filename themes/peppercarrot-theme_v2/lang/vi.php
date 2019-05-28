@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="illustration representing patronage" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
     
     <h2>100% miễn phí, mãi mãi và không yêu cầu trả tiền</h2>
     
@@ -93,7 +93,7 @@ $LANG = array(
     Tôi tôn trọng tất cả các bạn một cách công bằng: dù có tiêng hay không đi chăng nữa. Tất cả những bonus đặc biệt cho các nhà tài trợ sẽ được đăng ở đây.<br/>
     Hạt Tiêu&amp;Cà Rốt sẽ không bao giờ yêu cầu bạn trả tiền hay đăng kí để có thể xem nội dung truyện.</p>
     
-        <img alt="illustration representing paywall" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Mã nguồn mở và dễ dàng</h2>
     
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="illustration representing open-source medias" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="illustration representing open-source medias" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Sự giải trí cao cho tất cả mọi người, ở khắp mọi nơi</h2>
     
@@ -116,7 +116,7 @@ $LANG = array(
     Không chứa nội dung không phù hợp và bạo lực. Miễn phí và nguồn mở, Hạt Tiêu&amp;Cà Rốt tự hào là một ví dụ về sự tuyệt vời khi sử dụng văn hóa-miễn phí .<br/>
     Tôi chú ý rất nhiều trên chất lượng, bởi vì sự miễn phí không có nghĩa là tồi tệ cùng với sự nghiệp dư. "Au contraire" (mà ngược lại).</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Hãy cùng thay đổi nền công nghiệp truyện tranh</h2>
     
@@ -124,7 +124,7 @@ $LANG = array(
     Không một nhà xuất bản/ nhà phân phối/ marketing/ nhà thiết kế nào có thể bắt tôi thay đổi Hạt Tiêu&amp;Cà Rốt để phù hợp với &#39;thị trường&#39; trong mắt họ.<br/>
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Tại sao ta không tạo nên một thành công  và &#39;hiệu ứng tuyết lăn&#39; cho cả một nền công nghiệp? Hãy cùng cố gắng nào!</p>
     
-        <img alt="illustration: comic book industry VS patreon support" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Chỉ với 1$ mỗi tập, hãy ủng hộ Hạt Tiêu&amp;Cà Rốt">

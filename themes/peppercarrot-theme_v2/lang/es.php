@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="ilustración representando el patrocinio" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="ilustración representando el patrocinio" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% libre, por siempre, sin Paywall</h2>
     
@@ -93,7 +93,7 @@ $LANG = array(
     Respeto a todos ustedes por igual: con o sin dinero. Todas las bonificaciones especiales que hago para mis patrocinadores también se publican aquí.<br/>
     Pepper&amp;Carrot nunca te pedirá pagar algo u obtener una suscripción para acceder a un nuevo contenido.</p>
     
-        <img alt="illustration representing paywall" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>De código abierto y permisivo</h2>
     
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="illustration representing open-source medias" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="illustration representing open-source medias" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Entretenimiento de calidad para todos, en cualquier lugar</h2>
     
@@ -116,7 +116,7 @@ $LANG = array(
     Sin contenido para adultos, sin violencia. Libre y de código abierto, Pepper&amp;Carrot es un orgulloso ejemplo de lo genial que podría ser la cultura libre.<br/>
     Me estoy centrando mucho en la calidad, porque lo libre y de código abierto no significa malo o aficionado. Au contraire.</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>¡Cambiemos la industria del cómic!</h2>
     
@@ -124,7 +124,7 @@ $LANG = array(
     Ningún editor/distribuidor/marketing/moda me pueden obligar a cambiar Pepper&amp;Carrot para adaptarse a su visión de &#39;el mercado&#39;.<br/>
     &nbsp;.&nbsp;.&nbsp;.&nbsp;¿Por qué no un solo éxito no podría hacer de &#39;bola de nieve&#39; para toda una industria en crisis?¡Vamos a intentarlo!</p>
     
-        <img alt="illustration: comic book industry VS patreon support" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only 1€ per new episode, become a patreon of Pepper&amp;Carrot">

@@ -86,7 +86,7 @@ $LANG = array(
 
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="illustration representing patronage" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% gratis, for alltid, ingen betalingsmur</h2>
 
@@ -94,7 +94,7 @@ $LANG = array(
 	Jeg har like mye respekt for dere alle enten dere bidrar eller ikke. Alt ekstramateriale jeg lager for mine sponsorer blir ogs&aring; gjort tilgjengelig her.<br/>
     Pepper&amp;Gulrot kommer aldri til å be deg om hverken penger eller noen form for abonnement for &aring; f&aring; tilgang til nytt innhold.</p>
 
-        <img alt="illustration representing paywall" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Åpent og givende</h2>
 
@@ -112,7 +112,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="illustration representing open-source media" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="illustration representing open-source media" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Kvalitetsunderholdning for alle over alt</h2>
 
@@ -121,7 +121,7 @@ $LANG = array(
 	
 	Jeg har veldig fokus p&aring; kvalitet for &aring; vise at fritt og åpent ikke betyr d&aring;rlig eller amat&oslash;rmessig. Au contraire.</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>La oss endre tegneserieindustrien!</h2>
 
@@ -130,7 +130,7 @@ $LANG = array(
 	Ingen utgivere distribut&oslash;rer eller markedsf&oslash;rere kan tvinge meg til &aring; forandre Pepper&amp;Gulrot for &aring; tilpasses deres markedsvisjon.</br>
 	Er der mulig for en enslig seriesuksess &aring; skape en sn&oslash;balleffekt som forandrer en industri i krise? Det gjenst&aring;r &aring; se...</p>
 	
-        <img alt="illustration: comic book industry VS patreon support" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Bli en Pepper&amp;Gulrot sponsor for kun 1$ per nye episode">

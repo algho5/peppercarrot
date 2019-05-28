@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="후원을 나타내는 삽화" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="후원을 나타내는 삽화" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>영원히 100% 자유, 과금장벽 없음</h2>
     
@@ -93,7 +93,7 @@ $LANG = array(
     저는 당신들을 똑같이 존중합니다： 후원을 하거나, 안하거나요. <br/>후원자들을 위한 특별 자료들은 이곳에도 모두 게시됩니다.<br/>
     후추와 당근은 절대 새로운 컨텐츠를 보기 위해 돈이나 구독을 요구하지 않습니다.</p>
     
-        <img alt="과금장벽을 나타내는 삽화" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="과금장벽을 나타내는 삽화" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>오픈소스와 허용범위</h2>
     
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="오픈소스 미디어를 나타내는 삽화" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="오픈소스 미디어를 나타내는 삽화" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>누구에게나, 어디서나 고품질의 엔터테인먼트 제공</h2>
     
@@ -116,7 +116,7 @@ $LANG = array(
     선정성 및 폭력성을 띠지 않습니다. 자유 오픈소스인 후추와 당근은 자유 문화가 얼마나 멋진지를 잘 보여주는 훌륭한 사례중 하나입니다.<br/>
     자유 오픈소스가 비전문적이거나 저질이라는 것을 의미하지는 않기 때문에, 저는 품질에 초점을 맞추고 있습니다. 오히려 그 반대라고 할 수 있죠.</p>
 
-        <img alt="모두를 위한 삽화" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="모두를 위한 삽화" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>만화책 산업을 바꿉시다!</h2>
     
@@ -125,7 +125,7 @@ $LANG = array(
     어째서 하나의 성공이 전체 산업을 위협하는 신호탄이 될 수 없을까요? 기대해 보자고요...</p>
     
 
-        <img alt="삽화: 기존 만화책 산업구조와 후원자(Patreon) 구조 비교" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="삽화: 기존 만화책 산업구조와 후원자(Patreon) 구조 비교" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
    
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="회차당 단돈 $1로, 후추와 당근의 새 후원자가 되어주세요">

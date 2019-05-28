@@ -85,7 +85,7 @@ $LANG = array(
     <p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="pártfogást jelképező illusztráció" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="pártfogást jelképező illusztráció" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% ingyen, örökké, nincs fizetőfal</h2>
 
@@ -93,7 +93,7 @@ $LANG = array(
     Egyformán tisztelek mindenkit, akár van pénze, akár nincs. Minden extrát, amit a pártfogóknak készítek, itt is közzéteszek.<br/>
     A Paprika&amp;Sárgarépa sosem fog pénzt, előfizetési díjat kérni a hozzáférésért cserébe.</p>
     
-        <img alt="fizetőfalat jelképező illusztráció" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="fizetőfalat jelképező illusztráció" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Nyílt forráskódú, megengedő</h2>
     
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="nyílt forráskódú médiumokat jelképező illusztráció" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="nyílt forráskódú médiumokat jelképező illusztráció" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Minőségi szórakoztatás mindenkinek, mindenhol</h2>
     
@@ -116,7 +116,7 @@ $LANG = array(
     Nincs benne felnőtt tartalom, sem erőszak. Ingyenesen és nyílt forráskóddal, a Paprika&amp;Sárgarépa egy büszke példája, milyen menő tudna lenni a szabad-kultúra.<br/>
     Nagy hangsúlyt helyezek a minőségre, mert az ingyenes és nyílt forrású nem jelenti azt, hogy rossz vagy amatőr. Pont ellenkezőleg.</p>
     
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Változtassuk meg a képregényipart!</h2>
     
@@ -124,7 +124,7 @@ $LANG = array(
     Semmilyen kiadó/viszonteladó/marketing/divat nem tud meggyőzni, hogy a képregényt az piacról kialakított képükhöz igazítsam.<br/>
     ...Miért ne tudna egyetlen siker egy lavinát indítani, ami egy krízisben lévő iparágat akár meg is változtathat? Próbáljuk meg!</p>
     
-        <img alt="illusztráció: képregényipar VS Patreon támogatás" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="illusztráció: képregényipar VS Patreon támogatás" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Legyél Te is a Paprika&amp;Sárgarépa pártfogója, mindössze $1-ért epizódonként">

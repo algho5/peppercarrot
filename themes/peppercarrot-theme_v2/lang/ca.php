@@ -85,7 +85,7 @@ $LANG = array(
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="illustration representing patronage" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+    <img alt="illustration representing patronage" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% free, forever, no paywall</h2>
     
@@ -93,7 +93,7 @@ $LANG = array(
     Us respecto a tots per igual: amb o sense diners. Tots els bonus especials que faig pels meus mecenes també es troben aquí.<br/>
     Pepper&amp;Carrot mai et demanarà diners o que et subscriguis per tal d\'accedir a cap contingut.</p>
     
-        <img alt="illustration representing paywall" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-source and permissive</h2>
     
@@ -108,7 +108,7 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="illustration representing open-source medias" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt="illustration representing open-source medias" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Entreteniment de qualitat per a tothom, arreu.</h2>
     
@@ -116,7 +116,7 @@ $LANG = array(
     No hi ha contingut adult ni violent. Gratuït i open-source, Pepper&amp;Carrot és un orgullós exemple de com de guai pot ser la cultura lliure.<br/>
     Em centro en la qualitat, perquè gratuït i open-source no són sinònims de dolent o amateur. Tot el contrari.</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Canviem la inústria del còmic!</h2>
     
@@ -124,7 +124,7 @@ $LANG = array(
     Cap editorial/distribuïdora/marketing/moda em pot forçar a canviar Pepper&amp;Carrot per tal d\'ajustar-la a la seva visió del mercat;.<br/>
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Per quina raó una reeixida no pot començar un gran canvi a la indústria? Fem-ho possible!</p>
     
-        <img alt="illustration: comic book industry VS patreon support" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
     <div class="philobutton">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only 1$ per new episode, become a patreon of Pepper&amp;Carrot">
