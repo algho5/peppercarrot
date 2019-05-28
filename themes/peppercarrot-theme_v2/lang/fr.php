@@ -102,7 +102,7 @@ $LANG = array(
     L\'utilisation commerciale, les traductions, les fan-arts, l\'impression, les films, les jeux-vidéo et le re-partage sur le net sont encouragés.
     Je vous demande seulement de créditer les œuvres de leur(s) auteur(s) respectif(s) (artistes, correcteurs, traducteurs investi(e)s dans la création de l\'œuvre), d\'intégrer un lien vers la licence et indiquer si des modifications ont été effectuées à l\'œuvre. Vous devez indiquer ces informations par tous les moyens raisonnables, sans toutefois suggérer que les auteur(s) vous soutiennent ou soutiennent la façon dont vous avez utilisé leurs œuvres.</p>
     
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" title="Plus d\'information en français sur Creative Commons Attribution 4.0">
             Licence : Creative Commons Attribution 4.0
         </a>
@@ -127,12 +127,9 @@ $LANG = array(
     
         <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
-    <div class="philobutton">
+    <div class="button moka">
         Pour seulement 1€ par nouvel épisode, devenez dès aujourd\'hui mécène de Pepper&amp;Carrot sur <a href="https://www.patreon.com/davidrevoy" title="Pour seulement 1$ par nouvel épisode, devenez mécéne aujourdh\'ui sur Patreon">Patreon</a>, site international utilisant le dollar US, ou alternativement sur <a href="https://www.tipeee.com/pepper-carrot" title="Pour seulement 1€ par nouvel épisode, devenez mécéne aujourd\'hui sur Tipeee">Tipeee</a>, site en Français utilisant l\'euro.
     </div>
-            
-    <p>Merci pour votre attention,  
-    David Revoy</p>
  
  ',
  

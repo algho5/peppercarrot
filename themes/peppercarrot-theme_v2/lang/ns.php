@@ -102,7 +102,7 @@ $LANG = array(
     Geern dörvt ji de Saken kommerziell bruken, översetten, wiedergeven oder Fan-Art, Drucke, Films, Videospelen usw. maken.
     Ji mööt man blots mien Naam - David Revoy - as Autor nömen.</p>
 
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.de" title="Wullt du mehr weten, kiek: Creative Commons Namensnennung 4.0 Unported">
             Lizenz: Creative Commons Namensnennung 4.0 Unported
         </a>
@@ -127,14 +127,11 @@ $LANG = array(
 
         <img alt="Illustration: Comic-Industrie VS Patreon-Unterstützung" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Warr en Patreon vun Pepper&amp;Wuddel för man blots 1€ per Folg.">
             Help mi hüüt, dat ik gauer ne\'e Folgen vun Pepper&amp;Wuddel maken kann.
         </a>
     </div>
-
-    <p>Velen Dank för dien Vermaak!
-    -David Revoy</p>
 
  ',
 

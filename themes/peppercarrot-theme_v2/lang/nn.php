@@ -101,7 +101,7 @@ $LANG = array(
     Eg oppfordrar til kommersiell bruk, omsetjing, teikningar av figurane, trykte bøker, filmar, dataspel og anna vidareformidling.
     Berre hugs å kreditera opphavspersonane (teiknarar, korrekturlesarar og omsetjarar som har vore med på å laga materialet du ynskjer å bruka), oppgje lenkje/adresse til lisensen og opplys om du sjølv har gjort endringar. Alle rimelege måtar å gjera dette på er greitt, men du kan ikkje gjera det på ein måte som gjer at det verkar som at opphavspersonane støttar deg eller måten du har brukt materialet på.</p>
 
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="For meir informasjon, les lisensvilkåra i Creative Commons Attribution 4.0">
             Lisens: Creative Commons Attribution 4.0
         </a>
@@ -125,14 +125,11 @@ $LANG = array(
 
         <img alt="Illustrasjon på teikneserie­bransjen versus lesarstøtte" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="For berre 1 USD per episode kan du sponsa Pepar &amp; Gulrot">
             Støtt meg i utviklinga av Pepar &amp; Gulrot i dag!
         </a>
     </div>
-
-    <p>Takk for at du tok deg tid til å lesa dette!
-    – David Revoy</p>
 
  ',
 

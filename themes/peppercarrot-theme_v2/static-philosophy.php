@@ -18,11 +18,17 @@
             </nav>
           </div>
           
-        <article class="philosophy col sml-12 med-12 lrg-12 text-center" role="article">
-          <?php $plxShow->lang('PHILOSOPHY_TOP') ?>
-          <?php echo '<a href="TODO-DONATEPAGE">'.$plxShow->Getlang(PATRONAGE_BUTTON).'</a>.'; ?>
-          <?php $plxShow->lang('PHILOSOPHY_BOTTOM') ?>
-        </article>
+          <article class="philosophy col sml-12 med-12 lrg-12 text-center" role="article">
+            <?php $plxShow->lang('PHILOSOPHY_TOP') ?>
+              <div class="button moka">
+                <a href="TODO-DONATEPAGE">
+                  <?php $plxShow->lang(PATRONAGE_BUTTON);?>
+                </a>
+              </div>
+            <?php $plxShow->lang('PHILOSOPHY_BOTTOM') ?>
+            <br/>
+            <br/>
+          </article>
         
         <div style="clear:both;"></div>
 

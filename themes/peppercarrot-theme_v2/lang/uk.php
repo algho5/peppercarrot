@@ -101,7 +101,7 @@ $LANG = array(
     Комерційне використання, переклади, фан-арт, друк, кіно, видеоігри, репости та росповсюдження заохочуються.
     Усе, що від вас потрібно - забезпечити відповідне вказання авторів (художників, корректорів, перекладачів, які брали участь в створенні твору, яке ви маєте намір використати), надати ссилку на ліцензію та позначити зміни які зроблені. Ви повинни зробити у розумній манері, але не у шлях який припускає схвалення авторами вас або ваше використання.</p>
     
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.ru" title="Прочитайте Creative Commons Attribution 4.0, щоб дізнатися більше">
             Ліцензія: Creative Commons Attribution 4.0
         </a>
@@ -125,14 +125,11 @@ $LANG = array(
     
         <img alt="ілюстрація: iлюстрация: комікс-індустрия та підтримка добровольцями" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Стати спонсором Pepper&amp;Carrot - усього за 1$ за новий випуск">
             Допоможіть мені зробити частіше випуск Pepper&amp;Carrot вже сьогодні.
         </a> 
     </div>
-    
-    <p>Дякую за прочитання! 
-    –David Revoy</p>
  
  ',
  

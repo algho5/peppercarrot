@@ -102,7 +102,7 @@ $LANG = array(
     Anímote a facer un uso comercial, traducións, fan-art, impresións, películas, video xogos, compartir e republicar.
     Só precisas dar o crédito axeitado a/os autores (artístas, correctores, tradutores implicados no traballo que queres utilizar), proporcionar unha ligazón a licenza, e indicar os cambios realizados se procede. Podes facelo de varios xeitos apropiados, pero non dun xeito que implique que os autores propoñen o que ti fixeches.</p>
 
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="Para máis información, lea a Creative Commons Attribution 4.0">
             Licenza: Creative Commons Attribution 4.0
         </a>
@@ -126,14 +126,11 @@ $LANG = array(
 
         <img alt="Illustration: comic book industry vs. Patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only $1 per new episode, become a patreon of Pepper&amp;Carrot">
             Axúdame a aumentar a produción de Pepper&amp;Carrot.
         </a>
     </div>
-
-    <p>Grazas por ler!
-    –David Revoy</p>
 
  ',
 

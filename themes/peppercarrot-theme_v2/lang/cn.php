@@ -103,7 +103,7 @@ $LANG = array(
     我只要求一点，那就是在作品中提及其参与创作者（作者，校对，翻译等所有为作品做出贡献的人），并且提供版权链接，
 	同时指出作品是否是被修改过。您可以合理地提供这些信息，但不可以有任何暗示您的创作行为与原作者有关或是被原作者协助。</p>
     
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" title="更多信息请详见Creative Commons Attribution 4.0">
             版权协议：Creative Commons Attribution 4.0
         </a>
@@ -128,14 +128,11 @@ $LANG = array(
     
         <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="只要1$一集，通过Patreon网站成为小辣椒与萝卜头的赞助者">
             从今天起帮助我加速小辣椒与萝卜头的成长吧！
         </a>
     </div>
-            
-    <p>谢谢您的关注！
-    David Revoy</p>
  
  ',
  

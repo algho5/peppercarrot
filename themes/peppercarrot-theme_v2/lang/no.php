@@ -106,7 +106,7 @@ $LANG = array(
 	en fornuftig m&aring;te, men uten &aring; antyde at forfatterne har hatt noe med deg eller din bruk &aring; gj&oslash;re.</p>
     
 
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="For mer informasjon, les Creative Commons Attribution 4.0">
             Lisens: Creative Commons Attribution 4.0
         </a>
@@ -132,14 +132,11 @@ $LANG = array(
 	
         <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Bli en Pepper&amp;Gulrot sponsor for kun 1$ per nye episode">
             hjelp meg &aring; &oslash;ke produksjonen av Pepper&amp;Gulrot idag.
         </a>
     </div>
-
-    <p>Takk for at du tok deg tid til &aring; lese dette! 
-    -David Revoy</p>
 
  ',
 

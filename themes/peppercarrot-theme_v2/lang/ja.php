@@ -102,7 +102,7 @@ $LANG = array(
     商用利用、翻訳、ファンアート作成、印刷、映像化、ゲーム化、共有、再投稿などは奨励されています。
     その場合に必要なのは、作者(使用したいアートワークに関わったアーティスト、編集協力者、および翻訳者)へのクレジットと、ライセンスへのリンク提供と、変更を行った場合はその内容を明記することです。これらの表記は合理的な方法であれば任意の書式で構いませんが、作者達があなたやあなたの使用に関して推薦していると示唆することは行わないでください</p>
     
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.ja" title="詳しくはCreative Commons Attribution 4.0を参照してください">
             ライセンス : Creative Commons Attribution 4.0
         </a>
@@ -126,14 +126,11 @@ $LANG = array(
     
         <img alt="イラスト：コミック業界vsパトロンの支援" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
   
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="1エピソードたった1ドルで、ペッパー&amp;キャロットのパトロンになりませんか？">
             ペッパー&amp;キャロットの製作を加速する手助けをしてください！
         </a> 
     </div>
-            
-    <p>ここまで読んでいただき、ありがとうございました! 
-    -David Revoy</p>
  
  ',
  

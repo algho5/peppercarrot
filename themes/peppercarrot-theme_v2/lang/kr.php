@@ -102,7 +102,7 @@ $LANG = array(
     상업적 사용, 번역, 팬아트, 인쇄, 영화, 비디오게임, 공유 그리고 재게시를 장려합니다.
     다만 저작자(아티스트, 교정사, 번역가, 당신이 사용하려는 그림의 번역가)를 명시해 주고, 라이선스에 대한 링크를 제공하고, 변경사항만 나타내면 됩니다. 상식적 테두리 안에서 어떻게든 표시하면 되지만, 저작자에게 허락을 받았다는 식으로 표시해서는 안 됩니다.</p>
     
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.ko" title="자세한 정보를 원하시면, 크리에이티브 커먼즈 저작자 표시 4.0을 읽어주세요">
             라이선스：크리에이티브 커먼즈 저작자 표시 4.0
         </a>
@@ -127,14 +127,11 @@ $LANG = array(
 
         <img alt="삽화: 기존 만화책 산업구조와 후원자(Patreon) 구조 비교" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
    
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="회차당 단돈 $1로, 후추와 당근의 새 후원자가 되어주세요">
             오늘 후추와 당근의 제작에 힘을 보태 주세요.
         </a>
     </div>
-
-    <p>읽어주셔서 감사합니다!
-    -David Revoy</p>
  
  ',
  

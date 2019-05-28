@@ -41,7 +41,6 @@ h4 { font-size:1.2rem }
 .cardlink {text-align: center; width: 100%; margin-bottom: 0.5rem; color: #ababab; font-size: 0.90rem; }
 .cardblock .button a { display:inline-block; font-size:1.1rem; width: 90%; margin-bottom: 10px;}
 
-
 /* Header */
 .header { z-index: 9; position: fixed; top: 0; width: 100%; background: url('../img/header-bg.jpg') top left; border-bottom: 1px solid rgba(64,56,52,0.4); box-shadow: 0 0.1rem 0.1rem rgba(49,20,0,0.3); }
 .header a { text-decoration: none;}
@@ -178,7 +177,6 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .article header h1 a:hover { color: #258fd6; text-decoration: none; }
 .article footer { padding-top: 1.3rem }
 
-
 /* Navigation for reading comic ( prev/next ) */
 .readernav { margin 1.2rem 0 1.2rem 0; padding: 0.6rem 0 0 0; clear:both; max-width: 915px }
 .readernavbutton { display:block; width: 100%; background-color: #FFF; margin-bottom: 0.2rem; padding: 6px 8px 6px 8px; font-size: 1.5rem; font-family: 'PepperCarrot'; text-decoration: none;}
@@ -248,15 +246,12 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .capcha-letter,.capcha-word {font-weight: bold;}
 .capcha-word {background-color: #ccc;letter-spacing: 0.3em;	padding: .525rem .7rem;}
 
-/*     STATIC PAGES    */
-/* ------------------- */
+/*     PAGE SPECIFIC    */
+/* -------------------- */
 /* Philosophy page */
 .philosophy { text-align: center; }
-.philosophy h2 { font-size: 2.6rem; }
-.philosophy img { padding-bottom: 3.8rem; }
-
-
-
+.philosophy p { margin: 2rem auto; max-width: 550px; text-align: justify; font-size: 1.1rem; }
+.philosophy img { margin: 1rem 0 3.8rem 0; }
 
 /* Sources  */
 .source { background-color: #FFF; margin-bottom: 2rem; font-size: 1rem; }
@@ -272,7 +267,6 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .readme ul {  margin: 0; padding: 0; }
 .readme li { margin: 0; padding: 0; }
 .readme h1,.readme h2 { font-size: 1.4rem;}
-
 
 /* TOS/Privacy */
 .tosprivacy { font-size: 1.02rem; max-width: 600px; margin: 0 auto; }

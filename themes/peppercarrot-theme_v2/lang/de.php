@@ -103,7 +103,7 @@ $LANG = array(
     Kommerzielle Verwendung, &Uuml;bersetzungen, Fan-Art, Drucke, Filme, Videospiele, Verteilen und Verbreiten sind erw&uuml;nscht.
     Ihr m&uuml;sst nur meinen Namen - David Revoy - als Autor kenntlich machen.</p>
     
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.de" title="F&uumlr weitere Informationen lies: Creative Commons Namensnennung 4.0 Unported">
             Lizenz: Creative Commons Namensnennung 4.0 Unported
         </a>
@@ -128,14 +128,11 @@ $LANG = array(
     
         <img alt="Illustration: Comic-Industrie VS Patreon-Unterst&uuml;tzung" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
   
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Werde ein Patreon von Pepper&amp;Carrot f&uuml;r nur 1€ pro Episode.">
             Hilf mir heute, die Produktion von Pepper&amp;Carrot zu beschleunigen
         </a> 
     </div>
-    
-    <p>Danke f&uuml; die Aufmerksamkeit! 
-    -David Revoy</p>
  
  ',
  

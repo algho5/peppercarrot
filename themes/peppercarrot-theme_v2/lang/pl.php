@@ -102,7 +102,7 @@ $LANG = array(
     Zachęcam do użycia komercyjnego, przekładu, tworzenia fan-artów, druku, wykorzystania w filmach, grach wideo i uploadu na inne strony.
     Wystarczy, byś wymienił autorów (artystów, korektorów, tłumaczy, którzy mieli swój wkład w dzieło), podał link do licencji i wskazał wprowadzone zmiany. Możesz zrobić to w każdy rozsądny sposób, o ile nie sugeruje on udzielania przez licencjonodawcę poparcia dla Ciebie lub Twojego sposobu wykorzystania dzieła.</p>
 
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="By dowiedzieć się więcej, przeczytaj treść Creative Commons Uznanie autorstwa 4.0">
             Licencja: Creative Commons Uznanie autorstwa 4.0
         </a>
@@ -126,14 +126,11 @@ $LANG = array(
 
         <img alt="ilustracja: branża komiksu VS wsparcie patronów" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Wystarczy 1$ na Patreonie, by zostać patronem nowego odcinka">
             pomóż mi usprawnić produkcję Pepper&amp;Carrot
         </a>
     </div>
-
-    <p>Dziękuję za uwagę!
-    -David Revoy</p>
 
  ',
 

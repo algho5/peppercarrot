@@ -105,7 +105,7 @@ $LANG = array(
     podali link do licyncyje i naporynczyli wkludzōne pōmiany. Możecie zrobić to w kożdy usōndny knif, jak dugo niy sugeruje ôn
     dŏwaniŏ bez licyncjodŏwcy sparciŏ dlŏ Ciebie abo Twojigo knifu wyużyciŏ dzieła.</p>
 
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="Coby przewiedzieć sie wiyncyj, przeczytej Creative Commons Uzdanie autorstwa 4.0">
             Licyncyjŏ: Creative Commons Uzdanie autorstwa 4.0
         </a>
@@ -129,14 +129,11 @@ $LANG = array(
 
         <img alt="ôbrŏzek: branża kōmiksu a sparcie patrōnōw" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Wystyknie 1$ na Patreōnie, by być patrōnym nowyj tajle">
             pōmōż mi we produkcyji Pepper&amp;Carrot
         </a>
     </div>
-
-    <p>Dziynkujã za czytanie!
-    -David Revoy</p>
 
  ',
 

@@ -102,7 +102,7 @@ $LANG = array(
     Mindenkit buzdítok a fordításra, nyomtatásra, filmek, videójátékok, rajongói alkotások készítésére, megosztásra és posztolásra - akár üzleti céllal is.
     Mindössze a nevemet, mint szerzőt kell megemlítened: David Revoy.</p>
     
-    <div class="philobutton">
+    <div class="button moka">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.hu" title="További információért olvasd el a &quot;Creative Commons Nevezd meg! 4.0&quot;-t">
             Licenc: Creative Commons Nevezd meg! 4.0
         </a>
@@ -126,14 +126,11 @@ $LANG = array(
     
         <img alt="illusztráció: képregényipar VS Patreon támogatás" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
-    <div class="philobutton">
+    <div class="button moka">
         <a class="h4" href="https://www.patreon.com/davidrevoy" title="Legyél Te is a Paprika&amp;Sárgarépa pártfogója, mindössze $1-ért epizódonként">
             Segíts a Paprika&amp;Sárgarépa készítésében!
         </a> 
     </div>
-            
-    <p>Köszönöm, hogy elolvastad!
-    - David Revoy</p>
  
  ',
  
