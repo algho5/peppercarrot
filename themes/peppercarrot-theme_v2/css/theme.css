@@ -25,6 +25,8 @@ h4 { font-size:1.2rem }
 .button a:hover { filter: brightness(1.1); transition: all 0.2s ease-in;}
 /* button's colors and variant */
 .mandarine a { background-color: orange; box-shadow: 0 0 0 2px orange inset, 0 0 0 3px rgba(255,255,255,0.80) inset, 2px 2px 3px 0 rgba(20,0,0,0.50);}
+.cherry a { background-color: LightCoral; box-shadow: 0 0 0 2px LightCoral inset, 0 0 0 3px rgba(255,255,255,0.80) inset, 2px 2px 3px 0 rgba(20,0,0,0.50);}
+.gum a { background-color: #61C6B6; box-shadow: 0 0 0 2px #61C6B6 inset, 0 0 0 3px rgba(255,255,255,0.80) inset, 2px 2px 3px 0 rgba(20,0,0,0.50);}
 .choco a { background-color: #9B7761; box-shadow: 0 0 0 2px #9B7761 inset, 0 0 0 3px rgba(255,255,255,0.55) inset, 2px 2px 3px 0 rgba(20,0,0,0.50);}
 .moka a { color: #806E5B!important; background-color: #F0ECE9; box-shadow: 0 0 0 2px #F0ECE9 inset, 0 0 0 3px rgba(222,168,131,0.55) inset, 1px 1px 2px 0 rgba(20,0,0,0.50);}
 .big { font-size:1.20rem;}
@@ -32,12 +34,12 @@ h4 { font-size:1.2rem }
 
 /* Cards */
 .cardsocket { min-height: 550px; margin-bottom: 1rem; padding-left: 0.5rem; padding-right: 0.5rem;}
-.cardblock { min-height: 520px; background: #F0ECE9 url('../img/bg.jpg'); width: 100%; text-align: center; padding: 10px; border-radius: 4px; box-shadow: 0 0 0 3px #86675A inset, 0 0 0 6px #F0ECE9 inset, 0 0 0 8px #DEA883 inset, 2px 2px 3px 0 rgba(20,0,0,0.50); }
+.cardblock { min-height: 535px; background: #F0ECE9 url('../img/bg.jpg'); width: 100%; text-align: center; padding: 10px; border-radius: 4px; box-shadow: 0 0 0 3px #AD9084 inset, 0 0 0 6px #F0ECE9 inset, 0 0 0 8px #DEA883 inset, 2px 2px 3px 0 rgba(20,0,0,0.50); }
 .cardblockcontent { min-height: 430px; }
+.cardblockcontent p { width: 90%; text-align: justify; margin: 10px auto 0 auto;}
 .cardblock h3{ font-size: 1.8rem; margin-bottom: 0;}
 .cardby { color: #ababab; font-size: 0.90rem;}
-.cardblock img{ width: 95%; box-shadow: 2px 2px 3px 0 rgba(20,0,0,0.50); border: 4px solid #FFFFFF; margin: 0 0 10px 0; transition: all 0.2s ease-in;}
-.cardblock img:hover { filter: brightness(1.1); transition: all 0.2s ease-in; }
+.cardblock img {width: 95%; margin: 0 0 10px 0; }
 .cardlink {text-align: center; width: 100%; margin-bottom: 0.5rem; color: #ababab; font-size: 0.90rem; }
 .cardblock .button a { display:inline-block; font-size:1.1rem; width: 90%; margin-bottom: 10px;}
 
@@ -141,9 +143,9 @@ h4 { font-size:1.2rem }
 .moreposts i{ margin: 0 0 0 0.3rem; }
 
 /* UTILS */
-/* thumbnail+caption under */
-.thumbnail img { border: solid 1px #EFEFEF; border-radius: 0.4rem;}
-.thumbnail img:hover { border: solid 1px #258fd6; }
+/* thumbnail pictures*/
+.thumbnail img{ position: relative; box-shadow: 0px 0px 0 1px rgba(20,0,0,0.15); border: 4px solid #FFFFFF; margin: 0; transition: all 0.2s ease-in;}
+.thumbnail img:hover { filter: brightness(1.1); transition: all 0.2s ease-in; }
 .thumbnail figcaption{ min-height: 2.3rem; text-decoration: none; font-size: 0.85rem; overflow: hidden; white-space: nowrap; margin-bottom: 0.3rem; }
 .thumbnail figcaption a { color: #444; }
 .thumbnail figcaption a:hover { text-decoration: none; color: #258fd6; }
@@ -334,7 +336,7 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .moreinfobutton {position: absolute; top: 200px; right: 0; width: 180px; }
 .cardblock h3{ font-size: 1.6rem; }
 .cardblock .button {font-size: 1rem; }
-.cardblock .button a { display:inline-block; min-width: 100%;}
+.cardblock .button a { display:inline-block; min-width: 90%; font-size: 1rem;}
 .responsive-langmenu ul { column-count: 3; }
 }
 /* (767=plucss-sml) Tablet mode: vertical */
@@ -354,4 +356,5 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .cover { background: rgba(225, 231, 227, 1) url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 15% 0; }
 .cover h1 { top: -1.5rem; font-size: 1.4rem; margin: 0.3rem 0 1.1rem 0;}
 .responsive-langmenu ul { column-count: 2; }
+.col.sml-6, .gallery.sml-6 li { width: 100%;}
 }

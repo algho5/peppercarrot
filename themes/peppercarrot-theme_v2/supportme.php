@@ -1,6 +1,6 @@
 <?php if(!defined('PLX_ROOT')) exit;?>
 
-    <div style="max-width: 640px; margin: 0 auto;"><?php $plxShow->lang('PHILOSOPHY_DONATION') ?></div>
+    <div style="max-width: 640px; margin: 0 auto;"><?php $plxShow->lang('DONATE_INTRO') ?></div>
     <?php $plxShow->lang('HOMEPAGE_ALTERNATIVES') ?>
     <a href="https://paypal.me/davidrevoy" title="Send money via Paypal">Paypal</a>, 
     <a href="https://www.tipeee.com/pepper-carrot" title="<?php $plxShow->lang('PATRONAGE_BUTTON') ?> Tipeee">Tipeee</a>,

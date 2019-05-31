@@ -104,9 +104,9 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
                 <li class="<?php echo $status; ?>" >
                 <a href="<?php $plxShow->urlRewrite('?static4/contribute') ?>"><?php $plxShow->lang('CONTRIBUTE') ?></a>
                 </li>
-                <?php if($idStat=="999"){ $status = "active"; } else { $status = "no-active"; }?>
+                <?php if($idStat=="015"){ $status = "active"; } else { $status = "no-active"; }?>
                 <li class="<?php echo $status; ?>" >
-                <a href="<?php $plxShow->urlRewrite('?static999/extras') ?>" id="active"><?php $plxShow->lang('Extras') ?></a>
+                <a href="<?php $plxShow->urlRewrite('?static15/extras') ?>" id="active"><?php $plxShow->lang('Extras') ?></a>
                 </li>
                 <?php if($idStat=="999"){ $status = "active"; } else { $status = "no-active"; }?>
                 <li class="<?php echo $status; ?>" >
@@ -128,9 +128,9 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
           
           <div class="col sml-5 med-3 lrg-2 sml-text-right">
             <div class="follow button choco"><br/>
-              <a href="TODO-DONATEPAGE" title="TODO">
+              <a href="<?php $plxShow->urlRewrite('?static12/Donate') ?>">
               ♥ Donate
-              <?php // echo $plxShow->Getlang(PATRONAGE_BUTTON); ?>
+              <?php // TODO echo $plxShow->Getlang(PATRONAGE_BUTTON); ?>
               </a>
           </div>
 

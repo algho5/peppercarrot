@@ -1,16 +1,10 @@
 <?php 
 include(dirname(__FILE__).'/header.php'); 
-
-# Setup
-$folder = "pages/contribute";
-
-# Start content
 echo '<div class="container">';
 echo '  <main class="main grid" role="main">';
-echo '    <section class="col sml-12" style="padding: 0 0;">';
+echo '    <section class="col sml-12">';
+echo '      <div class="grid">';
 
-# Intro
-echo '<div class="grid"><br/>';
 echo '  <div class="col sml-12 med-8 lrg-6 sml-centered sml-text-center">';
 if ($lang !== "en" ){
   echo '<div class="notice"><img src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt="info:"/> ';
@@ -44,50 +38,13 @@ if ($lang !== "en" ){
 <?php 
 
 echo '  </div>';
-echo '</div>';
 
-# Start scanning community/*.json to feed our frames
-$search = glob("".$folder."/*.json");
-if (!empty($search)){ 
-  foreach ($search as $jsonpath) {
-    $contents = file_get_contents($jsonpath);
-    $contents = utf8_encode($contents);
-    $get = json_decode($contents); 
-    echo '<div class="cardsocket col sml-6 med-4 lrg-3">';
-    echo '<figure class="cardblock">';
-    echo '<div class="cardblockcontent">';
-    echo '<h3>'.$get->{'title'}.'</h3>';
-    if ($get->{'by'} !== "" ){
-      echo '<span class="cardby">'.$get->{'by'}.'</span>';
-    } else {
-      echo '<span class="cardby"><br/></span>';
-    }
-    
-    echo '<a href="'.$get->{'linkurl'}.'"><img src="plugins/vignette/plxthumbnailer.php?src='.$get->{'img'}.'&amp;w=275&amp;h=275&amp;s=1&amp;q=92" alt="'.$get->{'imgalt'}.'"></a><br/>';
-    echo '<figcaption>'.$get->{'desc'}.'</figcaption>';
-    echo '</div>';
-    if ($get->{'src'} !== "" ){
-      echo '<div class="cardlink"><a href="'.$get->{'srcurl'}.'">'.$get->{'src'}.'</a></div>';
-    } else {
-      echo '<div class="cardlink"><br/></div>';
-    }
-    $cleanlink = $get->{'linkurl'};
-    if ( substr( $cleanlink, 0, 1 ) === "?" ){
-    echo '<div class="button big"><a href="';
-    $plxShow->urlRewrite($cleanlink);
-    echo '">'.$get->{'link'}.'</a></div>';
-    } else {
-    echo '<div class="button big"><a href="'.$get->{'linkurl'}.'">'.$get->{'link'}.'</a></div>';
-    }
-    echo '</figure>';
-    echo '</div>';
-  }
-}
+include(dirname(__FILE__).'/lib-peppercarrot-utils.php'); 
+peppercarrotCards("pages/contribute", "");
 
-# Close content
+echo '      </div>';
 echo '    </section>';
 echo '  </main>';
 echo '</div>';
-
 include(dirname(__FILE__).'/footer.php'); 
 ?>
