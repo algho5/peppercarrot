@@ -78,7 +78,7 @@ $LANG = array(
     Cada mecenes dóna uns quants diners per cada nou episodi publicat i el seu nom apareix als crèdits del final de cada capítol.
     Gràcies a aquest sistema, Pepper&amp;Carrot pot ser independent i mai fa servir publicitat o qualsevol altre tipus de contaminació per marketing.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     És molt fàcil esdevenir un mecenes de Pepper&amp;Carrot per tan sols 1$ per cada nou episodi <a href="https://www.patreon.com/join/davidrevoy?">a Patreon</a>.
     Patreon accepta targetes de crèdit de tot el món, i fins i tot pots emprar paypal a Patreon.
@@ -124,13 +124,13 @@ $LANG = array(
     Cap editorial/distribuïdora/marketing/moda em pot forçar a canviar Pepper&amp;Carrot per tal d\'ajustar-la a la seva visió del mercat;.
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Per quina raó una reeixida no pot començar un gran canvi a la indústria? Fem-ho possible!</p>
     
-        <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only 1$ per new episode, become a patreon of Pepper&amp;Carrot">
+          ajuda\'m a donar empenta a Pepper&amp;Carrot avui
+      </a> 
+    </p>
     
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only 1$ per new episode, become a patreon of Pepper&amp;Carrot">
-            ajuda\'m a donar empenta a Pepper&amp;Carrot avui
-        </a> 
-    </div>
+    <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  
  ',
  

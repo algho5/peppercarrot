@@ -77,7 +77,7 @@ $LANG = array(
     Il apparaît ensuite dans les remerciements de cet épisode. Grâce à ce système, Pepper&amp;Carrot
     reste indépendant et protégé du monde éditorial, de la pub et du marketing agressif.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     Pour plus de commodité et moins de frais bancaires pour l\'audience francophone, j\'ai mis en place <a href="https://www.tipeee.com/pepper-carrot" title="Pepper&amp;Carrot on tipeee">une page sur Tipeee</a>.
     Il est également possible <a href="https://www.patreon.com/join/davidrevoy?">de soutenir le projet via Patreon</a> (international).
@@ -121,15 +121,18 @@ $LANG = array(
 
     <h2>Changeons l\'industrie de la BD !</h2>
     
-    <p>Avec moins d\'intermédiaires entre lecteurs et auteurs, tout le monde y gagne ; vous me financez directement.
-    Aucun éditeur, distributeur ou commercial ne peut exercer des changements sur Pepper&amp;Carrot afin de le faire rentrer dans une case du \'marché\'.
-    ...Et pourquoi Pepper&amp;Carrot ne pourrait-il pas amorcer un changement et ainsi inspirer une industrie en crise ? Essayons !</p>
+    <p>
+        Avec moins d\'intermédiaires entre lecteurs et auteurs, tout le monde y gagne ; vous me financez directement.
+        Aucun éditeur, distributeur ou commercial ne peut exercer des changements sur Pepper&amp;Carrot afin de le faire rentrer dans une case du \'marché\'.
+        ...Et pourquoi Pepper&amp;Carrot ne pourrait-il pas amorcer un changement et ainsi inspirer une industrie en crise ? Essayons !
+    </p>
+    
+    <p>
+        Pour seulement 1€ par nouvel épisode, devenez dès aujourd\'hui mécène de Pepper&amp;Carrot sur <a href="https://www.patreon.com/davidrevoy" title="Pour seulement 1$ par nouvel épisode, devenez mécéne aujourdh\'ui sur Patreon">Patreon</a>, site international utilisant le dollar US, ou alternativement sur <a href="https://www.tipeee.com/pepper-carrot" title="Pour seulement 1€ par nouvel épisode, devenez mécéne aujourd\'hui sur Tipeee">Tipeee</a>, site en Français utilisant l\'euro.
+    </p>
     
         <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
     
-    <div class="button moka">
-        Pour seulement 1€ par nouvel épisode, devenez dès aujourd\'hui mécène de Pepper&amp;Carrot sur <a href="https://www.patreon.com/davidrevoy" title="Pour seulement 1$ par nouvel épisode, devenez mécéne aujourdh\'ui sur Patreon">Patreon</a>, site international utilisant le dollar US, ou alternativement sur <a href="https://www.tipeee.com/pepper-carrot" title="Pour seulement 1€ par nouvel épisode, devenez mécéne aujourd\'hui sur Tipeee">Tipeee</a>, site en Français utilisant l\'euro.
-    </div>
  
  ',
  

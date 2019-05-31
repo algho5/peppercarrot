@@ -77,7 +77,7 @@ $LANG = array(
     Apareisserà dins los remerciaments d’aqueste episòdi. Gràcia a aqueste sistèma, Pepper&amp;Carrot
     demòra independent e protegit del monde editorial, de la publicitat e del marketing agressiu.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     Per mai de comoditat e mens de despensas bancàrias pel public francofòns, metèri en plaça <a href="https://www.tipeee.com/pepper-carrot" title="Pepper&amp;Carrot on tipeee">una pagina sus Tipeee</a>.
     Òm pòt tanben <a href="https://www.patreon.com/join/davidrevoy?">sosténer lo projècte via Patreon</a> (internacional).
@@ -121,16 +121,17 @@ $LANG = array(
 
     <h2>Cambiem l’industria de la BD !</h2>
 
-    <p>Amb mens d’intermediaris entre legeires e autors, tot lo monde es ganhant ; me finançatz dirèctament.
-    Cap d’editor, distributor o comercial pòt realizar de cambiaments sus Pepper&amp;Carrot per lo conhar dins una casa del \'mercat\'.
-    ...E perque Pepper&amp;Carrot poiriá pas aviar un cambiament e aital inspirar una industria en crisi ? Ensagem !</p>
-
-        <img alt="Illustracion : l’industria de la BD VS finançament per mecenat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-
-    <div class="button moka">
+    <p>
+      Amb mens d’intermediaris entre legeires e autors, tot lo monde es ganhant ; me finançatz dirèctament.
+      Cap d’editor, distributor o comercial pòt realizar de cambiaments sus Pepper&amp;Carrot per lo conhar dins una casa del \'mercat\'.
+      ...E perque Pepper&amp;Carrot poiriá pas aviar un cambiament e aital inspirar una industria en crisi ? Ensagem !
+    </p>
+    
+    <p>
         Per solament 1€ per episòdi novèl, venètz mecènas de Pepper&amp;Carrot a partir d’uèi sus <a href="https://www.patreon.com/davidrevoy" title="Per solament 1€ per episòdi novèl, venètz mecènas a partir d’uèi sus Patreon">Patreon</a>, site internacional utilizant lo dòlar US, o autrament sus <a href="https://www.tipeee.com/pepper-carrot" title="Per solament 1€ per episòdi novèl, venètz mecènas a partir d’uèi sus Tipeee">Tipeee</a>, site en francés utilizant l’euro.
-    </div>
+    </p>
 
+    <img alt="Illustracion : l’industria de la BD VS finançament per mecenat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################

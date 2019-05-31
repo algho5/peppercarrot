@@ -78,7 +78,7 @@ $LANG = array(
     Každý fanoušek na nově vydanou epizodu přispěje 1 dollar a za to bude jeho jméno napsáno v poděkování autora na konci nové epizody.
     Díky tomuto systému může Pepper&amp;Carrot zůstat nezávislým komiksem bez jakýkoliv otravných reklam.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     Fanouškem Pepper&amp;Carrot se <a href="https://www.patreon.com/join/davidrevoy?">na Patreonu</a> můžete stát už za 1 dollar na epizodu.
     Patreon přijímá všechny platební karty z celého světa a dokonce můžete platit i přes PayPal.
@@ -120,19 +120,19 @@ $LANG = array(
 
     <h2>Společně změníme komiksový průmysl!</h2>
 
-    <p>Bez prostředníka mezi umělcem a čtenáři, Vy zaplatíte méně a já víc získám. Podporujete totiž přímo mě.
-    Žádný vydavatel/distributor/obchod/trend mě nemůže donutit změnit Pepper&amp;Carrot k jejich potřebám.
-    &nbsp;.&nbsp;.&nbsp;.&nbsp;proč by nemohl jediný úspěch započít vlnu podobných projektů? Uvidíme...</p>
+    <p>
+      Bez prostředníka mezi umělcem a čtenáři, Vy zaplatíte méně a já víc získám. Podporujete totiž přímo mě.
+      Žádný vydavatel/distributor/obchod/trend mě nemůže donutit změnit Pepper&amp;Carrot k jejich potřebám.
+      &nbsp;.&nbsp;.&nbsp;.&nbsp;proč by nemohl jediný úspěch započít vlnu podobných projektů? Uvidíme...
+    </p>
     
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Jen za 1$ na Patreonu podpořte novou epizodu Pepper&amp;Carrot">
+        Pomozte mi pozvednout produkci Pepper&amp;Carrot ještě dnes.
+      </a>
+    </p>
 
-        <img alt="Illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="Jen za 1$ na Patreonu podpořte novou epizodu Pepper&amp;Carrot">
-            Pomozte mi pozvednout produkci Pepper&amp;Carrot ještě dnes.
-        </a>
-    </div>
-
+    <img alt="Illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################

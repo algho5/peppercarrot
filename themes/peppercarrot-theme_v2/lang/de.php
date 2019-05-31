@@ -78,7 +78,7 @@ $LANG = array(
     Jeder F&ouml;rderer gibt ein bisschen Geld f&uuml;r jede neue Episode, und wird daf&uuml;r am Ende der neuen Episode genannt.
     Durch dieses System kann Pepper&amp;Carrot unabh&auml;ngig bleiben und ohne Werbung oder Verschmutzung durch Marketing auskommen.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     Es ist einfach, f&uuml;r nur 1€ pro Episode Pepper&amp;Carrot F&ouml;rderer <a href="https://www.patreon.com/join/davidrevoy?">auf Patreon</a> zu werden.
     Patreon akzeptiert Kreditkarten aus aller Welt und ihr k&ouml;nnt sogar mit PayPal auf Patreon bezahlen.
@@ -122,18 +122,19 @@ $LANG = array(
 
     <h2>Lasst uns die Comic-Industrie ver&auml;ndern!</h2>
     
-    <p>Mit weniger Organisationsaufwand zwischen dem Publikum und dem K&uuml;nstler, bezahlt ihr weniger und ich profitiere mehr. Ihr unterst&uuml;tzt mich direkt.
-    Kein Redakteur/Verlag/Marketing, keine Modeerscheinung kann mich zwingen, Pepper&amp;Carrot zu ver&auml;ndern, um es ihrer Sicht des Marktes anzupassen.
-    ... Warum sollte nicht ein einzelner Erfolg eine Lawine ausl&ouml;sen, die eine ganze Industrie in die Knie zwingt? Lasst es uns versuchen!</p>
-    
-        <img alt="Illustration: Comic-Industrie VS Patreon-Unterst&uuml;tzung" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
+    <p>
+      Mit weniger Organisationsaufwand zwischen dem Publikum und dem K&uuml;nstler, bezahlt ihr weniger und ich profitiere mehr. Ihr unterst&uuml;tzt mich direkt.
+      Kein Redakteur/Verlag/Marketing, keine Modeerscheinung kann mich zwingen, Pepper&amp;Carrot zu ver&auml;ndern, um es ihrer Sicht des Marktes anzupassen.
+      ... Warum sollte nicht ein einzelner Erfolg eine Lawine ausl&ouml;sen, die eine ganze Industrie in die Knie zwingt? Lasst es uns versuchen!
+    </p>
   
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="Werde ein Patreon von Pepper&amp;Carrot f&uuml;r nur 1€ pro Episode.">
-            Hilf mir heute, die Produktion von Pepper&amp;Carrot zu beschleunigen
-        </a> 
-    </div>
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Werde ein Patreon von Pepper&amp;Carrot f&uuml;r nur 1€ pro Episode.">
+        Hilf mir heute, die Produktion von Pepper&amp;Carrot zu beschleunigen
+      </a> 
+    </p>
  
+    <img alt="Illustration: Comic-Industrie VS Patreon-Unterst&uuml;tzung" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
  
 ################################################################################

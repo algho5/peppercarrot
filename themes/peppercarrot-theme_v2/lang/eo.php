@@ -78,7 +78,7 @@ $LANG = array(
     Ĉiu patrono sendas iomete da mono por ĉiu nov-publikigita rakonteto kaj ricevas agnoskon sube nova bildrakonto.
     Danke al tiu ĉi sistemo, Pipro kaj Karoĉjo povas esti sendependa kaj por ĉiam restos libera de iuj reklamaĉoj.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     Estas facile iĝi patrono de Pipro kaj Karoĉjo nur po 1$ por nova rakonteto <a href="https://www.patreon.com/join/davidrevoy?">per Patreon</a>.
     Patreon akceptas monkartojn de la tuta mondo kaj vi eĉ povas pagi per PayPal-konto al Patreon.
@@ -120,19 +120,19 @@ $LANG = array(
 
     <h2>Ni ŝanĝu la sektoron de bildrakontoj!</h2>
 
-    <p>Sen perantoj inter artisto kaj spektantoj vi pagas malpli kaj mi profitas pli. Vi subtenas min senpere.
-    Neniu eldonisto/distribuisto/reklamisto povas devigi min ŝanĝi Pipron kaj Karoĉjon por kongrui kun lia aspekto de ‘merkato’.
-    &nbsp;.&nbsp;.&nbsp;.&nbsp;Ĉu estas eble por ke unu eta sukceso influu la tutan sektoron? Ni provu!</p>
+    <p>
+      Sen perantoj inter artisto kaj spektantoj vi pagas malpli kaj mi profitas pli. Vi subtenas min senpere.
+      Neniu eldonisto/distribuisto/reklamisto povas devigi min ŝanĝi Pipron kaj Karoĉjon por kongrui kun lia aspekto de ‘merkato’.
+      &nbsp;.&nbsp;.&nbsp;.&nbsp;Ĉu estas eble por ke unu eta sukceso influu la tutan sektoron? Ni provu!
+    </p>
     
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="nur po 1$ por nova rakonteto, iĝu patrono de Pipro kaj Karoĉjo">
+        Bonvolu helpi al mi plibonigi kreadon de Pipro kaj Karoĉjo nun.
+      </a>
+    </p>
 
-        <img alt="ilustraĵo: sektoro de bildrakontoj kontraŭ subteno de patronoj" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="nur po 1$ por nova rakonteto, iĝu patrono de Pipro kaj Karoĉjo">
-            Bonvolu helpi al mi plibonigi kreadon de Pipro kaj Karoĉjo nun.
-        </a>
-    </div>
-
+    <img alt="ilustraĵo: sektoro de bildrakontoj kontraŭ subteno de patronoj" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################

@@ -78,7 +78,7 @@ $LANG = array(
     这些给予赞助的读者将会被列在该集漫画的鸣谢名单中。由于此系统的健康运作，小辣椒与萝卜头
     得以继续以自由独立漫画的形式存在从而摆脱漫画产业，广告和商业运作的影响。</p>
 ',
-'PHILOSOPHY_DONATION'		=> '           
+'DONATE_INTRO'		=> '           
     <p>
     成为小辣椒与萝卜头的赞助者很容易，只要在<a href="https://www.patreon.com/join/davidrevoy?">Patreon</a>网站上支付1美元/集就可以了。
     Patreon接受全球的信用卡，您也可以在Patreon上使用Paypal账户。
@@ -122,18 +122,19 @@ $LANG = array(
 
     <h2>让我们一起来改变漫画产业！</h2>
     
-    <p>减少作者和读者之间的各种中介是一件人人受益的事情，您的资金直接资助了作者而不是其他人。
-    同时不会有任何出版商，发行商或其他商业中介以“市场”的名义来左右小辣椒与萝卜头的创作理念。
-    为什么小辣椒与萝卜头不可以开启一个漫画产业的新时代呢？就让我们大胆的尝试一下吧！</p>
+    <p>
+      减少作者和读者之间的各种中介是一件人人受益的事情，您的资金直接资助了作者而不是其他人。
+      同时不会有任何出版商，发行商或其他商业中介以“市场”的名义来左右小辣椒与萝卜头的创作理念。
+      为什么小辣椒与萝卜头不可以开启一个漫画产业的新时代呢？就让我们大胆的尝试一下吧！
+    </p>
     
-        <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="只要1$一集，通过Patreon网站成为小辣椒与萝卜头的赞助者">
+        从今天起帮助我加速小辣椒与萝卜头的成长吧！
+      </a>
+    </p>
     
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="只要1$一集，通过Patreon网站成为小辣椒与萝卜头的赞助者">
-            从今天起帮助我加速小辣椒与萝卜头的成长吧！
-        </a>
-    </div>
- 
+    <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
  
 ################################################################################

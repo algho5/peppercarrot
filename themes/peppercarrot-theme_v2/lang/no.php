@@ -78,7 +78,7 @@ $LANG = array(
 	Dette systemet tillater Pepper&amp;Gulrot &aring; v&aelig;re 100 prosent uavhengig uten &aring; måtte ty til reklame eller andre triks som kan
 	ødelegge seriens orginalitet.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
   <p>
 	Det er en smal sak &aring; bli en Pepper&amp;Gulrot-sponsor og det for bare 1$ per nye episode. G&aring; til <a href="https://www.patreon.com/join/davidrevoy?">Patreon</a>.
 	Patreon godtar kredittkort fra hele verden s&aring; vel som betaling via Paypal.
@@ -126,18 +126,18 @@ $LANG = array(
     <h2>La oss endre tegneserieindustrien!</h2>
 
     <p>
-	Ettersom det ikke er noe mellomledd mellom tegner og publikum, betaler du mindre og f&aring;r mer. Din st&oslash;tte g&aring;r til meg direkte.</br>
-	Ingen utgivere distribut&oslash;rer eller markedsf&oslash;rere kan tvinge meg til &aring; forandre Pepper&amp;Gulrot for &aring; tilpasses deres markedsvisjon.</br>
-	Er der mulig for en enslig seriesuksess &aring; skape en sn&oslash;balleffekt som forandrer en industri i krise? Det gjenst&aring;r &aring; se...</p>
+      Ettersom det ikke er noe mellomledd mellom tegner og publikum, betaler du mindre og f&aring;r mer. Din st&oslash;tte g&aring;r til meg direkte.</br>
+      Ingen utgivere distribut&oslash;rer eller markedsf&oslash;rere kan tvinge meg til &aring; forandre Pepper&amp;Gulrot for &aring; tilpasses deres markedsvisjon.</br>
+      Er der mulig for en enslig seriesuksess &aring; skape en sn&oslash;balleffekt som forandrer en industri i krise? Det gjenst&aring;r &aring; se...
+    </p>
+    
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Bli en Pepper&amp;Gulrot sponsor for kun 1$ per nye episode">
+        hjelp meg &aring; &oslash;ke produksjonen av Pepper&amp;Gulrot idag.
+      </a>
+    </p>
 	
-        <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="Bli en Pepper&amp;Gulrot sponsor for kun 1$ per nye episode">
-            hjelp meg &aring; &oslash;ke produksjonen av Pepper&amp;Gulrot idag.
-        </a>
-    </div>
-
+    <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################

@@ -77,7 +77,7 @@ $LANG = array(
     Each patron sends a little money for each new episode published and gets a credit at the end of the new episode.
     Thanks to this system, Pepper&amp;Carrot can stay independent and never have to resort to advertising or any marketing pollution.</p>
 ',
-'PHILOSOPHY_DONATION'    => '
+'DONATE_INTRO'    => '
     <p>
     It&#39;s easy to become the patron of Pepper&amp;Carrot for only $1 per new episode <a href="https://www.patreon.com/join/davidrevoy?">on Patreon</a>.
     Patreon accepts credit cards from all around the world and also PayPal.
@@ -119,18 +119,19 @@ $LANG = array(
 
     <h2>Let&#39;s change comic industry!</h2>
 
-    <p>Without intermediary between artist and audience you pay less and I benefit more. You support me directly.
-    No publisher, distributor, marketing team or fashion police can force me to change Pepper&amp;Carrot to fit their vision of &#39;the market&#39;.
-    Why couldn&#39;t a single success &#39;snowball&#39; to a whole industry in crisis? We&#39;ll see…</p>
+    <p>
+      Without intermediary between artist and audience you pay less and I benefit more. You support me directly.
+      No publisher, distributor, marketing team or fashion police can force me to change Pepper&amp;Carrot to fit their vision of &#39;the market&#39;.
+      Why couldn&#39;t a single success &#39;snowball&#39; to a whole industry in crisis? We&#39;ll see…
+    </p>
 
-        <img alt="Illustration: comic book industry vs. Patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only $1 per new episode, become a patreon of Pepper&amp;Carrot">
-            Help me boost Pepper&amp;Carrot production today.
-        </a>
-    </div>
-
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only $1 per new episode, become a patreon of Pepper&amp;Carrot">
+        Help me boost Pepper&amp;Carrot production today.
+      </a>
+    </p>
+    
+    <img alt="Illustration: comic book industry vs. Patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################

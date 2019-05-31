@@ -77,7 +77,7 @@ $LANG = array(
     Kvar sponsor betalar litt for kvar nye episode og vert takka i teksten på slutten av episoden.
     Denne ordninga gjer at Pepar &amp; Gulrot held fram med å vera uavhengig, og nettstaden treng aldri ha reklame eller andre forstyrrande element.</p>
 ',
-'PHILOSOPHY_DONATION'    => '
+'DONATE_INTRO'    => '
     <p>
     Du kan kjapt og enkelt <a href="https://www.patreon.com/join/davidrevoy?">støtta Pepar &amp; Gulrot via Patreon</a> – for berre berre 1 USD per nye episode.
     Du kan betala med både kredittkort og PayPal.
@@ -119,18 +119,19 @@ $LANG = array(
 
     <h2>La oss endra teikneserie­bransjen!</h2>
 
-    <p>Utan ein mellommann mellom serieskaparen og publikum betalar du mindre og eg får meir. Du støttar meg direkte.
-    Ikkje noko forlag, distributør, PR-team eller motepoliti kan tvinga meg til å endra Pepar &amp; Gulrot til å passa deira syn på «marknaden».
-    Kan ikkje ein einskild suksess forandra ein heil bransje i krise? Me får sjå …</p>
+    <p>
+      Utan ein mellommann mellom serieskaparen og publikum betalar du mindre og eg får meir. Du støttar meg direkte.
+      Ikkje noko forlag, distributør, PR-team eller motepoliti kan tvinga meg til å endra Pepar &amp; Gulrot til å passa deira syn på «marknaden».
+      Kan ikkje ein einskild suksess forandra ein heil bransje i krise? Me får sjå …
+    </p>
 
-        <img alt="Illustrasjon på teikneserie­bransjen versus lesarstøtte" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="For berre 1 USD per episode kan du sponsa Pepar &amp; Gulrot">
+        Støtt meg i utviklinga av Pepar &amp; Gulrot i dag!
+      </a>
+    </p>
 
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="For berre 1 USD per episode kan du sponsa Pepar &amp; Gulrot">
-            Støtt meg i utviklinga av Pepar &amp; Gulrot i dag!
-        </a>
-    </div>
-
+    <img alt="Illustrasjon på teikneserie­bransjen versus lesarstøtte" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################

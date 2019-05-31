@@ -78,7 +78,7 @@ $LANG = array(
     Cada patrocinador envía un poco de dinero por cada nuevo episodio publicado y recibe créditos al final del nuevo episodio.
     Gracias a este Sistema, Pepper&amp;Carrot puede ser independiente y nunca usar publicidad o cualquier contaminación de marketing.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '            
+'DONATE_INTRO'		=> '            
     <p>
     Es fácil llegar a ser patrocinador de Pepper&amp;Carrot por sólo 1€ por nuevo episodio <a href="https://www.patreon.com/join/davidrevoy?">en Patreon</a>.
     Patreon acepta tarjetas de crédito de todo el mundo, e incluso se puede pagar con una cuenta de Paypal en Patreon.
@@ -120,18 +120,19 @@ $LANG = array(
 
     <h2>¡Cambiemos la industria del cómic!</h2>
     
-    <p>Con menos intermediarios entre el público y el artista, pagas menos y me beneficio más. Tú me apoyas directamente.
-    Ningún editor/distribuidor/marketing/moda me pueden obligar a cambiar Pepper&amp;Carrot para adaptarse a su visión de &#39;el mercado&#39;.
-    &nbsp;.&nbsp;.&nbsp;.&nbsp;¿Por qué no un solo éxito no podría hacer de &#39;bola de nieve&#39; para toda una industria en crisis?¡Vamos a intentarlo!</p>
+    <p>
+      Con menos intermediarios entre el público y el artista, pagas menos y me beneficio más. Tú me apoyas directamente.
+      Ningún editor/distribuidor/marketing/moda me pueden obligar a cambiar Pepper&amp;Carrot para adaptarse a su visión de &#39;el mercado&#39;.
+      &nbsp;.&nbsp;.&nbsp;.&nbsp;¿Por qué no un solo éxito no podría hacer de &#39;bola de nieve&#39; para toda una industria en crisis?¡Vamos a intentarlo!
+    </p>
     
-        <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-    
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only 1€ per new episode, become a patreon of Pepper&amp;Carrot">
-            Ayúdame a impulsar Pepper&amp;Carrot hoy
-        </a> 
-    </div>
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only 1€ per new episode, become a patreon of Pepper&amp;Carrot">
+        Ayúdame a impulsar Pepper&amp;Carrot hoy
+      </a> 
+    </p>
  
+    <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
  
 ################################################################################

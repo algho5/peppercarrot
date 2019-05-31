@@ -78,7 +78,7 @@ $LANG = array(
     Każdy z patronów przelewa część pieniędzy na nowy odcinek, za co jest umieszczony w napisach końcowych.
     Dzięki temu Pepper&amp;Carrot może być niezależny i wolny od zanieczyszczenia reklamami i marketingiem.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     Patronem Pepper&amp;Carrot można zostać za 1$ <a href="https://www.patreon.com/join/davidrevoy?">na Patreonie</a>.
     Patreon akceptuje karty kredytowe z całego świata, a nawet płatności poprzez Paypal.
@@ -120,18 +120,19 @@ $LANG = array(
 
     <h2>Zmieńmy branżę komiksu!</h2>
 
-    <p>Zmniejszając ilość pośredników pomiędzy czytelnikami i artystą, płacisz mniej, a ja zyskuję więcej. Wspierasz mnie bezpośrednio.
-    Żaden wydawca/dystrybutor nie może zmusić mnie do zmiany Pepper&Carrot, by dopasować go do własnej wizji.
-    &nbsp;.&nbsp;.&nbsp;.&nbsp;Niby czemu pojedynczy sukces nie może pociągnąć za sobą reszty? Spróbujmy!</p>
+    <p>
+      Zmniejszając ilość pośredników pomiędzy czytelnikami i artystą, płacisz mniej, a ja zyskuję więcej. Wspierasz mnie bezpośrednio.
+      Żaden wydawca/dystrybutor nie może zmusić mnie do zmiany Pepper&Carrot, by dopasować go do własnej wizji.
+      &nbsp;.&nbsp;.&nbsp;.&nbsp;Niby czemu pojedynczy sukces nie może pociągnąć za sobą reszty? Spróbujmy!
+    </p>
 
-        <img alt="ilustracja: branża komiksu VS wsparcie patronów" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="Wystarczy 1$ na Patreonie, by zostać patronem nowego odcinka">
-            pomóż mi usprawnić produkcję Pepper&amp;Carrot
-        </a>
-    </div>
-
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Wystarczy 1$ na Patreonie, by zostać patronem nowego odcinka">
+        pomóż mi usprawnić produkcję Pepper&amp;Carrot
+      </a>
+    </p>
+    
+    <img alt="ilustracja: branża komiksu VS wsparcie patronów" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################

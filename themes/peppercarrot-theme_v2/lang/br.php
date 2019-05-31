@@ -78,7 +78,7 @@ $LANG = array(
     Ur sammadig arc\'hant a vez roet gant pep paeron evit kement rann nevez embannet, ha lakaet e vez o anv e dibenn ar rann nevez.
     A-drugarez d\'an aozadur-ma&ntilde; ez eo dizalc\'h Pepper&amp;Carrot ha ne vez morse saotret gant bruderezh.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     Aes eo dont da veza&ntilde; paeron Pepper&amp;Carrot evit 1€ dre rann nevez <a href="https://www.patreon.com/join/davidrevoy?">war Patreon</a>.
     Asantet e vez gant Patreon ar c\'hartenno&ugrave; gred eus ar bed a-bezh, ha tu \'zo deoc\'h zoken paea&ntilde; gant ur gont Paypal.
@@ -119,17 +119,20 @@ $LANG = array(
 
     <h2>Che&ntilde;chomp penn d\'ar vazh e bed ar banno&ugrave;-treset !</h2>
 
-    <p>Ma vez nebeutoc\'h a hanterourien etre an arzour hag al lennerien e paeit nebeutoc\'h hag e c\'hounezan muioc\'h. Harpa&ntilde; a rit ac\'hanon war-eeun.
-    Embanner/dasparzher/bruder ebet n\'hall lakaat ac\'hanon da che&ntilde;ch Pepper&amp;Carrot evit ma klotfe muioc\'h gant o doare da sellet ar &#39;marc\'had&#39;.
-    &nbsp;.&nbsp;.&nbsp;.&nbsp;Ha ma c\'hallfe un taol berzh e-unan kemma&ntilde; ur greanterezh en he fezh ? Klaskomp \'ta !</p>
+    <p>
+      Ma vez nebeutoc\'h a hanterourien etre an arzour hag al lennerien e paeit nebeutoc\'h hag e c\'hounezan muioc\'h. Harpa&ntilde; a rit ac\'hanon war-eeun.
+      Embanner/dasparzher/bruder ebet n\'hall lakaat ac\'hanon da che&ntilde;ch Pepper&amp;Carrot evit ma klotfe muioc\'h gant o doare da sellet ar &#39;marc\'had&#39;.
+      &nbsp;.&nbsp;.&nbsp;.&nbsp;Ha ma c\'hallfe un taol berzh e-unan kemma&ntilde; ur greanterezh en he fezh ? Klaskomp \'ta !
+    </p>
 
-        <img alt="skeudenn: greanterezh ar banno&ugrave;-dreset VS skoazell patreon" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title=" Paeronit Pepper&Carrot war Patreon evit 1$ dre rann nevez ">
+        skoazellit ac\'hanon evit produi&ntilde; Pepper&amp;Carrot
+      </a>
+    </p>
+    
+    <img alt="skeudenn: greanterezh ar banno&ugrave;-dreset VS skoazell patreon" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title=" Paeronit Pepper&Carrot war Patreon evit 1$ dre rann nevez ">
-            skoazellit ac\'hanon evit produi&ntilde; Pepper&amp;Carrot
-        </a>
-    </div>
 
  ',
 

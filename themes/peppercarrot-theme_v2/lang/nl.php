@@ -77,7 +77,7 @@ $LANG = array(
     Alle patrons doneren een klein beetje geld voor iedere nieuwe gepubliceerde aflevering en krijgen credit aan het eind van de aflevering.
     Door dit systeem kan Pepper&amp;Carrot onafhankelijk zijn en nooit advertenties of andere marketing-vervuiling gebruiken.</p>
 ',
-'PHILOSOPHY_DONATION'    => '
+'DONATE_INTRO'    => '
     <p>
     Het is makkelijk om patron van Pepper&amp;Carrot te worden voor slechts €1 per nieuwe aflevering <a href="https://www.patreon.com/join/davidrevoy?">op Patreon</a>.
     Patreon accepteert creditcards uit de hele wereld, en je kunt betalen met een PayPal-account op Patreon.
@@ -120,19 +120,20 @@ $LANG = array(
 
     <h2>Laten we de stripboeken-industrie veranderen!</h2>
 
-    <p>Met minder tussenstappen tussen het publiek en de tekenaar betaal jij minder en verdien ik meer. Je ondersteunt me direct.
-    Geen enkele uitgever/distributeur/marketingafdeling/trend kan me dwingen om Pepper&amp;Carrot
-    aan te passen om aan te sluiten bij hun visie op wat &#39;de markt&#39; wil.
-    Een enkel succes kan als een &#39;sneeuwbal&#39; de hele industrie veranderen. Laten we het proberen!</p>
+    <p>
+      Met minder tussenstappen tussen het publiek en de tekenaar betaal jij minder en verdien ik meer. Je ondersteunt me direct.
+      Geen enkele uitgever/distributeur/marketingafdeling/trend kan me dwingen om Pepper&amp;Carrot
+      aan te passen om aan te sluiten bij hun visie op wat &#39;de markt&#39; wil.
+      Een enkel succes kan als een &#39;sneeuwbal&#39; de hele industrie veranderen. Laten we het proberen!
+    </p>
+    
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Voor maar €1 per aflevering kun je patron van Pepper&amp;Carrot worden">
+        help me om de productie van Pepper&amp;Carrot sneller te maken
+      </a>
+    </p>
 
-        <img alt="afbeelding: de stripboeken-industrie versus ondersteuning door patrons" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="Voor maar €1 per aflevering kun je patron van Pepper&amp;Carrot worden">
-            help me om de productie van Pepper&amp;Carrot sneller te maken
-        </a>
-    </div>
-
+    <img alt="afbeelding: de stripboeken-industrie versus ondersteuning door patrons" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################

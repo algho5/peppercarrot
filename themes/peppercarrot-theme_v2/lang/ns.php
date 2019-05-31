@@ -77,7 +77,7 @@ $LANG = array(
     Jede Förderer gifft en beten Geld för jede ne\'e Folg un warrt denn an \'t Enn vun de ne\'e Folg nöömt.
     Dordör kann Pepper&amp;Wuddel op egen Been stahn un free blieven vun Warf oder driest Marketing.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     Dat is eenfach, för man blots 1€ per Folg Pepper&amp;Wuddel-Förderer <a href="https://www.patreon.com/join/davidrevoy?">op Patreon</a> to warrn.
     Patreon nimmt Kreditkoorten ut de hele Welt an un ji köönt dor ok mit PayPal betahlen.
@@ -121,18 +121,19 @@ $LANG = array(
 
     <h2>Laat uns de Comic-Industrie verännern!</h2>
 
-    <p>Wiel dat weniger Arbeit för de Organisatschoon twischen Lesers un Künstler gifft, betahlt ji weniger un ik verdeen mehr. Ji geevt mi direktemang Stütt.
-    Keen Redakteur/Verlag/Marketing un keen Mood kann mi dwingen, Pepper&amp;Wuddel to verännern un an &#39;de Markt&#39; antopassen.
-    ... Worüm schull nich en enkelde Comic, de allerbest löppt, en Lawien in Gang setten, de de hele Industrie in de Knee dwingt? Laat uns dat versöken!</p>
+    <p>
+      Wiel dat weniger Arbeit för de Organisatschoon twischen Lesers un Künstler gifft, betahlt ji weniger un ik verdeen mehr. Ji geevt mi direktemang Stütt.
+      Keen Redakteur/Verlag/Marketing un keen Mood kann mi dwingen, Pepper&amp;Wuddel to verännern un an &#39;de Markt&#39; antopassen.
+      ... Worüm schull nich en enkelde Comic, de allerbest löppt, en Lawien in Gang setten, de de hele Industrie in de Knee dwingt? Laat uns dat versöken!
+    </p>
 
-        <img alt="Illustration: Comic-Industrie VS Patreon-Unterstützung" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Warr en Patreon vun Pepper&amp;Wuddel för man blots 1€ per Folg.">
+        Help mi hüüt, dat ik gauer ne\'e Folgen vun Pepper&amp;Wuddel maken kann.
+      </a>
+    </p>
 
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="Warr en Patreon vun Pepper&amp;Wuddel för man blots 1€ per Folg.">
-            Help mi hüüt, dat ik gauer ne\'e Folgen vun Pepper&amp;Wuddel maken kann.
-        </a>
-    </div>
-
+    <img alt="Illustration: Comic-Industrie VS Patreon-Unterstützung" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################

@@ -78,7 +78,7 @@ $LANG = array(
     Cada patrocinador envía unha pequena cantidade de cartos por cada novo episodio e obtén aparecer nos créditos ao final de cada novo episodio.
     Grazas a este sistema, Pepper&amp;Carrot pode permanecer autónomo e non depender da publicidade ou contaminarse coa propaganda.</p>
 ',
-'PHILOSOPHY_DONATION'    => '
+'DONATE_INTRO'    => '
     <p>
     É doado converterse en patrocinador de Pepper&amp;Carrot por só $1 por cada novo episodio <a href="https://www.patreon.com/join/davidrevoy?">en Patreon</a>.
     Patreon acepta tarxetas de crédito de todo o mundo e tamén PayPal.
@@ -120,18 +120,19 @@ $LANG = array(
 
     <h2>Cambiemos a industria da banda deseñada!</h2>
 
-    <p>Sen intermediarios entre artista e audiencia, ti pagas menos e eu benefíciome máis. Axúdasme directamente.
-    Ningunha editora, distribuidora, equipo de publicidade ou moda de turno pode forzarme a cambiar Pepper&amp;Carrot para axustarme a súa visión do &#39; mercado&#39;.
-    Por que non podería unha soa historia de éxito mudar toda unha industria en crise? Xa veremos…</p>
+    <p>
+      Sen intermediarios entre artista e audiencia, ti pagas menos e eu benefíciome máis. Axúdasme directamente.
+      Ningunha editora, distribuidora, equipo de publicidade ou moda de turno pode forzarme a cambiar Pepper&amp;Carrot para axustarme a súa visión do &#39; mercado&#39;.
+      Por que non podería unha soa historia de éxito mudar toda unha industria en crise? Xa veremos…
+    </p>
 
-        <img alt="Illustration: comic book industry vs. Patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only $1 per new episode, become a patreon of Pepper&amp;Carrot">
-            Axúdame a aumentar a produción de Pepper&amp;Carrot.
-        </a>
-    </div>
-
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only $1 per new episode, become a patreon of Pepper&amp;Carrot">
+        Axúdame a aumentar a produción de Pepper&amp;Carrot.
+      </a>
+    </p>
+    
+    <img alt="Illustration: comic book industry vs. Patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################

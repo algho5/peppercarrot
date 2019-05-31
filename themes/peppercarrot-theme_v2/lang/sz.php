@@ -78,7 +78,7 @@ $LANG = array(
     Kożdy z patrōnōw przelywŏ trochã pijyndzy na nowõ tajlã, za co dostŏwŏ podziynkowanie na kōńcu kożdyj tajle.
     Dziynki tymu Pepper&amp;Carrot może być niyznŏleżny i swobodny ôd zmaraszyniŏ ryklamami i marketingym.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     Patrōnym Pepper&amp;Carrot idzie być za 1$ <a href="https://www.patreon.com/join/davidrevoy?">na Patreōnie</a>.
     Patreon akceptuje szkarty borgowe z cołkigo świata, a tyż płaty bez Paypal.
@@ -123,18 +123,19 @@ $LANG = array(
 
     <h2>Pōdźcie zmiyniymy branżã kōmiksu!</h2>
 
-    <p>Bez zmyńszynie wielości postrzednikōw miyndzy czytŏczami i kōnsztlerym, płacisz mynij, a jŏ dostŏwōm wiyncyj. Spōmŏgŏsz mie dyrekt.
-    Żŏdyn wydŏwca/dystrybutōr niy może prziginōńć mie do pōmiany Pepper&amp;Carrot, cobych napasowoł go do ôd niygo wizyje&#39;rynku&#39;.
-     &nbsp;.&nbsp;.&nbsp;.&nbsp;Czymu jedyn sukces niy miołby pociōngnōńć za sobōm reszty industryje we kryzysie? Ôbejzdrzimy...</p>
+    <p>
+      Bez zmyńszynie wielości postrzednikōw miyndzy czytŏczami i kōnsztlerym, płacisz mynij, a jŏ dostŏwōm wiyncyj. Spōmŏgŏsz mie dyrekt.
+      Żŏdyn wydŏwca/dystrybutōr niy może prziginōńć mie do pōmiany Pepper&amp;Carrot, cobych napasowoł go do ôd niygo wizyje&#39;rynku&#39;.
+      &nbsp;.&nbsp;.&nbsp;.&nbsp;Czymu jedyn sukces niy miołby pociōngnōńć za sobōm reszty industryje we kryzysie? Ôbejzdrzimy...
+    </p>
 
-        <img alt="ôbrŏzek: branża kōmiksu a sparcie patrōnōw" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Wystyknie 1$ na Patreōnie, by być patrōnym nowyj tajle">
+        pōmōż mi we produkcyji Pepper&amp;Carrot
+      </a>
+    </p>
 
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="Wystyknie 1$ na Patreōnie, by być patrōnym nowyj tajle">
-            pōmōż mi we produkcyji Pepper&amp;Carrot
-        </a>
-    </div>
-
+    <img alt="ôbrŏzek: branża kōmiksu a sparcie patrōnōw" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################

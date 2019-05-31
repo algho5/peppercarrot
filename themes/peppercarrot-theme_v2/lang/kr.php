@@ -78,7 +78,7 @@ $LANG = array(
     이 시스템 덕분에 후추와 당근은 스스로 자립할 수 있고, 광고나 마케팅에 의존할 팔요가 없습니다.</p>
     
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     <a href="https://www.patreon.com/join/davidrevoy?">Patreon</a>에서 후추와 당근을 매 회차당 단돈 1$로 쉽게 후원하실 수 있습니다.
     Patreon에서는 전 세계 신용카드를 모두 사용할 수 있으며, Paypal 계정으로도 결제할 수 있습니다.
@@ -120,19 +120,19 @@ $LANG = array(
 
     <h2>만화책 산업을 바꿉시다!</h2>
     
-    <p>예술가와 독자 사이의 중간단계를 없애면 여러분은 비용을 절약하고 저는 더 많은 이득을 봅니다. 여러분은 저를 직접 후원합니다.
-    어떤 출판사/배급사/마케팅/상점도 후추와 당근을 그들이 원하는 &#39;시장&#39;에 맞게 바꾸도록 할 수 없습니다.
-    어째서 하나의 성공이 전체 산업을 위협하는 신호탄이 될 수 없을까요? 기대해 보자고요...</p>
+    <p>
+      예술가와 독자 사이의 중간단계를 없애면 여러분은 비용을 절약하고 저는 더 많은 이득을 봅니다. 여러분은 저를 직접 후원합니다.
+      어떤 출판사/배급사/마케팅/상점도 후추와 당근을 그들이 원하는 &#39;시장&#39;에 맞게 바꾸도록 할 수 없습니다.
+      어째서 하나의 성공이 전체 산업을 위협하는 신호탄이 될 수 없을까요? 기대해 보자고요...
+    </p>
     
-
-        <img alt="삽화: 기존 만화책 산업구조와 후원자(Patreon) 구조 비교" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-   
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="회차당 단돈 $1로, 후추와 당근의 새 후원자가 되어주세요">
-            오늘 후추와 당근의 제작에 힘을 보태 주세요.
-        </a>
-    </div>
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="회차당 단돈 $1로, 후추와 당근의 새 후원자가 되어주세요">
+          오늘 후추와 당근의 제작에 힘을 보태 주세요.
+      </a>
+    </p>
  
+    <img alt="삽화: 기존 만화책 산업구조와 후원자(Patreon) 구조 비교" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
  
 ################################################################################

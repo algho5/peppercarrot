@@ -78,7 +78,7 @@ $LANG = array(
     Minden pártfogó egy csekély összeggel hozzájárul, amiért cserébe a rész végén megemlítésre kerül.
     Ennek a rendszernek köszönhetően a képregény független maradhat és nem kell reklámokhoz, egyéb marketing-eszközhöz fordulnia.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     Könnyű a Paprika&amp;Sárgarépa pártfogójává válni a <a href="https://www.patreon.com/join/davidrevoy?">Patreon-on</a>, mindössze $1-ért epizódonként.
     A Patreon a világ minden részéről elfogad bankkártyát, és még PayPal-lal is fizethetsz.
@@ -120,18 +120,19 @@ $LANG = array(
 
     <h2>Változtassuk meg a képregényipart!</h2>
     
-    <p>Ha kevesebb a közvetítő a közönség és a művész között, Te is kevesebbet fizetsz és én is jobban járok. Közvetlenül támogatsz.
-    Semmilyen kiadó/viszonteladó/marketing/divat nem tud meggyőzni, hogy a képregényt az piacról kialakított képükhöz igazítsam.
-    ...Miért ne tudna egyetlen siker egy lavinát indítani, ami egy krízisben lévő iparágat akár meg is változtathat? Próbáljuk meg!</p>
+    <p>
+      Ha kevesebb a közvetítő a közönség és a művész között, Te is kevesebbet fizetsz és én is jobban járok. Közvetlenül támogatsz.
+      Semmilyen kiadó/viszonteladó/marketing/divat nem tud meggyőzni, hogy a képregényt az piacról kialakított képükhöz igazítsam.
+      ...Miért ne tudna egyetlen siker egy lavinát indítani, ami egy krízisben lévő iparágat akár meg is változtathat? Próbáljuk meg!
+    </p>
+
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Legyél Te is a Paprika&amp;Sárgarépa pártfogója, mindössze $1-ért epizódonként">
+        Segíts a Paprika&amp;Sárgarépa készítésében!
+      </a> 
+    </p>
     
-        <img alt="illusztráció: képregényipar VS Patreon támogatás" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-    
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="Legyél Te is a Paprika&amp;Sárgarépa pártfogója, mindössze $1-ért epizódonként">
-            Segíts a Paprika&amp;Sárgarépa készítésében!
-        </a> 
-    </div>
- 
+  <img alt="illusztráció: képregényipar VS Patreon támogatás" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
  
 ################################################################################

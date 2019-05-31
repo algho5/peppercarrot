@@ -78,7 +78,7 @@ $LANG = array(
     Những người ủng hộ tài trợ cho những tập truyện mới phát hành, được ghi nhận ở cuối mỗi tập truyện.
     Cảm ơn hệ thống này, Hạt Tiêu&amp;Cà Rốt có thể hoạt động độc lập và không phải dùng quảng cáo khó chịu.</p>
 ',
-'PHILOSOPHY_DONATION'		=> '
+'DONATE_INTRO'		=> '
     <p>
     Rất dễ dàng để trở thành nhà tài trợ cho Hạt Tiêu&amp;Cà Rốt chỉ với 1$ cho mỗi tập truyện <a href="https://www.patreon.com/join/davidrevoy?">qua Patreon</a>.
     Patreon nhận thẻ tín dụng từ khắp thế giới, và bạn cũng có thể trả với tài khoản Paypal qua Patreon.
@@ -120,18 +120,19 @@ $LANG = array(
 
     <h2>Hãy cùng thay đổi nền công nghiệp truyện tranh</h2>
     
-    <p>Với khoảng cách trung gian ngắn hơn giữa người đọc và tác giả, các bạn phải trả ít hơn và tôi nhận được nhiều hơn. Các bạn giúp đỡ tôi một cách trực tiếp.
-    Không một nhà xuất bản/ nhà phân phối/ marketing/ nhà thiết kế nào có thể bắt tôi thay đổi Hạt Tiêu&amp;Cà Rốt để phù hợp với &#39;thị trường&#39; trong mắt họ.
-    &nbsp;.&nbsp;.&nbsp;.&nbsp;Tại sao ta không tạo nên một thành công  và &#39;hiệu ứng tuyết lăn&#39; cho cả một nền công nghiệp? Hãy cùng cố gắng nào!</p>
+    <p>
+      Với khoảng cách trung gian ngắn hơn giữa người đọc và tác giả, các bạn phải trả ít hơn và tôi nhận được nhiều hơn. Các bạn giúp đỡ tôi một cách trực tiếp.
+      Không một nhà xuất bản/ nhà phân phối/ marketing/ nhà thiết kế nào có thể bắt tôi thay đổi Hạt Tiêu&amp;Cà Rốt để phù hợp với &#39;thị trường&#39; trong mắt họ.
+      &nbsp;.&nbsp;.&nbsp;.&nbsp;Tại sao ta không tạo nên một thành công  và &#39;hiệu ứng tuyết lăn&#39; cho cả một nền công nghiệp? Hãy cùng cố gắng nào!
+    </p>
     
-        <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-    
-    <div class="button moka">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="Chỉ với 1$ mỗi tập, hãy ủng hộ Hạt Tiêu&amp;Cà Rốt">
-            Hãy giúp đỡ tôi đẩy mạnh việc hoàn thành Hạt Tiêu&amp;Cà Rốt ngay hôm nay
-        </a> 
-    </div>
+    <p>
+      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Chỉ với 1$ mỗi tập, hãy ủng hộ Hạt Tiêu&amp;Cà Rốt">
+        Hãy giúp đỡ tôi đẩy mạnh việc hoàn thành Hạt Tiêu&amp;Cà Rốt ngay hôm nay
+      </a> 
+    </p>
  
+    <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
  
 ################################################################################
