@@ -353,10 +353,10 @@ if(isset($_GET['page'])) {
               echo '<figure class="thumbnail col sml-6 med-3 lrg-3"><a href="'.$projectpath.'/hi-res/gfx-only/'.$filename.'" title="'.$humanfoldername.'" >';
               if( $key == $last_page) {
                 # in case of last page, close the tag
-                echo '</figure>';
+                echo '</a></figure>';
               } else {
                 # it's a real page, display it
-                echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=210&amp;h=270&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ></a>';
+                echo '<img class="srcoverview" src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=210&amp;h=270&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ></a>';
                 echo '</figure>';
               }
             }
