@@ -1,141 +1,127 @@
 <?php
-$lang = $plxShow->defaultLang($echo);
-
-// get new variable 'page'
-$wikipage = htmlspecialchars($_GET["page"]);
-
-// Security, remove all special characters except A-Z, a-z, 0-9, dots, hyphens, underscore before interpreting something. 
-$wikipage = preg_replace('/[^A-Za-z0-9\._-]/', '', $wikipage);
-
-
-
-// reset status for active pages
-$status="";
-$statushome="";
-
-  if(isset($_GET['page']))
-  {
-    // page found
-  }else{
-    // no page found, we propose homepage by default and active status
-    // new homepage is README.md
-    $wikipage = "README";
-    $statushome="active";
-  }
-
-// add library to parse markdown files
+include(dirname(__FILE__).'/header.php');
 include(dirname(__FILE__).'/lib-parsedown.php');
 
-// add header
-include(dirname(__FILE__).'/header.php'); 
+// Get 'page' in URL and cleanup for prohibiting code injection or path
+$page = htmlspecialchars($_GET["page"]);
+$page = preg_replace('/[^A-Za-z0-9\._-]/', '', $page);
+
+// Setup
+$repositoryURL = "https://framagit.org/peppercarrot/wiki";
+$currentpage = "?static8/wiki";
+$datapath = "data/wiki/";
+
+// Variable
+$status = "";
+$statushome = "";
+
+// Redirection
+if(!isset($_GET['page'])) {
+  // no page found
+  $page = "README";
+  $statushome="active";
+}
+
+// Initiate page
+echo '<div class="container">'."\n";
+echo '  <main class="main grid" role="main">'."\n";
+
+// Start sidebar
+echo '    <aside class="aside col sml-12 med-3" role="complementary">'."\n";
+echo '      <section class="catbuttonmenu col sml-12 med-12 lrg-12" style="padding:0 0;">'."\n";
+echo '        <a class="catbutton '.$statushome.'" href="'; $plxShow->urlRewrite(''.$currentpage.''); echo '" title="">'."\n";
+echo '          Home'."\n";
+echo '        </a>'."\n";
+
+// Menu generation
+// Scan for markdowns
+$search = glob("".$datapath."*.md");
+if (!empty($search)){ 
+  foreach ($search as $file) {
+    // Clean full path to filename only
+    $file = basename($file);
+    
+    // Exclude _Footer, _Sidebar, and all page starting with '_'
+    if (substr($file, 0, 1) === '_') {
+    } else {
+      // Hardcode Home.md or README to the top
+      if ($file === 'Home.md' OR $file === 'README.md') {
+      } else {
+        // Make filename without extension
+        $file = preg_replace('/\\.[^.\\s]{2,4}$/', '', $file);
+        $status="";
+        // Create menu item
+        if ($file === $page) {
+          $status="active";
+        }
+        echo '        <a class="catbutton '.$status.'" href="'; $plxShow->urlRewrite(''.$currentpage.'&page='.$file); echo '" title="">'."\n";
+        echo '          '.$file.''."\n";
+        echo '        </a>'."\n";
+      }
+    }
+  }
+}
+echo '      </section>'."\n";
+echo '     <div style="clear:both"></div>'."\n";
+echo '     <br/>'."\n";
+
+// Start edit buttons
+echo '     <div class="edit" >'."\n";
+echo '      <a href="'.$repositoryURL.'/edit/master/'.$page.'.md" target="_blank" title="Edit this page with an external editor" >'."\n";
+echo '        <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/edit.svg" alt=""/>'."\n";
+echo '          Edit this page'."\n";
+echo '      </a>'."\n";
+echo '      <br/><br/>'."\n";
+
+echo '      <a href="'.$repositoryURL.'/commits/master/'.$page.'.md" target="_blank" title="External history link to see all changes made to this page" >'."\n";
+echo '        <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history.svg" alt=""/>'."\n";
+echo '          Page history'."\n";
+echo '      </a>'."\n";
+echo '      <br/>'."\n";
+
+echo '      <a href="'.$repositoryURL.'" target="_blank" title="External repository link" >'."\n";
+echo '        <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/>'."\n";
+echo '          Repository'."\n";
+echo '      </a>'."\n";
+echo '      <br/>'."\n";
+
+echo '      <a href="'.$repositoryURL.'/commits/master" target="_blank" title="External history link to see all changes made to the Wiki" >'."\n";
+echo '        <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/log.svg" alt=""/>'."\n";
+echo '          Full log'."\n";
+echo '       </a>'."\n";
+
+echo '     </div>'."\n";
+echo '    </aside>'."\n";
+  
+
+echo '	  <section class="col sml-12 med-9">'."\n";
+echo '	    <div class="limit col sml-12 med-10 lrg-9 sml-centered lrg-centered med-centered sml-text-center">'."\n";
+if ($lang !== 'en') {
+  echo '&nbsp;<img class="svg" src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt=" "/>';
+  $plxShow->lang('LIMITATIONS');
+}
+echo '	    </div>'."\n";
+
+// display content
+$contents = file_get_contents(''.$datapath.''. $page .'.md');
+$Parsedown = new Parsedown();
+echo $Parsedown->text($contents);
+
+echo '	    <br/><br/>'."\n";
+      
+// Footer
+echo '	    <footer class="col sml-12 med-12 lrg-12 text-center">'."\n";
+$contents = file_get_contents(''.$datapath.'_Footer.md');
+$Parsedown = new Parsedown();
+echo $Parsedown->text($contents);
+echo '	    </footer>'."\n";
+      
+echo '	    <div style="clear:both"></div>'."\n";
+echo '	    <br/><br/>'."\n";
+
+echo '	  </section>'."\n";
+echo '	</main>'."\n";
+echo '</div>'."\n";
+echo ''."\n";
+include(dirname(__FILE__).'/footer.php'); 
 ?>
-
-<div class="container">
-	<main class="main grid" role="main">
-
-      <section class="col sml-12 med-9">
-        
-        <div class="limit col sml-12 med-10 lrg-9 sml-centered lrg-centered med-centered sml-text-center">
-          <?php 
-          if ($lang !== 'en') {
-            echo '&nbsp;<img class="svg" src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt=" "/>';
-            $plxShow->lang('LIMITATIONS');
-          } else {
-            # nothing
-          }
-          ?>
-        </div>           
-      <?php
-      // echo '<h1>'.$wikipage.'</h1>';
-      // display content main page
-      $contents = file_get_contents('data/wiki/'. $wikipage .'.md');
-      $Parsedown = new Parsedown();
-      echo $Parsedown->text($contents);
-      ?>
-      <br/>
-      <br/>
-      
-      <!-- Footer infos -->
-      <footer class="col sml-12 med-12 lrg-12 text-center">
-        <?php
-        $contents = file_get_contents('data/wiki/_Footer.md');
-        $Parsedown = new Parsedown();
-        echo $Parsedown->text($contents);
-        ?>
-      </footer>
-      
-      <div style="clear:both"></div><br/><br/>
-      
-      </section>
-    
-      <aside class="aside col sml-12 med-3" role="complementary">
-
-      <div class="homebox">
-      <h2>Menu</h2>
-        <section class="catbuttonmenu col sml-12 med-12 lrg-12" style="padding:0 0;">
-          <a class="catbutton <?php echo $statushome; ?>" href="<?php $plxShow->urlRewrite('?static8/wiki'); ?> " title=""><img src="themes/peppercarrot-theme_v2/ico/home.svg" alt="Home"/> Home</a>
-          <?php
-            // dynamic menu generation for sidebar
-    
-              # we scan all markdown in folder
-              $search = glob("data/wiki/*.md");
-
-              # we loop on found files
-              if (!empty($search)){ 
-                foreach ($search as $wikifile) {
-                  
-                  // clean path to filename only
-                  $wikifile = basename($wikifile);
-                  
-                  // _Footer and _Sidebar are special page, they start with '_' exclude them
-                  if (substr($wikifile, 0, 1) === '_') {
-                    // page starting with '_' found, do nothing.
-                  } else {
-                    // Check if the page is Home, we don't display it here to keep it hardcoded on the top
-                    if ($wikifile === 'Home.md' OR $wikifile === 'README.md') {
-                    // Home.md found, do nothing
-                    } else {
-                      // We have a valid markdown page
-                      // Clean filename to get only name without extension :
-                      $wikifile = preg_replace('/\\.[^.\\s]{2,4}$/', '', $wikifile);
-                      // reset the status of active page.
-                      $status="";
-                      // Is there a chance we display the page of this button now? time to set status actif!
-                      if ($wikifile === $wikipage) {
-                        $status="active";
-                      }
-                      // Ok, we have all, diplay this button now :
-                      echo '<a class="catbutton '.$status.'" href="';
-                      $plxShow->urlRewrite('?static8/wiki&page='.$wikifile);
-                      echo '" title="">'.$wikifile.'</a>';
-                    }
-                  }
-                }
-              }
-          ?>
-          </section>
-        </div>
-
-
-
-      <div style="clear:both"></div>
-    <br/>
-      <div class="edit" >
-          <a href="https://framagit.org/peppercarrot/wiki/edit/master/<?php echo $wikipage; ?>.md" target="_blank" title="Edit this page with an external editor" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/edit.svg" alt=""/>&nbsp;&nbsp; Edit this page</a>
-          <br/><br/>
-          <?php
-          echo '<a href="https://framagit.org/peppercarrot/wiki/commits/master/'.$wikipage.'.md" target="_blank" title="External history link to see all changes made to this page" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history.svg" alt=""/>&nbsp;&nbsp;Page history</a>';
-          echo '<br/>';
-          echo '<a href="https://framagit.org/peppercarrot/wiki" target="_blank" title="External repository link" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/>&nbsp;&nbsp;Repository</a>';
-          echo '<br/>';
-          echo '<a href="https://framagit.org/peppercarrot/wiki/commits/master" target="_blank" title="External history link to see all changes made to the Wiki" ><img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/log.svg" alt=""/>&nbsp;&nbsp;full log</a>';
-          ?>      
-      </div>
-      
-    </section>
-
-  </aside>
-
-	</main>
-</div>
-<?php include(dirname(__FILE__).'/footer.php'); ?>
