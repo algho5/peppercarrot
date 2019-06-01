@@ -46,6 +46,8 @@ h4 { font-size:1.2rem }
 /* Header */
 .header { z-index: 9; position: fixed; top: 0; width: 100%; background: url('../img/header-bg.jpg') top left; border-bottom: 1px solid rgba(64,56,52,0.4); box-shadow: 0 0.1rem 0.1rem rgba(49,20,0,0.3); }
 .header a { text-decoration: none;}
+.header h1 { margin: 4px 0 0 7px; padding: 0 0; }
+.header h1 a { color: #412813; }
 .title { text-align: center;}
 .title img { margin: 5px 0  0 5px;}
 
@@ -325,12 +327,12 @@ a:hover { text-decoration:none;}
 /* RESPONSIVE RULES*/
 /* ----------------*/
 /* Tablet mode */
-/* (1023=plucss-med) */
 @media (max-width: 1140px) {
 .cover h1 { font-size: 2.2rem; }
-.menu.expanded li a { font-size: 1.6rem; padding: 2px 0 2px 30px;}
+.menu.expanded li a { padding: .425rem .6rem .425rem 0;}
 input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
-.cover h1 { position: absolute; top: 1rem; right: 0; font-size: 2rem; width: 500px; }
+.header h1 { font-size: 2rem; margin: 7px 0 0 7px; }
+.cover h1 { top: 1rem; right: 0; font-size: 2rem; width: 500px; }
 .cover { background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 11% 80%; text-align: right;}
 .moreposts { text-align: center; margin: 1rem 0 0 0; }
 .moreinfobutton {position: absolute; top: 200px; right: 0; width: 180px; }
@@ -343,18 +345,22 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 @media (max-width: 767px) {
 .thumbnail, .thumbnail img {width: 100%;}
 .cover { background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 15% 80%; }
-.cover h1 { top: -1rem; font-size: 1.8rem; margin: 0.3rem 0 0.4rem 0; width: 500px;}
-.covertextoverlay { right: 1.3rem;}
+.cover h1 { font-size: 1.8rem; line-height: 2.4rem; width: 500px; margin: 0.3rem 0 1rem 0;}
+.covertextoverlay { right: 2.3rem;}
 .cardsocket { min-height: 550px;}
 .cardblock { min-height: 550px;}
 .header { background: rgba(255,255,255,0.95) url('../img/header-small.jpg') no-repeat top center ; }
+.menu.expanded li a { padding: .5rem .6rem .5rem .8rem;}
+.wikivertimenu { column-count: 2;}
 }
 
 /* Smartphones: vertical */
 @media (max-width: 500px) {
 .container {padding: 0;}
 .cover { background: rgba(225, 231, 227, 1) url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 15% 0; }
-.cover h1 { top: -1.5rem; font-size: 1.4rem; margin: 0.3rem 0 1.1rem 0;}
+.cover h1 { font-size: 1.4rem; line-height: 1.8rem; margin: 0.3rem 0 1.1rem 0;}
+.covertextoverlay { right: 1.3rem;}
 .responsive-langmenu ul { column-count: 2; }
 .col.sml-6, .gallery.sml-6 li { width: 100%;}
+.big { font-size:1.10rem;}
 }

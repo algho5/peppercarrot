@@ -73,23 +73,21 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
 }
 ?>
 
-
-
-
   <header class="header" role="banner">
       <div class="grid">
       
-          <div class="title col sml-hide med-show med-3 lrg-2 sml-text-left">
-            <a href="<?php $plxShow->racine() ?><?php echo $lang; ?>/">
-              <img src="<?php $plxShow->template(); ?>/img/en_pepper-carrot_title.svg" height="30px" alt="Pepper&amp;Carrot" title="<?php $plxShow->lang('PEPPERCARROT_VEGETABLE') ?>">
-            </a>
-            <h1 class="no-margin sml-hide med-hide lrg-hide"><?php $plxShow->mainTitle('link'); ?></h1>
+          <div class="title col sml-hide med-hide lrg-show lrg-2 sml-text-left">
+            <h1>
+              <a href="<?php $plxShow->racine() ?><?php echo $lang; ?>/">
+                Pepper&amp;Carrot
+              </a>
+            </h1>
           </div>
           
-          <div class="topmenu col sml-7 med-6 lrg-8 sml-text-left med-text-center">
+          <div class="topmenu col sml-8 med-9 lrg-8 sml-text-left med-text-center">
             <nav class="nav" role="navigation">
               <div class="responsive-menu">
-                <label for="menu"><img src="themes/peppercarrot-theme_v2/ico/menu.svg" alt=""/></label>
+                <label for="menu"><img src="themes/peppercarrot-theme_v2/ico/menu.svg" alt=""/> Pepper&amp;Carrot</label>
                 <input type="checkbox" id="menu">
                 <ul class="menu expanded">
                 <?php if($idStat=="003" OR $idCats=="003" AND $idMode=="article" OR $idCats=="005" AND $idMode=="article" OR $idCats=="009" AND $idMode=="article" ){ $status = "active"; } else { $status = "no-active"; }?>
@@ -126,7 +124,7 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
             </nav>
           </div>
           
-          <div class="col sml-5 med-3 lrg-2 sml-text-right">
+          <div class="col sml-4 med-3 lrg-2 sml-text-right">
             <div class="follow button choco"><br/>
               <a href="<?php $plxShow->urlRewrite('?static12/Donate') ?>">
               ♥ Donate

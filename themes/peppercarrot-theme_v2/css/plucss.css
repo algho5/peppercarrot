@@ -115,7 +115,7 @@ button.red:hover, input[type="button"].red:hover, input[type="reset"].red:hover,
 .responsive-menu label { padding: .425rem .7rem;}
 .responsive-menu input[type=checkbox]:checked+ul { display: block;}
 
-@media (max-width: 1140px) { .responsive-menu ul { display: none;}
+@media (max-width: 1023px) { .responsive-menu ul { display: none;}
 .responsive-menu label, .responsive-menu ul li { display: block; margin-left: 0
 	}
 .responsive-menu ul li:hover { background-color: #ddd;}
