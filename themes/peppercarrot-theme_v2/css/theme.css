@@ -207,48 +207,6 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 .tabletransla td, th {padding: 0.3rem;}
 
 .notice {margin-top:1rem; margin-bottom:1rem; color:#aaa;}
-/*     BLOG    */
-/* ----------- */
-/* Listing */
-
-/* Sidebar */
-.aside { padding-top: 1rem;  }
-.catbutton { border-radius: 0.4rem; box-shadow: 0 0.1rem 0.1rem #C6BCB5; background: url('../img/bg.jpg'); font: normal 1.4rem 'PepperCarrot', cursive; text-align: left; width: 100%; color: #111111; padding: 0.2rem 0.7rem 0.4rem 1rem; box-sizing: border-box; display: block; margin-bottom: 0.5rem; }
-.catbutton.active { color: #111; background: #fff; }
-.catbutton:hover { text-shadow: 0px 0px 10px #258FD6; color:#fff; }
-.catbutton a { color: #3A2619; font-size: 1.6rem; }
-.catbuttonnumber { color: #6F5341; padding:0 0.2rem; border-radius: 0.3rem; margin: 0 0 0 0.2rem; font-size: 0.9rem; text-shadow: none; }
-.lastcom a{ font-size: 0.8rem; color: #333; }
-.lastcom li { margin: 0.3rem; padding: 0.3rem; }
-.tag { border-radius: 0.4rem; box-shadow: 0 0.1rem 0.2rem rgba(58,38,25,0.3); line-height: 2.3rem; padding: 0.3rem; margin: 0 0.1rem 1.4rem 0; background-color: rgba(255,255,255,0.6); }
-.tag-size-1 {font-size: 0.6rem; color: #333; }
-.tag-size-2 {font-size: 0.7rem; color: #333; }
-.tag-size-3 {font-size: 0.8rem; color: #333; }
-.tag-size-4 {font-size: 0.9rem; color: #333; }
-.tag-size-5 {font-size: 1rem; color: #333; }
-.tag-size-6 {font-size: 1.1rem; color: #333; }
-.tag-size-7 {font-size: 1.2rem; color: #333; }
-.tag-size-max {font-size: 1.4rem; color: #333; }
-
-/* Sidebar (wiki specific) */
-.edit {padding-left: 1.2rem; line-height: 1.6;}
-.edit img {opacity: 0.8; }
-
-/* Comments */
-.comments { max-width: 720px; margin: 0 auto; padding:0 0;}
-.singlecom { padding: 0.5rem 0; text-align: justify; }
-.com_content { max-height: 32em; overflow-y: auto; overflow-x: hidden; padding-right:1.5rem; }
-.admin { background-color: #F5F9FC; }
-.level-0 {margin-left: 0; border-top: solid 1px #EEE;}
-.level-1 {margin-left: 8rem; border-left: double 5px #F5F9FC; }
-.level-2 {margin-left: 8rem; border-left: double 5px #F5F9FC; }
-.level-3 {margin-left: 8rem; border-left: double 5px #F5F9FC; }
-.level-4 {margin-left: 8rem; border-left: double 5px #F5F9FC; }
-.level-5,.level-max {margin-left: 8rem; border-left: double 5px #F5F9FC; }
-.nbcom {background-color: #258fd6;color: #fff;padding: .2rem .3rem;}
-.nbcom:hover {background-color: #3a6c96;color: #fff;text-decoration: none;}
-.capcha-letter,.capcha-word {font-weight: bold;}
-.capcha-word {background-color: #ccc;letter-spacing: 0.3em;	padding: .525rem .7rem;}
 
 /*     PAGE SPECIFIC    */
 /* -------------------- */
