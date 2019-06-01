@@ -19,9 +19,9 @@ echo '<div class="container">'."\n";
 echo '  <main class="main grid" role="main">'."\n";
 
 // Start sidebar
-echo '    <aside class="aside col sml-12 med-3" role="complementary">'."\n";
-echo '      <section class="catbuttonmenu col sml-12 med-12 lrg-12" style="padding:0 0;">'."\n";
-echo '        <a class="catbutton '.$statushome.'" href="'; $plxShow->urlRewrite(''.$currentpage.''); echo '" title="">'."\n";
+echo '    <aside class="wikivertimenu col sml-12 med-3" role="complementary">'."\n";
+echo '      <section class="wikibuttonmenu col sml-12 med-12 lrg-12" style="padding:0 0;">'."\n";
+echo '        <a class="wikibutton '.$statushome.'" href="'; $plxShow->urlRewrite(''.$currentpage.''); echo '" title="">'."\n";
 echo '          Home'."\n";
 echo '        </a>'."\n";
 
@@ -48,7 +48,7 @@ if (!empty($search)){
         }
         $menulabel = str_replace('_', ' ', $file);
         $menulabel = preg_replace('/[0-9.]+/', '', $menulabel);
-        echo '        <a class="catbutton '.$status.'" href="'; $plxShow->urlRewrite(''.$currentpage.'&page='.$file); echo '" title="">'."\n";
+        echo '        <a class="wikibutton '.$status.'" href="'; $plxShow->urlRewrite(''.$currentpage.'&page='.$file); echo '" title="">'."\n";
         echo '          '.$menulabel.''."\n";
         echo '        </a>'."\n";
       }
@@ -104,7 +104,7 @@ echo $Parsedown->text($contents);
 echo '	    <br/><br/>'."\n";
       
 // Footer
-echo '	    <footer class="col sml-12 med-12 lrg-12 text-center">'."\n";
+echo '	    <footer class="col wikipage sml-12 med-12 lrg-12 text-center">'."\n";
 $contents = file_get_contents(''.$datapath.'_Footer.md');
 $Parsedown = new Parsedown();
 echo $Parsedown->text($contents);

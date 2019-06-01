@@ -7,7 +7,7 @@
     <section class="col sml-12 med-12 lrg-12" style="padding:0 0;">
       <?php 
       // blog list
-      $plxShow->catList('','<a class="catbutton #cat_status" href="#cat_url" title="#cat_name">#cat_name <span class="catbuttonnumber">#art_nb</span></a>');
+      $plxShow->catList('','<a class="wikibutton #cat_status" href="#cat_url" title="#cat_name">#cat_name <span class="wikibuttonnumber">#art_nb</span></a>');
       // fan-art (list a folder)
       $fanartcounter = 0;
       $pathartworks = '0_sources/0ther/fan-art';
@@ -18,7 +18,7 @@
         }
       }
       ?>
-      <a class="catbutton" href="<?php $plxShow->urlRewrite('?static10/fanart-gallery') ?>" title="<?php $plxShow->lang('HOMEPAGE_MOREPOSTS_BUTTON') ?> ( Fan-art ) ">Fan-art <span class="catbuttonnumber"><?php echo ''.$fanartcounter.''; ?></span></a>
+      <a class="wikibutton" href="<?php $plxShow->urlRewrite('?static10/fanart-gallery') ?>" title="<?php $plxShow->lang('HOMEPAGE_MOREPOSTS_BUTTON') ?> ( Fan-art ) ">Fan-art <span class="wikibuttonnumber"><?php echo ''.$fanartcounter.''; ?></span></a>
     </section>
   </div>
 
