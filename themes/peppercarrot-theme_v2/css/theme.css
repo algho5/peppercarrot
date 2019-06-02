@@ -8,6 +8,7 @@
 body { background-color: #FFFFFF; color: #412813; font-family: ubuntu, arial, sans-serif; }
 a { background: transparent; color: #4f901b; text-decoration: none; }
 a:active, a:hover { color: #444; outline: 0; text-decoration: underline; }
+pre,code { color:#111; background-color: #FFF9F2; padding: 8px; line-height: 2rem!important; font: 13px Consolas, "Liberation Mono", Menlo, Courier, monospace; overflow:auto; }
 h1, h2, h3, h4, h5, h6 { font-family: 'PepperCarrot', cursive, sans-serif;}
 h1 { font-size:2.4rem; }
 h2 { font-size:2.0rem; }
@@ -157,16 +158,7 @@ h4 { font-size:1.2rem }
 /* Protect SVG icons */
 .lastep .svg, .lastep .svg:hover, .homethumbnail .svg, .thumbnail .svg:hover, .thumbnail .svg { width: auto; border:none; }
 
-pre,code { color:#111; background-color: #f7f7f7; padding: 1em; line-height: 1.45; border-radius: 3px; font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace; overflow:auto; }
-.post { background-color: #FFF; padding: 2rem; box-shadow: 0 0 1rem rgba(23,23,23,0.3); margin-bottom: 2rem; border-radius: 0.4rem; }
-.post h1,.post h3 { margin-top: 0; color: #000;}
-.post h1 a { color: #2c2c2c;}
 
-.page h2 { margin-top: 0.2rem;}
-
-.category { padding-top: 2rem;}
-
-input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search.png) no-repeat 9px center; padding: 9px 10px 9px 32px; }
 
 .arrow a { font-size: 2em; color: #2D2D2D; font-family: 'PepperCarrot', cursive; text-decoration: none;}
 .arrow { position: relative; padding: 0px;}
@@ -213,15 +205,25 @@ input[type=search] { margin: 1.2rem 0 0 0; background: #ededed url(../img/search
 /* Philosophy page */
 .philosophy { text-align: center;}
 .philosophy p { margin: 2rem auto; max-width: 550px; text-align: justify; font-size: 1.1rem;}
-.philosophy img { margin: 1rem 0 3.8rem 0; background-blend-mode: multiply;}
+.philosophy img { margin: 1rem 0 3.8rem 0;}
 
-/* Wikis */
+/* Wiki */
+.wikipage { background: url('../img/bg.jpg'); border: 16px solid transparent; border-image: url('../img/page.jpg') 10% round; padding: 15px 120px 0 120px; font-family: "Georgia", Times, serif; text-align: justify; font-size: 1.2rem; margin-top: 16px;}
+.wikipage hr { border: double 4px #A79281;}
+.wikipage p::first-letter { font-size:  1.6rem; margin-right: 1px;}
+.wikipage img { max-width: 125%; display: block; text-align: center; margin-left: 50%; border: 16px solid transparent; border-image: url('../img/border.png') 10% round; transform: translate(-50%, 0); }
+.wikipage .edit { text-align: right; margin-right: -18%;}
+.wikipage .edit .button { display:inline-block; font-size: 1rem;}
+.wikipage .edit img { display: inline; max-width: 100%; text-align: center; margin-left: 0; margin-right: 0; border: none; transform: translate(0, 0); }
+.wikipage h1{ font-size: 3.5rem; text-align: center; padding-bottom: 2.6rem; background: transparent url('../img/bordure.png') no-repeat bottom center;}
+.wikipage h2{ color: #50321e; font-size: 2.2rem; text-align: center; margin-bottom: 3rem;}
+.wikipage h3{ font-size: 1.8rem; margin-top: 2.6rem;}
 .wikivertimenu { padding-top: 1rem;}
 .wikibutton { width: 100%; display: block; box-sizing: border-box; padding: 0.2rem 0.7rem 0.4rem 1rem; margin-bottom: 0.5rem; border-radius: 4px; box-shadow: 0 0 0 2px #F0ECE9 inset, 0 0 0 3px rgba(222,168,131,0.55) inset, 1px 1px 2px 0 rgba(20,0,0,0.50); background: url('../img/bg.jpg'); font: normal 1.4rem 'PepperCarrot', cursive; text-align: left;  color: #111111; transition: all 0.2s ease-in;}
 .wikibutton.active { color: #111; background: #fff;}
 .wikibutton:hover { text-shadow: 1px 0px 30px green, 1px 0px 20px yellow, 1px 0px 10px yellow, 1px 0px 5px white, 1px 0px 5px white; transition: all 0.2s ease-in;}
-.edit {padding-left: 1.2rem; line-height: 1.6;}
-.edit img {opacity: 0.8;}
+.edit { padding-left: 1.2rem; line-height: 1.6;}
+.wikipage .credits { font-size: 1rem; text-align: center; padding-top: 2.6rem; background: transparent url('../img/bordure.png') no-repeat top center;}
 
 /* Sources  */
 .source { background-color: #FFF; margin-bottom: 2rem; font-size: 1rem; }
@@ -307,17 +309,25 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .cardblock .button a { display:inline-block; min-width: 90%; font-size: 1rem;}
 .responsive-langmenu ul { column-count: 3; }
 }
+/* (1023=plucss-med) Tablets and Laptops */
+@media (max-width: 1023px) {
+.wikivertimenu { column-count: 3;}
+.wikipage { padding: 15px 80px 0 80px; font-size: 1.2rem;}
+.wikipage .edit { margin-right: -8%;}
+.header { background: rgba(255,255,255,0.95) url('../img/header-small.jpg') repeat-x top center ; }
+.menu.expanded li a { padding: .5rem .6rem .5rem .8rem;}
+}
 /* (767=plucss-sml) Tablet mode: vertical */
 @media (max-width: 767px) {
-.thumbnail, .thumbnail img {width: 100%;}
+.thumbnail, .thumbnail img { width: 100%;}
 .cover { background: url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 15% 80%; }
 .cover h1 { font-size: 1.8rem; line-height: 2.4rem; width: 500px; margin: 0.3rem 0 1rem 0;}
 .covertextoverlay { right: 2.3rem;}
 .cardsocket { min-height: 550px;}
 .cardblock { min-height: 550px;}
-.header { background: rgba(255,255,255,0.95) url('../img/header-small.jpg') no-repeat top center ; }
-.menu.expanded li a { padding: .5rem .6rem .5rem .8rem;}
 .wikivertimenu { column-count: 2;}
+.wikipage { padding: 15px 20px 0 20px; font-size: 1.2rem;}
+.wikipage .edit { margin-right: -2%;}
 }
 
 /* Smartphones: vertical */
@@ -329,4 +339,5 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .responsive-langmenu ul { column-count: 2; }
 .col.sml-6, .gallery.sml-6 li { width: 100%;}
 .big { font-size:1.10rem;}
+.wikipage { font-size: 1.1rem;}
 }

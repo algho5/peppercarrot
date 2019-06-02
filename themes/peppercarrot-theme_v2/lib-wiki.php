@@ -15,11 +15,11 @@ if(!isset($_GET['page'])) {
 }
 
 // Initiate page
-echo '<div class="container">'."\n";
+echo '<div class="container wikibg">'."\n";
 echo '  <main class="main grid" role="main">'."\n";
 
 // Start sidebar
-echo '    <aside class="wikivertimenu col sml-12 med-3" role="complementary">'."\n";
+echo '    <aside class="wikivertimenu col sml-12 med-12 lrg-3" role="complementary">'."\n";
 echo '      <section class="wikibuttonmenu col sml-12 med-12 lrg-12" style="padding:0 0;">'."\n";
 echo '        <a class="wikibutton '.$statushome.'" href="'; $plxShow->urlRewrite(''.$currentpage.''); echo '" title="">'."\n";
 echo '          Home'."\n";
@@ -57,44 +57,27 @@ if (!empty($search)){
 }
 echo '      </section>'."\n";
 echo '     <div style="clear:both"></div>'."\n";
-echo '     <br/>'."\n";
+echo '    </aside>'."\n";
+
+echo '	  <section class="wikipage col sml-12 med-12 lrg-9">'."\n";
 
 // Start edit buttons
 echo '     <div class="edit" >'."\n";
-echo '      <a href="'.$repositoryURL.'/edit/master/'.$page.'.md" target="_blank" title="Edit this page with an external editor" >'."\n";
-echo '        <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/edit.svg" alt=""/>'."\n";
-echo '          Edit this page'."\n";
-echo '      </a>'."\n";
-echo '      <br/><br/>'."\n";
+echo '       <div class="button moka" >'."\n";
+echo '        <a href="'.$repositoryURL.'/commits/master/'.$page.'.md" target="_blank" title="External history link to see all changes made to this page" >'."\n";
+echo '          <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history.svg" alt=""/>'."\n";
+echo '            View history'."\n";
+echo '        </a>'."\n";
+echo '       </div>'."\n";
 
-echo '      <a href="'.$repositoryURL.'/commits/master/'.$page.'.md" target="_blank" title="External history link to see all changes made to this page" >'."\n";
-echo '        <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history.svg" alt=""/>'."\n";
-echo '          Page history'."\n";
-echo '      </a>'."\n";
-echo '      <br/>'."\n";
-
-echo '      <a href="'.$repositoryURL.'" target="_blank" title="External repository link" >'."\n";
-echo '        <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/git.svg" alt=""/>'."\n";
-echo '          Repository'."\n";
-echo '      </a>'."\n";
-echo '      <br/>'."\n";
-
-echo '      <a href="'.$repositoryURL.'/commits/master" target="_blank" title="External history link to see all changes made to the Wiki" >'."\n";
-echo '        <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/log.svg" alt=""/>'."\n";
-echo '          Full log'."\n";
-echo '       </a>'."\n";
+echo '       <div class="button moka" >'."\n";
+echo '        <a href="'.$repositoryURL.'/edit/master/'.$page.'.md" target="_blank" title="Edit this page with an external editor" >'."\n";
+echo '          <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/edit.svg" alt=""/>'."\n";
+echo '            Edit'."\n";
+echo '        </a>'."\n";
+echo '       </div>'."\n";
 
 echo '     </div>'."\n";
-echo '    </aside>'."\n";
-  
-
-echo '	  <section class="col sml-12 med-9">'."\n";
-echo '	    <div class="limit col sml-12 med-10 lrg-9 sml-centered lrg-centered med-centered sml-text-center">'."\n";
-if ($lang !== 'en') {
-  echo '&nbsp;<img class="svg" src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt=" "/>';
-  $plxShow->lang('LIMITATIONS');
-}
-echo '	    </div>'."\n";
 
 // display content
 $contents = file_get_contents(''.$datapath.''. $page .'.md');
@@ -104,7 +87,7 @@ echo $Parsedown->text($contents);
 echo '	    <br/><br/>'."\n";
       
 // Footer
-echo '	    <footer class="col wikipage sml-12 med-12 lrg-12 text-center">'."\n";
+echo '	    <footer class="credits col sml-12 med-12 lrg-12">'."\n";
 $contents = file_get_contents(''.$datapath.'_Footer.md');
 $Parsedown = new Parsedown();
 echo $Parsedown->text($contents);
