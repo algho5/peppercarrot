@@ -4,7 +4,7 @@
 		<section class="col sml-12">
       <div class="grid">
         
-        <?php include(dirname(__FILE__).'/translate-button-static.php'); ?>
+        <?php include(dirname(__FILE__).'/lib-transla-static.php'); ?>
           
           <article class="philosophy col sml-12 med-12 lrg-12 text-center" role="article">
             <?php $plxShow->lang('PHILOSOPHY_TOP') ?>

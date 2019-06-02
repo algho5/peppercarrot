@@ -5,7 +5,7 @@ echo '  <main class="main grid" role="main">';
 echo '    <section class="col sml-12">';
 echo '      <div class="grid">';
 
-include(dirname(__FILE__).'/translate-button-static.php');
+include(dirname(__FILE__).'/lib-transla-static.php');
 
 echo '  <div class="col sml-12 med-8 lrg-6 sml-centered sml-text-center">';
 $plxShow->lang('DONATE_INTRO');
