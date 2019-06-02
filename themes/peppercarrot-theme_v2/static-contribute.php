@@ -39,8 +39,9 @@ if ($lang !== "en" ){
 
 echo '  </div>';
 
-include(dirname(__FILE__).'/lib-peppercarrot-utils.php'); 
-peppercarrotCards("pages/contribute", "");
+$folder = "pages/contribute";
+$color = "";
+include(dirname(__FILE__).'/lib-cards.php'); 
 
 echo '      </div>';
 echo '    </section>';

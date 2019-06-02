@@ -84,7 +84,7 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
             </h1>
           </div>
           
-          <div class="topmenu col sml-8 med-9 lrg-8 sml-text-left med-text-center">
+          <div class="topmenu col sml-8 med-9 lrg-8 med-text-left lrg-text-center">
             <nav class="nav" role="navigation">
               <div class="responsive-menu">
                 <label for="menu"><img src="themes/peppercarrot-theme_v2/ico/menu.svg" alt=""/> Pepper&amp;Carrot</label>
@@ -125,9 +125,9 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
           </div>
           
           <div class="col sml-4 med-3 lrg-2 sml-text-right">
-            <div class="follow button choco"><br/>
-              <a href="<?php $plxShow->urlRewrite('?static12/Donate') ?>">
-              ♥ Donate
+            <div class="follow button big choco"><br/>
+              <a href="<?php $plxShow->urlRewrite('?static12/donate') ?>">
+              Donate
               <?php // TODO echo $plxShow->Getlang(PATRONAGE_BUTTON); ?>
               </a>
           </div>

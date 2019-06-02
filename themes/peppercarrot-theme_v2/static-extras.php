@@ -18,8 +18,9 @@ if ($lang !== "en" ){
 
 echo '  </div>';
 
-include(dirname(__FILE__).'/lib-peppercarrot-utils.php'); 
-peppercarrotCards("pages/extras", "gum");
+$folder = "pages/extras";
+$color = "gum";
+include(dirname(__FILE__).'/lib-cards.php');
 
 echo '      </div>';
 echo '    </section>';
