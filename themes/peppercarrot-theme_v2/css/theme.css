@@ -14,6 +14,7 @@ h1 { font-size:2.4rem; }
 h2 { font-size:2.0rem; }
 h3 { font-size:1.5rem; margin-top:0.6rem; }
 h4 { font-size:1.2rem }
+figure + em, img + em { display: block; max-width: 75%; margin: 0 auto; color: #6b5e4f; font-size: 1.1rem; text-align: center!important;}
 
 /* Main style */
 .main {	margin: 56px 0 1rem 0; }

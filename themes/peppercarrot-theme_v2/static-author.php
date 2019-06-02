@@ -5,7 +5,7 @@
 
       <div class="grid">
         <?php include(dirname(__FILE__).'/lib-transla-static.php'); ?>
-        <article class="col sml-12 med-12 lrg-12" role="article" >
+        <article class="wikipage col sml-12 med-12 lrg-10 sml-centered" role="article" >
         
           <figure style="margin-top: 1rem;">
             <a href="data/images/static/2015_Portrait-of-David-Revoy_by-Elisa_de_Castro_Guerra.jpg" title="David Revoy, Photo credit : Elisa de Castro Guerra " alt="Photo of David Revoy" >
@@ -14,7 +14,7 @@
           </figure>
           
           <em>
-          Photo credit : Elisa de Castro Guerra
+            Photo credit : Elisa de Castro Guerra
           </em>
 
           <h1>
@@ -42,11 +42,13 @@
           <h3>
             <?php $plxShow->lang('AUTHOR_CARREER_TITLE') ?>
           </h3>
-
+          
           <img src="data/images/static/2015-02-11_author-achivements.jpg" alt="" />
 
-          <?php $plxShow->lang('AUTHOR_CARREER_BUBBLE_DESCRIPTIONS') ?>
-
+          <em>
+            <?php $plxShow->lang('AUTHOR_CARREER_BUBBLE_DESCRIPTIONS') ?>
+          </em>
+          
           <?php
           # Listing here: https://framagit.org/peppercarrot/webcomics/blob/master/AUTHORS.md
           include(dirname(__FILE__).'/lib-parsedown.php');
