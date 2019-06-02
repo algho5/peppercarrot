@@ -1,4 +1,5 @@
-<?php
+<?php if (!defined('PLX_ROOT')) exit; 
+
 // depends of:
 // $color: the color of the buttons (css class)
 // $folder: the folder with the collection of json to display

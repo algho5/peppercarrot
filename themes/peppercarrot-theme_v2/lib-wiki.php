@@ -1,4 +1,5 @@
-<?php
+<?php if (!defined('PLX_ROOT')) exit; 
+
 // Get 'page' in URL and cleanup for prohibiting code injection or path
 $page = htmlspecialchars($_GET["page"]);
 $page = preg_replace('/[^A-Za-z0-9\._-]/', '', $page);
