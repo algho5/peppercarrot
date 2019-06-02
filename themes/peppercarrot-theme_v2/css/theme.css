@@ -204,7 +204,7 @@ h4 { font-size:1.2rem }
 /* -------------------- */
 /* Philosophy page */
 .philosophy { text-align: center;}
-.philosophy p { margin: 2rem auto; max-width: 550px; text-align: justify; font-size: 1.1rem;}
+.philosophy p { margin: 2rem auto; max-width: 550px; text-align: justify; font-family: "Georgia", Times, serif; font-size: 1.2rem;}
 .philosophy img { margin: 1rem 0 3.8rem 0;}
 
 /* Wiki */
