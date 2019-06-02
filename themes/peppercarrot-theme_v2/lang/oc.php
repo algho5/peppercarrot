@@ -102,7 +102,7 @@ $LANG = array(
     L’utilizacion comerciala, las traduccions, los fan-arts, l’impression, los films, los jòcs-vidèo e lo re-partatge sul net son encoratjats.
     Vos demandi pas que de mencionar lo(s) autor(s) de las òbras (artistas, correctors, traductors investits dins la creacion de l’òbra), d’integrar un ligam cap a la licéncia e indicar se de modificacions son estadas fachas. Podètz ensenhar aquelas informacions d’un biais rasonable sens indicar que los autors vos sostenon dins lo cambiament de lors òbras.</p>
 
-    <div class="button moka">
+    <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" title="Mai d‘informacion en francés tocant Creative Commons Attribution 4.0">
             Licéncia : Creative Commons Attribution 4.0
         </a>
@@ -127,9 +127,11 @@ $LANG = array(
       ...E perque Pepper&amp;Carrot poiriá pas aviar un cambiament e aital inspirar una industria en crisi ? Ensagem !
     </p>
     
-    <p>
-        Per solament 1€ per episòdi novèl, venètz mecènas de Pepper&amp;Carrot a partir d’uèi sus <a href="https://www.patreon.com/davidrevoy" title="Per solament 1€ per episòdi novèl, venètz mecènas a partir d’uèi sus Patreon">Patreon</a>, site internacional utilizant lo dòlar US, o autrament sus <a href="https://www.tipeee.com/pepper-carrot" title="Per solament 1€ per episòdi novèl, venètz mecènas a partir d’uèi sus Tipeee">Tipeee</a>, site en francés utilizant l’euro.
-    </p>
+    <div class="button">
+        <a href="?static12/donate" title="Per solament 1€ per episòdi novèl, venètz mecènas.">
+          Per solament 1€ per episòdi novèl, venètz mecènas de Pepper&amp;Carrot.
+        </a>
+    </div>
 
     <img alt="Illustracion : l’industria de la BD VS finançament per mecenat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',

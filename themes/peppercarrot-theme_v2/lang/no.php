@@ -106,7 +106,7 @@ $LANG = array(
 	en fornuftig m&aring;te, men uten &aring; antyde at forfatterne har hatt noe med deg eller din bruk &aring; gj&oslash;re.</p>
     
 
-    <div class="button moka">
+    <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="For mer informasjon, les Creative Commons Attribution 4.0">
             Lisens: Creative Commons Attribution 4.0
         </a>
@@ -131,11 +131,11 @@ $LANG = array(
       Er der mulig for en enslig seriesuksess &aring; skape en sn&oslash;balleffekt som forandrer en industri i krise? Det gjenst&aring;r &aring; se...
     </p>
     
-    <p>
-      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Bli en Pepper&amp;Gulrot sponsor for kun 1$ per nye episode">
+    <div class="button">
+      <a href="?static12/donate" title="Bli en Pepper&amp;Gulrot sponsor for kun 1$ per nye episode">
         hjelp meg &aring; &oslash;ke produksjonen av Pepper&amp;Gulrot idag.
       </a>
-    </p>
+    </div>
 	
     <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',

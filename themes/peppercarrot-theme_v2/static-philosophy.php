@@ -6,9 +6,12 @@
         
         <?php include(dirname(__FILE__).'/lib-transla-static.php'); ?>
           
-          <article class="philosophy col sml-12 med-12 lrg-12 text-center" role="article">
+          <article class="page philo col sml-12 med-12 lrg-10 sml-centered text-center" role="article">
+            <h1>
+              <?php $plxShow->lang('PHILOSOPHY') ?>
+            </h1>
             <?php $plxShow->lang('PHILOSOPHY_TOP') ?>
-              <div class="button moka">
+              <div class="button">
                 <a href="<?php $plxShow->urlRewrite('?static12/donate'); ?>">
                   <?php $plxShow->lang(PATRONAGE_BUTTON);?>
                 </a>

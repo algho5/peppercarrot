@@ -39,7 +39,7 @@ figure + em, img + em { display: block; max-width: 75%; margin: 0 auto; color: #
 .cardblock { min-height: 535px; width: 100%; text-align: center; padding: 0 0; background: #F0ECE9 url('../img/bg.jpg'); border: 16px solid transparent; border-image: url('../img/cards.jpg') 10% round; }
 .cardblockcontent { min-height: 460px; }
 .cardblockcontent p { width: 90%; text-align: justify; margin: 10px auto 0 auto;}
-.cardblock h3{ font-size: 1.8rem; margin-bottom: 0;}
+.cardblock h3 { font-size: 1.8rem; margin-bottom: 0;}
 .cardby { color: #ababab; font-size: 0.90rem;}
 .cardblock img {width: 95%; margin: 0 0 10px 0; }
 .cardlink {text-align: center; width: 100%; margin-bottom: 0.5rem; color: #ababab; font-size: 0.90rem; }
@@ -204,27 +204,28 @@ figure + em, img + em { display: block; max-width: 75%; margin: 0 auto; color: #
 /*     PAGE SPECIFIC    */
 /* -------------------- */
 /* Philosophy page */
-.philosophy { text-align: center;}
-.philosophy p { margin: 2rem auto; max-width: 550px; text-align: justify; font-family: "Georgia", Times, serif; font-size: 1.2rem;}
-.philosophy img { margin: 1rem 0 3.8rem 0;}
+.philo { text-align: center;}
+.philo p { margin: 2rem auto; max-width: 550px; text-align: justify; font-family: "Georgia", Times, serif; font-size: 1.2rem;}
+.philo img { margin: 1rem 0 3.8rem 0;}
+.philo .button { text-align: center;  display: block;}
+.philo .button a { display: block; max-width: 300px; margin: 0 auto 2.5rem auto;}
 
-/* Wiki */
-.wikipage { background: url('../img/bg.jpg'); border: 16px solid transparent; border-image: url('../img/page.jpg') 10% round; padding: 15px 120px 0 120px; font-family: "Georgia", Times, serif; text-align: justify; font-size: 1.2rem; margin-top: 16px;}
-.wikipage hr { border: double 4px #A79281;}
-.wikipage p::first-letter { font-size:  1.6rem; margin-right: 1px;}
-.wikipage img { max-width: 125%; display: block; text-align: center; margin-left: 50%; border: 16px solid transparent; border-image: url('../img/border.png') 10% round; transform: translate(-50%, 0); }
-.wikipage .edit { text-align: right; margin-right: -18%;}
-.wikipage .edit .button { display:inline-block; font-size: 1rem;}
-.wikipage .edit img { display: inline; max-width: 100%; text-align: center; margin-left: 0; margin-right: 0; border: none; transform: translate(0, 0); }
-.wikipage h1{ font-size: 3.5rem; text-align: center; padding-bottom: 2.6rem; background: transparent url('../img/bordure.png') no-repeat bottom center;}
-.wikipage h2{ color: #50321e; font-size: 2.2rem; text-align: center; margin-bottom: 3rem;}
-.wikipage h3{ font-size: 1.8rem; margin-top: 2.6rem;}
+.page { background: url('../img/bg.jpg'); border: 16px solid transparent; border-image: url('../img/page.jpg') 10% round; padding: 15px 120px 0 120px; font-family: "Georgia", Times, serif; text-align: justify; font-size: 1.2rem; margin-top: 16px;}
+.page hr { border: double 4px #A79281;}
+.page p::first-letter { font-size:  1.6rem; margin-right: 1px;}
+.page img { max-width: 125%; display: block; text-align: center; margin-left: 50%; border: 16px solid transparent; border-image: url('../img/border.png') 10% round; transform: translate(-50%, 0); }
+.page .edit { text-align: right; margin-right: -18%;}
+.page .edit .button { display:inline-block; font-size: 1rem;}
+.page .edit img { display: inline; max-width: 100%; text-align: center; margin-left: 0; margin-right: 0; border: none; transform: translate(0, 0); }
+.page h1{ font-size: 3.5rem; text-align: center; padding-bottom: 2.6rem; background: transparent url('../img/bordure.png') no-repeat bottom center;}
+.page h2{ color: #50321e; font-size: 2.2rem; text-align: center; margin-bottom: 3rem;}
+.page h3{ font-size: 1.8rem; margin-top: 2.6rem;}
 .wikivertimenu { padding-top: 1rem;}
 .wikibutton { width: 100%; display: block; box-sizing: border-box; padding: 0.2rem 0.7rem 0.4rem 1rem; margin-bottom: 0.5rem; border-radius: 4px; box-shadow: 0 0 0 2px #F0ECE9 inset, 0 0 0 3px rgba(222,168,131,0.55) inset, 1px 1px 2px 0 rgba(20,0,0,0.50); background: url('../img/bg.jpg'); font: normal 1.4rem 'PepperCarrot', cursive; text-align: left;  color: #111111; transition: all 0.2s ease-in;}
 .wikibutton.active { color: #111; background: #fff;}
 .wikibutton:hover { text-shadow: 1px 0px 30px green, 1px 0px 20px yellow, 1px 0px 10px yellow, 1px 0px 5px white, 1px 0px 5px white; transition: all 0.2s ease-in;}
 .edit { padding-left: 1.2rem; line-height: 1.6;}
-.wikipage .credits { font-size: 1rem; text-align: center; padding-top: 2.6rem; background: transparent url('../img/bordure.png') no-repeat top center;}
+.page .credits { font-size: 1rem; text-align: center; padding-top: 2.6rem; background: transparent url('../img/bordure.png') no-repeat top center;}
 
 /* Sources  */
 .source { background-color: #FFF; margin-bottom: 2rem; font-size: 1rem; }
@@ -313,8 +314,8 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 /* (1023=plucss-med) Tablets and Laptops */
 @media (max-width: 1023px) {
 .wikivertimenu { column-count: 3;}
-.wikipage { padding: 15px 80px 0 80px; font-size: 1.2rem;}
-.wikipage .edit { margin-right: -8%;}
+.page { padding: 15px 80px 0 80px; font-size: 1.2rem;}
+.page .edit { margin-right: -8%;}
 .header { background: rgba(255,255,255,0.95) url('../img/header-small.jpg') repeat-x top center ; }
 .menu.expanded li a { padding: .5rem .6rem .5rem .8rem;}
 }
@@ -327,8 +328,8 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .cardsocket { min-height: 550px;}
 .cardblock { min-height: 550px;}
 .wikivertimenu { column-count: 2;}
-.wikipage { padding: 15px 20px 0 20px; font-size: 1.2rem;}
-.wikipage .edit { margin-right: -2%;}
+.page { padding: 15px 20px 0 20px; font-size: 1.2rem;}
+.page .edit { margin-right: -2%;}
 }
 
 /* Smartphones: vertical */
@@ -340,5 +341,5 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .responsive-langmenu ul { column-count: 2; }
 .col.sml-6, .gallery.sml-6 li { width: 100%;}
 .big { font-size:1.10rem;}
-.wikipage { font-size: 1.1rem;}
+.page { font-size: 1.1rem;}
 }

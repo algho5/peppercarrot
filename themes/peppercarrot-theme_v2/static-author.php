@@ -5,7 +5,7 @@
 
       <div class="grid">
         <?php include(dirname(__FILE__).'/lib-transla-static.php'); ?>
-        <article class="wikipage col sml-12 med-12 lrg-10 sml-centered" role="article" >
+        <article class="page col sml-12 med-12 lrg-10 sml-centered" role="article" >
         
           <figure style="margin-top: 1rem;">
             <a href="data/images/static/2015_Portrait-of-David-Revoy_by-Elisa_de_Castro_Guerra.jpg" title="David Revoy, Photo credit : Elisa de Castro Guerra " alt="Photo of David Revoy" >

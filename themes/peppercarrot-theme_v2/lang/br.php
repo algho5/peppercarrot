@@ -101,7 +101,7 @@ $LANG = array(
     An holl bajenno&ugrave;, brastreso&ugrave; hag endalc\'had a zo savet a-drugarez da vezianto&ugrave; frank war GNU/Linux, hag an holl vammenno&ugrave; a zo war al lec\'hienn-ma&ntilde;, el la&ntilde;ser &#39;Mammenno&ugrave;&#39;. 
     Gant ma vo meneget va anv – David Revoy - evel oberour e c\'hallit hardizh ober un implij kenwerzhel, trei&ntilde;, sevel fan-art, moulla&ntilde;, sevel filmo&ugrave;, c\'hoario&ugrave video ha ranna&ntilde; kement ha ma fell deoc\'h.</p>
 
-    <div class="button moka">
+    <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="Evit muioc\'h a ditouro&ugrave;, lennit ar Creative Commons Attribution 4.0">
             La&ntilde;vaz : Creative Commons Attribution 4.0
         </a>
@@ -125,11 +125,11 @@ $LANG = array(
       &nbsp;.&nbsp;.&nbsp;.&nbsp;Ha ma c\'hallfe un taol berzh e-unan kemma&ntilde; ur greanterezh en he fezh ? Klaskomp \'ta !
     </p>
 
-    <p>
-      <a class="h4" href="https://www.patreon.com/davidrevoy" title=" Paeronit Pepper&Carrot war Patreon evit 1$ dre rann nevez ">
+    <div class="button">
+      <a href="?static12/donate" title=" Paeronit Pepper&Carrot war Patreon evit 1$ dre rann nevez ">
         skoazellit ac\'hanon evit produi&ntilde; Pepper&amp;Carrot
       </a>
-    </p>
+    </div>
     
     <img alt="skeudenn: greanterezh ar banno&ugrave;-dreset VS skoazell patreon" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 

@@ -101,7 +101,7 @@ $LANG = array(
     Commercial usage, translations, fan-art, prints, movies, video-games, sharing, and reposts are encouraged.
     You just need to give appropriate credit to the authors (artists, correctors, translators involved in the artwork you want to use), provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the authors endorse you or your use.</p>
 
-    <div class="button moka">
+    <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="For more information, read the Creative Commons Attribution 4.0">
             License: Creative Commons Attribution 4.0
         </a>
@@ -125,11 +125,11 @@ $LANG = array(
       Why couldn&#39;t a single success &#39;snowball&#39; to a whole industry in crisis? We&#39;ll see…
     </p>
 
-    <p>
-      <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only $1 per new episode, become a patreon of Pepper&amp;Carrot">
+    <div class="button">
+      <a href="?static12/donate" title="For only $1 per new episode, become a patreon of Pepper&amp;Carrot">
         Help me boost Pepper&amp;Carrot production today.
       </a>
-    </p>
+    </div>
     
     <img alt="Illustration: comic book industry vs. Patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',

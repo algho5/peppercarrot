@@ -102,7 +102,7 @@ $LANG = array(
     Ik moedig commercieel gebruik, vertalingen, fanart, prints, films, videospellen, delen en reposts aan.
     Het enige wat je hoeft te doen is de auteurs (tekenaars, correctoren en vertalers die zijn betrokken bij de tekeningen die je wil gebruiken) te vermelden, een link naar de licentie te plaatsen, en aan te geven of je wijzigingen hebt aangebracht. Je mag dit doen op iedere redelijke manier, zolang je maar niet suggereert dat de auteurs jou of jouw gebruik onderschrijven of steunen.</p>
 
-    <div class="button moka">
+    <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.nl" title="Lees voor meer informatie de Creative Commons Naamsvermelding-licentie 4.0">
             Licentie: Creative Commons Naamsvermelding 4.0
         </a>
@@ -127,11 +127,11 @@ $LANG = array(
       Een enkel succes kan als een &#39;sneeuwbal&#39; de hele industrie veranderen. Laten we het proberen!
     </p>
     
-    <p>
-      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Voor maar €1 per aflevering kun je patron van Pepper&amp;Carrot worden">
+    <div class="button">
+      <a href="?static12/donate" title="Voor maar €1 per aflevering kun je patron van Pepper&amp;Carrot worden">
         help me om de productie van Pepper&amp;Carrot sneller te maken
       </a>
-    </p>
+    </div>
 
     <img alt="afbeelding: de stripboeken-industrie versus ondersteuning door patrons" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',

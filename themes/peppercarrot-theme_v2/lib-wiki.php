@@ -60,7 +60,7 @@ echo '      </section>'."\n";
 echo '     <div style="clear:both"></div>'."\n";
 echo '    </aside>'."\n";
 
-echo '	  <section class="wikipage col sml-12 med-12 lrg-9">'."\n";
+echo '	  <section class="page col sml-12 med-12 lrg-9">'."\n";
 
 // Start edit buttons
 echo '     <div class="edit" >'."\n";

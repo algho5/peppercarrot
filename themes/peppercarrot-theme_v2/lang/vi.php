@@ -102,7 +102,7 @@ $LANG = array(
     Các sử dụng thương mại, bản dịch, fan-arts, in-ấn, phim, video-games, sharing, đăng lại luôn được khuyến khích.
     Bạn chỉ cần nêu tên tôi - David Revoy - là tác giả của truyện.</p>
     
-    <div class="button moka">
+    <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="Thông tin chi tiết, đọc the Creative Commons Attribution 4.0">
             Giấy phép: Creative Commons Attribution 4.0
         </a>
@@ -126,11 +126,11 @@ $LANG = array(
       &nbsp;.&nbsp;.&nbsp;.&nbsp;Tại sao ta không tạo nên một thành công  và &#39;hiệu ứng tuyết lăn&#39; cho cả một nền công nghiệp? Hãy cùng cố gắng nào!
     </p>
     
-    <p>
-      <a class="h4" href="https://www.patreon.com/davidrevoy" title="Chỉ với 1$ mỗi tập, hãy ủng hộ Hạt Tiêu&amp;Cà Rốt">
+    <div class="button">
+      <a href="?static12/donate" title="Chỉ với 1$ mỗi tập, hãy ủng hộ Hạt Tiêu&amp;Cà Rốt">
         Hãy giúp đỡ tôi đẩy mạnh việc hoàn thành Hạt Tiêu&amp;Cà Rốt ngay hôm nay
       </a> 
-    </p>
+    </div>
  
     <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',

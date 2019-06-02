@@ -102,7 +102,7 @@ $LANG = array(
     Komerca uzado, tradukoj, fanatikul-artaĵoj, presaĵoj, filmoj, videoludoj, kunhavigado kaj reafiŝado estas laŭdindaj.
     Vi nur devas agnoski aŭtorecon al kreintoj (artistoj, korektintoj kaj tradukintoj kiuj kontribuis al artaĵo, kiun vi volas uzi), meti ligilon al la permesilo kaj indiki se io estas ŝanĝita. Vi povas fari tion en iu ajn aprobinda maniero, tamen ne sugestu, ke aŭtoroj aprobas vin aŭ vian uzadon.</p>
 
-    <div class="button moka">
+    <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.eo" title="por pli da informoj, legu Krea Komunaĵo Atribuite 4.0">
             Permesilo: Krea Komunaĵo Atribuite 4.0
         </a>
@@ -126,11 +126,11 @@ $LANG = array(
       &nbsp;.&nbsp;.&nbsp;.&nbsp;Ĉu estas eble por ke unu eta sukceso influu la tutan sektoron? Ni provu!
     </p>
     
-    <p>
-      <a class="h4" href="https://www.patreon.com/davidrevoy" title="nur po 1$ por nova rakonteto, iĝu patrono de Pipro kaj Karoĉjo">
+    <div class="button">
+      <a href="?static12/donate" title="nur po 1$ por nova rakonteto, iĝu patrono de Pipro kaj Karoĉjo">
         Bonvolu helpi al mi plibonigi kreadon de Pipro kaj Karoĉjo nun.
       </a>
-    </p>
+    </div>
 
     <img alt="ilustraĵo: sektoro de bildrakontoj kontraŭ subteno de patronoj" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',

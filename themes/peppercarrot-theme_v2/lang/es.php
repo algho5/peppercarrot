@@ -102,7 +102,7 @@ $LANG = array(
     Se anima el uso comercial, traducciones, fan-arts, impresiones, películas, videojuegos, distribuciones y re-publicaciones.
     Solo tienes que atribuir la obra a los autores (artistas, correctores, traductores o cualquier persona implicado en la obra que quieras utilizar), proporcionar un enlace a la licencia e indicar si se han realizado cambios en la obra. Puedes hacer esto de cualquier manera razonable, pero no de forma que sugiera que los autores te dan su respaldo.</p>
     
-    <div class="button moka">
+    <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.es" title="For more information, read the Creative Commons Attribution 4.0">
             Licencia: Creative Commons Attribution 4.0
         </a>
@@ -126,11 +126,11 @@ $LANG = array(
       &nbsp;.&nbsp;.&nbsp;.&nbsp;¿Por qué no un solo éxito no podría hacer de &#39;bola de nieve&#39; para toda una industria en crisis?¡Vamos a intentarlo!
     </p>
     
-    <p>
-      <a class="h4" href="https://www.patreon.com/davidrevoy" title="For only 1€ per new episode, become a patreon of Pepper&amp;Carrot">
+    <div class="button">
+      <a href="?static12/donate" title="For only 1€ per new episode, become a patreon of Pepper&amp;Carrot">
         Ayúdame a impulsar Pepper&amp;Carrot hoy
       </a> 
-    </p>
+    </div>
  
     <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
