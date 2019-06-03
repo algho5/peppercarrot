@@ -88,11 +88,6 @@
 
         <section class="text-center">
           <?php eval($plxShow->callHook("MyMultiLingueComicDisplay", array(''.$UrlAdressOption.''))) ?>  
-          <small>
-            <time style="color: rgba(0,0,0,0.6);" datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
-              <?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>
-            </time>
-          </small>
         </section>
         
       </article>
@@ -101,24 +96,71 @@
         <div style="clear:both;">
         </div>
         
-        <footer class="col sml-12 med-12 lrg-12 text-center">
-          <h3>
-            Comments have moved 
-            <a href="https://www.davidrevoy.com/<?php echo $path_on_dr_com; ?>">
-            to the blog
-            </a>
-          </h3>
-  
-          <div style="margin: 70px auto 0 auto;">
-            <?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>
-          </div>
-  
+        <div class="grid">
+        
+          <section class="col sml-12 med-12 lrg-11 text-center sml-centered">
+            
+            <div class="cardsocket mini col sml-6 med-4 lrg-4">
+              <div class="cardblock mini">
+                <figure class="thumbnail">
+                  <a href="<?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>">
+                    <img src="<?php $plxShow->racine() ?>/plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/misc/low-res/2019-06_sources-webcomic_by-David-Revoy.jpg&amp;w=275&amp;h=275&amp;s=1&amp;q=92" alt="Pepper doing shopping,">
+                  </a>
+                </figure>
+                <div class="button milk">
+                  <a href="<?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>">
+                    Source *.kra files and *.svg for this episode
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+          
+            <div class="cardsocket mini col sml-6 med-4 lrg-4">
+              <div class="cardblock mini">
+                <figure class="thumbnail">
+                  <a href="https://www.davidrevoy.com/<?php echo $path_on_dr_com; ?>">
+                    <img src="<?php $plxShow->racine() ?>/plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/misc/low-res/2019-06_comment-webcomic_by-David-Revoy.jpg&amp;w=275&amp;h=275&amp;s=1&amp;q=92" alt="Pepper doing shopping,">
+                  </a>
+                </figure>
+                <div class="button milk">
+                  <a href="https://www.davidrevoy.com/<?php echo $path_on_dr_com; ?>">
+                    Open the Comments<br/>(on my Blog)
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardsocket mini col sml-6 med-4 lrg-4">
+              <div class="cardblock mini">
+                <figure class="thumbnail">
+                  <a href="<?php eval($plxShow->callHook('MyMultiLingueFramagitLinkDisplay')) ?>">
+                    <img src="<?php $plxShow->racine() ?>/plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/misc/low-res/2019-06_framagit-webcomic_by-David-Revoy.jpg&amp;w=275&amp;h=275&amp;s=1&amp;q=92" alt="Pepper doing shopping,">
+                  </a>
+                </figure>
+                <div class="button milk">
+                  <a href="<?php eval($plxShow->callHook('MyMultiLingueFramagitLinkDisplay')) ?>">
+                    Open this lang and episode on Framagit
+                  </a>
+                </div>
+              </div>
+            </div>
+            
           <?php include(dirname(__FILE__).'/navigation.php'); ?>
-        </footer>
+          
+            <br/>
+            
+            <time style="color: rgba(0,0,0,0.6);" datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
+              <?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>
+            </time>
+            
+          </section>
+          
       </div>
       
       <div style="clear:both;">
       <br/>
+      
 
     </section>
   </main>

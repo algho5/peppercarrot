@@ -32,6 +32,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .gum a { background-color: #61C6B6; box-shadow: 0 0 0 2px #61C6B6 inset, 0 0 0 3px rgba(255,255,255,0.80) inset, 2px 2px 3px 0 rgba(20,0,0,0.50);}
 .choco a { background-color: #9B7761; box-shadow: 0 0 0 2px #9B7761 inset, 0 0 0 3px rgba(255,255,255,0.55) inset, 2px 2px 3px 0 rgba(20,0,0,0.50);}
 .moka a { color: #806E5B!important; background-color: #F0ECE9; box-shadow: 0 0 0 2px #F0ECE9 inset, 0 0 0 3px rgba(222,168,131,0.55) inset, 1px 1px 2px 0 rgba(20,0,0,0.50);}
+.milk a { color: #544840!important; background-color: #FFF; box-shadow: 0 0 0 2px #FFF inset, 0 0 0 3px rgba(0,0,0,0.25) inset, 1px 1px 2px 0 rgba(20,0,0,0.50);}
 .big { font-size:1.20rem;}
 .off { opacity: 0.35;}
 .off, .off:hover { color: #EEE; cursor: not-allowed;}
@@ -47,6 +48,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .cardblock img {width: 95%; margin: 0 0 10px 0; }
 .cardlink {text-align: center; width: 100%; margin-bottom: 0.5rem; color: #ababab; font-size: 0.90rem; }
 .cardblock .button a { display:inline-block; font-size:1.1rem; width: 90%; margin-bottom: 10px;}
+.mini { min-height: 100%; border-image: url('../img/cards-pencil.jpg') 10% round; background: none; font-family: "Georgia", Times, serif; }
 
 /* Header */
 .header { z-index: 9; position: fixed; top: 0; width: 100%; background: url('../img/header-bg.jpg') top left; border-bottom: 1px solid rgba(64,56,52,0.4); box-shadow: 0 0.1rem 0.1rem rgba(49,20,0,0.3); }
@@ -210,6 +212,7 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .covertextoverlay { right: 2.3rem;}
 .cardsocket { min-height: 550px;}
 .cardblock { min-height: 550px;}
+.mini { min-height: 100%; }
 .wikivertimenu { column-count: 2;}
 .page { padding: 15px 20px 0 20px; font-size: 1.2rem;}
 .page .edit { margin-right: -2%;}

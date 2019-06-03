@@ -97,6 +97,7 @@ class plxMyMultiLingue extends plxPlugin {
     $this->addHook('MyMultiLingueComicDisplay', 'MyMultiLingueComicDisplay');
     $this->addHook('MyMultiLingueComicHeader', 'MyMultiLingueComicHeader');
     $this->addHook('MyMultiLingueSourceLinkDisplay', 'MyMultiLingueSourceLinkDisplay');
+    $this->addHook('MyMultiLingueFramagitLinkDisplay', 'MyMultiLingueFramagitLinkDisplay');
         
 		# récupération des langues enregistrées dans le fichier de configuration du plugin
 		if($this->getParam('flags')!='')
@@ -970,8 +971,7 @@ public function MyMultiLingueComicHeader() {
 /* Display the link to Source 	*/
 /********************************/
 /**
- * Method to display a button to link to the source of the active webcomic
- * Main input: the vignette of the article
+ * Method to display a link to the source of the active webcomic
  * @author: David Revoy
  **/ 
 public function MyMultiLingueSourceLinkDisplay() {
@@ -986,11 +986,30 @@ public function MyMultiLingueSourceLinkDisplay() {
   $episode_source_directory = implode('/', $parts);
   # pattern : index.php?fr/static6/sources&page=ep02_Rainbow-potions
   $sourcelink = basename($episode_source_directory);
-  echo '<a class="sourcebutton" href="';
   $plxShow->urlRewrite('?static6/sources&page='.$sourcelink);
-  echo '">'; 
-  echo ''.$plxShow->Getlang('SOURCES_TITLE').': '.$sourcelink.''; 
-  echo '</a>';
+}
+
+/********************************/
+/* Display a link to Framagit 	*/
+/********************************/
+/**
+ * Method to display a link to the Framagit folder of the active webcomic
+ * @author: David Revoy
+ **/ 
+public function MyMultiLingueFramagitLinkDisplay() {
+  $plxMotor = plxMotor::getInstance();
+  $plxShow = plxShow::getInstance();
+  $aLabels = unserialize($this->getParam('labels'));
+  $vignette = $plxMotor->plxRecord_arts->f('thumbnail');
+  $vignette_parts = pathinfo($vignette);
+  $path = $vignette_parts['dirname'];
+  $parts = explode('/', $path);
+  array_pop($parts);
+  $episode_source_directory = implode('/', $parts);
+  # pattern : index.php?fr/static6/sources&page=ep02_Rainbow-potions
+  $sourcelink = basename($episode_source_directory);
+  $activelang = $this->lang;
+  echo 'https://framagit.org/peppercarrot/webcomics/tree/master/'.$sourcelink.'/lang/'.$activelang.'';
 }
 
 }
