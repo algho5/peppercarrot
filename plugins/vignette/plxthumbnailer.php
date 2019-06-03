@@ -572,6 +572,34 @@ class timthumb {
 			}
 
 		}
+    
+		// (custom) bounding box scale down only (but don't scale up)
+    
+    if ($zoom_crop == 4) {
+      // Do we need extra sharpening?
+      if ($width < 1200) {
+        $sharpen = 0;
+      }
+    
+      if ($width > $new_width) {
+        $final_height = floor ($height * ($new_width / $width));
+        if ($final_height > $new_height) {
+          $new_width = floor ($width * ($new_height / $height));
+        } else {
+          $new_height = $final_height;
+          $new_width = floor ($width * ($new_height / $height));
+        }
+      } else {
+        if ($height > $new_height) {
+            $new_width = floor ($width * ($new_height / $height));
+          } else {
+            $new_width = $width;
+            $new_height = $height;
+          }
+      }
+		}
+    
+
 
 		// create a new true color image
 		$canvas = imagecreatetruecolor ($new_width, $new_height);
@@ -656,7 +684,9 @@ class timthumb {
             
           } else if ($height > $width) {
             # portrait, focus point is often at 1/4 of the top, resize around this
-            $src_y = $height - $src_h - $height / 2.5 ;
+            if ($zoom_crop < 1) {
+              $src_y = $height - $src_h - $height / 2.5 ;
+            }
             
           } else {
             # landscape or square, crop at top.
