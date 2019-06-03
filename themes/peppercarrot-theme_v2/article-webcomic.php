@@ -1,70 +1,6 @@
 <?php include(dirname(__FILE__) . '/header.php');
 
-  # Have we got a new variable 'option' in URL ? grab and security fix it.
-  $UrlAdressOption = htmlspecialchars($_GET["option"]);
-  $UrlAdressOption = preg_replace('/[^A-Za-z0-9\._-]/', '', $UrlAdressOption);  
-
-  if ($UrlAdressOption == "hd") {
-    $hdstatus = '';
-    $LinkVariable = '&option=low';
-    
-    } elseif ($UrlAdressOption == "low") {
-    $hdstatus = 'moka';
-    $LinkVariable = '&option=hd';
-    $_SESSION['SessionMemory'] = "RemoveHD";
-    
-    } else {
-    $hdstatus = 'moka';
-    $LinkVariable = '&option=hd';
-  }
-  
-  # Have we got a preference in memory from previous page?
-  if ($_SESSION['SessionMemory'] == "KeepHD") {
-    $hdstatus = '';
-    $LinkVariable = '&option=low';
-    
-    } elseif ( $_SESSION['SessionMemory'] == "RemoveHD") {
-    $memoryoption = 'low';
-  }
-?>
-  <div class="containercomic">
-    <main class="main grid" role="main">
-      <section>
-      
-        <article class="article" role="article" id="post-<?php echo $plxShow->artId(); ?>">
-        
-          <div class="col sml-12 sml-text-right">
-            <nav class="nav" role="navigation">
-              <div class="responsive-langmenu">
-                <label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
-                <input type="checkbox" id="langmenu">
-                <ul class="langmenu expanded">
-                <?php eval($plxShow->callHook('MyMultiLingueComicLang')) ?>
-                <li class="button"><a class="lang option" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
-                </ul>
-              </div>
-              <div class="button big <?php echo ''.$hdstatus.''; ?>">
-                <a href="<?php $plxShow->artUrl() ?><?php echo ''.$LinkVariable.''; ?>" class="lang option">HD 2400px</a>
-              </div>
-            </nav>
-          </div>
-
-<?php eval($plxShow->callHook('MyMultiLingueComicHeader')) ?>
-
-<!-- Content -->
-<section class="text-center">
-<?php eval($plxShow->callHook("MyMultiLingueComicDisplay", array(''.$UrlAdressOption.''))) ?>  
-  <small>
-    <time style="color: rgba(0,0,0,0.6);" datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>"><?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?></time>
-  </small>
-
-</section>
-</article>
-<div class="content">
-  <!-- Footer infos -->
-  <div style="clear:both;"><br/></div>
-  <footer class="col sml-12 med-12 lrg-12 text-center">
-<?php
+  # Redirect the Comments
   switch ($plxShow->artId()) {
   /*01*/ case 234: $path_on_dr_com = "article434/potion-of-flight#comments"; break;
   /*02*/ case 237: $path_on_dr_com = "article437/episode-2-rainbow-potions#comments"; break;
@@ -97,24 +33,95 @@
   /*29*/ case 462: $path_on_dr_com = "article717/episode-29-the-underworld-dragon#comments"; break;
   default: $path_on_dr_com = "categorie2/webcomics";
   }
+
+  # Have we got a new variable 'option' in URL ? grab and security fix it.
+  $UrlAdressOption = htmlspecialchars($_GET["option"]);
+  $UrlAdressOption = preg_replace('/[^A-Za-z0-9\._-]/', '', $UrlAdressOption);  
+
+  if ($UrlAdressOption == "hd") {
+    $hdstatus = '';
+    $LinkVariable = '&option=low';
+    
+    } elseif ($UrlAdressOption == "low") {
+    $hdstatus = 'moka';
+    $LinkVariable = '&option=hd';
+    $_SESSION['SessionMemory'] = "RemoveHD";
+    
+    } else {
+    $hdstatus = 'moka';
+    $LinkVariable = '&option=hd';
+  }
+  
+  # Have we got a preference in memory from previous page?
+  if ($_SESSION['SessionMemory'] == "KeepHD") {
+    $hdstatus = '';
+    $LinkVariable = '&option=low';
+    
+    } elseif ( $_SESSION['SessionMemory'] == "RemoveHD") {
+    $memoryoption = 'low';
+  }
 ?>
-  <h3>Comments have moved <a href="https://www.davidrevoy.com/<?php echo $path_on_dr_com; ?>">to the blog</a></h3>
-  
-  <div style="margin: 70px auto 0 auto;">
-    <?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>
-  </div>
-  
-  <?php include(dirname(__FILE__).'/navigation.php'); ?>
-  </div>
-  </footer>
-  <div style="clear:both;"><br/></div>
-  
-<section class="comments col sml-12 sml-centered text-center" >
-</section>
 
+<div class="containercomic">
+  <main class="main grid" role="main">
+    <section>
+    
+      <article class="article" role="article" id="post-<?php echo $plxShow->artId(); ?>">
+      
+        <div class="col sml-12 sml-text-right">
+          <nav class="nav" role="navigation">
+            <div class="responsive-langmenu">
+              <label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
+              <input type="checkbox" id="langmenu">
+              <ul class="langmenu expanded">
+              <?php eval($plxShow->callHook('MyMultiLingueComicLang')) ?>
+              <li class="button"><a class="lang option" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
+              </ul>
+            </div>
+            <div class="button big <?php echo ''.$hdstatus.''; ?>">
+              <a href="<?php $plxShow->artUrl() ?><?php echo ''.$LinkVariable.''; ?>" class="lang option">HD 2400px</a>
+            </div>
+          </nav>
+        </div>
+
+        <?php eval($plxShow->callHook('MyMultiLingueComicHeader')) ?>
+
+        <section class="text-center">
+          <?php eval($plxShow->callHook("MyMultiLingueComicDisplay", array(''.$UrlAdressOption.''))) ?>  
+          <small>
+            <time style="color: rgba(0,0,0,0.6);" datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
+              <?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>
+            </time>
+          </small>
+        </section>
+        
+      </article>
+      
+      <div class="content">
+        <div style="clear:both;">
+        </div>
+        
+        <footer class="col sml-12 med-12 lrg-12 text-center">
+          <h3>
+            Comments have moved 
+            <a href="https://www.davidrevoy.com/<?php echo $path_on_dr_com; ?>">
+            to the blog
+            </a>
+          </h3>
+  
+          <div style="margin: 70px auto 0 auto;">
+            <?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>
+          </div>
+  
+          <?php include(dirname(__FILE__).'/navigation.php'); ?>
+        </footer>
+      </div>
+      
+      <div style="clear:both;">
+      <br/>
+
+    </section>
+  </main>
 </div>
 
-</section>
-</main>
-</div>
-  <?php include(dirname(__FILE__).'/footer.php'); ?>
+<?php include(dirname(__FILE__).'/footer.php'); ?>
