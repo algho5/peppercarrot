@@ -22,7 +22,7 @@ $requestedlang = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedlang);
 $pathcommunityfolder = '0_sources/0ther/community';
 ?>
 <div class="container">
-	<main class="grid" role="main">
+	<main class="main grid" role="main">
     <section class="col sml-12" style="padding: 0 0;">
 <?php 
 # [page] datas are in the URL
@@ -80,21 +80,27 @@ if(isset($_GET['page'])) {
         # Write lang pills for the viewer
         # Challenge: the pills must translate the image displayed.
         echo '<div class="grid">';
-          echo '<div class="translabar col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
-            echo '<ul class="menu" role="toolbar">';
-              foreach ($detectedlangscleaned as $langavailable) {
-                $langimagewithoutlang = substr($imagename, 2); // rm old lang
-                $langimagename = $langavailable.''.$langimagewithoutlang;
-                if (file_exists($pathartworks.'/'.$langimagename.'')) {
-                echo '<li><a href="?'.$langavailable.'/static11/community-webcomics&page='.$activefolder.'&display='.$langimagename.'">';
-                echo $langprettyname->$langavailable;
-                echo '</a></li>';
-                }
-              }
-            echo '<li><a class="lang option" href="'.$pathartworks.'"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
-            echo '</ul>';
+          echo '<div class="col sml-12 sml-text-right">';
+            echo '<nav class="nav" role="navigation">';
+              echo '<div class="responsive-langmenu">';
+                echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> Translations<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
+                  echo '<input type="checkbox" id="langmenu">';
+                    echo '<ul class="langmenu expanded">';
+                      foreach ($detectedlangscleaned as $langavailable) {
+                        $langimagewithoutlang = substr($imagename, 2); // rm old lang
+                        $langimagename = $langavailable.''.$langimagewithoutlang;
+                        if (file_exists($pathartworks.'/'.$langimagename.'')) {
+                          echo '<li><a href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'&display='.$langimagename.'">';
+                          echo $langprettyname->$langavailable;
+                          echo '</a></li>';
+                        }
+                      }
+                      echo '<li><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
+                echo '</ul>';
+            echo '</nav>';
           echo '</div>';
         echo '</div>';
+        echo '<div style="clear:both;"></div> ';
         
         # Write the viewer:
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
@@ -116,17 +122,23 @@ if(isset($_GET['page'])) {
         
         # lang pills
         echo '<div class="grid">';
-          echo '<div class="translabar col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
-            echo '<ul class="menu" role="toolbar">';
-              foreach ($detectedlangscleaned as $langavailable) {
-                echo '<li><a href="?'.$langavailable.'/static11/community-webcomics&page='.$activefolder.'">';
-                echo $langprettyname->$langavailable;
-                echo '</a></li>';
-              }
-            echo '<li><a class="lang option" href="'.$pathartworks.'"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
-            echo '</ul>';
+          echo '<div class="col sml-12 sml-text-right">';
+            echo '<nav class="nav" role="navigation">';
+              echo '<div class="responsive-langmenu">';
+                echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> Translations<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
+                  echo '<input type="checkbox" id="langmenu">';
+                    echo '<ul class="langmenu expanded">';
+                      foreach ($detectedlangscleaned as $langavailable) {
+                        echo '<li><a href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'">';
+                        echo $langprettyname->$langavailable;
+                        echo '</a></li>';
+                      }
+                      echo '<li><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
+                echo '</ul>';
+            echo '</nav>';
           echo '</div>';
         echo '</div>';
+        echo '<div style="clear:both;"></div> ';
         
         # Display the title of the project and markdown:   
         $foldernameclean = str_replace('_', ' ', $foldername);
@@ -165,9 +177,9 @@ if(isset($_GET['page'])) {
             $filenameclean = str_replace('-', ' ', $filenameclean);
 
             echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-            echo '<a href="?static11/community-webcomics&page='.$activefolder.'&display='.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+            echo '<a href="?static11/communitywebcomics&page='.$activefolder.'&display='.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
             echo '<figcaption class="text-center" >
-            <a href="?static11/community-webcomics&page='.$activefolder.'&display='.$filename.'" >
+            <a href="?static11/communitywebcomics&page='.$activefolder.'&display='.$filename.'" >
             '.$episodestring.' '.$filenameclean.'
             </figcaption>
             <br/><br/>';
@@ -202,7 +214,7 @@ if(isset($_GET['page'])) {
     $filenameclean = str_replace('by', '</a><br/><span class="detail">'.$ccbystring.'', $filenameclean);
     $filenamezip = str_replace('jpg', 'zip', $filename);
     echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-    echo '<a href="?static11/community-webcomics&page='.$folderpath.'/" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    echo '<a href="?static11/communitywebcomics&page='.$folderpath.'/" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
     echo '<figcaption class="text-center" >
     <a href="0_sources/0ther/fan-art/'.$filename.'" >
     '.$filenameclean.'
