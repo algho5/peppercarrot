@@ -51,7 +51,6 @@
             
             <div style="clear:both;"></div>
             </div>
-          <?php include(dirname(__FILE__).'/share-static.php'); ?>  
           </div>
         </section>
           
