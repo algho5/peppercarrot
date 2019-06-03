@@ -297,9 +297,9 @@ if(isset($_GET['page'])) {
             $filepathtranslated = ''.$fullpath.'/'.$lang.''.$filenamewithoutenprefix.'';
             # if our hypothetic translation exist, display. Else, fallback to english :
             if (file_exists($filepathtranslated)) {
-              echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$filepathtranslated.'&amp;w=210&amp;h=160&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
+              echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$filepathtranslated.'&amp;w=260&amp;h=190&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
             } else {
-              echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=210&amp;h=160&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
+              echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
             }
           }
         }
@@ -369,7 +369,7 @@ if(isset($_GET['page'])) {
     echo '</section>';
 
 } elseif ($activefolder == "download") {
-  # ===========  Downloader ================
+  # ===========  DOWNLOADER ================
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Downloader</h2>';
@@ -428,7 +428,7 @@ if(isset($_GET['page'])) {
     $fileweight = (filesize($zippath) / 1024) / 1024;
     
     echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-    echo '<a href="0_sources/0ther/3Dmodels/hi-res/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=210&amp;h=160&amp;s=1&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    echo '<a href="0_sources/0ther/3Dmodels/hi-res/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;s=1&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
     $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
     $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
     $filenameclean = str_replace('_', ' ', $filenameclean);
@@ -449,14 +449,14 @@ if(isset($_GET['page'])) {
 
 
   } elseif ($activefolder == "artworks") {
-  # =======  Artworks ===========
+  # =======  ARTWORKS ===========
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Artworks</h2>';
     echo '<p>All the artworks are available as: <b>low</b>-resolution, <b>hi</b>-resolution, or with the layered <b>src</b>/sources krita files.</p>';
     echo '<br/><br/>';
     echo '</div>';
-    echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
+    echo '<section class="col sml-12 med-12 lrg-11 sml-centered sml-text-center" style="padding:0 0;">';
     #variables:
     $pathartworks = '0_sources/0ther/artworks';
     $hide = array('.', '..');
@@ -475,7 +475,7 @@ if(isset($_GET['page'])) {
     $zippath = $fullpath.'/../zip/'.$filenamezip.'';
     $fileweight = (filesize($zippath) / 1024) / 1024;
     echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-    echo '<a href="0_sources/0ther/artworks/hi-res/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=210&amp;h=160&amp;s=1&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    echo '<a href="0_sources/0ther/artworks/hi-res/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;s=1&amp;zc=2&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
     $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
     $filenameclean = substr($filenameclean, 11);
     $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
@@ -497,7 +497,7 @@ if(isset($_GET['page'])) {
 
 
   } elseif ($activefolder == "wallpapers") {
-  # =======  Wallpapers ===========
+  # =======  WALLPAPERS ===========
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Wallpapers</h2>';
@@ -553,7 +553,7 @@ if(isset($_GET['page'])) {
     echo '<p>Logo, title, banner for press or community projects.</p>';
     echo '<br/><br/>';
     echo '</div>';
-    echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
+    echo '<section class="col sml-12 med-12 lrg-11 sml-centered sml-text-center" style="padding:0 0;">';
     #variables:
     $pathartworks = '0_sources/0ther/press';
     $hide = array('.', '..');
@@ -572,7 +572,7 @@ if(isset($_GET['page'])) {
     $zippath = $fullpath.'/../zip/'.$filenamezip.'';
     $fileweight = (filesize($zippath) / 1024) / 1024;
     echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-    echo '<a href="0_sources/0ther/press/hi-res/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=210&amp;h=210&amp;s=1&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    echo '<a href="0_sources/0ther/press/hi-res/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=210&amp;zc=2&amp;h=210&amp;s=1&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
     $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
     $filenameclean = substr($filenameclean, 11);
     $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
@@ -596,11 +596,11 @@ if(isset($_GET['page'])) {
   # =======  MISC ===========
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
-    echo '<h2>Other</h2>';
-    echo '<p>A folder of artworks, graphism or icons not enough polished or offtopic.</p>';
+    echo '<h2>Misc / Other</h2>';
+    echo '<p>Archive of artworks.</p>';
     echo '<br/><br/>';
     echo '</div>';
-    echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
+    echo '<section class="col sml-12 med-12 lrg-11 sml-centered sml-text-center" style="padding:0 0;">';
     #variables:
     $pathartworks = '0_sources/0ther/misc';
     $hide = array('.', '..');
@@ -619,7 +619,7 @@ if(isset($_GET['page'])) {
     $zippath = $fullpath.'/../zip/'.$filenamezip.'';
     $fileweight = (filesize($zippath) / 1024) / 1024;
     echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-    echo '<a href="0_sources/0ther/misc/hi-res/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=210&amp;h=160&amp;s=1&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    echo '<a href="0_sources/0ther/misc/hi-res/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;zc=2&amp;s=1&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
     $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
     $filenameclean = substr($filenameclean, 11);
     $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
@@ -811,7 +811,7 @@ if(isset($_GET['page'])) {
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Original artworks scanned</h2>';
-    echo '<p>Original drawings: pencil on paper , Scanned 300ppi with Xsane.<br/> </p>';
+    echo '<p>Original drawings: pencil on paper , Raw Scan at 300ppi with Xsane.<br/> </p>';
     echo '<br/><br/>';
     echo '</div>';
     echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
@@ -831,7 +831,7 @@ if(isset($_GET['page'])) {
     $notavailable="Not-available";
     if (strlen(strstr($filename,$notavailable))>0) {
       echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-      echo '<a href="0_sources/0ther/original/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;h=210&amp;w=210&amp;s=1&amp;q=84&amp" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+      echo '<a href="0_sources/0ther/original/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;h=210&amp;w=210&amp;s=1&amp;zc=2&amp;q=84&amp" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
       $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
       $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
       $filenameclean = str_replace('Not-available', '', $filenameclean);
@@ -839,12 +839,12 @@ if(isset($_GET['page'])) {
       $filenameclean = str_replace('-', ' ', $filenameclean);
       $filenamezip = str_replace('jpg', 'zip', $filename);
       echo '<figcaption class="sourcescaptions text-center" >
-      <a href="0_sources/0ther/original/'.$filename.'" ><del>'.$filenameclean.'</del></a><br/>
+      <a href="0_sources/0ther/original/'.$filename.'" >'.$filenameclean.'</a><br/>
       </figcaption>';
       echo '</figure>';
     } else {
       echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-      echo '<a href="0_sources/0ther/original/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;h=210&amp;w=210&amp;s=1&amp;q=84&amp" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+      echo '<a href="0_sources/0ther/original/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;h=210&amp;w=210&amp;zc=2&amp;s=1&amp;q=84&amp" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
       $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
       $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
       $filenameclean = str_replace('Not-available', '', $filenameclean);
@@ -927,30 +927,28 @@ if(isset($_GET['page'])) {
   
 # Nothing found: we display main Intro
   echo '<!-- Intro -->';
-    echo '<div class="translabar col sml-12 med-12 lrg-10 sml-centered sml-text-center">';
-      echo '<ul class="menu" role="toolbar">';
-      eval($plxShow->callHook('MyMultiLingueStaticLang'));
-      echo '<li>';
-      echo '<a class="lang" href="';
-      $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic');
-      echo '">';
-      echo '<img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$plxShow->Getlang('ADD_TRANSLATION').'';
-      echo '</a>';
-      echo '</li>';
-      echo '</ul>';
-    echo '</div>'; 
-    echo '<article class="col sml-12 med-12 lrg-10 sml-centered" role="article" >';
+    include(dirname(__FILE__).'/lib-transla-static.php');
+    echo '<article class="page col sml-12 med-12 lrg-10 sml-centered" role="article" >';
+      echo '<h1>Sources center</h1>';
       $plxShow->lang('SOURCES_TOP');
       $plxShow->lang('SOURCES_BOTTOM');
-      echo '<a class="button blue" href="https://framagit.org/peppercarrot">View Git repositories</a>';
+      echo '<center>';
+      echo '<div class="button mandarine big">';
+      echo '<a href="https://framagit.org/peppercarrot">Framagit repositories</a>';
+      echo '</div>';
       echo '&nbsp;&nbsp;&nbsp;&nbsp;';
-      echo '<a class="button blue" href="';
+      echo '<div class="button">';
+      echo '<a href="';
       $plxShow->urlRewrite('?static14/documentation');
-      echo '">View Documentation for contributors</a>';
+      echo '">Read the documentation</a>';
+      echo '</div>';
+      echo '</center>';
       echo '<br/><br/>';
-
-        echo '<section class="col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
-        echo '<h2>Sources center</h2>';
+      echo '</article>';
+      echo '<br/><br/>';
+      
+        echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center">';
+        
           
           # SOURCES EPISODES
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
