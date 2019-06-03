@@ -50,7 +50,7 @@ echo '</div>';
       $filenameclean = str_replace('featured', '', $filenameclean);
       $filenamezip = str_replace('jpg', 'zip', $filename);
       echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-      echo '<a href="0_sources/0ther/fan-art/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=370&amp;h=370&amp;&amp;zc=2s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+      echo '<a href="0_sources/0ther/fan-art/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=370&amp;h=370&amp;&amp;zc=2&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
       echo '<figcaption class="text-center" >
       <a href="0_sources/0ther/fan-art/'.$filename.'" >
       '.$filenameclean.'
