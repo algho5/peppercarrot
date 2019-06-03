@@ -98,11 +98,11 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
                 <li class="<?php echo $status; ?>" >
                 <a href="<?php $plxShow->urlRewrite('?static2/philosophy') ?>"><?php $plxShow->lang('PHILOSOPHY') ?></a>
                 </li>
-                <?php if($idStat=="004" OR $idStat=="011"){ $status = "active"; } else { $status = "no-active"; }?>
+                <?php if($idStat=="004"){ $status = "active"; } else { $status = "no-active"; }?>
                 <li class="<?php echo $status; ?>" >
                 <a href="<?php $plxShow->urlRewrite('?static4/contribute') ?>"><?php $plxShow->lang('CONTRIBUTE') ?></a>
                 </li>
-                <?php if($idStat=="015"){ $status = "active"; } else { $status = "no-active"; }?>
+                <?php if( $idStat=="008" OR $idStat=="015" OR $idStat=="009" OR $idStat=="010" OR $idStat=="011"){ $status = "active"; } else { $status = "no-active"; }?>
                 <li class="<?php echo $status; ?>" >
                 <a href="<?php $plxShow->urlRewrite('?static15/extras') ?>" id="active"><?php $plxShow->lang('Extras') ?></a>
                 </li>

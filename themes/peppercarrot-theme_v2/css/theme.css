@@ -14,7 +14,7 @@ h1 { font-size:2.4rem; }
 h2 { font-size:2.0rem; }
 h3 { font-size:1.5rem; margin-top:0.6rem; }
 h4 { font-size:1.2rem }
-figure + em, img + em { display: block; max-width: 75%; margin: 0 auto; color: #6b5e4f; font-size: 1.1rem; text-align: center!important;}
+figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 auto; color: #6b5e4f; font-size: 1.1rem; text-align: center!important;}
 
 /* Main style */
 .main {	margin: 56px 0 1rem 0; }
@@ -209,6 +209,10 @@ figure + em, img + em { display: block; max-width: 75%; margin: 0 auto; color: #
 .philo img { margin: 1rem 0 3.8rem 0;}
 .philo .button { text-align: center;  display: block;}
 .philo .button a { display: block; max-width: 300px; margin: 0 auto 2.5rem auto;}
+
+/* Scenario page */
+.scenariolist { color: #6e523c; font-size: 1.6rem; display: block; margin: 5px auto 0 auto; text-align: center; }
+.notes { color: #a45d25; font-size: 1rem; }
 
 .page { background: url('../img/bg.jpg'); border: 16px solid transparent; border-image: url('../img/page.jpg') 10% round; padding: 15px 120px 0 120px; font-family: "Georgia", Times, serif; text-align: justify; font-size: 1.2rem; margin-top: 16px;}
 .page hr { border: double 4px #A79281;}

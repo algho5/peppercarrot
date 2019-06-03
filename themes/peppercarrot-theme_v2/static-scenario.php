@@ -1,7 +1,7 @@
 <?php
 // Get 'page' in URL and cleanup for prohibiting code injection or path
 $page = htmlspecialchars($_GET["page"]);
-$page = preg_replace('/[^A-Za-z0-9\/\._-]/', '', $page);
+$page = preg_replace('/[^A-Za-z0-9\'\/\._-]/', '', $page);
 
 include(dirname(__FILE__).'/lib-parsedown.php');
 include(dirname(__FILE__).'/header.php');
@@ -14,13 +14,13 @@ echo '      <div class="grid">';
 // Setup
 $repositoryURL = "https://framagit.org/peppercarrot/scenarios";
 $currentpage = "?static9/scenarios";
-$datapath = "0_sources/0ther/scenarios/";
+$datapath = "data/scenarios/";
 
 if(isset($_GET['page'])) {
   
   // ==== DISPLAY PAGE ====
   echo '<section class="page scenario col sml-12 med-10 sml-centered">'."\n";
-  
+
     // Start edit buttons
     echo '     <div class="edit" >'."\n";
     
@@ -46,65 +46,69 @@ if(isset($_GET['page'])) {
 
     echo '     </div>'."\n";
 
-    $contents = file_get_contents('0_sources/0ther/scenarios/'. $page .'.md');
+    $contents = file_get_contents(''.$datapath.''. $page .'.md');
     $Parsedown = new Parsedown();
     echo $Parsedown->text($contents);
+  echo '<br/><br/>';
   echo '</section>';
   
 } else {
 
   // ==== MAIN MENU ====
-  echo '<div class="page col sml-12 med-12 lrg-9 sml-centered sml-text-center">';
-  echo '<h1>Scenarios</h1>';
-  echo '<p>';
-  echo 'Send me your page or modifications at <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> or <a href="https://github.com/Deevad/peppercarrot_scenarios/">on the repository</a>, and I\'ll republish them here. <em>(check the <a href="';
+  echo '<section class="page col sml-12 med-10 sml-centered">'."\n";
+  echo '<h1>Fan-Fictions</h1>';
+  echo '<p>Here you\'ll find a list of fan-fictions divided into categories. If you want to propose a fan-fiction, send your text to <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> or propose it to <a href="'.$repositoryURL.'">the scenario source git repository</a>. For more information, check the <a href="';
   $plxShow->urlRewrite(''.$currentpage.'&page=README');
-  echo '" title="">Readme file</a> for more informations.)</em></p>';
+  echo '" title="">this README</a>.</p>';
   
 
-  $hide = array('.', '..', '.directory');
+  $hide = array('.', '..', '.git', '.gitignore', '.directory', 'README.md', 'offline');
   $folders = array_diff(scandir($datapath), $hide);
   sort($folders);
   
   # we loop on found episodes
   foreach ($folders as $folder) {
   
-    $beautyfoldername = substr($folder, 3);
-    $beautyfoldername = preg_replace('/\\.[^.\\s]{2,4}$/', '', $beautyfoldername);
-    $beautyfoldername = str_replace('_', ' ', $beautyfoldername);
-    $beautyfoldername = ucfirst($beautyfoldername);
-    echo '<h2>'.$beautyfoldername.'</h2>';
+    $folderlabel = substr($folder, 3);
+    $folderlabel = preg_replace('/\\.[^.\\s]{2,4}$/', '', $folderlabel);
+    $folderlabel = str_replace('-', ' ', $folderlabel);
+    $folderlabel = str_replace('_', ' ', $folderlabel);
+    $folderlabel = ucfirst($folderlabel);
+    echo '<h2>'.$folderlabel.'</h2>';
         
     $search = glob($datapath."/".$folder."/*.md");
     if (!empty($search)){ 
-      foreach ($search as $wikifile) {
+      foreach ($search as $file) {
         
         // cleaning
-        $wikifile = basename($wikifile);
-        $beautyname = str_replace('_', ' ', $wikifile);
-        $beautyname = str_replace('-', ' ', $beautyname);
-        $beautyname = preg_replace('/\\.[^.\\s]{2,4}$/', '', $beautyname);
-        $beautyname = ucfirst($beautyname);
+        $file = basename($file);
+        $filelabel = str_replace('fr__', '<span class="notes">(In French)</span> ', $file);
+        $filelabel = str_replace('--', ', ', $filelabel);
+        $filelabel = str_replace('_by', '"<span class="notes">&nbsp by', $filelabel);
+        $filelabel = str_replace('_', ' ', $filelabel);
+        $filelabel = str_replace('-', ' ', $filelabel);
+        $filelabel = preg_replace('/\\.[^.\\s]{2,4}$/', '', $filelabel);
+        $filelabel = ucfirst($filelabel);
 
-        if (substr($wikifile, 0, 1) === '_') {
+        if (substr($file, 0, 1) === '_') {
           // exclude system file starting with '_'.
 
         } else {
           
           // filter
-          if ($wikifile === 'README.md'){
+          if ($file === 'README.md'){
               // in case of README
             
             
-          } else if ($wikifile === 'template.md'){
+          } else if ($file === 'template.md'){
             // filter template, do nothing
           
           } else {
             // display markdown page
-            $wikifile = preg_replace('/\\.[^.\\s]{2,4}$/', '', $wikifile);
-            echo '<a class="scenarios" href="';
-            $plxShow->urlRewrite(''.$currentpage.'&page='.$folder.'/'.$wikifile);
-            echo '" title="">'.$beautyname.'</a><br/>';
+            $file = preg_replace('/\\.[^.\\s]{2,4}$/', '', $file);
+            echo '<a class="scenariolist" href="';
+            $plxShow->urlRewrite(''.$currentpage.'&page='.$folder.'/'.$file);
+            echo '" title="">"'.$filelabel.'</span></a>';
           }
           
         }
@@ -112,8 +116,8 @@ if(isset($_GET['page'])) {
     }
   }
     
-
-  echo '</div>';
+  echo '<br/><br/>';
+  echo '</section>';
 
 }
 
