@@ -25,6 +25,8 @@ $LANG = array(
 'WIKI'          =>  'Wiki',
 'SOURCES'       =>  'Forráskód',
 'AUTHOR'        =>  'Szerző',
+'EXTRAS'        =>  'Extras',
+'ESHOP'         =>  'E-Shop',
 'FOLLOW'        =>  'Kövesd a Paprika&amp;Sárgarépát (angolul) az alábbi csatornákon:',
 
 ################################################################################

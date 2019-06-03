@@ -21,6 +21,8 @@ $LANG = array(
 'WIKI'          =>  'Wiki',
 'SOURCES'       =>  'Sorgenti',
 'AUTHOR'        =>  'Autore',
+'EXTRAS'        =>  'Extras',
+'ESHOP'         =>  'E-Shop',
 'FOLLOW'        =>  'Seguite Pepper&amp;Carrot su:',
 ################################################################################
 # Top and bottom translation panel

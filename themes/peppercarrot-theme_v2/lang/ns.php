@@ -25,6 +25,8 @@ $LANG = array(
 'WIKI'          =>  'Wiki',
 'SOURCES'       =>  'Originaldateien',
 'AUTHOR'        =>  'Autor',
+'EXTRAS'        =>  'Extras',
+'ESHOP'         =>  'E-Shop',
 'FOLLOW'        =>  'Folg Pepper&amp;Wuddel op:',
 
 ################################################################################

@@ -25,6 +25,8 @@ $LANG = array(
 'WIKI'          =>  'Wiki',
 'SOURCES'       =>  'Sumber',
 'AUTHOR'        =>  'Pengarang',
+'EXTRAS'        =>  'Extras',
+'ESHOP'         =>  'E-Shop',
 'FOLLOW'        =>  'Ikuti Pepper&amp;Carrot di:',
 
 ################################################################################

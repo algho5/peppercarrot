@@ -25,6 +25,8 @@ $LANG = array(
 'WIKI'          =>  'Vikio',
 'SOURCES'       =>  'Fontoj',
 'AUTHOR'        =>  'Aŭtoro',
+'EXTRAS'        =>  'Extras',
+'ESHOP'         =>  'E-Shop',
 'FOLLOW'        =>  'Sekvi Pipron kaj Karoĉjon ĉe:',
 
 ################################################################################

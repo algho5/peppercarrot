@@ -25,6 +25,8 @@ $LANG = array(
 'WIKI'          =>  'Wiki',
 'SOURCES'       =>  'Kildefiler',
 'AUTHOR'        =>  'Forfatter',
+'EXTRAS'        =>  'Extras',
+'ESHOP'         =>  'E-Shop',
 'FOLLOW'        =>  'F&oslash;lg Pepper&amp;Gulrot p&aring;:',
 
 ################################################################################

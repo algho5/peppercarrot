@@ -25,6 +25,8 @@ $LANG = array(
 'WIKI'          =>  'Wiki',
 'SOURCES'       =>  'Sources',
 'AUTHOR'        =>  'Auteur',
+'EXTRAS'        =>  'Extras',
+'ESHOP'         =>  'E-Shop',
 'FOLLOW'        =>  'Suivre Pepper&amp;Carrot sur :',
 
 ################################################################################
