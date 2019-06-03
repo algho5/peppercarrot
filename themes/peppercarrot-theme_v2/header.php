@@ -107,9 +107,9 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
                 <a href="<?php $plxShow->urlRewrite('?static15/extras') ?>" id="active"><?php $plxShow->lang('Extras') ?></a>
                 </li>
                 <?php if($idStat=="999"){ $status = "active"; } else { $status = "no-active"; }?>
-                <li class="<?php echo $status; ?>" >
+                <!--<li class="<?php echo $status; ?>" >
                 <a href="<?php $plxShow->urlRewrite('?static999/eshop') ?>" id="active"><?php $plxShow->lang('Eshop') ?></a>
-                </li>
+                </li>-->
                 <?php if($idStat=="006" OR $idStat=="014"){ $status = "active"; } else { $status = "no-active"; }?>
                 <li class="<?php echo $status; ?>" >
                 <a href="<?php $plxShow->urlRewrite('?static6/sources') ?>"><?php $plxShow->lang('SOURCES') ?></a>
