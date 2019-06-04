@@ -1,15 +1,17 @@
 /*
+# MINI-PLUCSS
 # ------------------ BEGIN LICENSE BLOCK ------------------
+# A fork to keep only the skeleton responsive grid of 
+# PLUCSS and the 'reset' rules. a minimal, lightweight and 
+# efficient base to build a classic 12 columns website.
 #
-# This file is part of PluXml : http://www.pluxml.org
-#
-# Package		plucss.css
-# Version		1.1
+# Forked from	plucss.css 1.1 by Deevad
+# Version	1.1
 # Copyright (c)	2014, 2015 PluXml
-# Authors		Jos
+# Original Authors of Plucss:	Jos
 # Licensed under the GPL license.
 # See http://www.gnu.org/licenses/gpl.html
-#
+# Documentation (for the grid): https://plucss.pluxml.org
 # ------------------- END LICENSE BLOCK -------------------
 */
 
@@ -63,38 +65,6 @@ tr:hover { background-color: #fff8dc;}
 tfoot tr:hover, thead tr:hover { background-color: inherit;}
 .scrollable-table { overflow: auto;}
 
-/* FORM
------------------------------- */
-/*
-form .col { margin-bottom: 1rem;}
-form.inline-form button, form.inline-form input, form.inline-form label, form.inline-form select, form.inline-form textarea { display: inline-block; width: auto;}
-form .col.label-centered { margin-bottom: 0;}
-form .label-centered label { padding-top: .3rem;}
-fieldset { border: none; padding: 0;}
-legend { margin-bottom: 1rem; padding: 0;}
-label { display: block; padding-bottom: .3rem;}
-button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0;}
-button, input, select, textarea { border: 1px solid #bbb; outline: none; padding: .35rem .4rem; width: 100%;}
-textarea { height: auto; overflow: auto;}
-select { padding-left: .2rem; padding-right: 0;}
-optgroup { font-weight: bold;}
-input:focus, select:focus, textarea:focus { border: 1px solid #258fd6;}
-button, input[type="button"], input[type="reset"], input[type="submit"] { background-color: #777; border-color: transparent; color: #fff; cursor: pointer; padding-left: .7rem; padding-right: .7rem; width: auto;}
-button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { background-color: #616161;}
-button[disabled], input[disabled], select[disabled], textarea[disabled], button[disabled]:hover, input[disabled]:hover, select[disabled]:hover, textarea[disabled]:hover { background-color: #ddd; color: #777; cursor: not-allowed;}
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0;}
-input[type="checkbox"], input[type="radio"] { height: auto; padding: 0; width: auto;}
-input[type="file"] { border: none; height: auto; padding: 0;}
-button.blue, input[type="button"].blue, input[type="reset"].blue, input[type="submit"].blue { background-color: #258fd6; color: #eee;}
-button.blue:hover, input[type="button"].blue:hover, input[type="reset"].blue:hover, input[type="submit"].blue:hover { background-color: #1f77b1;}
-button.green, input[type="button"].green, input[type="reset"].green, input[type="submit"].green { background-color: #239c56; color: #eee;}
-button.green:hover, input[type="button"].green:hover, input[type="reset"].green:hover, input[type="submit"].green:hover { background-color: #1c7943;}
-button.orange, input[type="button"].orange, input[type="reset"].orange, input[type="submit"].orange { background-color: #da7418; color: #eee;}
-button.orange:hover, input[type="button"].orange:hover, input[type="reset"].orange:hover, input[type="submit"].orange:hover { background-color: #b46014;}
-button.red, input[type="button"].red, input[type="reset"].red, input[type="submit"].red { background-color: #e43d29; color: #eee;}
-button.red:hover, input[type="button"].red:hover, input[type="reset"].red:hover, input[type="submit"].red:hover { background-color: #bc2818;}
-*/
-
 /* NAVIGATION
 ------------------------------ */
 .menu { font-size: 0rem; margin: 0; padding-left: 0;}
@@ -124,39 +94,6 @@ button.red:hover, input[type="button"].red:hover, input[type="reset"].red:hover,
 .responsive-menu .menu.breadcrumb li + li:before, .responsive-menu .menu.expanded.breadcrumb > li + li a:before { content: none;}
 .responsive-menu ul li.active a, .responsive-menu ul li.active:hover { background-color: #258fd6; color: #fff;}
 }
-
-/* OTHER COMPONENTS
------------------------------- */
-/*
-.gallery { list-style: none; margin-left: -1rem; margin-right: -1rem; overflow: hidden; padding-left: 0;}
-.gallery li { float: left; padding: 0 1rem 1rem 1rem;}
-.alert { margin-bottom: 1rem; padding: 1rem;}
-.alert a, .alert a:hover { color: inherit;}
-.alert.blue { background-color: #dbedf9; color: #258fd6;}
-.alert.green { background-color: #d3f5e2; color: #239c56;}
-.alert.orange { background-color: #fbe8d9; color: #da7418;}
-.alert.red { background-color: #fce4e2; color: #e43d29;}
-.button { background-color: #777; color: #fff; padding: .525rem .7rem;}
-.button:hover { background-color: #616161; color: #fff; text-decoration: none;}
-.button.blue { background-color: #258fd6; color: #eee;}
-.button.blue:hover { background-color: #1f77b1;}
-.button.green { background-color: #239c56; color: #eee;}
-.button.green:hover { background-color: #1c7943;}
-.button.orange { background-color: #da7418; color: #eee;}
-.button.orange:hover { background-color: #b46014;}
-.button.red { background-color: #e43d29; color: #eee;}
-.button.red:hover { background-color: #bc2818;}
-.progress { background-color: #fff; border: 1px solid #bbb; position: relative; width: 100%;}
-.progress span { background-color: #258fd6; color: #fff; display: block; min-width: 2.2rem; overflow: hidden; padding: .35rem; position: relative; text-align: center;}
-.progress span[style="width: 0%;"] { background: none; color: #444;}
-.badge, .label { background-color: #258fd6; color: #fff; display: inline-block; margin-left: .4rem;}
-.badge { line-height: 1; padding: .15rem;}
-.menu.expanded .active a .badge { background-color: #fff; color: #258fd6;}
-.menu.vertical .badge { float: right;}
-.label { padding: .25rem .4rem;}
-.frame { height: 0; padding-top: 56.25%; position: relative;}
-.frame embed, .frame iframe, .frame object, .frame video { height: 100%; left: 0; position: absolute; top: 0; width: 100%;}
-*/
 
 /* HELPER
 ------------------------------ */
