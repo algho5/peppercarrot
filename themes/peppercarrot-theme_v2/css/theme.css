@@ -203,6 +203,8 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .page .edit { margin-right: -8%;}
 .header { background: rgba(255,255,255,0.95) url('../img/header-small.jpg') repeat-x top center ; }
 .menu.expanded li a { padding: .5rem .6rem .5rem .8rem;}
+.containercomic .main {margin: 56px -0.8rem 0 -0.8rem; }
+.containercomic {padding-left: 0; padding-right: 0;}
 }
 /* (767=plucss-sml) Tablet mode: vertical */
 @media (max-width: 767px) {
