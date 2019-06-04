@@ -66,8 +66,8 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .responsive-menu label { color: #3A2619; background-color: transparent; font: normal 2rem 'PepperCarrot', cursive; text-align: left;}
 
 /* Header right part */
-.patronage { display:inline-block; max-width: 180px; height: 40px; margin: 4px auto 0 auto ; padding: 2px 0 2px 0; top: 0px; bottom: 0px; text-align: center; font-size: 0.92rem; line-height: 1.2rem; background: #F5F2F0 url('../img/grain.png'); box-shadow: 0 0 0 2px #F5F2F0 inset, 0 0 0 3px rgba(20,0,0,0.20) inset, 2px 2px 3px 0 rgba(20,0,0,0.50); border-radius: 4px; }
-.patronage a { display:inline-block; color: #412813; font-family: "Georgia", Times, serif; }
+.patronage { display:inline-block; max-width: 180px; height: 42px; margin: 3px auto 0 auto ; padding: 2px 0 3px 0; top: 0px; bottom: 0px; text-align: center; font-size: 0.92rem; line-height: 1.15rem; background: #a7755b url('../img/grain.png'); box-shadow: 0 0 0 2px #a7755b inset, 0 0 0 3px rgba(255,255,255,0.50) inset, 2px 2px 3px 0 rgba(20,0,0,0.50); border-radius: 4px; }
+.patronage a { display:inline-block; color: #FFF; }
 .patronage:hover { filter: brightness(1.1); transition: all 0.2s ease-in;}
 
 /* Translations dropdown menu */
