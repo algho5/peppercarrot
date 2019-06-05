@@ -137,7 +137,7 @@
               </div>
             </div>
 
-            <div class="cardsocket mini col sml-6 med-4 lrg-4">
+            <div class="cardsocket mini col sml-hide med-show sml-6 med-4 lrg-4">
               <div class="cardblock mini">
                 <figure class="thumbnail">
                   <a href="<?php eval($plxShow->callHook('MyMultiLingueFramagitLinkDisplay')) ?>">
