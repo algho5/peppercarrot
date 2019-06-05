@@ -87,7 +87,7 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
           <div class="topmenu col sml-7 med-9 lrg-8 med-text-left lrg-text-center">
             <nav class="nav" role="navigation">
               <div class="responsive-menu">
-                <label for="menu"><img src="themes/peppercarrot-theme_v2/ico/menu.svg" alt=""/> Pepper&amp;Carrot</label>
+                <label for="menu"><img src="themes/peppercarrot-theme_v2/ico/menu.svg" alt=""/> <?php $plxShow->lang('PEPPERCARROT_TITLE') ?></label>
                 <input type="checkbox" id="menu">
                 <ul class="menu expanded">
                 <?php if($idStat=="003" OR $idCats=="003" AND $idMode=="article" OR $idCats=="005" AND $idMode=="article" OR $idCats=="009" AND $idMode=="article" ){ $status = "active"; } else { $status = "no-active"; }?>
