@@ -138,7 +138,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .notes { color: #a45d25; font-size: 1rem; }
 
 /* Wiki and default pages themes */
-.notice {margin-top:1rem; margin-bottom:1rem; color:#aaa;}
+.notice {color:#aaa;}
 .page { background: url('../img/bg.jpg'); border: 16px solid transparent; border-image: url('../img/page.jpg') 10% round; padding: 15px 120px 0 120px; font-family: "Georgia", Times, serif; text-align: justify; font-size: 1.2rem; margin-top: 16px;}
 .page hr { border: double 4px #A79281;}
 .page p::first-letter { font-size:  1.6rem; margin-right: 1px;}

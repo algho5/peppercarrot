@@ -945,8 +945,8 @@ public function MyMultiLingueComicHeader() {
     # $this->lang = "en";
     $comicpage_header = $episode_source_directory.'/low-res/en_'.$vignette_name.'P00.jpg';
     echo '<br/>';
-    echo '<div class="col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center alert blue">';
-    echo '  <img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt="info:"/> Content not available in the selected language. Falling back to English.';
+    echo '<div class="notice col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center">';
+    echo '  <img src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt="info:"/> English version <br/>(this episode is not yet available in your selected language.)';
     echo '</div>';
     }
 
