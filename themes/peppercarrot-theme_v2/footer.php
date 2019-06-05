@@ -1,4 +1,5 @@
 <?php if (!defined('PLX_ROOT')) exit; ?>
+
 <footer class="footer" role="contentinfo">
   <div class="container">
       <div class="grid">
@@ -13,7 +14,7 @@
             </p>
             <?php $plxShow->lang('FOOTER_CONTENT') ?> 
             <p>
-            <?php $plxShow->lang('TRANSLATED_BY')?>, <a href="<?php $plxShow->urlRewrite('?static13/terms-of-service-and-privacy') ?>" target="_blank">Terms of Services and Privacy.</a>
+              <?php $plxShow->lang('TRANSLATED_BY')?>, <a href="<?php $plxShow->urlRewrite('?static13/terms-of-service-and-privacy') ?>" target="_blank">Terms of Services and Privacy.</a>
             </p> 
             <br/>      
           </div>

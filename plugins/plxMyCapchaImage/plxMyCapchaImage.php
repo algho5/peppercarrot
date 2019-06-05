@@ -20,7 +20,6 @@ class plxMyCapchaImage extends plxPlugin {
 		$this->addHook('plxShowCapchaQ', 'plxShowCapchaQ');
 		$this->addHook('plxShowCapchaR', 'plxShowCapchaR');
 		$this->addHook('plxMotorNewCommentaire', 'plxMotorNewCommentaire');
-		$this->addHook('ThemeEndHead', 'ThemeEndHead');
 		$this->addHook('IndexEnd', 'IndexEnd');
 
 	}
@@ -96,15 +95,6 @@ class plxMyCapchaImage extends plxPlugin {
 			}			
 		?>';
 	}
-
-	/**
-	 * Méthode qui applique un effet css sur le bouton de rechargement du captcha
-	 *
-	 * @return	stdio
-	 * @author	Stéphane F.
-	 **/
-	public function ThemeEndHead() {
-		echo "\n\t<style>#capcha-reload:hover{opacity: 0.7; filter: alpha(opacity=70);}</style>\n";
-	}
+  
 }
 ?>

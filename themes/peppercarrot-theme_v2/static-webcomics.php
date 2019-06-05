@@ -25,7 +25,8 @@
         <section class="col sml-12 med-12 lrg-12" >
           <div class="cover">
             <div class="covertextoverlay">
-              <h1><?php $plxShow->lang('HOMEPAGE_BIG_TEXT') ?></h1>
+              <h1><?php $plxShow->lang('HOMEPAGE_BIG_TEXT') ?>
+              </h1>
                 <div class="button mandarine big">
                   <a href="<?php $plxShow->urlRewrite('?static2/philosophy') ?>" title="<?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?>">
                     <?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?> 
