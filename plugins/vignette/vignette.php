@@ -279,10 +279,14 @@ $plxShow = plxShow::getInstance();
     if(is_array($params)) {
       $prevLib = empty($params[0])?'Previous':$params[0];
       $nextLib = empty($params[1])?'Next':$params[1];
+      $buttonthemeA = empty($params[2])?'':$params[2];
+      $buttonthemeB = empty($params[3])?'':$params[3];
     }
   } else {
     $prevLib = 'Previous';
     $nextLib = 'Next';
+    $buttonthemeA = '';
+    $buttonthemeB = '';
   }
 
   $ordre = preg_match('/asc/',$plxShow->plxMotor->tri)?'sort':'rsort';
@@ -327,7 +331,7 @@ $plxShow = plxShow::getInstance();
 
   if($prevUrl) {
     echo '<div class="col sml-6 med-3 lrg-3">';
-    echo '  <div class="button">';
+    echo '  <div class="'.$buttonthemeA.'">';
     echo '    <a class="readernavbutton" style="text-align:left;" title="'.$prevTitle.'" href="'.$prevUrl.'">';
     echo '       &nbsp; < &nbsp; '.$prevLib.'';
     echo '    </a>';
@@ -335,7 +339,7 @@ $plxShow = plxShow::getInstance();
     echo '</div>';
   } else {
     echo '<div class="col sml-6 med-3 lrg-3">';
-    echo '  <div class="button moka off">';
+    echo '  <div class="'.$buttonthemeB.' off">';
     echo '  <a class="readernavbutton" style="text-align:left;" title="'.$prevTitle.'" href="#">';
     echo '   &nbsp; < &nbsp; '.$prevLib.'';
     echo '  </a>';
@@ -344,7 +348,7 @@ $plxShow = plxShow::getInstance();
   }
   if($nextUrl) {
     echo '<div class="col sml-6 med-3 lrg-3">';
-    echo '  <div class="button">';
+    echo '  <div class="'.$buttonthemeA.'">';
     echo '    <a class="readernavbutton" style="text-align:right;" title="'.$nextTitle.'" href="'.$nextUrl.'">';
     echo '      '.$nextLib.' &nbsp; > &nbsp;';
     echo '    </a>';
@@ -352,7 +356,7 @@ $plxShow = plxShow::getInstance();
     echo '</div>';
   } else {
     echo '<div class="col sml-6 med-3 lrg-3">';
-    echo '  <div class="button moka off">';
+    echo '  <div class="'.$buttonthemeB.' off">';
     echo '    <a class="readernavbutton" style="text-align:right;" title="'.$nextTitle.'" href="#">';
     echo '  '.$nextLib.' &nbsp; > &nbsp;';
     echo '    </a>';

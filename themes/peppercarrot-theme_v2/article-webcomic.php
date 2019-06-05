@@ -85,6 +85,12 @@
         </div>
 
         <?php eval($plxShow->callHook('MyMultiLingueComicHeader')) ?>
+        
+        <?php 
+        $buttonthemeA = '';
+        $buttonthemeB = '';
+        include(dirname(__FILE__).'/navigation.php'); 
+        ?>
 
         <section class="text-center">
           <?php eval($plxShow->callHook("MyMultiLingueComicDisplay", array(''.$UrlAdressOption.''))) ?>  
@@ -146,7 +152,11 @@
               </div>
             </div>
             
-          <?php include(dirname(__FILE__).'/navigation.php'); ?>
+          <?php 
+          $buttonthemeA = 'button';
+          $buttonthemeB = 'button moka';
+          include(dirname(__FILE__).'/navigation.php'); 
+          ?>
           
             <br/>
             
