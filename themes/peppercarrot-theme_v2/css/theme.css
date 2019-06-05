@@ -34,7 +34,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .moka a { color: #806E5B!important; background-color: #F0ECE9; box-shadow: 0 0 0 2px #F0ECE9 inset, 0 0 0 3px rgba(222,168,131,0.55) inset, 1px 1px 2px 0 rgba(20,0,0,0.50);}
 .milk a { color: #544840!important; background-color: #FFF; box-shadow: 0 0 0 2px #FFF inset, 0 0 0 3px rgba(0,0,0,0.25) inset, 1px 1px 2px 0 rgba(20,0,0,0.50);}
 .big { font-size:1.20rem;}
-.off { opacity: 0.35;}
+.off { opacity: 0.25;}
 .off, .off:hover { color: #EEE; cursor: not-allowed;}
 .off img { opacity: 0.05; }
 
@@ -120,6 +120,8 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 /* prev/next button webcomic */
 .readernav { margin 1.2rem 0 1.2rem 0; padding: 0.6rem 0 0 0; clear:both; max-width: 915px }
 .readernavbutton { display:block; width: 100%; background-color: #FFF; margin-bottom: 0.2rem; padding: 6px 8px 6px 8px; font-size: 1.5rem; font-family: 'PepperCarrot'; text-decoration: none;}
+.readernav a { color: #b6b1ae;}
+.readernav a:hover { color: #948780;}
 .readernavbutton:hover { text-decoration: none;}
 .readernavbutton .smaller { font-size: 1.1rem; color: #6daae2;}
 

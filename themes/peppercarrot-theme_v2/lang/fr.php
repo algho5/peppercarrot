@@ -255,8 +255,8 @@ $LANG = array(
 
 ################################################################################
 # various utils :
-'UTIL_NEXT_EPISODE'     =>  'épisode suivant',
-'UTIL_PREVIOUS_EPISODE' =>  'épisode précédent',
+'UTIL_NEXT_EPISODE'     =>  'suivant',
+'UTIL_PREVIOUS_EPISODE' =>  'précédent',
 'UTIL_EPISODE'   =>  'épisode',
 'UTIL_BACK_TO_GALLERY'      =>  'retour à la galerie',
 'UTIL_MORE'      =>  'plus',
