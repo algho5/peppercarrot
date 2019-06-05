@@ -207,6 +207,7 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .menu.expanded li a { padding: .5rem .6rem .5rem .8rem;}
 .containercomic .main {margin: 56px -0.8rem 0 -0.8rem; }
 .containercomic {padding-left: 0; padding-right: 0;}
+.readernav { margin: 0 0 0 0; padding: 0 25px 0 15px;}
 }
 /* (767=plucss-sml) Tablet mode: vertical */
 @media (max-width: 767px) {
@@ -220,6 +221,8 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .wikivertimenu { column-count: 2;}
 .page { padding: 15px 20px 0 20px; font-size: 1.2rem;}
 .page .edit { margin-right: -2%;}
+.readernavbutton { padding: 3px 4px 3px 4px; font-size: 1.25rem;}
+.readernav { margin: 0 0 0 0; padding: 0 25px 0 15px;}
 }
 
 /* Smartphones: vertical */
@@ -234,4 +237,8 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .cardsocket { width: 100%!important;}
 .big { font-size:1.10rem;}
 .page { font-size: 1.1rem;}
+.readernavbutton { margin: 0 auto 0 auto; padding: 3px 4px 3px 4px; font-size: 1.15rem;}
+.readernav { margin: 0 0 0 0; padding: 0 25px 0 15px;}
+.mini img { display: none;}
+.mini { border-image: none!important;}
 }

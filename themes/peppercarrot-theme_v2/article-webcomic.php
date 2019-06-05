@@ -106,7 +106,7 @@
         
           <section class="col sml-12 med-12 lrg-11 text-center sml-centered">
             
-            <div class="cardsocket mini col sml-6 med-4 lrg-4">
+            <div class="cardsocket mini col sml-4 med-4 lrg-4">
               <div class="cardblock mini">
                 <figure class="thumbnail">
                   <a href="<?php eval($plxShow->callHook('MyMultiLingueSourceLinkDisplay')) ?>">
@@ -122,7 +122,7 @@
             </div>
             
           
-            <div class="cardsocket mini col sml-6 med-4 lrg-4">
+            <div class="cardsocket mini col sml-4 med-4 lrg-4">
               <div class="cardblock mini">
                 <figure class="thumbnail">
                   <a href="https://www.davidrevoy.com/<?php echo $path_on_dr_com; ?>">
@@ -137,7 +137,7 @@
               </div>
             </div>
 
-            <div class="cardsocket mini col sml-hide med-show sml-6 med-4 lrg-4">
+            <div class="cardsocket mini col sml-4 med-4 lrg-4">
               <div class="cardblock mini">
                 <figure class="thumbnail">
                   <a href="<?php eval($plxShow->callHook('MyMultiLingueFramagitLinkDisplay')) ?>">
