@@ -231,7 +231,7 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .covertextoverlay { right: 1.3rem;}
 .responsive-langmenu ul { column-count: 2; }
 .responsive-menu label { font-size: 1.8rem;}
-.col.sml-6, .gallery.sml-6 li { width: 100%;}
+.cardsocket { width: 100%!important;}
 .big { font-size:1.10rem;}
 .page { font-size: 1.1rem;}
 }
