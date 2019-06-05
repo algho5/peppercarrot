@@ -12,6 +12,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE' => 'Pepa e Ciro', // Non traduzo os nomes porque ninguén me axudou :( Eu propuxen Pepa & Ciro
 'Website_DESCRIPTION'    => 'Sitio web oficial de Pepa&amp;Ciro, un webcómic libre e aberto sobre Pepa, unha bruxa moza e o seu gato, Ciro. Viven nun universo de fantasía con pocións, maxia e criaturas.', // usar "fada" en lugar de "bruxa"?
 'SUBTITLE'               => 'o Webcomic Libre, por David Revoy', // libre en lugar de aberto

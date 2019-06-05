@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'Paprika és Sárgarépa', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  'Képregény Paprikáról, egy fiatal boszorkányról, és a macskájáról, Sárgarépáról, akik egy bájitalokkal, varázslattal, mesebeli lényekkel teli fantasy világban élnek. Ingyenes, szabad, nyílt forráskódú.',
 'SUBTITLE'                  =>  'David Revoy Nyílt Képregénye',

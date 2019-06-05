@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'Pepper og Gulrot', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  'Pepper&amp;Gulrot sin offisielle hjemmeside, en fri/libre og &aring;pen kildekode nettstripe om Pepper, en ung heks og katten hennes, Gulrot. De lever i en fantasiverden med trylledrikker, magi, og overnaturlige skapninger.',
 'SUBTITLE'                  =>  'Den frie nettstripen av David Revoy',

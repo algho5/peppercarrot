@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'Pebre e carròta', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'       =>  'Site oficial de Pepper&amp;Carrot, un webcomic liure, open-source e gratuit tocant Pepper, una jove fachilièra e son cat, lo Carrot. Vivon dins un univèrs de pocions, de magia e de creaturas.',
 'SUBTITLE'                  =>  'lo webcomic liure del David Revoy',

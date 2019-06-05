@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'Feferonka a Karotka', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  'Oficiální stránky Pepper&amp;Carrot, bezplatného open-source komiksu o mladé čarodějce Feferonce a jejím kocourovi Karotkovi. Společně žijí ve světě plném kouzel, lektvarů a magických stvoření.',
 'SUBTITLE'                  =>  'Open Webcomic vytvořil David Revoy',

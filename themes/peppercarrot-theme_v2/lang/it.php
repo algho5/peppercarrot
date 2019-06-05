@@ -7,6 +7,7 @@ $LANG = array(
 # http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  '', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  'Homepage ufficiale di Pepper&amp;Carrot, un webcomic libero e open-source con protagonisti Pepper, una giovane strega, e il suo gatto, Carrot. Vivono in un universo fantastico fatto di pozioni, magie e creature.',
 'SUBTITLE'                  =>  'Webcomic open di David Revoy',

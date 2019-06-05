@@ -78,8 +78,8 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
       
           <div class="title col sml-hide med-hide lrg-show lrg-2 sml-text-left">
             <h1>
-              <a href="<?php $plxShow->racine() ?><?php echo $lang; ?>/">
-                Pepper&amp;Carrot
+              <a href="<?php $plxShow->racine() ?><?php echo $lang; ?>/" title="<?php $plxShow->lang('PEPPERCARROT_VEGETABLE') ?>">
+                <?php $plxShow->lang('PEPPERCARROT_TITLE') ?>
               </a>
             </h1>
           </div>

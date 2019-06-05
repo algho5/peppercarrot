@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'Peper un Wuddel', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  'Offizielle Websteed vun Pepper&amp;Wuddel, en free Webcomic. Dat geiht üm Pepper, en junge Hex, un ehr Katt Wuddel, de in en Fantasiewelt vull Töverdrunks, Magie un magische Deerten leevt.',
 'SUBTITLE'                  =>  'De free Webcomic vun David Revoy',

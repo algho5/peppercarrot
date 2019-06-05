@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  '후추와 당근', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'       =>  '어린 마녀 후추와 그녀의 고양이 당근을 주인공으로 하는 자유 오픈소스 만화, 후추와 당근의 공식 홈페이지입니다. 이들은 상상의 포션과, 마법 그리고 생물의 세계에서 살아갑니다.',
 'SUBTITLE'                  =>  'David Revoy의 공개 만화',

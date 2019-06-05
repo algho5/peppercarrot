@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'Hạt Tiêu và Cà Rốt', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  'Trang chủ của Hạt Tiêu&amp;Cà Rốt, Truyện tranh trực tuyến, miễn phí về cô bé Hạt Tiêu, một cô phù thủy trẻ cùng với chú mèo, Cà Rốt. Họ sống trong một thế giới kì diệu về thuốc phép, phép thuật, bà những con vật kì bí.',
 'SUBTITLE'                  =>  'Cổng truyện tranh trực tuyến bởi David Revoy',

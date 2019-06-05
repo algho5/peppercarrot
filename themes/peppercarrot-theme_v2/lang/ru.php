@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE' => 'Перчинка и Морквик', // literal translation of the spice and the vegetable
 'Website_DESCRIPTION'        =>  'Официальная страница Pepper&amp;Carrot, бесплатного и открытого веб-комикса о юной ведьмочке Перчинке и ее коте Морквике. Они живут в фэнтэзийной вселенной зелий, магии и чудовищ.',
 'SUBTITLE'                  =>  'Открытый веб-комикс Давида Ревуа',

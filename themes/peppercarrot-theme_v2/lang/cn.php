@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  '辣椒和胡萝卜', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'       =>  '小辣椒与萝卜头官方网站，一部自由的网络漫画，开源并且免费。讲述了一名生活在魔药，魔法和神奇生物的世界里的少女和她的猫的故事。',
 'SUBTITLE'                  =>  'David Revoy的自由漫画',

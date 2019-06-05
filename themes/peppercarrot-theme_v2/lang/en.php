@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE' => 'Pepper and Carrot', // literal translation of the spice and the vegetable
 'Website_DESCRIPTION'    => 'Official homepage of Pepper&amp;Carrot, a free(libre) and open-source webcomic about Pepper, a young witch and her cat, Carrot. They live in a fantasy universe of potions, magic, and creatures.',
 'SUBTITLE'               => 'the Open Webcomic by David Revoy',

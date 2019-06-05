@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'ペッパー&amp;キャロット', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  'ペッパー&amp;キャロットのオフィシャルホームページ。魔法少女ペッパーとその猫キャロットのフリーでオープンソースなウェブコミック。魔法の薬に、魔法、そして魔法生物が出てくるファンタジー世界が舞台です。 ',
 'SUBTITLE'                  =>  'David Revoyによるオープンウェブコミック',

@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  '', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  'Página oficial de Pepper&amp;Carrot, um HQ grátis/livre e open-source sobre Pepper, uma jovem bruxa e seu gato, Carrot. Eles vivem em um universo fantástico com poções, magia e criaturas mágicas.',
 'SUBTITLE'                  =>  'Uma HQ livre por David Revoy',

@@ -10,6 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
+'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'Korzynie i Markewka', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  'Ôficjalnŏ zajta Pepper&amp;Carrot, darmego i ze ôdewrzōnym źrōdłym necowego kōmiksu o Pepper, modyj heksie i Carrot, ôd nij kocie. Żyjōm we fantastycznym uniwersōm połnym mikstur, magije i stworōw.',
 'SUBTITLE'                  =>  'ôdewrzōny internetowy kōmiks wytworzōny ôd Davida Revoya',
