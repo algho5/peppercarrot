@@ -10,7 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
-'PEPPERCARROT_TITLE'    =>  'Pipro kaj Karoĉjo', // the title on top of the website
+'PEPPERCARROT_TITLE'    =>  'Pipro<span style="font-size: 1.5rem;"> kaj </span>Karoĉjo', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'Pipro kaj Karoĉjo', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  'Oficiala retejo de Pipro kaj Karoĉjo, libera kaj malfermkoda retkomikso pri Pipro - juna sorĉistino - kaj ŝia kato - Karoĉjo. Ili loĝas en fantazia mondo de sorĉtrinkaĵoj, magio kaj bestaĉoj.',
 'SUBTITLE'                  =>  'malfermkoda retkomikso de David REVOY',
