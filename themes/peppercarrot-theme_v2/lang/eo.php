@@ -10,9 +10,9 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
-'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
+'PEPPERCARROT_TITLE'    =>  'Pipro kaj Karoĉjo', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'Pipro kaj Karoĉjo', // litteral translation of spices + vegetable
-'Website_DESCRIPTION'        =>  'Oficiala retejo de Pipro kaj Karoĉjo, senpaga/libera kaj malfermkoda retkomikso pri Pipro - juna sorĉistino - kaj ŝia kato - Karoĉjo. Ili loĝas en fantazia mondo de sorĉtrinkaĵoj, magio kaj bestaĉoj.',
+'Website_DESCRIPTION'        =>  'Oficiala retejo de Pipro kaj Karoĉjo, libera kaj malfermkoda retkomikso pri Pipro - juna sorĉistino - kaj ŝia kato - Karoĉjo. Ili loĝas en fantazia mondo de sorĉtrinkaĵoj, magio kaj bestaĉoj.',
 'SUBTITLE'                  =>  'malfermkoda retkomikso de David REVOY',
 
 ################################################################################
@@ -26,8 +26,8 @@ $LANG = array(
 'WIKI'          =>  'Vikio',
 'SOURCES'       =>  'Fontoj',
 'AUTHOR'        =>  'Aŭtoro',
-'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'E-Shop',
+'EXTRAS'        =>  'Aliaĵoj',
+'ESHOP'         =>  'Ret‑butiko',
 'FOLLOW'        =>  'Sekvi Pipron kaj Karoĉjon ĉe:',
 
 ################################################################################
@@ -38,7 +38,7 @@ $LANG = array(
 ################################################################################
 # Page: Homepage
 'HOMEPAGE_BIG_TEXT'		    =>  '
-    Senpaga, libera kaj malfermkoda retkomikso<br/>
+    Libera kaj malfermkoda retkomikso<br/>
     subtenata rekte de ĝiaj patronoj<br/>
     por ŝanĝi la sektoron de bildrakontoj!<br/>
 ',
@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'Pli da informoj',
 'HOMEPAGE_PATREON_BUTTON'   =>  'Iĝi patrono de Pipro kaj Karoĉjo per Patreon',
 'PATRONAGE_BUTTON'          =>  'Iĝi patrono de Pipro kaj Karoĉjo',
-'HOMEPAGE_LAST_EPISODE'     =>  'Plej nova rakonteto:',
+'HOMEPAGE_LAST_EPISODE'     =>  'Plej nova rakonto:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Novaĵoj kaj ĝisdatigoj:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Pli da afiŝoj',
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
@@ -250,9 +250,9 @@ $LANG = array(
 
 ################################################################################
 # various utils:
-'UTIL_NEXT_EPISODE'      =>  'sekva rakonteto',
-'UTIL_PREVIOUS_EPISODE'  =>  'antaŭa rakonteto',
-'UTIL_EPISODE'   =>  'rakonteto',
+'UTIL_NEXT_EPISODE'      =>  'sekvanta rakonto',
+'UTIL_PREVIOUS_EPISODE'  =>  'antaŭa rakonto',
+'UTIL_EPISODE'   =>  'rakonto',
 'UTIL_BACK_TO_GALLERY'      =>  'reen al galerio',
 'UTIL_MORE'      =>  'pli',
 'UTIL_PAGE'      =>  'paĝo',
@@ -260,7 +260,7 @@ $LANG = array(
 'UTIL_LICENSE'   =>  'permesilo',
 'UTIL_DOT'   =>  '.',
 'FIRST'        =>  'unua',
-'LAST'   =>  'lasta',
+'LAST'   =>  'plej nova',
 );
 
 ?>
