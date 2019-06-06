@@ -79,7 +79,7 @@ $LANG = array(
 
     <p>O proxecto Pepper&amp;Carrot está financiado só por patrocinadores, desde todo o mundo.
     Cada patrocinador envía unha pequena cantidade de cartos por cada novo episodio e obtén aparecer nos créditos ao final de cada novo episodio.
-    Grazas a este sistema, Pepper&amp;Carrot pode permanecer autónomo e non depender da publicidade ou contaminarse coa propaganda.</p>
+    Grazas a este sistema, Pepper&amp;Carrot pode manterse autónomo e non depender da publicidade ou contaminarse coa propaganda.</p>
 ',
 'DONATE_INTRO'    => '
     <p>
@@ -101,9 +101,9 @@ $LANG = array(
     <h2>Código aberto e licenzas</h2>
 
     <p>Quero darlle a xente o dereito de compartir, utilizar, construír e incluso facer cartos a partir do traballo creado por min.
-    Todas as páxinas, traballos artísticos e contido son creados con Software Libre e de fontes abertas en Linux, e todas as fontes están en este sitio web, menú &#39;Fontes&#39;
+    Todas as páxinas, traballos artísticos e contido son creados con Software Libre e de fontes abertas en Linux, e todas as fontes están en este sitio web, menú &#39;Fontes&#39;.
     Anímote a facer un uso comercial, traducións, fan-art, impresións, películas, video xogos, compartir e republicar.
-    Só precisas dar o crédito axeitado a/os autores (artístas, correctores, tradutores implicados no traballo que queres utilizar), proporcionar unha ligazón a licenza, e indicar os cambios realizados se procede. Podes facelo de varios xeitos apropiados, pero non dun xeito que implique que os autores propoñen o que ti fixeches.</p>
+    Só precisas dar o crédito axeitado a/os autores (artistas, correctores, tradutores implicados no traballo que queres utilizar), proporcionar unha ligazón a licenza, e indicar os cambios realizados se procede. Podes facelo de varios xeitos apropiados, pero non dun xeito que implique que os autores propoñen o que ti fixeches.</p>
 
     <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="Para máis información, lea a Creative Commons Attribution 4.0">
