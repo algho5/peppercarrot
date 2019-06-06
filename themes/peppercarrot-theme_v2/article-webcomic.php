@@ -83,6 +83,9 @@
             </div>
           </nav>
         </div>
+        
+        <div style="clear:both;">
+        </div>
 
         <?php eval($plxShow->callHook('MyMultiLingueComicHeader')) ?>
         
