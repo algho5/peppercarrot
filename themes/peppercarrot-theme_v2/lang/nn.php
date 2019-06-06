@@ -10,7 +10,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
-'PEPPERCARROT_TITLE'    =>  'Pepar&amp;Gulrot', // the title on top of the website
+'PEPPERCARROT_TITLE'    =>  'Pepar &amp; Gulrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE' => 'Pepar &amp; Gulrot', // literal translation of the spice and the vegetable
 'Website_DESCRIPTION'    => 'Offisiell heimeside til Pepar &amp; Gulrot, ein fri teikneserie om den unge heksa Pepar og katten hennar, Gulrot. Dei lever i ei fantasiverd full av trylledrikkar, magi og fantastiske skapningar.',
 'SUBTITLE'               => 'Den frie teikneserien laga av David Revoy',
@@ -26,8 +26,8 @@ $LANG = array(
 'WIKI'       => 'Wiki',
 'SOURCES'    => 'Kjeldefiler',
 'AUTHOR'     => 'Serieskaparen',
-'EXTRAS'     =>  'Extras',
-'ESHOP'      =>  'E-Shop',
+'EXTRAS'        =>  'Ekstrastoff',
+'ESHOP'         =>  'Nettbutikk',
 'FOLLOW'     => 'Følg Pepar &amp; Gulrot på:',
 
 ################################################################################
