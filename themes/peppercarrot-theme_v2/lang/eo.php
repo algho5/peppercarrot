@@ -26,8 +26,8 @@ $LANG = array(
 'WIKI'          =>  'Vikio',
 'SOURCES'       =>  'Fontoj',
 'AUTHOR'        =>  'Aŭtoro',
-'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'E-Shop',
+'EXTRAS'        =>  'Aliaĵoj',
+'ESHOP'         =>  'Ret‑butiko',
 'FOLLOW'        =>  'Sekvi Pipron kaj Karoĉjon ĉe:',
 
 ################################################################################
@@ -46,7 +46,7 @@ $LANG = array(
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'Pli da informoj',
 'HOMEPAGE_PATREON_BUTTON'   =>  'Iĝi patrono de Pipro kaj Karoĉjo per Patreon',
 'PATRONAGE_BUTTON'          =>  'Iĝi patrono de Pipro kaj Karoĉjo',
-'HOMEPAGE_LAST_EPISODE'     =>  'Plej nova rakonteto:',
+'HOMEPAGE_LAST_EPISODE'     =>  'Plej nova rakonto:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'Novaĵoj kaj ĝisdatigoj:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Pli da afiŝoj',
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
@@ -250,9 +250,9 @@ $LANG = array(
 
 ################################################################################
 # various utils:
-'UTIL_NEXT_EPISODE'      =>  'sekva rakonteto',
-'UTIL_PREVIOUS_EPISODE'  =>  'antaŭa rakonteto',
-'UTIL_EPISODE'   =>  'rakonteto',
+'UTIL_NEXT_EPISODE'      =>  'sekvanta rakonto',
+'UTIL_PREVIOUS_EPISODE'  =>  'antaŭa rakonto',
+'UTIL_EPISODE'   =>  'rakonto',
 'UTIL_BACK_TO_GALLERY'      =>  'reen al galerio',
 'UTIL_MORE'      =>  'pli',
 'UTIL_PAGE'      =>  'paĝo',
@@ -260,7 +260,7 @@ $LANG = array(
 'UTIL_LICENSE'   =>  'permesilo',
 'UTIL_DOT'   =>  '.',
 'FIRST'        =>  'unua',
-'LAST'   =>  'lasta',
+'LAST'   =>  'plej nova',
 );
 
 ?>
