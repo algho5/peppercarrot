@@ -40,8 +40,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .top a { padding: 9px 10px; display: inline-block;}
 .off { opacity: 0.25;}
 .off, .off:hover { color: #EEE; cursor: not-allowed;}
-.off img { opacity: 0.05; }
-.aligned { display: inline-block;}
+.off img { opacity: 0.05;}
 
 /* Cards */
 .cardsocket { min-height: 550px; margin-bottom: 1rem; padding-left: 0.5rem; padding-right: 0.5rem;}
