@@ -33,10 +33,15 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .choco a { background-color: #9B7761; box-shadow: 0 0 0 2px #9B7761 inset, 0 0 0 3px rgba(255,255,255,0.55) inset, 2px 2px 3px 0 rgba(20,0,0,0.50);}
 .moka a { color: #806E5B!important; background-color: #F0ECE9; box-shadow: 0 0 0 2px #F0ECE9 inset, 0 0 0 3px rgba(222,168,131,0.55) inset, 1px 1px 2px 0 rgba(20,0,0,0.50);}
 .milk a { color: #544840!important; background-color: #FFF; box-shadow: 0 0 0 2px #FFF inset, 0 0 0 3px rgba(0,0,0,0.25) inset, 1px 1px 2px 0 rgba(20,0,0,0.50);}
+
+/* button's variants */
 .big { font-size:1.20rem;}
+.top { font-size:1.10rem; display: inline-block;}
+.top a { padding: 9px 10px; display: inline-block;}
 .off { opacity: 0.25;}
 .off, .off:hover { color: #EEE; cursor: not-allowed;}
 .off img { opacity: 0.05; }
+.aligned { display: inline-block;}
 
 /* Cards */
 .cardsocket { min-height: 550px; margin-bottom: 1rem; padding-left: 0.5rem; padding-right: 0.5rem;}

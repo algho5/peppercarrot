@@ -71,15 +71,15 @@
         <div class="col sml-12 sml-text-right">
           <nav class="nav" role="navigation">
             <div class="responsive-langmenu">
-              <label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
+            <div class="button top <?php echo ''.$hdstatus.''; ?>">
+              <a href="<?php $plxShow->artUrl() ?><?php echo ''.$LinkVariable.''; ?>" class="lang option">HD 2400px</a>
+            </div>
+              <label for="langmenu" style="display: inline-block;"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
               <input type="checkbox" id="langmenu">
               <ul class="langmenu expanded">
               <?php eval($plxShow->callHook('MyMultiLingueComicLang')) ?>
               <li class="button"><a class="lang option" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
               </ul>
-            </div>
-            <div class="button big <?php echo ''.$hdstatus.''; ?>">
-              <a href="<?php $plxShow->artUrl() ?><?php echo ''.$LinkVariable.''; ?>" class="lang option">HD 2400px</a>
             </div>
           </nav>
         </div>
