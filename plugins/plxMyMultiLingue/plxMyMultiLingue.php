@@ -98,6 +98,7 @@ class plxMyMultiLingue extends plxPlugin {
     $this->addHook('MyMultiLingueComicHeader', 'MyMultiLingueComicHeader');
     $this->addHook('MyMultiLingueSourceLinkDisplay', 'MyMultiLingueSourceLinkDisplay');
     $this->addHook('MyMultiLingueFramagitLinkDisplay', 'MyMultiLingueFramagitLinkDisplay');
+    $this->addHook('MyMultiLingueCommentLinkDisplay', 'MyMultiLingueCommentLinkDisplay');
         
 		# récupération des langues enregistrées dans le fichier de configuration du plugin
 		if($this->getParam('flags')!='')
@@ -1010,6 +1011,59 @@ public function MyMultiLingueFramagitLinkDisplay() {
   $sourcelink = basename($episode_source_directory);
   $activelang = $this->lang;
   echo 'https://framagit.org/peppercarrot/webcomics/tree/master/'.$sourcelink.'/lang/'.$activelang.'';
+}
+
+/**************************************************************/
+/* Display the number of comments and url from DR website   	*/
+/**************************************************************/
+/**
+ * Method to display comments url on davidrevoy.com or number
+ * nb_com = comment number
+ * url = raw url
+ * @author: David Revoy
+ **/ 
+public function MyMultiLingueCommentLinkDisplay($params) {
+  $plxMotor = plxMotor::getInstance();
+  $plxShow = plxShow::getInstance();
+  if(isset($params)) {
+    if(is_array($params)) {
+      $type = empty($params[0])?'':$params[0];
+    }
+  } else {
+    $type = '';
+  }
+  
+  $jsonpath = "0_sources/comments.json";
+  $contents = file_get_contents($jsonpath);
+  $get = json_decode($contents); 
+  
+  $aLabels = unserialize($this->getParam('labels'));
+  $vignette = $plxMotor->plxRecord_arts->f('thumbnail');
+  $vignette_parts = pathinfo($vignette);
+  ## Remove the lang tag in the vignette filename, three first char (eg. en_, fr_ )
+  $vignette_name = substr($vignette_parts['filename'], 3);
+  ## Keep only last two digit of vignette filename because they are the episode number
+  $episode_number = substr($vignette_name, -2);
+  $path = $vignette_parts['dirname'];
+  $parts = explode('/', $path);
+  array_pop($parts);
+  $episode_source_directory = implode('/', $parts);
+  # pattern : index.php?fr/static6/sources&page=ep02_Rainbow-potions
+  $sourcelink = basename($episode_source_directory);
+  $activelang = $this->lang;
+  # retrieve epXX
+  $episodeid = 'ep'.$episode_number;
+  
+  # Display depending what variable user pass:
+  if($type == 'url') {
+    $comurl = $get->{$episodeid}->{'url'};
+    echo $comurl;
+  } else if ($type == 'nb_com') {
+    $comnb = $get->{$episodeid}->{'nb_com'};
+    echo $comnb;
+  } else {
+    echo '';
+	}
 }
 
 }
