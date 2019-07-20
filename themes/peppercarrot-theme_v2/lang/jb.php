@@ -39,10 +39,10 @@ $LANG = array(
     zi\'e noi se sarji lo se selfu<br/>
     i e\'e jau gau cenba fai lo gundi be lo lisri<br/>
 ',
-'HOMEPAGE_PATREON_INFO'     =>  'e\'u do\'e ro pagbu be lo lisri do ta\'i lo ka dunda lo merko rupnu be li pa co\'a selfu do\'e la\o .gy.Patreon.gy.',
+'HOMEPAGE_PATREON_INFO'     =>  'e\'u do\'e ro pagbu be lo lisri do ta\'i le ka dunda lo merko rupnu be li pa co\'a selfu do\'e la\o .gy.Patreon.gy.',
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'tcila',
-'HOMEPAGE_PATREON_BUTTON'   =>  "co'a sidju la'e la piper joi la karot sepi'o la'o gy.Patreon.gy.",
-'PATRONAGE_BUTTON'          => "co'a sidju la'e la piper joi la karot",
+'HOMEPAGE_PATREON_BUTTON'   =>  "sidju la'e la piper joi la karot sepi'o la'o gy.Patreon.gy.",
+'PATRONAGE_BUTTON'          => "sidju la'e la piper joi la karot",
 'HOMEPAGE_LAST_EPISODE'     =>  'ro moi pagbu',
 'HOMEPAGE_NEWS_UPDATE'      =>  'nuzba i cnino',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'drata se benji',
