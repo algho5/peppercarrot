@@ -3,7 +3,7 @@
 $LANG = array(
 
 # Global
-'TRANSLATED_BY' 		    => 'fanva fa <a href="https://la-lojban.github.io/sutysisku/">la gleki arxokuna</a>',
+'TRANSLATED_BY' 		    => 'fanva fa <a href="https://jbotcan.org">la gleki arxokuna</a>',
 'LANGUAGE_NAME' 			=> 'Lojban',
 'LANGUAGE_ISO_CODE_2_LETTER'=> 'jb',
 # http://www.w3schools.com/tags/ref_language_codes.asp --> full list
@@ -63,80 +63,80 @@ $LANG = array(
 
 ################################################################################
 # Page: Philosophy
-'PHILOSOPHY_CONTENT'    =>  '
+'PHILOSOPHY_CONTENT'    =>  "
  <h2>i se sarji lo se selfu</h2>
 
-    <p>i la\'e la piper jo\'u la karot cu se sraji lo noi xabju lo vrici gugde vau se selfu be la\'e bu e no drata<br/>
-    i ro selfu cu dunda lo so\'o jdini do\'e ro cnino pagbu be lo lisri i je lo romoi papri be le pagbu cu uencu lo liste be le selfu<br/>
-    i la\'e di\'u rinka lo nu la\'e la piper jo\'u la karot cu se jdima li no gi\'e na srana lo notci be lo nu vecnu</p>
+    <p>i la'e la piper jo'u la karot cu se sraji lo noi xabju lo vrici gugde vau se selfu be la'e bu e no drata<br/>
+    i ro selfu cu dunda lo so'o jdini do'e ro cnino pagbu be lo lisri i je lo romoi papri be le pagbu cu uencu lo liste be le selfu<br/>
+    i la'e di'u rinka lo nu la'e la piper jo'u la karot cu se jdima li no gi'e na srana lo notci be lo nu vecnu</p>
 
-    <div class="philobutton">
-        <a href="https://www.patreon.com/davidrevoy" title="e\'u do\'e ro pagbu be lo lisri do ta\'i lo ka dunda lo merko rupnu be li pa co\'a selfu do\'e la\o .gy.Patreon.gy.">
-            e\'u do\'e ro pagbu be lo lisri do ta\'i lo ka dunda lo merko rupnu be li pa co\'a selfu do\'e la\o .gy.Patreon.gy.
+    <div class='philobutton'>
+        <a href='https://www.patreon.com/davidrevoy' title='e'u do'e ro pagbu be lo lisri do ta'i lo ka dunda lo merko rupnu be li pa co'a selfu do'e la\o .gy.Patreon.gy.'>
+            e'u do'e ro pagbu be lo lisri do ta'i lo ka dunda lo merko rupnu be li pa co'a selfu do'e la\o .gy.Patreon.gy.
         </a>
     </div>
 
-        <a href="https://www.patreon.com/davidrevoy" title="e\'u do\'e ro pagbu be lo lisri do ta\'i lo ka dunda lo merko rupnu be so\'u li pa co\'a selfu do\'e la\o .gy.Patreon.gy.">
-            <img alt="nu selfu" src="data/images/static/2015-02-09_philosophy_01-support.jpg">
+        <a href='https://www.patreon.com/davidrevoy' title='e'u do'e ro pagbu be lo lisri do ta'i lo ka dunda lo merko rupnu be so'u li pa co'a selfu do'e la\o .gy.Patreon.gy.'>
+            <img alt='nu selfu' src='data/images/static/2015-02-09_philosophy_01-support.jpg'>
         </a>
 
-    <h2>i je\'u ze\'e jdima be no da</h2>
+    <h2>i je'u ze'e jdima be no da</h2>
 
-    <p>i ro da poi se finti mi gi\'e skicu la piper jo\'u la karot gi\'e se stuzi lo dei kibro cu se jdima no de i je ro prenu jai se krali fai lo ka se pilno le se finti<br/>
-    i lo dunda be lo jdini cu dunli lo na dunda be lo jdini lo ka se sinma mi i mi cikre lo dunda be lo jdini ta\'i lo ka dunda le dunda lo selte\'i<br/>
-    i lo prenu ba no roi jai sarcu fai lo ka dunda lo jdini vau fe lo nu tcidu lo cnino pagbu be lo lisri be la piper jo\'u la karot</p>
+    <p>i ro da poi se finti mi gi'e skicu la piper jo'u la karot gi'e se stuzi lo dei kibro cu se jdima no de i je ro prenu jai se krali fai lo ka se pilno le se finti<br/>
+    i lo dunda be lo jdini cu dunli lo na dunda be lo jdini lo ka se sinma mi i mi cikre lo dunda be lo jdini ta'i lo ka dunda le dunda lo selte'i<br/>
+    i lo prenu ba no roi jai sarcu fai lo ka dunda lo jdini vau fe lo nu tcidu lo cnino pagbu be lo lisri be la piper jo'u la karot</p>
 
-        <img alt="lo se dunda be fi lo selfu" src="data/images/static/2015-02-09_philosophy_03-paywall.jpg">
+        <img alt='lo se dunda be fi lo selfu' src='data/images/static/2015-02-09_philosophy_03-paywall.jpg'>
 
     <h2>i lo cupra cartu cu gubni i je lo ka pilno ri cu krali ro da</h2>
 
-    <p>i mi curmi lo nu do zbasu lo fukpi be lo se finti be mi gi\'a pilno lo mi\'u se finti gi\'e ji\'a jerna fi lo ka pilno mi\'u<br/>
-    i ro da poi papri gi\'a pixra gi\'a cfika zi\'e poi srana zo\'u mi pilno fi lo ka zbasu da vau fe lo proga poi se jdima no de zi\'e poi lo cupra cartu be ke\'a cu gubni zi\'e noi mi pilno va\'o tu\'a la\'o gy.GNU/Linux.gy. i ro cupra vreji ka\'e se cpacu fi lo se cuxna poi du la cupra<br/>
-i mi e\'ende do lo ka va\'o la\'e di\'e jerna pilno gi\'a fanva gi\'a finti lo poi srana la\'e la piper jo\'u la karot vau pixra gi\'a zbasu lo prina gi\'a finti lo skina a lo se kelci gi\'e jau gau djuno fai lo drata fi la piper jo\'u la karot<br/>
-i sa\'u do jmina lo notci be ro da poi finti gi\'a fanva gi\'a cikre vau lo se pilno be do i je do jmina lo judri be lo javni be lo nu pilno i je ga nai do cnegau de gi do jmina lo notci be lo nu mi\'u cnegau i je do na jmina lo notci be lo nu lo finti cu zanru lo se gunka be do a lo nu do pilno mi\'u</p>
-    <div class="philobutton">
-        <a href="https://creativecommons.org/licenses/by/4.0/" title="i do ka\'e cilre lo zmadu ta\'i lo ka tcidu lo srana be la\o gy.Creative Commons Attribution 4.0.gy.">
-            i jaspu fa la\'o gy.License: Creative Commons Attribution 4.0.gy.
+    <p>i mi curmi lo nu do zbasu lo fukpi be lo se finti be mi gi'a pilno lo mi'u se finti gi'e ji'a jerna fi lo ka pilno mi'u<br/>
+    i ro da poi papri gi'a pixra gi'a cfika zi'e poi srana zo'u mi pilno fi lo ka zbasu da vau fe lo proga poi se jdima no de zi'e poi lo cupra cartu be ke'a cu gubni zi'e noi mi pilno va'o tu'a la'o gy.GNU/Linux.gy. i ro cupra vreji ka'e se cpacu fi lo se cuxna poi du la cupra<br/>
+i mi e'ende do lo ka va'o la'e di'e jerna pilno gi'a fanva gi'a finti lo poi srana la'e la piper jo'u la karot vau pixra gi'a zbasu lo prina gi'a finti lo skina a lo se kelci gi'e jau gau djuno fai lo drata fi la piper jo'u la karot<br/>
+i sa'u do jmina lo notci be ro da poi finti gi'a fanva gi'a cikre vau lo se pilno be do i je do jmina lo judri be lo javni be lo nu pilno i je ga nai do cnegau de gi do jmina lo notci be lo nu mi'u cnegau i je do na jmina lo notci be lo nu lo finti cu zanru lo se gunka be do a lo nu do pilno mi'u</p>
+    <div class='philobutton'>
+        <a href='https://creativecommons.org/licenses/by/4.0/' title='i do ka'e cilre lo zmadu ta'i lo ka tcidu lo srana be la\o gy.Creative Commons Attribution 4.0.gy.'>
+            i jaspu fa la'o gy.License: Creative Commons Attribution 4.0.gy.
         </a>
     </div>
 
-        <img alt="pixra fingubni se uencu" src="data/images/static/2015-02-09_philosophy_04-open-source.jpg">
+        <img alt='pixra fingubni se uencu' src='data/images/static/2015-02-09_philosophy_04-open-source.jpg'>
 
-    <h2>i ai zabna nu zdile fa ro do bu\'u ro da</h2>
+    <h2>i ai zabna nu zdile fa ro do bu'u ro da</h2>
 
-    <p>la\'e la piper jo\'u la karot cu gunma lo xajmi lisri suited for everyone, every age.<br/>
-    i no vreji be lo nu gletu a lo nu vlile cu se curmi  .i la\'e la piper jo\'u la karot lu\'u noi se jdima no da gi\'e fingubni cu jai se jgira mupli lo ka zabna vau lo jai se zifre jai kulnu<br/>
-    .i mi zukte fi lo nu lo se finti cu carmi zabna i ki\'u bo so\'e prenu cu jinvi lo du\'u so\'a fingubni cu mabla gi\'a jai se to\'e certu .i .ai darlu fi du\'u bu</p>
+    <p>la'e la piper jo'u la karot cu gunma lo xajmi lisri suited for everyone, every age.<br/>
+    i no vreji be lo nu gletu a lo nu vlile cu se curmi  .i la'e la piper jo'u la karot lu'u noi se jdima no da gi'e fingubni cu jai se jgira mupli lo ka zabna vau lo jai se zifre jai kulnu<br/>
+    .i mi zukte fi lo nu lo se finti cu carmi zabna i ki'u bo so'e prenu cu jinvi lo du'u so'a fingubni cu mabla gi'a jai se to'e certu .i .ai darlu fi du'u bu</p>
 
-        <img alt="" src="data/images/static/2015-02-09_philosophy_05-everyone.jpg">
+        <img alt='' src='data/images/static/2015-02-09_philosophy_05-everyone.jpg'>
 
-    <h2>i e\'e gau mi\'o lo gundi be lo se pixra lisri cu cenba</h2>
+    <h2>i e'e gau mi'o lo gundi be lo se pixra lisri cu cenba</h2>
 
-    <p>Without intermediary between artist and audience you pay less and I benefit more. You support me directly.<br/>
+    <p>i ri'a le nu no drata kagni cu sidju vau ge do pleji le mleca be le'e jai se kanpe gi mi cpacu le zmadu be le'e jai se kanpe .i do mi sidju co se sidju no na'e jai sarcu<br/>
     No publisher/distributor/marketing/fashion can force me to change Pepper&amp;Carrot to fit their vision of &#39;the market&#39;.<br/>
     &nbsp;.&nbsp;.&nbsp;.&nbsp;Why not a single success couldn&#39;t &#39;snowball&#39; a whole industry in crisis? We&#39;ll see...</p>
 
-        <img alt="i lo gundi be lo nu zbasu lo cukta be lo pixra i je ku\'i sidju fi lo ka selfu" src="data/images/static/2015-02-09_philosophy_06-industry-change.jpg">
+        <img alt='i lo gundi be lo nu zbasu lo cukta be lo pixra i je ku'i sidju fi lo ka selfu' src='data/images/static/2015-02-09_philosophy_06-industry-change.jpg'>
 
-    <div class="philobutton">
-        <a class="h4" href="https://www.patreon.com/davidrevoy" title="e\'u do\'e ro pagbu be lo lisri do ta\'i lo ka dunda lo merko rupnu be li so\'u pa do catni se selfu sidju mi lo ka finti lo cnino pagbu be lo lisri be la piper jo\'u la karot
+    <div class='philobutton'>
+        <a class='h4' href='https://www.patreon.com/davidrevoy' title='e'u do'e ro pagbu be lo lisri do ta'i lo ka dunda lo merko rupnu be li so'u pa do catni se selfu sidju mi lo ka finti lo cnino pagbu be lo lisri be la piper jo'u la karot
         </a>
     </div>
 
-    <p>i mi ckire do lo ka tcidu <br/>
-    mi\'e la\'o gy.David Revoy.gy.</p>
+    <p>i mi ckire do le ka tcidu <br/>
+    mi'e la'o gy.David Revoy.gy.</p>
 
- ',
+ ",
 
 ################################################################################
 # Page: Contribute
 'CONTRIBUTE_TITLE'		=> 'sidju',
 'CONTRIBUTE_TOP'		=> "
-    <p>la'e la piper jo'u la karot cu <a href='?static6/sources' title='Sources page'>fingubni</a> gi'e se jaspu jaspu lo Thanks to the  and the .i la'o gy.<a href='http://creativecommons.org/licenses/by/4.0/'>
+    <p>la'e la .piper. jo'u la .karot. cu <a href='?static6/sources' title='Sources page'>fingubni</a> gi'e se jaspu jaspu lo Thanks to the  and the .i la'o gy.<a href='http://creativecommons.org/licenses/by/4.0/'>
     creative commons license</a>.gy. jaspu fo lo nu do ka'e finti so'i srana be la piper e la karot</p>
 ",
 'CONTRIBUTE_DONATION'		=> "
-    <h2>i lo nu selfu i lo nu dunda</h2>
+    <h2>.i nu selfu .i nu dunda</h2>
 
     <p>I detail in the <a href='?static2/philosophy' title='open the Sources page'>Philosophy page</a> almost everything concerning funding.<br/>
     .i sei frili lo ka co'a selfu la'e la pipep jo'u la karot cu se tadji lo ka dunda tu'a lo pa rupnusudu <a href='https://www.patreon.com/davidrevoy'>do'e la'o gy.Patreon.gy.</a> ba ro nu co'i finti lo cnino pagbu be lo lisri be py. jo'u cy.<br/>
