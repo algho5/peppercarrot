@@ -1863,7 +1863,7 @@ class plxShow {
 		if(isset($this->lang[$key]))
 			echo $this->lang[$key];
 		else
-			echo $key;
+			echo "<span style=\"color:red;\" title=\"Translation key is missing, please contact the team to inform them about this issue. \">".$key."</span>";
 	}
 
 	/**
