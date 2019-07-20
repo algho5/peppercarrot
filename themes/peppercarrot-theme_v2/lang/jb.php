@@ -179,11 +179,11 @@ i sa'u do jmina lo notci be ro da poi finti gi'a fanva gi'a cikre vau lo se piln
 ################################################################################
 # Page: Sources
 'SOURCES_TITLE'		    => 'vreji lo ve zbasu',
-'SOURCES_TOP'	        => '
-    <p><b>Welcome to the sources download center!</b><br/>
+'SOURCES_TOP'	        => "
+    <p><b>fi'i zvati le tutci be le nu benji fi le diklo</b><br/>
     You&#39;ll find here the sources files of Pepper&amp;Carrot and more.<br/>
-    All digital-painting files here are compatible with the latest version of <a href="https://krita.org/">Krita</a>.</p>
-',
+    All digital-painting files here are compatible with the latest version of <a href='https://krita.org/'>Krita</a>.</p>
+",
 'SOURCES_BOTTOM'	    => '
     <p>By downloading and working with those files you agree to respect the terms of the <br/>
     <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license</a>.
