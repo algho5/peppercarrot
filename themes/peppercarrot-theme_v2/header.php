@@ -44,8 +44,7 @@ V.<?php echo $version ?>
   <link rel="apple-touch-icon" sizes="114x114" href="<?php $plxShow->template(); ?>/img/apple-touch-icon-114x114.png">
   <link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/plucss.css" media="screen"/>
   <link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/theme.css?version=<?php echo $version ?>" media="screen"/>
-  <link rel="alternate" type="application/rss+xml" title="<?php $plxShow->lang('ARTICLES_RSS_FEEDS') ?>" href="<?php $plxShow->urlRewrite('feed.php?rss') ?>" />
-  <link rel="alternate" type="application/rss+xml" title="<?php $plxShow->lang('COMMENTS_RSS_FEEDS') ?>" href="<?php $plxShow->urlRewrite('feed.php?rss/commentaires') ?>" />
+  <link rel="alternate" type="application/rss+xml" title="Rss" href="<?php $plxShow->urlRewrite('feed.php?rss') ?>" />
   <?php
   // conditional: we embed the javascript only if the CMS detect we are displaying a webcomic
   if( $idCats=="003" AND $idMode=="article" ){?>
