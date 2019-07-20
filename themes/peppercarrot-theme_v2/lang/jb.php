@@ -67,13 +67,13 @@ $LANG = array(
 
 ################################################################################
 # Page: Philosophy
-'-PHILOSOPHY_TOP'    => '
- <h2>Supported by patrons</h2>
+'PHILOSOPHY_TOP'    => "
+<h2>i se sarji lo sidju</h2>
 
-    <p>Pepper&amp;Carrot project is only funded by its patrons, from all around the world.
-    Each patron sends a little money for each new episode published and gets a credit at the end of the new episode.
-    Thanks to this system, Pepper&amp;Carrot can stay independent and never have to resort to advertising or any marketing pollution.</p>
-',
+    <p>i la'e la piper joi la karot cu se sraji lo noi xabju lo vrici gugde vau sidju be fe la'e bu bei fe no drata<br/>
+    i ro sidju cu dunda so'o jdini do'e ro cnino pagbu be lo lisri i je lo romoi papri be le pagbu cu uencu lo liste be le sidju<br/>
+    i la'e di'u rinka lo nu la'e la piper joi la karot cu se jdima li no gi'e na srana lo notci be lo nu vecnu</p>
+",
 '-DONATE_INTRO'    => '
     <p>
     It&#39;s easy to become the patron of Pepper&amp;Carrot for only $1 per new episode <a href="https://www.patreon.com/join/davidrevoy?">on Patreon</a>.
@@ -131,12 +131,6 @@ $LANG = array(
     <img alt="Illustration: comic book industry vs. Patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 'PHILOSOPHY_CONTENT'    =>  "
- <h2>i se sarji lo se selfu</h2>
-
-    <p>i la'e la piper joi la karot cu se sraji lo noi xabju lo vrici gugde vau se selfu be la'e bu e no drata<br/>
-    i ro selfu cu dunda lo so'o jdini do'e ro cnino pagbu be lo lisri i je lo romoi papri be le pagbu cu uencu lo liste be le selfu<br/>
-    i la'e di'u rinka lo nu la'e la piper joi la karot cu se jdima li no gi'e na srana lo notci be lo nu vecnu</p>
-
     <div class='philobutton'>
         <a href='https://www.patreon.com/davidrevoy' title='e'u do'e ro pagbu be lo lisri do ta'i lo ka dunda lo merko rupnu be li pa co'a selfu do'e la\o .gy.Patreon.gy.'>
             e'u do'e ro pagbu be lo lisri do ta'i lo ka dunda lo merko rupnu be li pa co'a selfu do'e la\o .gy.Patreon.gy.
