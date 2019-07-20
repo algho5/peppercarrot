@@ -4,13 +4,13 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'fanva fa <a href="https://jbotcan.org">la gleki arxokuna</a>',
-'LANGUAGE_NAME' 			=> 'Lojban',
+'LANGUAGE_NAME' 			=> '.lojban.',
 'LANGUAGE_ISO_CODE_2_LETTER'=> 'jb',
 # http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
-'PEPPERCARROT_VEGETABLE'    =>  'la piper jo\'u la karot', // litteral translation of spices + vegetable
+'PEPPERCARROT_VEGETABLE'    =>  "la .piper. joi la .karot.", // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  "lo noi se ke catni zanru vau stuzi la\'e lu la piper jo\'u la karot li\'u to i la\'e bu se jdima be no da gunma lo lisri be la piper e la karot i je la piper cu citno te makfa i je la karot mlatu gi'e se raltu la piper i la piper e la karot cu xabju lo se cfika munje be lo mixre e lo danlu vu'o poi makfu",
 'SUBTITLE'                  =>  'se jdima be no da gunma lo pixra gi\'e se finti la\'o gy.David Revoy.gy.',
 
@@ -20,7 +20,7 @@ $LANG = array(
 'WEBCOMICS'     =>  'pixra lisri',
 'BLOG'          =>  'karni',
 'PHILOSOPHY'    =>  'tadji',
-'CONTRIBUTE'    =>  'e\'a do finti',
+'CONTRIBUTE'    =>  "e'a do finti",
 'SOURCES'       =>  'ka ve zbasu',
 'AUTHOR'        =>  'finti',
 'FOLLOW'        =>  'zgana lo nuzba',
@@ -138,7 +138,7 @@ i sa'u do jmina lo notci be ro da poi finti gi'a fanva gi'a cikre vau lo se piln
 'CONTRIBUTE_DONATION'		=> "
     <h2>.i nu selfu .i nu dunda</h2>
 
-    <p>I detail in the <a href='?static2/philosophy' title='open the Sources page'>Philosophy page</a> almost everything concerning funding.<br/>
+    <p>mi ciska fi le uencu be <a href='?static2/philosophy' title='open the Sources page'>le tadji</a> fe ji'i ro le tcila be le nu pleji fo le te jerna<br/>
     .i sei frili lo ka co'a selfu la'e la pipep jo'u la karot cu se tadji lo ka dunda tu'a lo pa rupnusudu <a href='https://www.patreon.com/davidrevoy'>do'e la'o gy.Patreon.gy.</a> ba ro nu co'i finti lo cnino pagbu be lo lisri be py. jo'u cy.<br/>
     Patreon accept credit cards from all around the world, and you can even pay with a Paypal account on Patreon.<br/>
             I also accept direct donations via PayPal or Flattr:</p>
@@ -153,11 +153,11 @@ i sa'u do jmina lo notci be ro da poi finti gi'a fanva gi'a cikre vau lo se piln
 ',
 
 'CONTRIBUTE_BOTTOM'	    => '
-    <h2>i lo te traduki e lo nu cikre</h2>
+    <h2>.i nu fanva .i nu cikre</h2>
 
     <p>Pepper&amp;Carrot website is designed to be multilingual and accept any language (including extinct ones, or fictive ones). The sources of this page are at your disposal for you to translate them. Check the <a href="index.php?fr/article267/translation-tutorial">reference tutorial</a> for more information on how to add your translation.</p>
 
-    <h2>.i karni .i tcana lo nu jikca</h2>
+    <h2>.i karni .i tcana le nu jikca</h2>
 
     <p>Be the publisher of Pepper&amp;Carrot! Write articles, create posts on websites, share and build a community on your favorite social networks. You can download the <a href="?static6/sources" title="Sources page">press kit</a> on the "sources" page.</p>
 
