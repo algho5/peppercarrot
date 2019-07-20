@@ -131,18 +131,18 @@ i sa\'u do jmina lo notci be ro da poi finti gi\'a fanva gi\'a cikre vau lo se p
 ################################################################################
 # Page: Contribute
 'CONTRIBUTE_TITLE'		=> 'sidju',
-'CONTRIBUTE_TOP'		=> '
-    <p>la'e la piper jo'u la karot cu <a href="?static6/sources" title="Sources page">fingubni</a> gi'e se jaspu jaspu lo Thanks to the  and the .i la'o gy.<a href="http://creativecommons.org/licenses/by/4.0/">
+'CONTRIBUTE_TOP'		=> "
+    <p>la'e la piper jo'u la karot cu <a href='?static6/sources' title='Sources page'>fingubni</a> gi'e se jaspu jaspu lo Thanks to the  and the .i la'o gy.<a href='http://creativecommons.org/licenses/by/4.0/'>
     creative commons license</a>.gy. jaspu fo lo nu do ka'e finti so'i srana be la piper e la karot</p>
-',
-'CONTRIBUTE_DONATION'		=> '
+",
+'CONTRIBUTE_DONATION'		=> "
     <h2>i lo nu selfu i lo nu dunda</h2>
 
-    <p>I detail in the <a href="?static2/philosophy" title="open the Sources page">Philosophy page</a> almost everything concerning funding.<br/>
-    .i sei frili lo ka co'a selfu la'e la pipep jo'u la karot cu se tadji lo ka dunda tu'a lo pa rupnusudu <a href="https://www.patreon.com/davidrevoy">do'e la'o gy.Patreon.gy.</a> ba ro nu co'i finti lo cnino pagbu be lo lisri be py. jo'u cy.<br/>
+    <p>I detail in the <a href='?static2/philosophy' title='open the Sources page'>Philosophy page</a> almost everything concerning funding.<br/>
+    .i sei frili lo ka co'a selfu la'e la pipep jo'u la karot cu se tadji lo ka dunda tu'a lo pa rupnusudu <a href='https://www.patreon.com/davidrevoy'>do'e la'o gy.Patreon.gy.</a> ba ro nu co'i finti lo cnino pagbu be lo lisri be py. jo'u cy.<br/>
     Patreon accept credit cards from all around the world, and you can even pay with a Paypal account on Patreon.<br/>
             I also accept direct donations via PayPal or Flattr:</p>
-',
+",
 'CONTRIBUTE_FANART'	    => '
     <h2>i lo se finti be lo nelci</h2>
     <p>i ka\'e finti lo arte pe la\'e la piper jo\'u la karot: Drawing, scenarios, scupltures, 3D models, fan-fiction. Send them to me (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, or poke me on social networks) to appear in the fan-art gallery:</p>
@@ -201,13 +201,13 @@ i sa\'u do jmina lo notci be ro da poi finti gi\'a fanva gi\'a cikre vau lo se p
 ################################################################################
 # Page: Author
 'AUTHOR_TITLE'		=> 'srana la\'o gy.David Revoy.gy.',
-'AUTHOR_BIO'	    => '
-    <p>coi do mi se cmene zoi gy.David Revoy.gy. gi\'e fraso finti be lo pixra gi\'e de\'i li nanca bu 1981 co\'a. .i mi ctuca mi gi'e nelci lo nu zbasu lo pixra vau e lo mlatu e lo skami e lo kulnu be lo pilno be la'o gy.Gnu/Linux.gy. noi lo jicmu be ke'a cu fingubni i ji'a mi nelci lo kibro e lo RPG laldo se kelci e lo laldo pixra je lisri e lo tcaci arte e lo kulnu be lo ponjo be'o e lo fantasi zei cfika li'o<br/>
+'AUTHOR_BIO'	    => "
+    <p>coi do mi se cmene zoi gy.David Revoy.gy. gi'e fraso finti be lo pixra gi'e de'i li nanca bu 1981 co'a. .i mi ctuca mi gi'e nelci lo nu zbasu lo pixra vau e lo mlatu e lo skami e lo kulnu be lo pilno be la'o gy.Gnu/Linux.gy. noi lo jicmu be ke'a cu fingubni i ji'a mi nelci lo kibro e lo RPG laldo se kelci e lo laldo pixra je lisri e lo tcaci arte e lo kulnu be lo ponjo be'o e lo fantasi zei cfika li'o<br/>
     <br/>
     After more than 10 years of Freelance in digital-painting, teaching, concept-art, illustration, art-direction, I decided to start my own project. I finally found a way to mix all my passions together; and the result is Pepper&amp;Carrot.</p>
 
     <p>.i lo jai se gunka be mi</p>
-',
+",
 'AUTHOR_TODO_DREAM'	=> '
     <h3>i mi djica tu\'a la\'e di\'e</h3>
 
