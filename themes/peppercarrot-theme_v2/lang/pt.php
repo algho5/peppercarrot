@@ -69,7 +69,7 @@ $LANG = array(
 # Page : Blog
 # when content are not English ( no need to warn user the content is english only here ) :
 'LIMITATIONS' 	=> ' Conteúdo disponível apenas em inglês',
-
+'TRANSLATION_FALLBACK' => '(Translation is missing. Falling back to English)',
 
 ################################################################################
 # Page : Philosophy

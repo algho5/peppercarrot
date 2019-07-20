@@ -202,7 +202,7 @@ class vignette extends plxPlugin {
                         $episode_vignette = $episodedir.'en_'.$filename.'.'.$vignette_parts['extension'];
                         $translationstatus = 'notranslation';
                         $translationmessage = '(Content not available in the selected language. Falling back to English.)';
-                        $overlay = '(Translation is missing. Falling back to English) ';
+                        $overlay = $plxShow->getLang('TRANSLATION_FALLBACK');
                       }
                     }
 				

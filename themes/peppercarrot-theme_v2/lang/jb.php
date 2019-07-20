@@ -63,6 +63,7 @@ $LANG = array(
 # when content are not English (no need to warn user the content is english only here):
 #'LIMITATIONS' 	=> '<i class="fa fa-info-circle"></i> Content available in english only ',
 'LIMITATIONS' 		=> "<i class='fa fa-info-circle'></i> i di'e nu'o se fanva fi le lojbo",
+'TRANSLATION_FALLBACK' => '(Translation is missing. Falling back to English)',
 
 ################################################################################
 # Page: Philosophy

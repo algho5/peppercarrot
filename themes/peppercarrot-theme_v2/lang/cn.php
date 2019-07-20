@@ -70,6 +70,7 @@ $LANG = array(
 # Page : Blog
 # An empty one in English (no need to warn user the content is english only here) :
 'LIMITATIONS' 	=> '本页内容只提供英语版本',
+'TRANSLATION_FALLBACK' => '(Translation is missing. Falling back to English)',
 
 ################################################################################
 # Page : Philosophy

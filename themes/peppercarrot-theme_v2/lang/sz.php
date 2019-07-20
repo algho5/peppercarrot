@@ -71,6 +71,7 @@ $LANG = array(
 # when content are not English (no need to warn user the content is english only here):
 #'LIMITATIONS' 	=> ' Content available in english only ',
 'LIMITATIONS' 		=> ' Treść dostympnŏ jyno we angelskij gŏdce',
+'TRANSLATION_FALLBACK' => '(Translation is missing. Falling back to English)',
 
 ################################################################################
 # Page: Philosophy

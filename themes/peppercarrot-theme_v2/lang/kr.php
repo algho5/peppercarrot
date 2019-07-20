@@ -70,6 +70,7 @@ $LANG = array(
 # Page : Blog
 # An empty one in English (no need to warn user the content is english only here) :
  'LIMITATIONS' 	=> '이 페이지는 영문으로만 제공됩니다',
+ 'TRANSLATION_FALLBACK' => '(Translation is missing. Falling back to English)',
 
 ################################################################################
 # Page: Philosophy
