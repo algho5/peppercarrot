@@ -232,7 +232,7 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 /* Smartphones: vertical */
 @media (max-width: 500px) {
 .container {padding: 0;}
-.patronage { font-size: 0.8rem; }
+.patronage { font-size: 0.8rem; padding: 3px 2px 3px 2px; }
 .cover { background: rgba(225, 231, 227, 1) url('../img/pepper-carrot-cover5_by-david-revoy.jpg') no-repeat 15% 0; }
 .cover h1 { font-size: 1.4rem; line-height: 1.8rem; margin: 0.3rem 0 1.1rem 0;}
 .covertextoverlay { right: 1.3rem;}
