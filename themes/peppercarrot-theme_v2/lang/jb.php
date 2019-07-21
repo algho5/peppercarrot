@@ -29,7 +29,7 @@ $LANG = array(
 
 ################################################################################
 # Top and bottom translation panel
-'ADD_TRANSLATION'       => 'jmina lo te traduki',
+'ADD_TRANSLATION'       => "fanva lo cnino",
 'CORRECTIONS' 			=> 'stidi lo ni cikre',
 
 ################################################################################
