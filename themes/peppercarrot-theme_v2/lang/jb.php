@@ -13,7 +13,7 @@ $LANG = array(
 'PEPPERCARROT_TITLE'    =>  ".piper.karot.", // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  ".piper.karot.", // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  "le voi se ke catni zanru vau stuzi la\'e lu la piper joi la karot li\'u to i la\'e bu se jdima be no da gunma lo lisri be la piper e la karot i je la piper cu citno te makfa i je la karot mlatu gi'e se raltu la piper i la piper e la karot cu xabju lo se cfika munje be lo mixre e lo danlu vu'o poi makfu",
-'SUBTITLE'                  =>  'se jdima be no da gunma lo pixra gi\'e se finti la\'o gy.David Revoy.gy.',
+'SUBTITLE'                  =>  'ciste fi le pixra lisri gi\'e se finti la\'o gy.David Revoy.gy.',
 
 ################################################################################
 # Top menu website:
@@ -35,7 +35,7 @@ $LANG = array(
 ################################################################################
 # Page: Homepage
 'HOMEPAGE_BIG_TEXT'		    =>  "
-    i me lo lisri poi se jdima be no da<br/>zi'e poi lo cupra cartu be ke\'a cu gubni</br>
+    i me lo lisri poi se jdima no da<br/>zi'e poi lo cupra cartu be ke\'a cu gubni</br>
     zi'e noi se sarji lo se sidju<br/>
     i e'e jau gau cenba fai le gundi be le'e lisri<br/>
 ",
@@ -65,10 +65,10 @@ $LANG = array(
 ################################################################################
 # Page: Philosophy
 'PHILOSOPHY_TOP'    => "
-<h2>i se sarji lo sidju</h2>
+<h2>i se sarji le'e sidju</h2>
 
-    <p>i la'e la piper joi la karot cu se sraji lo noi xabju lo vrici gugde vau sidju be fe la'e bu bei fe no drata<br/>
-    i ro sidju cu dunda so'o jdini do'e ro cnino pagbu be lo lisri i je lo romoi papri be le pagbu cu uencu lo liste be le sidju<br/>
+    <p>i la'e la piper joi la karot cu se sraji le'e noi xabju so'i gugde vau sidju be la'e bu bei fe no drata<br/>
+    i do'e ro cnino pagbu be lo lisri ro sidju cu dunda so'o jdini i je lo romoi papri be le pagbu cu uencu lo liste be le sidju<br/>
     i la'e di'u rinka lo nu la'e la piper joi la karot cu se jdima li no gi'e na srana lo notci be lo nu vecnu</p>
 ",
 '-DONATE_INTRO'    => '
