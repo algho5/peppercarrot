@@ -24,36 +24,36 @@ $LANG = array(
 'CONTRIBUTE'    =>  "e'a do finti",
 'SOURCES'       =>  'ka ve zbasu',
 'AUTHOR'        =>  'finti',
-'EXTRAS'        =>  '.ekstra',
-'FOLLOW'        =>  'zgana lo nuzba',
+'EXTRAS'        =>  'ekstra',
+'FOLLOW'        =>  "zgana le'e nuzba",
 
 ################################################################################
 # Top and bottom translation panel
-'ADD_TRANSLATION'       => "fanva lo cnino",
-'CORRECTIONS' 			=> 'stidi lo ni cikre',
+'ADD_TRANSLATION'       => "fanva lo'e cnino",
+'CORRECTIONS' 			=> "stidi lo'e ni cikre",
 
 ################################################################################
 # Page: Homepage
-'HOMEPAGE_BIG_TEXT'		    =>  '
-    i me lo lisri poi se jdima be no da<br/>zi\'e poi lo cupra cartu be ke\'a cu gubni</br>
-    zi\'e noi se sarji lo se selfu<br/>
-    i e\'e jau gau cenba fai lo gundi be lo lisri<br/>
-',
-'HOMEPAGE_PATREON_INFO'     =>  'e\'u do\'e ro pagbu be lo lisri do ta\'i le ka dunda lo merko rupnu be li pa co\'a selfu do\'e la\o .gy.Patreon.gy.',
+'HOMEPAGE_BIG_TEXT'		    =>  "
+    i me lo lisri poi se jdima be no da<br/>zi'e poi lo cupra cartu be ke\'a cu gubni</br>
+    zi'e noi se sarji lo se sidju<br/>
+    i e'e jau gau cenba fai le gundi be le'e lisri<br/>
+",
+'HOMEPAGE_PATREON_INFO'     =>  "e\'u do\'e ro lo lisri be la piper joi la karot do benji le rupnu be li pa bei le merko fu la'o .gy.Patreon.gy. seta'i lenu do sidju la'e la piper joi la karot",
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'tcila',
 'HOMEPAGE_PATREON_BUTTON'   =>  "sidju la'e la piper joi la karot sepi'o la'o gy.Patreon.gy.",
 'PATRONAGE_BUTTON'          => "sidju la'e la piper joi la karot",
-'HOMEPAGE_LAST_EPISODE'     =>  'ro moi pagbu',
+'HOMEPAGE_LAST_EPISODE'     =>  "ro moi le'i pagbu",
 'HOMEPAGE_NEWS_UPDATE'      =>  'nuzba i cnino',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'drata se benji',
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/davidrevoy',
 
 ################################################################################
 # Page: Webcomics
-'WEBCOMIC_EPISODE'		    =>  'pagbu lo lisri',
+'WEBCOMIC_EPISODE'		    =>  'lisri',
 'WEBCOMIC_MAKINGOF'		    =>  'tadji lo nu zbasu',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p> i lo <a href="https://www.patreon.com/davidrevoy">nobli se selfu pe mi</a> cu dunda lo jdini i mi pilno ri lo ka zbasu <a href="http://www.davidrevoy.com/categorie5/tutorials">lo ctuca cukta</a> e lo vreji be lo tadji be lo nu zbasu i le cukta cu se ke steci dunda fi\'i lo pu\'o pilno</p>
+    <p> i le <a href="https://www.patreon.com/davidrevoy">nobli sidju pe mi</a> cu benji lo jdini i mi pilno ri le ka zbasu <a href="http://www.davidrevoy.com/categorie5/tutorials">lo ctuca cukta</a> e lo vreji be lo tadji be le nu zbasu i le cukta cu se ke steci dunda fi\'i le pu\'o pilno</p>
 ',
 'WEBCOMIC_ARTWORK'		    =>  'muzga lo pixra',
 'WEBCOMIC_SKETCHES'		    =>  'tsautu',
