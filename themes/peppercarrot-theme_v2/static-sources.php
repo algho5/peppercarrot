@@ -14,12 +14,6 @@ $requestedlang = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedlang);
 # debug
 #echo $activefolder;
 
-# Load the langage ISO code array
-$langISOurl = "0_sources/lang-ISO.json";
-$contents = file_get_contents($langISOurl);
-$contents = utf8_encode($contents);
-$language_codes = json_decode($contents); 
-
 # main HTML container:
 echo '<div class="container">';
 echo '<main class="main grid" role="main">';
@@ -702,7 +696,9 @@ if(isset($_GET['page'])) {
       if(is_dir($projectpath)) {
         echo '<td>';
           echo ''.$langfolder.' <br/><strong>';
-          echo $language_codes->$langfolder;
+          # Get local name from langs.json, imported at the end of header.php 
+          $localname = $get->{$langfolder}->{'local_name'};
+          echo $localname;
         echo' </strong></td>';
         $path = '0_sources/';
         $hide = array('.', '..', '0_archives', '0ther', '.thumbs', 'New', 'fonts');
