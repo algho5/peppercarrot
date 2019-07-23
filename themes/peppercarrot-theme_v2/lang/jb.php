@@ -10,9 +10,9 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
-'PEPPERCARROT_TITLE'    =>  "la piper joi la karot", // the title on top of the website
-'PEPPERCARROT_VEGETABLE'    =>  "la piper joi la karot", // litteral translation of spices + vegetable
-'Website_DESCRIPTION'        =>  "lo noi se ke catni zanru vau stuzi la\'e lu la piper joi la karot li\'u to i la\'e bu se jdima be no da gunma lo lisri be la piper e la karot i je la piper cu citno te makfa i je la karot mlatu gi'e se raltu la piper i la piper e la karot cu xabju lo se cfika munje be lo mixre e lo danlu vu'o poi makfu",
+'PEPPERCARROT_TITLE'    =>  ".piper.karot.", // the title on top of the website
+'PEPPERCARROT_VEGETABLE'    =>  ".piper.karot.", // litteral translation of spices + vegetable
+'Website_DESCRIPTION'        =>  "le voi se ke catni zanru vau stuzi la\'e lu la piper joi la karot li\'u to i la\'e bu se jdima be no da gunma lo lisri be la piper e la karot i je la piper cu citno te makfa i je la karot mlatu gi'e se raltu la piper i la piper e la karot cu xabju lo se cfika munje be lo mixre e lo danlu vu'o poi makfu",
 'SUBTITLE'                  =>  'se jdima be no da gunma lo pixra gi\'e se finti la\'o gy.David Revoy.gy.',
 
 ################################################################################
