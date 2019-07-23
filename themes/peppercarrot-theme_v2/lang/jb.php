@@ -52,9 +52,6 @@ $LANG = array(
 # Page: Webcomics
 'WEBCOMIC_EPISODE'		    =>  'lisri',
 'WEBCOMIC_MAKINGOF'		    =>  'tadji lo nu zbasu',
-'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
-    <p> i le <a href="https://www.patreon.com/davidrevoy">nobli sidju pe mi</a> cu benji lo jdini i mi pilno ri le ka zbasu <a href="http://www.davidrevoy.com/categorie5/tutorials">lo ctuca cukta</a> e lo vreji be lo tadji be le nu zbasu i le cukta cu se ke steci dunda fi\'i le pu\'o pilno</p>
-',
 'WEBCOMIC_ARTWORK'		    =>  'muzga lo pixra',
 'WEBCOMIC_SKETCHES'		    =>  'tsautu',
 
