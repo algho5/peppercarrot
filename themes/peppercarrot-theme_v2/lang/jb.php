@@ -35,7 +35,7 @@ $LANG = array(
 ################################################################################
 # Page: Homepage
 'HOMEPAGE_BIG_TEXT'		    =>  "
-    i me lo lisri poi se jdima no da<br/>zi'e poi lo cupra cartu be ke\'a cu gubni</br>
+    i me lo lisri poi se jdima no da<br/>zi'e poi lo cupra cartu be ke'a cu gubni</br>
     zi'e noi se sarji lo se sidju<br/>
     i e'e jau gau cenba fai le gundi be le'e lisri<br/>
 ",
@@ -60,7 +60,7 @@ $LANG = array(
 # when content are not English (no need to warn user the content is english only here):
 #'LIMITATIONS' 	=> '<i class="fa fa-info-circle"></i> Content available in english only ',
 'LIMITATIONS' 		=> "<i class='fa fa-info-circle'></i> i di'e nu'o se fanva fi le lojbo",
-'TRANSLATION_FALLBACK' => "(to i le pinka pagbu le lesri nu'o se fanva i ti voi pinka cu te gerna le glico toi)",
+'TRANSLATION_FALLBACK' => "(to i le pinka pagbu be le lesri nu'o se fanva i ti voi pinka cu te gerna le glico toi)",
 
 ################################################################################
 # Page: Philosophy
