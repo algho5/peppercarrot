@@ -54,6 +54,12 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .cardblock .button a { display:inline-block; font-size:1.1rem; width: 90%; margin-bottom: 10px;}
 .mini { min-height: 100%; border-image: url('../img/cards-pencil.jpg') 10% round; background: none; font-family: "Georgia", Times, serif; }
 
+/* Eshop */
+.eshopbox { max-width: 895px; font-family: 'PepperCarrot', cursive, sans-serif; color: #111111; font-size: 1.8rem; text-align: center; padding: 0 0; background: #F0ECE9 url('../img/bg.jpg'); border: 16px solid transparent; border-image: url('../img/cards.jpg') 10% round; text-shadow: 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF; }
+.eshopbox:hover { filter: brightness(1.1); }
+.eshopdrive { width: 100%; padding: 86px 0; background: url('../img/printing-bg.jpg') repeat center center;}
+.eshopred { width: 100%; padding: 86px 0; background: url('../img/eshop-bg.jpg') repeat center center; }
+
 /* Header */
 .header { z-index: 9; position: fixed; top: 0; width: 100%; background: url('../img/header-bg.jpg') top left; border-bottom: 1px solid rgba(64,56,52,0.4); box-shadow: 0 0.1rem 0.1rem rgba(49,20,0,0.3); }
 .header a { text-decoration: none;}

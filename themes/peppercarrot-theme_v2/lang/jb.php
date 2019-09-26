@@ -295,7 +295,11 @@ i sa'u do jmina lo notci be ro da poi finti gi'a fanva gi'a cikre vau lo se piln
     i sitna la\'o fy.David Revoy.fy. e la\o zoi.www.davidrevoy.com.zoi. i ko mrilu fi la\'o zoi. <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>.zoi. noi judri mi vau fe lo vreji be lo nu do kucli tu\'a lo drata datni.</p>
     <p>i lo dei stuzi cu se cupra la\'o zoi.<a href="http://www.pluxml.org" title="PlXml">PluXml</a>.zoi.</p>
 ',
-
+################################################################################
+# Eshop 
+'ESHOP_TOP'             => 'Worldwide shipping, nice prices and benefits supports directly the author.',
+'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
+'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################
 # various utils:
 'UTIL_NEXT_EPISODE'      =>  'se lidne pagbu',

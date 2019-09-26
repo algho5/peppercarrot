@@ -253,7 +253,11 @@ $LANG = array(
     
     <p>Site web utilisant <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p> 
 ',
-
+################################################################################
+# Eshop 
+'ESHOP_TOP'             => 'Livraison mondiale, prix sympas et bénéfices soutenant directement l\'auteur.',
+'ESHOP_COMIC'           => 'BDs et recueil d’illustrations sont sur:',
+'ESHOP_SHOP'            => 'Posters, mugs, tee-shirts et plus sur:',
 ################################################################################
 # various utils :
 'UTIL_NEXT_EPISODE'     =>  'suivant',

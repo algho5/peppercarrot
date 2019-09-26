@@ -252,7 +252,11 @@ $LANG = array(
     
     <p>이 웹사이트는 <a href="http://www.pluxml.org" title="PluXml">PluXml</a>에서 제공합니다</p> 
 ',
-
+################################################################################
+# Eshop 
+'ESHOP_TOP'             => 'Worldwide shipping, nice prices and benefits supports directly the author.',
+'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
+'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################
 # various utils :
 'UTIL_NEXT_EPISODE'     =>  '다음 화',

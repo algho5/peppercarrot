@@ -249,7 +249,11 @@ $LANG = array(
 
     <p>Website powered by <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
-
+################################################################################
+# Eshop 
+'ESHOP_TOP'             => 'Worldwide shipping, nice prices and benefits supports directly the author.',
+'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
+'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################
 # various utils :
 'UTIL_NEXT_EPISODE'      =>  'tokamen Folg',
