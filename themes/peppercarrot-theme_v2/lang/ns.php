@@ -27,7 +27,7 @@ $LANG = array(
 'SOURCES'       =>  'Originaldateien',
 'AUTHOR'        =>  'Autor',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'E-Shop',
+'ESHOP'         =>  'Geschäft',
 'FOLLOW'        =>  'Folg Pepper&amp;Wuddel op:',
 
 ################################################################################

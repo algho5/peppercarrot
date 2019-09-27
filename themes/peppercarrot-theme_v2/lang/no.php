@@ -27,7 +27,7 @@ $LANG = array(
 'SOURCES'       =>  'Kildefiler',
 'AUTHOR'        =>  'Forfatter',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'E-Shop',
+'ESHOP'         =>  'Butikk',
 'FOLLOW'        =>  'F&oslash;lg Pepper&amp;Gulrot p&aring;:',
 
 ################################################################################

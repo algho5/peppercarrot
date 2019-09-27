@@ -27,7 +27,7 @@ $LANG = array(
 'SOURCES'       =>  'Sumber',
 'AUTHOR'        =>  'Pengarang',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'E-Shop',
+'ESHOP'         =>  'Toko',
 'FOLLOW'        =>  'Ikuti Pepper&amp;Carrot di:',
 
 ################################################################################

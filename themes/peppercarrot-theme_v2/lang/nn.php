@@ -26,8 +26,8 @@ $LANG = array(
 'WIKI'       => 'Wiki',
 'SOURCES'    => 'Kjeldefiler',
 'AUTHOR'     => 'Serieskaparen',
-'EXTRAS'        =>  'Ekstrastoff',
-'ESHOP'         =>  'Nettbutikk',
+'EXTRAS'     => 'Ekstrastoff',
+'ESHOP'      => 'Nettbutikk',
 'FOLLOW'     => 'Følg Pepar &amp; Gulrot på:',
 
 ################################################################################

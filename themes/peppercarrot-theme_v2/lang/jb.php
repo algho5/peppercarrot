@@ -25,6 +25,7 @@ $LANG = array(
 'SOURCES'       =>  'ka ve zbasu',
 'AUTHOR'        =>  'finti',
 'EXTRAS'        =>  'ekstra',
+'ESHOP'         => 'eShop',
 'FOLLOW'        =>  "zgana le'e nuzba",
 
 ################################################################################

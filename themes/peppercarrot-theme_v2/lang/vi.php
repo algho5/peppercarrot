@@ -27,7 +27,7 @@ $LANG = array(
 'SOURCES'       =>  'Nguồn',
 'AUTHOR'        =>  'Tác Giả',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'E-Shop',
+'ESHOP'         =>  'Cửa tiệm',
 'FOLLOW'        =>  'Follow Pepper&amp;Carrot on:',
 
 ################################################################################

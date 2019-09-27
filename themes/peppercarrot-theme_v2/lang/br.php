@@ -27,7 +27,7 @@ $LANG = array(
 'SOURCES'       =>  'Mammenno&ugrave;',
 'AUTHOR'        =>  'Oberour',
 'EXTRAS'        =>  'Extras',
-'ESHOP'        =>  'E-Shop',
+'ESHOP'        =>   'eBoutique',
 'FOLLOW'        =>  'Heulia&ntilde; Pepper&amp;Carrot war :',
 
 ################################################################################

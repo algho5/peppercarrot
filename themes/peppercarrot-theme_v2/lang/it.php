@@ -23,7 +23,7 @@ $LANG = array(
 'SOURCES'       =>  'Sorgenti',
 'AUTHOR'        =>  'Autore',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'E-Shop',
+'ESHOP'         =>  'Negozio',
 'FOLLOW'        =>  'Seguite Pepper&amp;Carrot su:',
 ################################################################################
 # Top and bottom translation panel

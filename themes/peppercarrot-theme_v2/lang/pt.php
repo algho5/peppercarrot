@@ -26,7 +26,7 @@ $LANG = array(
 'SOURCES'       =>  'Sources',
 'AUTHOR'        =>  'Autor',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'E-Shop',
+'ESHOP'         =>  'Fazer compras',
 'FOLLOW'        =>  'Siga Pepper&amp;Carrot no:',
 
 ################################################################################
