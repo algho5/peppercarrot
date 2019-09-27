@@ -13,10 +13,6 @@ echo '<h2>';
 $plxShow->lang('ESHOP');
 echo '</h2>';
 
-echo '<p>';
-$plxShow->lang('ESHOP_TOP');
-echo '</p>';
-
 // Comic Print on demand service: commented for now.
 //echo '      <a href="https://www.drivethrucomics.com/browse/pub/15557/David-Revoy">';
 //echo '        <div class="eshopbox">';

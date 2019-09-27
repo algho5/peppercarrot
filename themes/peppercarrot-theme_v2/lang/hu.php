@@ -270,7 +270,6 @@ $LANG = array(
 ',
 ################################################################################
 # Eshop 
-'ESHOP_TOP'             => 'Worldwide shipping, nice prices and benefits supports directly the author.',
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################

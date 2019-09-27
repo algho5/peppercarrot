@@ -298,7 +298,6 @@ i sa'u do jmina lo notci be ro da poi finti gi'a fanva gi'a cikre vau lo se piln
 ',
 ################################################################################
 # Eshop 
-'ESHOP_TOP'             => 'Worldwide shipping, nice prices and benefits supports directly the author.',
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################
