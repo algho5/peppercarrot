@@ -365,35 +365,91 @@ if(isset($_GET['page'])) {
 } elseif ($activefolder == "download") {
   # ===========  DOWNLOADER ================
     
+    # Create a frame for the header.
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
-    echo '<h2>Downloader</h2>';
-    echo '<img src="plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/sys/low-res/2016-05-27_download_cover_by-David-Revoy.jpg&amp;w=210&amp;h=210&amp;s=1&amp;q=88" alt="" title="" ><br/>';
-    echo '<p>Create and bundle inside a zip all hi-res rendered pages for a target langage, daily updated.<br/> (Note: the zip file can be large and will be kept only 5h on our server before generating a new one)</p>';
+    
+      # Add a Title
+      echo '<h2>Downloader</h2>';
+      
+      # Decorate with an illustration:
+      echo '<img src="plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/sys/low-res/2016-05-27_download_cover_by-David-Revoy.jpg&amp;w=210&amp;h=210&amp;s=1&amp;q=88" alt="" title="" ><br/>';
+    
+      # Add a description.
+      echo '<p>A tool for publishers, book creators and printers.<br/> It will pack for you all pages in a ZIP file. You\'ll get:<br/>Artworks as PNG without quality loss + speechbubble on another PNG for each page.</p>';
+    
+    # Close header.  
     echo '</div>';
+    
+    # Create a frame for the body.
     echo '<section class="col sml-12 med-12 lrg-10 sml-centered">';
-    $validlangdir = 'core/lang/';
-    $hide = array('.', '..', 'index.html');
-    $langfolders = array_diff(scandir($validlangdir), $hide);
-    sort($langfolders);
-    echo 'Select the langage by ISO code:<br/>
-    <form action="';
-    $plxShow->urlRewrite('downloader.php');      
-    echo '
-    ">
-    <input type="hidden" name="page" value="download">
-    <select name="l">';
-    foreach($langfolders as $langfolder) {   
-      echo '<option value="'.$langfolder.'">';
-      echo '['.$langfolder.'] ';
-      echo $language_codes->$langfolder;
-      echo '</option>';
-    }
-    echo'   </select>
-    <br><br>
-    <input type="submit">
-    </form>';
-    echo'   <br/><br/><br/><br/><br/><br/><br/><br/>';
-    # top button
+    
+      # Create a table.
+      $langfolders = array();
+      
+      # Browse langs.json and feed the table with the iso
+      foreach ($get as $iso => $value ) {
+         array_push($langfolders, $iso);
+      }
+      
+      # Sort the table alphabetically. 
+      sort($langfolders);
+      
+      # Debug: Display the table
+      # print_r($langfolders);
+      
+      # Start the HTML formular interface.
+      echo '<form action="';
+      $plxShow->urlRewrite('downloader.php');      
+      echo '">';
+      
+      # 1. Language selector.
+      # ---------------------
+      echo '<label for="page">1. Select a langage: </label>';
+      echo '<select name="l">';
+      
+      # Loop on all lang available.
+      foreach($langfolders as $langfolder) {
+      
+        # Create better names for each ISO.
+        $localname = $get->{$langfolder}->{'local_name'};
+        $name = $get->{$langfolder}->{'name'};
+        
+        # Print the item.
+        echo '<option value="'.$langfolder.'">';
+        echo '['.$langfolder.'] '.$name.' / '.$localname.'';
+        echo '</option>';
+      }
+
+      echo '</select>';
+      
+      # Line break and distance.
+      echo '<br><br>';
+      
+      # 2. Season selector
+      # ------------------
+      echo '<label for="season">2. Select a season: </label>';
+      echo '<select name="s">';
+      
+      # Manually enter the cut here for the seasons.
+      echo '<option value="1">[Season 1] from Episode 01 → Episode 11.</option>';
+      echo '<option value="2">[Season 2]: from Episode 12 → Episode 21.</option>';
+      echo '<option value="3">[Season 3]: from Episode 22 → Episode 29.</option>';
+      echo '<option value="4">[Season 4]: from Episode 30 → (Work in Progress).</option>';
+      echo '</select>';
+      
+      # Line break and distance.
+      echo '<br><br>';
+      
+      # Submit button.
+      echo '<input type="submit" value="Generate the pack">';
+      
+      # End of the formular.
+      echo '</form>';
+      
+      # Push the footer far from the form.
+      echo'<br/><br/><br/><br/><br/><br/><br/><br/>';
+      
+    # Close the body.
     echo '</section>';
     
 } elseif ($activefolder == "3D") {
