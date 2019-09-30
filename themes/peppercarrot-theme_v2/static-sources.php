@@ -381,7 +381,7 @@ if(isset($_GET['page'])) {
     echo '</div>';
     
     # Create a frame for the body.
-    echo '<section class="col sml-12 med-12 lrg-10 sml-centered">';
+    echo '<section class="col sml-12 med-10 lrg-8 sml-centered">';
     
       # Create a table.
       $langfolders = array();
