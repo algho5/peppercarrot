@@ -307,7 +307,8 @@ if(isset($_GET['page'])) {
     echo '</section>';
 
 } elseif ($activefolder == "allthumb") {
-  # ===========  All thumbnail ================
+
+  # =========== ALL THUMBNAIL OVERVIEW ================
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>All thumbnail overview</h2>';
@@ -315,6 +316,7 @@ if(isset($_GET['page'])) {
     echo '</div>';
     echo '<section class="col sml-12 med-12 lrg-10 sml-centered" style="padding:0 0;">';
 
+    $overviewpagecount = 0;
     $path = '0_sources/';
     $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git', '.ci');
     $mainfolders = array_diff(scandir($path), $hide);
@@ -349,8 +351,12 @@ if(isset($_GET['page'])) {
                 # in case of last page, close the tag
                 echo '</a></figure>';
               } else {
-                # it's a real page, display it
+                # it's a real page:
+                $overviewpagecount = $overviewpagecount + 1;
+                # display a thumbnail
                 echo '<img class="srcoverview" src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=210&amp;h=270&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ></a>';
+                # Add a page count caption
+                echo '<figcaption class="text-center" style="color:#ABABAB">'.$overviewpagecount.'</figcaption>';
                 echo '</figure>';
               }
             }
