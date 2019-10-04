@@ -250,8 +250,8 @@ $LANG = array(
 ',
 ################################################################################
 # Eshop 
-'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
-'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
+'ESHOP_COMIC'        =>   'Sách bức tranh và sách nghệ thuật tại:',
+'ESHOP_SHOP'         =>   'Áp phích, ly cà phê, áo thun, và đồ khác tại:',
 ################################################################################
 # various utils:
 'UTIL_NEXT_EPISODE'      =>  'Tập kế',
