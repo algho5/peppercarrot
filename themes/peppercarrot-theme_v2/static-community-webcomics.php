@@ -132,11 +132,12 @@ if(isset($_GET['page'])) {
                   echo '<input type="checkbox" id="langmenu">';
                     echo '<ul class="langmenu expanded">';
                       foreach ($detectedlangscleaned as $langavailable) {
-                        echo '<li><a href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'">';
-                        echo $langprettyname->$langavailable;
+                        echo '<li class="button"><a class="lang" href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'">';
+                          $langprettyname = $get->{$langavailable}->{'name'};
+                          echo $langprettyname;
                         echo '</a></li>';
                       }
-                      echo '<li><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
+                      echo '<li class="button"><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
                 echo '</ul>';
             echo '</nav>';
           echo '</div>';
