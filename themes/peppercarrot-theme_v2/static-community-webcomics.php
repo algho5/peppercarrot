@@ -63,12 +63,6 @@ if(isset($_GET['page'])) {
       
     }
     
-    $langISOurl = "0_sources/lang-ISO.json";
-    $contents = file_get_contents($langISOurl);
-    $contents = utf8_encode($contents);
-    $langprettyname = json_decode($contents); 
-
-
 # Image viewer mode : display the artwork
 # =======================================
 # (a "page" variable passed)
@@ -83,19 +77,23 @@ if(isset($_GET['page'])) {
           echo '<div class="col sml-12 sml-text-right">';
             echo '<nav class="nav" role="navigation">';
               echo '<div class="responsive-langmenu">';
-                echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> Translations<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
+              echo '<div class="button top">';
+                echo '<a href="static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance/" class="lang option">← Back to index</a>';
+              echo '</div>';
+                echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/>'.$langlabel.'<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
                   echo '<input type="checkbox" id="langmenu">';
                     echo '<ul class="langmenu expanded">';
                       foreach ($detectedlangscleaned as $langavailable) {
                         $langimagewithoutlang = substr($imagename, 2); // rm old lang
                         $langimagename = $langavailable.''.$langimagewithoutlang;
                         if (file_exists($pathartworks.'/'.$langimagename.'')) {
-                          echo '<li><a href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'&display='.$langimagename.'">';
-                          echo $langprettyname->$langavailable;
+                          echo '<li class="button"><a class="lang" href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'&display='.$langimagename.'">';
+                          $langprettyname = $get->{$langavailable}->{'name'};
+                          echo $langprettyname;
                           echo '</a></li>';
                         }
                       }
-                      echo '<li><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
+                      echo '<li class="button" ><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
                 echo '</ul>';
             echo '</nav>';
           echo '</div>';
@@ -110,6 +108,11 @@ if(isset($_GET['page'])) {
 
         $imagename = $activeimage;
         echo '<a href="'.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+        
+        echo '<div class="button top">';
+          echo '<a href="static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance/" class="lang option">← Back to index</a>';
+        echo '</div>';
+              
         echo '</section>';
         echo '<br/><br/><br/><br/><br/></div>';
     
