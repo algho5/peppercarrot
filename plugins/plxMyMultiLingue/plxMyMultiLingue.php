@@ -896,6 +896,9 @@ public function MyMultiLingueComicDisplay($params) {
       if ($definition == "hd" AND strpos($comicpage_link, 'gif') !== false) {
         echo '<div class="panel" align="center">';
         echo '<img class="comicpage" style="max-width:2276px;" width="92%" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
+      } else if ($definition != "hd" AND strpos($comicpage_link, 'gif') !== false) {
+        echo '<div class="panel" align="center">';
+        echo '<img class="comicpage" style="max-width:1176px;" width="92%" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
       } else {
         echo '<div class="panel" align="center">';
         echo '<img class="comicpage" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
