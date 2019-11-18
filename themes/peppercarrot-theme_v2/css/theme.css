@@ -5,7 +5,7 @@
 
 /* Typo */
 @font-face { font-family: 'PepperCarrot'; src: url('../font/PepperCarrot.woff') format('woff'); font-weight: normal; font-style: normal; }
-body { background-color: #FFFFFF; color: #412813; font-family: ubuntu, arial, sans-serif; }
+body { color: #412813; font-family: ubuntu, arial, sans-serif; }
 a { background: transparent; color: #4f901b; text-decoration: none; }
 a:active, a:hover { color: #444; outline: 0; text-decoration: none; }
 pre,code { color:#111; background-color: #FFF9F2; padding: 8px; line-height: 2rem!important; font: 13px Consolas, "Liberation Mono", Menlo, Courier, monospace; overflow:auto; }
@@ -52,7 +52,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .cardblock img {width: 95%; margin: 0 0 10px 0; }
 .cardlink {text-align: center; width: 100%; margin-bottom: 0.5rem; color: #ababab; font-size: 0.90rem; }
 .cardblock .button a { display:inline-block; font-size:1.1rem; width: 90%; margin-bottom: 10px;}
-.mini { min-height: 100%; border-image: url('../img/cards-pencil.jpg') 10% round; background: none; font-family: "Georgia", Times, serif; }
+.mini { min-height: 100%; border-image: url('../img/cards-pencil.jpg') 10% round; font-family: "Georgia", Times, serif; }
 
 /* Eshop */
 .eshopbox { max-width: 895px; font-family: 'PepperCarrot', cursive, sans-serif; color: #111111; font-size: 1.8rem; text-align: center; padding: 0 0; background: #F0ECE9 url('../img/bg.jpg'); border: 16px solid transparent; border-image: url('../img/cards.jpg') 10% round; text-shadow: 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF, 0 0 25px #FFF; }
@@ -94,7 +94,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .langmenu.breadcrumb li + li:before, .langmenu.expanded.breadcrumb > li + li:before, .langmenu.expanded.breadcrumb > li + li a:before { margin-right: .7rem;}
 .langmenu.expanded.breadcrumb > li + li:before { content: none;}
 .langmenu.expanded li.active a, .langmenu.expanded li.active:hover { background-color: transparent; color: #412813; text-shadow: 1px 0px 30px green, 1px 0px 20px yellow, 1px 0px 10px yellow, 1px 0px 5px white, 1px 0px 5px white; transition: all 0.2s ease-in; }
-.responsive-langmenu label { background-color: #FFF;	color: #1a1a1a;	text-align: right; }
+.responsive-langmenu label { color: #1a1a1a; text-align: right; }
 .translabutton { cursor: pointer; display:inline-block; background-color: #FFF; color: #1a1a1a; border: 1px solid #cecece; margin: 0 -0.7rem 0.3rem 0; padding: 8px 12px; border-radius: 5px; box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.1); text-decoration: none; }
 .responsive-langmenu label, .responsive-langmenu input[type=checkbox] {	display: none;}
 .responsive-langmenu label { padding: .425rem .7rem;}
@@ -129,7 +129,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 
 /* prev/next button webcomic */
 .readernav { margin 1.2rem 0 1.2rem 0; padding: 0.6rem 0 0 0; clear:both; max-width: 915px }
-.readernavbutton { display:block; width: 100%; background-color: #FFF; margin-bottom: 0.2rem; padding: 6px 8px 6px 8px; font-size: 1.5rem; font-family: 'PepperCarrot'; text-decoration: none;}
+.readernavbutton { display:block; width: 100%; margin-bottom: 0.2rem; padding: 6px 8px 6px 8px; font-size: 1.5rem; font-family: 'PepperCarrot'; text-decoration: none;}
 .readernav a { color: #b6b1ae;}
 .readernav a:hover { color: #948780;}
 .readernavbutton:hover { text-decoration: none;}
