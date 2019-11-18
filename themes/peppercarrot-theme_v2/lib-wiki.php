@@ -81,6 +81,7 @@ echo '	  <section class="page col sml-12 med-12 lrg-9">'."\n";
 
 // Display edit buttons
 function _Displayeditbuttons() {
+  global $repositoryURL, $page;
   echo '     <div class="edit" >'."\n";
   echo '       <div class="button moka" >'."\n";
   echo '        <a href="'.$repositoryURL.'/commits/master/'.$page.'.md" target="_blank" title="External history link to see all changes made to this page" >'."\n";
