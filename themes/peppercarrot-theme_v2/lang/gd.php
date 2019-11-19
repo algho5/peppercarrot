@@ -24,8 +24,8 @@ $LANG = array(
 'CONTRIBUTE' => 'Cuidich',
 'COMMUNITY'  => 'Coimhearsnachd',
 'WIKI'       => 'Uicidh',
-'SOURCES'    => 'Bun-tùsan',
-'AUTHOR'     => 'An t-ùghdar',
+'SOURCES'    => 'Bun-tùs',
+'AUTHOR'     => 'Ùghdar',
 'EXTRAS'     => 'Barrachd',
 'ESHOP'      => 'Bùth',
 'FOLLOW'     => 'Lean ri Pepper&amp;Carrot air:',
@@ -254,8 +254,8 @@ $LANG = array(
 'ESHOP_SHOP'            => 'Clò-bhualaidhean, mugaichean, lèintean-t ’s a bharrachd air:',
 ################################################################################
 # various utils:
-'UTIL_NEXT_EPISODE'     => 'an ath-fhear',
-'UTIL_PREVIOUS_EPISODE' => 'am fear roimhe',
+'UTIL_NEXT_EPISODE'     => 'air adhart',
+'UTIL_PREVIOUS_EPISODE' => 'air ais',
 'UTIL_EPISODE'          => 'eapasod',
 'UTIL_BACK_TO_GALLERY'  => 'air ais dhan ghailearaidh',
 'UTIL_MORE'             => 'barrachd',
