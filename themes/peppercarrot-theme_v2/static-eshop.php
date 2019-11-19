@@ -44,6 +44,13 @@ echo '      </a>';
 
 echo '      </br>';
 echo '      </br>';
+echo '<a href="';
+$plxShow->urlRewrite('?static6/sources&page=eshop'); 
+echo '">';
+$plxShow->lang('SOURCES');
+echo ' (';
+$plxShow->lang('ESHOP');
+echo ') </a>';
 echo '      </br>';
 echo '      </br>';
 echo '      </br>';

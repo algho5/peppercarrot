@@ -551,6 +551,54 @@ if(isset($_GET['page'])) {
     echo '</section>';
     echo '</div>';
 
+  } elseif ($activefolder == "eshop") {
+  # =======  E-SHOP ===========
+    
+    echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
+    echo '<h2>E-Shop Sources</h2>';
+    echo '<p>All the sources of the eshop for the <a href="https://www.redbubble.com/people/davidrevoy/portfolio?asc=u">official Pepper&amp;Carrot E-Shop on Redbubble</a> are available here under <a href="https://creativecommons.org/licenses/by/4.0/">CC-By license</a>.</p>';
+    echo '<br/><br/>';
+    echo '</div>';
+    echo '<section class="col sml-12 med-12 lrg-11 sml-centered sml-text-center" style="padding:0 0;">';
+    #variables:
+    $patheshop = '0_sources/0ther/eshop';
+    $hide = array('.', '..');
+    $mainfolders = array_diff(scandir($patheshop), $hide);
+    rsort($mainfolders);
+    $search = glob($patheshop."/low-res/*.jpg");
+    # newer on top
+    rsort($search);
+    # we loop on found episodes
+    if (!empty($search)){ 
+    foreach ($search as $filepath) {
+    # filename extraction
+    $filename = basename($filepath);
+    $fullpath = dirname($filepath);
+    $filenamezip = str_replace('.jpg', '.zip', $filename);
+    $zippath = $fullpath.'/../zip/'.$filenamezip.'';
+    $fileweight = (filesize($zippath) / 1024) / 1024;
+    echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
+    $filenamepng = str_replace('jpg', 'png', $filename);
+    echo '<a href="0_sources/0ther/eshop/hi-res/'.$filenamepng.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;s=1&amp;zc=2&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
+    $filenameclean = substr($filenameclean, 11);
+    $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
+    $filenameclean = str_replace('_', ' ', $filenameclean);
+    $filenameclean = str_replace('-', ' ', $filenameclean);
+    $filenamezip = str_replace('jpg', 'zip', $filename);
+    echo '<figcaption class="sourcescaptions text-center" >
+    <b>'.$filenameclean.'</b><br/>
+    [ 
+    <a href="0_sources/0ther/eshop/low-res/'.$filename.'" >low</a> |
+    <a href="0_sources/0ther/eshop/hi-res/'.$filenamepng.'" >hi</a> |
+    <a href="0_sources/0ther/eshop/zip/'.$filenamezip.'" >src <em class="filesize">('.round($fileweight, 2).'MB)</em></a> ]
+    </figcaption>';
+    echo '</figure>';
+    }
+    }
+    echo '</section>';
+    echo '</div>';
+
 
   } elseif ($activefolder == "wallpapers") {
   # =======  WALLPAPERS ===========
@@ -1113,6 +1161,18 @@ if(isset($_GET['page'])) {
           echo '<figcaption class="sourcescaptions text-center" >';
           echo '<b>Misc</b><br/>';
           echo 'speedpaintings, lineart and misc';
+          echo '</a></figcaption>';
+          echo '</figure>';
+          
+          # ESHOP
+          echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
+          echo '<a href="';
+          $plxShow->urlRewrite('?static6/sources&page=eshop');
+          echo '" >';
+          echo '<img src="data/images/static/sourcesthumb-eshop.jpg" alt="" title="" ><br/>';
+          echo '<figcaption class="sourcescaptions text-center" >';
+          echo '<b>Eshop</b><br/>';
+          echo 'Sources of the official eshop';
           echo '</a></figcaption>';
           echo '</figure>';
           
