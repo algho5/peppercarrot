@@ -71,7 +71,7 @@ $LANG = array(
 # when contents are not English (no need to warn user the content is english only here):
 #'LIMITATIONS' 	=> ' Chan eil an t-susbaint seo ri fhaighinn ach sa Bheurla ',
 'LIMITATIONS' => '',
-'TRANSLATION_FALLBACK' => '(Gun eadar-theangachadh. ’Ga shealltainn sa Bheurla ’na àite)',
+'TRANSLATION_FALLBACK' => '(Tha seo sa Bheurla fhathast)',
 
 ################################################################################
 # Page: Philosophy
