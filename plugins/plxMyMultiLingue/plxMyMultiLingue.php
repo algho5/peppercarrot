@@ -97,6 +97,7 @@ class plxMyMultiLingue extends plxPlugin {
     $this->addHook('MyMultiLingueComicDisplay', 'MyMultiLingueComicDisplay');
     $this->addHook('MyMultiLingueComicHeader', 'MyMultiLingueComicHeader');
     $this->addHook('MyMultiLingueSourceLinkDisplay', 'MyMultiLingueSourceLinkDisplay');
+    $this->addHook('MyMultiLingueBackgroundColor', 'MyMultiLingueBackgroundColor');
     $this->addHook('MyMultiLingueFramagitLinkDisplay', 'MyMultiLingueFramagitLinkDisplay');
     $this->addHook('MyMultiLingueCommentLinkDisplay', 'MyMultiLingueCommentLinkDisplay');
         
@@ -991,6 +992,29 @@ public function MyMultiLingueSourceLinkDisplay() {
   # pattern : index.php?fr/static6/sources&page=ep02_Rainbow-potions
   $sourcelink = basename($episode_source_directory);
   $plxShow->urlRewrite('?static6/sources&page='.$sourcelink);
+}
+
+/**********************************************/
+/* Return the background-color of an episode 	*/
+/**********************************************/
+/**
+ * Method to return an hex color for the background of an episode, from a json file
+ * @author: David Revoy
+ **/ 
+public function MyMultiLingueBackgroundColor() {
+  $plxMotor = plxMotor::getInstance();
+  $plxShow = plxShow::getInstance();
+  $aLabels = unserialize($this->getParam('labels'));
+  $vignette = $plxMotor->plxRecord_arts->f('thumbnail');
+  $vignette_parts = pathinfo($vignette);
+  $path = $vignette_parts['dirname'];
+  $parts = explode('/', $path);
+  array_pop($parts);
+  $episode_source_directory = implode('/', $parts);
+  $jsonpath = $episode_source_directory."/info.json";
+  $contents = file_get_contents($jsonpath);
+  $get = json_decode($contents);
+  echo 'style="background:'.$get->{'background-color'}.'"';
 }
 
 /********************************/

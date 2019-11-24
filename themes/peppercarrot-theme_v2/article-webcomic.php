@@ -28,10 +28,9 @@
   }
 ?>
 
-<div class="containercomic">
+<div class="containercomic" <?php eval($plxShow->callHook('MyMultiLingueBackgroundColor')) ?>>
   <main class="main grid" role="main">
     <section>
-    
       <article class="article" role="article" id="post-<?php echo $plxShow->artId(); ?>">
       
         <div class="col sml-12 sml-text-right">
