@@ -60,7 +60,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'              => 'Eapasodan an deilbh-èibhinn',
 'WEBCOMIC_MAKINGOF'             => 'Mar a chaidh a dhèanamh',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' => '
-<p>’S e stuth a bharrachd sònraichte a th’ ann am mar a chaidh a dhèanamh agus <a href="http://www.davidrevoy.com/categorie5/tutorials">oideachadh obrach-ealain</a> a chaidh a sponsaireadh leis na <a href="https://www.patreon.com/join/davidrevoy?">“gaisgich”; Patreon</a> agam</p>
+<p>’S e stuth a bharrachd sònraichte a th’ ann am mar a chaidh a dhèanamh agus <a href="http://www.davidrevoy.com/categorie5/tutorials">oideachadh obrach-ealain</a> a chaidh a sponsaireadh leis na <a href="https://www.patreon.com/join/davidrevoy?">“gaisgich” Patreon</a> agam</p>
 ',
 'WEBCOMIC_ARTWORK'              => 'Obair-ealain',
 'WEBCOMIC_SKETCHES'             => 'Sgeidsichean',
@@ -71,7 +71,7 @@ $LANG = array(
 # when contents are not English (no need to warn user the content is english only here):
 #'LIMITATIONS' 	=> ' Chan eil an t-susbaint seo ri fhaighinn ach sa Bheurla ',
 'LIMITATIONS' => '',
-'TRANSLATION_FALLBACK' => '(Gun eadar-theangachadh. ’Ga shealltainn sa Bheurla ’na àite)',
+'TRANSLATION_FALLBACK' => '(Tha seo sa Bheurla fhathast)',
 
 ################################################################################
 # Page: Philosophy
@@ -102,7 +102,7 @@ $LANG = array(
     <h2>Le bun-tùs fosgailte agus ceadachail</h2>
 
     <p>Thug mi romham cead a thoirt do chàch ach an co-roinn iad an obair a chruthaich mi, gun cleachd iad ’s gun tog iad i agus fiù ’s gun coisinn iad airgead leatha.
-    Chaidh gach duilleag, obair-ealain agus susbaint a dhèanamh le bathar-bog saor ’s le bun-tùs fosgailte air GNU/Linux agus gheibh thu a h-uile bun-tùs dheth air an làrach-lìn seo sa chlàr-taice “Bun-tùsan”.
+    Chaidh gach duilleag, obair-ealain agus susbaint a dhèanamh le bathar-bog saor ’s le bun-tùs fosgailte air GNU/Linux agus gheibh thu a h-uile bun-tùs dheth air an làrach-lìn seo sa chlàr-taice “Bun-tùs”.
     Bhrosnaichinn cleachdadh coimearsalta, eadar-theangachadh, obair-ealain luchd-leantainn, clò-bhualaidhean, filmichean, geamannan video, co-roinneadh agus ath-phostadh.
     Cha leig thu leas ach urram iomchaidh a thoirt dha na h-ùghdaran (seo an luchd-ealain, an luchd-ceartachaidh ’s na h-eadar-theangadairean a bha an sas san obair-ealain a tha thu airson cleachdadh), ceangal a sholar dhan cheadachas agus innse an deach atharrachadh a dhèanamh air. Faodaidh tu sin a dhèanamh air dòigh iomchaidh sam bith ach chan ann air dòigh a chuireadh mun aire gun do chùl-sgrìobh na h-ùghdaran thu fhèin no do chleachdadh.</p>
 
@@ -169,7 +169,7 @@ $LANG = array(
 'CONTRIBUTE_PRESS'       => '
     <h2>Pàipearan-naidheachd</h2>
 
-    <p>Rach ’nad fhoillsichear Pepper&amp;Carrot! Sgrìobh altan, cruthaich postaichean air làraichean-lìn, co-roinn is tog coimhearsnachd air na lìonraidhean sòisealta as fheàrr leat. ’S urrainn dhut <a href="?static6/sources" title="Sources page">trusgan no naidheachdan</a> a luchdadh a-nuas air duilleag nam “Bun-tùsan”.</p>
+    <p>Rach ’nad fhoillsichear Pepper&amp;Carrot! Sgrìobh altan, cruthaich postaichean air làraichean-lìn, co-roinn is tog coimhearsnachd air na lìonraidhean sòisealta as fheàrr leat. ’S urrainn dhut <a href="?static6/sources" title="Sources page">trusgan no naidheachdan</a> a luchdadh a-nuas air duilleag nam “Bun-tùs”.</p>
 ',
 
 'CONTRIBUTE_OTHER'       => '
