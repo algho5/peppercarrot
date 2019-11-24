@@ -1012,9 +1012,13 @@ public function MyMultiLingueBackgroundColor() {
   array_pop($parts);
   $episode_source_directory = implode('/', $parts);
   $jsonpath = $episode_source_directory."/info.json";
-  $contents = file_get_contents($jsonpath);
-  $get = json_decode($contents);
-  echo 'style="background:'.$get->{'background-color'}.'"';
+  if (file_exists($jsonpath)) {
+    $contents = file_get_contents($jsonpath);
+    $get = json_decode($contents);
+    echo 'style="background:'.$get->{'background-color'}.'"';
+  } else {
+    echo 'style="background: #FFFFFF"';
+  }
 }
 
 /********************************/
