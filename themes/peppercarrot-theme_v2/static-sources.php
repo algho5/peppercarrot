@@ -7,12 +7,18 @@ $lang = $plxShow->getLang('LANGUAGE_ISO_CODE_2_LETTER');
 $activefolder = htmlspecialchars($_GET["page"]);
 // get new variable 'lang'
 $requestedlang = htmlspecialchars($_GET["l"]);
+// get new variable 'episode'
+$requestedepisode = htmlspecialchars($_GET["e"]);
 
 // Security, remove all special characters except A-Z, a-z, 0-9, dots, hyphens, underscore before interpreting something. 
 $activefolder = preg_replace('/[^A-Za-z0-9\._-]/', '', $activefolder);
 $requestedlang = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedlang);
+$requestedepisode = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedepisode);
+
 # debug
 #echo $activefolder;
+
+if(isset($_GET['page'])) {
 
 # main HTML container:
 echo '<div class="container">';
@@ -20,7 +26,6 @@ echo '<main class="main grid" role="main">';
 echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
 echo '<div class="grid">';
 
-if(isset($_GET['page'])) {
 # List Folder Content
 
   $path = '0_sources/';
@@ -31,11 +36,20 @@ if(isset($_GET['page'])) {
     echo '<article class="source col sml-12 med-12 lrg-10 sml-centered" role="article" style="font-size: 93%">';
     echo '<div class="grid">';
     # beautify name
+    $rawfoldername = $foldername;
     $foldername = str_replace('_', ' : ', $foldername);
     $foldername = str_replace('-', ' ', $foldername);
-    echo '<div class="col sml-12 med-12 lrg-12">';
-    echo '<h3>'.$foldername.'</h3>';
-    echo '</div>';
+    if (strpos($rawfoldername, 'new-') !== false) {
+      echo '<div class="col sml-12 med-12 lrg-12">';
+      echo '<h3>BETA VERSION:  ('.$foldername.')</h3>';
+      echo '<p><b>Spoiler alert! Please, do not reshare this page</b>: This episode is still in development and is not meant to be ready for public. It\'s published here only to help proofreader and contributors of Pepper&Carrot ( <a href="static6/sources&page=XYZ">XYZ is here</a> ). If you want to help and give a feedback, <a href="https://framagit.org/peppercarrot/webcomics/issues?scope=all&utf8=%E2%9C%93&state=all&label_name[]=future%20episode">join our latest thread on Framagit here.</a></p>';
+      echo '</div>';
+    } else {
+      echo '<div class="col sml-12 med-12 lrg-12">';
+      echo '<h3>'.$foldername.'</h3>';
+      echo '</div>';
+    }
+    
     
     echo '<div class="col sml-12 med-4 lrg-4">';
     
@@ -256,7 +270,12 @@ if(isset($_GET['page'])) {
     
   } elseif ($activefolder == "episodes") {
   # ===========  Episodes ================
-  
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
+    
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>'.$plxShow->getLang('WEBCOMIC_EPISODE').'</h2>';
     echo '</div>';
@@ -309,6 +328,11 @@ if(isset($_GET['page'])) {
 } elseif ($activefolder == "allthumb") {
 
   # =========== ALL THUMBNAIL OVERVIEW ================
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>All thumbnail overview</h2>';
@@ -367,9 +391,63 @@ if(isset($_GET['page'])) {
     }	
     # top button
     echo '</section>';
+    
+} elseif ($activefolder == "XYZ") {
+
+  # =========== XYZ Preview page ================
+    # main HTML container:
+    echo '<div class="containercomic">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
+    
+    echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
+    echo '<p><b>Spoiler alert! Please, do not reshare this page</b>: This episode is still in development and is not meant to be ready for public. It\s published here only to help proofreader and contributors of Pepper&Carrot. If you want to help and give a feedback, <a href="https://framagit.org/peppercarrot/webcomics/issues?scope=all&utf8=%E2%9C%93&state=all&label_name[]=future%20episode">join our latest thread on Framagit here.</a></p>';
+    echo '</div>';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered" style="padding:0 0;">';
+
+    $path = '0_sources/';
+    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git', '.ci');
+    $mainfolders = array_diff(scandir($path), $hide);
+    sort($mainfolders);
+    # Loop on the folders
+    foreach($mainfolders as $foldername) {
+      $projectpath = $path.$foldername;
+      if(is_dir($projectpath)) {
+        if (strpos($foldername, 'new-') !== false) {
+        
+          echo '<section class="col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
+          # we scan all the valid pattern pages inside episode folder
+          $search = glob($projectpath."/low-res/en_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
+          if (!empty($search)) { 
+            foreach ($search as $key => $filepath) {
+              # extracting from the path the filename and path itself
+              $filename = basename($filepath);
+              $fullpath = dirname($filepath);
+              if (file_exists($filepath)) {
+                # Our page is existing, it exclude the renamed P00.jpg, start the tag
+                  # display page
+                  echo '<img src="'.$filepath.'" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ></a>';
+                  # Add a page count caption
+                  echo '<figcaption class="text-center" style="color:#ABABAB">'.$overviewpagecount.'</figcaption>';
+                  echo '</figure>';
+              }
+            }
+          }
+        }
+      } 
+      echo '</section>';
+    }	
+    # top button
+    echo '</section>';
 
 } elseif ($activefolder == "download") {
   # ===========  DOWNLOADER ================
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
     
     # Create a frame for the header.
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
@@ -460,6 +538,11 @@ if(isset($_GET['page'])) {
     
 } elseif ($activefolder == "3D") {
   # ===========  3D ================
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>3D Blender files</h2>';
@@ -506,6 +589,11 @@ if(isset($_GET['page'])) {
 
   } elseif ($activefolder == "artworks") {
   # =======  ARTWORKS ===========
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Artworks</h2>';
@@ -553,6 +641,11 @@ if(isset($_GET['page'])) {
 
   } elseif ($activefolder == "eshop") {
   # =======  E-SHOP ===========
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>E-Shop Sources</h2>';
@@ -602,6 +695,11 @@ if(isset($_GET['page'])) {
 
   } elseif ($activefolder == "wallpapers") {
   # =======  WALLPAPERS ===========
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Wallpapers</h2>';
@@ -651,6 +749,11 @@ if(isset($_GET['page'])) {
 
 } elseif ($activefolder == "press") {
   # =======  PRESS ===========
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Press</h2>';
@@ -698,6 +801,11 @@ if(isset($_GET['page'])) {
     
 } elseif ($activefolder == "other") {
   # =======  MISC ===========
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Misc / Other</h2>';
@@ -746,6 +854,11 @@ if(isset($_GET['page'])) {
     
   } elseif ($activefolder == "translation") {
   # =======  Translation Status ===========
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
     
     #closing page formating
     echo '</div>';
@@ -914,6 +1027,11 @@ if(isset($_GET['page'])) {
 
   } elseif ($activefolder == "original") {
   # ===========  Original ================
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Original artworks scanned</h2>';
@@ -969,6 +1087,11 @@ if(isset($_GET['page'])) {
     
   } elseif ($activefolder == "inks") {
   # ===========  Inks ================
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Inks</h2>';
@@ -1024,14 +1147,27 @@ if(isset($_GET['page'])) {
 
   } else {
   # =========== Error Page ================
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
+    
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Error: Page not found</h2>';
     echo '</div>';
   }
 
 }else{
-  
+
 # Nothing found: we display main Intro
+
+  # main HTML container:
+  echo '<div class="container">';
+  echo '<main class="main grid" role="main">';
+  echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+  echo '<div class="grid">';
+  
   echo '<!-- Intro -->';
     include(dirname(__FILE__).'/lib-transla-static.php');
     echo '<article class="page col sml-12 med-12 lrg-10 sml-centered" role="article" >';
@@ -1235,6 +1371,7 @@ if(isset($_GET['page'])) {
 
 ?>
 <div style="clear:both;"><br/><br/></div>
+</section>
 </section>
 </main>
 </div>
