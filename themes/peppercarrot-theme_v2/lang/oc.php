@@ -27,7 +27,7 @@ $LANG = array(
 'SOURCES'       =>  'Fonts',
 'AUTHOR'        =>  'Autor',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'Boutique',
+'ESHOP'         =>  'Botiga',
 'FOLLOW'        =>  'Seguir Pepper&amp;Carrot sus :',
 
 ################################################################################
@@ -69,7 +69,7 @@ $LANG = array(
 # Page : Blog
 # An empty one in English (no need to warn user the content is english only here) :
 'LIMITATIONS' 	=> ' Contengut disponible pas qu’en anglés',
-'TRANSLATION_FALLBACK' => '(Translation is missing. Falling back to English)',
+'TRANSLATION_FALLBACK' => '(Manca la traduccion. Passatge al anglés)',
 
 ################################################################################
 # Page : Philosophy
@@ -253,8 +253,8 @@ $LANG = array(
 ',
 ################################################################################
 # Eshop 
-'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
-'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
+'ESHOP_COMIC'           => 'Las bendas dessenhadas e artbooks son sus  :',
+'ESHOP_SHOP'            => 'Prints, tassas e camisòt e mai sus :',
 ################################################################################
 # various utils :
 'UTIL_NEXT_EPISODE'     =>  'episòdi seguent',
