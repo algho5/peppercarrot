@@ -741,7 +741,14 @@ public function MyMultiLingueStaticLang() {
  * Method to display a list of the available all langage for static pages
  * @author: David Revoy
  **/  
-public function MyMultiLingueStaticAllLang() {
+public function MyMultiLingueStaticAllLang($pageurl) {
+
+  if(isset($pageurl)) {
+    $pageurl = $pageurl;
+  } else {
+    $pageurl = "";
+  }
+
   $plxMotor = plxMotor::getInstance();
   $aLabels = unserialize($this->getParam('labels'));
   # loop on all the lang pluxml know
@@ -771,7 +778,7 @@ public function MyMultiLingueStaticAllLang() {
       
       $percent = ( $translationcompletion / $totalepisodecount ) * 90 + $websitetranslated;
       $percent = round($percent, 0);
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/")."\"';
+      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$pageurl.'")."\"';
       $LangString .= ' title=\"'.$translationcompletion.' on '.$totalepisodecount.' episodes translated, ';
       if ($websitetranslated == 10 ){
       $LangString .= 'website is translated.\">';

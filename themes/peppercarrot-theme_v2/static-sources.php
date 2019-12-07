@@ -401,6 +401,28 @@ echo '<div class="grid">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
     
+    echo '<div class="col sml-12 sml-text-right">';
+    echo '      <nav class="nav" role="navigation">';
+    echo '        <div class="responsive-langmenu">';
+    echo '         <label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/>';
+                      echo $langlabel;
+    echo '            <img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
+    echo '          <input type="checkbox" id="langmenu">';
+    echo '          <ul class="langmenu expanded">';
+                    eval($plxShow->callHook('MyMultiLingueStaticAllLang', 'static6/sources&page=XYZ'));
+    echo '          <li class="button">';
+    echo '              <a class="lang" href="';
+                          $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic');
+    echo '                ">';
+    echo '                <img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/>';
+                          $plxShow->lang('ADD_TRANSLATION');
+    echo '              </a>';
+    echo '            </li>';
+    echo '          </ul>';
+    echo '        </div>';
+    echo '      </nav>';
+    echo '    </div>';
+    
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<p><b>Spoiler alert! Please, do not reshare this page</b>: This episode is still in development and is not meant to be ready for public. It\s published here only to help proofreader and contributors of Pepper&Carrot. If you want to help and give a feedback, <a href="https://framagit.org/peppercarrot/webcomics/issues?scope=all&utf8=%E2%9C%93&state=all&label_name[]=future%20episode">join our latest thread on Framagit here.</a></p>';
     echo '</div>';
@@ -418,7 +440,7 @@ echo '<div class="grid">';
         
           echo '<section class="col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
           # we scan all the valid pattern pages inside episode folder
-          $search = glob($projectpath."/low-res/en_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
+          $search = glob($projectpath."/low-res/".$lang."_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
           if (!empty($search)) { 
             foreach ($search as $key => $filepath) {
               # extracting from the path the filename and path itself
