@@ -424,7 +424,7 @@ echo '<div class="grid">';
     echo '    </div>';
     
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
-    echo '<p><b>Spoiler alert! Please, do not reshare this page</b>: This episode is still in development and is not meant to be ready for public. It\s published here only to help proofreader and contributors of Pepper&Carrot. If you want to help and give a feedback, <a href="https://framagit.org/peppercarrot/webcomics/issues?scope=all&utf8=%E2%9C%93&state=all&label_name[]=future%20episode">join our latest thread on Framagit here.</a></p>';
+    echo '<p><b>Spoiler alert! Please, do not reshare this page</b>: This episode is still in development and is not meant to be ready for public. It\s published here only to help proofreader and contributors of Pepper&Carrot. If you want to help and give a feedback, <a href="https://framagit.org/peppercarrot/webcomics/issues?scope=all&utf8=%E2%9C%93&state=all&label_name[]=future%20episode">join our latest thread on Framagit here.</a>. Note you can also preview renderings of active Merge Request <a href="https://peppercarrot.frama.io/gitlab-renderer/">on the Gitlab-renderer</a></p>';
     echo '</div>';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered" style="padding:0 0;">';
 
