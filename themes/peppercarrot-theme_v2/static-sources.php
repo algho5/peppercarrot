@@ -282,7 +282,7 @@ echo '<div class="grid">';
     echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
 
     $path = '0_sources/';
-    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git', '.ci');
+    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git', '.ci', '0_transcripts');
     $mainfolders = array_diff(scandir($path), $hide);
     sort($mainfolders);
     # Loop on the folders
@@ -342,7 +342,7 @@ echo '<div class="grid">';
 
     $overviewpagecount = 0;
     $path = '0_sources/';
-    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git', '.ci');
+    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git', '.ci', '0_transcripts');
     $mainfolders = array_diff(scandir($path), $hide);
     sort($mainfolders);
     # Loop on the folders
@@ -429,7 +429,7 @@ echo '<div class="grid">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered" style="padding:0 0;">';
 
     $path = '0_sources/';
-    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git', '.ci');
+    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git', '.ci', '0_transcripts');
     $mainfolders = array_diff(scandir($path), $hide);
     sort($mainfolders);
     # Loop on the folders
@@ -908,7 +908,7 @@ echo '<div class="grid">';
     echo "<th></th>";
     # Loop on the folders for headers
     $path = '0_sources/';
-    $hide = array('.', '..', '0ther', '0_archives', '.thumbs', 'New', '2010-10-10_Older-comics', '2010-10-09_Press-kit', '.git', '.ci', 'fonts');
+    $hide = array('.', '..', '0ther', '0_archives', '.thumbs', 'New', '2010-10-10_Older-comics', '2010-10-09_Press-kit', '.git', '.ci', '0_transcripts', 'fonts');
     $mainfolders = array_diff(scandir($path), $hide);
     sort($mainfolders);
     foreach($mainfolders as $foldername) {   
