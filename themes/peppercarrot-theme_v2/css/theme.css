@@ -69,7 +69,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .title img { margin: 5px 0  0 5px;}
 
 /* Header menu */
-.menu.expanded { margin-top: 5px; }
+.menu.expanded { margin-top: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .menu.expanded li a { font: normal 1.5rem 'PepperCarrot', cursive; color: #6A533B; transition: all 1.2s ease-in; }
 .menu.expanded li a:hover { text-shadow: 1px 0px 30px green, 1px 0px 20px yellow, 1px 0px 10px yellow, 1px 0px 5px white, 1px 0px 5px white; color: #604F3E; transition: all 0.2s ease-in; filter: brightness(1.1); }
 .menu.expanded li.active a, .menu.expanded li.active a:hover { color: #412813; background-color: rgba(0,0,0,0); text-shadow: 1px 0px 30px white, 1px 0px 20px white, 1px 0px 10px white, 1px 0px 5px white, 1px 0px 5px white; transition: all 0.2s ease-in; }
