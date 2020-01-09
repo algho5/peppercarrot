@@ -125,7 +125,7 @@ $LANG = array(
 
     <p>
       Fără intermediari între artist și audiență tu plătești mai puțin, iar eu beneficiez mai mult. Mă susții în mod direct.
-      Fără editor, distribuitor, marketing sau poliție de modă care să mă forțeze să adaptez Pepper&amp;Carrot la o viziube a &#39;pieței&#39;.
+      Fără editor, distribuitor, marketing sau poliție de modă care să mă forțeze să adaptez Pepper&amp;Carrot la o viziune a &#39;pieței&#39;.
       De ce nu ar putea un singur model de succes să &#39;antreneze&#39; o întreagă industrie aflată în criză? Vom vedea…
     </p>
 
