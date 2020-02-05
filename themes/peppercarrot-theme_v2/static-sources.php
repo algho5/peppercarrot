@@ -439,6 +439,26 @@ echo '<div class="grid">';
         if (strpos($foldername, 'new-') !== false) {
         
           echo '<section class="col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
+          
+          # we scan for a markdown
+          $mdsearch = glob($projectpath."/*script.md");
+          if (!empty($mdsearch)) { 
+            foreach ($mdsearch as $key => $mdfilepath) {
+              # extracting from the path the filename and path itself
+              $mdfilename = basename($mdfilepath);
+              $mdfullpath = dirname($mdfilepath);
+              if (file_exists($mdfilepath)) {
+                  // Display content
+                  $contents = file_get_contents(''.$mdfilepath.'');
+                  $Parsedown = new Parsedown();
+                  echo '<div class="page scenario col sml-12 med-10 sml-centered">';
+                  echo $Parsedown->text($contents);
+                  echo '	    <br/><br/>'."\n";
+                  echo '</div>';
+              }
+            }
+          }
+          
           # we scan all the valid pattern pages inside episode folder
           $search = glob($projectpath."/low-res/".$lang."_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
           if (!empty($search)) { 
