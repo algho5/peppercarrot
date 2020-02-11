@@ -193,10 +193,15 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 
 /* RESPONSIVE RULES*/
 /* ----------------*/
+/* Condensed menu mode */
+@media (max-width: 1380px) {
+.cover h1 { font-size: 2.2rem; }
+.menu.expanded li a { padding: .425rem .8rem .425rem 0; font-size: 1.40rem;}
+}
 /* Tablet mode */
 @media (max-width: 1140px) {
 .cover h1 { font-size: 2.2rem; }
-.menu.expanded li a { padding: .425rem .6rem .425rem 0;}
+.menu.expanded li a { padding: .425rem .5rem .425rem 0; font-size: 1.35rem;}
 input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .header h1 { font-size: 2rem; margin: 7px 0 0 7px; }
 .cover h1 { top: 1rem; right: 0; font-size: 2rem; width: 500px; }
