@@ -17,9 +17,9 @@ $LANG = array(
 
 ################################################################################
 # Top menu website:
-'HOMEPAGE'      =>  '主页面',
-'WEBCOMICS'     =>  '网络漫画',
-'BLOG'          =>  '網誌',
+'HOMEPAGE'      =>  '主页',
+'WEBCOMICS'     =>  '漫画',
+'BLOG'          =>  '博客',
 'PHILOSOPHY'    =>  '理念',
 'CONTRIBUTE'    =>  '贡献者',
 'COMMUNITY'     =>  '群体',
@@ -27,7 +27,7 @@ $LANG = array(
 'SOURCES'       =>  '源文件',
 'AUTHOR'        =>  '作者',
 'EXTRAS'        =>  'Extras',
-'ESHOP'        =>   '店',
+'ESHOP'        =>   '商店',
 'FOLLOW'        =>  '小辣椒与萝卜头的社交足迹：',
 
 ################################################################################
@@ -168,7 +168,7 @@ $LANG = array(
     <p>小辣椒与萝卜头网站为多语言设计（甚至是虚拟语言或者绝迹的语言）。网页的源文件为任何翻译者或校对者开放。在<a href="?static14/documentation&page=010_Translate_the_comic">教程</a>页面里可以找到如何添加新语言以及如何优化已有翻译文本等详细信息。</p>
 ',
 
-'CONTRIBUTE_SOCIAL'	    => '社交网',
+'CONTRIBUTE_SOCIAL'	    => '社交网站',
  
 'CONTRIBUTE_PRESS'	    => '            
     <h2>出版物：</h2> 
