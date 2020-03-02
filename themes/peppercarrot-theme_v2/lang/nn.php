@@ -10,8 +10,8 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
-'PEPPERCARROT_TITLE'    =>  'Pepar&amp;Gulrot', // the title on top of the website
-'PEPPERCARROT_VEGETABLE' => 'Pepar &amp; Gulrot', // literal translation of the spice and the vegetable
+'PEPPERCARROT_TITLE'    =>  'Pepar&#xa0;&amp;&#xa0;Gulrot', // the title on top of the website
+'PEPPERCARROT_VEGETABLE' => 'Pepar&#xa0;&amp;&#xa0;Gulrot', // literal translation of the spice and the vegetable
 'Website_DESCRIPTION'    => 'Offisiell heimeside til Pepar &amp; Gulrot, ein fri teikneserie om den unge heksa Pepar og katten hennar, Gulrot. Dei lever i ei fantasiverd full av trylledrikkar, magi og fantastiske skapningar.',
 'SUBTITLE'               => 'Den frie teikneserien laga av David Revoy',
 
@@ -70,7 +70,7 @@ $LANG = array(
 # when contents are not English (no need to warn user the content is english only here):
 #'LIMITATIONS' 	=> ' Content available in english only ',
 'LIMITATIONS' => ' Innhaldet her er berre tilgjengeleg på engelsk ',
-'TRANSLATION_FALLBACK' => '(Translation is missing. Falling back to English)',
+'TRANSLATION_FALLBACK' => '(Manglar omsetjing. Brukar engelsk versjon.)',
 
 ################################################################################
 # Page: Philosophy
@@ -249,8 +249,8 @@ $LANG = array(
 ',
 ################################################################################
 # Eshop 
-'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
-'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
+'ESHOP_COMIC'           => 'Bøker med teikneseriar og teikningar:',
+'ESHOP_SHOP'            => 'T-skjorter, krus, kort og andre produkt:',
 ################################################################################
 # various utils:
 'UTIL_NEXT_EPISODE'     => 'neste episode',
