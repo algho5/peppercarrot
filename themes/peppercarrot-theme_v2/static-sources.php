@@ -896,13 +896,7 @@ echo '<div class="grid">';
     
   } elseif ($activefolder == "translation") {
   # =======  Translation Status ===========
-    # main HTML container:
-    echo '<div class="container">';
-    echo '<main class="main grid" role="main">';
-    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
-    echo '<div class="grid">';
-    
-    #closing page formating
+    #closing page header preformating
     echo '</div>';
     echo '</section>';
     echo '</main>';
@@ -1014,7 +1008,10 @@ echo '<div class="grid">';
                 $fullpath = dirname($filepath);
                 # guess cover filename and path
                 $filenamewithoutenprefix = substr($filename, 2);
+                $filenameshort = substr($filename, 36); // eg. en_Pepper-and-Carrot_by-David-Revoy_
+                $filenameshort = str_replace('.jpg', '.svg', $filenameshort);
                 $filepathtranslated = ''.$fullpath.'/'.$langfolder.''.$filenamewithoutenprefix.'';
+                $svgpathtranslated = ''.$projectpath.'/lang/'.$langfolder.'/'.$filenameshort.'';
                 # if cover exist; translation exist: we display
                 if (file_exists($filepathtranslated)) {
                   if ( $singlelangcount == $totalepisodecount ) {
@@ -1026,7 +1023,7 @@ echo '<div class="grid">';
                   echo '<td align="center" style="background-color:#FFFD9E;color:#C3922A">';
                   }
                   # for all
-                  echo '<small>'.date ("Y.m.d", filemtime($filepathtranslated)).'</small>';
+                  echo '<small>'.date ("Y.m.d", filemtime($svgpathtranslated)).'</small>';
                   echo ' </td>';
                   $translacounter = $translacounter + 1;
                 } else {
