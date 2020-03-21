@@ -437,10 +437,28 @@ echo '<div class="grid">';
       $projectpath = $path.$foldername;
       if(is_dir($projectpath)) {
         if (strpos($foldername, 'new-') !== false) {
-        
+
           echo '<section class="col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
-          
-          # we scan for a markdown
+
+          # Display pages:
+          $search = glob($projectpath."/low-res/".$lang."_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
+          if (!empty($search)) { 
+            foreach ($search as $key => $filepath) {
+              # extracting from the path the filename and path itself
+              $filename = basename($filepath);
+              $fullpath = dirname($filepath);
+              if (file_exists($filepath)) {
+                # Our page is existing, it exclude the renamed P00.jpg, start the tag
+                  # display page
+                  echo '<img src="'.$filepath.'" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ></a>';
+                  # Add a page count caption
+                  echo '<figcaption class="text-center" style="color:#ABABAB">'.$overviewpagecount.'</figcaption>';
+                  echo '</figure>';
+              }
+            }
+          }
+
+          # Display markdown scenario:
           $mdsearch = glob($projectpath."/*script.md");
           if (!empty($mdsearch)) { 
             foreach ($mdsearch as $key => $mdfilepath) {
@@ -458,28 +476,11 @@ echo '<div class="grid">';
               }
             }
           }
-          
-          # we scan all the valid pattern pages inside episode folder
-          $search = glob($projectpath."/low-res/".$lang."_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
-          if (!empty($search)) { 
-            foreach ($search as $key => $filepath) {
-              # extracting from the path the filename and path itself
-              $filename = basename($filepath);
-              $fullpath = dirname($filepath);
-              if (file_exists($filepath)) {
-                # Our page is existing, it exclude the renamed P00.jpg, start the tag
-                  # display page
-                  echo '<img src="'.$filepath.'" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ></a>';
-                  # Add a page count caption
-                  echo '<figcaption class="text-center" style="color:#ABABAB">'.$overviewpagecount.'</figcaption>';
-                  echo '</figure>';
-              }
-            }
-          }
+
         }
-      } 
+      }
       echo '</section>';
-    }	
+    }
     # top button
     echo '</section>';
 
