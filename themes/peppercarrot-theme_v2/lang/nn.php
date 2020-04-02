@@ -248,7 +248,7 @@ $LANG = array(
     <p>Nettstaden køyrer på <a href="http://www.pluxml.org" title="PluXml">PluXml</a>.</p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Bøker med teikneseriar og teikningar:',
 'ESHOP_SHOP'            => 'T-skjorter, krus, kort og andre produkt:',
 ################################################################################

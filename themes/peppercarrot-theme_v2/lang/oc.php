@@ -130,7 +130,7 @@ $LANG = array(
       Cap d’editor, distributor o comercial pòt realizar de cambiaments sus Pepper&amp;Carrot per lo conhar dins una casa del \'mercat\'.
       ...E perque Pepper&amp;Carrot poiriá pas aviar un cambiament e aital inspirar una industria en crisi ? Ensagem !
     </p>
-    
+
     <div class="button">
         <a href="?static12/donate" title="Per solament 1€ per episòdi novèl, venètz mecènas.">
           Per solament 1€ per episòdi novèl, venètz mecènas de Pepper&amp;Carrot.
@@ -252,7 +252,7 @@ $LANG = array(
     <p>Site web propulsat per <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Las bendas dessenhadas e artbooks son sus  :',
 'ESHOP_SHOP'            => 'Prints, tassas e camisòt e mai sus :',
 ################################################################################

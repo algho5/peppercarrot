@@ -90,7 +90,7 @@ $LANG = array(
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="ilustraĵo montranta patronecon" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
-    
+
     <h2>100% senpaga, por ĉiam, neniuj &apos;pag-muroj&apos;</h2>
 
     <p>Ĉiu enhavo farita de mi pri Pipro kaj Karoĉjo estas senpage disponebla per tiu ĉi retejo al ĉiuj.
@@ -129,7 +129,7 @@ $LANG = array(
       Neniu eldonisto/distribuisto/reklamisto povas devigi min ŝanĝi Pipron kaj Karoĉjon por kongrui kun lia aspekto de ‘merkato’.
       &nbsp;.&nbsp;.&nbsp;.&nbsp;Ĉu estas eble por ke unu eta sukceso influu la tutan sektoron? Ni provu!
     </p>
-    
+
     <div class="button">
       <a href="?static12/donate" title="nur po 1$ por nova rakonteto, iĝu patrono de Pipro kaj Karoĉjo">
         Bonvolu helpi al mi plibonigi kreadon de Pipro kaj Karoĉjo nun.
@@ -149,12 +149,12 @@ $LANG = array(
 
 'CONTRIBUTE_FANART'	    => '
     <h2>Fanatikul-artaĵo</h2>
-    
+
     <p>Pipro kaj Karoĉjo estas malferma al fanatikul-artaĵo: desegnaĵoj, scenaroj, skulptaĵoj, 3-dimensiaj modeloj, fanatik-fikcioj. Bonvolu sendi ilin al mi (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, aŭ sciigu min per interkonaj retejoj) por ke ili aperu en la galerio de fanatikul-artaĵo:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Idoj:</h2>
-    
+
     <p>Pipro kaj Karoĉjo povas esti adaptita al multe da projektoj kaj produktoj, kial ne fari vian propran aŭ aliĝi al ekzista?</p>
 ',
 
@@ -165,7 +165,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Interkonaj retejoj:',
- 
+
 'CONTRIBUTE_PRESS'	    => '
     <h2>Gazetaro:</h2>
 
@@ -249,7 +249,7 @@ $LANG = array(
     <p>Retejo povigata de <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################

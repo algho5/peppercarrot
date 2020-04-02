@@ -75,7 +75,7 @@ $LANG = array(
 # Page : Philosophy
 'PHILOSOPHY_TOP'    =>  '
  <h2>Financé par ses lecteurs</h2>
-    
+
     <p>Le projet Pepper&amp;Carrot est financé par ses lecteurs venant du monde entier.
     Tout lecteur peut envoyer une petite pièce pour mécéner la publication d\'un nouvel épisode.
     Il apparaît ensuite dans les remerciements de cet épisode. Grâce à ce système, Pepper&amp;Carrot
@@ -92,20 +92,20 @@ $LANG = array(
     <img alt="Illustration représentant le mécénat moderne" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% libre, pour toujours</h2>
-    
+
     <p>Tous les contenus que je crée autour et pour Pepper&amp;Carrot sont sur ce site, libres et disponibles pour tous.
     Je vous respecte tous au même niveau : avec ou sans argent. Tous les bonus que je fais pour mes mécènes sont ici également.
     Pepper&amp;Carrot ne vous demandera jamais de payer quoi que ce soit ou de s\'inscrire quelque part pour avoir accès au contenu.</p>
-    
+
         <img alt="Illustration représentant les péages du net" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-source et très permissif</h2>
-    
+
     <p>Je veux donner aux autres le droit d\'utiliser, de changer et même de commercialiser leurs projets utilisant Pepper&amp;Carrot.
     Toutes pages, dessins et autres contenus ont été fabriqués avec des logiciels libres (Gnu/Linux), et toutes les sources sont sur ce site (menu  \'Sources\').
     L\'utilisation commerciale, les traductions, les fan-arts, l\'impression, les films, les jeux-vidéo et le re-partage sur le net sont encouragés.
     Je vous demande seulement de créditer les œuvres de leur(s) auteur(s) respectif(s) (artistes, correcteurs, traducteurs investi(e)s dans la création de l\'œuvre), d\'intégrer un lien vers la licence et indiquer si des modifications ont été effectuées à l\'œuvre. Vous devez indiquer ces informations par tous les moyens raisonnables, sans toutefois suggérer que les auteur(s) vous soutiennent ou soutiennent la façon dont vous avez utilisé leurs œuvres.</p>
-    
+
     <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" title="Plus d\'information en français sur Creative Commons Attribution 4.0">
             Licence : Creative Commons Attribution 4.0
@@ -115,7 +115,7 @@ $LANG = array(
         <img alt="Illustration représentant les médias open-sources" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Un divertissement de qualité, partout et pour tous</h2>
-    
+
     <p>Pepper&amp;Carrot est un webcomic (une BD sur Internet) humoristique convenant pour tous les âges.
     Aucune scène de violence, ni de sexualité ne sera publiée ici. Libre et open-source, Pepper&amp;Carrot
     se veut être un exemple responsable de médias libres. L\' accent est mis sur la qualité, l\'éthique et le
@@ -124,26 +124,26 @@ $LANG = array(
         <img alt="Illustration pour tous" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Changeons l\'industrie de la BD !</h2>
-    
+
     <p>
         Avec moins d\'intermédiaires entre lecteurs et auteurs, tout le monde y gagne ; vous me financez directement.
         Aucun éditeur, distributeur ou commercial ne peut exercer des changements sur Pepper&amp;Carrot afin de le faire rentrer dans une case du \'marché\'.
         ...Et pourquoi Pepper&amp;Carrot ne pourrait-il pas amorcer un changement et ainsi inspirer une industrie en crise ? Essayons !
     </p>
-    
+
     <div class="button">
       <a href="?static12/donate" title="Pour seulement 1€ par nouvel épisode, soutenez Pepper&amp;Carrot">
         Aidez moi à booster la production de Pepper&amp;Carrot dès aujourd\'hui.
       </a>
     </div>
-    
+
         <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
-    
- 
+
+
  ',
- 
+
 ################################################################################
-# Page : Contribute 
+# Page : Contribute
 'CONTRIBUTE_TITLE'		=> 'Contribuer',
 'CONTRIBUTE_TOP'		=> '
     <p>Grâce au partage des <a href="?static6/sources" title="Sources page">sources</a> et à sa <a href="http://creativecommons.org/licenses/by/4.0/">
@@ -164,34 +164,34 @@ $LANG = array(
 
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Traductions et corrections</h2>
-    
+
     <p>Le site internet de Pepper&amp;Carrot est conçu pour accepter toutes les langues (même fictives et éteintes). Les sources de cette page sont à votre disposition pour la correction et la traduction. Visitez le <a href="?static14/documentation&page=010_Translate_the_comic">tutoriel</a> pour plus d\'informations sur l\'ajout d\'une nouvelle traduction ou la proposition d\'une amélioration.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Réseaux sociaux:',
- 
-'CONTRIBUTE_PRESS'	    => '            
-    <h2>Presse:</h2> 
-    
-    <p>Devenez l\'éditeur de Pepper&amp;Carrot, écrivez des articles, partagez les pages, et construisez votre propre communauté. Des fichiers archives au format zip sont à votre disposition dans les Sources avec logos et dessins en haute-définition. Ils sont classés sous la catégorie <a href="?static6/sources" title="Sources page">Press Kit</a>.</p>  
+
+'CONTRIBUTE_PRESS'	    => '
+    <h2>Presse:</h2>
+
+    <p>Devenez l\'éditeur de Pepper&amp;Carrot, écrivez des articles, partagez les pages, et construisez votre propre communauté. Des fichiers archives au format zip sont à votre disposition dans les Sources avec logos et dessins en haute-définition. Ils sont classés sous la catégorie <a href="?static6/sources" title="Sources page">Press Kit</a>.</p>
 ',
 
-'CONTRIBUTE_OTHER'	    => '    
+'CONTRIBUTE_OTHER'	    => '
     <h2>Autres idées de participations</h2>
-    
+
     <p>Tout le monde peut apporter sa pierre à l\'édifice : <br/>
         <b>Développeurs :</b> Création d\'applications utilisant les graphismes de Pepper&amp;Carrot.<br />
         <b>Musiciens :</b> Création de thèmes musicaux pour la série Pepper&amp;Carrot.<br />
         <b>Écrivains : </b> Proposition de roman, ou nouveau scénario pour Pepper&amp;Carrot.<br />
         <b>Journalistes: </b> Informations à propos du projet Pepper&amp;Carrot dans les médias traditionnels (presse écrite, télévision, etc.)<br />
         <b>Imprimeurs :</b> Impression de posters ou de petits objets sur le thème de Pepper&amp;Carrot.<br />
-    </p> 
+    </p>
 ',
 
-'CONTRIBUTE_IRC'	    => '            
+'CONTRIBUTE_IRC'	    => '
     <h2 id="irc">Canal de discussion</h2>
-    
-    <p>Un canal de discussion IRC (* Internet Chat Relay) existe en anglais sur le serveur Freenode, nommé #pepper&carrot. Ce canal est à votre disposition pour discuter au sujet de Pepper&amp;Carrot. J\'y suis connecté fréquement (pseudo: deevad). Le lien ci-dessous fonctionnera dans votre navigateur internet sans besoin d\'installer quoi que ce soit.<br/> 
+
+    <p>Un canal de discussion IRC (* Internet Chat Relay) existe en anglais sur le serveur Freenode, nommé #pepper&carrot. Ce canal est à votre disposition pour discuter au sujet de Pepper&amp;Carrot. J\'y suis connecté fréquement (pseudo: deevad). Le lien ci-dessous fonctionnera dans votre navigateur internet sans besoin d\'installer quoi que ce soit.<br/>
 ',
 
 ################################################################################
@@ -207,7 +207,7 @@ $LANG = array(
      de <a href="http://creativecommons.org/licenses/by/4.0/deed.fr">la licence Creative Commons Attribution</a>.
     Consultez le fichier README<br/>
     de chaque projet pour plus d\'infos.</p>
-  
+
     <p><b>Dépôts de codes pour traductions, graphisme, site, script :</b><br/></p>
 ',
 'SOURCE_COVER'   =>  'Couvertures',
@@ -224,7 +224,7 @@ $LANG = array(
     <p>Bonjour, je m\'appelle David Revoy et je suis un artiste français né à Reims en 1981 et habitant à Montauban. Je suis autodidacte et passionné sur beaucoup de sujets : le dessin, la peinture, les chats, l\'informatique, l\'open-source, Gnu/Linux, Internet, les vieux jeux-vidéo, les vieux mangas, l\'art, la culture japonaise et la fantasy...<br />
     <br />
     Après plus de 10 ans de travail en indépendant à faire des commandes pour l\'édition, l\'enseignement, les studios de jeux-vidéo ou les films d\'animation, j\'ai trouvé ma voie dans un projet personnel qui mixe toutes mes passions ; et ce projet, c\'est Pepper&amp;Carrot.</p>
-    
+
     <p>Mon portfolio :</p>
 ',
 'AUTHOR_TODO_DREAM'	    => '
@@ -250,11 +250,11 @@ $LANG = array(
 'FOOTER_CONTENT'		=> '
     <p>Le Webcomic, les dessins et textes sont distribués sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" title="Plus d\'informations en français sur Creative Commons Attribution 4.0">Creative Commons Attribution 4.0</a>, à moins qu\'autre chose ne soit mentionné dans la page.<br/>
     Auteur: David Revoy, www.davidrevoy.com. Contactez-moi, <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> , pour toute demande de renseignements.</p>
-    
-    <p>Site web utilisant <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p> 
+
+    <p>Site web utilisant <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'BDs et recueil d’illustrations sont sur:',
 'ESHOP_SHOP'            => 'Posters, mugs, tee-shirts et plus sur:',
 ################################################################################
@@ -272,4 +272,4 @@ $LANG = array(
 'LAST'   =>  'dernier',
 
 );
-?>  
+?>

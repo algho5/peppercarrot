@@ -130,7 +130,7 @@ $LANG = array(
       aan te passen om aan te sluiten bij hun visie op wat &#39;de markt&#39; wil.
       Een enkel succes kan als een &#39;sneeuwbal&#39; de hele industrie veranderen. Laten we het proberen!
     </p>
-    
+
     <div class="button">
       <a href="?static12/donate" title="Voor maar €1 per aflevering kun je patron van Pepper&amp;Carrot worden">
         help me om de productie van Pepper&amp;Carrot sneller te maken
@@ -250,7 +250,7 @@ $LANG = array(
     <p>Website mogelijk gemaakt door <a href="http://www.pluxml.org" title="PluXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################

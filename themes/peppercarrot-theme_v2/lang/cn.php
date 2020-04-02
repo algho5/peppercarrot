@@ -76,13 +76,13 @@ $LANG = array(
 # Page : Philosophy
 'PHILOSOPHY_TOP'    =>  '
  <h2>由读者提供资金支持</h2>
-    
+
     <p>小辣椒与萝卜头项目是由全世界的读者提供经济支持的。
     所有读者都可以以一集漫画为单位给予一小笔赞助。
     这些给予赞助的读者将会被列在该集漫画的鸣谢名单中。由于此系统的健康运作，小辣椒与萝卜头
     得以继续以自由独立漫画的形式存在从而摆脱漫画产业，广告和商业运作的影响。</p>
 ',
-'DONATE_INTRO'		=> '           
+'DONATE_INTRO'		=> '
     <p>
     成为小辣椒与萝卜头的赞助者很容易，只要在<a href="https://www.patreon.com/join/davidrevoy?">Patreon</a>网站上支付1美元/集就可以了。
     Patreon接受全球的信用卡，您也可以在Patreon上使用Paypal账户。
@@ -92,21 +92,21 @@ $LANG = array(
     <img alt="Illustration représentant le mécénat moderne" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>永远100%免费</h2>
-    
+
     <p>我在本网站创建的一切关于小辣椒与萝卜头及其周边产品，均为免费，且可以被所有人使用。
     我对我的读者们给予同等尊重：无论其是不是赞助者。我在此网站为赞助者所创建的额外产品也均如此。
     小辣椒与萝卜头永远不需要您支付资金或者注册任何账户而获取漫画内容及产品资源。</p>
-    
+
         <img alt="Illustration représentant les péages du net" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>开源并且非常宽容</h2>
-    
+
     <p>我希望可以给予任何人使用，交换，甚至是用于商业用途的小辣椒与萝卜头的权利。
     本站全部页面，绘图和其他内容都是使用自由软件（Gnu/Linux）创作的，并且所有的源文件都可以在本网站找到（菜单\源文件）。
     我真心鼓励大家利用这些素材进行商业创作，翻译，粉丝作品，出版物，电影，电子游戏以及在其他网站分享。
     我只要求一点，那就是在作品中提及其参与创作者（作者，校对，翻译等所有为作品做出贡献的人），并且提供版权链接，
 	同时指出作品是否是被修改过。您可以合理地提供这些信息，但不可以有任何暗示您的创作行为与原作者有关或是被原作者协助。</p>
-    
+
     <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" title="更多信息请详见Creative Commons Attribution 4.0">
             版权协议：Creative Commons Attribution 4.0
@@ -116,7 +116,7 @@ $LANG = array(
         <img alt="Illustration représentant les médias open-sources" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>高质量的娱乐，给任何人，在任何地方</h2>
-    
+
     <p>小辣椒与萝卜头是适合任何年龄读者的轻松幽默的网络漫画。
     这里不会涉及任何暴力及色情内容。免费且开源的小辣椒与萝卜头
     希望成为自由媒体的一个榜样。作品重点强调品质，道德和专业精神，
@@ -125,24 +125,24 @@ $LANG = array(
         <img alt="Illustration pour tous" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>让我们一起来改变漫画产业！</h2>
-    
+
     <p>
       减少作者和读者之间的各种中介是一件人人受益的事情，您的资金直接资助了作者而不是其他人。
       同时不会有任何出版商，发行商或其他商业中介以“市场”的名义来左右小辣椒与萝卜头的创作理念。
       为什么小辣椒与萝卜头不可以开启一个漫画产业的新时代呢？就让我们大胆的尝试一下吧！
     </p>
-    
+
     <div class="button">
       <a href="?static12/donate" title="只要1$一集，通过Patreon网站成为小辣椒与萝卜头的赞助者">
         从今天起帮助我加速小辣椒与萝卜头的成长吧！
       </a>
     </div>
-    
+
     <img alt="Illustration: l\'industrie de la BD VS financement par mécénat" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
- 
+
 ################################################################################
-# Page : Contribute 
+# Page : Contribute
 'CONTRIBUTE_TITLE'		=> '贡献者',
 'CONTRIBUTE_TOP'		=> '
     <p>借助于<a href="?static6/sources" title="Sources page">源文件</a>的分享及其<a href="http://creativecommons.org/licenses/by/4.0/">
@@ -151,47 +151,47 @@ $LANG = array(
 
 'CONTRIBUTE_FANART'	    => '
     <h2>粉丝作品</h2>
-    
+
     <p>小辣椒与萝卜头接受各种形式的粉丝作品：绘画，脚本，雕塑，3D，文学作品等等……您都可以发给我，我超级喜欢：
     <br/>（<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>，或者在社交网络上提及我）。</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>周边产品</h2>
-    
+
     <p>小辣椒与萝卜头可以被用来创作各种周边产品或项目（甚至是商业项目），为什么您不也来试试呢？<br/>
     看看这里展示的有关漫画的周边产品的成品吧。</p>
 ',
 
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>翻译与校对</h2>
-    
+
     <p>小辣椒与萝卜头网站为多语言设计（甚至是虚拟语言或者绝迹的语言）。网页的源文件为任何翻译者或校对者开放。在<a href="?static14/documentation&page=010_Translate_the_comic">教程</a>页面里可以找到如何添加新语言以及如何优化已有翻译文本等详细信息。</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => '社交网站',
- 
-'CONTRIBUTE_PRESS'	    => '            
-    <h2>出版物：</h2> 
-    
-    <p>成为小辣椒与萝卜头的出版商，发表有关的商业文章，分享网页，建立您本人的社区团体。您可以在“源文件”页面内找到zip压缩格式的文档，包括高分辨率的logo和绘图文件。文件归类整理在<a href="?static6/sources" title="Sources page">出版工具</a>下。</p>  
+
+'CONTRIBUTE_PRESS'	    => '
+    <h2>出版物：</h2>
+
+    <p>成为小辣椒与萝卜头的出版商，发表有关的商业文章，分享网页，建立您本人的社区团体。您可以在“源文件”页面内找到zip压缩格式的文档，包括高分辨率的logo和绘图文件。文件归类整理在<a href="?static6/sources" title="Sources page">出版工具</a>下。</p>
 ',
 
-'CONTRIBUTE_OTHER'	    => '    
+'CONTRIBUTE_OTHER'	    => '
     <h2>其它参与方式</h2>
-    
+
     <p>众人拾柴火焰高：<br/>
         <b>开发者：</b>使用小辣椒与萝卜头创作软件及应用。<br />
         <b>音乐制作人：</b>为小辣椒与萝卜头系列创作主题音乐。<br />
         <b>作家：</b>提供小说或者新的小辣椒与萝卜头漫画脚本。<br />
         <b>记者：</b>在传统发行物（报刊，电视等）上报道小辣椒与萝卜头的相关信息。<br />
         <b>印刷商：</b>印制小辣椒与萝卜头主题海报或周边。<br />
-    </p> 
+    </p>
 ',
 
-'CONTRIBUTE_IRC'	    => '            
+'CONTRIBUTE_IRC'	    => '
     <h2 id="irc">交流频道</h2>
-    
-    <p>Freenode服务器中有一个英语环境的IRC（*Internet Chat Relay）交流频道，叫#pepper&carrot。这个频道是专门供您用以讨论和小辣椒与萝卜头有关的内容的。我（昵称：deevad）经常去关注频道里的讨论话题。以下链接可以直接在您的浏览器里打开，而不需要安装任何插件。<br/> 
+
+    <p>Freenode服务器中有一个英语环境的IRC（*Internet Chat Relay）交流频道，叫#pepper&carrot。这个频道是专门供您用以讨论和小辣椒与萝卜头有关的内容的。我（昵称：deevad）经常去关注频道里的讨论话题。以下链接可以直接在您的浏览器里打开，而不需要安装任何插件。<br/>
 ',
 
 ################################################################################
@@ -205,7 +205,7 @@ $LANG = array(
 'SOURCES_BOTTOM'	=> '
     <p>下载这些文件的同时表明您默认同意<a href="http://creativecommons.org/licenses/by/4.0/deed.zh">Commons Attribution</a>发行许可的所有条款。<br/>
     详情请参见每个项目中的README文件。<br/></p>
-  
+
     <p><b>翻译，绘图，网站，脚本等源文件存放在：</b><br/></p>
 ',
 'SOURCE_COVER'   =>  '封面',
@@ -222,7 +222,7 @@ $LANG = array(
     <p>大家好，我叫David Revoy，一名1981年出生在Reims现在居住在Montauban的法国绘画艺人。我的绘画是自学成才，并且我有很广泛的兴趣爱好：设计，绘画，猫咪，信息技术，开源技术，Gnu/Linux，互联网，老电子游戏，老日本漫画，艺术，日本文化和科幻……<br />
     <br />
     在以自由职业者的身份为出版商，教育部门，电子游戏工作室及动画电影产业工作了10年之后，我终于找到了适合我的，可以把我所有的兴趣爱好结合到一起的项目，那就是：小辣椒与萝卜头。</p>
-    
+
     <p>我的主页：</p>
 ',
 'AUTHOR_TODO_DREAM'	    => '
@@ -248,11 +248,11 @@ $LANG = array(
 'FOOTER_CONTENT'		=> '
     <p>在没有特殊说明的情况下，本站的网络漫画，绘画作品以及文字均以<a href="https://creativecommons.org/licenses/by/4.0/deed.zh" title="更多信息请详见Creative Commons Attribution 4.0网站">Creative Commons Attribution 4.0</a>许可形式发行。<br/>
     作者：David Revoy，www.davidrevoy.com。如需更多信息，请与我联系，<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>。</p>
-    
-    <p>此网站使用<a href="http://www.pluxml.org" title="PlXml">PluXml</a></p> 
+
+    <p>此网站使用<a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################
@@ -270,4 +270,4 @@ $LANG = array(
 'LAST'   =>  '最新一集',
 
 );
-?>  
+?>

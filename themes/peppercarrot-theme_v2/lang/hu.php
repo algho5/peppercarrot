@@ -77,7 +77,7 @@ $LANG = array(
 # Page: Philosophy
 'PHILOSOPHY_TOP'    =>  '
  <h2>Olvasók által támogatott</h2>
-    
+
     <p>A Paprika&amp;Sárgarépa projektet kizárólag az olvasói támogatják, a világ minden részéről.
     Minden pártfogó egy csekély összeggel hozzájárul, amiért cserébe a rész végén megemlítésre kerül.
     Ennek a rendszernek köszönhetően a képregény független maradhat és nem kell reklámokhoz, egyéb marketing-eszközhöz fordulnia.</p>
@@ -96,16 +96,16 @@ $LANG = array(
     <p>Minden, amit a Paprika&amp;Sárgarépával kapcsolatban készítek, ezen a weboldalon elérhető ingyen, mindenki számára.
     Egyformán tisztelek mindenkit, akár van pénze, akár nincs. Minden extrát, amit a pártfogóknak készítek, itt is közzéteszek.
     A Paprika&amp;Sárgarépa sosem fog pénzt, előfizetési díjat kérni a hozzáférésért cserébe.</p>
-    
+
         <img alt="fizetőfalat jelképező illusztráció" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Nyílt forráskódú, megengedő</h2>
-    
+
     <p>Szeretnék mindenkinek jogot adni, hogy megossza, felhasználja, ráépítsen, vagy akár pénzt is kereshessen a művekkel, amit készítettem.
     Minden oldalt, illusztrációt stb., nyílt forráskódú szoftverrel készítettem Gnu/Linux-on, és minden forrás elérhető a weboldalon, a &quot;Forráskód&quot; menüpont alatt.
     Mindenkit buzdítok a fordításra, nyomtatásra, filmek, videójátékok, rajongói alkotások készítésére, megosztásra és posztolásra - akár üzleti céllal is.
     Mindössze a nevemet, mint szerzőt kell megemlítened: David Revoy.</p>
-    
+
     <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.hu" title="További információért olvasd el a &quot;Creative Commons Nevezd meg! 4.0&quot;-t">
             Licenc: Creative Commons Nevezd meg! 4.0
@@ -115,15 +115,15 @@ $LANG = array(
         <img alt="nyílt forráskódú médiumokat jelképező illusztráció" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Minőségi szórakoztatás mindenkinek, mindenhol</h2>
-    
+
     <p>A Paprika&amp;Sárgarépa egy humoros képregény minden korosztály számára.
     Nincs benne felnőtt tartalom, sem erőszak. Ingyenesen és nyílt forráskóddal, a Paprika&amp;Sárgarépa egy büszke példája, milyen menő tudna lenni a szabad-kultúra.
     Nagy hangsúlyt helyezek a minőségre, mert az ingyenes és nyílt forrású nem jelenti azt, hogy rossz vagy amatőr. Pont ellenkezőleg.</p>
-    
+
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Változtassuk meg a képregényipart!</h2>
-    
+
     <p>
       Ha kevesebb a közvetítő a közönség és a művész között, Te is kevesebbet fizetsz és én is jobban járok. Közvetlenül támogatsz.
       Semmilyen kiadó/viszonteladó/marketing/divat nem tud meggyőzni, hogy a képregényt az piacról kialakított képükhöz igazítsam.
@@ -133,14 +133,14 @@ $LANG = array(
     <div class="button">
       <a href="?static12/donate" title="Legyél Te is a Paprika&amp;Sárgarépa pártfogója, mindössze $1-ért epizódonként">
         Segíts a Paprika&amp;Sárgarépa készítésében!
-      </a> 
+      </a>
     </div>
-    
+
   <img alt="illusztráció: képregényipar VS Patreon támogatás" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
- 
+
 ################################################################################
-# Page: Contribute 
+# Page: Contribute
 'CONTRIBUTE_TITLE'		=> 'Közreműködés',
 'CONTRIBUTE_TOP'		=> '
     <p>A <a href="?static6/sources" title="Forráskód oldal">nyílt forráskódnak</a> és a <a href="https://creativecommons.org/licenses/by/4.0/deed.hu">
@@ -149,45 +149,45 @@ $LANG = array(
 
 'CONTRIBUTE_FANART'	    => '
     <h2>Rajongói művek</h2>
-    
+
     <p>A Paprika&amp;Sárgarépa nyitott a rajongói művekre: rajzokra, forgatókönyvekre, szobrokra, 3D modellekre, fanfiction-re. Küldd el nekem (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, vagy írj facebook-on, twitteren stb.), hogy megjelenhessen a rajongói galériában:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Származtatott művek:</h2>
-    
+
     <p>A Paprika&amp;Sárgarépát számos projekthez és termékhez át lehet szabni. Készíts egyet, vagy csatlakozz egy meglévőhöz:</p>
 ',
 
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Fordítások, javítások:</h2>
-    
+
     <p>A Paprika&amp;Sárgarépa weboldala készítése közben figyeltem, hogy könnyű legyen lefordítani, és bármely nyelvet elfogad (beleértve kihalt és kitalált nyelveket is). Az oldal forrása a rendelkezésedre áll, az ezzel kapcsolatos információért nézd meg a <a href="?static14/documentation&page=010_Translate_the_comic">fordítói tutorial-t</a>.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Közösségi oldalak:',
- 
-'CONTRIBUTE_PRESS'	    => '    
-    <h2>Sajtó:</h2> 
-    
+
+'CONTRIBUTE_PRESS'	    => '
+    <h2>Sajtó:</h2>
+
     <p>Legyél a Paprika&amp;Sárgarépa kiadója! Írj cikkeket, blogbejegyzéseket, oszd meg és építs közösséget a kedvenc közösségi oldaladon. A sajtóanyagot letöltheted a <a href="?static6/sources">forráskód</a> oldalról.</p>
 ',
 
-'CONTRIBUTE_OTHER'	    => '    
+'CONTRIBUTE_OTHER'	    => '
     <h2>Egyéb közreműködési ötletek...</h2>
-    
+
     <p>Bárki közreműködhet, a teljesség igénye nélkül:<br/>
         <b>Fejlesztő:</b>  Készíts egy alkalmazást, hogy mobil eszközökön is olvashassuk a képregényt.<br />
         <b>Zeneszerző:</b>  Készíts zenei témákat a Paprika&amp;Sárgarépához.<br />
         <b>Író: </b>  Javasolj forgatókönyvet.<br />
         <b>Újságíró: </b>  Írj a Paprika&amp;Sárgarépáról hagyományos médiában (nyomtatott sajtó, TV stb.)<br />
         <b>Nyomdász:</b>  Készíts posztereket, apróságokat Paprika&amp;Sárgarépával.<br />
-    </p> 
+    </p>
 ',
 
-'CONTRIBUTE_IRC'	    => '            
+'CONTRIBUTE_IRC'	    => '
     <h2 id="irc">IRC csatorna</h2>
-    
-    <p>Chatelj és beszélgess a Paprika&amp;Sárgarépáról. Európai idő szerint napközben vagyok fenn (nick: deevad).<br/> 
+
+    <p>Chatelj és beszélgess a Paprika&amp;Sárgarépáról. Európai idő szerint napközben vagyok fenn (nick: deevad).<br/>
 ',
 
 ################################################################################
@@ -200,10 +200,10 @@ $LANG = array(
 ',
 'SOURCES_BOTTOM'	    => '
     <p>Azzal, hogy letöltöd és dolgozol az alábbi fájlokkal, elfogadod a
-    
+
     <a href="https://creativecommons.org/licenses/by/4.0/deed.hu">Creative Commons Nevezd meg! licencét</a>.
     További infóért nézd meg a README fájlt az egyes projektekben.</p>
-  
+
     <p><b> Forráskód repók a fordításhoz, scriptekhez, weboldalhoz, grafikákhoz stb.:</b><br/></p>
 ',
 'SOURCE_COVER'   =>  'Borítóképek',
@@ -220,7 +220,7 @@ $LANG = array(
     <p>Helló, a nevem David Revoy, egy 1981-ben született francia művész vagyok. Autodidakta módon tanulom és rendkívül érdekel a rajzolás, festés, macskák, számítógép, Gnu/Linux és a nyílt kultúra, internet, régimódi RPG videójáték, régi manga és anime, hagyományos művészet, japán kultúra, fantasy...<br/>
     <br/>
     Több, mint 10 évnyi szabadúszó digitális festés, tanítás, koncept art, illusztráció és műveszeti vezetés után úgy döntöttem, hogy egy saját projektet indítok. Végül találtam egy módot, ahol minden szenvedélyem találkozik, és az eredménye a Paprika&amp;Sárgarépa.</p>
-    
+
     <p>A portfólióm:</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
@@ -246,17 +246,17 @@ $LANG = array(
     Tears of Steel koncept művész<br/>
     Cosmos Laundromat koncept művész<br/>
     2 workshop DVD...</p>
-    
+
     <p>Több, mint 20 kiadott könyvborító<br/>
-    
+
     <p>A képregényem virálisan terjedt az interneten és több CG-közösségtől díjat kaptam</p>
-    
+
     <p>Úttörő vagyok a 2D nyílt forrású szoftverek professzionális használatában 2009 óta</p>
-    
+
     <p>5 társasjáték és 4 videójáték teljes mértékú illusztráltora és művészeti vezetője voltam</p>
-    
+
     <p>Yin Yang of World Hunger (Az éhezés Yin Yang-ja): több ezer komment és megosztás</p>
-    
+
     <p>"Alice in Wonderland" (Alice csodaországban): első 2D CG díjam, 100%-ig nyílt forráskődú szoftverrel</p>
 ',
 
@@ -265,11 +265,11 @@ $LANG = array(
 'FOOTER_CONTENT'    => '
     <p>A képregény, illusztráció és szöveg a <a href="https://creativecommons.org/licenses/by/4.0/deed.hu" title="További információért olvasd el a &quot;Creative Commons Nevezd meg! 4.0&quot;-t">Creative Commons Nevezd meg! 4.0</a>licenc szerint használható fel, hacsak az adott oldalon más nem szerepel.<br/>
     Szerző: "David Revoy, www.davidrevoy.com". Kapcsolat (angol, francia nyelven): <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a></p>
-    
-    <p>Website powered by <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p> 
+
+    <p>Website powered by <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################
@@ -288,4 +288,4 @@ $LANG = array(
 
 );
 
-?>  
+?>
