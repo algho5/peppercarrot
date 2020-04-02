@@ -90,7 +90,7 @@ $LANG = array(
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="illustration representing patronage" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
-    
+
     <h2>Navždy 100% zdarma, žádný placený přístup</h2>
 
     <p>Všechen můj obsah vytvořený k Pepper&amp;Carrot je na těchto stránkách zdarma a všem volně k dostání.
@@ -129,7 +129,7 @@ $LANG = array(
       Žádný vydavatel/distributor/obchod/trend mě nemůže donutit změnit Pepper&amp;Carrot k jejich potřebám.
       &nbsp;.&nbsp;.&nbsp;.&nbsp;proč by nemohl jediný úspěch započít vlnu podobných projektů? Uvidíme...
     </p>
-    
+
     <div class="button">
       <a href="?static12/donate" title="Jen za 1$ na Patreonu podpořte novou epizodu Pepper&amp;Carrot">
         Pomozte mi pozvednout produkci Pepper&amp;Carrot ještě dnes.
@@ -163,7 +163,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Sociální sítě:',
- 
+
 'CONTRIBUTE_PRESS'	    => '
     <h2>Tisk:</h2>
 
@@ -247,7 +247,7 @@ $LANG = array(
     <p>Webová stránka poháněna <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',

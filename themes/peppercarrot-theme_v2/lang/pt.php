@@ -75,7 +75,7 @@ $LANG = array(
 # Page : Philosophy
 'PHILOSOPHY_TOP'    =>  '
  <h2>Financiado por patronos</h2>
-    
+
     <p>O projeto Pepper&amp;Carrot é financiado somente por seus patronos, que estão espalhados pelo mundo.
     Cada patrono envia um pouco de dinheiro e ganha um crédito ao fim de cada novo episódio.
     Graças a esse sistema, Pepper&amp;Carrot pode ser independentes e nunca usar propagandas ou poluição de marketing.</p>
@@ -90,20 +90,20 @@ $LANG = array(
     <img alt="illustration representing patronage" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>100% grátis, para sempre, sem área restrita para membros</h2>
-    
+
     <p>Cada conteúdo que eu crio sobre a Pepper&amp;Carrot estão disponíveis nesse website, de forma gratuita e para todos.
     Eu respeito todos vocês igualmente: com ou sem dinheiro. Todos os materiais especiais que eu preparo para os meus patronos eu também publico aqui.
     Pepper&amp;Carrot nunca vai pedir para você pagar ou assinar algo para ter acesso a algum conteúdo.</p>
-    
+
         <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Open-source and permissivo</h2>
-    
+
     <p>Eu quero dar às pessoas o direito de distribuir, usar, contruir e até mesmo ganhar dinheiro com o trabalho que eu criei.
     Todas as páginas, artes e conteúdo foram feitos com softwares Open-Sources grátis/livres no Gnu/Linux, e todos os sources/desenhos originais estão neste website, no menu &#39;Source&#39;.
     Uso comercial, traduções, fan-arts, impressões, filmes, video-games, compartilhamentos e repostagens são encorajados.
     Você só precisa me dar - David Revoy - crédito como autor.</p>
-    
+
     <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.pt" title="Para mais informações, leia a Creative Commons Attribution 4.0">
             Licença de uso: Creative Commons Attribution 4.0
@@ -113,7 +113,7 @@ $LANG = array(
         <img alt="illustration representing open-source medias" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Entretenimento de qualidade para qualquer um, em qualquer lugar</h2>
-    
+
     <p>Pepper&amp;Carrot é uma HQ de comédia/humor apropriada para todos, de toda idade.
     Sem conteúdo adulto, sem violência. Open-Sources e grátis/livre, Pepper&amp;Carrot é um exemplo, com orgulho, de quão legal uma cultura livre poderia ser.
     Eu me preocupo bastante com a qualidade porque Open-Sources e grátis/livre não quer dizer ruim ou amador. Au contraire.</p>
@@ -121,24 +121,24 @@ $LANG = array(
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Vamos mudar a indústria de quadrinhos!</h2>
-    
+
     <p>
       Com menos intermediários entre a audiência e o artista, você paga menos e se beneficia mais. Você pode me apoiar diretamente.
       Nenhuma editora/distribuidora/empresa de marketing ou moda pode me forçar a mudar Pepper&amp;Carrot para se encaixar na visão deles de &#39;mercado&#39;.
       ...Porque um sucesso solitário não pode causar uma &#39;avalanche&#39; em toda uma indústria em crise? Vamos tentar!
     </p>
-    
+
     <div class="button">
       <a href="?static12/donate" title="Seja um patrono de Pepper&amp;Carrot contribuindo a partir de 1€ a cada novo episódio">
         Ajude-me a aumentar a produção de Pepper&amp;Carrot hoje mesmo
-      </a> 
+      </a>
     </div>
-    
+
     <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
- 
+
 ################################################################################
-# Page : Contribute 
+# Page : Contribute
 'CONTRIBUTE_TITLE'		=> 'Contribua',
 'CONTRIBUTE_TOP'		=> '
     <p>Graças às <a href="?static6/sources" title="Sources page">fontes disponíveis</a> e a <a href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR">
@@ -147,45 +147,45 @@ $LANG = array(
 
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-art</h2>
-    
+
     <p> Pepper&amp;Carrot está disponível para fan-arts: Desenhos, cenarios, esculturas, modelos 3D, histórias (fan-fiction). Envie para mim (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, ou me cutuque nas redes sociais) para aparecer na galeria de fan-art:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Adaptação</h2>
-    
+
     <p>Pepper&amp;Carrot pode ser adaptado para muitos projetos ou produtos, e por que não criar o seu próprio projeto ou se juntar a algum outro ?</p>
 ',
 
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Traduções e correções:</h2>
-    
+
     <p> O site Pepper&amp;Carrot foi projetado para funcionar com vários idiomas e aceitar qualquer língua (incluindo línguas extintas ou fictícias). O arquivo fonte dessa página está a sua disposição para ser traduzido. De uma olhada no <a href="?static14/documentation&page=010_Translate_the_comic">tutorial de referência</a> para mais informações sobre como acrescentar sua tradução.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Redes sociais:',
- 
-'CONTRIBUTE_PRESS'	    => '                 
-    <h2>Imprensa:</h2> 
-    
-    <p>Publique Pepper&amp;Carrot! Escreva artigos, crie posts em websites, compartilhe e crie uma comunidade em sua rede social favorita. Você pode baixar o <a href="?static6/sources" title="Sources page">kit de imprensa</a> na página "Source".</p>  
+
+'CONTRIBUTE_PRESS'	    => '
+    <h2>Imprensa:</h2>
+
+    <p>Publique Pepper&amp;Carrot! Escreva artigos, crie posts em websites, compartilhe e crie uma comunidade em sua rede social favorita. Você pode baixar o <a href="?static6/sources" title="Sources page">kit de imprensa</a> na página "Source".</p>
 ',
 
-'CONTRIBUTE_OTHER'	    => '    
+'CONTRIBUTE_OTHER'	    => '
     <h2> Outras ideias para contribuições ...</h2>
-    
+
     <p> Cada um pode contribuir de uma maneira diferente: <br/>
         <b>Desenvolvedor:</b>  Criar um aplicativo para ler Pepper&amp;Carrot em aparelhos móveis.<br />
         <b>Músico:</b>  Criar temas musicais para Pepper&amp;Carrot.<br />
         <b>Escritor: </b>  Propor novas histórias para Pepper&amp;Carrot.<br />
         <b>Jornalista: </b> Noticiar sobre Pepper&amp;Carrot na mídia tradicional (jornal, TV, etc...)<br />
         <b>Gráfica:</b> Imprimir posters ou outras coisas com Pepper&amp;Carrot neles.<br />
-    </p> 
+    </p>
 ',
 
-'CONTRIBUTE_IRC'	    => '            
+'CONTRIBUTE_IRC'	    => '
     <h2 id="irc"> Canal do IRC:</h2>
-    
-    <p>Converse sobre Pepper&amp;Carrot. Eu estarei por ai durante o dia no fuso europeu (apelido:deevad) <br/> 
+
+    <p>Converse sobre Pepper&amp;Carrot. Eu estarei por ai durante o dia no fuso europeu (apelido:deevad) <br/>
 ',
 
 ################################################################################
@@ -200,7 +200,7 @@ $LANG = array(
     <p>Ao efetuar o download e trabalhar com esses arquivos você concorda em respeitar os termos da<br/>
     <a href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR">Licença de Atribuição Creative Commons</a>.
     Leia o README de cada projeto para mais informações.</p>
-  
+
     <p><b> Código para traduções, scripts, website, grafismos...etc... :</b><br/></p>
 ',
 'SOURCE_COVER'   =>  'Imagens da capa',
@@ -217,7 +217,7 @@ $LANG = array(
     <p>Oi, meu nome é David Revoy e eu sou um artista francês nascido em 1981. Eu sou auto-didata and apaixonado por desenho, pintura, gatos, computadores, cultura open-source Gnu/Linux, Internet, jogos de RPG antigos, mangas e anime antigos, arte tradicional, cultura japonesa, fantasia...<br />
     <br />
     Depois de mais de 10 anos de trabalho Freelance em desenho digital, aulas, arte de conceito, ilustrações, direção de arte, eu decidi começar meu próprio projeto. Eu finalmente encontrei um jeito de juntar todas as minhas paixões; e o resultado é Pepper&amp;Carrot.</p>
-    
+
     <p>Meu portfólio:</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
@@ -243,11 +243,11 @@ $LANG = array(
 'FOOTER_CONTENT'    => '
     <p>HQs, arte e textos estão sob uma licença <a href="https://creativecommons.org/licenses/by/4.0/deed.pt" title="Para mais informações, leia a Creative Commons Attribution 4.0">Creative Commons Attribution 4.0</a> a não ser que outra licença seja expecificada na página.<br/>
     Atribuição a "David Revoy, www.davidrevoy.com". Para mais informações: <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>.</p>
-    
-    <p>Esse site usa <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p> 
+
+    <p>Esse site usa <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################
@@ -265,6 +265,6 @@ $LANG = array(
 'LAST'   =>  'último',
 );
 
-?>  
+?>
 
 

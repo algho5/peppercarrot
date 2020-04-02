@@ -125,7 +125,7 @@ $LANG = array(
         Help me boost Pepper&amp;Carrot production today.
       </a>
     </div>
-    
+
     <img alt="Illustration: comic book industry vs. Patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 'PHILOSOPHY_CONTENT'    =>  "
@@ -297,7 +297,7 @@ i sa'u do jmina lo notci be ro da poi finti gi'a fanva gi'a cikre vau lo se piln
     <p>i lo dei stuzi cu se cupra la\'o zoi.<a href="http://www.pluxml.org" title="PlXml">PluXml</a>.zoi.</p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################

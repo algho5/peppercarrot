@@ -108,7 +108,7 @@ $LANG = array(
 	Det eneste jeg vil ha tilbake er kreditering av skaperne (Kunstnere, korrekturlesere og oversettere involvert i materialet du &oslash;nsker &aring; bruke).
 	Legg ved lenke til lisensen og formidle om det har blitt gjort endringer. Dette b&oslash;r gj&oslash;res p&aring;
 	en fornuftig m&aring;te, men uten &aring; antyde at forfatterne har hatt noe med deg eller din bruk &aring; gj&oslash;re.</p>
-    
+
 
     <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="For mer informasjon, les Creative Commons Attribution 4.0">
@@ -122,7 +122,7 @@ $LANG = array(
 
     <p>Pepper&amp;Gulrot er en humoristisk nettstripe myntet p&aring; voksne og barn i alle aldre.
     Fritt for upassende innhold. Den &aring;pne nettstripen Pepper&amp;Gulrot er et stolt eksempel p&aring; hvor bra fri og &aring;pen kultur kan v&aelig;re.
-	
+
 	Jeg har veldig fokus p&aring; kvalitet for &aring; vise at fritt og åpent ikke betyr d&aring;rlig eller amat&oslash;rmessig. Au contraire.</p>
 
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
@@ -134,13 +134,13 @@ $LANG = array(
       Ingen utgivere distribut&oslash;rer eller markedsf&oslash;rere kan tvinge meg til &aring; forandre Pepper&amp;Gulrot for &aring; tilpasses deres markedsvisjon.</br>
       Er der mulig for en enslig seriesuksess &aring; skape en sn&oslash;balleffekt som forandrer en industri i krise? Det gjenst&aring;r &aring; se...
     </p>
-    
+
     <div class="button">
       <a href="?static12/donate" title="Bli en Pepper&amp;Gulrot sponsor for kun 1$ per nye episode">
         hjelp meg &aring; &oslash;ke produksjonen av Pepper&amp;Gulrot idag.
       </a>
     </div>
-	
+
     <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
@@ -154,12 +154,12 @@ $LANG = array(
 
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-art</h2>
-    
+
     <p>Pepper&amp;Gulrot setter stor pris p&aring; fan-art som for eksempel: tegninger, scenarier, skulpturer, 3D modeller, fan-fiction. Send dem til meg (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, eller ta kontakt p&aring; sosiale nettverk) for &aring; bli med i fan-art galleriet:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Avarter:</h2>
-    
+
     <p>Pepper&amp;Gulrot kan tilpasses til mange prosjekter eller produkter, hvorfor ikke lage noe selv eller bidra til eksisterende prosjekter?</p>
 ',
 
@@ -171,8 +171,8 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Og sosiale medier:',
- 
-'CONTRIBUTE_PRESS'	    => '     
+
+'CONTRIBUTE_PRESS'	    => '
     <h2>Presse:</h2>
 
     <p>Bli en utgiver av Pepper&amp;Gulrot! Skriv artikler, lag blogginnlegg, del og skap engasjement p&aring; dine foretrukne sosiale nettverk.
@@ -257,7 +257,7 @@ $LANG = array(
     <p>Website powered by <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################

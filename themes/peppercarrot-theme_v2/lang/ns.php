@@ -101,7 +101,7 @@ $LANG = array(
     <h2>Open Source un permissiv</h2>
 
     <p>Ik will Lüüd dat Recht geven, wat se dat, wat ik maakt heff, för ehr egen Projekten bruken köönt, ännern köönt oder sogor Geld dormit verdenen köönt.
-    All Sieden, Kunstwarken un annern Kraam sünd mit fre\'e Open Source Software op GNU/Linux 
+    All Sieden, Kunstwarken un annern Kraam sünd mit fre\'e Open Source Software op GNU/Linux
     maakt worrn un all de Dateien kannst du op de Websteed hier in dat Menü &#39;Originaldateien&#39; finnen.
     Geern dörvt ji de Saken kommerziell bruken, översetten, wiedergeven oder Fan-Art, Drucke, Films, Videospelen usw. maken.
     Ji mööt man blots mien Naam - David Revoy - as Autor nömen.</p>
@@ -250,7 +250,7 @@ $LANG = array(
     <p>Website powered by <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################

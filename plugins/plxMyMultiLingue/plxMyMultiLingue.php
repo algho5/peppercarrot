@@ -23,7 +23,7 @@ class plxMyMultiLingue extends plxPlugin {
 
 		# récupération de la langue si présente dans l'url
 		$get = plxUtils::getGets();
-    
+
 		//if(isset($_COOKIE["plxMyMultiLingue"])) {
       //$this->lang = $_COOKIE["plxMyMultiLingue"];
     //} elseif(isset($_SESSION['lang'])) {
@@ -41,7 +41,7 @@ class plxMyMultiLingue extends plxPlugin {
 			$this->lang = $_COOKIE["plxMyMultiLingue"];
 		else
 			$this->lang = $default_lang;
-    
+
 		//if(preg_match('/^([a-zA-Z]{2})\/(.*)/', $get, $capture))
 		//	$this->lang = $capture[1];
 		//elseif(isset($_SESSION['lang']))
@@ -88,7 +88,7 @@ class plxMyMultiLingue extends plxPlugin {
 
 		# déclaration hook utilisateur à mettre dans le thème
 		$this->addHook('MyMultiLingue', 'MyMultiLingue');
-        
+
     # Specific rules for Pepper&Carrot :
     $this->addHook('MyMultiLingueGetLang', 'MyMultiLingueGetLang');
     $this->addHook('MyMultiLingueComicLang', 'MyMultiLingueComicLang');
@@ -100,7 +100,7 @@ class plxMyMultiLingue extends plxPlugin {
     $this->addHook('MyMultiLingueBackgroundColor', 'MyMultiLingueBackgroundColor');
     $this->addHook('MyMultiLingueFramagitLinkDisplay', 'MyMultiLingueFramagitLinkDisplay');
     $this->addHook('MyMultiLingueCommentLinkDisplay', 'MyMultiLingueCommentLinkDisplay');
-        
+
 		# récupération des langues enregistrées dans le fichier de configuration du plugin
 		if($this->getParam('flags')!='')
 			$this->aLangs = explode(',', $this->getParam('flags'));
@@ -335,14 +335,14 @@ class plxMyMultiLingue extends plxPlugin {
 		}
 		?>';
 	}
-    
+
 	/**
 	 * Méthode qui propose un fallback en anglais quand une page statique n'est pas traduite
 	 **/
 	public function plxShowConstruct() {
 
 		echo '<?php
-        
+
         $this->plxMotor = plxMotor::getInstance();
 		# Chargement du fichier de lang du theme
 		$langfile = PLX_ROOT.$this->plxMotor->aConf["racine_themes"].$this->plxMotor->style."/lang/'.$this->lang.'.php";
@@ -465,14 +465,14 @@ class plxMyMultiLingue extends plxPlugin {
 	public function AdminTopMenus() {
         echo '<li class="menu custom"><a href="parametres_plugin.php?p=plxMyMultiLingue">★ plxMyMultiLingue</a></li>';
         echo '<div style="clear:both;"></div>';
-        
+
 	}
-    
+
 	/**
 	 * Méthode qui customise le theme de l'admin
 	 * @author	Deevad  , version post 5.3.1
 	**/
-    
+
 	public function AdminTopEndHead() {
         /** echo '
         <style>
@@ -506,7 +506,7 @@ class plxMyMultiLingue extends plxPlugin {
         </style>
         ';**/
 	}
-    
+
 
 	/********************************/
 	/* core/admin/article.php		*/
@@ -659,19 +659,19 @@ class plxMyMultiLingue extends plxPlugin {
 				} else {
 					echo '<li><?php echo "<a class=\"lang'.$sel.'\" href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'. $aLabels[$lang].'</a></li>"; ?>';
 				}
-				
+
 			}
 			echo '</ul>';
 			echo '</div>';
 		}
 	}
-  
+
 public function MyMultiLingueGetLang() {
 
   return $this->lang;
-  
+
 }
-  
+
 /**********************************************************/
 /* Display the pills of available lang (article-webcomic) */
 /**********************************************************/
@@ -713,13 +713,13 @@ public function MyMultiLingueComicLang() {
 /**
  * Method to display a list of the available langage for static pages
  * @author: David Revoy
- **/  
+ **/
 public function MyMultiLingueStaticLang() {
   $plxMotor = plxMotor::getInstance();
   $aLabels = unserialize($this->getParam('labels'));
   # loop on all the lang pluxml know
   foreach($this->aLangs as $idx=>$lang) {
-    # Build a pattern to find a hypothetic translation (eg. en.php, jp.php) in theme/lang/ folder 
+    # Build a pattern to find a hypothetic translation (eg. en.php, jp.php) in theme/lang/ folder
     $LangAvailable = PLX_ROOT.$plxMotor->aConf['racine_themes'].$plxMotor->style.'/lang/'.$lang.'.php';
     # If the label display active lang, let CSS know for highlight via class 'active'
     $sel = $this->lang==$lang ? ' active':'';
@@ -728,7 +728,7 @@ public function MyMultiLingueStaticLang() {
       # Lang registered in PLuxXML, we build the HTML for the language item
       $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'. $aLabels[$lang].'</a></li>"; ?>';
      }
-  }   
+  }
   # Display the resulting full list
   echo $LangString;
 }
@@ -740,7 +740,7 @@ public function MyMultiLingueStaticLang() {
 /**
  * Method to display a list of the available all langage for static pages
  * @author: David Revoy
- **/  
+ **/
 public function MyMultiLingueStaticAllLang($pageurl) {
 
   if(isset($pageurl)) {
@@ -753,7 +753,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
   $aLabels = unserialize($this->getParam('labels'));
   # loop on all the lang pluxml know
   foreach($this->aLangs as $idx=>$lang) {
-    # Build a pattern to find a hypothetic translation (eg. en.php, jp.php) in theme/lang/ folder 
+    # Build a pattern to find a hypothetic translation (eg. en.php, jp.php) in theme/lang/ folder
     $LangAvailable = PLX_ROOT.$plxMotor->aConf['racine_themes'].$plxMotor->style.'/lang/'.$lang.'.php';
     # If the label display active lang, let CSS know for highlight via class 'active'
     $sel = $this->lang==$lang ? ' active':'';
@@ -768,14 +768,14 @@ public function MyMultiLingueStaticAllLang($pageurl) {
       $translationcompletion = 0;
       $epfolders = glob("0_sources/ep[0-9][0-9]*");
       sort($epfolders);
-      foreach($epfolders as $foldername) {   
+      foreach($epfolders as $foldername) {
         $totalepisodecount = $totalepisodecount + 1;
         $testfolderpath = $foldername.'/lang/'.$lang;
         if(is_dir($testfolderpath)) {
           $translationcompletion = $translationcompletion + 1;
         }
       }
-      
+
       $percent = ( $translationcompletion / $totalepisodecount ) * 90 + $websitetranslated;
       $percent = round($percent, 0);
       $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$pageurl.'")."\"';
@@ -783,16 +783,16 @@ public function MyMultiLingueStaticAllLang($pageurl) {
       if ($websitetranslated == 10 ){
       $LangString .= 'website is translated.\">';
       } else {
-      $LangString .= 'website is not translated.\">';      
+      $LangString .= 'website is not translated.\">';
       }
       $LangString .= ''.$aLabels[$lang].' ';
       $LangString .= '<span class=\"percent\" >'.$percent.'%</span> ';
       if ($percent == 100 ){
         $LangString .= '<img src=\"themes/peppercarrot-theme_v2/ico/star.svg\" alt=\"star,\" title=\"Translation complete! Congratulation.\"/>';
-      } 
+      }
       $LangString .= '</a></li>"; ?>';
     }
-  }   
+  }
   # Display results
   echo $LangString;
 }
@@ -804,9 +804,9 @@ public function MyMultiLingueStaticAllLang($pageurl) {
  * Method to display the full comic page in the target langage ( without header )
  * Main input: the vignette of the article
  * @author: David Revoy
- **/ 
+ **/
 public function MyMultiLingueComicDisplay($params) {
-  
+
   if(isset($params)) {
     if(is_array($params)) {
       $definition = empty($params[0])?'low':$params[0];
@@ -814,17 +814,17 @@ public function MyMultiLingueComicDisplay($params) {
   } else {
     $definition = 'low';
   }
-  
+
   # Have we got a preference in memory from previous page?
   if ($_SESSION['SessionMemory'] == "KeepHD") {
     $definition = 'hd';
   }
-  
+
   if ($definition == "hd") {
     $resolutionfolder = "hi-res";
     # Record a token for the next page
     $_SESSION['SessionMemory'] = "KeepHD";
-    
+
   } else {
     $resolutionfolder = "low-res";
   }
@@ -862,7 +862,7 @@ public function MyMultiLingueComicDisplay($params) {
   $comicpage_tester = $episode_source_directory.'/'.$resolutionfolder.'/'.$this->lang.'_'.$vignette_name.'P01.jpg';
   ## debug: to test $comicpage_tester
   #echo '<img src="'.$comicpage_tester.'"><br/>';
-  
+
   # Test if the hypothetical don't file exist
   if (! file_exists($comicpage_tester)) {
   # Force comicpages in english";
@@ -873,9 +873,9 @@ public function MyMultiLingueComicDisplay($params) {
   }
 
   # For every pages found in the actual language with this file pattern
-  foreach (glob(''.$episode_source_directory.'/'.$resolutionfolder.'/'.$usedlang.'_*P[0-9]*[0-9]*.*') as $comicpage_link) {	
-    
-    # debug: display link  
+  foreach (glob(''.$episode_source_directory.'/'.$resolutionfolder.'/'.$usedlang.'_*P[0-9]*[0-9]*.*') as $comicpage_link) {
+
+    # debug: display link
     #echo "<b>&#36;comicpage</b> [" . $comicpage_link . "] <br />";
 
     # Method: Get the page number [0-9][0-9]
@@ -891,13 +891,13 @@ public function MyMultiLingueComicDisplay($params) {
     if ( $comicpage_number != "00" ) {
       # Remove the 0 in front of double digit page number
       $comicpage_number = ltrim($comicpage_number, '0');
-      # Build a usefull alternative link in case of a page do not load...    
+      # Build a usefull alternative link in case of a page do not load...
       $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$episode_number.' ['.$this->lang.'], '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
-    
+
 
     # Define the anchor link
     $comicpage_anchorlink = ''.$plxShow->Getlang('UTIL_PAGE').''.$comicpage_number.'';
-    # Get the geometry size of the comic page for correct display ratio on HTML  
+    # Get the geometry size of the comic page for correct display ratio on HTML
     $comicpage_size = getimagesize($comicpage_link);
 
     # Display (add a special rule to detect gif in HD mode and upscale them on webbrowser).
@@ -923,7 +923,7 @@ public function MyMultiLingueComicDisplay($params) {
  * Method to display the page 00 (header) separately
  * Main input: the vignette of the article
  * @author: David Revoy
- **/ 
+ **/
 public function MyMultiLingueComicHeader() {
 
   $plxMotor = plxMotor::getInstance();
@@ -950,7 +950,7 @@ public function MyMultiLingueComicHeader() {
   $comicpage_header = $episode_source_directory.'/low-res/'.$this->lang.'_'.$vignette_name.'P00.jpg';
   ## debug: to test $comicpage_tester
   #echo '<img src="'.$comicpage_tester.'"><br/>';
-  
+
     # Test if the hypothetical don't file exist
     if (! file_exists($comicpage_header)) {
     # Force comicpages in english";
@@ -964,13 +964,13 @@ public function MyMultiLingueComicHeader() {
 
     # Remove the 0 in front of double digit page number
     $comicpage_number = '0';
-    # Build a usefull alternative link in case of a page do not load...    
+    # Build a usefull alternative link in case of a page do not load...
     $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$episode_number.' ['.$this->lang.'], '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
     # Define the anchor link
     $comicpage_anchorlink = ''.$plxShow->Getlang('UTIL_PAGE').''.$comicpage_number.'';
-    # Get the geometry size of the comic page for correct display ratio on HTML  
+    # Get the geometry size of the comic page for correct display ratio on HTML
     $comicpage_size = getimagesize($comicpage_header);
-    
+
     # Display of the resulting HTML code of the header
     echo '
     <div class="panel" align="center">
@@ -985,7 +985,7 @@ public function MyMultiLingueComicHeader() {
 /**
  * Method to display a link to the source of the active webcomic
  * @author: David Revoy
- **/ 
+ **/
 public function MyMultiLingueSourceLinkDisplay() {
   $plxMotor = plxMotor::getInstance();
   $plxShow = plxShow::getInstance();
@@ -1007,7 +1007,7 @@ public function MyMultiLingueSourceLinkDisplay() {
 /**
  * Method to return an hex color for the background of an episode, from a json file
  * @author: David Revoy
- **/ 
+ **/
 public function MyMultiLingueBackgroundColor() {
   $plxMotor = plxMotor::getInstance();
   $plxShow = plxShow::getInstance();
@@ -1034,7 +1034,7 @@ public function MyMultiLingueBackgroundColor() {
 /**
  * Method to display a link to the Framagit folder of the active webcomic
  * @author: David Revoy
- **/ 
+ **/
 public function MyMultiLingueFramagitLinkDisplay() {
   $plxMotor = plxMotor::getInstance();
   $plxShow = plxShow::getInstance();
@@ -1059,7 +1059,7 @@ public function MyMultiLingueFramagitLinkDisplay() {
  * nb_com = comment number
  * url = raw url
  * @author: David Revoy
- **/ 
+ **/
 public function MyMultiLingueCommentLinkDisplay($params) {
   $plxMotor = plxMotor::getInstance();
   $plxShow = plxShow::getInstance();
@@ -1070,11 +1070,11 @@ public function MyMultiLingueCommentLinkDisplay($params) {
   } else {
     $type = '';
   }
-  
+
   $jsonpath = "0_sources/comments.json";
   $contents = file_get_contents($jsonpath);
-  $get = json_decode($contents); 
-  
+  $get = json_decode($contents);
+
   $aLabels = unserialize($this->getParam('labels'));
   $vignette = $plxMotor->plxRecord_arts->f('thumbnail');
   $vignette_parts = pathinfo($vignette);
@@ -1091,7 +1091,7 @@ public function MyMultiLingueCommentLinkDisplay($params) {
   $activelang = $this->lang;
   # retrieve epXX
   $episodeid = 'ep'.$episode_number;
-  
+
   # Display depending what variable user pass:
   if($type == 'url') {
     $comurl = $get->{$episodeid}->{'url'};

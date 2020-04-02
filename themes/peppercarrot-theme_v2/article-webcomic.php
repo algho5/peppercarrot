@@ -2,27 +2,27 @@
 
   # Have we got a new variable 'option' in URL ? grab and security fix it.
   $UrlAdressOption = htmlspecialchars($_GET["option"]);
-  $UrlAdressOption = preg_replace('/[^A-Za-z0-9\._-]/', '', $UrlAdressOption);  
+  $UrlAdressOption = preg_replace('/[^A-Za-z0-9\._-]/', '', $UrlAdressOption);
 
   if ($UrlAdressOption == "hd") {
     $hdstatus = '';
     $LinkVariable = '&option=low';
-    
+
     } elseif ($UrlAdressOption == "low") {
     $hdstatus = 'moka';
     $LinkVariable = '&option=hd';
     $_SESSION['SessionMemory'] = "RemoveHD";
-    
+
     } else {
     $hdstatus = 'moka';
     $LinkVariable = '&option=hd';
   }
-  
+
   # Have we got a preference in memory from previous page?
   if ($_SESSION['SessionMemory'] == "KeepHD") {
     $hdstatus = '';
     $LinkVariable = '&option=low';
-    
+
     } elseif ( $_SESSION['SessionMemory'] == "RemoveHD") {
     $memoryoption = 'low';
   }
@@ -32,7 +32,7 @@
   <main class="main grid" role="main">
     <section>
       <article class="article" role="article" id="post-<?php echo $plxShow->artId(); ?>">
-      
+
         <div class="col sml-12 sml-text-right">
           <nav class="nav" role="navigation">
             <div class="responsive-langmenu">
@@ -48,32 +48,32 @@
             </div>
           </nav>
         </div>
-        
+
         <div style="clear:both;">
         </div>
 
         <?php eval($plxShow->callHook('MyMultiLingueComicHeader')) ?>
-        
-        <?php 
+
+        <?php
         $buttonthemeA = '';
         $buttonthemeB = '';
-        include(dirname(__FILE__).'/navigation.php'); 
+        include(dirname(__FILE__).'/navigation.php');
         ?>
 
         <section class="text-center">
-          <?php eval($plxShow->callHook("MyMultiLingueComicDisplay", array(''.$UrlAdressOption.''))) ?>  
+          <?php eval($plxShow->callHook("MyMultiLingueComicDisplay", array(''.$UrlAdressOption.''))) ?>
         </section>
-        
+
       </article>
-      
+
       <div class="content">
         <div style="clear:both;">
         </div>
-        
+
         <div class="grid">
-        
+
           <section class="col sml-12 med-12 lrg-11 text-center sml-centered">
-            
+
             <div class="cardsocket mini col sml-4 med-4 lrg-4">
               <div class="cardblock mini">
                 <figure class="thumbnail">
@@ -88,8 +88,8 @@
                 </div>
               </div>
             </div>
-            
-          
+
+
             <div class="cardsocket mini col sml-4 med-4 lrg-4">
               <div class="cardblock mini">
                 <figure class="thumbnail">
@@ -119,26 +119,26 @@
                 </div>
               </div>
             </div>
-            
-          <?php 
+
+          <?php
           $buttonthemeA = 'button';
           $buttonthemeB = 'button moka';
-          include(dirname(__FILE__).'/navigation.php'); 
+          include(dirname(__FILE__).'/navigation.php');
           ?>
-          
+
             <br/>
-            
+
             <time style="color: rgba(0,0,0,0.6);" datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
               <?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>
             </time>
-            
+
           </section>
-          
+
       </div>
-      
+
       <div style="clear:both;">
       <br/>
-      
+
 
     </section>
   </main>

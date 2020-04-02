@@ -152,12 +152,12 @@ $LANG = array(
 
 'CONTRIBUTE_FANART'	    => '
     <h2>Ôd fanōw:</h2>
-    
+
     <p>Pepper&amp;Carrot je ôdewrzōny na fanōw: cechōnki, scynariusze, rzeźby, modele 3D, fan-fiction. Prześlij mi je, (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, abo napisz na placu społecznościowym) coby trefiyły do galeryje fanartōw:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Adaptacyje:</h2>
-    
+
     <p>Pepper&amp;Carrot może być adaptowany do wielu projektōw i produktōw. Możno sprŏwisz włŏsny abo spōmożesz kogoś?</p>
 ',
 
@@ -168,8 +168,8 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Nece społecznościowe:',
- 
-'CONTRIBUTE_PRESS'	    => '     
+
+'CONTRIBUTE_PRESS'	    => '
     <h2>Presa:</h2>
 
     <p>Bydź wydŏwcōm Pepper&amp;Carrot! Pisz artikle, rychtuj posty, tajluj sie i ôdewiyrej skupiny na ôblubiōnych necach społecznościowych. Na zajcie źrōdeł możesz sebrać <a href="?static6/sources" title="Źródła">sztofy presowe</a>.</p>
@@ -252,7 +252,7 @@ $LANG = array(
     <p>Plac podpiyrany bez <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################

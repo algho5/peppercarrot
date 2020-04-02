@@ -76,11 +76,11 @@ $LANG = array(
 # Page: Philosophy
 'PHILOSOPHY_TOP'    =>  '
  <h2>후원자로부터의 지원</h2>
-    
+
     <p>후추와 당근 프로젝트는 전 세계의 후원자들이 지원하고 있습니다.
     각 후원자는 새 에피소드가 게시 될 때마다 소정의 돈을 보내고, 새 에피소드의 마지막에 감사의 말을 받습니다.
     이 시스템 덕분에 후추와 당근은 스스로 자립할 수 있고, 광고나 마케팅에 의존할 팔요가 없습니다.</p>
-    
+
 ',
 'DONATE_INTRO'		=> '
     <p>
@@ -92,20 +92,20 @@ $LANG = array(
     <img alt="후원을 나타내는 삽화" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
     <h2>영원히 100% 자유, 과금장벽 없음</h2>
-    
+
     <p>이 홈페이지의 제가 만든 후추와 당근의 모든 내용들은 자유롭게 사용 가능합니다.
     저는 당신들을 똑같이 존중합니다： 후원을 하거나, 안하거나요. 후원자들을 위한 특별 자료들은 이곳에도 모두 게시됩니다.
     후추와 당근은 절대 새로운 컨텐츠를 보기 위해 돈이나 구독을 요구하지 않습니다.</p>
-    
+
         <img alt="과금장벽을 나타내는 삽화" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>오픈소스와 허용범위</h2>
-    
+
     <p>저는 모든 사람들에게 제 작품을 통해 공유하고, 사용하고, 만들고, 심지어 돈을 벌 수 있는 권리도 주려고 합니다.
     모든 페이지, 삽화 및 내용은 GNU/Linux 에서 자유 오픈소스 소프트웨어로 제작되었고, 모든 소스는 이 웹사이트의 &#39;소스&#39;탭에 있습니다.
     상업적 사용, 번역, 팬아트, 인쇄, 영화, 비디오게임, 공유 그리고 재게시를 장려합니다.
     다만 저작자(아티스트, 교정사, 번역가, 당신이 사용하려는 그림의 번역가)를 명시해 주고, 라이선스에 대한 링크를 제공하고, 변경사항만 나타내면 됩니다. 상식적 테두리 안에서 어떻게든 표시하면 되지만, 저작자에게 허락을 받았다는 식으로 표시해서는 안 됩니다.</p>
-    
+
     <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.ko" title="자세한 정보를 원하시면, 크리에이티브 커먼즈 저작자 표시 4.0을 읽어주세요">
             라이선스：크리에이티브 커먼즈 저작자 표시 4.0
@@ -115,7 +115,7 @@ $LANG = array(
         <img alt="오픈소스 미디어를 나타내는 삽화" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>누구에게나, 어디서나 고품질의 엔터테인먼트 제공</h2>
-    
+
     <p>후추와 당근은 전 연령층을 위한 코미디/유머 만화입니다.
     선정성 및 폭력성을 띠지 않습니다. 자유 오픈소스인 후추와 당근은 자유 문화가 얼마나 멋진지를 잘 보여주는 훌륭한 사례중 하나입니다.
     자유 오픈소스가 비전문적이거나 저질이라는 것을 의미하지는 않기 때문에, 저는 품질에 초점을 맞추고 있습니다. 오히려 그 반대라고 할 수 있죠.</p>
@@ -123,24 +123,24 @@ $LANG = array(
         <img alt="모두를 위한 삽화" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>만화책 산업을 바꿉시다!</h2>
-    
+
     <p>
       예술가와 독자 사이의 중간단계를 없애면 여러분은 비용을 절약하고 저는 더 많은 이득을 봅니다. 여러분은 저를 직접 후원합니다.
       어떤 출판사/배급사/마케팅/상점도 후추와 당근을 그들이 원하는 &#39;시장&#39;에 맞게 바꾸도록 할 수 없습니다.
       어째서 하나의 성공이 전체 산업을 위협하는 신호탄이 될 수 없을까요? 기대해 보자고요...
     </p>
-    
+
     <div class="button">
       <a href="?static12/donate" title="회차당 단돈 $1로, 후추와 당근의 새 후원자가 되어주세요">
           오늘 후추와 당근의 제작에 힘을 보태 주세요.
       </a>
     </div>
- 
+
     <img alt="삽화: 기존 만화책 산업구조와 후원자(Patreon) 구조 비교" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
- 
+
 ################################################################################
-# Page : Contribute 
+# Page : Contribute
 'CONTRIBUTE_TITLE'		=> '참여',
 'CONTRIBUTE_TOP'		=> '
     <p><a href="?static6/sources" title="소스 페이지">오픈소스</a> 와 <a href="http://creativecommons.org/licenses/by/4.0/">
@@ -165,7 +165,7 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_SOCIAL'	    => '소셜 네트워크:',
- 
+
 'CONTRIBUTE_PRESS'	    => '
     <h2>출판:</h2>
 
@@ -202,7 +202,7 @@ $LANG = array(
     <p>이 파일들을 다운로드하고 사용함으로써 당신은<br/>
     <a href="http://creativecommons.org/licenses/by/4.0/deed.ko">크리에이티브 커먼즈 저작자표시 4.0</a>을 준수함에 동의합니다.<br/>
     자세한 사항은 각 프로젝트의 README 파일에 있습니다.<br/></p>
-  
+
     <p><b>번역, 스크립트, 웹 사이트, 그래픽 등을 위한 코드저장소：</b><br/></p>
 ',
 'SOURCE_COVER'   =>  '표지',
@@ -219,7 +219,7 @@ $LANG = array(
     <p>안녕하세요，제 이름은 David Revoy이고, 1981년생 프랑스 예술가입니다. 저는 드로잉, 페인팅, 고양이, 컴퓨터, Gnu/Linux 오픈소스문화, 인터넷, 고전학교 RPG 비디오게임, 고전 만화와 애니메이션, 전통예술, 일본문화, 판타지를 좋아해서 독학하고 있습니다.<br />
     <br />
     프리랜서로 디지털 페인팅, 강의, 컨셉 아트, 삽화, 미술 감독 분야에서 10년 이상 경력을 쌓은 후, 저는 제 프로젝트를 시작하기로 결정했습니다. 그리고 마침내 저는 모든 열정을 하나로 모을 수 있는 방법을 찾았고, 그 결과가 후추와 당근입니다.</p>
-    
+
     <p>저의 포트폴리오：</p>
 ',
 'AUTHOR_TODO_DREAM'	    => '
@@ -249,11 +249,11 @@ $LANG = array(
 'FOOTER_CONTENT'		=> '
     <p>만화와 작품 그리고 모든 글은 별도로 명시되지 않은 경우 <a href="https://creativecommons.org/licenses/by/4.0/deed.ko" title="자세한 내용을 원하신다면 크리에이티브 커먼즈 저작자 표시 4.0 을 참조하십시오">크리에이티브 커먼즈 저작자 표시 4.0</a>라이선스를 따릅니다.<br/>
     작가：David Revoy，www.davidrevoy.com 더 많은 정보를 원하신다면，<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>로 연락주세요.</p>
-    
-    <p>이 웹사이트는 <a href="http://www.pluxml.org" title="PluXml">PluXml</a>에서 제공합니다</p> 
+
+    <p>이 웹사이트는 <a href="http://www.pluxml.org" title="PluXml">PluXml</a>에서 제공합니다</p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
 'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
 ################################################################################

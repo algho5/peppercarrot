@@ -77,7 +77,7 @@ $LANG = array(
 # Page: Philosophy
 'PHILOSOPHY_TOP'    =>  '
  <h2>Được giúp đỡ bởi các nhà tài trợ</h2>
-    
+
     <p>Dự án Hạt Tiêu&amp;Cà Rốt được tài trỡ bởi những người ủng hộ trên khắp thế giới
     Những người ủng hộ tài trợ cho những tập truyện mới phát hành, được ghi nhận ở cuối mỗi tập truyện.
     Cảm ơn hệ thống này, Hạt Tiêu&amp;Cà Rốt có thể hoạt động độc lập và không phải dùng quảng cáo khó chịu.</p>
@@ -90,22 +90,22 @@ $LANG = array(
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
     <img alt="illustration representing patronage" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
-    
+
     <h2>100% miễn phí, mãi mãi và không yêu cầu trả tiền</h2>
-    
+
     <p>Mỗi nội dung liên quan đến Hạt Tiêu&amp;Cà Rốt được đăng trên này, miên phí cho tất cả mọi người
     Tôi tôn trọng tất cả các bạn một cách công bằng: dù có tiêng hay không đi chăng nữa. Tất cả những bonus đặc biệt cho các nhà tài trợ sẽ được đăng ở đây.
     Hạt Tiêu&amp;Cà Rốt sẽ không bao giờ yêu cầu bạn trả tiền hay đăng kí để có thể xem nội dung truyện.</p>
-    
+
         <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
     <h2>Mã nguồn mở và dễ dàng</h2>
-    
+
     <p>Tôi muốn mọi người có quyền để chia sẻ, sử dụng, xây dựng and và kể cả kiếm lợi nhuận từ tắc phẩm Tôi đã làm ra.
     Tất cả các trang, bản vẽ và nội dung được làm vơi các công cụ miễn phí và mã nguồn mở, Software trên Gnu/Linux, và tất cả nguồn được viết trên trang web này, &#39;Source&#39; menu.
     Các sử dụng thương mại, bản dịch, fan-arts, in-ấn, phim, video-games, sharing, đăng lại luôn được khuyến khích.
     Bạn chỉ cần nêu tên tôi - David Revoy - là tác giả của truyện.</p>
-    
+
     <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="Thông tin chi tiết, đọc the Creative Commons Attribution 4.0">
             Giấy phép: Creative Commons Attribution 4.0
@@ -115,7 +115,7 @@ $LANG = array(
         <img alt="illustration representing open-source medias" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Sự giải trí cao cho tất cả mọi người, ở khắp mọi nơi</h2>
-    
+
     <p>Hạt Tiêu&amp;Cà Rốt là một câu truyện giải trí và hài hước cho tất cả mọi người ở mọi lứa tuổi
     Không chứa nội dung không phù hợp và bạo lực. Miễn phí và nguồn mở, Hạt Tiêu&amp;Cà Rốt tự hào là một ví dụ về sự tuyệt vời khi sử dụng văn hóa-miễn phí .
     Tôi chú ý rất nhiều trên chất lượng, bởi vì sự miễn phí không có nghĩa là tồi tệ cùng với sự nghiệp dư. "Au contraire" (mà ngược lại).</p>
@@ -123,24 +123,24 @@ $LANG = array(
         <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Hãy cùng thay đổi nền công nghiệp truyện tranh</h2>
-    
+
     <p>
       Với khoảng cách trung gian ngắn hơn giữa người đọc và tác giả, các bạn phải trả ít hơn và tôi nhận được nhiều hơn. Các bạn giúp đỡ tôi một cách trực tiếp.
       Không một nhà xuất bản/ nhà phân phối/ marketing/ nhà thiết kế nào có thể bắt tôi thay đổi Hạt Tiêu&amp;Cà Rốt để phù hợp với &#39;thị trường&#39; trong mắt họ.
       &nbsp;.&nbsp;.&nbsp;.&nbsp;Tại sao ta không tạo nên một thành công  và &#39;hiệu ứng tuyết lăn&#39; cho cả một nền công nghiệp? Hãy cùng cố gắng nào!
     </p>
-    
+
     <div class="button">
       <a href="?static12/donate" title="Chỉ với 1$ mỗi tập, hãy ủng hộ Hạt Tiêu&amp;Cà Rốt">
         Hãy giúp đỡ tôi đẩy mạnh việc hoàn thành Hạt Tiêu&amp;Cà Rốt ngay hôm nay
-      </a> 
+      </a>
     </div>
- 
+
     <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
- 
+
 ################################################################################
-# Page: Contribute 
+# Page: Contribute
 'CONTRIBUTE_TITLE'		=> 'Đóng góp',
 'CONTRIBUTE_TOP'		=> '
     <p>Cảm ơn <a href="?static6/sources" title="Sources page">Mã nguồn mở</a> này và <a href="http://creativecommons.org/licenses/by/4.0/">
@@ -149,45 +149,45 @@ $LANG = array(
 
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-art</h2>
-    
+
     <p> Hạt Tiêu&amp;Cà Rốt đã mở cho fan-arts: Vẽ, viết kịch bản, làm tượng, các mẫu 3D, fan-fiction. Hãy gửi cho tôi qua (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>) , hay liên lạc với tôi qua mạng xã hội) để có thể ở trong fan-art gallery:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Các chỉnh sửa, sáng tạo:</h2>
-    
+
     <p>Hạt Tiêu&amp;Cà Rốt sẽ chấp nhận những dự án hay sản phẩm, Tại sao bạn không thử làm hay tham gia một dự án nhỉ?</p>
 ',
 
 'CONTRIBUTE_TRANSLATION'	    => '
     <h2>Dịch và chỉnh sửa:</h2>
-    
+
     <p> trang web Hạt Tiêu&amp;Cà Rốt được thiết kể với nhiều ngôn ngữ và chấp nhận mọi ngôn ngữ (kể cả những ngôn ngữ đã biến mất hay tưởng tượng ra). Nguồn của trang này được dịch tùy ý bạn. Xem <a href="?static14/documentation&page=010_Translate_the_comic"> Hướng dẫn</a> để biết thêm thông tin cho việc dịch ngôn ngữ.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'	    => 'Mạng xã hội:',
- 
-'CONTRIBUTE_PRESS'	    => '            
-    <h2>Báo chí:</h2> 
-    
-    <p>Hãy trở thành nhà xuất bản cho Hạt Tiêu&amp;Cà Rốt! Viết các bài viết, đăng lên website, chia sẻ và xây dựng cộng đồng trên các mạng xã hội ưa thích của bạn. bạn có thể tải về <a href="?static6/sources" title="Sources page">press kit</a> trên trang "Nguồn".</p>  
+
+'CONTRIBUTE_PRESS'	    => '
+    <h2>Báo chí:</h2>
+
+    <p>Hãy trở thành nhà xuất bản cho Hạt Tiêu&amp;Cà Rốt! Viết các bài viết, đăng lên website, chia sẻ và xây dựng cộng đồng trên các mạng xã hội ưa thích của bạn. bạn có thể tải về <a href="?static6/sources" title="Sources page">press kit</a> trên trang "Nguồn".</p>
 ',
 
-'CONTRIBUTE_OTHER'	    => '    
+'CONTRIBUTE_OTHER'	    => '
     <h2> các ý tưởng đóng góp khác&nbsp;.&nbsp;.&nbsp;.&nbsp;</h2>
-    
+
     <p> Mỗi người có cách đóng góp khác nhau: <br/>
         <b>Các nhà phát triển:</b>  tạo một app để Hạt Tiêu&amp;Cà Rốt có thể đọc trên các thiết bị di động.<br />
         <b>Nhạc sĩ:</b>  tạo một bản nhạc nền cho Hạt Tiêu&amp;Cà Rốt.<br />
         <b>Nhà văn: </b>  viết một câu truyện mới về Hạt Tiêu&amp;Cà Rốt.<br />
         <b>Nhà báo: </b> Nói về Hạt Tiêu&amp;Cà Rốt trên các phương tiện truyện thông (báo mạng, tv, etc.)<br />
         <b>Thợ in:</b> in áp phíc hay bản vẽ về Hạt Tiêu&amp;Cà Rốt.<br />
-    </p> 
+    </p>
 ',
 
-'CONTRIBUTE_IRC'	    => '            
+'CONTRIBUTE_IRC'	    => '
     <h2 id="irc"> Kênh IRC:</h2>
-    
-    <p> Hãy cùng bàn luận về Hạt Tiêu&amp;Cà Rốt. Tôi sẽ có mặt vào ban ngày vói múi giờ châu âu (nickname:deevad) <br/> 
+
+    <p> Hãy cùng bàn luận về Hạt Tiêu&amp;Cà Rốt. Tôi sẽ có mặt vào ban ngày vói múi giờ châu âu (nickname:deevad) <br/>
 ',
 
 ################################################################################
@@ -202,7 +202,7 @@ $LANG = array(
     <p>Bằng cách tải về và làm việc với những file này bạn đồng ý với các điều khoản sau <br/>
     <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license</a>.
     Kiểm tra README file trong mỗi dự án để biết thêm thông tin.</p>
-  
+
     <p><b> Mã kho cho bản dịch, kịch bản, trang web, hình ảnh, vv.:</b><br/></p>
 ',
 'SOURCE_COVER'   =>  'Ảnh bìa',
@@ -219,7 +219,7 @@ $LANG = array(
     <p>Xin chào, tôi là David Revoy và tôi là một nghẹ sĩ người Pháp sinh năm 1981. Tôi tự học và đam mê về hội họa, mèo, máy tính, Gnu/Linux văn hóa với mã nguồn mở, Internet, RPG video-games cũ, mangas và anime cũ, hội họa truyền thống, văn hóa Nhạt Bản, fantasy&nbsp;.&nbsp;.&nbsp;.&nbsp;<br />
     <br />
     sau hơn 10 năm ở Freelance về digital-painting, dạy học, concept-art, illustration, art-direction, tôi quyết định bắt đầu dự án riếng. Cuối cùng tôi tìm ra cách để hoàn thành tất cả niềm đam mê của tôi; và kết quả là Hạt Tiêu&amp;Cà Rốt.</p>
-    
+
     <p>Danh mục đầu tư của tôi:</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
@@ -245,11 +245,11 @@ $LANG = array(
 'FOOTER_CONTENT'    => '
     <p>Truyện tranh, các tác phẩm và văn bản được ký giấy phép bởi <a href="https://creativecommons.org/licenses/by/4.0/" title="Thông tin chi tiết, đọc the Creative Commons Attribution 4.0">Creative Commons Attribution 4.0</a>, trừ khi có ghi chú khác trong trang.<br/>
     Ghi nhận tác giả "David Revoy, www.davidrevoy.com". Liên lạc: <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> cho các thông tin khác.</p>
-    
-    <p>Trang web được hỗ trợ bởi <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p> 
+
+    <p>Trang web được hỗ trợ bởi <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
-# Eshop 
+# Eshop
 'ESHOP_COMIC'        =>   'Sách bức tranh và sách nghệ thuật tại:',
 'ESHOP_SHOP'         =>   'Áp phích, ly cà phê, áo thun, và đồ khác tại:',
 ################################################################################
@@ -267,4 +267,4 @@ $LANG = array(
 'LAST'   =>  'Cuối cùng',
 );
 
-?>  
+?>
