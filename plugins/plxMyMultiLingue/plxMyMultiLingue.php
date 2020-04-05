@@ -807,29 +807,32 @@ public function MyMultiLingueStaticAllLang($pageurl) {
  **/
 public function MyMultiLingueComicDisplay($params) {
 
-  if(isset($params)) {
-    if(is_array($params)) {
-      $definition = empty($params[0])?'low':$params[0];
+  $hd = false;
+  $transcript = false;
+  if (isset($params)) {
+    if (is_array($params)) {
+      $hd = !isset($params['hd']) || empty($params['hd']) ? false : $params['hd'];
+      $transcript = !isset($params['transcript']) || empty($params['transcript']) ? false : $params['transcript'];
     }
-  } else {
-    $definition = 'low';
   }
 
   # Have we got a preference in memory from previous page?
-  if ($_SESSION['SessionMemory'] == "KeepHD") {
-    $definition = 'hd';
+  if ($_SESSION['SessionHD']) {
+    $hd = true;
+  }
+  if ($_SESSION['SessionTranscript']) {
+    $transcript = true;
   }
 
-  if ($definition == "hd") {
+  if ($hd) {
     $resolutionfolder = "hi-res";
     # Record a token for the next page
-    $_SESSION['SessionMemory'] = "KeepHD";
-
+    $_SESSION['SessionHD'] = 1;
   } else {
     $resolutionfolder = "low-res";
   }
   # debug
-  # echo "<b>Url variable + &#36;resolution</b> : ".$definition."  [" . $resolutionfolder . "] <br />";
+  # echo "<b>Url variable + &#36;resolution</b> : ".($hd ? 'hd' : 'low')."  [" . $resolutionfolder . "] <br />";
 
   $plxMotor = plxMotor::getInstance();
   $plxShow = plxShow::getInstance();
@@ -852,6 +855,8 @@ public function MyMultiLingueComicDisplay($params) {
   $vignette_name = substr($vignette_parts['filename'], 3);
   ## Keep only last two digit of vignette filename because they are the episode number
   $episode_number = substr($vignette_name, -2);
+  # We need to keep the leading zeroes for the transcripts
+  $episode_number_with_zeroes = $episode_number;
   ## In case of leading leading 0, remove it to beautify (ep01 => ep1)
   $episode_number = ltrim($episode_number, '0');
   ## debug: to test
@@ -886,6 +891,9 @@ public function MyMultiLingueComicDisplay($params) {
     ## debug: to test
     #echo "<b>&#36;pagenumber</b> [" . $comicpage_number . "] <br />";
 
+    # We need to keep the leading zeroes for the transcripts
+    $comicpage_number_with_zeroes = $comicpage_number;
+
     # Managing conditional alt text for <img> html tag
     ## only in case of a normal page
     if ( $comicpage_number != "00" ) {
@@ -901,10 +909,10 @@ public function MyMultiLingueComicDisplay($params) {
     $comicpage_size = getimagesize($comicpage_link);
 
     # Display (add a special rule to detect gif in HD mode and upscale them on webbrowser).
-      if ($definition == "hd" AND strpos($comicpage_link, 'gif') !== false) {
+      if ($hd AND strpos($comicpage_link, 'gif') !== false) {
         echo '<div class="panel" align="center">';
         echo '<img class="comicpage" style="max-width:2276px;" width="92%" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
-      } else if ($definition != "hd" AND strpos($comicpage_link, 'gif') !== false) {
+      } else if (!$hd AND strpos($comicpage_link, 'gif') !== false) {
         echo '<div class="panel" align="center">';
         echo '<img class="comicpage" style="max-width:1176px;" width="92%" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
       } else {
@@ -912,6 +920,15 @@ public function MyMultiLingueComicDisplay($params) {
         echo '<img class="comicpage" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
       }
       echo '</div>';
+      if ($transcript) {
+        # Record a token for the next page
+        $_SESSION['SessionTranscript'] = 1;
+        # Include html file with transcript if available
+        $transcript_filename = $episode_source_directory.'/hi-res/html/'.$usedlang.'_E'.$episode_number_with_zeroes.'P'.$comicpage_number_with_zeroes.'.html';
+        if (file_exists($transcript_filename)) {
+          readfile($transcript_filename);
+        }
+      }
     }
   }
 }
@@ -922,9 +939,12 @@ public function MyMultiLingueComicDisplay($params) {
 /**
  * Method to display the page 00 (header) separately
  * Main input: the vignette of the article
+ *
+ * @param $transcript  boolean  Whether to include an HTML transcript of the title when available
+ *
  * @author: David Revoy
  **/
-public function MyMultiLingueComicHeader() {
+public function MyMultiLingueComicHeader($transcript) {
 
   $plxMotor = plxMotor::getInstance();
   $plxShow = plxShow::getInstance();
@@ -940,6 +960,8 @@ public function MyMultiLingueComicHeader() {
   $vignette_name = substr($vignette_parts['filename'], 3);
   ## Keep only last two digit of vignette filename because they are the episode number
   $episode_number = substr($vignette_name, -2);
+  # We need to keep the leading zeroes for the transcripts
+  $episode_number_with_zeroes = $episode_number;
   ## In case of leading leading 0, remove it to beautify (ep01 => ep1)
   $episode_number = ltrim($episode_number, '0');
   ## debug: to test
@@ -977,6 +999,26 @@ public function MyMultiLingueComicHeader() {
         <img class="comicpage" src="'.$comicpage_header.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">
     </div>
     ';
+
+	if ($transcript) {
+		# Include html file with transcript if available
+		$transcript_filename = $episode_source_directory.'/hi-res/html/'.$this->lang.'_E'.$episode_number_with_zeroes.'P00.html';
+		if (file_exists($transcript_filename)) {
+		echo '<div class="panel" align="center">';
+		readfile($transcript_filename);
+			// Display a button for opening this page in http://multidict.net/wordlink/
+			echo '<div class="button top moka">';
+				echo '<a href="https://multidict.net/wordlink/?sl=en&url=';
+				print($plxShow->artUrl().urlencode('&transcript=1'));
+				echo '" title="'.$plxShow->Getlang('NAVIGATION_DICTIONARY_ALT').'">'.$plxShow->Getlang('NAVIGATION_DICTIONARY').'</a>';
+			echo '</div>';
+		echo '</div>';
+		} else {
+		echo '<div class="panel notice" align="center">';
+			echo ''.$plxShow->Getlang('NAVIGATION_TRANSCRIPT_UNAVAILABLE').'';
+		echo '</div>';
+		}
+	}
 }
 
 /********************************/

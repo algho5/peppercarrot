@@ -30,6 +30,17 @@ $LANG = array(
 'ESHOP'      => 'Bùth',
 'FOLLOW'     => 'Lean ri Pepper&amp;Carrot air:',
 
+# Top menu website buttons:
+'NAVIGATION_TRANSCRIPT' => 'Tar-sgrìobhadh',
+'NAVIGATION_TRANSCRIPT_ON' => 'Briog airson tar-sgrìobhadh a shealltainn',
+'NAVIGATION_TRANSCRIPT_OFF' => 'Briog airson an tar-sgrìobhadh fhalach',
+'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Transcript not available for this episode and this language.',
+'NAVIGATION_HD' => 'HD 2400px',
+'NAVIGATION_HD_ON' => 'Briog airson dealbhan a shealltainn le càileachd àrd',
+'NAVIGATION_HD_OFF' => 'Briog airson dealbhan a shealltainn le càileachd àbhaisteach',
+'NAVIGATION_DICTIONARY' => 'Faclair',
+'NAVIGATION_DICTIONARY_ALT' => 'Briog airson fhosgladh le Wordlink a chùm luirg luaith san fhaclair',
+
 ################################################################################
 # Top and bottom translation panel
 'ADD_TRANSLATION' => 'cuir eadar-theangachadh ris',
