@@ -30,6 +30,17 @@ $LANG = array(
 'ESHOP'         =>  'Boutique',
 'FOLLOW'        =>  'Suivre Pepper&amp;Carrot sur :',
 
+# Top menu website buttons:
+'NAVIGATION_TRANSCRIPT' => 'Transcription',
+'NAVIGATION_TRANSCRIPT_ON' => 'Afficher la transcription',
+'NAVIGATION_TRANSCRIPT_OFF' => 'Cacher la transcription',
+'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Transcription indisponible pour cet épisode et cette langue.',
+'NAVIGATION_HD' => 'HD 2400px',
+'NAVIGATION_HD_ON' => 'Basculer vers la haute resolution',
+'NAVIGATION_HD_OFF' => 'Basculer vers la resolution standard',
+'NAVIGATION_DICTIONARY' => 'Dictionnaire',
+'NAVIGATION_DICTIONARY_ALT' => 'Cliquer pour ouvrir dans Wordlink pour une recherche rapide dans le dictionnaire',
+
 ################################################################################
 # Top and bottom translation panel
 'ADD_TRANSLATION'       => 'proposer une traduction',
