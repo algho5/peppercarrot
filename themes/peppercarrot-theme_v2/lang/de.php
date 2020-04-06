@@ -31,15 +31,15 @@ $LANG = array(
 'FOLLOW'        =>  'Folge Pepper&amp;Carrot auf:',
 
 # Top menu website buttons:
-'NAVIGATION_TRANSCRIPT' => 'Transcript',
-'NAVIGATION_TRANSCRIPT_ON' => 'Click to show transcript',
-'NAVIGATION_TRANSCRIPT_OFF' => 'Click to hide transcript',
-'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Transcript not available for this episode and this language.',
+'NAVIGATION_TRANSCRIPT' => 'Transkript',
+'NAVIGATION_TRANSCRIPT_ON' => 'Klicke, um ein Transkript anzuzeigen',
+'NAVIGATION_TRANSCRIPT_OFF' => 'Klicke, um das Transkript auszublenden',
+'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Diese Episode hat noch kein Transkript für diese Sprache.',
 'NAVIGATION_HD' => 'HD 2400px',
-'NAVIGATION_HD_ON' => 'Click to display high resolution images',
-'NAVIGATION_HD_OFF' => 'Click to display standard resolution images',
-'NAVIGATION_DICTIONARY' => 'Dictionary',
-'NAVIGATION_DICTIONARY_ALT' => 'Click to open with Wordlink for fast dictionary search',
+'NAVIGATION_HD_ON' => 'Klicke, um die Bilder in hoher Auflösung anzuzeigen',
+'NAVIGATION_HD_OFF' => 'Klicke, um die Bilder in normaler Auflösung anzuzeigen',
+'NAVIGATION_DICTIONARY' => 'Wörterbuch',
+'NAVIGATION_DICTIONARY_ALT' => 'Klicke, um Wordlink für eine schnelle Wörterbuchsuche zu öffnen',
 
 ################################################################################
 # Top and bottom translation panel
