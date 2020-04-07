@@ -1,4 +1,131 @@
 <?php
+
+/**
+ * Metadata about the episode to display
+ */
+class Episode {
+  public $usedlang = "en";
+  public $show_transcript = false;
+  public $hd_quality = false;
+
+  public $transcripts = array();
+
+  public $resolutionfolder = "low-res";
+
+  public $comicpage_header;
+
+  var $episode_source_directory = ".";
+
+  # Remove the lang tag in the vignette filename, three first char (eg. en_, fr_ )
+  # In order not to depend on hook order, we also use this variable to detect whether the paths have been initialized
+  public $vignette_name = "";
+  # Keep only last two digit of vignette filename because they are the episode number
+  var $episode_number = 0;
+  # We need to keep the leading zeroes for the transcripts
+  var $episode_number_with_zeroes = 00;
+
+  public function __construct() {
+    # We can't do anyhing yet, because we can only get all the info while running in a hook
+  }
+
+  public function initialize($lang, $vignette, $hd_quality, $show_transcript) {
+
+    if (!empty($this->vignette_name)) {
+      # We're already initialized
+      return;
+    }
+
+    $this->setShowTranscript($show_transcript);
+    $this->setHdQuality($hd_quality);
+
+    # The listing of episode files is based on the information given by the 'thumbnail' of the article:
+    # Start of the method is to breakdown the 'thumbnail' information to get the source directory of episode.
+    # In full logic, source directory of an episode is one folder parent of the directory of the 'thumbnail'
+    $vignette_parts = pathinfo($vignette);
+    $path = $vignette_parts['dirname'];
+    $parts = explode('/', $path);
+    array_pop($parts);
+    $this->episode_source_directory = implode('/', $parts);
+    # Get the vignette filename without locale (e.g. en_) and detect the episode number (e.g. 01)
+    # Example vignette filename: en_Pepper-and-Carrot_by-David-Revoy_E01
+    preg_match('/^[a-z]+_([A-Za-z-_]+_E(\d+))$/', $vignette_parts['filename'], $matches);
+
+    ## Vignette filename without locale tag
+    # Example: Pepper-and-Carrot_by-David-Revoy_E01
+    $this->vignette_name = $matches[1];
+    ## Episode number
+    $this->episode_number_with_zeroes = $matches[2];
+    ## In case of leading leading 0, remove it to beautify (ep01 => ep1)
+    $this->episode_number = ltrim($episode_number_with_zeroes, '0');
+    ## debug: to test
+    #echo "<b>&#36;episodenumber</b> [" . $episode_number . "] <br />";
+
+    # debug
+    # echo "<b>Url variable + &#36;resolution</b> : ".($hd ? 'hd' : 'low')."  [" . $resolutionfolder . "] <br />";
+
+    # Method to force english in case comicpage are not translated
+    # Build a pattern to find a hypothetic page 1 in the current language
+    $this->comicpage_header = $this->episode_source_directory.'/'.$this->resolutionfolder.'/'.$lang.'_'.$this->vignette_name.'P00.jpg';
+    ## debug: to test $comicpage_tester
+    # echo '<img src="'.$comicpage_tester.'"><br/>';
+
+    # If the file exists, we can use the desired language
+    if (file_exists($this->comicpage_header)) {
+      $this->usedlang = $lang;
+    } else {
+      $this->comicpage_header = $this->episode_source_directory.'/'.$this->resolutionfolder.'/en_'.$this->vignette_name.'P00.jpg';
+    }
+
+    $this->initializeTranscripts();
+  }
+
+  public function setShowTranscript($show) {
+    global $_SESSION;
+
+    # Have we got a preference in memory from previous page?
+    if ($_SESSION['SessionTranscript']) {
+      $this->show_transcript = true;
+    } else {
+      $this->show_transcript = $show;
+      if ($this->show_transcript) {
+        # Record a token for the next page
+        $_SESSION['SessionTranscript'] = 1;
+      }
+    }
+  }
+
+  public function setHdQuality($on) {
+    global $_SESSION;
+
+    # Have we got a preference in memory from previous page?
+    if ($_SESSION['SessionHD']) {
+      $this->hd_quality = true;
+    } else {
+      $this->hd_quality = $on;
+      if ($this->hd_quality) {
+        $this->resolutionfolder = "hi-res";
+        # Record a token for the next page
+        $_SESSION['SessionHD'] = 1;
+      } else {
+        $this->resolutionfolder = "low-res";
+      }
+    }
+  }
+
+  private function initializeTranscripts() {
+    # TODO iterate through panels
+
+    if ($this->show_transcript) {
+      # Include html file with transcript if available
+      $transcript_filename = $this->episode_source_directory.'/hi-res/html/'.$this->usedlang.'_E'.$this->episode_number_with_zeroes.'P00.html';
+      if (file_exists($transcript_filename)) {
+        $this->transcripts[0] = $transcript_filename;
+      }
+    }
+  }
+}
+
+
 /**
  * Plugin plxMyMultiLingue
  *
@@ -11,6 +138,7 @@ class plxMyMultiLingue extends plxPlugin {
   public $aLangs = array(); # tableau des langues
   public $lang = ''; # langue courante
   public $plxMotorConstruct = false;
+  private $episode;
 
   /**
    * Constructeur de la classe
@@ -53,6 +181,9 @@ class plxMyMultiLingue extends plxPlugin {
 
     # appel du constructeur de la classe plxPlugin (obligatoire)
     parent::__construct($this->lang);
+
+    # Construct empty episode object. We have to wait for the hooks before we can initialize.
+    $this->episode = new Episode();
 
     # droits pour accéder à la page config.php du plugin
     $this->setConfigProfil(PROFIL_ADMIN);
@@ -933,93 +1064,70 @@ public function MyMultiLingueComicDisplay($params) {
   }
 }
 
-/********************************/
-/* Display the Header page 00   */
-/********************************/
-/**
- * Method to display the page 00 (header) separately
- * Main input: the vignette of the article
- *
- * @param $transcript  boolean  Whether to include an HTML transcript of the title when available
- *
- * @author: David Revoy
- **/
-public function MyMultiLingueComicHeader($transcript) {
 
-  $plxMotor = plxMotor::getInstance();
-  $plxShow = plxShow::getInstance();
-  $aLabels = unserialize($this->getParam('labels'));
-  $vignette = $plxMotor->plxRecord_arts->f('thumbnail');
-  $vignette_parts = pathinfo($vignette);
-  $path = $vignette_parts['dirname'];
-  $parts = explode('/', $path);
-  array_pop($parts);
-  $episode_source_directory = implode('/', $parts);
-  # Method: Get the episode number from vignette filename
-  ## Remove the lang tag in the vignette filename, three first char (eg. en_, fr_ )
-  $vignette_name = substr($vignette_parts['filename'], 3);
-  ## Keep only last two digit of vignette filename because they are the episode number
-  $episode_number = substr($vignette_name, -2);
-  # We need to keep the leading zeroes for the transcripts
-  $episode_number_with_zeroes = $episode_number;
-  ## In case of leading leading 0, remove it to beautify (ep01 => ep1)
-  $episode_number = ltrim($episode_number, '0');
-  ## debug: to test
-  #echo "<b>&#36;episodenumber</b> [" . $episode_number . "] <br />";
+  /********************************/
+  /* Display the Header page 00   */
+  /********************************/
+  /**
+   * Method to display the page 00 (header) separately
+   * Main input: the vignette of the article
+   *
+   * @param $transcript  boolean  Whether to include an HTML transcript of the title when available
+   *
+   * @author: David Revoy
+   **/
+  public function MyMultiLingueComicHeader($params) {
 
-  # Method to force english in case comicpage are not translated
-  # Build a pattern to find a hypothetic Header page 00 in the current language
-  $comicpage_header = $episode_source_directory.'/low-res/'.$this->lang.'_'.$vignette_name.'P00.jpg';
-  ## debug: to test $comicpage_tester
-  #echo '<img src="'.$comicpage_tester.'"><br/>';
+    # Initialize episode object
+    $plxShow = plxShow::getInstance();
+    $this->episode->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $params['hd'], $params['transcript']);
 
-    # Test if the hypothetical don't file exist
-    if (! file_exists($comicpage_header)) {
-    # Force comicpages in english";
-    # $this->lang = "en";
-    $comicpage_header = $episode_source_directory.'/low-res/en_'.$vignette_name.'P00.jpg';
-    echo '<br/>';
-    echo '<div class="notice col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center">';
-    echo '  <img src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt="info:"/> English version <br/>(this episode is not yet available in your selected language.)';
-    echo '</div>';
+    # If the episode hasn't been translated yet, show info about English
+    if ($this->lang != $this->episode->usedlang) {
+      echo '<br/>';
+      echo '<div class="notice col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center">';
+      echo '  <img src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt="info:"/> English version <br/>(this episode is not yet available in your selected language.)';
+      echo '</div>';
     }
 
     # Remove the 0 in front of double digit page number
     $comicpage_number = '0';
     # Build a usefull alternative link in case of a page do not load...
-    $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$episode_number.' ['.$this->lang.'], '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
+    $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$this->episode->episode_number.' ['.$this->lang.'], '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
     # Define the anchor link
     $comicpage_anchorlink = ''.$plxShow->Getlang('UTIL_PAGE').''.$comicpage_number.'';
     # Get the geometry size of the comic page for correct display ratio on HTML
-    $comicpage_size = getimagesize($comicpage_header);
+    $comicpage_size = getimagesize($this->episode->comicpage_header);
 
     # Display of the resulting HTML code of the header
     echo '
     <div class="panel" align="center">
-        <img class="comicpage" src="'.$comicpage_header.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">
+        <img class="comicpage" src="'.$this->episode->comicpage_header.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">
     </div>
     ';
 
-  if ($transcript) {
     # Include html file with transcript if available
-    $transcript_filename = $episode_source_directory.'/hi-res/html/'.$this->lang.'_E'.$episode_number_with_zeroes.'P00.html';
-    if (file_exists($transcript_filename)) {
-    echo '<div class="panel" align="center">';
-    readfile($transcript_filename);
-      // Display a button for opening this page in http://multidict.net/wordlink/
-      echo '<div class="button top moka">';
-        echo '<a href="https://multidict.net/wordlink/?sl=en&url=';
-        print($plxShow->artUrl().urlencode('&transcript=1'));
-        echo '" title="'.$plxShow->Getlang('NAVIGATION_DICTIONARY_ALT').'">'.$plxShow->Getlang('NAVIGATION_DICTIONARY').'</a>';
-      echo '</div>';
-    echo '</div>';
-    } else {
-    echo '<div class="panel notice" align="center">';
-      echo ''.$plxShow->Getlang('NAVIGATION_TRANSCRIPT_UNAVAILABLE').'';
-    echo '</div>';
+    if ($this->episode->show_transcript) {
+      if (!empty($this->episode->transcripts)) {
+        $transcript_filename = $this->episode->transcripts->key_exists[0];
+        echo '<div class="panel" align="center">';
+          if (array_key_exists(0, $this->episode->transcripts)) {
+            readfile($this->episode->transcripts->key_exists[0]);
+          }
+          // Display a button for opening this page in http://multidict.net/wordlink/
+          echo '<div class="button top moka">';
+            echo '<a href="https://multidict.net/wordlink/?sl=en&url=';
+              print($plxShow->artUrl().urlencode('&transcript=1'));
+              echo '" title="'.$plxShow->Getlang('NAVIGATION_DICTIONARY_ALT').'">'.$plxShow->Getlang('NAVIGATION_DICTIONARY').'</a>';
+            echo '</div>';
+          echo '</div>';
+      } else {
+        echo '<div class="panel notice" align="center">';
+          echo ''.$plxShow->Getlang('NAVIGATION_TRANSCRIPT_UNAVAILABLE').'';
+        echo '</div>';
+      }
     }
   }
-}
 
 /********************************/
 /* Display the link to Source   */
