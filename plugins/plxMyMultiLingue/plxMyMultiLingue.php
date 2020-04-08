@@ -236,9 +236,6 @@ class Comic {
     # Get the geometry size of the comic page for correct display ratio on HTML
     $comicpage_size = getimagesize($this->pagefiles[$comicpage_number]);
 
-    # Build a useful alternative link in case of a page do not load...
-    $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$this->episode_number.' ['.$lang.'], '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
-
     # Define the anchor link
     $comicpage_anchorlink = ''.$plxShow->Getlang('UTIL_PAGE').''.$comicpage_number.'';
     # Get the geometry size of the comic page for correct display ratio on HTML
