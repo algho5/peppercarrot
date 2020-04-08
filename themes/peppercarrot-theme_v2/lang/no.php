@@ -249,7 +249,7 @@ $LANG = array(
     ☐ Spille et Pepper&amp;Gulrot spill p&aring; en spillkonsoll<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> F&aring; over 100 fan-arts i galleriet</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">F&aring; en egen Wikipedia side</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Motta bilde av en Pepper cosplay</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Motta bilde av en Pepper cosplay</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">F&aring; et bilde av en r&oslash;d katt som heter Gulrot</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">bli st&oslash;ttet av 500 f&oslash;lgere p&aring; Patreon</a><br/>
     ☐ N&aring; episode 100<br/>

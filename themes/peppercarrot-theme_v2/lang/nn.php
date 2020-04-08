@@ -240,7 +240,7 @@ $LANG = array(
     ☐ Spela eit Pepar &amp; Gulrot-dataspel<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Få eit galleri med over 100 Pepar &amp; Gulrot-teikningar av andre</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Få ei Wikipedia-side</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Få eit bilete av nokon i Pepar-kostyme</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Få eit bilete av nokon i Pepar-kostyme</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Få eit bilete av ein oransje katt som heiter Carrot (Gulrot)</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Få over 500 sponsorar</a><br/>
     ☐ Nå episode 100!<br/>

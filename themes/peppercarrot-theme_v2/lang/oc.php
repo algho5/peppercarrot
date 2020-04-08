@@ -244,7 +244,7 @@ $LANG = array(
     ☐ Jogar amb una maneta de jòc-vidèo a un jòc vengut de Pepper&amp;Carrot.<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Aver 100 fan-arts a la galariá del site.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Aver una pagina sus Wikipèdia.</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Recebre una fotografia de qualqu’un vestit coma Pepper.</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Recebre una fotografia de qualqu’un vestit coma Pepper.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Recebre una fotografia d’un cat ros que se ditz Carrot en omenatge a Carrot.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Èsser sostengut per 500 mecènas via Patreon.</a><br/>
     ☐ Atenher l’episòdi 100 !<br/>

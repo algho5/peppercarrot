@@ -240,7 +240,7 @@ $LANG = array(
     ☐ Să joc un joc video Pepper&amp;Carrot pe un gamepad.<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts">Să am o galerie cu 100 fan-arts.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Să am o pagină Wikipedia.</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Să am o poză cu un cosplay pentru Pepper.</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Să am o poză cu un cosplay pentru Pepper.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Să primesc o poză cu o pisică roșcată pe nume Carrot.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Să fiu susținut de 500 de patreon-i.</a><br/>
     ☐ Să ajung la episodul 100!<br/>

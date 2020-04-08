@@ -241,7 +241,7 @@ $LANG = array(
     ☐ 게임패드로 후추와 당근 게임을 하기<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> 갤러리에 100개의 팬아트받기</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">위키백과에 수록되기</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">후추 코스프레 사진 받기</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">후추 코스프레 사진 받기</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">이름이 당근인 빨간 고양이 사진 받기</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Patreon으로 500명의 후원자 모으기</a><br/>
     ☐ 100화 연재!<br/>
