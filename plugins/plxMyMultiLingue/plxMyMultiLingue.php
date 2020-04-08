@@ -65,10 +65,14 @@ class ComicToggleButton {
    *
    * @return void
    */
-  function printHtml($plxShow) {
+  function printHtml($is_available, $plxShow) {
     $link = $this->varname . '=' . ($this->status ? '0' : '1');
+    $button_class = $this->status ? '' : 'moka';
+    if (!$is_available) {
+      $button_class = $button_class . ' off';
+    }
     ?>
-    <div class="button top <?php print($this->status ? '' : 'moka'); ?>">
+    <div class="button top <?php print($button_class); ?>">
       <a href="<?php $plxShow->artUrl(); print('&'.$link); ?>" title="<?php print($this->alttext); ?>" class="lang option"><?php echo ''.$this->title.''; ?></a>
     </div>
     <?php
@@ -1074,8 +1078,8 @@ public function MyMultiLingueStaticAllLang($pageurl) {
     $this->comic->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
 
     # Show buttons
-    $this->comic->transcript_button->printHtml($plxShow);
-    $this->comic->hd_button->printHtml($plxShow);
+    $this->comic->transcript_button->printHtml(!empty($this->comic->transcripts), $plxShow);
+    $this->comic->hd_button->printHtml(true, $plxShow);
   }
 
 
