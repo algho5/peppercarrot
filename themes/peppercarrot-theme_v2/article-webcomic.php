@@ -1,74 +1,4 @@
-<?php include(dirname(__FILE__) . '/header.php');
-
-/**
- * An Option Button to show below the main page navigator
- */
-class NavigationToggleButton {
-  private $title;
-  private $status;
-  private $varname;
-  private $alttext;
-
-  /**
-   * Construct a button.
-   *
-   * @param string  $title       Button title to display to user
-   *
-   * @param string  $varname     Variable name to add to URL, format '&varname=1'
-   *
-   * @param string  $sessionvar  Name of the $_SESSION entry to remember the option
-   *
-   * @param string  $alton       Link tooltip for toggling on
-   *
-   * @param string  $altoff      Link tooltip for toggling off
-   *
-   * @return void
-   */
-  function __construct($title, $varname, $sessionvar, $alton, $altoff) {
-    global $_GET, $_SESSION;
-
-    $this->title = $title;
-    $this->varname = $varname;
-
-    # Have we got a new variable 'varname' in URL? Grab it as boolean.
-    $this->status = isset($_GET[$varname]) && $_GET[$varname] === '1';
-
-    # Remember in session if we switched it off explicitly just now
-    if (!$this->status && isset($_GET[$varname])) {
-      $_SESSION[$sessionvar] = 0;
-    }
-
-    # Have we got a preference in memory from previous page?
-    if ($_SESSION[$sessionvar]) {
-      $this->status = true;
-    }
-
-    $this->alttext = $this->status ? $altoff : $alton;
-  }
-
-  /**
-   * Print the button's HTML code.
-   *
-   * @return void
-   */
-  function printHtml() {
-    global $plxShow;
-    $link = $this->varname . '=' . ($this->status ? '0' : '1');
-    ?>
-    <div class="button top <?php print($this->status ? '' : 'moka'); ?>">
-      <a href="<?php $plxShow->artUrl(); print('&'.$link); ?>" title="<?php print($this->alttext); ?>" class="lang option"><?php echo ''.$this->title.''; ?></a>
-    </div>
-    <?php
-  }
-
-  /**
-   * @return  boolean  the button's status as parsed in the constructor from $_GET[$varname]
-   */
-  function status() {
-    return $this->status;
-  }
-}
-?>
+<?php include(dirname(__FILE__) . '/header.php'); ?>
 
 <div class="containercomic" <?php eval($plxShow->callHook('MyMultiLingueBackgroundColor')) ?>>
   <main class="main grid" role="main">
@@ -78,24 +8,7 @@ class NavigationToggleButton {
         <div class="col sml-12 sml-text-right">
           <nav class="nav" role="navigation">
             <div class="responsive-langmenu">
-              <?php
-              $transcriptButton = new NavigationToggleButton(
-                $plxShow->Getlang('NAVIGATION_TRANSCRIPT'),
-                'transcript',
-                'SessionTranscript',
-                $plxShow->Getlang('NAVIGATION_TRANSCRIPT_ON'),
-                $plxShow->Getlang('NAVIGATION_TRANSCRIPT_OFF')
-              );
-              $transcriptButton->printHtml();
-              $hdButton = new NavigationToggleButton(
-                $plxShow->Getlang('NAVIGATION_HD'),
-                'hd',
-                'SessionHD',
-                $plxShow->Getlang('NAVIGATION_HD_ON'),
-                $plxShow->Getlang('NAVIGATION_HD_OFF')
-              );
-              $hdButton->printHtml();
-              ?>
+              <?php eval($plxShow->callHook('MyMultiLingueComicToggleButtons')) ?>
               <label for="langmenu" style="display: inline-block;"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
               <input type="checkbox" id="langmenu">
               <ul class="langmenu expanded">
@@ -109,7 +22,7 @@ class NavigationToggleButton {
         <div style="clear:both;">
         </div>
 
-        <?php eval($plxShow->callHook('MyMultiLingueComicHeader', $transcriptButton->status())) ?>
+        <?php eval($plxShow->callHook('MyMultiLingueComicHeader')) ?>
 
         <?php
         $buttonthemeA = '';
@@ -118,9 +31,7 @@ class NavigationToggleButton {
         ?>
 
         <section class="text-center">
-          <?php eval($plxShow->callHook("MyMultiLingueComicDisplay",
-                                        array('hd' => $hdButton->status(),
-                                              'transcript' => $transcriptButton->status()))) ?>
+          <?php eval($plxShow->callHook('MyMultiLingueComicDisplay')) ?>
         </section>
 
       </article>

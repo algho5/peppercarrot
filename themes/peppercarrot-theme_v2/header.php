@@ -1,5 +1,5 @@
 <?php if (!defined('PLX_ROOT')) exit;
-$version = "190603";
+$version = "200408";
 $idStat = $plxShow->staticId();
 $idCats = $plxShow->catId();
 $idMode = $plxShow->mode();
