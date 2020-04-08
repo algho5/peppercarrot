@@ -263,7 +263,7 @@ class plxMyMultiLingue extends plxPlugin {
   public $aLangs = array(); # tableau des langues
   public $lang = ''; # langue courante
   public $plxMotorConstruct = false;
-  private $episode;
+  private $comic;
 
   /**
    * Constructeur de la classe
@@ -1059,7 +1059,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
   /* Display the HD and transcript buttons */
   /*****************************************/
   /**
-   * Method to display the "HD" and "Transcript" toggle buttons for the comic page in the target langage
+   * Method to display the "HD" and "Transcript" toggle buttons for the comic page in the target language
    * Main input: the vignette of the article
    * @author: GunChleoc
    **/
@@ -1078,7 +1078,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
   /* Display the comicpages       */
   /********************************/
   /**
-   * Method to display the full comic page in the target langage ( without header )
+   * Method to display the full comic page in the target language ( without header )
    * Main input: the vignette of the article
    * @author: David Revoy
    **/
@@ -1092,10 +1092,8 @@ public function MyMultiLingueStaticAllLang($pageurl) {
     $keys = array_keys($this->comic->pagefiles);
     array_shift($keys);
 
-    # For every pages found in the actual language with this file pattern
+    # For all remaining pages, show image and transcript
     foreach ($keys as $comicpage_number) {
-      $comicpage_link = $this->comic->pagefiles[$comicpage_number];
-
       $this->comic->displayPage($comicpage_number, $this->lang, $plxShow);
 
       # Include html file with transcript if available
@@ -1141,7 +1139,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
 
     $transcript_exists = array_key_exists(0, $this->comic->transcripts);
 
-    # Include html file with transcript if available and display info if it is not.
+    # Include html file with transcript if available.
     # Also include a dictionary button.
     if ($this->comic->transcript_button->status()) {
       if (!empty($this->comic->transcripts)) {
@@ -1149,7 +1147,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
           if ($transcript_exists) {
             readfile($this->comic->transcripts[0]);
           }
-          // Display a button for opening this page in http://multidict.net/wordlink/
+          // Display a dictionary button for opening this page in http://multidict.net/wordlink/
           echo '<div class="button top moka">';
             echo '<a href="https://multidict.net/wordlink/?sl=en&url=';
               print($plxShow->artUrl().urlencode('&transcript=1'));
@@ -1157,6 +1155,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
             echo '</div>';
           echo '</div>';
       } else {
+        # We wanted a transcript but there is none, so we display an info text.
         echo '<div class="panel notice" align="center">';
           echo ''.$plxShow->Getlang('NAVIGATION_TRANSCRIPT_UNAVAILABLE').'';
         echo '</div>';
