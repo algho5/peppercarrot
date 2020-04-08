@@ -1,9 +1,16 @@
 <?php
+/**
+ * Plugin plxMyMultiLingue
+ *
+ * License: http://www.gnu.org/licenses/gpl.html GPL version 3 or higher
+ */
 
 /**
  * An Option Button to show below the main page navigator
+ *
+ * @author: GunChleoc
  */
-class NavigationToggleButton {
+class ComicToggleButton {
   private $title;
   private $status;
   private $varname;
@@ -77,8 +84,10 @@ class NavigationToggleButton {
 
 /**
  * Metadata about the episode pages and transcripts to display
+ *
+ * @author: David Revoy, GunChleoc
  */
-class Episode {
+class Comic {
   /** The language to show the episode in.
    * We only set this if there are pages in the language available.
    */
@@ -128,7 +137,7 @@ class Episode {
     }
 
     # Navigation toggle buttons
-    $this->transcript_button = new NavigationToggleButton(
+    $this->transcript_button = new ComicToggleButton(
       $plxShow->Getlang('NAVIGATION_TRANSCRIPT'),
       'transcript',
       'SessionTranscript',
@@ -137,7 +146,7 @@ class Episode {
     );
     $this->show_transcript = $this->transcript_button->status();
 
-    $this->hd_button = new NavigationToggleButton(
+    $this->hd_button = new ComicToggleButton(
       $plxShow->Getlang('NAVIGATION_HD'),
       'hd',
       'SessionHD',
@@ -309,7 +318,7 @@ class plxMyMultiLingue extends plxPlugin {
     parent::__construct($this->lang);
 
     # Construct empty episode object. We have to wait for the hooks before we can initialize.
-    $this->episode = new Episode();
+    $this->comic = new Comic();
 
     # droits pour accéder à la page config.php du plugin
     $this->setConfigProfil(PROFIL_ADMIN);
@@ -1067,10 +1076,10 @@ public function MyMultiLingueStaticAllLang($pageurl) {
   public function MyMultiLingueComicToggleButtons($params) {
     # Initialize episode object
     $plxShow = plxShow::getInstance();
-    $this->episode->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
+    $this->comic->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
 
-    $this->episode->transcript_button->printHtml($plxShow);
-    $this->episode->hd_button->printHtml($plxShow);
+    $this->comic->transcript_button->printHtml($plxShow);
+    $this->comic->hd_button->printHtml($plxShow);
   }
 
 
@@ -1086,21 +1095,21 @@ public function MyMultiLingueStaticAllLang($pageurl) {
 
     # Initialize episode object
     $plxShow = plxShow::getInstance();
-    $this->episode->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
+    $this->comic->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
 
     // Get the keys and skip the first one (that's the header we already displayed)
-    $keys = array_keys($this->episode->pagefiles);
+    $keys = array_keys($this->comic->pagefiles);
     array_shift($keys);
 
     # For every pages found in the actual language with this file pattern
     foreach ($keys as $comicpage_number) {
-      $comicpage_link = $this->episode->pagefiles[$comicpage_number];
+      $comicpage_link = $this->comic->pagefiles[$comicpage_number];
 
-      $this->episode->displayPage($comicpage_number, $this->lang, $plxShow);
+      $this->comic->displayPage($comicpage_number, $this->lang, $plxShow);
 
       # Include html file with transcript if available
-      if (array_key_exists($comicpage_number, $this->episode->transcripts)) {
-        readfile($this->episode->transcripts[$comicpage_number]);
+      if (array_key_exists($comicpage_number, $this->comic->transcripts)) {
+        readfile($this->comic->transcripts[$comicpage_number]);
       }
     }
   }
@@ -1119,26 +1128,26 @@ public function MyMultiLingueStaticAllLang($pageurl) {
 
     # Initialize episode object
     $plxShow = plxShow::getInstance();
-    $this->episode->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
+    $this->comic->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
 
     # If the episode hasn't been translated yet, show info about English
-    if ($this->lang != $this->episode->usedlang) {
+    if ($this->lang != $this->comic->usedlang) {
       echo '<br/>';
       echo '<div class="notice col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center">';
       echo '  <img src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt="info:"/> English version <br/>(this episode is not yet available in your selected language.)';
       echo '</div>';
     }
 
-    $this->episode->displayPage(0, $this->lang, $plxShow);
+    $this->comic->displayPage(0, $this->lang, $plxShow);
 
     # Include html file with transcript if available and display info if it is not.
     # Also include a dictionary button.
-    if ($this->episode->show_transcript) {
-      if (!empty($this->episode->transcripts)) {
-        $transcript_filename = $this->episode->transcripts->key_exists[0];
+    if ($this->comic->show_transcript) {
+      if (!empty($this->comic->transcripts)) {
+        $transcript_filename = $this->comic->transcripts->key_exists[0];
         echo '<div class="panel" align="center">';
-          if (array_key_exists(0, $this->episode->transcripts)) {
-            readfile($this->episode->transcripts[0]);
+          if (array_key_exists(0, $this->comic->transcripts)) {
+            readfile($this->comic->transcripts[0]);
           }
           // Display a button for opening this page in http://multidict.net/wordlink/
           echo '<div class="button top moka">';
