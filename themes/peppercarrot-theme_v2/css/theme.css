@@ -257,3 +257,12 @@ input[type=search] { margin: 1.2rem 0 1.2rem 0; max-width: 300px; }
 .mini img { display: none;}
 .mini { border-image: none!important;}
 }
+
+/* Hidden transcripts for screen readers */
+div.hidden {
+  height:0px;
+  max-height:0px;
+  width:0px;
+  max-width:0px;
+  opacity:0.0;
+}

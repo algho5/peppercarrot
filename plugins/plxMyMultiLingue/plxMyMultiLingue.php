@@ -129,7 +129,7 @@ class Comic {
    */
   public function initialize($lang, $vignette, $plxShow) {
 
-    if ($episode_number > 0) {
+    if ($this->episode_number > 0) {
       # We're already initialized
       return;
     }
@@ -177,7 +177,7 @@ class Comic {
     ## In case of leading leading 0, remove it to beautify (ep01 => ep1)
     $this->episode_number = ltrim($episode_number_with_zeroes, '0');
     ## debug: to test
-    #echo "<b>&#36;episodenumber</b> [" . $episode_number . "] <br />";
+    # echo "<b>&#36;episodenumber</b> [" . $this->episode_number . "] <br />";
 
     # Get all image files for episode and language (page title + pages)
     $this->pagefiles = glob(''.$episode_source_directory.'/'.$this->resolutionfolder.'/'.$lang.'_'.$vignette_name.'P[0-9][0-9]*.[A-Za-z]*');
@@ -193,18 +193,16 @@ class Comic {
     # debug var_dump($this->pagefiles);
 
     # Look for transcript files. Make sure we allow for gaps.
-    if ($this->transcript_button->status()) {
-      $transcript_filenames = glob($episode_source_directory.'/hi-res/html/'.$this->usedlang.'_E'.$episode_number_with_zeroes.'P[0-9][0-9]*.html');
+    $transcript_filenames = glob($episode_source_directory.'/hi-res/html/'.$this->usedlang.'_E'.$episode_number_with_zeroes.'P[0-9][0-9]*.html');
 
-      $keys = array_keys($transcript_filenames);
+    $keys = array_keys($transcript_filenames);
 
-      foreach ($keys as $key) {
-        if (file_exists($transcript_filenames[$key])) {
-          $this->transcripts[$key] = $transcript_filenames[$key];
-        }
+    foreach ($keys as $key) {
+      if (file_exists($transcript_filenames[$key])) {
+        $this->transcripts[$key] = $transcript_filenames[$key];
       }
-      # debug var_dump($this->transcripts);
     }
+    # debug var_dump($this->transcripts);
   }
 
   /**
@@ -1075,6 +1073,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
     $plxShow = plxShow::getInstance();
     $this->comic->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
 
+    # Show buttons
     $this->comic->transcript_button->printHtml($plxShow);
     $this->comic->hd_button->printHtml($plxShow);
   }
@@ -1106,7 +1105,15 @@ public function MyMultiLingueStaticAllLang($pageurl) {
 
       # Include html file with transcript if available
       if (array_key_exists($comicpage_number, $this->comic->transcripts)) {
-        readfile($this->comic->transcripts[$comicpage_number]);
+        if ($this->comic->transcript_button->status()) {
+          # User requested transcript, so we show it
+          readfile($this->comic->transcripts[$comicpage_number]);
+        } else {
+          # Show tiny text anyway so that screen readers can pick it up
+          echo '<div class="hidden">';
+          readfile($this->comic->transcripts[$comicpage_number]);
+          echo '</div>';
+        }
       }
     }
   }
@@ -1137,13 +1144,14 @@ public function MyMultiLingueStaticAllLang($pageurl) {
 
     $this->comic->displayPage(0, $this->lang, $plxShow);
 
+    $transcript_exists = array_key_exists(0, $this->comic->transcripts);
+
     # Include html file with transcript if available and display info if it is not.
     # Also include a dictionary button.
     if ($this->comic->transcript_button->status()) {
       if (!empty($this->comic->transcripts)) {
-        $transcript_filename = $this->comic->transcripts->key_exists[0];
         echo '<div class="panel" align="center">';
-          if (array_key_exists(0, $this->comic->transcripts)) {
+          if ($transcript_exists) {
             readfile($this->comic->transcripts[0]);
           }
           // Display a button for opening this page in http://multidict.net/wordlink/
@@ -1158,6 +1166,11 @@ public function MyMultiLingueStaticAllLang($pageurl) {
           echo ''.$plxShow->Getlang('NAVIGATION_TRANSCRIPT_UNAVAILABLE').'';
         echo '</div>';
       }
+    } else if ($transcript_exists) {
+      # User didn't request a transcript, but we show it for screen readers anyway.
+      echo '<div class="hidden">';
+      readfile($this->comic->transcripts[0]);
+      echo '</div>';
     }
   }
 
