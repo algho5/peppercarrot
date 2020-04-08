@@ -41,6 +41,11 @@ class NavigationToggleButton {
     # Have we got a preference in memory from previous page?
     if ($_SESSION[$sessionvar]) {
       $this->status = true;
+    } else {
+      if ($this->status) {
+        # Record a token for the next page
+        $_SESSION[$sessionvar] = 1;
+      }
     }
 
     $this->alttext = $this->status ? $altoff : $alton;
@@ -80,8 +85,6 @@ class Episode {
   public $usedlang = "en";
   /** Whether to show a transcript */
   public $show_transcript = false;
-  /** Whether to display images with HD quality */
-  private $hd_quality = false;
 
   /** The collected image files to show */
   public $pagefiles = array();
@@ -132,7 +135,7 @@ class Episode {
       $plxShow->Getlang('NAVIGATION_TRANSCRIPT_ON'),
       $plxShow->Getlang('NAVIGATION_TRANSCRIPT_OFF')
     );
-    $this->setShowTranscript($this->transcript_button->status());
+    $this->show_transcript = $this->transcript_button->status();
 
     $this->hd_button = new NavigationToggleButton(
       $plxShow->Getlang('NAVIGATION_HD'),
@@ -141,7 +144,12 @@ class Episode {
       $plxShow->Getlang('NAVIGATION_HD_ON'),
       $plxShow->Getlang('NAVIGATION_HD_OFF')
     );
-    $this->setHdQuality($this->hd_button->status());
+
+    if ($this->hd_button->status()) {
+      $this->resolutionfolder = "hi-res";
+    } else {
+      $this->resolutionfolder = "low-res";
+    }
 
     # The listing of episode files is based on the information given by the 'thumbnail' of the article:
     # Start of the method is to breakdown the 'thumbnail' information to get the source directory of episode.
@@ -194,49 +202,6 @@ class Episode {
   }
 
   /**
-   * Set whether to show a transcript and remember choice in session
-   *
-   * @return void
-   */
-  private function setShowTranscript($show) {
-    global $_SESSION;
-
-    # Have we got a preference in memory from previous page?
-    if ($_SESSION['SessionTranscript']) {
-      $this->show_transcript = true;
-    } else {
-      $this->show_transcript = $show;
-      if ($this->show_transcript) {
-        # Record a token for the next page
-        $_SESSION['SessionTranscript'] = 1;
-      }
-    }
-  }
-
-  /**
-   * Set whether to show images with HD quality and remember choice in session
-   *
-   * @return void
-   */
-  private function setHdQuality($on) {
-    global $_SESSION;
-
-    # Have we got a preference in memory from previous page?
-    if ($_SESSION['SessionHD']) {
-      $this->hd_quality = true;
-    } else {
-      $this->hd_quality = $on;
-      if ($this->hd_quality) {
-        $this->resolutionfolder = "hi-res";
-        # Record a token for the next page
-        $_SESSION['SessionHD'] = 1;
-      } else {
-        $this->resolutionfolder = "low-res";
-      }
-    }
-  }
-
-  /**
    * Print HTML code for a page or the header of the episode
    *
    * @param integer  $comicpage_number  The page to display
@@ -272,10 +237,10 @@ class Episode {
     $comicpage_size = getimagesize($comicpage_link);
 
     # Display (add a special rule to detect gif in HD mode and upscale them on webbrowser).
-    if ($this->hd_quality AND strpos($comicpage_link, 'gif') !== false) {
+    if ($this->hd_button->status() AND strpos($comicpage_link, 'gif') !== false) {
       echo '<div class="panel" align="center">';
       echo '<img class="comicpage" style="max-width:2276px;" width="92%" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
-    } else if (!$this->hd_quality AND strpos($comicpage_link, 'gif') !== false) {
+    } else if (!$this->hd_button->status() AND strpos($comicpage_link, 'gif') !== false) {
       echo '<div class="panel" align="center">';
       echo '<img class="comicpage" style="max-width:1176px;" width="92%" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
     } else {
@@ -1107,6 +1072,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
     $this->episode->transcript_button->printHtml($plxShow);
     $this->episode->hd_button->printHtml($plxShow);
   }
+
 
   /********************************/
   /* Display the comicpages       */
