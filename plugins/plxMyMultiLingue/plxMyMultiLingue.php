@@ -236,13 +236,12 @@ class Comic {
     # Get the geometry size of the comic page for correct display ratio on HTML
     $comicpage_size = getimagesize($this->pagefiles[$comicpage_number]);
 
+
     # Display (add a special rule to detect gif in HD mode and upscale them on webbrowser).
-    if ($this->hd_button->status() AND strpos($comicpage_link, 'gif') !== false) {
+    if (strpos($comicpage_link, 'gif') !== false) {
+      $max_width = $this->hd_button->status() ? '2276px' : '1176px';
       echo '<div class="panel" align="center">';
-      echo '<img class="comicpage" style="max-width:2276px;" width="92%" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
-    } else if (!$this->hd_button->status() AND strpos($comicpage_link, 'gif') !== false) {
-      echo '<div class="panel" align="center">';
-      echo '<img class="comicpage" style="max-width:1176px;" width="92%" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
+      echo '<img class="comicpage" style="max-width:'.$max_width.'" width="92%" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
     } else {
       echo '<div class="panel" align="center">';
       echo '<img class="comicpage" src="'.$comicpage_link.'" '.$comicpage_size[3].' alt="'.$comicpage_alt.'">';
