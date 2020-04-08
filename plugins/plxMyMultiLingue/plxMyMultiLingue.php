@@ -99,10 +99,11 @@ class Comic {
 
   /** The collected image files to show */
   public $pagefiles = array();
+
   /** The collected transcript files to show. Can have gaps. */
   public $transcripts = array();
 
-  /** The image folder, set depending on $hd_quality */
+  /** The image folder, set depending on $this->hd_button->status() */
   private $resolutionfolder = "low-res";
 
   /** Number of the episode to show. Must be > 0 after initialization. */
@@ -235,7 +236,6 @@ class Comic {
     $comicpage_anchorlink = ''.$plxShow->Getlang('UTIL_PAGE').''.$comicpage_number.'';
     # Get the geometry size of the comic page for correct display ratio on HTML
     $comicpage_size = getimagesize($this->pagefiles[$comicpage_number]);
-
 
     # Display (add a special rule to detect gif in HD mode and upscale them on webbrowser).
     if (strpos($comicpage_link, 'gif') !== false) {
