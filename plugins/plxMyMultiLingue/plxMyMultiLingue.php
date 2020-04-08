@@ -1,6 +1,76 @@
 <?php
 
 /**
+ * An Option Button to show below the main page navigator
+ */
+class NavigationToggleButton {
+  private $title;
+  private $status;
+  private $varname;
+  private $alttext;
+
+  /**
+   * Construct a button.
+   *
+   * @param string  $title       Button title to display to user
+   *
+   * @param string  $varname     Variable name to add to URL, format '&varname=1'
+   *
+   * @param string  $sessionvar  Name of the $_SESSION entry to remember the option
+   *
+   * @param string  $alton       Link tooltip for toggling on
+   *
+   * @param string  $altoff      Link tooltip for toggling off
+   *
+   * @return void
+   */
+  function __construct($title, $varname, $sessionvar, $alton, $altoff) {
+    global $_GET, $_SESSION;
+
+    $this->title = $title;
+    $this->varname = $varname;
+
+    # Have we got a new variable 'varname' in URL? Grab it as boolean.
+    $this->status = isset($_GET[$varname]) && $_GET[$varname] === '1';
+
+    # Remember in session if we switched it off explicitly just now
+    if (!$this->status && isset($_GET[$varname])) {
+      $_SESSION[$sessionvar] = 0;
+    }
+
+    # Have we got a preference in memory from previous page?
+    if ($_SESSION[$sessionvar]) {
+      $this->status = true;
+    }
+
+    $this->alttext = $this->status ? $altoff : $alton;
+  }
+
+  /**
+   * Print the button's HTML code.
+   *
+   * @param object  $plxShow  plxShow::getInstance() for accessing PluXML i18n
+   *
+   * @return void
+   */
+  function printHtml($plxShow) {
+    $link = $this->varname . '=' . ($this->status ? '0' : '1');
+    ?>
+    <div class="button top <?php print($this->status ? '' : 'moka'); ?>">
+      <a href="<?php $plxShow->artUrl(); print('&'.$link); ?>" title="<?php print($this->alttext); ?>" class="lang option"><?php echo ''.$this->title.''; ?></a>
+    </div>
+    <?php
+  }
+
+  /**
+   * @return  boolean  the button's status as parsed in the constructor from $_GET[$varname]
+   */
+  function status() {
+    return $this->status;
+  }
+}
+
+/**
  * Metadata about the episode pages and transcripts to display
  */
 class Episode {
@@ -24,6 +94,12 @@ class Episode {
   /** Number of the episode to show. Must be > 0 after initialization. */
   private $episode_number = 0;
 
+  /** Button for turning transcript visibility on and off */
+  public $transcript_button;
+
+  /** Button for turning HD quality on and off */
+  public $hd_button;
+
   /** Does nothing. Call initialize from a hook before using any created objects. */
   public function __construct() {
     # We can't do anyhing yet, because we can only get all the info while running in a hook
@@ -32,24 +108,40 @@ class Episode {
   /**
    * Initialize the object. Must be called from a hook.
    *
-   * @param string   $lang             The desired display language
+   * @param string  $lang      The desired display language
    *
-   * @param string   $vignette         Filepath template, e.g.
-   *                                   0_sources/ep01_Orange/low-res/en_Pepper-and-Carrot_by-David-Revoy_E01.jpg
+   * @param string  $vignette  Filepath template, e.g.
+   *                           0_sources/ep01_Orange/low-res/en_Pepper-and-Carrot_by-David-Revoy_E01.jpg
    *
-   * @param boolean  $hd_quality       Whether to display images af high definition
+   * @param object  $plxShow   plxShow::getInstance() for accessing PluXML i18n
    *
-   * @param boolean  $show_transcript  Whether to display any available trnscripts
+   * @return void
    */
-  public function initialize($lang, $vignette, $hd_quality, $show_transcript) {
+  public function initialize($lang, $vignette, $plxShow) {
 
     if ($episode_number > 0) {
       # We're already initialized
       return;
     }
 
-    $this->setShowTranscript($show_transcript);
-    $this->setHdQuality($hd_quality);
+    # Navigation toggle buttons
+    $this->transcript_button = new NavigationToggleButton(
+      $plxShow->Getlang('NAVIGATION_TRANSCRIPT'),
+      'transcript',
+      'SessionTranscript',
+      $plxShow->Getlang('NAVIGATION_TRANSCRIPT_ON'),
+      $plxShow->Getlang('NAVIGATION_TRANSCRIPT_OFF')
+    );
+    $this->setShowTranscript($this->transcript_button->status());
+
+    $this->hd_button = new NavigationToggleButton(
+      $plxShow->Getlang('NAVIGATION_HD'),
+      'hd',
+      'SessionHD',
+      $plxShow->Getlang('NAVIGATION_HD_ON'),
+      $plxShow->Getlang('NAVIGATION_HD_OFF')
+    );
+    $this->setHdQuality($this->hd_button->status());
 
     # The listing of episode files is based on the information given by the 'thumbnail' of the article:
     # Start of the method is to breakdown the 'thumbnail' information to get the source directory of episode.
@@ -103,6 +195,8 @@ class Episode {
 
   /**
    * Set whether to show a transcript and remember choice in session
+   *
+   * @return void
    */
   private function setShowTranscript($show) {
     global $_SESSION;
@@ -121,6 +215,8 @@ class Episode {
 
   /**
    * Set whether to show images with HD quality and remember choice in session
+   *
+   * @return void
    */
   private function setHdQuality($on) {
     global $_SESSION;
@@ -147,7 +243,9 @@ class Episode {
    *
    * @param string   $lang              The desired display language
    *
-   * @param object   $plxShow           Object for accessing framework i18n functions
+   * @param object   $plxShow           plxShow::getInstance() for accessing PluXML i18n
+   *
+   * @return void
    */
   public function displayPage($comicpage_number, $lang, $plxShow) {
     if ($this->episode_number < 1) {
@@ -288,6 +386,7 @@ class plxMyMultiLingue extends plxPlugin {
     $this->addHook('MyMultiLingueComicLang', 'MyMultiLingueComicLang');
     $this->addHook('MyMultiLingueStaticLang', 'MyMultiLingueStaticLang');
     $this->addHook('MyMultiLingueStaticAllLang', 'MyMultiLingueStaticAllLang');
+    $this->addHook('MyMultiLingueComicToggleButtons', 'MyMultiLingueComicToggleButtons');
     $this->addHook('MyMultiLingueComicDisplay', 'MyMultiLingueComicDisplay');
     $this->addHook('MyMultiLingueComicHeader', 'MyMultiLingueComicHeader');
     $this->addHook('MyMultiLingueSourceLinkDisplay', 'MyMultiLingueSourceLinkDisplay');
@@ -991,6 +1090,24 @@ public function MyMultiLingueStaticAllLang($pageurl) {
   echo $LangString;
 }
 
+
+  /*****************************************/
+  /* Display the HD and transcript buttons */
+  /*****************************************/
+  /**
+   * Method to display the "HD" and "Transcript" toggle buttons for the comic page in the target langage
+   * Main input: the vignette of the article
+   * @author: GunChleoc
+   **/
+  public function MyMultiLingueComicToggleButtons($params) {
+    # Initialize episode object
+    $plxShow = plxShow::getInstance();
+    $this->episode->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
+
+    $this->episode->transcript_button->printHtml($plxShow);
+    $this->episode->hd_button->printHtml($plxShow);
+  }
+
   /********************************/
   /* Display the comicpages       */
   /********************************/
@@ -999,11 +1116,11 @@ public function MyMultiLingueStaticAllLang($pageurl) {
    * Main input: the vignette of the article
    * @author: David Revoy
    **/
-  public function MyMultiLingueComicDisplay($params) {
+  public function MyMultiLingueComicDisplay() {
 
     # Initialize episode object
     $plxShow = plxShow::getInstance();
-    $this->episode->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $params['hd'], $params['transcript']);
+    $this->episode->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
 
     // Get the keys and skip the first one (that's the header we already displayed)
     $keys = array_keys($this->episode->pagefiles);
@@ -1030,15 +1147,13 @@ public function MyMultiLingueStaticAllLang($pageurl) {
    * Method to display the page 00 (header) separately
    * Main input: the vignette of the article
    *
-   * @param $transcript  boolean  Whether to include an HTML transcript of the title when available
-   *
    * @author: David Revoy
    **/
-  public function MyMultiLingueComicHeader($params) {
+  public function MyMultiLingueComicHeader() {
 
     # Initialize episode object
     $plxShow = plxShow::getInstance();
-    $this->episode->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $params['hd'], $params['transcript']);
+    $this->episode->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
 
     # If the episode hasn't been translated yet, show info about English
     if ($this->lang != $this->episode->usedlang) {
