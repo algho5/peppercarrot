@@ -92,8 +92,6 @@ class Comic {
    * We only set this if there are pages in the language available.
    */
   public $usedlang = "en";
-  /** Whether to show a transcript */
-  public $show_transcript = false;
 
   /** The collected image files to show */
   public $pagefiles = array();
@@ -144,7 +142,6 @@ class Comic {
       $plxShow->Getlang('NAVIGATION_TRANSCRIPT_ON'),
       $plxShow->Getlang('NAVIGATION_TRANSCRIPT_OFF')
     );
-    $this->show_transcript = $this->transcript_button->status();
 
     $this->hd_button = new ComicToggleButton(
       $plxShow->Getlang('NAVIGATION_HD'),
@@ -196,7 +193,7 @@ class Comic {
     # debug var_dump($this->pagefiles);
 
     # Look for transcript files. Make sure we allow for gaps.
-    if ($this->show_transcript) {
+    if ($this->transcript_button->status()) {
       $transcript_filenames = glob($episode_source_directory.'/hi-res/html/'.$this->usedlang.'_E'.$episode_number_with_zeroes.'P[0-9][0-9]*.html');
 
       $keys = array_keys($transcript_filenames);
@@ -1142,7 +1139,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
 
     # Include html file with transcript if available and display info if it is not.
     # Also include a dictionary button.
-    if ($this->comic->show_transcript) {
+    if ($this->comic->transcript_button->status()) {
       if (!empty($this->comic->transcripts)) {
         $transcript_filename = $this->comic->transcripts->key_exists[0];
         echo '<div class="panel" align="center">';
