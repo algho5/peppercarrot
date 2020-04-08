@@ -139,13 +139,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .sourcebutton { background: #D7EBFA url('../ico/dl_sources.svg') no-repeat center left 10px; padding: 0.6rem 0.7rem 0.6rem 3rem; border-radius: 10px }
 
 /* Hidden transcripts for screen readers in webcomic */
-div.hidden {
-  height:0px;
-  max-height:0px;
-  width:0px;
-  max-width:0px;
-  opacity:0.0;
-}
+div.hidden { height:0px; max-height:0px; width:0px; max-width:0px; opacity:0.0;}
 
 /* Philosophy page */
 .philo { text-align: center;}
