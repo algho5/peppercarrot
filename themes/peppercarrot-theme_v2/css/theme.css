@@ -156,7 +156,6 @@ div.hidden { height:0px; max-height:0px; width:0px; max-width:0px; opacity:0.0;}
 .notice {color:#aaa;}
 .page { background: url('../img/bg.jpg'); border: 16px solid transparent; border-image: url('../img/page.jpg') 10% round; padding: 15px 120px 0 120px; font-family: "Georgia", Times, serif; text-align: justify; font-size: 1.2rem; margin-top: 16px;}
 .page hr { border: double 4px #A79281;}
-.page p::first-letter { font-size:  1.6rem; margin-right: 1px;}
 .page img { max-width: 125%; display: block; text-align: center; margin-left: 50%; border: 16px solid transparent; border-image: url('../img/border.png') 10% round; transform: translate(-50%, 0); }
 .page .edit { text-align: right; margin-right: -18%;}
 .page .edit .button { display:inline-block; font-size: 1rem;}
