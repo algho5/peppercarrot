@@ -125,14 +125,13 @@ class Comic {
    *
    * @param string  $lang      The desired display language
    *
-   * @param string  $vignette  Filepath template, e.g.
-   *                           0_sources/ep01_Orange/low-res/en_Pepper-and-Carrot_by-David-Revoy_E01.jpg
+   * @param string  $data      Episode data from plxMyMultiLingue->episodeData()
    *
    * @param object  $plxShow   plxShow::getInstance() for accessing PluXML i18n
    *
    * @return void
    */
-  public function initialize($lang, $vignette, $plxShow) {
+  public function initialize($lang, $data, $plxShow) {
 
     if ($this->episode_number > 0) {
       # We're already initialized
@@ -162,43 +161,28 @@ class Comic {
       $this->resolutionfolder = "low-res";
     }
 
-    # The listing of episode files is based on the information given by the 'thumbnail' of the article:
-    # Start of the method is to breakdown the 'thumbnail' information to get the source directory of episode.
-    # In full logic, source directory of an episode is one folder parent of the directory of the 'thumbnail'
-    $vignette_parts = pathinfo($vignette);
-    $path = $vignette_parts['dirname'];
-    $parts = explode('/', $path);
-    array_pop($parts);
-    $episode_source_directory = implode('/', $parts);
-    # Get the vignette filename without locale (e.g. en_) and detect the episode number (e.g. 01)
-    # Example vignette filename: en_Pepper-and-Carrot_by-David-Revoy_E01
-    preg_match('/^[a-z]+_([A-Za-z-_]+_E(\d+))$/', $vignette_parts['filename'], $matches);
-
-    ## Vignette filename without locale tag
-    # Example: Pepper-and-Carrot_by-David-Revoy_E01
-    $vignette_name = $matches[1];
-    ## Episode number
-    $episode_number_with_zeroes = $matches[2];
-    ## In case of leading leading 0, remove it to beautify (ep01 => ep1)
-    $this->episode_number = ltrim($episode_number_with_zeroes, '0');
+    $directory = $data['directory'];
+    $name = $data['name'];
+    ## Episode number. In case of leading leading 0, remove it to beautify (ep01 => ep1)
+    $this->episode_number = (int) $data['number'];
     ## debug: to test
     # echo "<b>&#36;episodenumber</b> [" . $this->episode_number . "] <br />";
 
     # Get all image files for episode and language (page title + pages)
-    $this->pagefiles = glob(''.$episode_source_directory.'/'.$this->resolutionfolder.'/'.$lang.'_'.$vignette_name.'P[0-9][0-9]*.[A-Za-z]*');
+    $this->pagefiles = glob(''.$directory.'/'.$this->resolutionfolder.'/'.$lang.'_'.$name.'P[0-9][0-9]*.[A-Za-z]*');
 
     if (!empty($this->pagefiles)) {
       # If the files exist, we can use the desired language
       $this->usedlang = $lang;
     } else {
       # Fallback to English
-      $this->pagefiles = glob(''.$episode_source_directory.'/'.$this->resolutionfolder.'/'.$this->usedlang.'_'.$vignette_name.'P[0-9][0-9]*.[A-Za-z]*');
+      $this->pagefiles = glob(''.$directory.'/'.$this->resolutionfolder.'/'.$this->usedlang.'_'.$name.'P[0-9][0-9]*.[A-Za-z]*');
     }
 
     # debug var_dump($this->pagefiles);
 
     # Look for transcript files. Make sure we allow for gaps.
-    $transcript_filenames = glob($episode_source_directory.'/hi-res/html/'.$this->usedlang.'_E'.$episode_number_with_zeroes.'P[0-9][0-9]*.html');
+    $transcript_filenames = glob($directory.'/hi-res/html/'.$this->usedlang.'_E'.$data['number'].'P[0-9][0-9]*.html');
 
     $keys = array_keys($transcript_filenames);
 
@@ -445,6 +429,46 @@ class plxMyMultiLingue extends plxPlugin {
 
     setcookie("plxMyMultiLingue", $this->lang, time()+3600*24*30);  // expire dans 30 jours
 
+  }
+
+  /**
+   * Parses data about the episode from its vignette file basename, provided by
+   * plxMotor::getInstance()->plxRecord_arts->f('thumbnail')
+   *
+   * @return array with the following keys:
+   *
+   *   'directory': directory location of the episode, e.g. "0_sources/ep01_Potion-of-Flight"
+   *   'name':      episode name part of the images' filenames, e.g. "Pepper-and-Carrot_by-David-Revoy_E01"
+   *   'number':    episode number with leading zeroes, e.g. "01"
+   *
+   * @author David Revoy, GunChleoc
+   */
+  private function episodeData() {
+
+    # The listing of episode files and language detection is based on the information given by the 'thumbnail' of the article:
+    # Start of the method is to breakdown the 'thumbnail' information to get the source directory of the episode.
+    $vignette_pathinfo = pathinfo(plxMotor::getInstance()->plxRecord_arts->f('thumbnail'));
+
+    # In full logic, source directory of an episode is one folder parent of the directory of the 'thumbnail'
+    $directory = pathinfo($vignette_pathinfo['dirname'], PATHINFO_DIRNAME);
+
+    # Get the vignette filename without locale (e.g. en_) and detect the episode number (e.g. 01)
+    # Example vignette filename: fr_Pepper-and-Carrot_by-David-Revoy_E01
+    preg_match('/^[a-z]{2}_([A-Za-z-_]+_E(\d+))$/', $vignette_pathinfo['filename'], $matches);
+
+    ## Vignette filename without locale tag
+    # Example: Pepper-and-Carrot_by-David-Revoy_E01
+    $name = $matches[1];
+    ## Episode number, eg. "01"
+    $number = $matches[2];
+    ## debug: to test
+    # echo "<b>&#36;episodenumber</b> [" . $this->episode_number . "] <br />";
+
+    return array(
+      'directory' => $directory,
+      'name' => $name,
+      'number' => $number,
+    );
   }
 
   /********************************/
@@ -923,6 +947,7 @@ class plxMyMultiLingue extends plxPlugin {
     }
   }
 
+
 public function MyMultiLingueGetLang() {
 
   return $this->lang;
@@ -939,23 +964,20 @@ public function MyMultiLingueGetLang() {
 public function MyMultiLingueComicLang() {
   $plxMotor = plxMotor::getInstance();
   $aLabels = unserialize($this->getParam('labels'));
-  $vignette = $plxMotor->plxRecord_arts->f('thumbnail');
-  $vignette_parts = pathinfo($vignette);
+
+  $data = $this->episodeData();
+
   foreach($this->aLangs as $idx=>$lang) {
     # If the label display active lang, let CSS know for highlight via class 'active'
     $sel = $this->lang==$lang ? ' active':'';
-    # Method: Get the episode number from vignette filename
-    ## Remove the lang tag in the vignette filename, three first char (eg. en_, fr_ )
-    $vignette_name = substr($vignette_parts['filename'], 3);
-    $episode_source_directory = $vignette_parts['dirname'].'';
-    # Method to display only buttons with real translations existing
-    # Build a pattern to find a hypothetic page 1 in the scanned lang target
-    $comicpage_tester = $episode_source_directory.'/'.$lang.'_'.$vignette_name.'P01.jpg';
+
+    # Build link to image that will be there if the episode has been translated
+    $comicpage_tester = $data['directory'].'/low-res/'.$lang.'_'.$data['name'].'P01.jpg';
     #Debug $comicpage_tester
     #echo '<li><img src="'.$comicpage_tester.'" width="30px"></li>';
     # then we detect if hypothical page exist to display the button
     if (file_exists($comicpage_tester)) {
-      # Lang exist, we build the HTML for the language item
+      # Lang exists, we build the HTML for the language item
       $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'. $aLabels[$lang].'</a></li>"; ?>';
     }
   }
@@ -1066,7 +1088,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
   public function MyMultiLingueComicToggleButtons($params) {
     # Initialize episode object
     $plxShow = plxShow::getInstance();
-    $this->comic->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
+    $this->comic->initialize($this->lang, $this->episodeData(), $plxShow);
 
     # Show buttons
     $this->comic->transcript_button->printHtml(!empty($this->comic->transcripts), $plxShow);
@@ -1086,7 +1108,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
 
     # Initialize episode object
     $plxShow = plxShow::getInstance();
-    $this->comic->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
+    $this->comic->initialize($this->lang, $this->episodeData(), $plxShow);
 
     // Get the keys and skip the first one (that's the header we already displayed)
     $keys = array_keys($this->comic->pagefiles);
@@ -1125,7 +1147,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
 
     # Initialize episode object
     $plxShow = plxShow::getInstance();
-    $this->comic->initialize($this->lang, plxMotor::getInstance()->plxRecord_arts->f('thumbnail'), $plxShow);
+    $this->comic->initialize($this->lang, $this->episodeData(), $plxShow);
 
     # If the episode hasn't been translated yet, show info about English
     if ($this->lang != $this->comic->usedlang) {
@@ -1176,18 +1198,9 @@ public function MyMultiLingueStaticAllLang($pageurl) {
  * @author: David Revoy
  **/
 public function MyMultiLingueSourceLinkDisplay() {
-  $plxMotor = plxMotor::getInstance();
-  $plxShow = plxShow::getInstance();
-  $aLabels = unserialize($this->getParam('labels'));
-  $vignette = $plxMotor->plxRecord_arts->f('thumbnail');
-  $vignette_parts = pathinfo($vignette);
-  $path = $vignette_parts['dirname'];
-  $parts = explode('/', $path);
-  array_pop($parts);
-  $episode_source_directory = implode('/', $parts);
   # pattern : index.php?fr/static6/sources&page=ep02_Rainbow-potions
-  $sourcelink = basename($episode_source_directory);
-  $plxShow->urlRewrite('?static6/sources&page='.$sourcelink);
+  $sourcelink = basename($this->episodeData()['directory']);
+  plxShow::getInstance()->urlRewrite('?static6/sources&page='.$sourcelink);
 }
 
 /**********************************************/
@@ -1198,16 +1211,7 @@ public function MyMultiLingueSourceLinkDisplay() {
  * @author: David Revoy
  **/
 public function MyMultiLingueBackgroundColor() {
-  $plxMotor = plxMotor::getInstance();
-  $plxShow = plxShow::getInstance();
-  $aLabels = unserialize($this->getParam('labels'));
-  $vignette = $plxMotor->plxRecord_arts->f('thumbnail');
-  $vignette_parts = pathinfo($vignette);
-  $path = $vignette_parts['dirname'];
-  $parts = explode('/', $path);
-  array_pop($parts);
-  $episode_source_directory = implode('/', $parts);
-  $jsonpath = $episode_source_directory."/info.json";
+  $jsonpath = $this->episodeData()['directory'].'/info.json';
   if (file_exists($jsonpath)) {
     $contents = file_get_contents($jsonpath);
     $get = json_decode($contents);
@@ -1225,19 +1229,10 @@ public function MyMultiLingueBackgroundColor() {
  * @author: David Revoy
  **/
 public function MyMultiLingueFramagitLinkDisplay() {
-  $plxMotor = plxMotor::getInstance();
-  $plxShow = plxShow::getInstance();
-  $aLabels = unserialize($this->getParam('labels'));
-  $vignette = $plxMotor->plxRecord_arts->f('thumbnail');
-  $vignette_parts = pathinfo($vignette);
-  $path = $vignette_parts['dirname'];
-  $parts = explode('/', $path);
-  array_pop($parts);
-  $episode_source_directory = implode('/', $parts);
-  # pattern : index.php?fr/static6/sources&page=ep02_Rainbow-potions
-  $sourcelink = basename($episode_source_directory);
-  $activelang = $this->lang;
-  echo 'https://framagit.org/peppercarrot/webcomics/tree/master/'.$sourcelink.'/lang/'.$activelang.'';
+
+  # pattern : https://framagit.org/peppercarrot/webcomics/tree/master/ep01_Orange/lang/fr
+  $sourcelink = basename($this->episodeData()['directory']);
+  echo 'https://framagit.org/peppercarrot/webcomics/tree/master/'.$sourcelink.'/lang/'.$this->lang.'';
 }
 
 /**************************************************************/
@@ -1250,8 +1245,7 @@ public function MyMultiLingueFramagitLinkDisplay() {
  * @author: David Revoy
  **/
 public function MyMultiLingueCommentLinkDisplay($params) {
-  $plxMotor = plxMotor::getInstance();
-  $plxShow = plxShow::getInstance();
+
   if(isset($params)) {
     if(is_array($params)) {
       $type = empty($params[0])?'':$params[0];
@@ -1264,22 +1258,8 @@ public function MyMultiLingueCommentLinkDisplay($params) {
   $contents = file_get_contents($jsonpath);
   $get = json_decode($contents);
 
-  $aLabels = unserialize($this->getParam('labels'));
-  $vignette = $plxMotor->plxRecord_arts->f('thumbnail');
-  $vignette_parts = pathinfo($vignette);
-  ## Remove the lang tag in the vignette filename, three first char (eg. en_, fr_ )
-  $vignette_name = substr($vignette_parts['filename'], 3);
-  ## Keep only last two digit of vignette filename because they are the episode number
-  $episode_number = substr($vignette_name, -2);
-  $path = $vignette_parts['dirname'];
-  $parts = explode('/', $path);
-  array_pop($parts);
-  $episode_source_directory = implode('/', $parts);
-  # pattern : index.php?fr/static6/sources&page=ep02_Rainbow-potions
-  $sourcelink = basename($episode_source_directory);
-  $activelang = $this->lang;
   # retrieve epXX
-  $episodeid = 'ep'.$episode_number;
+  $episodeid = 'ep' . (int) $this->episodeData()['number'];
 
   # Display depending what variable user pass:
   if($type == 'url') {
