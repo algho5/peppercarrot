@@ -1,4 +1,4 @@
-<?php include(dirname(__FILE__).'/header.php'); 
+<?php include(dirname(__FILE__).'/header.php');
 # add library to parse markdown files
 include(dirname(__FILE__).'/lib-parsedown.php');
 
@@ -15,7 +15,7 @@ $activeimage = htmlspecialchars($_GET["display"]);
 # get new variable 'lang'
 $requestedlang = htmlspecialchars($_GET["l"]);
 
-# Security, remove all special characters except A-Z, a-z, 0-9, dots, hyphens, underscore before interpreting something. 
+# Security, remove all special characters except A-Z, a-z, 0-9, dots, hyphens, underscore before interpreting something.
 $activefolder = preg_replace('/[^A-Za-z0-9\._-]/', '', $activefolder);
 $activeimage = preg_replace('/[^A-Za-z0-9\._-]/', '', $activeimage);
 $requestedlang = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedlang);
@@ -24,17 +24,17 @@ $pathcommunityfolder = '0_sources/0ther/community';
 <div class="container">
 	<main class="main grid" role="main">
     <section class="col sml-12" style="padding: 0 0;">
-<?php 
+<?php
 # [page] datas are in the URL
 if(isset($_GET['page'])) {
 
     $foldername = $activefolder;
     $pathartworks = $pathcommunityfolder .'/'.$activefolder;
     $detectedlangs=array();
-    
+
 # Check available languages
 # =========================
-    
+
     # Detect the amount of language to display by scanning threw available files
     $searchfiles = glob($pathartworks."/??_*by-*.jpg");
     foreach ($searchfiles as $file) {
@@ -43,7 +43,7 @@ if(isset($_GET['page'])) {
       array_push($detectedlangs,$filenameclean);
     }
     $detectedlangscleaned = array_unique($detectedlangs);
-    
+
     $matchinglang = 0;
     # We check if content exist for user with active lang selected
     foreach ($detectedlangscleaned as $proposedlang) {
@@ -60,9 +60,9 @@ if(isset($_GET['page'])) {
       echo $plxShow->Getlang(LIMITATIONS);
       echo '</div>';
       echo '</div>';
-      
+
     }
-    
+
 # Image viewer mode : display the artwork
 # =======================================
 # (a "page" variable passed)
@@ -70,7 +70,7 @@ if(isset($_GET['page'])) {
 
     if(isset($_GET['display'])) {
         $imagename = $activeimage;
-        
+
         # Write lang pills for the viewer
         # Challenge: the pills must translate the image displayed.
         echo '<div class="grid">';
@@ -99,7 +99,7 @@ if(isset($_GET['page'])) {
           echo '</div>';
         echo '</div>';
         echo '<div style="clear:both;"></div> ';
-        
+
         # Write the viewer:
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
         echo '<br/><br/>';
@@ -108,21 +108,21 @@ if(isset($_GET['page'])) {
 
         $imagename = $activeimage;
         echo '<a href="'.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
-        
+
         echo '<div class="button top">';
           echo '<a href="static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance/" class="lang option">← Back to index</a>';
         echo '</div>';
-              
+
         echo '</section>';
         echo '<br/><br/><br/><br/><br/></div>';
-    
+
     } else {
-    
+
 # Thumbnails mode
 # ===============
 # (a "page" variable passed)
 # (no "display" variable passed)
-        
+
         # lang pills
         echo '<div class="grid">';
           echo '<div class="col sml-12 sml-text-right">';
@@ -143,8 +143,8 @@ if(isset($_GET['page'])) {
           echo '</div>';
         echo '</div>';
         echo '<div style="clear:both;"></div> ';
-        
-        # Display the title of the project and markdown:   
+
+        # Display the title of the project and markdown:
         $foldernameclean = str_replace('_', ' ', $foldername);
         $foldernameclean = str_replace('-', ' ', $foldernameclean);
         $foldernameclean = str_replace('by', '</h2><span class="font-size: 0.5rem;">'.$ccbystring.'', $foldernameclean);
@@ -169,7 +169,7 @@ if(isset($_GET['page'])) {
         $search = glob($pathartworks.'/'.$lang.'*.jpg');
         rsort($search);
         # we loop on found episodes
-        if (!empty($search)){ 
+        if (!empty($search)){
           foreach ($search as $filepath) {
             # episode number extraction
             $filename = basename($filepath);
@@ -193,7 +193,7 @@ if(isset($_GET['page'])) {
         echo '</section>';
         echo '</div>';
     }
-    
+
 } else {
 
 # Main menu
@@ -207,7 +207,7 @@ if(isset($_GET['page'])) {
   $hide = array('.', '..');
   $mainfolders = array_diff(scandir($pathcommunityfolder), $hide);
   sort($mainfolders);
-  
+
   # we loop on found episodes
   foreach ($mainfolders as $folderpath) {
     # Name extraction

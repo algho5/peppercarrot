@@ -1,4 +1,4 @@
-<?php 
+<?php
 include(dirname(__FILE__).'/lib-parsedown.php');
 include(dirname(__FILE__).'/header.php');
 
@@ -10,7 +10,7 @@ $requestedlang = htmlspecialchars($_GET["l"]);
 // get new variable 'episode'
 $requestedepisode = htmlspecialchars($_GET["e"]);
 
-// Security, remove all special characters except A-Z, a-z, 0-9, dots, hyphens, underscore before interpreting something. 
+// Security, remove all special characters except A-Z, a-z, 0-9, dots, hyphens, underscore before interpreting something.
 $activefolder = preg_replace('/[^A-Za-z0-9\._-]/', '', $activefolder);
 $requestedlang = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedlang);
 $requestedepisode = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedepisode);
@@ -49,15 +49,15 @@ echo '<div class="grid">';
       echo '<h3>'.$foldername.'</h3>';
       echo '</div>';
     }
-    
-    
+
+
     echo '<div class="col sml-12 med-4 lrg-4">';
-    
+
     # we scan the vignette
     # we scan all en vignette to define all episodes , it's a constant
     $search = glob($projectpath."/low-res/en_*E??.jpg");
     # we loop on found episodes
-    if (!empty($search)){ 
+    if (!empty($search)){
     foreach ($search as $filepath) {
     # filename extraction
     $fileweight = (filesize($filepath) / 1024) / 1024;
@@ -73,10 +73,10 @@ echo '<div class="grid">';
     echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=290&amp;h=230&amp;s=1&amp;q=88" alt="'.$foldername.'" title="'.$foldername.'" ><br/>';
     }
     }
-    }else{ 
+    }else{
     # no vignette, take any jpg at the root
     $search = glob($projectpath."/*.jpg");
-    if (!empty($search)){ 
+    if (!empty($search)){
     foreach ($search as $filepath) {
     $filename = basename($filepath);
     $fileweight = (filesize($filepath) / 1024) / 1024;
@@ -85,10 +85,10 @@ echo '<div class="grid">';
     }
     }
 
-        
+
     # === COVER ===
     $search = glob($projectpath."/low-res/*E??.jpg");
-    if (!empty($search)){ 
+    if (!empty($search)){
       echo '<br/>';
       echo ''.$plxShow->Getlang('SOURCE_COVER').'<br/>';
       foreach ($search as $filepath) {
@@ -102,19 +102,19 @@ echo '<div class="grid">';
     }
     # + cover gfx-only
     $search = glob($projectpath."/low-res/gfx-only/*E??.jpg");
-    if (!empty($search)){ 
+    if (!empty($search)){
     foreach ($search as $filepath) {
     $filename = basename($filepath);
     $filename = str_replace('_by-David-Revoy', '', $filename);
     $fileweight = (filesize($filepath) / 1024) / 1024;
     echo '<a href="'.$filepath.'" target="_blank" >
-    '.$filename.' <em class="filesize">'.round($fileweight, 2).'MB 
+    '.$filename.' <em class="filesize">'.round($fileweight, 2).'MB
     </em></a><br />';
     }
-    } 
+    }
     # single-pages
     $search = glob($projectpath."/low-res/single-page/*.jpg");
-    if (!empty($search)){ 
+    if (!empty($search)){
     echo '<br/> ';
     $plxShow->lang('SOURCE_MONTAGE');
     echo '<br/>';
@@ -124,21 +124,21 @@ echo '<div class="grid">';
     $fileweight = (filesize($filepath) / 1024) / 1024;
     echo '<a href="'.$filepath.'" target="_blank" >
     '.$filename.' <em class="filesize">'.round($fileweight, 2).'MB </em></a><br />';
-    } 
+    }
     }
     echo '</div>';
-    
+
     # ***************************************** RIGHT COLUMN *******************************************
-    
+
     # ##### TOP BIG BUTTONS ########
 
     echo '<div class="col sml-12 med-8 lrg-8">';
-    
+
     # KRITA SOURCE PACK (Self hosted)
     #
     $search = glob($projectpath."/zip/*_art-pack.zip");
-    if (!empty($search)){ 
-      echo '<div class="buttonkrazip">'; 
+    if (!empty($search)){
+      echo '<div class="buttonkrazip">';
       echo '<img style="float:left; margin-right:10px;" src="themes/peppercarrot-theme_v2/ico/paint.svg" alt=""/> ';
       $plxShow->lang('SOURCE_KRITA');
       echo'<br/>';
@@ -149,13 +149,13 @@ echo '<div class="grid">';
         '.$filename.' <em class="filesize">'.round($fileweight, 2).'MB </em></a><br />';
       }
       echo '</div>';
-    } 
-    
+    }
+
     # LANG PACK (Self hosted)
     #
     $search = glob($projectpath."/zip/*_lang-pack.zip");
-    if (!empty($search)){ 
-      echo '<div class="buttonlangzip">';  
+    if (!empty($search)){
+      echo '<div class="buttonlangzip">';
       echo '<img style="float:left; margin-right:10px;" src="themes/peppercarrot-theme_v2/ico/lang.svg" alt=""/>  ';
       $plxShow->lang('SOURCE_TRANSLATOR');
       echo ' <span style="font-size:0.8em">(<a href="';
@@ -168,10 +168,10 @@ echo '<div class="grid">';
         '.$filename.' <em class="filesize">'.round($fileweight, 2).'MB </em></a><br />';
       }
       echo '</div>';
-    } 
-    
+    }
+
     echo '<div class="grid">';
-    
+
     # ***************************************** UNDER BUTTONS *******************************************
 
     # DISPLAY PAGES THUMBNAILS
@@ -181,7 +181,7 @@ echo '<div class="grid">';
     $search = glob($projectpath."/low-res/gfx-only/*P[0-9][0-9].*");
     # request last page of array
     $last_page = end(array_keys($search));
-    if (!empty($search)){ 
+    if (!empty($search)){
       foreach ($search as $key => $filepath) {
         # weak workaround for excluding page 00 header
         $filepath = str_replace('P00.jpg', 'Pnon-exist.jpg', $filepath);
@@ -203,14 +203,14 @@ echo '<div class="grid">';
       }
     }
     echo '</div>';
-    
+
     # ************************************ TWO COLUMN LIST FILES : LEFT **************************************
     echo '<div class="col sml-6" style="margin-top:30px">';
-    
+
     # LOW RES
     #
     $search = glob($projectpath."/low-res/*P??.*");
-    if (!empty($search)){ 
+    if (!empty($search)){
       echo '<img src="themes/peppercarrot-theme_v2/ico/web.svg" alt=""/> ';
       $plxShow->lang('SOURCE_WEB');
       echo '<br/>';
@@ -223,15 +223,15 @@ echo '<div class="grid">';
         }
     }
     echo '</div>';
-    
+
     # ************************************ TWO COLUMN LIST FILES : RIGHT **************************************
 
     echo '<div class="col sml-6" style="margin-top:30px">';
-    
+
     # HI-RES
     #
     $search = glob($projectpath."/hi-res/*P??.*");
-    if (!empty($search)){ 
+    if (!empty($search)){
       echo '<img src="themes/peppercarrot-theme_v2/ico/ink.svg" alt=""/> ';
       $plxShow->lang('SOURCE_PRINT');
       echo '<br/>';
@@ -243,13 +243,13 @@ echo '<div class="grid">';
         '.$filename.' <em class="filesize">'.round($fileweight, 2).'MB </em></a><br />';
       }
     }
-    
+
     echo '<br/><br/>';
-      
+
     # TXT-ONLY
     #
     $search = glob($projectpath."/hi-res/txt-only/*P??.*");
-    if (!empty($search)){ 
+    if (!empty($search)){
       echo '<img src="themes/peppercarrot-theme_v2/ico/ink.svg" alt=""/> ';
       echo 'Text-only layer, PNG:';
       echo '<br/>';
@@ -261,13 +261,13 @@ echo '<div class="grid">';
         '.$filename.' <em class="filesize">'.round($fileweight, 2).'MB </em></a><br />';
       }
     }
-    
+
     echo '</div>';
     echo '</div>';
     echo '</div>';
     echo '</div>';
     echo '</article>';
-    
+
   } elseif ($activefolder == "episodes") {
   # ===========  Episodes ================
     # main HTML container:
@@ -275,7 +275,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>'.$plxShow->getLang('WEBCOMIC_EPISODE').'</h2>';
     echo '</div>';
@@ -286,7 +286,7 @@ echo '<div class="grid">';
     $mainfolders = array_diff(scandir($path), $hide);
     sort($mainfolders);
     # Loop on the folders
-    foreach($mainfolders as $foldername) {   
+    foreach($mainfolders as $foldername) {
       $projectpath = $path.$foldername;
       if(is_dir($projectpath)) {
         # we are in comic source folder
@@ -299,7 +299,7 @@ echo '<div class="grid">';
         # we scan all en vignette to define all episodes , it's a constant
         $search = glob($projectpath."/low-res/en_*E??.jpg");
         # we loop on found episodes
-        if (!empty($search)){ 
+        if (!empty($search)){
           foreach ($search as $filepath) {
             # filename extraction
             $fileweight = (filesize($filepath) / 1024) / 1024;
@@ -320,8 +320,8 @@ echo '<div class="grid">';
         $plxShow->urlRewrite('?static6/sources&page='.$foldername);
         echo '" >'.$humanfoldername.'</a></figcaption>';
         echo '</figure>';
-      } 
-    }	
+      }
+    }
     # top button
     echo '</section>';
 
@@ -333,7 +333,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>All thumbnail overview</h2>';
     echo '<p>An overview of all pages published so far to explore available graphics in the webcomic</p>';
@@ -356,12 +356,12 @@ echo '<div class="grid">';
         echo '<h3>'.$humanfoldername.'</h3>';
         echo '</div>';
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center">';
-        
+
         # we scan all the valid pattern pages inside episode folder
         $search = glob($projectpath."/low-res/gfx-only/gfx_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
         # request last page of array
         $last_page = end(array_keys($search));
-        if (!empty($search)) { 
+        if (!empty($search)) {
           foreach ($search as $key => $filepath) {
             # weak workaround for excluding page 00 header
             $filepath = str_replace('P00.jpg', 'Pnon-exist.jpg', $filepath);
@@ -386,12 +386,12 @@ echo '<div class="grid">';
             }
           }
         }
-      } 
+      }
       echo '</section>';
-    }	
+    }
     # top button
     echo '</section>';
-    
+
 } elseif ($activefolder == "XYZ") {
 
   # =========== XYZ Preview page ================
@@ -400,7 +400,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 sml-text-right">';
     echo '      <nav class="nav" role="navigation">';
     echo '        <div class="responsive-langmenu">';
@@ -422,7 +422,7 @@ echo '<div class="grid">';
     echo '        </div>';
     echo '      </nav>';
     echo '    </div>';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<p><b>Spoiler alert! Please, do not reshare this page</b>: This episode is still in development and is not meant to be ready for public. It\s published here only to help proofreader and contributors of Pepper&Carrot. If you want to help and give a feedback, <a href="https://framagit.org/peppercarrot/webcomics/issues?scope=all&utf8=%E2%9C%93&state=all&label_name[]=future%20episode">join our latest thread on Framagit here.</a>. Note you can also preview renderings of active Merge Request <a href="https://peppercarrot.frama.io/gitlab-renderer/">on the Gitlab-renderer</a></p>';
     echo '</div>';
@@ -442,7 +442,7 @@ echo '<div class="grid">';
 
           # Display pages:
           $search = glob($projectpath."/low-res/".$lang."_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
-          if (!empty($search)) { 
+          if (!empty($search)) {
             foreach ($search as $key => $filepath) {
               # extracting from the path the filename and path itself
               $filename = basename($filepath);
@@ -460,7 +460,7 @@ echo '<div class="grid">';
 
           # Display markdown scenario:
           $mdsearch = glob($projectpath."/*script.md");
-          if (!empty($mdsearch)) { 
+          if (!empty($mdsearch)) {
             foreach ($mdsearch as $key => $mdfilepath) {
               # extracting from the path the filename and path itself
               $mdfilename = basename($mdfilepath);
@@ -491,56 +491,56 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     # Create a frame for the header.
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
-    
+
       # Add a Title
       echo '<h2>Downloader</h2>';
-      
+
       # Decorate with an illustration:
       echo '<img src="plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/sys/low-res/2016-05-27_download_cover_by-David-Revoy.jpg&amp;w=210&amp;h=210&amp;s=1&amp;q=88" alt="" title="" ><br/>';
-    
+
       # Add a description.
       echo '<p>A tool for publishers, book creators and printers.<br/> It will pack for you all pages in a ZIP file. You\'ll get:<br/>Artworks as PNG without quality loss + speechbubble on another PNG for each page.</p>';
-    
-    # Close header.  
+
+    # Close header.
     echo '</div>';
-    
+
     # Create a frame for the body.
     echo '<section class="col sml-12 med-10 lrg-8 sml-centered">';
-    
+
       # Create a table.
       $langfolders = array();
-      
+
       # Browse langs.json and feed the table with the iso
       foreach ($get as $iso => $value ) {
          array_push($langfolders, $iso);
       }
-      
-      # Sort the table alphabetically. 
+
+      # Sort the table alphabetically.
       sort($langfolders);
-      
+
       # Debug: Display the table
       # print_r($langfolders);
-      
+
       # Start the HTML formular interface.
       echo '<form action="';
-      $plxShow->urlRewrite('downloader.php');      
+      $plxShow->urlRewrite('downloader.php');
       echo '">';
-      
+
       # 1. Language selector.
       # ---------------------
       echo '<label for="page">1. Select a langage: </label>';
       echo '<select name="l">';
-      
+
       # Loop on all lang available.
       foreach($langfolders as $langfolder) {
-      
+
         # Create better names for each ISO.
         $localname = $get->{$langfolder}->{'local_name'};
         $name = $get->{$langfolder}->{'name'};
-        
+
         # Print the item.
         echo '<option value="'.$langfolder.'">';
         echo '['.$langfolder.'] '.$name.' / '.$localname.'';
@@ -548,37 +548,37 @@ echo '<div class="grid">';
       }
 
       echo '</select>';
-      
+
       # Line break and distance.
       echo '<br><br>';
-      
+
       # 2. Season selector
       # ------------------
       echo '<label for="season">2. Select a season: </label>';
       echo '<select name="s">';
-      
+
       # Manually enter the cut here for the seasons.
       echo '<option value="1">[Season 1] from Episode 01 → Episode 11.</option>';
       echo '<option value="2">[Season 2]: from Episode 12 → Episode 21.</option>';
       echo '<option value="3">[Season 3]: from Episode 22 → Episode 29.</option>';
       echo '<option value="4">[Season 4]: from Episode 30 → (Work in Progress).</option>';
       echo '</select>';
-      
+
       # Line break and distance.
       echo '<br><br>';
-      
+
       # Submit button.
       echo '<input type="submit" value="Generate the pack">';
-      
+
       # End of the formular.
       echo '</form>';
-      
+
       # Push the footer far from the form.
       echo'<br/><br/><br/><br/><br/><br/><br/><br/>';
-      
+
     # Close the body.
     echo '</section>';
-    
+
 } elseif ($activefolder == "3D") {
   # ===========  3D ================
     # main HTML container:
@@ -586,7 +586,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>3D Blender files</h2>';
     echo '<p>Quick 3D draft scenes made with Blender 3D for prototyping and painting over the rendered pictures.<br/> </p>';
@@ -600,7 +600,7 @@ echo '<div class="grid">';
     rsort($mainfolders);
     $search = glob($pathartworks."/low-res/*.jpg");
       # we loop on found episodes
-    if (!empty($search)){ 
+    if (!empty($search)){
     foreach ($search as $filepath) {
     # filename extraction
     $filename = basename($filepath);
@@ -608,17 +608,17 @@ echo '<div class="grid">';
     $filenamezip = str_replace('.jpg', '_peppercarrot.zip', $filename);
     $zippath = $fullpath.'/../zip/'.$filenamezip.'';
     $fileweight = (filesize($zippath) / 1024) / 1024;
-    
+
     echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
     echo '<a href="0_sources/0ther/3Dmodels/hi-res/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;s=1&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
     $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
     $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
     $filenameclean = str_replace('_', ' ', $filenameclean);
     $filenameclean = str_replace('-', ' ', $filenameclean);
-    
+
     echo '<figcaption class="sourcescaptions text-center" >
     <b>'.$filenameclean.'</b><br/>
-    [ 
+    [
     <a href="0_sources/0ther/3Dmodels/low-res/'.$filename.'" >low</a> |
     <a href="0_sources/0ther/3Dmodels/hi-res/'.$filename.'" >hi</a> |
     <a href="0_sources/0ther/3Dmodels/zip/'.$filenamezip.'" >src <em class="filesize">('.round($fileweight, 2).'MB)</em></a> ]
@@ -637,7 +637,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Artworks</h2>';
     echo '<p>All the artworks are available as: <b>low</b>-resolution, <b>hi</b>-resolution, or with the layered <b>src</b>/sources krita files.</p>';
@@ -653,7 +653,7 @@ echo '<div class="grid">';
     # newer on top
     rsort($search);
     # we loop on found episodes
-    if (!empty($search)){ 
+    if (!empty($search)){
     foreach ($search as $filepath) {
     # filename extraction
     $filename = basename($filepath);
@@ -671,7 +671,7 @@ echo '<div class="grid">';
     $filenamezip = str_replace('jpg', 'zip', $filename);
     echo '<figcaption class="sourcescaptions text-center" >
     <b>'.$filenameclean.'</b><br/>
-    [ 
+    [
     <a href="0_sources/0ther/artworks/low-res/'.$filename.'" >low</a> |
     <a href="0_sources/0ther/artworks/hi-res/'.$filename.'" >hi</a> |
     <a href="0_sources/0ther/artworks/zip/'.$filenamezip.'" >src <em class="filesize">('.round($fileweight, 2).'MB)</em></a> ]
@@ -689,7 +689,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>E-Shop Sources</h2>';
     echo '<p>All the sources of the eshop for the <a href="https://www.redbubble.com/people/davidrevoy/portfolio?asc=u">official Pepper&amp;Carrot E-Shop on Redbubble</a> are available here under <a href="https://creativecommons.org/licenses/by/4.0/">CC-By license</a>.</p>';
@@ -705,7 +705,7 @@ echo '<div class="grid">';
     # newer on top
     rsort($search);
     # we loop on found episodes
-    if (!empty($search)){ 
+    if (!empty($search)){
     foreach ($search as $filepath) {
     # filename extraction
     $filename = basename($filepath);
@@ -724,7 +724,7 @@ echo '<div class="grid">';
     $filenamezip = str_replace('jpg', 'zip', $filename);
     echo '<figcaption class="sourcescaptions text-center" >
     <b>'.$filenameclean.'</b><br/>
-    [ 
+    [
     <a href="0_sources/0ther/eshop/low-res/'.$filename.'" >low</a> |
     <a href="0_sources/0ther/eshop/hi-res/'.$filenamepng.'" >hi</a> |
     <a href="0_sources/0ther/eshop/zip/'.$filenamezip.'" >src <em class="filesize">('.round($fileweight, 2).'MB)</em></a> ]
@@ -743,7 +743,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Wallpapers</h2>';
     echo '<p></p>';
@@ -759,7 +759,7 @@ echo '<div class="grid">';
     # newer on top
     rsort($search);
     # we loop on found episodes
-    if (!empty($search)){ 
+    if (!empty($search)){
     foreach ($search as $filepath) {
     # filename extraction
     $filename = basename($filepath);
@@ -797,7 +797,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Press</h2>';
     echo '<p>Logo, title, banner for press or community projects.</p>';
@@ -813,7 +813,7 @@ echo '<div class="grid">';
     # newer on top
     rsort($search);
     # we loop on found episodes
-    if (!empty($search)){ 
+    if (!empty($search)){
     foreach ($search as $filepath) {
     # filename extraction
     $filename = basename($filepath);
@@ -831,7 +831,7 @@ echo '<div class="grid">';
     $filenamezip = str_replace('jpg', 'zip', $filename);
     echo '<figcaption class="sourcescaptions text-center" >
     <b>'.$filenameclean.'</b><br/>
-    [ 
+    [
     <a href="0_sources/0ther/press/low-res/'.$filename.'" >low</a> |
     <a href="0_sources/0ther/press/hi-res/'.$filename.'" >hi</a> |
     <a href="0_sources/0ther/press/zip/'.$filenamezip.'" >src <em class="filesize">('.round($fileweight, 2).'MB)</em></a> ]
@@ -841,7 +841,7 @@ echo '<div class="grid">';
     }
     echo '</section>';
     echo '</div>';
-    
+
 } elseif ($activefolder == "other") {
   # =======  MISC ===========
     # main HTML container:
@@ -849,7 +849,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Misc / Other</h2>';
     echo '<p>Archive of artworks.</p>';
@@ -865,7 +865,7 @@ echo '<div class="grid">';
     # newer on top
     sort($search);
     # we loop on found episodes
-    if (!empty($search)){ 
+    if (!empty($search)){
     foreach ($search as $filepath) {
     # filename extraction
     $filename = basename($filepath);
@@ -883,7 +883,7 @@ echo '<div class="grid">';
     $filenamezip = str_replace('jpg', 'zip', $filename);
     echo '<figcaption class="sourcescaptions text-center" >
     <b>'.$filenameclean.'</b><br/>
-    [ 
+    [
     <a href="0_sources/0ther/misc/low-res/'.$filename.'" >low</a> |
     <a href="0_sources/0ther/misc/hi-res/'.$filename.'" >hi</a> |
     <a href="0_sources/0ther/misc/zip/'.$filenamezip.'" >src <em class="filesize">('.round($fileweight, 2).'MB)</em></a> ]
@@ -893,8 +893,8 @@ echo '<div class="grid">';
     }
     echo '</section>';
     echo '</div>';
-    
-    
+
+
   } elseif ($activefolder == "translation") {
   # =======  Translation Status ===========
     #closing page header preformating
@@ -902,8 +902,8 @@ echo '<div class="grid">';
     echo '</section>';
     echo '</main>';
     echo '</div>'; #main container
-    
-    
+
+
     echo '<div style="text-align:left; margin: 1rem;">';
     echo '<div style="width: 1500px;">';
     echo '<h2>Translation Project Overview</h2>';
@@ -926,7 +926,7 @@ echo '<div class="grid">';
     $hide = array('.', '..', '0ther', '0_archives', '.thumbs', 'New', '2010-10-10_Older-comics', '2010-10-09_Press-kit', '.git', '.ci', '0_transcripts', 'fonts');
     $mainfolders = array_diff(scandir($path), $hide);
     sort($mainfolders);
-    foreach($mainfolders as $foldername) {   
+    foreach($mainfolders as $foldername) {
       $projectpath = $path.$foldername;
       #Ensure a folder exist
       if(is_dir($projectpath)) {
@@ -948,7 +948,7 @@ echo '<div class="grid">';
         $languagecounter = $languagecounter + 1;
       }
     }
-         
+
     # Display : Loop on the folders
     foreach($langfolders as $langfolder) {
       $projectpath = $validlangdir.$langfolder;
@@ -956,7 +956,7 @@ echo '<div class="grid">';
       if(is_dir($projectpath)) {
         echo '<td>';
           echo ''.$langfolder.' <br/><strong>';
-          # Get local name from langs.json, imported at the end of header.php 
+          # Get local name from langs.json, imported at the end of header.php
           $localname = $get->{$langfolder}->{'local_name'};
           echo $localname;
         echo' </strong></td>';
@@ -964,13 +964,13 @@ echo '<div class="grid">';
         $hide = array('.', '..', '0_archives', '0ther', '.thumbs', 'New', 'fonts');
         $mainfolders = array_diff(scandir($path), $hide);
         sort($mainfolders);
-        
+
         foreach($mainfolders as $foldername) {
           $projectpath = $path.$foldername;
           #Ensure a folder exist
           if(is_dir($projectpath)) {
             $search = glob($projectpath."/low-res/en_*E??.jpg");
-            if (!empty($search)){ 
+            if (!empty($search)){
               foreach ($search as $filepath) {
                 # filename extraction
                 $fileweight = (filesize($filepath) / 1024) / 1024;
@@ -987,7 +987,7 @@ echo '<div class="grid">';
             }
           }
         }
-        
+
         foreach($mainfolders as $foldername) {
           $projectpath = $path.$foldername;
           #Ensure a folder exist
@@ -1001,7 +1001,7 @@ echo '<div class="grid">';
             # we scan all en vignette to define all episodes , it's a constant
             $search = glob($projectpath."/low-res/en_*E??.jpg");
             # we loop on found episodes
-            if (!empty($search)){ 
+            if (!empty($search)){
               foreach ($search as $filepath) {
                 # filename extraction
                 $fileweight = (filesize($filepath) / 1024) / 1024;
@@ -1037,14 +1037,14 @@ echo '<div class="grid">';
         $singlelangcount = 0;
       }
       echo "</tr>";
-    }            
+    }
     echo "</table>";
     echo '</div>';
     echo '</div>';
-    
+
     echo "<br/>";
     echo '<div style="text-align:left; margin: 1rem;">';
-    
+
     echo '<div style="max-width:960px; border: 1px solid #bdbdbd; padding: 2rem;">';
     echo "<strong>";
     echo $totalepisodecount.' episodes published. <br/>';
@@ -1072,7 +1072,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Original artworks scanned</h2>';
     echo '<p>Original drawings: pencil on paper , Raw Scan at 300ppi with Xsane.<br/> </p>';
@@ -1086,7 +1086,7 @@ echo '<div class="grid">';
     rsort($mainfolders);
     $search = glob($pathartworks."/*.jpg");
     # we loop on found episodes
-    if (!empty($search)){ 
+    if (!empty($search)){
     foreach ($search as $filepath) {
     # filename extraction
     $fileweight = (filesize($filepath) / 1024) / 1024;
@@ -1124,7 +1124,7 @@ echo '<div class="grid">';
     }
     echo '</section>';
     echo '</div>';
-    
+
   } elseif ($activefolder == "inks") {
   # ===========  Inks ================
     # main HTML container:
@@ -1132,7 +1132,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Inks</h2>';
     echo '<p>Drawings made with inks, daily made during <a href="http://mrjakeparker.com/inktober">Inktober</a>.<br/>This drawings are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" title="For more information, read the Creative Commons Attribution 4.0">CC-By license</a> to <a href="http://www.davidrevoy.com">David Revoy</a>. </p>';
@@ -1146,7 +1146,7 @@ echo '<div class="grid">';
     rsort($mainfolders);
     $search = glob($pathartworks."/*.jpg");
     # we loop on found episodes
-    if (!empty($search)){ 
+    if (!empty($search)){
     foreach ($search as $filepath) {
     # filename extraction
     $fileweight = (filesize($filepath) / 1024) / 1024;
@@ -1192,7 +1192,7 @@ echo '<div class="grid">';
     echo '<main class="main grid" role="main">';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
     echo '<div class="grid">';
-    
+
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
     echo '<h2>Error: Page not found</h2>';
     echo '</div>';
@@ -1207,7 +1207,7 @@ echo '<div class="grid">';
   echo '<main class="main grid" role="main">';
   echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
   echo '<div class="grid">';
-  
+
   echo '<!-- Intro -->';
     include(dirname(__FILE__).'/lib-transla-static.php');
     echo '<article class="page col sml-12 med-12 lrg-10 sml-centered" role="article" >';
@@ -1228,10 +1228,10 @@ echo '<div class="grid">';
       echo '<br/><br/>';
       echo '</article>';
       echo '<br/><br/>';
-      
+
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center">';
-        
-          
+
+
           # SOURCES EPISODES
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1243,7 +1243,7 @@ echo '<div class="grid">';
           echo 'sources of all langs & episodes';
           echo '</a></figcaption>';
           echo '</figure>';
-          
+
           # OVERVIEW
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1267,7 +1267,7 @@ echo '<div class="grid">';
           echo 'Illustrations for print';
           echo '</a></figcaption>';
           echo '</figure>';
-          
+
           # WALLPAPERS
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1279,7 +1279,7 @@ echo '<div class="grid">';
           echo 'screen-sized illustrations';
           echo '</a></figcaption>';
           echo '</figure>';
-          
+
           # INKS
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1303,7 +1303,7 @@ echo '<div class="grid">';
           echo 'raw scan of drawings';
           echo '</a></figcaption>';
           echo '</figure>';
-          
+
           # 3D
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1315,7 +1315,7 @@ echo '<div class="grid">';
           echo '3D Blender files';
           echo '</a></figcaption>';
           echo '</figure>';
-          
+
           # PRESSKIT
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1327,7 +1327,7 @@ echo '<div class="grid">';
           echo 'banners and logos';
           echo '</a></figcaption>';
           echo '</figure>';
-          
+
           # MISC
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1339,7 +1339,7 @@ echo '<div class="grid">';
           echo 'speedpaintings, lineart and misc';
           echo '</a></figcaption>';
           echo '</figure>';
-          
+
           # ESHOP
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1351,7 +1351,7 @@ echo '<div class="grid">';
           echo 'Sources of the official eshop';
           echo '</a></figcaption>';
           echo '</figure>';
-          
+
           # FAN−ART
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1363,7 +1363,7 @@ echo '<div class="grid">';
           echo 'artworks from the fans';
           echo '</a></figcaption>';
           echo '</figure>';
-          
+
           # DOWNLOAD
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1375,7 +1375,7 @@ echo '<div class="grid">';
           echo 'zip available for publishers';
           echo '</a></figcaption>';
           echo '</figure>';
-          
+
           # TRANSLATION STATUS
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1387,7 +1387,7 @@ echo '<div class="grid">';
           echo 'tools and credit for translators';
           echo '</a></figcaption>';
           echo '</figure>';
-          
+
           # SCENARIOS
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
@@ -1399,13 +1399,13 @@ echo '<div class="grid">';
           echo 'collaborative stories';
           echo '</a></figcaption>';
           echo '</figure>';
-      
+
         echo '</section>';
-    
+
     echo '</article>';
   echo '</div>';
   echo '<div class="grid">';
-  
+
 }
 
 
