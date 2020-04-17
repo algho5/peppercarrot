@@ -27,13 +27,6 @@
     "iso_code": "ca",
     "iso_version":1
   },
-  "cn": {
-    "translators": ["Ran Zhuang", "Yan Jing"],
-    "name": "Chinese",
-    "local_name": "中文",
-    "iso_code": "zh",
-    "iso_version":1
-  },
   "cs": {
     "translators": ["Kateřina Fleknová", "Martin Doucha"],
     "name": "Czech",
@@ -69,6 +62,21 @@
     "iso_code": "en",
     "iso_version":1
   },
+  "es": {
+    "translators": ["TheFaico"],
+    "name": "Spanish",
+    "local_name": "Español",
+    "iso_code": "es",
+    "iso_version":1
+  },
+  "mx": {
+    "translators": ["RJ Quiralta"],
+    "name": "Mexican Spanish",
+    "local_name": "Español mexicano",
+    "iso_code": "es",
+    "iso_locale": "MX",
+    "iso_version":1
+  },
   "eo": {
     "translators": ["LibreFan", "Kaoseto kaj Nay Ledofiŝ", "Kaoseto", "Spenĉjo", "Naj Ledofiŝ"],
     "name": "Esperanto",
@@ -76,11 +84,13 @@
     "iso_code": "eo",
     "iso_version":1
   },
-  "es": {
-    "translators": ["TheFaico"],
-    "name": "Spanish",
-    "local_name": "Español",
-    "iso_code": "es",
+  "cn": {
+    "translators": ["Ran Zhuang", "Yan Jing"],
+    "name": "Chinese (Simplified)",
+    "local_name": "中文",
+    "iso_code": "zh",
+    "iso_locale": "CN",
+    "iso_script": "Hans",
     "iso_version":1
   },
   "fa": {
@@ -90,6 +100,13 @@
     "iso_code": "fa",
     "iso_version":1
   },
+  "ph": {
+    "translators": ["Paolo Abes"],
+    "name": "Filipino",
+    "local_name": "Filipino",
+    "iso_code": "fil",
+    "iso_version": 2
+  },
   "fr": {
     "translators": ["David Revoy", "Aurélien Gâteau", "Remi Rampin", "Xavier Dolques", "Nartance", "Valvin", "Calimeroteknik"],
     "name": "French",
@@ -97,18 +114,46 @@
     "iso_code": "fr",
     "iso_version":1
   },
-  "fi": {
-    "translators": ["Kari Lehto"],
-    "name": "Finnish",
-    "local_name": "Suomi",
-    "iso_code": "fi",
+  "gd":{
+    "translators": ["GunChleoc"],
+    "name": "Scottish Gaelic",
+    "local_name": "Gàidhlig",
+    "iso_code": "gd",
+    "iso_version": 1
+  },
+  "gl":{
+    "translators": ["Xosé M."],
+    "name": "Galician",
+    "local_name": "Galego",
+    "iso_code": "gl",
+    "iso_version": 1
+  },
+  "go":{
+    "translators": ["Patrik Deriano", "Gwenaelle Lefeuvre"],
+    "name": "Gallo",
+    "local_name": "Galo",
+    "iso_code": "",
+    "iso_version": -1
+  },
+  "kr": {
+    "translators": ["Jihoon Kim", "Shikamaru \"initbar\" Yamamoto"],
+    "name": "Korean",
+    "local_name": "한국어",
+    "iso_code": "ko",
     "iso_version":1
   },
-  "hu": {
-    "translators": ["Halász Gábor \"Hali\""],
-    "name": "Hungarian",
-    "local_name": "Magyar",
-    "iso_code": "hu",
+  "hi":{
+    "translators": ["Neha Deogade"],
+    "name": "Hindi",
+    "local_name": "हिन्दी",
+    "iso_code": "hi",
+    "iso_version": 1
+  },
+  "io": {
+    "translators": ["Gilles-Philippe Morin", "Brian E. Drake", "William Johnsson"],
+    "name": "Ido",
+    "local_name": "Ido",
+    "iso_code": "io",
     "iso_version":1
   },
   "id": {
@@ -118,13 +163,6 @@
     "iso_code": "id",
     "iso_version":1
   },
-  "io": {
-    "translators": ["Gilles-Philippe Morin", "Brian E. Drake", "William Johnsson"],
-    "name": "Ido",
-    "local_name": "Ido",
-    "iso_code": "io",
-    "iso_version":1
-  },
   "it": {
     "translators": ["Antonio Parisi (Corrections)", "Carlo Gandolfi"],
     "name": "Italian",
@@ -132,25 +170,47 @@
     "iso_code": "it",
     "iso_version":1
   },
-  "ja": {
-    "translators": ["guruguru"],
-    "name": "Japanese",
-    "local_name": "日本語",
-    "iso_code": "ja",
-    "iso_version":1
+  "kw":{
+    "translators": ["Steve Harris"],
+    "name": "Cornish",
+    "local_name": "Kernewek",
+    "iso_code": "kw",
+    "iso_version": 1
   },
-  "kr": {
-    "translators": ["Jihoon Kim", "Shikamaru \"initbar\" Yamamoto"],
-    "name": "Korean",
-    "local_name": "한국어",
-    "iso_code": "ko",
-    "iso_version":1
+  "kt": {
+    "translators": ["Erwhann-Rouge", "webmistusik", "Mardixuran", "Kotava dokalixo"],
+    "name": "Kotava",
+    "local_name": "Kotava",
+    "iso_code": "avk",
+    "iso_version":3
   },
   "la": {
     "translators": ["Guillaume Lestringant"],
     "name": "Latin",
     "local_name": "Latina",
     "iso_code": "la",
+    "iso_version":1
+  },
+  "jb": {
+    "translators": ["la gleki (ly. Gleki Arxokuna ly.)", "lai krtis", "mezohe"],
+    "name": "Lojban (Latin)",
+    "local_name": "la .lojban.",
+    "iso_code": "jbo",
+    "iso_script": "Latn",
+    "iso_version":2
+  },
+  "jz": {
+    "translators": ["la gleki (ly. Gleki Arxokuna ly.)"],
+    "name": "Lojban (zbalermorna)",
+    "local_name": "󢍡󢌀󢍩󢎱󢐠",
+    "iso_code": "jbo",
+    "iso_version":2
+  },
+  "hu": {
+    "translators": ["Halász Gábor \"Hali\""],
+    "name": "Hungarian",
+    "local_name": "Magyar",
+    "iso_code": "hu",
     "iso_version":1
   },
   "ml": {
@@ -167,14 +227,6 @@
     "iso_code": "ms",
     "iso_version": 1
   },
-  "mx": {
-    "translators": ["RJ Quiralta"],
-    "name": "Mexican Spanish",
-    "local_name": "Español mexicano",
-    "iso_code": "es",
-    "iso_locale": "MX",
-    "iso_version":1
-  },
   "nl": {
     "translators": ["Midgard", "Willem Sonke", "Peter Moonen"],
     "name": "Dutch",
@@ -182,12 +234,12 @@
     "iso_code": "nl",
     "iso_version":1
   },
-  "nn": {
-    "translators": ["Arild Torvund Olsen"],
-    "name": "Nynorsk (New Norwegian)",
-    "local_name": "Nynorsk",
-    "iso_code": "nn",
-    "iso_version": 1
+  "ja": {
+    "translators": ["guruguru"],
+    "name": "Japanese",
+    "local_name": "日本語",
+    "iso_code": "ja",
+    "iso_version":1
   },
   "no": {
     "translators": ["Thomas Nordstrøm"],
@@ -195,6 +247,27 @@
     "local_name": "Norsk (bokmål)",
     "iso_code": "nb",
     "iso_version":1
+  },
+  "nn": {
+    "translators": ["Arild Torvund Olsen"],
+    "name": "Norwegian Nynorsk",
+    "local_name": "Norsk (nynorsk)",
+    "iso_code": "nn",
+    "iso_version": 1
+  },
+  "oc":{
+    "translators": ["Quentin"],
+    "name": "Occitan",
+    "local_name": "Occitan",
+    "iso_code": "oc",
+    "iso_version": 1
+  },
+  "ns": {
+    "translators": [],
+    "name": "Low German",
+    "local_name": "Plattdüütsch",
+    "iso_code": "nds",
+    "iso_version":2
   },
   "pl": {
     "translators": ["Przemysław \"Kev\" Chudzia", "Sölve Svartskogen"],
@@ -224,9 +297,16 @@
     "iso_code": "ru",
     "iso_version":1
   },
+  "sb":{
+    "translators": ["Olivier Simon", "Scott Walters"],
+    "name": "Sambahsa",
+    "local_name": "Sambahsa",
+    "iso_code": "",
+    "iso_version": -1
+  },
   "si": {
     "translators": ["Tharinda Divakara"],
-    "name": "Sinhalese",
+    "name": "Sinhala",
     "local_name": "සිංහල",
     "iso_code": "si",
     "iso_version":1
@@ -238,11 +318,33 @@
     "iso_code": "sk",
     "iso_version":1
   },
+  "sl":{
+    "translators": ["Andrej Ficko"],
+    "name": "Slovenian",
+    "local_name": "Slovenščina",
+    "iso_code": "sl",
+    "iso_version": 1
+  },
+  "sz": {
+    "translators": ["Grzegorz Kulik"],
+    "name": "Silesian",
+    "local_name": "Ślůnski",
+    "iso_code": "szl",
+    "iso_version":3
+  },
   "sr": {
     "translators": ["Marko Ivancevic"],
-    "name": "Serbian",
+    "name": "Serbian (Cyrillic)",
     "local_name": "Српски",
     "iso_code": "sr",
+    "iso_script": "Cyrl",
+    "iso_version":1
+  },
+  "fi": {
+    "translators": ["Kari Lehto"],
+    "name": "Finnish",
+    "local_name": "Suomi",
+    "iso_code": "fi",
     "iso_version":1
   },
   "sv": {
@@ -265,58 +367,5 @@
     "local_name": "Tiếng Việt",
     "iso_code": "vi",
     "iso_version":1
-  },
-  
-  "jb": {
-    "translators": ["la gleki (ly. Gleki Arxokuna ly.)", "lai krtis", "mezohe"],
-    "name": "Lojban",
-    "local_name": "Lojban",
-    "iso_code": "jbo",
-    "iso_version":2
-  },
-  "ns": {
-    "translators": [],
-    "name": "Low German",
-    "local_name": "Plattdüütsch",
-    "iso_code": "nds",
-    "iso_version":2
-  },
-  "ph": {
-    "translators": ["Paolo Abes"],
-    "name": "Filipino",
-    "local_name": "Filipino",
-    "iso_code": "fil",
-    "iso_version": 2
-  },
-  
-  
-  "kt": {
-    "translators": ["Erwhann-Rouge", "webmistusik", "Mardixuran", "Kotava dokalixo"],
-    "name": "Kotava",
-    "local_name": "Kotava",
-    "iso_code": "avk",
-    "iso_version":3
-  },
-  "sz": {
-    "translators": ["Grzegorz Kulik"],
-    "name": "Silesian",
-    "local_name": "Ślůnski",
-    "iso_code": "szl",
-    "iso_version":3
-  },
-  
-  "go":{
-    "translators": ["Patrik Deriano", "Gwenaelle Lefeuvre"],
-    "name": "Gallo",
-    "local_name": "Galo",
-    "iso_code": "",
-    "iso_version": -1
-  },
-  "sb":{
-    "translators": ["Olivier Simon", "Scott Walters"],
-    "name": "Sambahsa",
-    "local_name": "Sambahsa",
-    "iso_code": "",
-    "iso_version": -1
   }
 }

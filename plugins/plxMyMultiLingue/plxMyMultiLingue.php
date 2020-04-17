@@ -244,9 +244,12 @@ class Comic {
 
 class plxMyMultiLingue extends plxPlugin {
 
-  public $aLangs = array(); # tableau des langues
   public $lang = ''; # langue courante
   public $plxMotorConstruct = false;
+
+  # Language native names, ISO codes, ... as JSON
+  private $languageConfig;
+  # The current comicpage. This is empty until initialize() is called on it from a hook.
   private $comic;
 
   /**
@@ -278,6 +281,9 @@ class plxMyMultiLingue extends plxPlugin {
       $this->lang = $_COOKIE["plxMyMultiLingue"];
     else
       $this->lang = $default_lang;
+
+    # Language native names, ISO codes, ...
+    $this->languageConfig = json_decode(file_get_contents('0_sources/langs.json'));
 
     //if(preg_match('/^([a-zA-Z]{2})\/(.*)/', $get, $capture))
     //  $this->lang = $capture[1];
@@ -331,6 +337,7 @@ class plxMyMultiLingue extends plxPlugin {
 
     # Specific rules for Pepper&Carrot :
     $this->addHook('MyMultiLingueGetLang', 'MyMultiLingueGetLang');
+    $this->addHook('MyMultiLingueGetLangLabel', 'MyMultiLingueGetLangLabel');
     $this->addHook('MyMultiLingueComicLang', 'MyMultiLingueComicLang');
     $this->addHook('MyMultiLingueStaticLang', 'MyMultiLingueStaticLang');
     $this->addHook('MyMultiLingueStaticAllLang', 'MyMultiLingueStaticAllLang');
@@ -343,13 +350,15 @@ class plxMyMultiLingue extends plxPlugin {
     $this->addHook('MyMultiLingueCommentLinkDisplay', 'MyMultiLingueCommentLinkDisplay');
 
     # récupération des langues enregistrées dans le fichier de configuration du plugin
-    if($this->getParam('flags')!='')
-      $this->aLangs = explode(',', $this->getParam('flags'));
 
     $this->lang = $this->validLang($this->lang);
 
     # PLX_MYMULTILINGUE contient la liste des langues - pour être utilisé par d'autres plugins
-    define('PLX_MYMULTILINGUE', $this->getParam('flags'));
+    $language_codes = array();
+    foreach ($this->languageConfig as $lang => $langinfo) {
+      array_push($language_codes, $lang);
+    }
+    define('PLX_MYMULTILINGUE', $language_codes);
 
   }
 
@@ -383,7 +392,7 @@ class plxMyMultiLingue extends plxPlugin {
    * @author  Stephane F
    **/
   public function validLang($lang) {
-    return (in_array($lang, $this->aLangs) ? $lang : $this->default_lang);
+    return (isset($this->languageConfig->{$lang}) && !empty($this->languageConfig->{$lang})) ? $lang : $this->default_lang;
   }
 
   /**
@@ -899,7 +908,7 @@ class plxMyMultiLingue extends plxPlugin {
     if(empty($_SERVER['QUERY_STRING'])) {
       # création d'un sitemapindex
       echo '<?php echo "<?xml version=\"1.0\" encoding=\"".strtolower(PLX_CHARSET)."\"?>\n<sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">" ?>';
-      foreach($this->aLangs as $lang) {
+      foreach($this->languageConfig as $lang => $langinfo) {
         echo '<?php echo "\n\t<sitemap>"; ?>';
         echo '<?php echo "\n\t\t<loc>".$plxMotor->racine."sitemap.php?'.$lang.'</loc>"; ?>';
         echo '<?php echo "\n\t</sitemap>"; ?>';
@@ -915,43 +924,14 @@ class plxMyMultiLingue extends plxPlugin {
 
   }
 
-  /********************************/
-  /* theme: affichage du drapeaux */
-  /********************************/
-
-  /**
-   * Méthode qui affiche les drapeaux ou le nom des langues pour la partie visiteur du site
-   *
-   * return  stdio
-   * @author  Stephane F
-   **/
-  public function MyMultiLingue() {
-
-    $aLabels = unserialize($this->getParam('labels'));
-
-    if($this->aLangs) {
-      echo '<div id="langs">';
-      echo '<ul>';
-      foreach($this->aLangs as $idx=>$lang) {
-        $sel = $this->lang==$lang ? ' active':'';
-        if($this->getParam('display')=='flag') {
-          $img = '<img class=\"lang'.$sel.'\" src=\"'.PLX_PLUGINS.'plxMyMultiLingue/img/'.$lang.'.png\" alt=\"'.$lang.'\" />';
-          echo '<li><?php echo "<a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'.$img.'</a></li>"; ?>';
-        } else {
-          echo '<li><?php echo "<a class=\"lang'.$sel.'\" href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'. $aLabels[$lang].'</a></li>"; ?>';
-        }
-
-      }
-      echo '</ul>';
-      echo '</div>';
-    }
-  }
-
-
 public function MyMultiLingueGetLang() {
 
   return $this->lang;
 
+}
+
+public function MyMultiLingueGetLangLabel($lang) {
+  return $this->languageConfig->{$lang}->{'local_name'};
 }
 
 /**********************************************************/
@@ -962,12 +942,10 @@ public function MyMultiLingueGetLang() {
  * @author: David Revoy
  **/
 public function MyMultiLingueComicLang() {
-  $plxMotor = plxMotor::getInstance();
-  $aLabels = unserialize($this->getParam('labels'));
 
   $data = $this->episodeData();
 
-  foreach($this->aLangs as $idx=>$lang) {
+  foreach($this->languageConfig as $lang => $langinfo) {
     # If the label display active lang, let CSS know for highlight via class 'active'
     $sel = $this->lang==$lang ? ' active':'';
 
@@ -978,7 +956,7 @@ public function MyMultiLingueComicLang() {
     # then we detect if hypothical page exist to display the button
     if (file_exists($comicpage_tester)) {
       # Lang exists, we build the HTML for the language item
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'. $aLabels[$lang].'</a></li>"; ?>';
+      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'.$langinfo->{'local_name'}.'</a></li>"; ?>';
     }
   }
   # Display the resulting full list
@@ -995,9 +973,8 @@ public function MyMultiLingueComicLang() {
  **/
 public function MyMultiLingueStaticLang() {
   $plxMotor = plxMotor::getInstance();
-  $aLabels = unserialize($this->getParam('labels'));
   # loop on all the lang pluxml know
-  foreach($this->aLangs as $idx=>$lang) {
+  foreach($this->languageConfig as $lang => $langinfo) {
     # Build a pattern to find a hypothetic translation (eg. en.php, jp.php) in theme/lang/ folder
     $LangAvailable = PLX_ROOT.$plxMotor->aConf['racine_themes'].$plxMotor->style.'/lang/'.$lang.'.php';
     # If the label display active lang, let CSS know for highlight via class 'active'
@@ -1005,7 +982,7 @@ public function MyMultiLingueStaticLang() {
     # if we detect page 01 exist in a active language
     if (file_exists($LangAvailable)) {
       # Lang registered in PLuxXML, we build the HTML for the language item
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'. $aLabels[$lang].'</a></li>"; ?>';
+      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'.$langinfo->{'local_name'}.'</a></li>"; ?>';
      }
   }
   # Display the resulting full list
@@ -1029,9 +1006,8 @@ public function MyMultiLingueStaticAllLang($pageurl) {
   }
 
   $plxMotor = plxMotor::getInstance();
-  $aLabels = unserialize($this->getParam('labels'));
   # loop on all the lang pluxml know
-  foreach($this->aLangs as $idx=>$lang) {
+  foreach($this->languageConfig as $lang => $langinfo) {
     # Build a pattern to find a hypothetic translation (eg. en.php, jp.php) in theme/lang/ folder
     $LangAvailable = PLX_ROOT.$plxMotor->aConf['racine_themes'].$plxMotor->style.'/lang/'.$lang.'.php';
     # If the label display active lang, let CSS know for highlight via class 'active'
@@ -1064,7 +1040,7 @@ public function MyMultiLingueStaticAllLang($pageurl) {
       } else {
       $LangString .= 'website is not translated.\">';
       }
-      $LangString .= ''.$aLabels[$lang].' ';
+      $LangString .= ''.$langinfo->{'local_name'}.' ';
       $LangString .= '<span class=\"percent\" >'.$percent.'%</span> ';
       if ($percent == 100 ){
         $LangString .= '<img src=\"themes/peppercarrot-theme_v2/ico/star.svg\" alt=\"star,\" title=\"Translation complete! Congratulation.\"/>';
@@ -1170,8 +1146,13 @@ public function MyMultiLingueStaticAllLang($pageurl) {
             readfile($this->comic->transcripts[0]);
           }
           // Display a dictionary button for opening this page in http://multidict.net/wordlink/
+          $iso_code = $this->languageConfig->{$this->comic->usedlang}->{'iso_code'};
+          if (isset($this->languageConfig->{$this->comic->usedlang}->{'iso_script'})) {
+            $iso_code .= '-' . $this->languageConfig->{$this->comic->usedlang}->{'iso_script'};
+          }
+
           echo '<div class="button top moka">';
-            echo '<a href="https://multidict.net/wordlink/?sl=en&url=';
+            echo '<a href="https://multidict.net/wordlink/?sl='.$iso_code.'&url=';
               print($plxShow->artUrl().urlencode('&transcript=1'));
               echo '" title="'.$plxShow->Getlang('NAVIGATION_DICTIONARY_ALT').'">'.$plxShow->Getlang('NAVIGATION_DICTIONARY').'</a>';
             echo '</div>';

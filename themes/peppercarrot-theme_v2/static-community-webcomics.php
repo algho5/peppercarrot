@@ -3,7 +3,7 @@
 include(dirname(__FILE__).'/lib-parsedown.php');
 
 # lang strings
-$lang = $plxShow->getLang('LANGUAGE_ISO_CODE_2_LETTER');
+$lang = $plxShow->callHook('MyMultiLingueGetLang');
 $ccbystring = $plxShow->getLang('UTIL_BY');
 $episodestring = $plxShow->getLang('UTIL_EPISODE');
 $addatranslationstring = $plxShow->getlang('ADD_TRANSLATION');
@@ -68,6 +68,8 @@ if(isset($_GET['page'])) {
 # (a "page" variable passed)
 # (a "display" variable passed)
 
+    $allLangs = json_decode(file_get_contents('0_sources/langs.json'));
+
     if(isset($_GET['display'])) {
         $imagename = $activeimage;
 
@@ -88,7 +90,7 @@ if(isset($_GET['page'])) {
                         $langimagename = $langavailable.''.$langimagewithoutlang;
                         if (file_exists($pathartworks.'/'.$langimagename.'')) {
                           echo '<li class="button"><a class="lang" href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'&display='.$langimagename.'">';
-                          $langprettyname = $get->{$langavailable}->{'name'};
+                          $langprettyname = $allLangs->{$langavailable}->{'local_name'};
                           echo $langprettyname;
                           echo '</a></li>';
                         }
@@ -128,12 +130,12 @@ if(isset($_GET['page'])) {
           echo '<div class="col sml-12 sml-text-right">';
             echo '<nav class="nav" role="navigation">';
               echo '<div class="responsive-langmenu">';
-                echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> Translations<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
+                echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> '.$plxShow->callHook('MyMultiLingueGetLangLabel', $lang).'<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
                   echo '<input type="checkbox" id="langmenu">';
                     echo '<ul class="langmenu expanded">';
                       foreach ($detectedlangscleaned as $langavailable) {
                         echo '<li class="button"><a class="lang" href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'">';
-                          $langprettyname = $get->{$langavailable}->{'name'};
+                          $langprettyname = $allLangs->{$langavailable}->{'local_name'};
                           echo $langprettyname;
                         echo '</a></li>';
                       }
