@@ -28,32 +28,21 @@ $pathcommunityfolder = '0_sources/0ther/community';
 # [page] datas are in the URL
 if(isset($_GET['page'])) {
 
-    $foldername = $activefolder;
     $pathartworks = $pathcommunityfolder .'/'.$activefolder;
-    $detectedlangs=array();
 
 # Check available languages
 # =========================
 
-    # Detect the amount of language to display by scanning threw available files
-    $searchfiles = glob($pathartworks."/??_*by-*.jpg");
-    foreach ($searchfiles as $file) {
-      $filename = basename($file);
-      $filenameclean =  substr($filename, 0, 2); // keeps only two letter ISO lang
-      array_push($detectedlangs,$filenameclean);
-    }
-    $detectedlangscleaned = array_unique($detectedlangs);
+    # Get language from hook. Skip website languages.
+    $availablelanguages = $plxShow->callHook('MyMultiLingueGetAvailableLanguagesForPage',
+        array('tester' =>'0_sources/0ther/community/Pepper-and-Carrot-Mini_by_Nartance',
+              'website' => false));
 
-    $matchinglang = 0;
     # We check if content exist for user with active lang selected
-    foreach ($detectedlangscleaned as $proposedlang) {
-      if ($lang == $proposedlang){
-        $matchinglang = 1;
-      }
-    }
+    $matchinglang = array_key_exists($lang, $availablelanguages);
 
     # When no lang available, display a message:
-    if ($matchinglang !== 1){
+    if (!$matchinglang) {
       echo '<div class="grid">';
       echo '<br/><div class="col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center alert blue">';
       echo '  <img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt="info:"/>';
@@ -67,8 +56,6 @@ if(isset($_GET['page'])) {
 # =======================================
 # (a "page" variable passed)
 # (a "display" variable passed)
-
-    $allLangs = json_decode(file_get_contents('0_sources/langs.json'));
 
     if(isset($_GET['display'])) {
         $imagename = $activeimage;
@@ -85,13 +72,12 @@ if(isset($_GET['page'])) {
                 echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/>'.$langlabel.'<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
                   echo '<input type="checkbox" id="langmenu">';
                     echo '<ul class="langmenu expanded">';
-                      foreach ($detectedlangscleaned as $langavailable) {
+                      foreach ($availablelanguages as $lang => $langinfo) {
                         $langimagewithoutlang = substr($imagename, 2); // rm old lang
-                        $langimagename = $langavailable.''.$langimagewithoutlang;
+                        $langimagename = $lang.$langimagewithoutlang;
                         if (file_exists($pathartworks.'/'.$langimagename.'')) {
-                          echo '<li class="button"><a class="lang" href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'&display='.$langimagename.'">';
-                          $langprettyname = $allLangs->{$langavailable}->{'local_name'};
-                          echo $langprettyname;
+                          echo '<li class="button"><a class="lang" href="?'.$lang.'/static11/communitywebcomics&page='.$activefolder.'&display='.$langimagename.'">';
+                          echo $langinfo->{'local_name'};
                           echo '</a></li>';
                         }
                       }
@@ -133,10 +119,9 @@ if(isset($_GET['page'])) {
                 echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> '.$plxShow->callHook('MyMultiLingueGetLangLabel', $lang).'<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
                   echo '<input type="checkbox" id="langmenu">';
                     echo '<ul class="langmenu expanded">';
-                      foreach ($detectedlangscleaned as $langavailable) {
-                        echo '<li class="button"><a class="lang" href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'">';
-                          $langprettyname = $allLangs->{$langavailable}->{'local_name'};
-                          echo $langprettyname;
+                      foreach ($availablelanguages as $lang => $langinfo) {
+                        echo '<li class="button"><a class="lang" href="?'.$lang.'/static11/communitywebcomics&page='.$activefolder.'">';
+                          echo $langinfo->{'local_name'};
                         echo '</a></li>';
                       }
                       echo '<li class="button"><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
@@ -147,7 +132,7 @@ if(isset($_GET['page'])) {
         echo '<div style="clear:both;"></div> ';
 
         # Display the title of the project and markdown:
-        $foldernameclean = str_replace('_', ' ', $foldername);
+        $foldernameclean = str_replace('_', ' ', $activefolder);
         $foldernameclean = str_replace('-', ' ', $foldernameclean);
         $foldernameclean = str_replace('by', '</h2><span class="font-size: 0.5rem;">'.$ccbystring.'', $foldernameclean);
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';

@@ -335,6 +335,9 @@ class plxMyMultiLingue extends plxPlugin {
     # déclaration hook utilisateur à mettre dans le thème
     $this->addHook('MyMultiLingue', 'MyMultiLingue');
 
+    # Get language list for language menu
+    $this->addHook('MyMultiLingueGetAvailableLanguagesForPage', 'MyMultiLingueGetAvailableLanguagesForPage');
+
     # Specific rules for Pepper&Carrot :
     $this->addHook('MyMultiLingueGetLang', 'MyMultiLingueGetLang');
     $this->addHook('MyMultiLingueGetLangLabel', 'MyMultiLingueGetLangLabel');
@@ -973,6 +976,12 @@ public function MyMultiLingueGetLangLabel($lang) {
       }
     }
     return $result;
+  }
+
+
+  // Hook wrapper
+  public function MyMultiLingueGetAvailableLanguagesForPage($arguments) {
+    return $this->getAvailableLanguagesForPage($arguments['tester'], $arguments['website']);
   }
 
 
