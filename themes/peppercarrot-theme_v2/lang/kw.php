@@ -26,7 +26,7 @@ $LANG = array(
 'WIKI'       => 'Wiki',
 'SOURCES'    => 'Fentynnyow',
 'AUTHOR'     => 'Awtour',
-'EXTRAS'     => 'Keworransow',
+'EXTRAS'     => 'Keworansow',
 'ESHOP'      => 'eGwerthji',
 'FOLLOW'     => 'Holya Pepper&amp;Carrot war:',
 
@@ -50,7 +50,7 @@ $LANG = array(
 # Page: Homepage
 'HOMEPAGE_BIG_TEXT'         => '
     Roskomik rydh(libre) ha fenten ygor<br/>
-    skoodhys heb mayner gans y dasogyon<br/>
+    skoodhys heb maynor gans y dasogyon<br/>
     rag chanjya an diwysyans lyver komik!<br/>
 ',
 'HOMEPAGE_PATREON_INFO'     => 'Rag marnas $1 orth an rann nowydh, dos ha bos tasek hedhyw war Patreon',
