@@ -2,7 +2,7 @@
 include(dirname(__FILE__).'/lib-parsedown.php');
 include(dirname(__FILE__).'/header.php');
 
-$lang = $plxShow->getLang('LANGUAGE_ISO_CODE_2_LETTER');
+$lang = $plxShow->callHook('MyMultiLingueGetLang');
 // get new variable 'folder'
 $activefolder = htmlspecialchars($_GET["page"]);
 // get new variable 'lang'
@@ -502,27 +502,13 @@ echo '<div class="grid">';
       echo '<img src="plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/sys/low-res/2016-05-27_download_cover_by-David-Revoy.jpg&amp;w=210&amp;h=210&amp;s=1&amp;q=88" alt="" title="" ><br/>';
 
       # Add a description.
-      echo '<p>A tool for publishers, book creators and printers.<br/> It will pack for you all pages in a ZIP file. You\'ll get:<br/>Artworks as PNG without quality loss + speechbubble on another PNG for each page.</p>';
+      echo '<p>A tool for publishers, book creators and printers.<br/> It will pack for you all pages in a ZIP file. You\'ll get:<br/>Artworks as JPG/GIF without quality loss + speechbubble on another PNG for each page.</p>';
 
     # Close header.
     echo '</div>';
 
     # Create a frame for the body.
     echo '<section class="col sml-12 med-10 lrg-8 sml-centered">';
-
-      # Create a table.
-      $langfolders = array();
-
-      # Browse langs.json and feed the table with the iso
-      foreach ($get as $iso => $value ) {
-         array_push($langfolders, $iso);
-      }
-
-      # Sort the table alphabetically.
-      sort($langfolders);
-
-      # Debug: Display the table
-      # print_r($langfolders);
 
       # Start the HTML formular interface.
       echo '<form action="';
@@ -534,17 +520,22 @@ echo '<div class="grid">';
       echo '<label for="page">1. Select a langage: </label>';
       echo '<select name="l">';
 
-      # Loop on all lang available.
-      foreach($langfolders as $langfolder) {
-
-        # Create better names for each ISO.
-        $localname = $get->{$langfolder}->{'local_name'};
-        $name = $get->{$langfolder}->{'name'};
-
-        # Print the item.
-        echo '<option value="'.$langfolder.'">';
-        echo '['.$langfolder.'] '.$name.' / '.$localname.'';
-        echo '</option>';
+      # Loop on all lang available. Get them as array so that we can sort them.
+      $allLangs = json_decode(file_get_contents('0_sources/langs.json'), true);
+      # We sort by language code
+      $languageCodes = array_keys($allLangs);
+      sort($languageCodes);
+      foreach($languageCodes as $lang) {
+        $langinfo = $allLangs[$lang];
+        # Perform the same simplified test as download.php to check if the language has any episodes translated
+        $testfolder = '0_sources/ep01_Potion-of-Flight/lang/'.$lang.'';
+        if(is_dir($testfolder)) {
+          # Print the item.
+          echo '<option value="'.$lang.'">';
+          # Create better names for each ISO.
+          echo '['.$lang.'] '.$langinfo['name'].' / '.$langinfo['local_name'].'';
+          echo '</option>';
+        }
       }
 
       echo '</select>';
@@ -910,13 +901,11 @@ echo '<div class="grid">';
     $totalepisodecount = 0;
     $translacounter = 0;
     $fulltranslacounter = 0;
-    $languagecounter = 0;
     $singlelangcount = 0;
     $langfull = 0;
-    $validlangdir = 'core/lang/';
-    $hide = array('.', '..');
-    $langfolders = array_diff(scandir($validlangdir), $hide);
-    sort($langfolders);
+    # Get the languages as array so that we can count them
+    $allLangs = json_decode(file_get_contents('0_sources/langs.json'), true);
+    $validlangdir = 'themes/peppercarrot-theme_v2/lang/';
     echo '<table class="tabletransla">';
     echo '<caption><small>Info: The date written in the block is when the translation received an update for the last time ( format: in YYYY.MM.DD, 2016.04.01 = 2014 april 1st, 2015.09.20 = 2015 September 20, etc... ) </small></caption>';
     echo "<tr>";
@@ -941,101 +930,95 @@ echo '<div class="grid">';
     }
     echo "</tr>";
 
-    # Guess total number of episode at first
-    foreach($langfolders as $langfolder) {
-      $projectpath = $validlangdir.$langfolder;
-      if(is_dir($projectpath)) {
-        $languagecounter = $languagecounter + 1;
-      }
-    }
+    # Display : Loop on the language codes folders
+    # We sort by language code
+    $languageCodes = array_keys($allLangs);
+    sort($languageCodes);
+    foreach($languageCodes as $lang) {
+      $langinfo = $allLangs[$lang];
+      $projectpath = $validlangdir.$lang;
 
-    # Display : Loop on the folders
-    foreach($langfolders as $langfolder) {
-      $projectpath = $validlangdir.$langfolder;
-      #Ensure a folder exist
-      if(is_dir($projectpath)) {
-        echo '<td>';
-          echo ''.$langfolder.' <br/><strong>';
-          # Get local name from langs.json, imported at the end of header.php
-          $localname = $get->{$langfolder}->{'local_name'};
-          echo $localname;
-        echo' </strong></td>';
-        $path = '0_sources/';
-        $hide = array('.', '..', '0_archives', '0ther', '.thumbs', 'New', 'fonts');
-        $mainfolders = array_diff(scandir($path), $hide);
-        sort($mainfolders);
+      echo '<td>';
+        echo ''.$lang.' <br/><strong>';
+        # Get local name from langs.json, imported at the end of header.php
+        $localname = $langinfo['local_name'];
+        echo $localname;
+      echo' </strong></td>';
+      $path = '0_sources/';
+      $hide = array('.', '..', '0_archives', '0ther', '.thumbs', 'New', 'fonts');
+      $mainfolders = array_diff(scandir($path), $hide);
+      sort($mainfolders);
 
-        foreach($mainfolders as $foldername) {
-          $projectpath = $path.$foldername;
-          #Ensure a folder exist
-          if(is_dir($projectpath)) {
-            $search = glob($projectpath."/low-res/en_*E??.jpg");
-            if (!empty($search)){
-              foreach ($search as $filepath) {
-                # filename extraction
-                $fileweight = (filesize($filepath) / 1024) / 1024;
-                $filename = basename($filepath);
-                $fullpath = dirname($filepath);
-                # guess cover filename and path
-                $filenamewithoutenprefix = substr($filename, 2);
-                $filepathtranslated = ''.$fullpath.'/'.$langfolder.''.$filenamewithoutenprefix.'';
-                # if cover exist; translation exist: we display
-                if (file_exists($filepathtranslated)) {
-                $singlelangcount = $singlelangcount + 1;
-                }
+      foreach($mainfolders as $foldername) {
+        $projectpath = $path.$foldername;
+        #Ensure a folder exist
+        if(is_dir($projectpath)) {
+          $search = glob($projectpath."/low-res/en_*E??.jpg");
+          if (!empty($search)){
+            foreach ($search as $filepath) {
+              # filename extraction
+              $fileweight = (filesize($filepath) / 1024) / 1024;
+              $filename = basename($filepath);
+              $fullpath = dirname($filepath);
+              # guess cover filename and path
+              $filenamewithoutenprefix = substr($filename, 2);
+              $filepathtranslated = ''.$fullpath.'/'.$lang.''.$filenamewithoutenprefix.'';
+              # if cover exist; translation exist: we display
+              if (file_exists($filepathtranslated)) {
+              $singlelangcount = $singlelangcount + 1;
               }
             }
           }
         }
+      }
 
-        foreach($mainfolders as $foldername) {
-          $projectpath = $path.$foldername;
-          #Ensure a folder exist
-          if(is_dir($projectpath)) {
-            # we are in comic source folder
-            # beautify name
-            $foldername = str_replace('ep', ' Episode ', $foldername);
-            $foldername = substr($foldername, 19);
-            $foldername = str_replace('_', ' : ', $foldername);
-            $foldername = str_replace('-', ' ', $foldername);
-            # we scan all en vignette to define all episodes , it's a constant
-            $search = glob($projectpath."/low-res/en_*E??.jpg");
-            # we loop on found episodes
-            if (!empty($search)){
-              foreach ($search as $filepath) {
-                # filename extraction
-                $fileweight = (filesize($filepath) / 1024) / 1024;
-                $filename = basename($filepath);
-                $fullpath = dirname($filepath);
-                # guess cover filename and path
-                $filenamewithoutenprefix = substr($filename, 2);
-                $filenameshort = substr($filename, 36); // eg. en_Pepper-and-Carrot_by-David-Revoy_
-                $filenameshort = str_replace('.jpg', '.svg', $filenameshort);
-                $filepathtranslated = ''.$fullpath.'/'.$langfolder.''.$filenamewithoutenprefix.'';
-                $svgpathtranslated = ''.$projectpath.'/lang/'.$langfolder.'/'.$filenameshort.'';
-                # if cover exist; translation exist: we display
-                if (file_exists($filepathtranslated)) {
-                  if ( $singlelangcount == $totalepisodecount ) {
-                  # all is translated!
-                  echo '<td align="center" style="background-color:#D5F1B3;color:#6FA62C">';
-                  $fulltranslacounter = $fulltranslacounter + 1;
-                  } else {
-                  # partial
-                  echo '<td align="center" style="background-color:#FFFD9E;color:#C3922A">';
-                  }
-                  # for all
-                  echo '<small>'.date ("Y.m.d", filemtime($svgpathtranslated)).'</small>';
-                  echo ' </td>';
-                  $translacounter = $translacounter + 1;
+      foreach($mainfolders as $foldername) {
+        $projectpath = $path.$foldername;
+        #Ensure a folder exist
+        if(is_dir($projectpath)) {
+          # we are in comic source folder
+          # beautify name
+          $foldername = str_replace('ep', ' Episode ', $foldername);
+          $foldername = substr($foldername, 19);
+          $foldername = str_replace('_', ' : ', $foldername);
+          $foldername = str_replace('-', ' ', $foldername);
+          # we scan all en vignette to define all episodes , it's a constant
+          $search = glob($projectpath."/low-res/en_*E??.jpg");
+          # we loop on found episodes
+          if (!empty($search)){
+            foreach ($search as $filepath) {
+              # filename extraction
+              $fileweight = (filesize($filepath) / 1024) / 1024;
+              $filename = basename($filepath);
+              $fullpath = dirname($filepath);
+              # guess cover filename and path
+              $filenamewithoutenprefix = substr($filename, 2);
+              $filenameshort = substr($filename, 36); // eg. en_Pepper-and-Carrot_by-David-Revoy_
+              $filenameshort = str_replace('.jpg', '.svg', $filenameshort);
+              $filepathtranslated = ''.$fullpath.'/'.$lang.''.$filenamewithoutenprefix.'';
+              $svgpathtranslated = ''.$projectpath.'/lang/'.$lang.'/'.$filenameshort.'';
+              # if cover exist; translation exist: we display
+              if (file_exists($filepathtranslated)) {
+                if ( $singlelangcount == $totalepisodecount ) {
+                # all is translated!
+                echo '<td align="center" style="background-color:#D5F1B3;color:#6FA62C">';
+                $fulltranslacounter = $fulltranslacounter + 1;
                 } else {
-                  echo ' <td align="center" style="color:#dedede;"><small>TO-DO</small></td>';
+                # partial
+                echo '<td align="center" style="background-color:#FFFD9E;color:#C3922A">';
                 }
+                # for all
+                echo '<small>'.date ("Y.m.d", filemtime($svgpathtranslated)).'</small>';
+                echo ' </td>';
+                $translacounter = $translacounter + 1;
+              } else {
+                echo ' <td align="center" style="color:#dedede;"><small>TO-DO</small></td>';
               }
             }
-            }
           }
-        $singlelangcount = 0;
-      }
+          }
+        }
+      $singlelangcount = 0;
       echo "</tr>";
     }
     echo "</table>";
@@ -1048,7 +1031,7 @@ echo '<div class="grid">';
     echo '<div style="max-width:960px; border: 1px solid #bdbdbd; padding: 2rem;">';
     echo "<strong>";
     echo $totalepisodecount.' episodes published. <br/>';
-    echo $languagecounter.' languages available.<br/> ';
+    echo count($allLangs).' languages available.<br/> ';
     $fulltranslacounter = $fulltranslacounter / $totalepisodecount;
     echo 'Pepper&amp;Carrot is fully translated into '.$fulltranslacounter.' languages !<br/>';
     echo "</strong>";

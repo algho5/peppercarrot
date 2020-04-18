@@ -4,6 +4,7 @@ $idStat = $plxShow->staticId();
 $idCats = $plxShow->catId();
 $idMode = $plxShow->mode();
 $lang = $plxShow->callHook('MyMultiLingueGetLang');
+$langlabel = $plxShow->callHook('MyMultiLingueGetLangLabel', $lang);
 
 if($idMode=="home"){ $status = "active"; } else { $status = "no-active"; }
 ?>
@@ -127,13 +128,3 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
     <div style="clear:both;"></div>
 
   </header>
-
-<?php
-$lang = $plxShow->callHook('MyMultiLingueGetLang');
-
-$lang_ISO = "0_sources/langs.json";
-$lang_ISO_data = file_get_contents($lang_ISO);
-
-$get = json_decode($lang_ISO_data);
-$langlabel = $get->{$lang}->{'local_name'};
-?>
