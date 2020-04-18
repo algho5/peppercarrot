@@ -261,7 +261,7 @@ $LANG = array(
 ################################################################################
 # Eshop
 'ESHOP_COMIC'           => 'Yma lyvrow komik hag art warn:',
-'ESHOP_SHOP'            => 'Pryntys, hanafow, krysyow-T ha moy war:',
+'ESHOP_SHOP'            => 'Pryntys, hanafow, krysyow T ha moy war:',
 ################################################################################
 # various utils:
 'UTIL_NEXT_EPISODE'     => 'nessa rann',
