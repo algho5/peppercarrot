@@ -31,15 +31,15 @@ $LANG = array(
 'FOLLOW'     => 'Følg Pepar &amp; Gulrot på:',
 
 # Top menu website buttons:
-'NAVIGATION_TRANSCRIPT' => 'Transcript',
-'NAVIGATION_TRANSCRIPT_ON' => 'Click to show transcript',
-'NAVIGATION_TRANSCRIPT_OFF' => 'Click to hide transcript',
-'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Transcript not available for this episode and this language.',
+'NAVIGATION_TRANSCRIPT' => 'Avskrift',
+'NAVIGATION_TRANSCRIPT_ON' => 'Trykk for å visa avskrift',
+'NAVIGATION_TRANSCRIPT_OFF' => 'Trykk for å gøyma avskrift',
+'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Ei avskrift er ikkje tilgjengeleg for denne episoden på nynorsk.',
 'NAVIGATION_HD' => 'HD 2400px',
-'NAVIGATION_HD_ON' => 'Click to display high resolution images',
-'NAVIGATION_HD_OFF' => 'Click to display standard resolution images',
-'NAVIGATION_DICTIONARY' => 'Dictionary',
-'NAVIGATION_DICTIONARY_ALT' => 'Click to open with Wordlink for fast dictionary search',
+'NAVIGATION_HD_ON' => 'Trykk for å visa bileta i høg oppløysing',
+'NAVIGATION_HD_OFF' => 'Trykk for å visa bileta i standard oppløysing',
+'NAVIGATION_DICTIONARY' => 'Ordbok',
+'NAVIGATION_DICTIONARY_ALT' => 'Trykk for oppslag i ordbøker via Wordlink',
 
 ################################################################################
 # Top and bottom translation panel
