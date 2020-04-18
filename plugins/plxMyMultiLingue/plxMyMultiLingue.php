@@ -934,8 +934,20 @@ public function MyMultiLingueGetLangLabel($lang) {
   return $this->languageConfig->{$lang}->{'local_name'};
 }
 
-
-  // TODO document
+  /**
+   *
+   * Returns a filtered version of $this->languageConfig to only include languages that have translations.
+   *
+   * @param  string  $comic_test_page_dir  A directory containing rendered pages to see
+   *                                       if there are translations available, e.g.
+   *                                       0_sources/ep01_Potion-of-Flight/low-res or
+   *                                       0_sources/0ther/community/Pepper-and-Carrot-Mini_by_Nartance
+   *                                       Leave empty to skip.
+   *
+   * @param boolean  $include_website      If true, include languages that are available for the website
+   *
+   * @retuan array $this->languageConfig filtered for available languages, with added key websitetranslated
+   */
   private function getAvailableLanguagesForPage($comic_test_page_dir = '', $include_website = true) {
     $result = array();
 
@@ -1012,10 +1024,6 @@ public function MyMultiLingueStaticLang() {
  * Method to display a list of the available all langage for static pages
  * @author: David Revoy
  *
- * @param  string  $comic_test_page_dir  A directory containing rendered pages to see
- *                                       if there are translations available, e.g.
- *                                       0_sources/ep01_Potion-of-Flight/low-res or
- *                                       0_sources/0ther/community/Pepper-and-Carrot-Mini_by_Nartance
  **/
 public function MyMultiLingueStaticAllLang($pageurl) {
 
