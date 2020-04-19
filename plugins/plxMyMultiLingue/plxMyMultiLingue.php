@@ -1057,8 +1057,11 @@ public function MyMultiLingueStaticLang() {
       $includewebsite = true;
     }
 
-    if (isset($arguments['showstats'])) {
-      $showstats = $arguments['showstats'];
+    # Get total episode file or folder count for statistics using a glob template that contains {LANG}
+    if (isset($arguments['statstemplate'])) {
+      $statstemplate = $arguments['statstemplate'];
+      $totalepisodecount = count(glob(str_replace('{LANG}', 'en', $statstemplate)));
+      $showstats = true;
     } else {
       $showstats = false;
     }
@@ -1072,11 +1075,6 @@ public function MyMultiLingueStaticLang() {
     $langlabel = "English";
 
     $plxShow = plxShow::getInstance();
-
-
-    # Get total episode folder count for statistics
-    # TODO this does not work for the commmunity comics yet
-    $totalepisodecount = $showstats ? count(glob('0_sources/ep[0-9][0-9]*')) : 0;
 
     # Collect language entries
     foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
@@ -1099,7 +1097,7 @@ public function MyMultiLingueStaticLang() {
         $websitetranslated = $includewebsite && $langinfo->websitetranslated ? 10 : 0;
 
         # Get episode folders for statistics
-        $translationcompletion = count(glob('0_sources/ep[0-9][0-9]*/lang/'.$lang));
+        $translationcompletion = count(glob(str_replace('{LANG}', $lang, $statstemplate)));
 
         # TODO lost setting of $sel
         $percent = ( $translationcompletion / $totalepisodecount ) * ($includewebsite ? 90 : 100) + $websitetranslated;

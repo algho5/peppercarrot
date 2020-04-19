@@ -64,8 +64,6 @@ if(isset($_GET['page'])) {
         # Write lang pills for the viewer
         # Challenge: the pills must translate the image displayed.
 
-
-
         echo '<div class="grid">';
             echo '<div class="button top col sml-12 sml-text-right">';
                 echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
@@ -74,7 +72,6 @@ if(isset($_GET['page'])) {
                     'pageurl' => $baselink.'&display={LANG}'.$langimagewithoutlang,
                     'testdir' => $pathartworks,
                     'includewebsite' => false,
-                    'showstats' => false,
                     'contributionlink' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
             )));
         echo '</div>';
@@ -104,11 +101,12 @@ if(isset($_GET['page'])) {
 # (no "display" variable passed)
 
         # lang pills
+
         eval($plxShow->callHook('MyMultiLingueStaticAllLang', array(
                 'pageurl' => $baselink,
                 'testdir' => $pathartworks,
                 'includewebsite' => false,
-                'showstats' => true,
+                'statstemplate' => $pathartworks.'/{LANG}_[A-Za-z-]*_E[0-9][0-9]*[A-Za-z_-]*.jpg',
                 'contributionlink' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
         )));
 

@@ -4,7 +4,9 @@
 		<section class="col sml-12">
       <div class="grid">
 
-        <?php eval($plxShow->callHook('MyMultiLingueStaticAllLang', array('testdir' => '0_sources/ep01_Potion-of-Flight/low-res', 'showstats' => true))); ?>
+        <?php eval($plxShow->callHook('MyMultiLingueStaticAllLang', array(
+            'testdir' => '0_sources/ep01_Potion-of-Flight/low-res',
+            'statstemplate' => '0_sources/ep[0-9][0-9]*/lang/{LANG}/E[0-9][0-9]*P00.svg'))); ?>
 
         <section class="col sml-12 med-12 lrg-12" >
           <div class="cover">
