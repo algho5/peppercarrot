@@ -110,19 +110,21 @@ if(isset($_GET['page'])) {
 # (no "display" variable passed)
 
         # lang pills
-        echo '<div class="col sml-12 sml-text-right">';
-          echo '<nav class="nav" role="navigation">';
-            echo '<div class="responsive-langmenu">';
+        echo '<div class="grid">';
+            echo '<div class="col sml-12 sml-text-right">';
+              echo '<nav class="nav" role="navigation">';
+                echo '<div class="responsive-langmenu">';
 
-                eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
-                        'pageurl' => '{LANG}/'.$baselink,
-                        'testdir' => $pathartworks,
-                        'includewebsite' => false,
-                        'statstemplate' => $pathartworks.'/{LANG}_[A-Za-z-]*_E[0-9][0-9]*[A-Za-z_-]*.jpg',
-                        'contributionlink' => $contributionlink
-                )));
+                    eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
+                            'pageurl' => '{LANG}/'.$baselink,
+                            'testdir' => $pathartworks,
+                            'includewebsite' => false,
+                            'statstemplate' => $pathartworks.'/{LANG}_[A-Za-z-]*_E[0-9][0-9]*[A-Za-z_-]*.jpg',
+                            'contributionlink' => $contributionlink
+                    )));
+                echo '</div>';
+              echo '</nav>';
             echo '</div>';
-          echo '</nav>';
         echo '</div>';
         echo '<div style="clear:both;"></div> ';
 

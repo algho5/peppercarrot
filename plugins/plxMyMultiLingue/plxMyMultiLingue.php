@@ -336,7 +336,7 @@ class plxMyMultiLingue extends plxPlugin {
     # déclaration hook utilisateur à mettre dans le thème
     $this->addHook('MyMultiLingue', 'MyMultiLingue');
 
-    # Get language list for language menu
+    # Get language list for language availability check on community page
     $this->addHook('MyMultiLingueGetAvailableLanguagesForPage', 'MyMultiLingueGetAvailableLanguagesForPage');
 
     # Specific rules for Pepper&Carrot :
@@ -944,7 +944,7 @@ public function MyMultiLingueGetLang() {
    *
    * @param boolean  $include_website      If true, include languages that are available for the website
    *
-   * @retuan array $this->languageConfig filtered for available languages, with added key websitetranslated
+   * @return array $this->languageConfig filtered for available languages, with added boolean key websitetranslated
    */
   private function getAvailableLanguagesForPage($comic_test_page_dir = '', $include_website = true) {
     $result = array();
@@ -993,40 +993,42 @@ public function MyMultiLingueGetLang() {
     return $this->episodeData();
   }
 
-  /********************************************************************************************/
-  /* Display the pills of all available lang, even webcomic (static: for frontpage/webcomics) */
-  /********************************************************************************************/
+  /*********************************************************************************/
+  /* Display a menu with links for all available webcomic and/or website languages */
+  /*********************************************************************************/
   /**
-   * Method to display a list of available languages.
+   * Method to display a list of available languages. Outer element is <ul>.
    *
-   * This can be configured to switch website and content languages and their statistics on and off.
-   * It also supports multiple content location and link schemes.
+   * This can be configured to switch website and content languages and their statistics
+   * on and off. It also supports differing content location and link schemes.
    *
    * @author: David Revoy, GunChleoc
    *
    * @param $arguments array  Configures the language menu. All entries are optional.
    *
    * string pageurl:
-   *     URL template for the translated version of this page. Use {LANG} as a substitute for language codes.
+   *     URL template for the translated version of this page. Use {LANG} as a substitute
+   *     for language codes.
    *     Default: '{LANG}/'
    *
    * string testdir:
-   *     The directory for checking if translations exist for  category or episode.
-   *     This must directory have files or directories starting with language codes in it.
+   *     The directory for checking if translations exist for a category or episode.
+   *     This directory must have files or directories starting with language codes in it.
    *     Default: '0_sources/ep01_Potion-of-Flight/low-res'
    *
    * boolean includewebsite:
-   *     Whether to include website languages in the menu that don't have content translations yet
+   *     Whether to include all languages that have website translations in the menu.
    *     Default: true
    *
    * string statstemplate:
    *     Directory/file template for detecting whether an episode has been translated.
+   *     For wildcard syntax, see https://www.php.net/manual/en/function.glob.php
    *     When set, this *must* contain a language code substituted by '{LANG}'
    *     Example: 0_sources/ep[0-9][0-9]<star>/lang/{LANG}/E[0-9][0-9]<star>P00.svg
-   *     If this is not set, no statistics will be shown.
+   *     Leave unset if you don't want to show any statistics.
    *
    * string contributionlink:
-   *    The target link for the "add a translation" button.
+   *    The target link for the "+ add a translation" button.
    *    Default: '?static14/documentation&page=010_Translate_the_comic'
    **/
   public function MyMultiLingueLanguageMenu($arguments) {
@@ -1049,9 +1051,10 @@ public function MyMultiLingueGetLang() {
       $includewebsite = true;
     }
 
-    # Get total episode file or folder count for statistics using a glob template that contains {LANG}
+    # Get episode file or folder count for statistics using a glob template that contains {LANG}
     if (isset($arguments['statstemplate'])) {
       $statstemplate = $arguments['statstemplate'];
+      # Total count - we assume that base language is 'en'
       $totalepisodecount = count(glob(str_replace('{LANG}', 'en', $statstemplate)));
       $showstats = true;
     } else {
