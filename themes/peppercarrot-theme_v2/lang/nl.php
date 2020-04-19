@@ -242,7 +242,7 @@ $LANG = array(
     ☐ Een Pepper&amp;Carrot-videospel spelen met een gamepad<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Een galerij met honderd fanarts bereiken</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Een Wikipedia-pagina krijgen</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Een foto toegestuurd krijgen van een cosplay van Pepper</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Een foto toegestuurd krijgen van een cosplay van Pepper</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Een foto toegestuurd krijgen van een rosse kat met de naam Carrot</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Ondersteund worden door 500 patrons</a><br/>
     ☐ De honderdste aflevering bereiken<br/>

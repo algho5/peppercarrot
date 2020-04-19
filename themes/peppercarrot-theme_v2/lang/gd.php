@@ -34,7 +34,7 @@ $LANG = array(
 'NAVIGATION_TRANSCRIPT' => 'Tar-sgrìobhadh',
 'NAVIGATION_TRANSCRIPT_ON' => 'Briog airson tar-sgrìobhadh a shealltainn',
 'NAVIGATION_TRANSCRIPT_OFF' => 'Briog airson an tar-sgrìobhadh fhalach',
-'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Transcript not available for this episode and this language.',
+'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Chan eil tar-sgrìobhadh ri fhaighinn dhan eapasod sa chànan seo.',
 'NAVIGATION_HD' => 'HD 2400px',
 'NAVIGATION_HD_ON' => 'Briog airson dealbhan a shealltainn le càileachd àrd',
 'NAVIGATION_HD_OFF' => 'Briog airson dealbhan a shealltainn le càileachd àbhaisteach',
@@ -241,7 +241,7 @@ $LANG = array(
     ☐ Cluich geama video Pepper&amp;Carrot le pada-geama.<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Faigh gailearaidh le 100 obair-ealain luchd-leantainn.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Faigh duilleag Uicipeid.</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Faigh dealbh dhe cosplay Pepper.</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Faigh dealbh dhe cosplay Pepper.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Faigh dealbh de chat ruadh air a bheil Carrot.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Faigh taic o 500 air Patreon.</a><br/>
     ☐ Ruig eapasod 100!<br/>

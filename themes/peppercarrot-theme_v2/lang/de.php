@@ -31,15 +31,15 @@ $LANG = array(
 'FOLLOW'        =>  'Folge Pepper&amp;Carrot auf:',
 
 # Top menu website buttons:
-'NAVIGATION_TRANSCRIPT' => 'Transcript',
-'NAVIGATION_TRANSCRIPT_ON' => 'Click to show transcript',
-'NAVIGATION_TRANSCRIPT_OFF' => 'Click to hide transcript',
-'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Transcript not available for this episode and this language.',
+'NAVIGATION_TRANSCRIPT' => 'Transkript',
+'NAVIGATION_TRANSCRIPT_ON' => 'Klicke, um ein Transkript anzuzeigen',
+'NAVIGATION_TRANSCRIPT_OFF' => 'Klicke, um das Transkript auszublenden',
+'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Diese Episode hat noch kein Transkript für diese Sprache.',
 'NAVIGATION_HD' => 'HD 2400px',
-'NAVIGATION_HD_ON' => 'Click to display high resolution images',
-'NAVIGATION_HD_OFF' => 'Click to display standard resolution images',
-'NAVIGATION_DICTIONARY' => 'Dictionary',
-'NAVIGATION_DICTIONARY_ALT' => 'Click to open with Wordlink for fast dictionary search',
+'NAVIGATION_HD_ON' => 'Klicke, um die Bilder in hoher Auflösung anzuzeigen',
+'NAVIGATION_HD_OFF' => 'Klicke, um die Bilder in normaler Auflösung anzuzeigen',
+'NAVIGATION_DICTIONARY' => 'Wörterbuch',
+'NAVIGATION_DICTIONARY_ALT' => 'Klicke, um Wordlink für eine schnelle Wörterbuchsuche zu öffnen',
 
 ################################################################################
 # Top and bottom translation panel
@@ -243,7 +243,7 @@ $LANG = array(
     ☐ Mit einem Gamepad ein Pepper&amp;Carrot Videospiel spielen<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Eine Gallerie von 100 Fan-Art-Beitr&auml;gen sammeln</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Eine eigene Wikipediaseite</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Ein Foto von einem Pepper Cosplay bekommen</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Ein Foto von einem Pepper Cosplay bekommen</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Ein Foto von einer roten Katze namens Carrot bekommen</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Von 500 Patreons unterst&uuml;tzt werden</a><br/>
     ☐ Episode 100 erreichen<br/>

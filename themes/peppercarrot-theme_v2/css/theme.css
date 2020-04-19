@@ -61,7 +61,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .eshopred { width: 100%; padding: 86px 0; background: url('../img/eshop-bg.jpg') repeat center center; }
 
 /* Header */
-.header { z-index: 9; position: fixed; top: 0; width: 100%; background: url('../img/header-bg.jpg') top left; border-bottom: 1px solid rgba(64,56,52,0.4); box-shadow: 0 0.1rem 0.1rem rgba(49,20,0,0.3); min-height: 56px;}
+.header { z-index: 9; position: fixed; top: 0; width: 100%; background: url('../img/header-bg.jpg') top left; border-bottom: 1px solid rgba(64,56,52,0.4); box-shadow: 0 0.1rem 0.1rem rgba(49,20,0,0.3); min-height: 3.75em;}
 .header a { text-decoration: none;}
 .header h1 { margin: 4px 0 0 7px; padding: 0 0; }
 .header h1 a { color: #412813; }
@@ -76,7 +76,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .responsive-menu label { color: #3A2619; background-color: transparent; font: normal 2rem 'PepperCarrot', cursive; text-align: left;}
 
 /* Header right part */
-.patronage { display:inline-block; max-width: 180px; height: 42px; margin: 6px auto 0 auto ; padding: 3px 5px 3px 5px; top: 0px; bottom: 0px; text-align: center; font-size: 0.92rem; line-height: 1.15rem; background: #a7755b url('../img/grain.png'); box-shadow: 0 0 0 2px #a7755b inset, 0 0 0 3px rgba(255,255,255,0.50) inset, 2px 2px 3px 0 rgba(20,0,0,0.50); border-radius: 4px; }
+.patronage { display:inline-block; max-width: 180px; height: 3em; margin: 6px auto 0 auto ; padding: 3px 5px 3px 5px; top: 0px; bottom: 0px; text-align: center; font-size: 0.92rem; line-height: 1.15rem; background: #a7755b url('../img/grain.png'); box-shadow: 0 0 0 2px #a7755b inset, 0 0 0 3px rgba(255,255,255,0.50) inset, 2px 2px 3px 0 rgba(20,0,0,0.50); border-radius: 4px; }
 .patronage a { display:inline-block; color: #FFF; }
 .patronage:hover { filter: brightness(1.1); transition: all 0.2s ease-in;}
 
@@ -138,6 +138,9 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 /* Footer of webcomic */
 .sourcebutton { background: #D7EBFA url('../ico/dl_sources.svg') no-repeat center left 10px; padding: 0.6rem 0.7rem 0.6rem 3rem; border-radius: 10px }
 
+/* Hidden transcripts for screen readers in webcomic */
+div.hidden { height:0px; max-height:0px; width:0px; max-width:0px; opacity:0.0;}
+
 /* Philosophy page */
 .philo { text-align: center;}
 .philo p { margin: 2rem auto; max-width: 550px; text-align: justify; font-family: "Georgia", Times, serif; font-size: 1.2rem;}
@@ -153,7 +156,6 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .notice {color:#aaa;}
 .page { background: url('../img/bg.jpg'); border: 16px solid transparent; border-image: url('../img/page.jpg') 10% round; padding: 15px 120px 0 120px; font-family: "Georgia", Times, serif; text-align: justify; font-size: 1.2rem; margin-top: 16px;}
 .page hr { border: double 4px #A79281;}
-.page p::first-letter { font-size:  1.6rem; margin-right: 1px;}
 .page img { max-width: 125%; display: block; text-align: center; margin-left: 50%; border: 16px solid transparent; border-image: url('../img/border.png') 10% round; transform: translate(-50%, 0); }
 .page .edit { text-align: right; margin-right: -18%;}
 .page .edit .button { display:inline-block; font-size: 1rem;}

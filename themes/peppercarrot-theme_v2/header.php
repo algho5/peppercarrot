@@ -1,9 +1,10 @@
 <?php if (!defined('PLX_ROOT')) exit;
-$version = "190603";
+$version = "200409";
 $idStat = $plxShow->staticId();
 $idCats = $plxShow->catId();
 $idMode = $plxShow->mode();
 $lang = $plxShow->callHook('MyMultiLingueGetLang');
+$langlabel = $plxShow->callHook('MyMultiLingueGetLangLabel', $lang);
 
 if($idMode=="home"){ $status = "active"; } else { $status = "no-active"; }
 ?>
@@ -12,9 +13,9 @@ if($idMode=="home"){ $status = "active"; } else { $status = "no-active"; }
 <!--
        /|_____|\     _______________________________________________________
       /  ' ' '  \    |                                                     |
-     < ( .  . )  >   |  Oh? You read my code? Welcome!                     | 
-      <   '◡    >   <   Full sources on framagit.org/peppercarrot/website  | 
-        '''|  \      |_____________________________________________________|  
+     < ( .  . )  >   |  Oh? You read my code? Welcome!                     |
+      <   '◡    >   <   Full sources on framagit.org/peppercarrot/website  |
+        '''|  \      |_____________________________________________________|
 
 V.<?php echo $version ?>
 -->
@@ -66,7 +67,7 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
 ?>
   <header class="header" role="banner">
       <div class="grid">
-      
+
           <div class="title col sml-hide med-hide lrg-show lrg-2 sml-text-left">
             <h1>
               <a href="<?php $plxShow->racine() ?><?php echo $lang; ?>/" title="<?php $plxShow->lang('PEPPERCARROT_VEGETABLE') ?>">
@@ -74,7 +75,7 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
               </a>
             </h1>
           </div>
-          
+
           <div class="topmenu col sml-7 med-9 lrg-8 med-text-left lrg-text-center">
             <nav class="nav" role="navigation">
               <div class="responsive-menu">
@@ -113,7 +114,7 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
               </div>
             </nav>
           </div>
-          
+
           <div class="col sml-5 med-3 lrg-2">
             <div class="patronage">
               <a href="<?php $plxShow->urlRewrite('?static12/donate') ?>">
@@ -123,17 +124,7 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
         </div>
 
     </div>
-    
+
     <div style="clear:both;"></div>
 
   </header>
-  
-<?php
-$lang = $plxShow->callHook('MyMultiLingueGetLang');
-
-$lang_ISO = "0_sources/langs.json";
-$lang_ISO_data = file_get_contents($lang_ISO);
-
-$get = json_decode($lang_ISO_data); 
-$langlabel = $get->{$lang}->{'local_name'};
-?>

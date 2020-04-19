@@ -242,7 +242,7 @@ $LANG = array(
     ☐ Mit \'n Gamepad en Pepper&amp;Wuddel-Videospeel spelen<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> En Galerie vun 100 Fan-Art-Bidrääg tohoopdregen</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">En egen Siet op Wikipedia</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">En Foto vun en Pepper-Cosplay tostüert kriegen</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">En Foto vun en Pepper-Cosplay tostüert kriegen</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">En Foto vun en rode Katt, de Wuddel heet, tostüert kriegen</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Vun 500 Patreons Stütt kregen</a><br/>
     ☐ Bet na Folg 100 kamen<br/>

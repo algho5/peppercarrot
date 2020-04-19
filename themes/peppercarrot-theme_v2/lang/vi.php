@@ -241,7 +241,7 @@ $LANG = array(
     ☐ Chơi với một gamepad về Hạt Tiêu&amp;Cà Rốt video-game<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Sở hữu một bộ ảnh với 100 fan-arts</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Sở hữu một trang Wikipedia</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Nhận một bức ảnh về Pepper cosplay</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Nhận một bức ảnh về Pepper cosplay</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Nhận một bức ảnh về một chú mèo đỏ tên Carrot</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Được ủng hộ bởi 500 nhà tài trợ</a><br/>
     ☐ Đạt đến tập 100<br/>

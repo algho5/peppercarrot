@@ -241,7 +241,7 @@ $LANG = array(
     ☐ Xogar a Pepper&amp;Carrot nun video xogo con mandos.<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Facer unha galería con 100 elementos de arte dos fans.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Ter unha páxina na wikipedia.</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Recibir unha foto dunha Pepper cosplay.</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Recibir unha foto dunha Pepper cosplay.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Recibir unha foto de un gato loiro chamado Carrot.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Ter a axuda de 500 patrocinadores.</a><br/>
     ☐ Alcanzar os 100 episodios!<br/>

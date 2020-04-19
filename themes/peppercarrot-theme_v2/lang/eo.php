@@ -241,7 +241,7 @@ $LANG = array(
     ☐ Ludi per ludstirilo videoludon Pipro kaj Karoĉjo.<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Havigi galerion kun 100 fanatikul-artaĵoj.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Posedi paĝon en Vikipedio.</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Ricevi bildon pri rolkostumado kiel Pipro.</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Ricevi bildon pri rolkostumado kiel Pipro.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Ricevi bildon de ruĝa kato nomita Karoĉjo.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Esti subtenata de 500 patronoj.</a><br/>
     ☐ Atingi rakonteton 100!<br/>
