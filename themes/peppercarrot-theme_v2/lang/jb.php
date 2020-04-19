@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'fanva fa <a href="https://jbotcan.org">la gleki arxokuna</a>',
-'LANGUAGE_NAME' 			=> '.lojban.',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'jb',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

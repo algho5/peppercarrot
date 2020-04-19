@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'przekład: Sölve Svartskogen',
-'LANGUAGE_NAME' 			=> 'Polski',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'pl',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

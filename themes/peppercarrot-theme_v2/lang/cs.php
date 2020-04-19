@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'Překlad: Kateřina Fleknová',
-'LANGUAGE_NAME' 			=> 'Čeština',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'cs',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

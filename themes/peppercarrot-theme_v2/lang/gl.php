@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY'              => 'Crédito da tradución: <a href="http://xmgz.eu">Xosé M.</a>',
-'LANGUAGE_NAME'              => 'Galego',
-'LANGUAGE_ISO_CODE_2_LETTER' => 'gl',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 // inicialmente utilizaba formas verbais formais pero un tono máis próximo acae mellor co autor falandolle en primeira persoa ao lector/a
 

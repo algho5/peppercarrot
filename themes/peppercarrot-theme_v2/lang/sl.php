@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY'              => 'Prevod: <a href="https://framagit.org/fici">Andrej Ficko</a>',
-'LANGUAGE_NAME'              => 'Slovenščina',
-'LANGUAGE_ISO_CODE_2_LETTER' => 'sl',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

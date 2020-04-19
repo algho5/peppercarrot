@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY'              => 'vertaling door <a href="http://wimiso.nl">Willem Sonke</a>',
-'LANGUAGE_NAME'              => 'Nederlands',
-'LANGUAGE_ISO_CODE_2_LETTER' => 'nl',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

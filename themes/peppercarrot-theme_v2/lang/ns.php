@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'Översetten: Rebecca Breu',
-'LANGUAGE_NAME' 			=> 'Plattdüütsch',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'ns',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

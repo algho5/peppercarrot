@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'Diterjemahkan oleh: <a href="http://facebook.com/bonaditya">Bonaventura Aditya Perdana</a>',
-'LANGUAGE_NAME' 			=> 'Bahasa Indonesia',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'id',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
