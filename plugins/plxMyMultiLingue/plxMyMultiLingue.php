@@ -1043,21 +1043,16 @@ public function MyMultiLingueStaticAllLang($pageurl) {
     $pageurl = "";
   }
 
+  # Get episode folders for statistics
+  $totalepisodecount = count(glob('0_sources/ep[0-9][0-9]*'));
+
   # loop on detected langs
   foreach($this->getAvailableLanguagesForPage('0_sources/ep01_Potion-of-Flight/low-res') as $lang => $langinfo) {
 
     $websitetranslated = $langinfo->websitetranslated ? 10 : 0;
 
-    $totalepisodecount = 0;
-    $translationcompletion = 0;
-    $epfolders = glob("0_sources/ep[0-9][0-9]*");
-    foreach($epfolders as $foldername) {
-      $totalepisodecount = $totalepisodecount + 1;
-      $testfolderpath = $foldername.'/lang/'.$lang;
-      if(is_dir($testfolderpath)) {
-        $translationcompletion = $translationcompletion + 1;
-      }
-    }
+    # Get episode folders for statistics
+    $translationcompletion = count(glob('0_sources/ep[0-9][0-9]*/lang/'.$lang));
 
     $percent = ( $translationcompletion / $totalepisodecount ) * 90 + $websitetranslated;
     $percent = round($percent, 0);
