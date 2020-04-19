@@ -1034,26 +1034,41 @@ public function MyMultiLingueStaticLang() {
  * Method to display a list of the available all langage for static pages
  * @author: David Revoy
  *
+ * TODO document arguments
+ *
  **/
-public function MyMultiLingueStaticAllLang($pageurl) {
+public function MyMultiLingueStaticAllLang($arguments) {
 
-  if(isset($pageurl)) {
-    $pageurl = $pageurl;
+  if (isset($arguments['pageurl'])) {
+    $pageurl = $arguments['pageurl'];
   } else {
     $pageurl = "";
+  }
+
+  if (isset($arguments['testdir'])) {
+    $testdir = $arguments['testdir'];
+  } else {
+    $testdir = '0_sources/ep01_Potion-of-Flight/low-res';
+  }
+
+  if (isset($arguments['includewebsite'])) {
+    $includewebsite = $arguments['includewebsite'];
+  } else {
+    $includewebsite = true;
   }
 
   # Get episode folders for statistics
   $totalepisodecount = count(glob('0_sources/ep[0-9][0-9]*'));
 
   # loop on detected langs
-  foreach($this->getAvailableLanguagesForPage('0_sources/ep01_Potion-of-Flight/low-res') as $lang => $langinfo) {
+  foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
 
     $websitetranslated = $langinfo->websitetranslated ? 10 : 0;
 
     # Get episode folders for statistics
     $translationcompletion = count(glob('0_sources/ep[0-9][0-9]*/lang/'.$lang));
 
+    # TODO different stats if we don't count the website?
     $percent = ( $translationcompletion / $totalepisodecount ) * 90 + $websitetranslated;
     $percent = round($percent, 0);
     $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$pageurl.'")."\"';

@@ -33,6 +33,21 @@ if(isset($_GET['page'])) {
 # Check available languages
 # =========================
 
+# http://localhost/en/ Homepage => http://localhost/en/
+# http://localhost/lang=en Comicpage => http://localhost/en/article2/episode-2-the-blue-long-folder-name
+
+# https://www.peppercarrot.com/en/static6/sources&page=XYZ Preview => https://www.peppercarrot.com/en/static6/sources&page=XYZ
+# With parameter 'static6/sources&page=XYZ'
+
+
+# '<li class="button"><a class="lang" href="?'.$lang.'/static11/communitywebcomics&page='.$activefolder.'">';
+# http://localhost/?en/static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance
+# => http://localhost/?en/static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance
+
+# '<li class="button"><a class="lang" href="?'.$lang.'/static11/communitywebcomics&page='.$activefolder.'&display='.$langimagename.'">';
+# http://localhost/?en/static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=en_PCMINI_E01_by-Nartance.jpg
+# => http://localhost/?en/static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=en_PCMINI_E01_by-Nartance.jpg
+
     # Get language from hook. Skip website languages.
     $availablelanguages = $plxShow->callHook('MyMultiLingueGetAvailableLanguagesForPage',
         array('tester' =>'0_sources/0ther/community/Pepper-and-Carrot-Mini_by_Nartance',
@@ -119,11 +134,8 @@ if(isset($_GET['page'])) {
                 echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> '.$plxShow->callHook('MyMultiLingueGetLangLabel', $lang).'<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
                   echo '<input type="checkbox" id="langmenu">';
                     echo '<ul class="langmenu expanded">';
-                      foreach ($availablelanguages as $lang => $langinfo) {
-                        echo '<li class="button"><a class="lang" href="?'.$lang.'/static11/communitywebcomics&page='.$activefolder.'">';
-                          echo $langinfo->{'local_name'};
-                        echo '</a></li>';
-                      }
+                    eval($plxShow->callHook('MyMultiLingueStaticAllLang',
+                        array('pageurl' => 'static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance', 'testdir' => $pathartworks, 'includewebsite' => false)));
                       echo '<li class="button"><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
                 echo '</ul>';
             echo '</nav>';
