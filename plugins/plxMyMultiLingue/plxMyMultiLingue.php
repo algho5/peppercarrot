@@ -1069,6 +1069,7 @@ public function MyMultiLingueStaticLang() {
 
       # loop on detected langs
       foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
+        $sel = $this->lang === $lang ? ' active' : '';
 
         $websitetranslated = $includewebsite && $langinfo->websitetranslated ? 10 : 0;
 
@@ -1102,6 +1103,8 @@ public function MyMultiLingueStaticLang() {
     } else {
       # Skip statistics
       foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
+        $sel = $this->lang === $lang ? ' active' : '';
+
         # To deal with links like
         # static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
         $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
