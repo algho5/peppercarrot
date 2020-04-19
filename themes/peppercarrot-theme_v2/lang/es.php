@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'Traducido por: <a href="https://github.com/Dovaa">Dovaa</a>',
-'LANGUAGE_NAME' 			=> 'Español',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'es',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

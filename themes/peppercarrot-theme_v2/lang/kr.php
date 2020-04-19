@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => '번역자: <a href="https://www.facebook.com/hongpyo.jang">Remerer Jang</a>, <a href="https://keybase.io/qtwyeuritoiy">Jihoon Kim</a>',
-'LANGUAGE_NAME' 			=> '한국어',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'kr',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

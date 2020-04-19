@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'Übersetzung: <a href="https://github.com/torpak">Torpak</a>',
-'LANGUAGE_NAME' 			=> 'Deutsch',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'de',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

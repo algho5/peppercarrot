@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'Oversatt av: <a href="http://3dnett.no">Thomas Nordstrøm</a>',
-'LANGUAGE_NAME' 			=> 'Norsk',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'no',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

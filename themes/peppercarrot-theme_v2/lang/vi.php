@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'Dịch bởi: <a href="https://github.com/owleye97">Binh Pham</a>',
-'LANGUAGE_NAME' 			=> 'Tiếng Việt',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'vi',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

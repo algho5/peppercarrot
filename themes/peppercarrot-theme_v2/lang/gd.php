@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY'              => 'Eadar-theangachadh le: <a href="https://www.foramnagaidhlig.net">GunChleoc</a>',
-'LANGUAGE_NAME'              => 'Gàidhlig',
-'LANGUAGE_ISO_CODE_2_LETTER' => 'gd',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'przekłŏd: Grzegorz Kulik',
-'LANGUAGE_NAME' 			=> 'Ślōnskŏ gŏdka',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'sz',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

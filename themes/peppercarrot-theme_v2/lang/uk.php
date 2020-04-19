@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'Переклав: <a href="mailto:zverilla7@gmail.com">Zveryok</a>',
-'LANGUAGE_NAME' 			=> 'Українська',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'uk',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
