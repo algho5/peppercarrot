@@ -1027,71 +1027,95 @@ public function MyMultiLingueStaticLang() {
 }
 
 
-/********************************************************************************************/
-/* Display the pills of all available lang, even webcomic (static: for frontpage/webcomics) */
-/********************************************************************************************/
-/**
- * Method to display a list of the available all langage for static pages
- * @author: David Revoy
- *
- * TODO document arguments
- *
- **/
-public function MyMultiLingueStaticAllLang($arguments) {
+  /********************************************************************************************/
+  /* Display the pills of all available lang, even webcomic (static: for frontpage/webcomics) */
+  /********************************************************************************************/
+  /**
+   * Method to display a list of the available all langage for static pages
+   * @author: David Revoy
+   *
+   * TODO document arguments
+   *
+   **/
+  public function MyMultiLingueStaticAllLang($arguments) {
 
-  if (isset($arguments['pageurl'])) {
-    $pageurl = $arguments['pageurl'];
-  } else {
-    $pageurl = "";
-  }
-
-  if (isset($arguments['testdir'])) {
-    $testdir = $arguments['testdir'];
-  } else {
-    $testdir = '0_sources/ep01_Potion-of-Flight/low-res';
-  }
-
-  if (isset($arguments['includewebsite'])) {
-    $includewebsite = $arguments['includewebsite'];
-  } else {
-    $includewebsite = true;
-  }
-
-  # Get episode folders for statistics
-  $totalepisodecount = count(glob('0_sources/ep[0-9][0-9]*'));
-
-  # loop on detected langs
-  foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
-
-    $websitetranslated = $langinfo->websitetranslated ? 10 : 0;
-
-    # Get episode folders for statistics
-    $translationcompletion = count(glob('0_sources/ep[0-9][0-9]*/lang/'.$lang));
-
-    # To deal with links like
-    # static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
-    $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
-
-    # TODO different stats if we don't count the website?
-    $percent = ( $translationcompletion / $totalepisodecount ) * 90 + $websitetranslated;
-    $percent = round($percent, 0);
-    $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$localized_pageurl.'")."\"';
-    $LangString .= ' title=\"'.$translationcompletion.' of '.$totalepisodecount.' episodes translated, ';
-    if ($websitetranslated == 10 ) {
-      $LangString .= 'website is translated.\">';
+    if (isset($arguments['pageurl'])) {
+      $pageurl = $arguments['pageurl'];
     } else {
-      $LangString .= 'website is not translated.\">';
+      $pageurl = "";
     }
-    $LangString .= ''.$langinfo->{'local_name'}.' ';
-    $LangString .= '<span class=\"percent\" >'.$percent.'%</span> ';
-    if ($percent == 100 ) {
-      $LangString .= '<img src=\"themes/peppercarrot-theme_v2/ico/star.svg\" alt=\"star,\" title=\"Translation complete! Congratulations.\"/>';
+
+    if (isset($arguments['testdir'])) {
+      $testdir = $arguments['testdir'];
+    } else {
+      $testdir = '0_sources/ep01_Potion-of-Flight/low-res';
     }
-    $LangString .= '</a></li>"; ?>';
+
+    if (isset($arguments['includewebsite'])) {
+      $includewebsite = $arguments['includewebsite'];
+    } else {
+      $includewebsite = true;
+    }
+
+    if (isset($arguments['showstats'])) {
+      $showstats = $arguments['showstats'];
+    } else {
+      $showstats = false;
+    }
+
+    if ($showstats) {
+      # Get episode folders for statistics
+      $totalepisodecount = count(glob('0_sources/ep[0-9][0-9]*'));
+
+      # loop on detected langs
+      foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
+
+        $websitetranslated = $includewebsite && $langinfo->websitetranslated ? 10 : 0;
+
+        # Get episode folders for statistics
+        $translationcompletion = count(glob('0_sources/ep[0-9][0-9]*/lang/'.$lang));
+
+        # To deal with links like
+        # static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
+        $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
+
+        # TODO lost setting of $sel
+        $percent = ( $translationcompletion / $totalepisodecount ) * ($includewebsite ? 90 : 100) + $websitetranslated;
+        $percent = round($percent, 0);
+        $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$localized_pageurl.'")."\"';
+        $LangString .= ' title=\"'.$translationcompletion.' of '.$totalepisodecount.' episodes translated';
+        if ($includewebsite) {
+          if ($websitetranslated == 10 ) {
+            $LangString .= ', website is translated.';
+          } else {
+            $LangString .= ', website is not translated.';
+          }
+        }
+        $LangString .= '\">'.$langinfo->{'local_name'}.' ';
+        $LangString .= '<span class=\"percent\" >'.$percent.'%</span> ';
+        if ($percent == 100 ) {
+          $LangString .= '<img src=\"themes/peppercarrot-theme_v2/ico/star.svg\" alt=\"star,\" title=\"Translation complete! Congratulations.\"/>';
+        }
+        $LangString .= '</a></li>"; ?>';
+      }
+
+    } else {
+      # Skip statistics
+      foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
+        # To deal with links like
+        # static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
+        $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
+
+        $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$localized_pageurl.'")."\"';
+        $LangString .= ' title=\"'.$langinfo->{'local_name'}.'\">';
+        $LangString .= ''.$langinfo->{'local_name'}.' ';
+        $LangString .= '</a></li>"; ?>';
+      }
+    }
+
+    # Display results
+    echo $LangString;
   }
-  # Display results
-  echo $LangString;
-}
 
 
   /*****************************************/

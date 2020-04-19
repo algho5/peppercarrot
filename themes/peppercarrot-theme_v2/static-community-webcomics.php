@@ -114,7 +114,7 @@ if(isset($_GET['page'])) {
                   echo '<input type="checkbox" id="langmenu">';
                     echo '<ul class="langmenu expanded">';
                     eval($plxShow->callHook('MyMultiLingueStaticAllLang',
-                        array('pageurl' => $baselink, 'testdir' => $pathartworks, 'includewebsite' => false)));
+                        array('pageurl' => $baselink, 'testdir' => $pathartworks, 'includewebsite' => false, 'showstats' => true)));
                       echo '<li class="button"><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
                 echo '</ul>';
             echo '</nav>';
