@@ -13,7 +13,8 @@
                 $episodeData = $plxShow->callHook('MyMultiLingueEpisodeData');
                 eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
                     'pageurl' => '?lang={LANG}',
-                    'testdir' => $episodeData['directory'].'/low-res'
+                    'testdir' => $episodeData['directory'].'/low-res',
+                    'includewebsite' => false
                 )));
                ?>
             </div>

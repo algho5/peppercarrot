@@ -32,6 +32,9 @@ if(isset($_GET['page'])) {
 
     $baselink = "static11/communitywebcomics&page=$activefolder";
 
+    # TODO this is still hard-coded and won't work for other community contributions.
+    $contributionlink = 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md';
+
 # Check available languages
 # =========================
 
@@ -75,7 +78,7 @@ if(isset($_GET['page'])) {
                                 'pageurl' => '{LANG}/'.$baselink.'&display={LANG}'.$langimagewithoutlang,
                                 'testdir' => $pathartworks,
                                 'includewebsite' => false,
-                                'contributionlink' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
+                                'contributionlink' => $contributionlink
                         )));
                     echo '</div>';
                 echo '</nav>';
@@ -116,7 +119,7 @@ if(isset($_GET['page'])) {
                         'testdir' => $pathartworks,
                         'includewebsite' => false,
                         'statstemplate' => $pathartworks.'/{LANG}_[A-Za-z-]*_E[0-9][0-9]*[A-Za-z_-]*.jpg',
-                        'contributionlink' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
+                        'contributionlink' => $contributionlink
                 )));
             echo '</div>';
           echo '</nav>';

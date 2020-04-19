@@ -974,13 +974,21 @@ public function MyMultiLingueGetLang() {
   }
 
 
-  // Hook wrapper
+  /**
+   * Hook wrapper for $this->getAvailableLanguagesForPage($comic_test_page_dir, $include_website)
+   *
+   * See that function for documentation.
+   */
   public function MyMultiLingueGetAvailableLanguagesForPage($arguments) {
     return $this->getAvailableLanguagesForPage($arguments['tester'], $arguments['website']);
   }
 
 
-  // TODO document
+  /**
+   * Hook wrapper for $this->episodeData()
+   *
+   * See that function for documentation.
+   */
   public function MyMultiLingueEpisodeData() {
     return $this->episodeData();
   }
@@ -989,11 +997,37 @@ public function MyMultiLingueGetLang() {
   /* Display the pills of all available lang, even webcomic (static: for frontpage/webcomics) */
   /********************************************************************************************/
   /**
-   * Method to display a list of the available all langage for static pages
-   * @author: David Revoy
+   * Method to display a list of available languages.
    *
-   * TODO document arguments
+   * This can be configured to switch website and content languages and their statistics on and off.
+   * It also supports multiple content location and link schemes.
    *
+   * @author: David Revoy, GunChleoc
+   *
+   * @param $arguments array  Configures the language menu. All entries are optional.
+   *
+   * string pageurl:
+   *     URL template for the translated version of this page. Use {LANG} as a substitute for language codes.
+   *     Default: '{LANG}/'
+   *
+   * string testdir:
+   *     The directory for checking if translations exist for  category or episode.
+   *     This must directory have files or directories starting with language codes in it.
+   *     Default: '0_sources/ep01_Potion-of-Flight/low-res'
+   *
+   * boolean includewebsite:
+   *     Whether to include website languages in the menu that don't have content translations yet
+   *     Default: true
+   *
+   * string statstemplate:
+   *     Directory/file template for detecting whether an episode has been translated.
+   *     When set, this *must* contain a language code substituted by '{LANG}'
+   *     Example: 0_sources/ep[0-9][0-9]<star>/lang/{LANG}/E[0-9][0-9]<star>P00.svg
+   *     If this is not set, no statistics will be shown.
+   *
+   * string contributionlink:
+   *    The target link for the "add a translation" button.
+   *    Default: '?static14/documentation&page=010_Translate_the_comic'
    **/
   public function MyMultiLingueLanguageMenu($arguments) {
     # Configure
@@ -1043,7 +1077,7 @@ public function MyMultiLingueGetLang() {
       }
 
       # To deal with links like
-      # static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
+      # ?fr/static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
       $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
 
       $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$localized_pageurl.'")."\"';
@@ -1057,7 +1091,6 @@ public function MyMultiLingueGetLang() {
         # Get episode folders for statistics
         $translationcompletion = count(glob(str_replace('{LANG}', $lang, $statstemplate)));
 
-        # TODO lost setting of $sel
         $percent = ( $translationcompletion / $totalepisodecount ) * ($includewebsite ? 90 : 100) + $websitetranslated;
         $percent = round($percent, 0);
 

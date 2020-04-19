@@ -7,7 +7,6 @@
           <nav class="nav" role="navigation">
             <div class="responsive-langmenu">
             <?php eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
-                'testdir' => '0_sources/ep01_Potion-of-Flight/low-res',
                 'statstemplate' => '0_sources/ep[0-9][0-9]*/lang/{LANG}/E[0-9][0-9]*P00.svg'))); ?>
             </div>
           </nav>
