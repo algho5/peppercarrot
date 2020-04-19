@@ -341,7 +341,6 @@ class plxMyMultiLingue extends plxPlugin {
 
     # Specific rules for Pepper&Carrot :
     $this->addHook('MyMultiLingueGetLang', 'MyMultiLingueGetLang');
-    $this->addHook('MyMultiLingueGetLangLabel', 'MyMultiLingueGetLangLabel');
     $this->addHook('MyMultiLingueEpisodeData', 'MyMultiLingueEpisodeData');
     $this->addHook('MyMultiLingueLanguageMenu', 'MyMultiLingueLanguageMenu');
     $this->addHook('MyMultiLingueComicToggleButtons', 'MyMultiLingueComicToggleButtons');
@@ -931,10 +930,6 @@ public function MyMultiLingueGetLang() {
 
   return $this->lang;
 
-}
-
-public function MyMultiLingueGetLangLabel($lang) {
-  return $this->languageConfig->{$lang}->{'local_name'};
 }
 
   /**
