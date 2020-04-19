@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY'              => 'Traducere: <a href="https://www.davidrevoy.com">Florin Șandru</a>',
-'LANGUAGE_NAME'              => 'Română',
-'LANGUAGE_ISO_CODE_2_LETTER' => 'ro',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

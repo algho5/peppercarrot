@@ -2,9 +2,7 @@
 $LANG = array(
 # Global
 'TRANSLATED_BY' 		    => 'translation credit: <a href="mailto:melania.fois@gmail.com">Melania Fois</a>',
-'LANGUAGE_NAME' 			=> 'Italiano',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'it',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
+
 ################################################################################
 # Header HTML infos for search engine and title in tab:
 'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website

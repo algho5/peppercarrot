@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'Tradukita de: Verdulo',
-'LANGUAGE_NAME' 			=> 'Esperanto',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'eo',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:

@@ -4,9 +4,6 @@ $LANG = array(
 
 # Global
 'TRANSLATED_BY' 		    => 'Fordítás: <a href="https://level14.hu">Halász Gábor &quot;Hali&quot;</a>',
-'LANGUAGE_NAME' 			=> 'Magyar',
-'LANGUAGE_ISO_CODE_2_LETTER'=> 'hu',
-# http://www.w3schools.com/tags/ref_language_codes.asp --> full list
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
