@@ -1073,33 +1073,38 @@ public function MyMultiLingueStaticLang() {
 
     $plxShow = plxShow::getInstance();
 
+
+    # Get total episode folder count for statistics
+    # TODO this does not work for the commmunity comics yet
+    $totalepisodecount = $showstats ? count(glob('0_sources/ep[0-9][0-9]*')) : 0;
+
     # Collect language entries
-    if ($showstats) {
-      # Get episode folders for statistics
-      # TODO this does not work for the commmunity comics yet
-      $totalepisodecount = count(glob('0_sources/ep[0-9][0-9]*'));
+    foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
+      $sel = '';
+      if ($this->lang === $lang) {
+        $langlabel = $langinfo->{'local_name'};
+        $sel = ' active';
+      }
 
-      # loop on detected langs
-      foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
-        $sel = '';
-        if ($this->lang === $lang) {
-          $langlabel = $langinfo->{'local_name'};
-          $sel = ' active';
-        }
+      # To deal with links like
+      # static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
+      $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
 
+      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$localized_pageurl.'")."\"';
+
+      if ($showstats) {
+        # Calculate statistics and add info to link title & text
+
+        # Use flat 10% for website statistics
         $websitetranslated = $includewebsite && $langinfo->websitetranslated ? 10 : 0;
 
         # Get episode folders for statistics
         $translationcompletion = count(glob('0_sources/ep[0-9][0-9]*/lang/'.$lang));
 
-        # To deal with links like
-        # static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
-        $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
-
         # TODO lost setting of $sel
         $percent = ( $translationcompletion / $totalepisodecount ) * ($includewebsite ? 90 : 100) + $websitetranslated;
         $percent = round($percent, 0);
-        $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$localized_pageurl.'")."\"';
+
         $LangString .= ' title=\"'.$translationcompletion.' of '.$totalepisodecount.' episodes translated';
         if ($includewebsite) {
           if ($websitetranslated == 10 ) {
@@ -1113,27 +1118,12 @@ public function MyMultiLingueStaticLang() {
         if ($percent == 100 ) {
           $LangString .= '<img src=\"themes/peppercarrot-theme_v2/ico/star.svg\" alt=\"star,\" title=\"Translation complete! Congratulations.\"/>';
         }
-        $LangString .= '</a></li>"; ?>';
-      }
-
-    } else {
-      # Construct langage links without statistics
-      foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
-        $sel = '';
-        if ($this->lang === $lang) {
-          $langlabel = $langinfo->{'local_name'};
-          $sel = ' active';
-        }
-
-        # To deal with links like
-        # static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
-        $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
-
-        $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$localized_pageurl.'")."\"';
+      } else {
+        # Link title & text without statistics
         $LangString .= ' title=\"'.$langinfo->{'local_name'}.'\">';
         $LangString .= ''.$langinfo->{'local_name'}.' ';
-        $LangString .= '</a></li>"; ?>';
       }
+      $LangString .= '</a></li>"; ?>';
     }
 
     # Print menu
