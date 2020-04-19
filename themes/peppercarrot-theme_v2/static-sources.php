@@ -409,7 +409,7 @@ echo '<div class="grid">';
     echo '            <img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
     echo '          <input type="checkbox" id="langmenu">';
     echo '          <ul class="langmenu expanded">';
-                    eval($plxShow->callHook('MyMultiLingueLanguageMenu', array('pageurl' => 'static6/sources&page=XYZ')));
+                    eval($plxShow->callHook('MyMultiLingueLanguageMenu', array('pageurl' => '{LANG}/static6/sources&page=XYZ')));
     echo '          <li class="button">';
     echo '              <a class="lang" href="';
                           $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic');
