@@ -169,26 +169,27 @@ class Comic {
     # echo "<b>&#36;episodenumber</b> [" . $this->episode_number . "] <br />";
 
     # Get all image files for episode and language (page title + pages)
-    $this->pagefiles = glob(''.$directory.'/'.$this->resolutionfolder.'/'.$lang.'_'.$name.'P[0-9][0-9]*.[A-Za-z]*');
+    $this->pagefiles = glob($directory.'/'.$this->resolutionfolder.'/'.$lang.'_'.$name.'P[0-9][0-9]*.[A-Za-z]*');
 
     if (!empty($this->pagefiles)) {
       # If the files exist, we can use the desired language
       $this->usedlang = $lang;
     } else {
       # Fallback to English
-      $this->pagefiles = glob(''.$directory.'/'.$this->resolutionfolder.'/'.$this->usedlang.'_'.$name.'P[0-9][0-9]*.[A-Za-z]*');
+      $this->pagefiles = glob($directory.'/'.$this->resolutionfolder.'/'.$this->usedlang.'_'.$name.'P[0-9][0-9]*.[A-Za-z]*');
     }
 
     # debug var_dump($this->pagefiles);
 
-    # Look for transcript files. Make sure we allow for gaps.
-    $transcript_filenames = glob($directory.'/hi-res/html/'.$this->usedlang.'_E'.$data['number'].'P[0-9][0-9]*.html');
-
-    $keys = array_keys($transcript_filenames);
-
-    foreach ($keys as $key) {
-      if (file_exists($transcript_filenames[$key])) {
-        $this->transcripts[$key] = $transcript_filenames[$key];
+    # Look for transcript files. Make sure we allow for gaps, so we have to check each file separately.
+    $no_of_pages = count($this->pagefiles);
+    for ($i = 0; $i < $no_of_pages; $i++) {
+      # Add leading 0 to page number
+      $pagenumber = str_pad($i, 2, "0", STR_PAD_LEFT);
+      # Assemble filename and add if file exists
+      $transcript_filename = $directory.'/hi-res/html/'.$this->usedlang.'_E'.$data['number'].'P'.$pagenumber.'.html';
+      if (file_exists($transcript_filename)) {
+        $this->transcripts[$i] = $transcript_filename;
       }
     }
     # debug var_dump($this->transcripts);

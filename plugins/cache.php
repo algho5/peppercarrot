@@ -209,7 +209,13 @@ function cache_endhook($output) {
 		global $validLangsPath;
 		$plxMotor = plxMotor::getInstance();
 		$langPlugin = $plxMotor->plxPlugins->aPlugins['plxMyMultiLingue'];
-		$validLangs = $langPlugin->getParam("flags");
+
+		if(defined('PLX_MYMULTILINGUE')) {
+			$validLangs = PLX_MYMULTILINGUE;
+		} else {
+			$validLangs = array($plxPlugin->default_lang);
+		}
+
 		file_put_contents($validLangsPath + ".tmp", $validLangs);
 		rename($validLangsPath + ".tmp", $validLangsPath);
 	}
