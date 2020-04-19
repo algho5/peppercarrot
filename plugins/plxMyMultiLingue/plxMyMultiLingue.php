@@ -1028,7 +1028,8 @@ public function MyMultiLingueGetLang() {
    *     Leave unset if you don't want to show any statistics.
    *
    * string contributionlink:
-   *    The target link for the "+ add a translation" button.
+   *    The target link for the "+ add a translation" button. If this is set but empty,
+   *    this button will be skipped.
    *    Default: '?static14/documentation&page=010_Translate_the_comic'
    **/
   public function MyMultiLingueLanguageMenu($arguments) {
@@ -1123,20 +1124,23 @@ public function MyMultiLingueGetLang() {
     <label for="langmenu" style="display: inline-block;"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
     <input type="checkbox" id="langmenu">
     <ul class="langmenu expanded">
-      <?php echo $LangString; ?>
-      <li class="button">
-        <a class="lang" href="<?php
-          # We don't want to rewrite links to framagit etc.
-          if (substr($contributionlink, 0, 4) === 'http') {
-            echo $contributionlink;
-          } else {
-            $plxShow->urlRewrite($contributionlink);
-          }
-          ?>">
-          <img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/>
-           <?php $plxShow->lang('ADD_TRANSLATION') ?>
-        </a>
-      </li>
+      <?php echo $LangString;
+      if (!empty($contributionlink)) {
+      ?>
+        <li class="button">
+          <a class="lang" href="<?php
+            # We don't want to rewrite links to framagit etc.
+            if (substr($contributionlink, 0, 4) === 'http') {
+              echo $contributionlink;
+            } else {
+              $plxShow->urlRewrite($contributionlink);
+            }
+            ?>">
+            <img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/>
+             <?php $plxShow->lang('ADD_TRANSLATION') ?>
+          </a>
+        </li>
+        <?php } ?>
     </ul>
     <?php
   }

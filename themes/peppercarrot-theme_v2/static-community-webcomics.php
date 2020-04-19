@@ -32,8 +32,13 @@ if(isset($_GET['page'])) {
 
     $baselink = "static11/communitywebcomics&page=$activefolder";
 
-    # TODO this is still hard-coded and won't work for other community contributions.
-    $contributionlink = 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md';
+    # We can't count on contributions having a structured git repo, so we list the contribution links here.
+    # Empty link means don't show any "add a translation" buttons for ths active folder.
+    $contributionlinks = array(
+        'Pepper-and-Carrot_by_Holger-Kraemer' => '',
+        'Pepper-and-Carrot-Mini_by_Nartance' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
+    );
+    $contributionlink = $contributionlinks[$activefolder];
 
 # Check available languages
 # =========================
