@@ -342,7 +342,6 @@ class plxMyMultiLingue extends plxPlugin {
     # Specific rules for Pepper&Carrot :
     $this->addHook('MyMultiLingueGetLang', 'MyMultiLingueGetLang');
     $this->addHook('MyMultiLingueGetLangLabel', 'MyMultiLingueGetLangLabel');
-    $this->addHook('MyMultiLingueStaticLang', 'MyMultiLingueStaticLang');
     $this->addHook('MyMultiLingueEpisodeData', 'MyMultiLingueEpisodeData');
     $this->addHook('MyMultiLingueLanguageMenu', 'MyMultiLingueLanguageMenu');
     $this->addHook('MyMultiLingueComicToggleButtons', 'MyMultiLingueComicToggleButtons');
@@ -984,27 +983,6 @@ public function MyMultiLingueGetLangLabel($lang) {
   public function MyMultiLingueGetAvailableLanguagesForPage($arguments) {
     return $this->getAvailableLanguagesForPage($arguments['tester'], $arguments['website']);
   }
-
-
-/************************************************/
-/* Display the pills of available lang (static) */
-/************************************************/
-/**
- * Method to display a list of the available langage for static pages
- * @author: David Revoy
- **/
-public function MyMultiLingueStaticLang() {
-  $plxMotor = plxMotor::getInstance();
-  # loop on all the lang pluxml know
-  foreach($this->getAvailableLanguagesForPage() as $lang => $langinfo) {
-    # If the label display active lang, let CSS know for highlight via class 'active'
-    $sel = $this->lang==$lang ? ' active':'';
-    # We build the HTML for the language item
-    $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'.$langinfo->{'local_name'}.'</a></li>"; ?>';
-  }
-  # Display the resulting full list
-  echo $LangString;
-}
 
 
   // TODO document
