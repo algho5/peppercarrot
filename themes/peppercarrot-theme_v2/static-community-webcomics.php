@@ -30,34 +30,19 @@ if(isset($_GET['page'])) {
 
     $pathartworks = $pathcommunityfolder .'/'.$activefolder;
 
+    $baselink = "static11/communitywebcomics&page=$activefolder";
+
 # Check available languages
 # =========================
 
-# http://localhost/en/ Homepage => http://localhost/en/
-# http://localhost/lang=en Comicpage => http://localhost/en/article2/episode-2-the-blue-long-folder-name
-
-# https://www.peppercarrot.com/en/static6/sources&page=XYZ Preview => https://www.peppercarrot.com/en/static6/sources&page=XYZ
-# With parameter 'static6/sources&page=XYZ'
-
-
-# '<li class="button"><a class="lang" href="?'.$lang.'/static11/communitywebcomics&page='.$activefolder.'">';
-# http://localhost/?en/static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance
-# => http://localhost/?en/static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance
-
-# '<li class="button"><a class="lang" href="?'.$lang.'/static11/communitywebcomics&page='.$activefolder.'&display='.$langimagename.'">';
-# http://localhost/?en/static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=en_PCMINI_E01_by-Nartance.jpg
-# => http://localhost/?en/static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=en_PCMINI_E01_by-Nartance.jpg
-
     # Get language from hook. Skip website languages.
     $availablelanguages = $plxShow->callHook('MyMultiLingueGetAvailableLanguagesForPage',
-        array('tester' =>'0_sources/0ther/community/Pepper-and-Carrot-Mini_by_Nartance',
+        array('tester' =>'0_sources/0ther/community/'.$activefolder,
               'website' => false));
 
     # We check if content exist for user with active lang selected
-    $matchinglang = array_key_exists($lang, $availablelanguages);
-
     # When no lang available, display a message:
-    if (!$matchinglang) {
+    if (!array_key_exists($lang, $availablelanguages)) {
       echo '<div class="grid">';
       echo '<br/><div class="col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center alert blue">';
       echo '  <img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt="info:"/>';
@@ -74,6 +59,7 @@ if(isset($_GET['page'])) {
 
     if(isset($_GET['display'])) {
         $imagename = $activeimage;
+        $langimagewithoutlang = substr($imagename, 2); // rm old lang
 
         # Write lang pills for the viewer
         # Challenge: the pills must translate the image displayed.
@@ -82,20 +68,13 @@ if(isset($_GET['page'])) {
             echo '<nav class="nav" role="navigation">';
               echo '<div class="responsive-langmenu">';
               echo '<div class="button top">';
-                echo '<a href="static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance/" class="lang option">← Back to index</a>';
+                echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
               echo '</div>';
                 echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/>'.$langlabel.'<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
                   echo '<input type="checkbox" id="langmenu">';
-                    echo '<ul class="langmenu expanded">';
-                      foreach ($availablelanguages as $lang => $langinfo) {
-                        $langimagewithoutlang = substr($imagename, 2); // rm old lang
-                        $langimagename = $lang.$langimagewithoutlang;
-                        if (file_exists($pathartworks.'/'.$langimagename.'')) {
-                          echo '<li class="button"><a class="lang" href="?'.$lang.'/static11/communitywebcomics&page='.$activefolder.'&display='.$langimagename.'">';
-                          echo $langinfo->{'local_name'};
-                          echo '</a></li>';
-                        }
-                      }
+                  echo '<ul class="langmenu expanded">';
+                      eval($plxShow->callHook('MyMultiLingueStaticAllLang',
+                           array('pageurl' => $baselink.'&display={LANG}'.$langimagewithoutlang, 'testdir' => $pathartworks, 'includewebsite' => false)));
                       echo '<li class="button" ><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
                 echo '</ul>';
             echo '</nav>';
@@ -113,7 +92,7 @@ if(isset($_GET['page'])) {
         echo '<a href="'.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
 
         echo '<div class="button top">';
-          echo '<a href="static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance/" class="lang option">← Back to index</a>';
+          echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
         echo '</div>';
 
         echo '</section>';
@@ -135,7 +114,7 @@ if(isset($_GET['page'])) {
                   echo '<input type="checkbox" id="langmenu">';
                     echo '<ul class="langmenu expanded">';
                     eval($plxShow->callHook('MyMultiLingueStaticAllLang',
-                        array('pageurl' => 'static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance', 'testdir' => $pathartworks, 'includewebsite' => false)));
+                        array('pageurl' => $baselink, 'testdir' => $pathartworks, 'includewebsite' => false)));
                       echo '<li class="button"><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
                 echo '</ul>';
             echo '</nav>';
@@ -180,9 +159,9 @@ if(isset($_GET['page'])) {
             $filenameclean = str_replace('-', ' ', $filenameclean);
 
             echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-            echo '<a href="?static11/communitywebcomics&page='.$activefolder.'&display='.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+            echo '<a href="?'.$baselink.'&display='.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
             echo '<figcaption class="text-center" >
-            <a href="?static11/communitywebcomics&page='.$activefolder.'&display='.$filename.'" >
+            <a href="?'.$baselink.'&display='.$filename.'" >
             '.$episodestring.' '.$filenameclean.'
             </figcaption>
             <br/><br/>';

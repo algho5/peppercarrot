@@ -1068,10 +1068,14 @@ public function MyMultiLingueStaticAllLang($arguments) {
     # Get episode folders for statistics
     $translationcompletion = count(glob('0_sources/ep[0-9][0-9]*/lang/'.$lang));
 
+    # To deal with links like
+    # static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
+    $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
+
     # TODO different stats if we don't count the website?
     $percent = ( $translationcompletion / $totalepisodecount ) * 90 + $websitetranslated;
     $percent = round($percent, 0);
-    $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$pageurl.'")."\"';
+    $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$localized_pageurl.'")."\"';
     $LangString .= ' title=\"'.$translationcompletion.' of '.$totalepisodecount.' episodes translated, ';
     if ($websitetranslated == 10 ) {
       $LangString .= 'website is translated.\">';
