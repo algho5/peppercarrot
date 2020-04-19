@@ -65,15 +65,21 @@ if(isset($_GET['page'])) {
         # Challenge: the pills must translate the image displayed.
 
         echo '<div class="grid">';
-            echo '<div class="button top col sml-12 sml-text-right">';
-                echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
+            echo '<div class="col sml-12 sml-text-right">';
+                echo '<nav class="nav" role="navigation">';
+                    echo '<div class="responsive-langmenu">';
+                        echo '<div class="button top">';
+                            echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
+                        echo '</div>';
+                        eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
+                                'pageurl' => '{LANG}/'.$baselink.'&display={LANG}'.$langimagewithoutlang,
+                                'testdir' => $pathartworks,
+                                'includewebsite' => false,
+                                'contributionlink' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
+                        )));
+                    echo '</div>';
+                echo '</nav>';
             echo '</div>';
-            eval($plxShow->callHook('MyMultiLingueStaticAllLang', array(
-                    'pageurl' => $baselink.'&display={LANG}'.$langimagewithoutlang,
-                    'testdir' => $pathartworks,
-                    'includewebsite' => false,
-                    'contributionlink' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
-            )));
         echo '</div>';
         echo '<div style="clear:both;"></div> ';
 
@@ -101,15 +107,20 @@ if(isset($_GET['page'])) {
 # (no "display" variable passed)
 
         # lang pills
+        echo '<div class="col sml-12 sml-text-right">';
+          echo '<nav class="nav" role="navigation">';
+            echo '<div class="responsive-langmenu">';
 
-        eval($plxShow->callHook('MyMultiLingueStaticAllLang', array(
-                'pageurl' => $baselink,
-                'testdir' => $pathartworks,
-                'includewebsite' => false,
-                'statstemplate' => $pathartworks.'/{LANG}_[A-Za-z-]*_E[0-9][0-9]*[A-Za-z_-]*.jpg',
-                'contributionlink' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
-        )));
-
+                eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
+                        'pageurl' => '{LANG}/'.$baselink,
+                        'testdir' => $pathartworks,
+                        'includewebsite' => false,
+                        'statstemplate' => $pathartworks.'/{LANG}_[A-Za-z-]*_E[0-9][0-9]*[A-Za-z_-]*.jpg',
+                        'contributionlink' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
+                )));
+            echo '</div>';
+          echo '</nav>';
+        echo '</div>';
         echo '<div style="clear:both;"></div> ';
 
         # Display the title of the project and markdown:

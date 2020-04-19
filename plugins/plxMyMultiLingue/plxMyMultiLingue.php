@@ -342,9 +342,9 @@ class plxMyMultiLingue extends plxPlugin {
     # Specific rules for Pepper&Carrot :
     $this->addHook('MyMultiLingueGetLang', 'MyMultiLingueGetLang');
     $this->addHook('MyMultiLingueGetLangLabel', 'MyMultiLingueGetLangLabel');
-    $this->addHook('MyMultiLingueComicLang', 'MyMultiLingueComicLang');
     $this->addHook('MyMultiLingueStaticLang', 'MyMultiLingueStaticLang');
-    $this->addHook('MyMultiLingueStaticAllLang', 'MyMultiLingueStaticAllLang');
+    $this->addHook('MyMultiLingueEpisodeData', 'MyMultiLingueEpisodeData');
+    $this->addHook('MyMultiLingueLanguageMenu', 'MyMultiLingueLanguageMenu');
     $this->addHook('MyMultiLingueComicToggleButtons', 'MyMultiLingueComicToggleButtons');
     $this->addHook('MyMultiLingueComicDisplay', 'MyMultiLingueComicDisplay');
     $this->addHook('MyMultiLingueComicHeader', 'MyMultiLingueComicHeader');
@@ -986,26 +986,6 @@ public function MyMultiLingueGetLangLabel($lang) {
   }
 
 
-/**********************************************************/
-/* Display the pills of available lang (article-webcomic) */
-/**********************************************************/
-/**
- * Method to display a list of the available langage for active comic
- * @author: David Revoy
- **/
-public function MyMultiLingueComicLang() {
-
-  foreach($this->getAvailableLanguagesForPage($this->episodeData()['directory'].'/low-res', false) as $lang => $langinfo) {
-    # If the label display active lang, let CSS know for highlight via class 'active'
-    $sel = $this->lang==$lang ? ' active':'';
-    # We build the HTML for the language item
-    $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'.$langinfo->{'local_name'}.'</a></li>"; ?>';
-  }
-  # Display the resulting full list
-  echo $LangString;
-
-}
-
 /************************************************/
 /* Display the pills of available lang (static) */
 /************************************************/
@@ -1027,6 +1007,11 @@ public function MyMultiLingueStaticLang() {
 }
 
 
+  // TODO document
+  public function MyMultiLingueEpisodeData() {
+    return $this->episodeData();
+  }
+
   /********************************************************************************************/
   /* Display the pills of all available lang, even webcomic (static: for frontpage/webcomics) */
   /********************************************************************************************/
@@ -1037,12 +1022,12 @@ public function MyMultiLingueStaticLang() {
    * TODO document arguments
    *
    **/
-  public function MyMultiLingueStaticAllLang($arguments) {
+  public function MyMultiLingueLanguageMenu($arguments) {
     # Configure
     if (isset($arguments['pageurl'])) {
       $pageurl = $arguments['pageurl'];
     } else {
-      $pageurl = "";
+      $pageurl = '{LANG}/';
     }
 
     if (isset($arguments['testdir'])) {
@@ -1088,7 +1073,7 @@ public function MyMultiLingueStaticLang() {
       # static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
       $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
 
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$localized_pageurl.'")."\"';
+      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$localized_pageurl.'")."\"';
 
       if ($showstats) {
         # Calculate statistics and add info to link title & text
@@ -1126,30 +1111,24 @@ public function MyMultiLingueStaticLang() {
 
     # Print menu
     ?>
-    <div class="col sml-12 sml-text-right">
-      <nav class="nav" role="navigation">
-        <div class="responsive-langmenu">
-          <label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
-          <input type="checkbox" id="langmenu">
-          <ul class="langmenu expanded">
-            <?php echo $LangString; ?>
-            <li class="button">
-              <a class="lang" href="<?php
-                # We don't want to rewrite links to framagit etc.
-                if (substr($contributionlink, 0, 4) === 'http') {
-                  echo $contributionlink;
-                } else {
-                  $plxShow->urlRewrite($contributionlink);
-                }
-                ?>">
-                <img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/>
-                 <?php $plxShow->lang('ADD_TRANSLATION') ?>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <label for="langmenu" style="display: inline-block;"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
+    <input type="checkbox" id="langmenu">
+    <ul class="langmenu expanded">
+      <?php echo $LangString; ?>
+      <li class="button">
+        <a class="lang" href="<?php
+          # We don't want to rewrite links to framagit etc.
+          if (substr($contributionlink, 0, 4) === 'http') {
+            echo $contributionlink;
+          } else {
+            $plxShow->urlRewrite($contributionlink);
+          }
+          ?>">
+          <img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/>
+           <?php $plxShow->lang('ADD_TRANSLATION') ?>
+        </a>
+      </li>
+    </ul>
     <?php
   }
 
