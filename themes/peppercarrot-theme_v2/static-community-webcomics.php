@@ -154,28 +154,66 @@ if(isset($_GET['page'])) {
 
         # Display episodes
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
-        $search = glob($pathartworks.'/'.$lang.'*.jpg');
+
+        # Display thumbnails with links, using English as reference locale
+        $search = glob($pathartworks.'/en_*.jpg');
         rsort($search);
         # we loop on found episodes
         if (!empty($search)){
-          foreach ($search as $filepath) {
+
+          foreach ($search as $fallback_filepath) {
+            # Extract filename without locale
+            preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E\d+.*)$/', basename($fallback_filepath), $matches);
+
             # episode number extraction
-            $filename = basename($filepath);
-            $fullpath = dirname($filepath);
+            $filename = $lang.$matches[1];
+            $filepath = $pathartworks.'/'.$filename;
+
+            # We use the localized version for caption and title
             $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
             $filenameclean = substr($filenameclean, 11); // remove 11 first characters
             $filenameclean =  substr($filenameclean, 0, 2); // keeps two numbers
             $filenameclean = str_replace('_', ' ', $filenameclean);
             $filenameclean = str_replace('-', ' ', $filenameclean);
 
-            echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-            echo '<a href="?'.$baselink.'&display='.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
-            echo '<figcaption class="text-center" >
-            <a href="?'.$baselink.'&display='.$filename.'" >
-            '.$episodestring.' '.$filenameclean.'
-            </figcaption>
-            <br/><br/>';
-            echo '</figure>';
+            # TODO copied over from vignette.php => vignetteArtList. Let's see what we can unify.
+            if (file_exists($filepath)) {
+                # We have a translated cover.
+                $translationstatus = 'translated';
+                $translationmessage = '';
+                $overlay = $episodestring.' '.$filenameclean;
+                $overlayclass = '';
+            } else {
+                # English fallback.
+                $filename = 'en'.$matches[1];
+                $filepath = $pathartworks.'/'.$filename;
+                $translationstatus = 'notranslation';
+                $translationmessage = '(Content not available in the selected language. Falling back to English.)';
+                $overlay = $plxShow->getLang('TRANSLATION_FALLBACK');
+                $overlay = str_replace('.', '.<br />', $overlay);
+                $overlayclass = 'detail';
+            }
+
+            $row = '
+            <figure class="thumbnail col sml-6 med-3 lrg-3">
+                <a href="#art_url">
+                    <img class="#translationstatus" src="plugins/vignette/plxthumbnailer.php?src=#episode_vignette&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="#art_title" title="#art_title, click to read #translationmessage" >
+                </a><br/>
+                <figcaption class="#translationstatus text-center">
+                    <a href="#art_url" title="#art_title"><span class="#overlayclass">#overlay</span></a>
+                </figcaption>
+                <br/><br/>
+            </figure>';
+
+            $row = str_replace('#art_url', '?'.$baselink.'&display='.$filename, $row);
+            $row = str_replace('#art_title', $episodestring.' '.$filenameclean, $row);
+            $row = str_replace('#episode_vignette', $filepath, $row);
+            $row = str_replace('#translationstatus', $translationstatus, $row);
+            $row = str_replace('#translationmessage', $translationmessage, $row);
+            $row = str_replace('#overlayclass', $overlayclass, $row);
+            $row = str_replace('#overlay', $overlay, $row);
+
+            echo $row;
           }
         }
         echo '</section>';
