@@ -67,7 +67,9 @@ if(isset($_GET['page'])) {
 
     if(isset($_GET['display'])) {
         $imagename = $activeimage;
-        $langimagewithoutlang = substr($imagename, 2); // rm old lang
+        // rm old lang
+        preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E\d+_.*)$/', $imagename, $matches);
+        $langimagewithoutlang = $matches[1];
 
         # Write lang pills for the viewer
         # Challenge: the pills must translate the image displayed.
@@ -97,9 +99,18 @@ if(isset($_GET['page'])) {
         echo '</div>';
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
 
-        $imagename = $activeimage;
-        echo '<a href="'.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+        $imagelink = $pathcommunityfolder.'/'.$activefolder.'/'.$imagename;
+        if (!file_exists($imagelink)) {
+            preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E\d+_.*)$/', $imagename, $matches);
 
+            # episode path + filename for localized version
+            $imagename = 'en'.$matches[1];
+            $imagelink = $pathcommunityfolder.'/'.$activefolder.'/'.$imagename;
+            # print("<div>TODO fallback text for $imagename in $imagelink</div>");
+        }
+        echo '<a href="'.$imagelink.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$imagelink.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+
+        # TODO this always takes us back to the English version!
         echo '<div class="button top">';
           echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
         echo '</div>';
@@ -162,56 +173,48 @@ if(isset($_GET['page'])) {
         if (!empty($search)){
 
           foreach ($search as $fallback_filepath) {
-            # Extract filename without locale
-            preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E\d+.*)$/', basename($fallback_filepath), $matches);
+            # Extract 1. filename without locale and 2. the episode number
+            preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E(\d+)_.*)$/', basename($fallback_filepath), $matches);
 
-            # episode number extraction
+            # episode path + filename for localized version
             $filename = $lang.$matches[1];
             $filepath = $pathartworks.'/'.$filename;
 
-            # We use the localized version for caption and title
-            $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
-            $filenameclean = substr($filenameclean, 11); // remove 11 first characters
-            $filenameclean =  substr($filenameclean, 0, 2); // keeps two numbers
-            $filenameclean = str_replace('_', ' ', $filenameclean);
-            $filenameclean = str_replace('-', ' ', $filenameclean);
+            # "Episode" + number for caption and title
+            $episodetitle = $episodestring.' '.$matches[2];
+            $tooltip = $episodetitle . ', click to read';
+            $caption = $episodetitle;
 
-            # TODO copied over from vignette.php => vignetteArtList. Let's see what we can unify.
+            # TODO adapted from vignette.php => vignetteArtList. Let's see what we can unify.
             if (file_exists($filepath)) {
                 # We have a translated cover.
                 $translationstatus = 'translated';
-                $translationmessage = '';
-                $overlay = $episodestring.' '.$filenameclean;
-                $overlayclass = '';
             } else {
                 # English fallback.
-                $filename = 'en'.$matches[1];
-                $filepath = $pathartworks.'/'.$filename;
+                $filepath = $fallback_filepath;
                 $translationstatus = 'notranslation';
-                $translationmessage = '(Content not available in the selected language. Falling back to English.)';
-                $overlay = $plxShow->getLang('TRANSLATION_FALLBACK');
-                $overlay = str_replace('.', '.<br />', $overlay);
-                $overlayclass = 'detail';
+                $tooltip .= ' '. $plxShow->getLang('TRANSLATION_FALLBACK');
+                # TODO line break at the . to prevent overflow is a lazy hack and won't work for all translations.
+                $caption .= '<br /><span class="detail">' . str_replace('.', '.<br />', $plxShow->getLang('TRANSLATION_FALLBACK')) . '</span>';
             }
 
             $row = '
             <figure class="thumbnail col sml-6 med-3 lrg-3">
-                <a href="#art_url">
-                    <img class="#translationstatus" src="plugins/vignette/plxthumbnailer.php?src=#episode_vignette&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="#art_title" title="#art_title, click to read #translationmessage" >
+                <a href="{art_url}">
+                    <img class="{translationstatus}" src="plugins/vignette/plxthumbnailer.php?src={episode_vignette}&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="{art_title}" title="{art_title}" >
                 </a><br/>
-                <figcaption class="#translationstatus text-center">
-                    <a href="#art_url" title="#art_title"><span class="#overlayclass">#overlay</span></a>
+                <figcaption class="{translationstatus} text-center">
+                    <a href="{art_url}" title="{art_title}">{caption}</a>
                 </figcaption>
                 <br/><br/>
             </figure>';
 
-            $row = str_replace('#art_url', '?'.$baselink.'&display='.$filename, $row);
-            $row = str_replace('#art_title', $episodestring.' '.$filenameclean, $row);
-            $row = str_replace('#episode_vignette', $filepath, $row);
-            $row = str_replace('#translationstatus', $translationstatus, $row);
-            $row = str_replace('#translationmessage', $translationmessage, $row);
-            $row = str_replace('#overlayclass', $overlayclass, $row);
-            $row = str_replace('#overlay', $overlay, $row);
+            # art url always goes to the translated version - we deal with English fallback over there.
+            $row = str_replace('{art_url}', '?'.$baselink.'&display='.$lang.$matches[1], $row);
+            $row = str_replace('{art_title}', $tooltip, $row);
+            $row = str_replace('{episode_vignette}', $filepath, $row);
+            $row = str_replace('{translationstatus}', $translationstatus, $row);
+            $row = str_replace('{caption}', $caption, $row);
 
             echo $row;
           }
