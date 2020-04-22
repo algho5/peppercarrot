@@ -6,7 +6,7 @@
  * @date	09/02/2015
  * @author	Rockyhorror, Deevad
  **/
- 
+
 class vignette extends plxPlugin {
 
 	/**
@@ -18,7 +18,7 @@ class vignette extends plxPlugin {
 	 **/
 
 	public function __construct($default_lang) {
-    
+
   # Appel du constructeur de la classe plxPlugin (obligatoire)
   parent::__construct($default_lang);
 
@@ -34,7 +34,7 @@ class vignette extends plxPlugin {
   # Autorisation d'acces à la configuration du plugins
   $this-> setConfigProfil(PROFIL_ADMIN, PROFIL_MANAGER);
 	}
-	
+
 	/**
 	 * Méthode qui affiche la vignette en mode manuel
 	 *
@@ -44,10 +44,10 @@ class vignette extends plxPlugin {
 
 	public function showVignette($params) {
 		$plxMotor = plxMotor::getInstance();
-		
+
 		$vignette = $plxMotor->plxRecord_arts->f('thumbnail');
 		if(empty($vignette)) { return; }
-		
+
 		if(isset($params)) {
 			if(is_array($params)) {
 				$pathOnly = !empty($params[0])?$params[0]:false;
@@ -60,12 +60,12 @@ class vignette extends plxPlugin {
 		else {
 			$pathOnly = false;
 		}
-		
+
     # used to be full path... Why?Let see without.
 		#$root_dir = empty($plxMotor->aConf['racine'])?$plxMotor->aConf['racine']:$plxMotor->aConf['racine'];
 		#$img = $root_dir.$vignette;
 		$img = $vignette;
-    
+
 		if($pathOnly) {
 			echo $img;
 		}
@@ -74,9 +74,9 @@ class vignette extends plxPlugin {
 			$row = str_replace('#url',$img,$format);
 			echo $row;
 		}
-		
+
 	}
-  
+
 	/**
 	 * Method that display a thumbnail linked to high-res with title, link to the zip and license.
 	 *
@@ -86,26 +86,26 @@ class vignette extends plxPlugin {
 
 	public function showVignettePlus() {
 		$plxMotor = plxMotor::getInstance();
-		
+
     # Get the low-res path from the XML's "thumbnail", user fill it.
 		$inputpath = $plxMotor->plxRecord_arts->f('thumbnail');
     $root_dir = empty($plxMotor->aConf['racine'])?$plxMotor->aConf['racine']:$plxMotor->aConf['racine'];
     # check if the field is filled.
-		if(empty($inputpath)) { 
-      return; 
+		if(empty($inputpath)) {
+      return;
     }
-		
+
     # Search/replace masks
     $lowrespattern = array("/low-res/", ".jpg");
     $hirespattern = array("/hi-res/", ".jpg");
     $zippattern = array("/zip/", ".zip");
-    
+
     # Build collections of links and data
     $lowreslink = $inputpath;
     $hireslink = str_replace($lowrespattern, $hirespattern, $inputpath);
     // Get hires size infos
     list($width, $height) = getimagesize($hireslink);
-    $lastmodification=date ("d-M-Y", filemtime($lowreslink));	
+    $lastmodification=date ("d-M-Y", filemtime($lowreslink));
     $sourceslink = str_replace($lowrespattern, $zippattern, $inputpath);
     $sourcesweight = (filesize($sourceslink) / 1024) / 1024;
     $title = $plxMotor->plxRecord_arts->f('title');
@@ -123,13 +123,13 @@ class vignette extends plxPlugin {
     echo ' | ';
     echo 'License: <a href="'.$root_dir.'/en/static14/documentation&page=950_License_attribution_good_practise">CC-By</a>';
     echo '</span>';
-    echo '<br/><br/>';    
+    echo '<br/><br/>';
   }
-	
+
 	public function vignetteArtList($params) {
     $plxMotor = plxMotor::getInstance();
 		$plxShow = plxShow::getInstance();
-		
+
 		if(isset($params)) {
 			if(is_array($params)) {
 				$format = empty($params[0])?'<li><a href="#art_url" title="#art_title"><img src="#art_vignette" />#art_title</a></li>':$params[0];
@@ -149,7 +149,7 @@ class vignette extends plxPlugin {
 			$ending='';
 			$sort='rsort';
 		}
-	
+
 		# Génération de notre motif
 		if(empty($cat_id))
 			$motif = '/^[0-9]{4}.(?:[0-9]|home|,)*(?:'.$plxShow->plxMotor->activeCats.'|home)(?:[0-9]|home|,)*.[0-9]{3}.[0-9]{12}.[a-z0-9-]+.xml$/';
@@ -161,18 +161,18 @@ class vignette extends plxPlugin {
 		if($aFiles = $plxGlob_arts->query($motif,'art',$sort,0,$max,'before')) {
 			foreach($aFiles as $v) { # On parcourt tous les fichiers
 				$art = $plxShow->plxMotor->parseArticle(PLX_ROOT.$plxShow->plxMotor->aConf['racine_articles'].$v);
-				
+
 				# recupere la vignette
 				$vignette = plxUtils::strCheck($art['thumbnail']);
 				$vignette_path = empty($vignette)?'':$vignette;
-                
+
                 #special vignette for episode lang
                 $vignette_parts = pathinfo($vignette_path);
                     # break down vignette path to get most information :
                     $filename = $vignette_parts['filename'];
                     $filename = substr($filename, 3);
                     $episodedir = $vignette_parts['dirname'].'/';
-                    
+
                     # Guess active lang: try many scenario
                     $lang = '';
                     $get = plxUtils::getGets();
@@ -185,7 +185,7 @@ class vignette extends plxPlugin {
                     } else {
                       $lang = "en";
                     }
-                    
+
                     # Check for an existing cover in the minimal required lang; english.
                     $episode_check = $episodedir.'en_'.$filename.'.'.$vignette_parts['extension'];
                     if (file_exists($episode_check)) {
@@ -201,11 +201,11 @@ class vignette extends plxPlugin {
                       } else {
                         $episode_vignette = $episodedir.'en_'.$filename.'.'.$vignette_parts['extension'];
                         $translationstatus = 'notranslation';
-                        $translationmessage = '(Content not available in the selected language. Falling back to English.)';
-                        $overlay = $plxShow->getLang('TRANSLATION_FALLBACK');
+                        $translationmessage = $plxShow->getLang('TRANSLATION_FALLBACK');
+                        $overlay = wordwrap($plxShow->getLang('TRANSLATION_FALLBACK'), 45, "<br />\n", true);
                       }
                     }
-				
+
 				$num = intval($art['numero']);
 				$date = $art['date'];
 				if(($plxShow->plxMotor->mode == 'article') AND ($art['numero'] == $plxShow->plxMotor->cible)) {
@@ -269,9 +269,9 @@ class vignette extends plxPlugin {
 				echo $row;
 			}
 		}
-	
+
 	}
-    
+
 public function artPrevNext($params) {
 $plxShow = plxShow::getInstance();
 
@@ -316,15 +316,15 @@ $plxShow = plxShow::getInstance();
     }
   }
 
-  if($ordre=='rsort') { 
-    $dummy=$prevUrl; $prevUrl=$nextUrl; $nextUrl=$dummy; 
+  if($ordre=='rsort') {
+    $dummy=$prevUrl; $prevUrl=$nextUrl; $nextUrl=$dummy;
   }
 
   $theme = $plxShow->plxMotor->aConf['racine_themes'].$plxShow->plxMotor->style.'/';
   $racine= $plxShow->plxMotor->racine;
   $IDcategory = str_pad ($plxShow->catId(), 3, '0', STR_PAD_LEFT);
-  
-  if ( $IDcategory == "home" ) { 
+
+  if ( $IDcategory == "home" ) {
     $IDcategory = "002" ;
   }
   $IDlinkcategory = ltrim($IDcategory, '0');
@@ -362,14 +362,14 @@ $plxShow = plxShow::getInstance();
     echo '    </a>';
     echo '  </div>';
     echo '</div>';
-  } 
-  
+  }
+
 }
-    
+
     public function artLicense() {
         $plxShow = plxShow::getInstance();
         $taglist = $plxShow->plxMotor->plxRecord_arts->f('tags');
-        
+
 		if(!empty($taglist)) {
 			$tags = array_map('trim', explode(',', $taglist));
 			foreach($tags as $idx => $tag) {
@@ -378,30 +378,30 @@ $plxShow = plxShow::getInstance();
                 $theme = $plxShow->plxMotor->aConf['racine_themes'].$plxShow->plxMotor->style.'/';
                 $racine= $plxShow->plxMotor->racine;
                 // echo 'debug:'.$tagfull.'';
-                
-                
+
+
                 if (strpos($tagfull,'cc-0,') !== false) {
                 echo '<a href="http://creativecommons.org/licenses/by/4.0/">License (page+artworks) <span class="cc">CC-BY</span></a><br/> ';
                 echo '<a href="https://creativecommons.org/publicdomain/zero/1.0/">License (download) <span class="cc">CC-ZERO</span></a><br/> ';
-               
+
                 } elseif (strpos($tagfull,'cc-by,') !== false) {
                 echo '<a href="http://creativecommons.org/licenses/by/4.0/">License <span class="cc">CC-BY</span> </a><br/>';
-                
+
                 } elseif (strpos($tagfull,'cc-by-sa,') !== false) {
                 echo '<a href="http://creativecommons.org/licenses/by-sa/4.0/">License <span class="cc">CC-BY-SA</span> </a><br/> ';
-                
+
                 } elseif (strpos($tagfull,'cc-by-nd-nc,') !== false) {
                 echo '<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">License <span class="cc">CC-BY-NC-ND</span> </a><br/> ';
-                
+
                 } elseif (strpos($tagfull,'copyrighted,') !== false) {
                 echo '<a href="#">License infos: © <span class="cc">COPYRIGHTED</span> </a><br/>';
-                
-                } elseif (strpos($tagfull,'shop,') !== false) { 
+
+                } elseif (strpos($tagfull,'shop,') !== false) {
                 echo '<a class="button green" href="http://deevad.deviantart.com/prints/"><img class="svg" src="themes/peppercarrot-theme_v2/ico/ink.svg" alt=" "/>&nbsp;&nbsp;Prints available on deviantArt</a><br/><br/> ';
-                
+
                 } elseif (strpos($tagfull,'patreon,') !== false) {
                 echo '<a class="button red" href="https://www.patreon.com/davidrevoy"><img class="svg" src="themes/peppercarrot-theme_v2/ico/patreon.svg" alt=" "/>&nbsp;&nbsp;Be my patron on https://www.patreon.com/davidrevoy</a><br/><br/> ';
-                
+
                 } elseif (strpos($tagfull,'undefined,') !== false) {
                 echo '<img alt="Undefined License" style="border-width:0" src="'.$racine.''.$theme.'img/license-undefinitized.png" title="This work has no defined license yet, but the author allowed me to republish it here. The license decision belong to the original author. Contact him or her for usage informations before reusing it. Thank you! -David"/><br/><br/>';
                 } else {
@@ -409,7 +409,7 @@ $plxShow = plxShow::getInstance();
 			}
 		}
 	}
-    
+
     public function artCatUnactive($params) {
         $plxShow = plxShow::getInstance();
         if(isset($params)) {
@@ -420,9 +420,9 @@ $plxShow = plxShow::getInstance();
                 $separator = ',';
 		}
 		$catIds = $plxShow->artActiveCatIds();
-        
-		foreach ($catIds as $idx => $catId) { 
-            
+
+		foreach ($catIds as $idx => $catId) {
+
 			if($catId != 'home') {
 				# On va verifier que la categorie existe
 				if(isset($plxShow->plxMotor->aCats[ $catId ])) {
@@ -442,9 +442,9 @@ $plxShow = plxShow::getInstance();
 			}
 			if ($idx!=sizeof($catIds)-1) echo $separator.' ';
 		}
-        
+
 	}
-    
+
     public function commentLinkAuthor($params) {
         $plxShow = plxShow::getInstance();
         if(isset($params)) {
@@ -464,6 +464,6 @@ $plxShow = plxShow::getInstance();
 		else # Type normal
 			echo ' ';
 	}
-    
+
 }
 ?>

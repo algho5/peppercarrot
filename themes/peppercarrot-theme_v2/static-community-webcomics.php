@@ -76,9 +76,7 @@ if(isset($_GET['page'])) {
         // rm old lang
         $langimagewithoutlang = $matches[2];
 
-        # Write lang pills for the viewer
-        # Challenge: the pills must translate the image displayed.
-
+        # Language menu
         echo '<div class="grid">';
           echo '<div class="col sml-12 sml-text-right">';
             echo '<nav class="nav" role="navigation">';
@@ -131,7 +129,7 @@ if(isset($_GET['page'])) {
 # (a "page" variable passed)
 # (no "display" variable passed)
 
-        # lang pills
+        # Language menu
         echo '<div class="grid">';
           echo '<div class="col sml-12 sml-text-right">';
             echo '<nav class="nav" role="navigation">';
@@ -189,7 +187,7 @@ if(isset($_GET['page'])) {
             # "Episode" + number for caption and title
             $episodetitle = $episodestring.' '.$matches[2];
             $tooltip = $episodetitle . ', click to read';
-            $caption = $episodetitle;
+            $caption = wordwrap($episodetitle, 25, "<br />\n", true);
 
             # TODO adapted from vignette.php => vignetteArtList. Let's see what we can unify.
             if (file_exists($filepath)) {
@@ -200,8 +198,7 @@ if(isset($_GET['page'])) {
                 $filepath = $fallback_filepath;
                 $translationstatus = 'notranslation';
                 $tooltip .= ' '. $plxShow->getLang('TRANSLATION_FALLBACK');
-                # TODO line break at the . to prevent overflow is a lazy hack and won't work for all translations.
-                $caption .= '<br /><span class="detail">' . str_replace('.', '.<br />', $plxShow->getLang('TRANSLATION_FALLBACK')) . '</span>';
+                $caption .= '<br /><span class="detail">' . wordwrap($plxShow->getLang('TRANSLATION_FALLBACK'), 25, "<br />\n", true). '</span>';
             }
 
             $row = '
