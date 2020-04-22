@@ -98,18 +98,23 @@ if(isset($_GET['page'])) {
         echo '</div>';
         echo '<div style="clear:both;"></div> ';
 
+        # Episode path + filename for localized version
+        $imagelink = $pathcommunityfolder.'/'.$activefolder.'/'.$activeimage;
+        if (!file_exists($imagelink)) {
+            # Fall back to English
+            $imagelink = $pathcommunityfolder.'/'.$activefolder.'/en'.$langimagewithoutlang;
+              echo '<br/>';
+              echo '<div class="notice col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center">';
+              echo '  <img src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt="info:"/> English version <br/>(this episode is not yet available in your selected language.)';
+              echo '</div>';
+        }
+
         # Write the viewer:
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
         echo '<br/><br/>';
         echo '</div>';
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
 
-        $imagelink = $pathcommunityfolder.'/'.$activefolder.'/'.$activeimage;
-        if (!file_exists($imagelink)) {
-            # episode path + filename for localized version
-            $imagelink = $pathcommunityfolder.'/'.$activefolder.'/en'.$langimagewithoutlang;
-            # print("<div>TODO fallback text for $imagename in $imagelink</div>");
-        }
         echo '<a href="'.$imagelink.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$imagelink.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
 
         echo '<div class="button top">';
