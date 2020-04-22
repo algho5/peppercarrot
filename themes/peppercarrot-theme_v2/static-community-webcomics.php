@@ -65,11 +65,16 @@ if(isset($_GET['page'])) {
 # (a "page" variable passed)
 # (a "display" variable passed)
 
-    if(isset($_GET['display'])) {
-        $imagename = $activeimage;
+    if (isset($_GET['display'])) {
+        # Split language from rest of image name
+        preg_match('/^([a-z]{2})(_[A-Za-z-_]+_E\d+_.*)$/', $activeimage, $matches);
+
+        # We get the wrong language from MyMultiLingueGetLang here, so setting it from this image
+        $lang = $matches[1];
+        $plxShow->callHook('MyMultiLingueSetLang', $lang);
+
         // rm old lang
-        preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E\d+_.*)$/', $imagename, $matches);
-        $langimagewithoutlang = $matches[1];
+        $langimagewithoutlang = $matches[2];
 
         # Write lang pills for the viewer
         # Challenge: the pills must translate the image displayed.
@@ -79,7 +84,7 @@ if(isset($_GET['page'])) {
             echo '<nav class="nav" role="navigation">';
               echo '<div class="responsive-langmenu">';
                 echo '<div class="button top">';
-                  echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
+                  echo '<a href="'.$lang.'/'.$baselink.'/" class="lang option">← Back to index</a>';
                 echo '</div>';
                 eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
                         'pageurl' => '{LANG}/'.$baselink.'&display={LANG}'.$langimagewithoutlang,
@@ -99,20 +104,16 @@ if(isset($_GET['page'])) {
         echo '</div>';
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
 
-        $imagelink = $pathcommunityfolder.'/'.$activefolder.'/'.$imagename;
+        $imagelink = $pathcommunityfolder.'/'.$activefolder.'/'.$activeimage;
         if (!file_exists($imagelink)) {
-            preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E\d+_.*)$/', $imagename, $matches);
-
             # episode path + filename for localized version
-            $imagename = 'en'.$matches[1];
-            $imagelink = $pathcommunityfolder.'/'.$activefolder.'/'.$imagename;
+            $imagelink = $pathcommunityfolder.'/'.$activefolder.'/en'.$langimagewithoutlang;
             # print("<div>TODO fallback text for $imagename in $imagelink</div>");
         }
         echo '<a href="'.$imagelink.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$imagelink.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
 
-        # TODO this always takes us back to the English version!
         echo '<div class="button top">';
-          echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
+          echo '<a href="'.$lang.'/'.$baselink.'/" class="lang option">← Back to index</a>';
         echo '</div>';
 
         echo '</section>';
