@@ -170,6 +170,10 @@ if(isset($_GET['page'])) {
         # Display episodes
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
 
+        $thumbnailwidth = 370;
+        $thumnailheight = 370;
+        $wordwrapchars = 40;
+
         # Display thumbnails with links, using English as reference locale
         $search = glob($pathartworks.'/en_*.jpg');
         rsort($search);
@@ -187,7 +191,7 @@ if(isset($_GET['page'])) {
             # "Episode" + number for caption and title
             $episodetitle = $episodestring.' '.$matches[2];
             $tooltip = $episodetitle . ', click to read';
-            $caption = wordwrap($episodetitle, 25, "<br />\n", true);
+            $caption = wordwrap($episodetitle, $wordwrapchars, "<br />\n", true);
 
             # TODO adapted from vignette.php => vignetteArtList. Let's see what we can unify.
             if (file_exists($filepath)) {
@@ -198,19 +202,18 @@ if(isset($_GET['page'])) {
                 $filepath = $fallback_filepath;
                 $translationstatus = 'notranslation';
                 $tooltip .= ' '. $plxShow->getLang('TRANSLATION_FALLBACK');
-                $caption .= '<br /><span class="detail">' . wordwrap($plxShow->getLang('TRANSLATION_FALLBACK'), 25, "<br />\n", true). '</span>';
+                $caption .= '<br /><span class="detail">' . wordwrap($plxShow->getLang('TRANSLATION_FALLBACK'), $wordwrapchars, "<br />\n", true). '</span>';
             }
 
             $row = '
-            <figure class="thumbnail col sml-6 med-3 lrg-3">
-                <a href="{art_url}">
-                    <img class="{translationstatus}" src="plugins/vignette/plxthumbnailer.php?src={episode_vignette}&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="{art_title}" title="{art_title}" >
-                </a><br/>
-                <figcaption class="{translationstatus} text-center">
-                    <a href="{art_url}" title="{art_title}">{caption}</a>
-                </figcaption>
+            <a href="{art_url}" title="{art_title}"">
+                <figure class="thumbnail {translationstatus} col sml-12 med-6 lrg-4" style="padding:0 1rem 0 0;">
+                    <img class="{translationstatus}" src="plugins/vignette/plxthumbnailer.php?src={episode_vignette}&amp;w={width}&amp;h={height}&amp;s=1&amp;q=92" alt="{art_title}" title="{art_title}" />
+                    <br/>
+                    <figcaption class="text-center">{caption}</figcaption>
+                </figure>
                 <br/><br/>
-            </figure>';
+            </a>';
 
             # art url always goes to the translated version - we deal with English fallback over there.
             $row = str_replace('{art_url}', '?'.$baselink.'&display='.$lang.$matches[1], $row);
@@ -218,7 +221,8 @@ if(isset($_GET['page'])) {
             $row = str_replace('{episode_vignette}', $filepath, $row);
             $row = str_replace('{translationstatus}', $translationstatus, $row);
             $row = str_replace('{caption}', $caption, $row);
-
+            $row = str_replace('{width}', $thumbnailwidth, $row);
+            $row = str_replace('{height}', $thumnailheight, $row);
             echo $row;
           }
         }
