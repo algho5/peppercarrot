@@ -87,7 +87,6 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
                   <?php if($idStat=="002"){ $status = "active"; } else { $status = "no-active"; }?><li class="<?php echo $status; ?>" >
                     <a href="<?php $plxShow->urlRewrite('?static2/philosophy') ?>"><?php $plxShow->lang('PHILOSOPHY') ?></a>
                   </li>
-                  </li>
                   <?php if($idStat=="008"){ $status = "active"; } else { $status = "no-active"; }?><li class="<?php echo $status; ?>" >
                     <a href="<?php $plxShow->urlRewrite('?static8/wiki') ?>"><?php $plxShow->lang('WIKI') ?></a>
                   </li>

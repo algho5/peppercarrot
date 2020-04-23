@@ -129,6 +129,7 @@ if(isset($_GET['page'])) {
 # (a "page" variable passed)
 # (no "display" variable passed)
 
+
         # Language menu
         echo '<div class="grid">';
           echo '<div class="col sml-12 sml-text-right">';
@@ -148,6 +149,7 @@ if(isset($_GET['page'])) {
         echo '<div style="clear:both;"></div> ';
 
         # Display the title of the project and markdown:
+
         $foldernameclean = str_replace('_', ' ', $activefolder);
         $foldernameclean = str_replace('-', ' ', $foldernameclean);
         $foldernameclean = str_replace('by', '</h2><span class="font-size: 0.5rem;">'.$ccbystring.'', $foldernameclean);
@@ -206,13 +208,13 @@ if(isset($_GET['page'])) {
             }
 
             $row = '
-            <a href="{art_url}" title="{art_title}"">
+            <a href="{art_url}" title="{art_title}">
                 <figure class="thumbnail {translationstatus} col sml-12 med-6 lrg-4" style="padding:0 1rem 0 0;">
                     <img class="{translationstatus}" src="plugins/vignette/plxthumbnailer.php?src={episode_vignette}&amp;w={width}&amp;h={height}&amp;s=1&amp;q=92" alt="{art_title}" title="{art_title}" />
                     <br/>
                     <figcaption class="text-center">{caption}</figcaption>
+                    <br/><br/>
                 </figure>
-                <br/><br/>
             </a>';
 
             # art url always goes to the translated version - we deal with English fallback over there.
@@ -227,7 +229,6 @@ if(isset($_GET['page'])) {
           }
         }
         echo '</section>';
-        echo '</div>';
     }
 
 } else {
