@@ -155,7 +155,7 @@ if(isset($_GET['page'])) {
 
         # Display episodes
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
-        $search = glob($pathartworks.'/'.$lang.'*.jpg');
+        $search = glob($pathartworks.'/'.$lang.'*P01*.jpg');
         rsort($search);
         # we loop on found episodes
         if (!empty($search)){
