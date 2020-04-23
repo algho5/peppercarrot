@@ -342,6 +342,7 @@ class plxMyMultiLingue extends plxPlugin {
     # Specific rules for Pepper&Carrot :
     $this->addHook('MyMultiLingueGetLang', 'MyMultiLingueGetLang');
     $this->addHook('MyMultiLingueSetLang', 'MyMultiLingueSetLang');
+
     $this->addHook('MyMultiLingueEpisodeData', 'MyMultiLingueEpisodeData');
     $this->addHook('MyMultiLingueLanguageMenu', 'MyMultiLingueLanguageMenu');
     $this->addHook('MyMultiLingueComicToggleButtons', 'MyMultiLingueComicToggleButtons');
@@ -1338,7 +1339,7 @@ public function MyMultiLingueCommentLinkDisplay($params) {
   $get = json_decode($contents);
 
   # retrieve epXX
-  $episodeid = 'ep' . (int) $this->episodeData()['number'];
+  $episodeid = 'ep' . $this->episodeData()['number'];
 
   # Display depending what variable user pass:
   if($type == 'url') {

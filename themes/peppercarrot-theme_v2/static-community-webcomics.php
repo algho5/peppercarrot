@@ -149,7 +149,6 @@ if(isset($_GET['page'])) {
         echo '<div style="clear:both;"></div> ';
 
         # Display the title of the project and markdown:
-
         $foldernameclean = str_replace('_', ' ', $activefolder);
         $foldernameclean = str_replace('-', ' ', $foldernameclean);
         $foldernameclean = str_replace('by', '</h2><span class="font-size: 0.5rem;">'.$ccbystring.'', $foldernameclean);
@@ -181,7 +180,6 @@ if(isset($_GET['page'])) {
         rsort($search);
         # we loop on found episodes
         if (!empty($search)){
-
           foreach ($search as $fallback_filepath) {
             # Extract 1. filename without locale and 2. the episode number
             preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E(\d+)_.*)$/', basename($fallback_filepath), $matches);
