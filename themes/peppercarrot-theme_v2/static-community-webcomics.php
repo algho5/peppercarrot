@@ -49,7 +49,7 @@ if(isset($_GET['page'])) {
               'website' => false));
 
     # We check if content exist for user with active lang selected
-    # When no lang available, display a message:
+    # When no lang available, display a message and force English version:
     if (!array_key_exists($lang, $availablelanguages)) {
       echo '<div class="grid">';
       echo '<br/><div class="col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center alert blue">';
@@ -57,7 +57,8 @@ if(isset($_GET['page'])) {
       echo $plxShow->Getlang(LIMITATIONS);
       echo '</div>';
       echo '</div>';
-
+      # Display English version.
+      $lang = "en";
     }
 
 # Image viewer mode : display the artwork
