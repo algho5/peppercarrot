@@ -83,182 +83,182 @@ $LANG = array(
 ################################################################################
 # Page: Philosophy
 'PHILOSOPHY_TOP'    => '
- <h2>Supported by patrons</h2>
+ <h2>Skoodhys gans tasogyon</h2>
 
-    <p>Pepper&amp;Carrot project is only funded by its patrons, from all around the world.
-    Each patron sends a little money for each new episode published and gets a credit at the end of the new episode.
-    Thanks to this system, Pepper&amp;Carrot can stay independent and never have to resort to advertising or any marketing pollution.</p>
+    Arghesys yw ragdres <p>Pepper&amp;Carrot gans oll y dasogyon hepken, dhyworth oll a-dro dhe\'n bys.
+    Pub tasek a wra danvon temmik a vona rag pub rann nowydh dyllys ha kavos aswonans war-woles an rann nowydh.
+    Der an system ma, Pepper&amp;Carrot a yll durya anserghek heb resortya dhe argemynnans po an defolyans a varghasans.</p>
 ',
 'DONATE_INTRO'    => '
     <p>
-    It&#39;s easy to become the patron of Pepper&amp;Carrot for only $1 per new episode <a href="https://www.patreon.com/join/davidrevoy?">on Patreon</a>.
-    Patreon accepts credit cards from all around the world and also PayPal.
+    Es yw dhe dhos ha bos tasek Pepper&amp;Carrot rag marnas $1 orth an rann nowydh <a href="https://www.patreon.com/join/davidrevoy?">war Patreon</a>.
+    Patreon a wra degemeres kartennow kresys dhyworth oll a-dro dhe\'n bys ha PayPal ynwedh.
     </p>
 ',
 'PHILOSOPHY_BOTTOM' => '
-    <img alt="illustration representing patronage" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
+    <img alt="imach ow telinya tasegans" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
-    <h2>100% free(libre), forever, no paywall</h2>
+    <h2>100% rydh(libre), bys vykken, paywall vyth</h2>
 
-    <p>All the content I produce about Pepper&amp;Carrot is on this website, free(libre) and available to everyone.
-    I respect all of you equally: with or without money. All special bonuses I make for my patrons are also posted here.
-    Pepper&amp;Carrot will never ask you to pay anything or to get a subscription to get access to new content.</p>
+    <p>Yma oll an synsasow a wrav vy ow tochya Pepper&amp;Carrot war an wiasva ma, rydh(libre) ha kavadow dhe bubonan.
+    My a wra revrons dhywgh oll yn kehaval: gans mona po hebdho. Pub bonus arbennek a wrav rag ow thasogyon a vydh postys omma ynwedh.
+    Ny wra Pepper&amp;Carrot govyn orthowgh dhe dyli travyth po prena rabren rag kavos hedhas dhe synsasow nowydh.</p>
 
-        <img alt="Illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
+        <img alt="imach ow telinya paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
-    <h2>Open-source and permissive</h2>
+    <h2>Fenten ygor ha kumyasek</h2>
 
-    <p>I want to give people the right to share, use, build and even make money upon the work I&#39;ve created.
-    All pages, artworks and content were made with Free(Libre) Open-Sources Software on GNU/Linux, and all sources are on this website, &#39;Source&#39; menu.
-    Commercial usage, translations, fan-art, prints, movies, video-games, sharing, and reposts are encouraged.
-    You just need to give appropriate credit to the authors (artists, correctors, translators involved in the artwork you want to use), provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the authors endorse you or your use.</p>
+    <p>My a vynn ri kummyas may hyllir kevranna, usya, ystynna ha dendil arghans dhyworth an ober a wrug vy.
+    Pub folen, artweyth ha synsas a veu gwrys gans medhelweyth Rydh(Libre) ha fenten ygor war GNU/Linux, hag yma pub fenten war an wiasva ma, rol &#39;Fentynnyow&#39;.
+    Usyans kenwerthel, treylyansow, art skoodhyer, pryntys, gwydhyowyow, gwariow gwydhyow, kevrennans, ha daspostyansow yw kenerthys.
+    Y tegoth dhis saw ri aswonans dhe\'n awtours (artydhyon, ewnheoryon, treylyoryon omvyskys y\'n artweyth a garses y usya), provia kevren dhe\'n leshyans, ha disklerya mar pons chanjys ynna. Y hyllir gul hemma yn neb fordh resnadow, mes heb profya yn neb fordh vyth an awtours dhe geynskrifa po ty po dha usyans.</p>
 
     <div class="button">
-        <a href="https://creativecommons.org/licenses/by/4.0/" title="For more information, read the Creative Commons Attribution 4.0">
-            License: Creative Commons Attribution 4.0
+        <a href="https://creativecommons.org/licenses/by/4.0/" title="Rag pella derivadow, redya an Creative Commons Attribution 4.0">
+            Leshyans: Creative Commons Attribution 4.0
         </a>
     </div>
 
-        <img alt="Illustration representing open-source media" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
+        <img alt="imach ow telinya media fenten ygor" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
-    <h2>Quality entertainment for everyone, everywhere</h2>
+    <h2>Didhan kwalita rag pubonan, yn pub le</h2>
 
-    <p>Pepper&amp;Carrot is a comedy/humor webcomic suited for everyone, every age.
-    No mature content, no violence. Free(libre) and open-source, Pepper&amp;Carrot is a proud example of how cool free-culture can be.
-    I focus a lot on quality, because free(libre) and open-source doesn&#39;t mean bad or amateur. Quite the contrary.</p>
+    <p>Pepper&amp;Carrot yw roskomik didhanus gwiw rag pubonan, a bub oos.
+    Synsas adhves vyth, freudh vyth. Rydh(libre) ha fenten ygor, Pepper&amp;Carrot yw ensampel gothus a wonisogeth rydh pur dha.
+    My a wra fogella yn feur war gwalita, drefen na styr rydh(libre) ha fenten ygor po drog po bodhesik. Ass yw kontrari.</p>
 
-        <img alt="Illustration representing comic pages flying around the world" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
+        <img alt="imach ow telinya folennow komik ow neyja a-dro dhe\'n bys" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
-    <h2>Let&#39;s change comic industry!</h2>
+    <h2>Chanjyn an diwysyans komik!</h2>
 
     <p>
-      Without intermediary between artist and audience you pay less and I benefit more. You support me directly.
-      No publisher, distributor, marketing team or fashion police can force me to change Pepper&amp;Carrot to fit their vision of &#39;the market&#39;.
-      Why couldn&#39;t a single success &#39;snowball&#39; to a whole industry in crisis? We&#39;ll see…
+      Heb maynor ynter artydh ha redyoryon ty dhe dyli le ha my dhe dhendil moy. Ty a\'m skoodh yn tidro.
+      Na dyllor, na lesrennyas, na mayni argemmyn po kreslu gis vyth a yll ow honstrina dhe janjya Pepper&amp;Carrot may fo ogassa dh\'aga gwel a &#39;an varghas&#39;.
+      Prag na alsa unn sewenyans unnik ystyn dhe dhiwysyans dien yn barras? Ni a wel…
     </p>
 
     <div class="button">
-      <a href="?static12/donate" title="For only $1 per new episode, become a patreon of Pepper&amp;Carrot">
-        Help me boost Pepper&amp;Carrot production today.
+      <a href="?static12/donate" title="Rag marnas $1 orth an rann nowydh, dos ha bos tasek Pepper&amp;Carrot">
+        Gweres vy dhe genertha askorrans Pepper&amp;Carrot hedhyw.
       </a>
     </div>
 
-    <img alt="Illustration: comic book industry vs. Patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
+    <img alt="Imach: diwysyans lyver komik erbynn skoodhyans Patreon" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
  ',
 
 ################################################################################
 # Page: Contribute
-'CONTRIBUTE_TITLE'       => 'Contribute',
+'CONTRIBUTE_TITLE'       => 'Kevri',
 'CONTRIBUTE_TOP'         => '
-    <p>Thanks to the <a href="?static6/sources" title="Sources page">open sources</a> and the <a href="http://creativecommons.org/licenses/by/4.0/">
-    creative commons license</a> you can contribute to Pepper&amp;Carrot in many ways:</p>
+    <p>Awos an <a href="?static6/sources" title="Folen fentynnyow">fentynnyow ygor</a> ha\'n <a href="http://creativecommons.org/licenses/by/4.0/">
+    leshyans \'creative commons\'</a> y hyllir kevri dhe Pepper&amp;Carrot yn lies fordh:</p>
 ',
 
 'CONTRIBUTE_FANART'      => '
-    <h2>Fan-art</h2>
+    <h2>Artweyth Skoodhyer</h2>
 
-    <p>Pepper&amp;Carrot is open to fan-art: drawings, scenarios, sculptures, 3D models, fan-fiction. Send them to me (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, or poke me on social networks) to appear in the fan-art gallery:</p>
+    <p>Pepper&amp;Carrot yw ygor dhe artweyth skoodhyer: delinyansow, hwedhlow, gravyansow, patronyow 3D, fugieth skoodhyer. Gwrewgh aga danvon dhymm (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a>, po ow fokya war vedia socyal) dhe dhiskwedha y\'n mirva art skoodhyer:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
-    <h2>Derivatives</h2>
+    <h2>Devedhyansow</h2>
 
-    <p>Pepper&amp;Carrot can be adapted to many project or products, why not do your own or join an existing one?</p>
+    <p>Pepper&amp;Carrot a yll bos aswiwys rag meur a ragdresow hag askorrasow, prag na wrewgh gul onan nowydh po junya onen a-lemmyn?</p>
 ',
 
 'CONTRIBUTE_TRANSLATION' => '
-    <h2>Translations and corrections</h2>
+    <h2>Treylyansow hag ewnheansow</h2>
 
-    <p>Pepper&amp;Carrot website is designed to be multilingual and accept any language (including extinct ones, or fictive ones). The sources of this page are at your disposal for you to translate them. Check the <a href="?static14/documentation&page=010_Translate_the_comic">reference tutorial</a> for more information on how to add your translation.</p>
+    Desinys yw gwiasva <p>Pepper&amp;Carrot dhe vos liesyethek ha degemeres neb yeth (y\'ga mysk re marow, po re fug). Fentynnyow an folennow yw kavadow may hyllir aga threylya. Mires orth an <a href="?static14/documentation&page=010_Translate_the_comic">dyskans kampollansek</a> rag pella derivadow a\'n fordh dhe geworra agas treylyans.</p>
 ',
 
-'CONTRIBUTE_SOCIAL'      => 'Social networks',
+'CONTRIBUTE_SOCIAL'      => 'Rosweythyow socyal',
 
 'CONTRIBUTE_PRESS'       => '
-    <h2>Press</h2>
+    <h2>Gwask</h2>
 
-    <p>Be the publisher of Pepper&amp;Carrot! Write articles, create posts on websites, share and build a community on your favorite social networks. You can download the <a href="?static6/sources" title="Sources page">press kit</a> on the "sources" page.</p>
+    <p>Bydh dyllor Pepper&amp;Carrot! Skrifa erthyglow, gul postys war wiasvaow, kevrenna ha drehevel kemeneth war an gwella rosweythyow socyal dhis. Y hyllir iskarga an <a href="?static6/sources" title="Folen fentynnyow">daffar gwask</a> war an folen "fentynnyow".</p>
 ',
 
 'CONTRIBUTE_OTHER'       => '
-    <h2>Other ideas to contribute…</h2>
+    <h2>Tybyansow erel dhe gevri…</h2>
 
-    <p>Everyone can contribute in different ways:<br/>
-        <b>Developers:</b> Create an application to read Pepper&amp;Carrot on mobile device.<br/>
-        <b>Musician:</b> Create music themes for Pepper&amp;Carrot.<br/>
-        <b>Writer:</b> Propose new Pepper&amp;Carrot scenarios.<br/>
-        <b>Journalist:</b> Talk about Pepper&amp;Carrot in traditional media (printed press, tv, etc.)<br/>
-        <b>Printer:</b> Print posters or goodies with Pepper&amp;Carrot on it.<br/>
+    <p>Pubonan a yll kevri yn fordhow dyffrans:<br/>
+        <b>Towlennor:</b> Gul app dhe redya Pepper&amp;Carrot war glappkodhow ha leghennow.<br/>
+        <b>Ilewydh:</b> Gul ilow rag Pepper&amp;Carrot.<br/>
+        <b>Skrifer:</b> Profya hwedhlow Pepper&amp;Carrot nowydh.<br/>
+        <b>Jornalyas:</b> Kewsel a-dro dhe Pepper&amp;Carrot yn media hengovek (gwask pryntys, pellwolok, h.e.)<br/>
+        <b>Pryntyer:</b> Pryntya arwodhow po taklow gans Pepper&amp;Carrot warnedha.<br/>
     </p>
 ',
 
 'CONTRIBUTE_IRC'         => '
-    <h2 id="irc">IRC channel</h2>
+    <h2 id="irc">Kanel IRC</h2>
 
-    <p>Chat and discuss about Pepper&amp;Carrot. I&#39;m around at French day time (nickname: deevad)<br/>
+    <p>Kesklappya ha dadhla a-dro dhe Pepper&amp;Carrot. Yth esov ena dres an jydh yn Pow Frynk (nickname: deevad)<br/>
 ',
 
 ################################################################################
 # Page: Sources
-'SOURCES_TITLE'     => 'Sources',
+'SOURCES_TITLE'     => 'Fentynnyow',
 'SOURCES_TOP'       => '
-    <p><b>Welcome to the sources download center!</b><br/>
-    Here you&#39;ll find the source files of Pepper&amp;Carrot and more.<br/>
-    All digital painting files here are compatible with the latest version of <a href="https://krita.org/">Krita</a>.</p>
+    <p><b>Dynnargh dhe\'n kresen iskarga fentynnyow!</b><br/>
+    Omma y hyllir kavos an restrennow fenten a Pepper&amp;Carrot ha moy.<br/>
+    Pub restren payntya besyel yw kesplegadow gans an diwettha versyon a <a href="https://krita.org/">Krita</a>.</p>
 ',
 'SOURCES_BOTTOM'    => '
-    <p>By downloading and working with those files you agree to respect the terms of the <br/>
-    <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license</a>.
-    Check the README files in each project for more infos.</p>
+    <p>Der iskarga hag oberi gans an restrennow ma ty a assent dhe wul revrons dhe dermys an  <br/>
+    <a href="http://creativecommons.org/licenses/by/4.0/">leshyans Creative Commons Attribution</a>.
+    Mires orth an restrennow README yn pub ragdres rag pella derivadow.</p>
 
-    <p><b>Code repositories for translations, scripts, the website, graphics, etc.:</b><br/></p>
+    <p><b>Kreunvaow kod rag treylyansow, skrifow, an wiasva, imajys, h.e.:</b><br/></p>
 ',
-'SOURCE_COVER'      => 'Cover images',
-'SOURCE_KRITA'      => 'Krita source files',
-'SOURCE_TRANSLATOR' => 'Translator\'s pack',
-'SOURCE_WEB'        => 'Web: <span class="sourceinfos">90ppi, lightweight jpg</span>',
-'SOURCE_PRINT'      => 'Print: <span class="sourceinfos">300ppi, lossless quality</span>',
-'SOURCE_MONTAGE'    => 'Montage: <span class="sourceinfos">all panels in a single page</span>',
+'SOURCE_COVER'      => 'Imajys kudhlen',
+'SOURCE_KRITA'      => 'Restrennow fenten Krita',
+'SOURCE_TRANSLATOR' => 'Fardel trelyer',
+'SOURCE_WEB'        => 'Warlinen: <span class="sourceinfos">90ppi, jpg byghan</span>',
+'SOURCE_PRINT'      => 'Prynt: <span class="sourceinfos">300ppi, kwalita heb koll</span>',
+'SOURCE_MONTAGE'    => 'Kuntellyans: <span class="sourceinfos">pub panel yn unn folen unnik</span>',
 
 ################################################################################
 # Page: Author
-'AUTHOR_TITLE'                       => 'About David Revoy',
+'AUTHOR_TITLE'                       => 'A-dro dhe David Revoy',
 'AUTHOR_BIO'                         => '
-    <p>Hi, my name is David Revoy and I&#39;m a French artist born in 1981. I&#39;m self-taught and passionate about drawing, painting, cats, computers, Gnu/Linux open-source culture, Internet, old school RPG video-games, old mangas and anime, traditional art, Japanese culture, fantasy…<br/>
+    <p>Hou, David Revoy yw ow hanow hag artydh frynkek ov genys yn 1981. Omdhyskys ov ha passhyonek a-dro dhe dhelinya, payntya, kathes, jynnow-amontya, gonisogeth fenten ygor Gnu/Linux, kesrosweyth, gwariow gwydhyow RPG skol koth, manga hag anime koth, art hengovek, gonisogeth nihonek, fantasi…<br/>
     <br/>
-    After more than 10 years of freelance in digital painting, teaching, concept-art, illustrating and art-direction I decided to start my own project. I finally found a way to mix all my passions together, the result is Pepper&amp;Carrot.</p>
+    Wosa moy ages 10 bledhen yn payntyans besyal, dyskans, art tybyansel, lymnansow ha lewyans art y tewisis dalleth ow ragdres ow honan. Wortiwedh y kevis fordh dhe gemyski pub passhyon dhymm warbarth, an sewyans yw Pepper&amp;Carrot.</p>
 
-    <p>My portfolio:</p>
+    <p>Ow fortfolio:</p>
 ',
 'AUTHOR_TODO_DREAM'                  => '
-    <h3 id="dream">Dream TO-DO list</h3>
+    <h3 id="dream">Rol DHE-WUL fantasiek:</h3>
 
     <p>
-    ☐ Give a talk in a Japanese comic convention about Pepper&amp;Carrot.<br/>
-    ☐ Play with a gamepad to a Pepper&amp;Carrot video-game.<br/>
-    ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Get a gallery of 100 fan-arts.</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Get a Wikipedia page.</a><br/>
-    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Receive a photo of a Pepper cosplay.</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Receive a photo of a red cat named Carrot.</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Be supported by 500 patreons.</a><br/>
-    ☐ Reach episode 100!<br/>
+    ☐ Ri areth yn kuntellyans komik nihonek ow tochya Pepper&amp;Carrot.<br/>
+    ☐ Gwari gwari gwydhyow ow tochya Pepper&amp;Carrot.<br/>
+    ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Kavos mirva a 100 art skoodhyer.</a><br/>
+    ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Kavos folen Wikipedia.</a><br/>
+    ☑ <a href="http://www.peppercarrot.com/article387/cosplay-by-maria-and-ekaterina">Degemeres skeusen gwari gwiskas Pepper.</a><br/>
+    ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Degemeres skeusen a neb kath rudh henwys Carrot.</a><br/>
+    ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Bos skoodhys gans 500 tasek.</a><br/>
+    ☐ Hedhes rann 100!<br/>
     </p>
 ',
 
-'AUTHOR_CARREER_TITLE'               => 'My career in 7 bubbles',
+'AUTHOR_CARREER_TITLE'               => 'Ow resegva yn 7 hwythen',
 'AUTHOR_CARREER_BUBBLE_DESCRIPTIONS' => '<p></p>',
 
 ################################################################################
 # Website General: Footer
 'FOOTER_CONTENT' => '
-    <p>Webcomic, artworks and texts are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" title="For more information, read the Creative Commons Attribution 4.0">Creative Commons Attribution 4.0</a> license, unless otherwise noted in the page.<br/>
-    Attribution to "David Revoy, www.davidrevoy.com". Contact me: <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> for more information.</p>
+    <p>Roskomik, artweyth ha tekstow yw yn-dann leshyans <a href="https://creativecommons.org/licenses/by/4.0/" title="Rag pella derivadow, redya an Creative Commons Attribution 4.0">Creative Commons Attribution 4.0</a>, mar nag yw notys yn ken maner orth an folen.<br/>
+    Askrifans dhe "David Revoy, www.davidrevoy.com". Kestava orthiv: <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> rag pella derivadow.</p>
 
-    <p>Website powered by <a href="http://www.pluxml.org" title="PluXml">PluXml</a></p>
+    <p>Gwiasva drehevys war <a href="http://www.pluxml.org" title="PluXml">PluXml</a></p>
 ',
 ################################################################################
 # Eshop
-'ESHOP_COMIC'           => 'Yma lyvrow komik hag art warn:',
-'ESHOP_SHOP'            => 'Pryntys, hanafow, krysyow T ha moy war:',
+'ESHOP_COMIC'           => 'Yma lyvrow komik hag art war:',
+'ESHOP_SHOP'            => 'Pryntys, hanafow, krysyow-T ha moy war:',
 ################################################################################
 # various utils:
 'UTIL_NEXT_EPISODE'     => 'nessa rann',
