@@ -120,7 +120,7 @@ if(isset($_GET['page'])) {
         echo '</div>';
 
         echo '</section>';
-        echo '<br/><br/><br/><br/><br/></div>';
+        echo '<br/><br/><br/><br/><br/>';
 
     } else {
 
