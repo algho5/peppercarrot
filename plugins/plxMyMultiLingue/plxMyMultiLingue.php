@@ -336,12 +336,13 @@ class plxMyMultiLingue extends plxPlugin {
     # déclaration hook utilisateur à mettre dans le thème
     $this->addHook('MyMultiLingue', 'MyMultiLingue');
 
+    # Get language list for language availability check on community page
+    $this->addHook('MyMultiLingueGetAvailableLanguagesForPage', 'MyMultiLingueGetAvailableLanguagesForPage');
+
     # Specific rules for Pepper&Carrot :
     $this->addHook('MyMultiLingueGetLang', 'MyMultiLingueGetLang');
-    $this->addHook('MyMultiLingueGetLangLabel', 'MyMultiLingueGetLangLabel');
-    $this->addHook('MyMultiLingueComicLang', 'MyMultiLingueComicLang');
-    $this->addHook('MyMultiLingueStaticLang', 'MyMultiLingueStaticLang');
-    $this->addHook('MyMultiLingueStaticAllLang', 'MyMultiLingueStaticAllLang');
+    $this->addHook('MyMultiLingueEpisodeData', 'MyMultiLingueEpisodeData');
+    $this->addHook('MyMultiLingueLanguageMenu', 'MyMultiLingueLanguageMenu');
     $this->addHook('MyMultiLingueComicToggleButtons', 'MyMultiLingueComicToggleButtons');
     $this->addHook('MyMultiLingueComicDisplay', 'MyMultiLingueComicDisplay');
     $this->addHook('MyMultiLingueComicHeader', 'MyMultiLingueComicHeader');
@@ -931,127 +932,218 @@ public function MyMultiLingueGetLang() {
 
 }
 
-public function MyMultiLingueGetLangLabel($lang) {
-  return $this->languageConfig->{$lang}->{'local_name'};
-}
+  /**
+   *
+   * Returns a filtered version of $this->languageConfig to only include languages that have translations.
+   *
+   * @param  string  $comic_test_page_dir  A directory containing rendered pages to see
+   *                                       if there are translations available, e.g.
+   *                                       0_sources/ep01_Potion-of-Flight/low-res or
+   *                                       0_sources/0ther/community/Pepper-and-Carrot-Mini_by_Nartance
+   *                                       Leave empty to skip.
+   *
+   * @param boolean  $include_website      If true, include languages that are available for the website
+   *
+   * @return array $this->languageConfig filtered for available languages, with added boolean key websitetranslated
+   */
+  private function getAvailableLanguagesForPage($comic_test_page_dir = '', $include_website = true) {
+    $result = array();
 
-/**********************************************************/
-/* Display the pills of available lang (article-webcomic) */
-/**********************************************************/
-/**
- * Method to display a list of the available langage for active comic
- * @author: David Revoy
- **/
-public function MyMultiLingueComicLang() {
-
-  $data = $this->episodeData();
-
-  foreach($this->languageConfig as $lang => $langinfo) {
-    # If the label display active lang, let CSS know for highlight via class 'active'
-    $sel = $this->lang==$lang ? ' active':'';
-
-    # Build link to image that will be there if the episode has been translated
-    $comicpage_tester = $data['directory'].'/low-res/'.$lang.'_'.$data['name'].'P01.jpg';
-    #Debug $comicpage_tester
-    #echo '<li><img src="'.$comicpage_tester.'" width="30px"></li>';
-    # then we detect if hypothical page exist to display the button
-    if (file_exists($comicpage_tester)) {
-      # Lang exists, we build the HTML for the language item
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'.$langinfo->{'local_name'}.'</a></li>"; ?>';
-    }
-  }
-  # Display the resulting full list
-  echo $LangString;
-
-}
-
-/************************************************/
-/* Display the pills of available lang (static) */
-/************************************************/
-/**
- * Method to display a list of the available langage for static pages
- * @author: David Revoy
- **/
-public function MyMultiLingueStaticLang() {
-  $plxMotor = plxMotor::getInstance();
-  # loop on all the lang pluxml know
-  foreach($this->languageConfig as $lang => $langinfo) {
-    # Build a pattern to find a hypothetic translation (eg. en.php, jp.php) in theme/lang/ folder
-    $LangAvailable = PLX_ROOT.$plxMotor->aConf['racine_themes'].$plxMotor->style.'/lang/'.$lang.'.php';
-    # If the label display active lang, let CSS know for highlight via class 'active'
-    $sel = $this->lang==$lang ? ' active':'';
-    # if we detect page 01 exist in a active language
-    if (file_exists($LangAvailable)) {
-      # Lang registered in PLuxXML, we build the HTML for the language item
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("?lang='.$lang.'")."\">'.$langinfo->{'local_name'}.'</a></li>"; ?>';
-     }
-  }
-  # Display the resulting full list
-  echo $LangString;
-}
-
-
-/********************************************************************************************/
-/* Display the pills of all available lang, even webcomic (static: for frontpage/webcomics) */
-/********************************************************************************************/
-/**
- * Method to display a list of the available all langage for static pages
- * @author: David Revoy
- **/
-public function MyMultiLingueStaticAllLang($pageurl) {
-
-  if(isset($pageurl)) {
-    $pageurl = $pageurl;
-  } else {
-    $pageurl = "";
-  }
-
-  $plxMotor = plxMotor::getInstance();
-  # loop on all the lang pluxml know
-  foreach($this->languageConfig as $lang => $langinfo) {
-    # Build a pattern to find a hypothetic translation (eg. en.php, jp.php) in theme/lang/ folder
-    $LangAvailable = PLX_ROOT.$plxMotor->aConf['racine_themes'].$plxMotor->style.'/lang/'.$lang.'.php';
-    # If the label display active lang, let CSS know for highlight via class 'active'
-    $sel = $this->lang==$lang ? ' active':'';
-    # if we detect cover of episode 01 exists in a active language:
-    $episode01_tester = '0_sources/ep01_Potion-of-Flight/low-res/'.$lang.'_Pepper-and-Carrot_by-David-Revoy_E01.jpg';
-    if (file_exists($LangAvailable) OR file_exists($episode01_tester)) {
-      $websitetranslated = 0;
-      if (file_exists($LangAvailable)){
-      $websitetranslated = 10;
-      }
-      $totalepisodecount = 0;
-      $translationcompletion = 0;
-      $epfolders = glob("0_sources/ep[0-9][0-9]*");
-      sort($epfolders);
-      foreach($epfolders as $foldername) {
-        $totalepisodecount = $totalepisodecount + 1;
-        $testfolderpath = $foldername.'/lang/'.$lang;
-        if(is_dir($testfolderpath)) {
-          $translationcompletion = $translationcompletion + 1;
+    $plxMotor = plxMotor::getInstance();
+    # Go through all languages in our JSON and check for website & comic translations
+    foreach($this->languageConfig as $lang => $langinfo) {
+      # Check for website translations if requested
+      if ($include_website) {
+        # Build a pattern to find a hypothetic translation (eg. en.php, jp.php) in theme/lang/ folder
+        if (file_exists(PLX_ROOT.$plxMotor->aConf['racine_themes'].$plxMotor->style.'/lang/'.$lang.'.php')) {
+          # We write this extra variable for the statistics
+          $langinfo->websitetranslated = true;
+          $result[$lang] = $langinfo;
+          continue;
         }
       }
 
-      $percent = ( $translationcompletion / $totalepisodecount ) * 90 + $websitetranslated;
-      $percent = round($percent, 0);
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$lang.'/'.$pageurl.'")."\"';
-      $LangString .= ' title=\"'.$translationcompletion.' on '.$totalepisodecount.' episodes translated, ';
-      if ($websitetranslated == 10 ){
-      $LangString .= 'website is translated.\">';
-      } else {
-      $LangString .= 'website is not translated.\">';
+      # Not found yet, so we check for comic translations for the comic test page
+      if (!empty($comic_test_page_dir)) {
+        if (!empty(glob($comic_test_page_dir.'/'.$lang.'_[A-Za-z0-9-]*_by-[A-Za-z0-9-]*.jpg'))) {
+          $result[$lang] = $langinfo;
+        }
       }
-      $LangString .= ''.$langinfo->{'local_name'}.' ';
-      $LangString .= '<span class=\"percent\" >'.$percent.'%</span> ';
-      if ($percent == 100 ){
-        $LangString .= '<img src=\"themes/peppercarrot-theme_v2/ico/star.svg\" alt=\"star,\" title=\"Translation complete! Congratulation.\"/>';
+    }
+    return $result;
+  }
+
+
+  /**
+   * Hook wrapper for $this->getAvailableLanguagesForPage($comic_test_page_dir, $include_website)
+   *
+   * See that function for documentation.
+   */
+  public function MyMultiLingueGetAvailableLanguagesForPage($arguments) {
+    return $this->getAvailableLanguagesForPage($arguments['tester'], $arguments['website']);
+  }
+
+
+  /**
+   * Hook wrapper for $this->episodeData()
+   *
+   * See that function for documentation.
+   */
+  public function MyMultiLingueEpisodeData() {
+    return $this->episodeData();
+  }
+
+  /*********************************************************************************/
+  /* Display a menu with links for all available webcomic and/or website languages */
+  /*********************************************************************************/
+  /**
+   * Method to display a list of available languages. Outer element is <ul>.
+   *
+   * This can be configured to switch website and content languages and their statistics
+   * on and off. It also supports differing content location and link schemes.
+   *
+   * @author: David Revoy, GunChleoc
+   *
+   * @param $arguments array  Configures the language menu. All entries are optional.
+   *
+   * string pageurl:
+   *     URL template for the translated version of this page. Use {LANG} as a substitute
+   *     for language codes.
+   *     Default: '{LANG}/'
+   *
+   * string testdir:
+   *     The directory for checking if translations exist for a category or episode.
+   *     This directory must have files or directories starting with language codes in it.
+   *     Default: '0_sources/ep01_Potion-of-Flight/low-res'
+   *
+   * boolean includewebsite:
+   *     Whether to include all languages that have website translations in the menu.
+   *     Default: true
+   *
+   * string statstemplate:
+   *     Directory/file template for detecting whether an episode has been translated.
+   *     For wildcard syntax, see https://www.php.net/manual/en/function.glob.php
+   *     When set, this *must* contain a language code substituted by '{LANG}'
+   *     Example: 0_sources/ep[0-9][0-9]<star>/lang/{LANG}/E[0-9][0-9]<star>P00.svg
+   *     Leave unset if you don't want to show any statistics.
+   *
+   * string contributionlink:
+   *    The target link for the "+ add a translation" button. If this is set but empty,
+   *    this button will be skipped.
+   *    Default: '?static14/documentation&page=010_Translate_the_comic'
+   **/
+  public function MyMultiLingueLanguageMenu($arguments) {
+    # Configure
+    if (isset($arguments['pageurl'])) {
+      $pageurl = $arguments['pageurl'];
+    } else {
+      $pageurl = '{LANG}/';
+    }
+
+    if (isset($arguments['testdir'])) {
+      $testdir = $arguments['testdir'];
+    } else {
+      $testdir = '0_sources/ep01_Potion-of-Flight/low-res';
+    }
+
+    if (isset($arguments['includewebsite'])) {
+      $includewebsite = $arguments['includewebsite'];
+    } else {
+      $includewebsite = true;
+    }
+
+    # Get episode file or folder count for statistics using a glob template that contains {LANG}
+    if (isset($arguments['statstemplate'])) {
+      $statstemplate = $arguments['statstemplate'];
+      # Total count - we assume that base language is 'en'
+      $totalepisodecount = count(glob(str_replace('{LANG}', 'en', $statstemplate)));
+      $showstats = true;
+    } else {
+      $showstats = false;
+    }
+
+    if (isset($arguments['contributionlink'])) {
+      $contributionlink = $arguments['contributionlink'];
+    } else {
+      $contributionlink = '?static14/documentation&page=010_Translate_the_comic';
+    }
+
+    $langlabel = "English";
+
+    $plxShow = plxShow::getInstance();
+
+    # Collect language entries
+    foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
+      $sel = '';
+      if ($this->lang === $lang) {
+        $langlabel = $langinfo->{'local_name'};
+        $sel = ' active';
+      }
+
+      # To deal with links like
+      # ?fr/static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
+      $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
+
+      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$localized_pageurl.'")."\"';
+
+      if ($showstats) {
+        # Calculate statistics and add info to link title & text
+
+        # Use flat 10% for website statistics
+        $websitetranslated = $includewebsite && $langinfo->websitetranslated ? 10 : 0;
+
+        # Get episode folders for statistics
+        $translationcompletion = count(glob(str_replace('{LANG}', $lang, $statstemplate)));
+
+        $percent = ( $translationcompletion / $totalepisodecount ) * ($includewebsite ? 90 : 100) + $websitetranslated;
+        $percent = round($percent, 0);
+
+        $LangString .= ' title=\"'.$translationcompletion.' of '.$totalepisodecount.' episodes translated';
+        if ($includewebsite) {
+          if ($websitetranslated == 10 ) {
+            $LangString .= ', website is translated.';
+          } else {
+            $LangString .= ', website is not translated.';
+          }
+        }
+        $LangString .= '\">'.$langinfo->{'local_name'}.' ';
+        $LangString .= '<span class=\"percent\" >'.$percent.'%</span> ';
+        if ($percent == 100 ) {
+          $LangString .= '<img src=\"themes/peppercarrot-theme_v2/ico/star.svg\" alt=\"star,\" title=\"Translation complete! Congratulations.\"/>';
+        }
+      } else {
+        # Link title & text without statistics
+        $LangString .= ' title=\"'.$langinfo->{'local_name'}.'\">';
+        $LangString .= ''.$langinfo->{'local_name'}.' ';
       }
       $LangString .= '</a></li>"; ?>';
     }
+
+    # Print menu
+    ?>
+    <label for="langmenu" style="display: inline-block;"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
+    <input type="checkbox" id="langmenu">
+    <ul class="langmenu expanded">
+      <?php echo $LangString;
+      if (!empty($contributionlink)) {
+      ?>
+        <li class="button">
+          <a class="lang" href="<?php
+            # We don't want to rewrite links to framagit etc.
+            if (substr($contributionlink, 0, 4) === 'http') {
+              echo $contributionlink;
+            } else {
+              $plxShow->urlRewrite($contributionlink);
+            }
+            ?>">
+            <img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/>
+             <?php $plxShow->lang('ADD_TRANSLATION') ?>
+          </a>
+        </li>
+        <?php } ?>
+    </ul>
+    <?php
   }
-  # Display results
-  echo $LangString;
-}
 
 
   /*****************************************/
