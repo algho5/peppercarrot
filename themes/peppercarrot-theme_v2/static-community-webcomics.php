@@ -99,7 +99,14 @@ if(isset($_GET['page'])) {
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
 
         $imagename = $activeimage;
-        echo '<a href="'.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+        $activeepisodeprefix = substr($activeimage, 0, 13); // keeps first 11 (eg. en_HKNOVL_E01 or fr_PCMINI_E04)
+        $pages = glob($pathartworks.'/'.$activeepisodeprefix.'*.jpg');
+        if (!empty($pages)){
+          foreach ($pages as $pagepath) {
+            echo '<a href="'.$pagepath.'" ><img src="'.$pagepath.'" ></a><br/>';
+          }
+        }
+
 
         echo '<div class="button top">';
           echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
