@@ -3,25 +3,14 @@
   <main class="main grid" role="main">
 		<section class="col sml-12">
       <div class="grid">
-
         <div class="col sml-12 sml-text-right">
           <nav class="nav" role="navigation">
             <div class="responsive-langmenu">
-              <label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
-              <input type="checkbox" id="langmenu">
-              <ul class="langmenu expanded">
-                <?php eval($plxShow->callHook('MyMultiLingueStaticAllLang')) ?>
-                <li class="button">
-                  <a class="lang" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>">
-                    <img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/>
-                     <?php $plxShow->lang('ADD_TRANSLATION') ?>
-                  </a>
-                </li>
-              </ul>
+            <?php eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
+                'statstemplate' => '0_sources/ep[0-9][0-9]*/lang/{LANG}/E[0-9][0-9]*P00.svg'))); ?>
             </div>
           </nav>
         </div>
-        
         <section class="col sml-12 med-12 lrg-12" >
           <div class="cover">
             <div class="covertextoverlay">
@@ -29,7 +18,7 @@
               </h1>
                 <div class="button mandarine big">
                   <a href="<?php $plxShow->urlRewrite('?static2/philosophy') ?>" title="<?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?>">
-                    <?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?> 
+                    <?php $plxShow->lang('HOMEPAGE_MOREINFO_BUTTON') ?>
                     <img src="themes/peppercarrot-theme_v2/ico/go.svg"/>
                   </a>
                 </div>
@@ -49,12 +38,12 @@
               <figcaption class="#translationstatus text-center"><a href="#art_url" title="#art_title"><span class="detail">#overlay</span></a></figcaption>
             </figure>
             ',99,'003', "...", "rsort"))); ?>
-            
+
             <div style="clear:both;"></div>
             </div>
           </div>
         </section>
-          
+
       </div>
     </section>
 	</main>

@@ -28,32 +28,29 @@ $pathcommunityfolder = '0_sources/0ther/community';
 # [page] datas are in the URL
 if(isset($_GET['page'])) {
 
-    $foldername = $activefolder;
     $pathartworks = $pathcommunityfolder .'/'.$activefolder;
-    $detectedlangs=array();
+
+    $baselink = "static11/communitywebcomics&page=$activefolder";
+
+    # We can't count on contributions having a structured git repo, so we list the contribution links here.
+    # Empty link means don't show any "add a translation" buttons for ths active folder.
+    $contributionlinks = array(
+        'Pepper-and-Carrot_by_Holger-Kraemer' => '',
+        'Pepper-and-Carrot-Mini_by_Nartance' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
+    );
+    $contributionlink = $contributionlinks[$activefolder];
 
 # Check available languages
 # =========================
 
-    # Detect the amount of language to display by scanning threw available files
-    $searchfiles = glob($pathartworks."/??_*by-*.jpg");
-    foreach ($searchfiles as $file) {
-      $filename = basename($file);
-      $filenameclean =  substr($filename, 0, 2); // keeps only two letter ISO lang
-      array_push($detectedlangs,$filenameclean);
-    }
-    $detectedlangscleaned = array_unique($detectedlangs);
+    # Get language from hook. Skip website languages.
+    $availablelanguages = $plxShow->callHook('MyMultiLingueGetAvailableLanguagesForPage',
+        array('tester' =>'0_sources/0ther/community/'.$activefolder,
+              'website' => false));
 
-    $matchinglang = 0;
     # We check if content exist for user with active lang selected
-    foreach ($detectedlangscleaned as $proposedlang) {
-      if ($lang == $proposedlang){
-        $matchinglang = 1;
-      }
-    }
-
     # When no lang available, display a message:
-    if ($matchinglang !== 1){
+    if (!array_key_exists($lang, $availablelanguages)) {
       echo '<div class="grid">';
       echo '<br/><div class="col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center alert blue">';
       echo '  <img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt="info:"/>';
@@ -68,35 +65,27 @@ if(isset($_GET['page'])) {
 # (a "page" variable passed)
 # (a "display" variable passed)
 
-    $allLangs = json_decode(file_get_contents('0_sources/langs.json'));
-
     if(isset($_GET['display'])) {
         $imagename = $activeimage;
+        $langimagewithoutlang = substr($imagename, 2); // rm old lang
 
         # Write lang pills for the viewer
         # Challenge: the pills must translate the image displayed.
+
         echo '<div class="grid">';
           echo '<div class="col sml-12 sml-text-right">';
             echo '<nav class="nav" role="navigation">';
               echo '<div class="responsive-langmenu">';
-              echo '<div class="button top">';
-                echo '<a href="static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance/" class="lang option">← Back to index</a>';
+                echo '<div class="button top">';
+                  echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
+                echo '</div>';
+                eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
+                        'pageurl' => '{LANG}/'.$baselink.'&display={LANG}'.$langimagewithoutlang,
+                        'testdir' => $pathartworks,
+                        'includewebsite' => false,
+                        'contributionlink' => $contributionlink
+                )));
               echo '</div>';
-                echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/>'.$langlabel.'<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
-                  echo '<input type="checkbox" id="langmenu">';
-                    echo '<ul class="langmenu expanded">';
-                      foreach ($detectedlangscleaned as $langavailable) {
-                        $langimagewithoutlang = substr($imagename, 2); // rm old lang
-                        $langimagename = $langavailable.''.$langimagewithoutlang;
-                        if (file_exists($pathartworks.'/'.$langimagename.'')) {
-                          echo '<li class="button"><a class="lang" href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'&display='.$langimagename.'">';
-                          $langprettyname = $allLangs->{$langavailable}->{'local_name'};
-                          echo $langprettyname;
-                          echo '</a></li>';
-                        }
-                      }
-                      echo '<li class="button" ><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
-                echo '</ul>';
             echo '</nav>';
           echo '</div>';
         echo '</div>';
@@ -112,7 +101,7 @@ if(isset($_GET['page'])) {
         echo '<a href="'.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
 
         echo '<div class="button top">';
-          echo '<a href="static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance/" class="lang option">← Back to index</a>';
+          echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
         echo '</div>';
 
         echo '</section>';
@@ -130,24 +119,21 @@ if(isset($_GET['page'])) {
           echo '<div class="col sml-12 sml-text-right">';
             echo '<nav class="nav" role="navigation">';
               echo '<div class="responsive-langmenu">';
-                echo '<label for="langmenu"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> '.$plxShow->callHook('MyMultiLingueGetLangLabel', $lang).'<img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>';
-                  echo '<input type="checkbox" id="langmenu">';
-                    echo '<ul class="langmenu expanded">';
-                      foreach ($detectedlangscleaned as $langavailable) {
-                        echo '<li class="button"><a class="lang" href="?'.$langavailable.'/static11/communitywebcomics&page='.$activefolder.'">';
-                          $langprettyname = $allLangs->{$langavailable}->{'local_name'};
-                          echo $langprettyname;
-                        echo '</a></li>';
-                      }
-                      echo '<li class="button"><a class="lang option" href="https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> '.$addatranslationstring.'</a></li>';
-                echo '</ul>';
+                eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
+                        'pageurl' => '{LANG}/'.$baselink,
+                        'testdir' => $pathartworks,
+                        'includewebsite' => false,
+                        'statstemplate' => $pathartworks.'/{LANG}_[A-Za-z-]*_E[0-9][0-9]*[A-Za-z_-]*.jpg',
+                        'contributionlink' => $contributionlink
+                )));
+              echo '</div>';
             echo '</nav>';
           echo '</div>';
         echo '</div>';
         echo '<div style="clear:both;"></div> ';
 
         # Display the title of the project and markdown:
-        $foldernameclean = str_replace('_', ' ', $foldername);
+        $foldernameclean = str_replace('_', ' ', $activefolder);
         $foldernameclean = str_replace('-', ' ', $foldernameclean);
         $foldernameclean = str_replace('by', '</h2><span class="font-size: 0.5rem;">'.$ccbystring.'', $foldernameclean);
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
@@ -183,9 +169,9 @@ if(isset($_GET['page'])) {
             $filenameclean = str_replace('-', ' ', $filenameclean);
 
             echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-            echo '<a href="?static11/communitywebcomics&page='.$activefolder.'&display='.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+            echo '<a href="?'.$baselink.'&display='.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
             echo '<figcaption class="text-center" >
-            <a href="?static11/communitywebcomics&page='.$activefolder.'&display='.$filename.'" >
+            <a href="?'.$baselink.'&display='.$filename.'" >
             '.$episodestring.' '.$filenameclean.'
             </figcaption>
             <br/><br/>';

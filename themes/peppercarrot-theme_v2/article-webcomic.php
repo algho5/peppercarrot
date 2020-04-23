@@ -8,13 +8,15 @@
         <div class="col sml-12 sml-text-right">
           <nav class="nav" role="navigation">
             <div class="responsive-langmenu">
-              <?php eval($plxShow->callHook('MyMultiLingueComicToggleButtons')) ?>
-              <label for="langmenu" style="display: inline-block;"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
-              <input type="checkbox" id="langmenu">
-              <ul class="langmenu expanded">
-              <?php eval($plxShow->callHook('MyMultiLingueComicLang')) ?>
-              <li class="button"><a class="lang option" href="<?php $plxShow->urlRewrite('?static14/documentation&page=010_Translate_the_comic') ?>"><img src="themes/peppercarrot-theme_v2/ico/add.svg" alt="+"/> <?php $plxShow->lang('ADD_TRANSLATION') ?></a></li>
-              </ul>
+              <?php
+                eval($plxShow->callHook('MyMultiLingueComicToggleButtons'));
+                $episodeData = $plxShow->callHook('MyMultiLingueEpisodeData');
+                eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
+                    'pageurl' => '?lang={LANG}',
+                    'testdir' => $episodeData['directory'].'/low-res',
+                    'includewebsite' => false
+                )));
+               ?>
             </div>
           </nav>
         </div>

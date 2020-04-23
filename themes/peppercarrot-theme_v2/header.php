@@ -4,7 +4,6 @@ $idStat = $plxShow->staticId();
 $idCats = $plxShow->catId();
 $idMode = $plxShow->mode();
 $lang = $plxShow->callHook('MyMultiLingueGetLang');
-$langlabel = $plxShow->callHook('MyMultiLingueGetLangLabel', $lang);
 
 if($idMode=="home"){ $status = "active"; } else { $status = "no-active"; }
 ?>
