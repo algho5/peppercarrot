@@ -49,7 +49,7 @@ if(isset($_GET['page'])) {
               'website' => false));
 
     # We check if content exist for user with active lang selected
-    # When no lang available, display a message:
+    # When no lang available, display a message and force English version:
     if (!array_key_exists($lang, $availablelanguages)) {
       echo '<div class="grid">';
       echo '<br/><div class="col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center alert blue">';
@@ -57,7 +57,8 @@ if(isset($_GET['page'])) {
       echo $plxShow->Getlang(LIMITATIONS);
       echo '</div>';
       echo '</div>';
-
+      # Display English version.
+      $lang = "en";
     }
 
 # Image viewer mode : display the artwork
@@ -98,7 +99,14 @@ if(isset($_GET['page'])) {
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
 
         $imagename = $activeimage;
-        echo '<a href="'.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder.'/'.$activefolder.'/'.$imagename.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+        $activeepisodeprefix = substr($activeimage, 0, 13); // keeps first 11 (eg. en_HKNOVL_E01 or fr_PCMINI_E04)
+        $pages = glob($pathartworks.'/'.$activeepisodeprefix.'*.jpg');
+        if (!empty($pages)){
+          foreach ($pages as $pagepath) {
+            echo '<a href="'.$pagepath.'" ><img src="'.$pagepath.'" ></a><br/>';
+          }
+        }
+
 
         echo '<div class="button top">';
           echo '<a href="'.$baselink.'/" class="lang option">← Back to index</a>';
@@ -154,7 +162,7 @@ if(isset($_GET['page'])) {
 
         # Display episodes
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
-        $search = glob($pathartworks.'/'.$lang.'*.jpg');
+        $search = glob($pathartworks.'/'.$lang.'*P01*.jpg');
         rsort($search);
         # we loop on found episodes
         if (!empty($search)){
