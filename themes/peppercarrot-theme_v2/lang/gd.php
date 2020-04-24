@@ -77,8 +77,7 @@ $LANG = array(
 ################################################################################
 # Page: Blog
 # when contents are not English (no need to warn user the content is english only here):
-#'LIMITATIONS' 	=> ' Chan eil an t-susbaint seo ri fhaighinn ach sa Bheurla ',
-'LIMITATIONS' => '',
+'LIMITATIONS' 	=> ' Chan eil an t-susbaint seo ri fhaighinn ach sa Bheurla ',
 'TRANSLATION_FALLBACK' => '(Cha deach seo eadar-theangachadh fhathast. A’ cleachdadh na Beurla ’na àite.)',
 
 ################################################################################

@@ -40,26 +40,6 @@ if(isset($_GET['page'])) {
     );
     $contributionlink = $contributionlinks[$activefolder];
 
-# Check available languages
-# =========================
-
-    # Get language from hook. Skip website languages.
-    $availablelanguages = $plxShow->callHook('MyMultiLingueGetAvailableLanguagesForPage',
-        array('tester' =>'0_sources/0ther/community/'.$activefolder,
-              'website' => false));
-
-    # We check if content exist for user with active lang selected
-    # When no lang available, display a message and force English version:
-    if (!array_key_exists($lang, $availablelanguages)) {
-      echo '<div class="grid">';
-      echo '<br/><div class="col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center alert blue">';
-      echo '  <img src="themes/peppercarrot-theme_v2/ico/nfo.svg" alt="info:"/>';
-      echo $plxShow->Getlang(LIMITATIONS);
-      echo '</div>';
-      echo '</div>';
-      # Display English version.
-      $lang = "en";
-    }
 
 # Image viewer mode : display the artwork
 # =======================================
@@ -220,7 +200,7 @@ if(isset($_GET['page'])) {
             </a>';
 
             # art url always goes to the translated version - we deal with English fallback over there.
-            $row = str_replace('{art_url}', '?'.$baselink.'&display='.$lang.$matches[1], $row);
+            $row = str_replace('{art_url}', $lang.'/'.$baselink.'&display='.$lang.$matches[1], $row);
             $row = str_replace('{art_title}', $tooltip, $row);
             $row = str_replace('{episode_vignette}', $filepath, $row);
             $row = str_replace('{translationstatus}', $translationstatus, $row);
@@ -246,7 +226,6 @@ if(isset($_GET['page'])) {
   $hide = array('.', '..');
   $mainfolders = array_diff(scandir($pathcommunityfolder), $hide);
   sort($mainfolders);
-  # TODO add language support
 
   # we loop on found episodes
   foreach ($mainfolders as $folderpath) {
@@ -258,7 +237,7 @@ if(isset($_GET['page'])) {
     $filenameclean = str_replace('by', '</a><br/><span class="detail">'.$ccbystring.'', $filenameclean);
     $filenamezip = str_replace('jpg', 'zip', $filename);
     echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-    echo '<a href="?static11/communitywebcomics&page='.$folderpath.'/" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    echo '<a href="'.$lang.'/static11/communitywebcomics&page='.$folderpath.'/" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
     echo '<figcaption class="text-center" >
     <a href="0_sources/0ther/fan-art/'.$filename.'" >
     '.$filenameclean.'
