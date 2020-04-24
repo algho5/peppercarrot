@@ -336,11 +336,10 @@ class plxMyMultiLingue extends plxPlugin {
     # déclaration hook utilisateur à mettre dans le thème
     $this->addHook('MyMultiLingue', 'MyMultiLingue');
 
-    # Get language list for language availability check on community page
-    $this->addHook('MyMultiLingueGetAvailableLanguagesForPage', 'MyMultiLingueGetAvailableLanguagesForPage');
-
     # Specific rules for Pepper&Carrot :
     $this->addHook('MyMultiLingueGetLang', 'MyMultiLingueGetLang');
+    $this->addHook('MyMultiLingueSetLang', 'MyMultiLingueSetLang');
+
     $this->addHook('MyMultiLingueEpisodeData', 'MyMultiLingueEpisodeData');
     $this->addHook('MyMultiLingueLanguageMenu', 'MyMultiLingueLanguageMenu');
     $this->addHook('MyMultiLingueComicToggleButtons', 'MyMultiLingueComicToggleButtons');
@@ -926,11 +925,15 @@ class plxMyMultiLingue extends plxPlugin {
 
   }
 
-public function MyMultiLingueGetLang() {
+  public function MyMultiLingueGetLang() {
 
-  return $this->lang;
+    return $this->lang;
 
-}
+  }
+
+  public function MyMultiLingueSetLang($lang) {
+    $this->lang = $lang;
+  }
 
   /**
    *
@@ -972,17 +975,6 @@ public function MyMultiLingueGetLang() {
     }
     return $result;
   }
-
-
-  /**
-   * Hook wrapper for $this->getAvailableLanguagesForPage($comic_test_page_dir, $include_website)
-   *
-   * See that function for documentation.
-   */
-  public function MyMultiLingueGetAvailableLanguagesForPage($arguments) {
-    return $this->getAvailableLanguagesForPage($arguments['tester'], $arguments['website']);
-  }
-
 
   /**
    * Hook wrapper for $this->episodeData()
