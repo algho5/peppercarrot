@@ -53,8 +53,9 @@ cp .tmp tmp
 cp .gitignore.template .gitignore
 cp .htaccess.template .htaccess
 # Note: You might need to adjust .htaccess Rewrite base, more information in the comment of .htaccess.template
-mkdir -p tmp/plxcache
+mkdir -p tmp/plxcache/plxthumbnailer
 chmod 777 tmp/plxcache
+chmod o+w tmp/cache/plxthumbnailer/
 touch 0_sources/last_updated.txt
 chmod 666 0_sources/last_updated.txt
 ```
