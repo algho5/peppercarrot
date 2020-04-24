@@ -20,6 +20,73 @@ $activefolder = preg_replace('/[^A-Za-z0-9\._-]/', '', $activefolder);
 $activeimage = preg_replace('/[^A-Za-z0-9\._-]/', '', $activeimage);
 $requestedlang = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedlang);
 $pathcommunityfolder = '0_sources/0ther/community';
+
+
+# Helper function for navigator
+function localize_image($lang, $filepath) {
+    # Split language from rest of image name
+    preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E\d+P01_[A-Za-z-]*.(jpg|gif))$/', basename($filepath), $matches);
+    return $lang.$matches[1];
+}
+
+
+function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, $buttonthemeActive, $buttonthemeInactive) {
+    global $plxShow;
+    # TODO more width
+    # TODO add titles
+    ?>
+<div class="readernav col sml-12 med-12 lrg-12 sml-centered">
+  <div class="grid">
+
+  <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
+    <div class="<?php echo ''.$buttonthemeActive.''; ?>">
+      <a class="readernavbutton" style="text-align:left;" href="<?php print($firstEpisode); ?>">
+        &nbsp; « &nbsp; <?php $plxShow->lang('FIRST') ?>
+      </a>
+    </div>
+  </div>
+
+  <div class="col sml-6 med-3 lrg-3">
+    <div class="<?php
+        if ($previousEpisode === '#') {
+            echo ''.$buttonthemeInactive.' off';
+        } else {
+            echo ''.$buttonthemeActive.'';
+        }
+    ?>">
+      <a class="readernavbutton" style="text-align:left;" href="<?php print($previousEpisode); ?>">
+        &nbsp; &lt; &nbsp; <?php $plxShow->lang('UTIL_PREVIOUS_EPISODE') ?>
+      </a>
+    </div>
+  </div>
+
+  <div class="col sml-6 med-3 lrg-3">
+    <div class="<?php
+        if ($nextEpisode === '#') {
+            echo ''.$buttonthemeInactive.' off';
+        } else {
+            echo ''.$buttonthemeActive.'';
+        }
+    ?>">
+      <a class="readernavbutton" style="text-align:right;" href="<?php print($nextEpisode); ?>">
+        <?php $plxShow->lang('UTIL_NEXT_EPISODE') ?>&nbsp; &gt; &nbsp;
+      </a>
+    </div>
+  </div>
+
+  <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
+    <div class="<?php echo ''.$buttonthemeActive.''; ?>">
+      <a class="readernavbutton" style="text-align:right;" href="<?php print($lastEpisode); ?>">
+        <?php $plxShow->lang('LAST') ?>&nbsp; » &nbsp;
+      </a>
+    </div>
+  </div>
+
+  </div>
+</div>
+    <?php
+}
+
 ?>
 <div class="container">
 	<main class="main grid" role="main">
@@ -78,6 +145,7 @@ if(isset($_GET['page'])) {
         echo '</div>';
         echo '<div style="clear:both;"></div> ';
 
+
         # Episode path + filename for localized version
         $pages = glob($pathcommunityfolder.'/'.$activefolder.'/'.$lang.$episodeprefixwithoutlang.'*.???');
 
@@ -87,8 +155,34 @@ if(isset($_GET['page'])) {
             echo '<br/>';
             echo '<div class="notice col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center">';
             echo '  <img src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt="info:"/> English version <br/>(this episode is not yet available in your selected language.)';
-            echo '</div>';
+            echo '</div><br>';
         }
+
+        # Compute links for navigator
+        $episodes = glob($pathartworks.'/en*P01*.jpg');
+        $number_of_episodes = count($episodes);
+
+        $current = 'en'.$langimagewithoutlang;
+
+        $firstEpisode = "$lang/$baselink&display=".localize_image($lang, $episodes[0]);
+        $previousEpisode = "#";
+        $lastEpisode = "$lang/$baselink&display=".localize_image($lang, $episodes[count($episodes) - 1]);
+        $nextEpisode = "#";
+
+        for ($i = 0; $i < $number_of_episodes; $i++) {
+            if (basename($episodes[$i]) === $current) {
+                if ($i > 0) {
+                    $previousEpisode = "$lang/$baselink&display=".localize_image($lang, $episodes[$i - 1]);
+                }
+                if ($i < $number_of_episodes - 1) {
+                    $nextEpisode = "$lang/$baselink&display=".localize_image($lang, $episodes[$i + 1]);
+                }
+                break;
+            }
+        }
+
+        # Show the navigator
+        show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, '', '');
 
         # Write the viewer:
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
@@ -100,13 +194,15 @@ if(isset($_GET['page'])) {
             echo '<a href="'.$pagepath.'" ><img src="'.$pagepath.'" ></a><br/>';
         }
 
-        echo '<div class="button top">';
-        echo '    <a href="'.$lang.'/'.$baselink.'/" class="lang option">← Back to index</a>';
+        show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, 'button', 'button moka');
+        echo '<br/><br/>';
+
+        echo '<div class="button col sml-centered lrg-3">';
+        echo '    <a href="'.$lang.'/'.$baselink.'/" class="readernavbutton">← Back to index</a>';
         echo '</div>';
 
         echo '</section>';
-        echo '<br/><br/><br/><br/><br/>';
-
+        echo '<br/><br/><br/>';
     } else {
 
 # Thumbnails mode
