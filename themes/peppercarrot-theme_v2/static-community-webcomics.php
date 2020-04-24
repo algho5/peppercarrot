@@ -49,7 +49,7 @@ if(isset($_GET['page'])) {
               'website' => false));
 
     # We check if content exist for user with active lang selected
-    # When no lang available, display a message:
+    # When no lang available, display a message and force English version:
     if (!array_key_exists($lang, $availablelanguages)) {
       echo '<div class="grid">';
       echo '<br/><div class="col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center alert blue">';
@@ -57,7 +57,8 @@ if(isset($_GET['page'])) {
       echo $plxShow->Getlang(LIMITATIONS);
       echo '</div>';
       echo '</div>';
-
+      # Display English version.
+      $lang = "en";
     }
 
 # Image viewer mode : display the artwork
@@ -67,14 +68,15 @@ if(isset($_GET['page'])) {
 
     if (isset($_GET['display'])) {
         # Split language from rest of image name
-        preg_match('/^([a-z]{2})(_[A-Za-z-_]+_E\d+_.*)$/', $activeimage, $matches);
+        preg_match('/^([a-z]{2})((_[A-Za-z-_]+_E\d+)P01_[A-Za-z-]*.(jpg|gif))$/', $activeimage, $matches);
 
         # We get the wrong language from MyMultiLingueGetLang here, so setting it from this image
         $lang = $matches[1];
         $plxShow->callHook('MyMultiLingueSetLang', $lang);
 
-        // rm old lang
+        # Filename parts we'll need for the listing below
         $langimagewithoutlang = $matches[2];
+        $episodeprefixwithoutlang = $matches[3];
 
         # Language menu
         echo '<div class="grid">';
@@ -97,14 +99,15 @@ if(isset($_GET['page'])) {
         echo '<div style="clear:both;"></div> ';
 
         # Episode path + filename for localized version
-        $imagelink = $pathcommunityfolder.'/'.$activefolder.'/'.$activeimage;
-        if (!file_exists($imagelink)) {
+        $pages = glob($pathcommunityfolder.'/'.$activefolder.'/'.$lang.$episodeprefixwithoutlang.'*.???');
+
+        if (empty($pages)) {
             # Fall back to English
-            $imagelink = $pathcommunityfolder.'/'.$activefolder.'/en'.$langimagewithoutlang;
-              echo '<br/>';
-              echo '<div class="notice col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center">';
-              echo '  <img src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt="info:"/> English version <br/>(this episode is not yet available in your selected language.)';
-              echo '</div>';
+            $pages = glob($pathcommunityfolder.'/'.$activefolder.'/en'.$episodeprefixwithoutlang.'*.???');
+            echo '<br/>';
+            echo '<div class="notice col sml-12 med-10 lrg-6 sml-centered lrg-centered med-centered sml-text-center">';
+            echo '  <img src="themes/peppercarrot-theme_v2/ico/nfog.svg" alt="info:"/> English version <br/>(this episode is not yet available in your selected language.)';
+            echo '</div>';
         }
 
         # Write the viewer:
@@ -113,10 +116,12 @@ if(isset($_GET['page'])) {
         echo '</div>';
         echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
 
-        echo '<a href="'.$imagelink.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$imagelink.'&amp;w=970&amp&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+        foreach ($pages as $pagepath) {
+            echo '<a href="'.$pagepath.'" ><img src="'.$pagepath.'" ></a><br/>';
+        }
 
         echo '<div class="button top">';
-          echo '<a href="'.$lang.'/'.$baselink.'/" class="lang option">← Back to index</a>';
+        echo '    <a href="'.$lang.'/'.$baselink.'/" class="lang option">← Back to index</a>';
         echo '</div>';
 
         echo '</section>';
@@ -128,7 +133,6 @@ if(isset($_GET['page'])) {
 # ===============
 # (a "page" variable passed)
 # (no "display" variable passed)
-
 
         # Language menu
         echo '<div class="grid">';
@@ -176,13 +180,13 @@ if(isset($_GET['page'])) {
         $wordwrapchars = 40;
 
         # Display thumbnails with links, using English as reference locale
-        $search = glob($pathartworks.'/en_*.jpg');
+        $search = glob($pathartworks.'/en*P01*.jpg');
         rsort($search);
         # we loop on found episodes
         if (!empty($search)){
           foreach ($search as $fallback_filepath) {
             # Extract 1. filename without locale and 2. the episode number
-            preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E(\d+)_.*)$/', basename($fallback_filepath), $matches);
+            preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E(\d+)P01_[A-Za-z-]*.(jpg|gif))$/', basename($fallback_filepath), $matches);
 
             # episode path + filename for localized version
             $filename = $lang.$matches[1];
@@ -242,6 +246,7 @@ if(isset($_GET['page'])) {
   $hide = array('.', '..');
   $mainfolders = array_diff(scandir($pathcommunityfolder), $hide);
   sort($mainfolders);
+  # TODO add language support
 
   # we loop on found episodes
   foreach ($mainfolders as $folderpath) {
