@@ -21,6 +21,29 @@ $activeimage = preg_replace('/[^A-Za-z0-9\._-]/', '', $activeimage);
 $requestedlang = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedlang);
 $pathcommunityfolder = '0_sources/0ther/community';
 
+function communityComicData($pathartworks) {
+    # Get comic title for prefixing it to the episode number in navigator links
+    $parts = explode('_', basename($pathartworks));
+    $title = '';
+    $author = '';
+    $mode = 'title';
+    foreach ($parts as $part) {
+        if ($part === 'by') {
+            $mode = 'author';
+            continue;
+        }
+        if ($mode === 'title') {
+            $title .= str_replace('-', ' ', $part) . ' ';
+        } else {
+            $author .= str_replace('-', ' ', $part) . ' ';
+        }
+    }
+
+    return array(
+        'title' => $title,
+        'author' => $author
+    );
+}
 
 # Helper function for navigator
 function communityEpisodeData($lang, $baselink, $filepath, $titlePrefix) {
@@ -53,7 +76,7 @@ function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpis
 
   <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
     <div class="<?php echo ''.$buttonthemeActive.''; ?>">
-      <a class="readernavbutton" style="text-align:left;" href="<?php print($firstEpisode['link']); ?>" title="<?php print($firstEpisode['title']); ?>">
+      <a class="readernavbutton" style="text-align:left;" href="<?php print($firstEpisode['link']); ?>" alt="<?php print($firstEpisode['title']); ?>" title="<?php print($firstEpisode['title']); ?>">
         &nbsp; « &nbsp; <?php $plxShow->lang('FIRST') ?>
       </a>
     </div>
@@ -67,7 +90,7 @@ function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpis
             echo ''.$buttonthemeActive.'';
         }
     ?>">
-      <a class="readernavbutton" style="text-align:left;" href="<?php print($previousEpisode['link']); ?>" title="<?php print($previousEpisode['title']); ?>">
+      <a class="readernavbutton" style="text-align:left;" href="<?php print($previousEpisode['link']); ?>" alt="<?php print($previousEpisode['title']); ?>" title="<?php print($previousEpisode['title']); ?>">
         &nbsp; &lt; &nbsp; <?php $plxShow->lang('UTIL_PREVIOUS_EPISODE') ?>
       </a>
     </div>
@@ -81,7 +104,7 @@ function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpis
             echo ''.$buttonthemeActive.'';
         }
     ?>">
-      <a class="readernavbutton" style="text-align:right;" href="<?php print($nextEpisode['link']); ?>" title="<?php print($nextEpisode['title']); ?>">
+      <a class="readernavbutton" style="text-align:right;" href="<?php print($nextEpisode['link']); ?>" alt="<?php print($nextEpisode['title']); ?>" title="<?php print($nextEpisode['title']); ?>">
         <?php $plxShow->lang('UTIL_NEXT_EPISODE') ?>&nbsp; &gt; &nbsp;
       </a>
     </div>
@@ -89,7 +112,7 @@ function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpis
 
   <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
     <div class="<?php echo ''.$buttonthemeActive.''; ?>">
-      <a class="readernavbutton" style="text-align:right;" href="<?php print($lastEpisode['link']); ?>" title="<?php print($lastEpisode['title']); ?>">
+      <a class="readernavbutton" style="text-align:right;" href="<?php print($lastEpisode['link']); ?>" alt="<?php print($lastEpisode['title']); ?>" title="<?php print($lastEpisode['title']); ?>">
         <?php $plxShow->lang('LAST') ?>&nbsp; » &nbsp;
       </a>
     </div>
@@ -175,16 +198,13 @@ if(isset($_GET['page'])) {
         $episodes = glob($pathartworks.'/en*P01*.jpg');
 
         # Get comic title for prefixing it to the episode number in navigator links
-        $titleParts = explode('_', basename($pathartworks));
-        $titlePrefix = '';
-        foreach ($titleParts as $titlePart) {
-            if ($titlePart === 'by') {
-                break;
-            }
-            $titlePrefix .= str_replace('-', ' ', $titlePart) . ' ';
+        $data = communityComicData($pathartworks);
+        $titlePrefix = $data['title'];
+        if (!empty($data['author'])) {
+            $titlePrefix .= $ccbystring . ' ' . $data['author'];
         }
         if (!empty($titlePrefix)) {
-            $titlePrefix .= " – ";
+            $titlePrefix .= '– ';
         }
 
         # Get links with titles for navigator
@@ -258,14 +278,14 @@ if(isset($_GET['page'])) {
         echo '</div>';
         echo '<div style="clear:both;"></div> ';
 
-        # Display the title of the project and markdown:
-        $foldernameclean = str_replace('_', ' ', $activefolder);
-        $foldernameclean = str_replace('-', ' ', $foldernameclean);
-        $foldernameclean = str_replace('by', '</h2><span class="font-size: 0.5rem;">'.$ccbystring.'', $foldernameclean);
+        # Display the title of the project and markdown
+        $data = communityComicData($activefolder);
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
-        echo '<h2>'.$foldernameclean.'</span>';
-        $hide = array('.', '..');
-        $mainfolders = array_diff(scandir($pathartworks), $hide);
+        echo '<h2>'.$data['title'].'</h2>';
+        if (!empty($data['author'])) {
+            echo '<span class="font-size: 0.5rem;">' . $ccbystring . ' ' . $data['author'] . '</span>';
+        }
+
         if (file_exists($pathartworks.'/'.$lang.'_infos.md')) {
           $contents = file_get_contents($pathartworks.'/'.$lang.'_infos.md');
         } else {
@@ -360,18 +380,17 @@ if(isset($_GET['page'])) {
   # we loop on found episodes
   foreach ($mainfolders as $folderpath) {
     # Name extraction
-    $filename = basename($folderpath);
-    $filenameclean = str_replace('_', ' ', $filename);
-    $filenameclean = str_replace('-', ' ', $filenameclean);
-    $filenameclean = str_replace('featured', '', $filenameclean);
-    $filenameclean = str_replace('by', '</a><br/><span class="detail">'.$ccbystring.'', $filenameclean);
-    $filenamezip = str_replace('jpg', 'zip', $filename);
+    $data = communityComicData($folderpath);
+
     echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
     echo '<a href="'.$lang.'/static11/communitywebcomics&page='.$folderpath.'/" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
     echo '<figcaption class="text-center" >
     <a href="0_sources/0ther/fan-art/'.$filename.'" >
-    '.$filenameclean.'
-    '.$dateextracted.'</span><br/>
+    '.$data['title'].'</a>';
+    if (!empty($data['author'])) {
+        echo  '<br/><span class="detail">'.$ccbystring.' ' . $data['author'].'</span>';
+    }
+    echo '<br/>
     </figcaption>
     <br/><br/>';
     echo '</figure>';
