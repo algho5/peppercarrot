@@ -23,10 +23,15 @@ $pathcommunityfolder = '0_sources/0ther/community';
 
 
 # Helper function for navigator
-function localize_image($lang, $filepath) {
-    # Split language from rest of image name
-    preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E\d+P01_[A-Za-z-]*.(jpg|gif))$/', basename($filepath), $matches);
-    return $lang.$matches[1];
+function communityEpisodeData($lang, $baselink, $filepath, $titlePrefix) {
+    global $plxShow;
+
+    # Split language from rest of image name + get episode number
+    preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E(\d+)P01_[A-Za-z-]*.(jpg|gif))$/', basename($filepath), $matches);
+    return array(
+        'link' => "$lang/$baselink&display=".$lang.$matches[1],
+        'title' => $titlePrefix . $plxShow->getLang('UTIL_EPISODE') . ' ' . (int) $matches[2]
+    );
 }
 
 function show_navigator_back_button($link) {
@@ -38,18 +43,17 @@ function show_navigator_back_button($link) {
     ';
 }
 
-
+# TODO document
 function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, $buttonthemeActive, $buttonthemeInactive) {
     global $plxShow;
     # TODO more width
-    # TODO add titles
     ?>
 <div class="readernav col sml-12 med-12 lrg-12 sml-centered">
   <div class="grid">
 
   <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
     <div class="<?php echo ''.$buttonthemeActive.''; ?>">
-      <a class="readernavbutton" style="text-align:left;" href="<?php print($firstEpisode); ?>">
+      <a class="readernavbutton" style="text-align:left;" href="<?php print($firstEpisode['link']); ?>" title="<?php print($firstEpisode['title']); ?>">
         &nbsp; « &nbsp; <?php $plxShow->lang('FIRST') ?>
       </a>
     </div>
@@ -57,13 +61,13 @@ function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpis
 
   <div class="col sml-6 med-3 lrg-3">
     <div class="<?php
-        if ($previousEpisode === '#') {
+        if ($previousEpisode['link'] === '#') {
             echo ''.$buttonthemeInactive.' off';
         } else {
             echo ''.$buttonthemeActive.'';
         }
     ?>">
-      <a class="readernavbutton" style="text-align:left;" href="<?php print($previousEpisode); ?>">
+      <a class="readernavbutton" style="text-align:left;" href="<?php print($previousEpisode['link']); ?>" title="<?php print($previousEpisode['title']); ?>">
         &nbsp; &lt; &nbsp; <?php $plxShow->lang('UTIL_PREVIOUS_EPISODE') ?>
       </a>
     </div>
@@ -71,13 +75,13 @@ function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpis
 
   <div class="col sml-6 med-3 lrg-3">
     <div class="<?php
-        if ($nextEpisode === '#') {
+        if ($nextEpisode['link'] === '#') {
             echo ''.$buttonthemeInactive.' off';
         } else {
             echo ''.$buttonthemeActive.'';
         }
     ?>">
-      <a class="readernavbutton" style="text-align:right;" href="<?php print($nextEpisode); ?>">
+      <a class="readernavbutton" style="text-align:right;" href="<?php print($nextEpisode['link']); ?>" title="<?php print($nextEpisode['title']); ?>">
         <?php $plxShow->lang('UTIL_NEXT_EPISODE') ?>&nbsp; &gt; &nbsp;
       </a>
     </div>
@@ -85,7 +89,7 @@ function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpis
 
   <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
     <div class="<?php echo ''.$buttonthemeActive.''; ?>">
-      <a class="readernavbutton" style="text-align:right;" href="<?php print($lastEpisode); ?>">
+      <a class="readernavbutton" style="text-align:right;" href="<?php print($lastEpisode['link']); ?>" title="<?php print($lastEpisode['title']); ?>">
         <?php $plxShow->lang('LAST') ?>&nbsp; » &nbsp;
       </a>
     </div>
@@ -169,22 +173,41 @@ if(isset($_GET['page'])) {
 
         # Compute links for navigator
         $episodes = glob($pathartworks.'/en*P01*.jpg');
-        $number_of_episodes = count($episodes);
+
+        # Get comic title for prefixing it to the episode number in navigator links
+        $titleParts = explode('_', basename($pathartworks));
+        $titlePrefix = '';
+        foreach ($titleParts as $titlePart) {
+            if ($titlePart === 'by') {
+                break;
+            }
+            $titlePrefix .= str_replace('-', ' ', $titlePart) . ' ';
+        }
+        if (!empty($titlePrefix)) {
+            $titlePrefix .= " – ";
+        }
+
+        # Get links with titles for navigator
+        $firstEpisode = communityEpisodeData($lang, $baselink, $episodes[0], $titlePrefix);
+        $previousEpisode = array(
+            'link' => '#',
+            'title' => ''
+        );
+        $lastEpisode = communityEpisodeData($lang, $baselink, $episodes[count($episodes) - 1], $titlePrefix);
+        $nextEpisode = array(
+            'link' => '#',
+            'title' => ''
+        );
 
         $current = 'en'.$langimagewithoutlang;
-
-        $firstEpisode = "$lang/$baselink&display=".localize_image($lang, $episodes[0]);
-        $previousEpisode = "#";
-        $lastEpisode = "$lang/$baselink&display=".localize_image($lang, $episodes[count($episodes) - 1]);
-        $nextEpisode = "#";
-
+        $number_of_episodes = count($episodes);
         for ($i = 0; $i < $number_of_episodes; $i++) {
             if (basename($episodes[$i]) === $current) {
                 if ($i > 0) {
-                    $previousEpisode = "$lang/$baselink&display=".localize_image($lang, $episodes[$i - 1]);
+                    $previousEpisode = communityEpisodeData($lang, $baselink, $episodes[$i - 1], $titlePrefix);
                 }
                 if ($i < $number_of_episodes - 1) {
-                    $nextEpisode = "$lang/$baselink&display=".localize_image($lang, $episodes[$i + 1]);
+                    $nextEpisode = communityEpisodeData($lang, $baselink, $episodes[$i + 1], $titlePrefix);
                 }
                 break;
             }
