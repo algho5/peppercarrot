@@ -21,9 +21,17 @@ $activeimage = preg_replace('/[^A-Za-z0-9\._-]/', '', $activeimage);
 $requestedlang = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedlang);
 $pathcommunityfolder = '0_sources/0ther/community';
 
-function communityComicData($pathartworks) {
-    # Get comic title for prefixing it to the episode number in navigator links
-    $parts = explode('_', basename($pathartworks));
+/**
+ * Get comic name and author from file path.
+ *
+ * @author GunChleoc
+ *
+ * @param string path  A filepath with the format:
+ *                     some/directories/Community-Comic-Name_by_Author-Name
+ * @return array with keys 'title' and 'author'
+ */
+function communityComicData($path) {
+    $parts = explode('_', basename($path));
     $title = '';
     $author = '';
     $mode = 'title';
@@ -45,18 +53,35 @@ function communityComicData($pathartworks) {
     );
 }
 
-# Helper function for navigator
+/**
+ * Helper function for navigator: Get link url & title for an episode
+ *
+ * @author GunChleoc
+ *
+ * @param string lang         The target locale, e.g. 'fr'
+ * @param string baselink     The link base without localization, e.g.
+ *                            'static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance'
+ * @param string filepath     Episode filename including locale, e.g.
+ *                            'fr_PCMINI_E26P01_by-Nartance.jpg'
+ * @param string titlePrefix  A prefix for the link title, e.g.
+ *                            'Pepper & Carrot by Nartance'
+ *
+ * @return array with keys 'url' & 'title'
+ */
 function communityEpisodeData($lang, $baselink, $filepath, $titlePrefix) {
     global $plxShow;
 
     # Split language from rest of image name + get episode number
     preg_match('/^[a-z]{2}(_[A-Za-z-_]+_E(\d+)P01_[A-Za-z-]*.(jpg|gif))$/', basename($filepath), $matches);
     return array(
-        'link' => "$lang/$baselink&display=".$lang.$matches[1],
+        'url' => "$lang/$baselink&display=".$lang.$matches[1],
         'title' => $titlePrefix . $plxShow->getLang('UTIL_EPISODE') . ' ' . (int) $matches[2]
     );
 }
 
+/**
+ * HTML markup for "Back to index" button on bottom of page
+ */
 function show_navigator_back_button($link) {
     echo '
     <div style="clear:both;"></div>
@@ -66,7 +91,18 @@ function show_navigator_back_button($link) {
     ';
 }
 
-# TODO document
+/**
+ * Shows a horizontal First/Previous/Next/Last navigator.
+ * Adapted from vignette->artPrevNext.
+ *
+ * @param  firstEpisode         communityEpisodeData()  link info for first episode
+ * @param  previousEpisode      communityEpisodeData()  link info for previous episode
+ * @param  nextEpisode          communityEpisodeData()  link info for next episode
+ * @param  lastEpisode          communityEpisodeData()  link info for last episode
+ * @param  buttonthemeActive    string                  css class for active links
+ * @param  buttonthemeInactive  string                  css class for deactivated links
+ *
+ */
 function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, $buttonthemeActive, $buttonthemeInactive) {
     global $plxShow;
     # TODO more width
@@ -76,7 +112,7 @@ function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpis
 
   <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
     <div class="<?php echo ''.$buttonthemeActive.''; ?>">
-      <a class="readernavbutton" style="text-align:left;" href="<?php print($firstEpisode['link']); ?>" alt="<?php print($firstEpisode['title']); ?>" title="<?php print($firstEpisode['title']); ?>">
+      <a class="readernavbutton" style="text-align:left;" href="<?php print($firstEpisode['url']); ?>" alt="<?php print($firstEpisode['title']); ?>" title="<?php print($firstEpisode['title']); ?>">
         &nbsp; « &nbsp; <?php $plxShow->lang('FIRST') ?>
       </a>
     </div>
@@ -90,7 +126,7 @@ function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpis
             echo ''.$buttonthemeActive.'';
         }
     ?>">
-      <a class="readernavbutton" style="text-align:left;" href="<?php print($previousEpisode['link']); ?>" alt="<?php print($previousEpisode['title']); ?>" title="<?php print($previousEpisode['title']); ?>">
+      <a class="readernavbutton" style="text-align:left;" href="<?php print($previousEpisode['url']); ?>" alt="<?php print($previousEpisode['title']); ?>" title="<?php print($previousEpisode['title']); ?>">
         &nbsp; &lt; &nbsp; <?php $plxShow->lang('UTIL_PREVIOUS_EPISODE') ?>
       </a>
     </div>
@@ -104,7 +140,7 @@ function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpis
             echo ''.$buttonthemeActive.'';
         }
     ?>">
-      <a class="readernavbutton" style="text-align:right;" href="<?php print($nextEpisode['link']); ?>" alt="<?php print($nextEpisode['title']); ?>" title="<?php print($nextEpisode['title']); ?>">
+      <a class="readernavbutton" style="text-align:right;" href="<?php print($nextEpisode['url']); ?>" alt="<?php print($nextEpisode['title']); ?>" title="<?php print($nextEpisode['title']); ?>">
         <?php $plxShow->lang('UTIL_NEXT_EPISODE') ?>&nbsp; &gt; &nbsp;
       </a>
     </div>
@@ -112,7 +148,7 @@ function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpis
 
   <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
     <div class="<?php echo ''.$buttonthemeActive.''; ?>">
-      <a class="readernavbutton" style="text-align:right;" href="<?php print($lastEpisode['link']); ?>" alt="<?php print($lastEpisode['title']); ?>" title="<?php print($lastEpisode['title']); ?>">
+      <a class="readernavbutton" style="text-align:right;" href="<?php print($lastEpisode['url']); ?>" alt="<?php print($lastEpisode['title']); ?>" title="<?php print($lastEpisode['title']); ?>">
         <?php $plxShow->lang('LAST') ?>&nbsp; » &nbsp;
       </a>
     </div>
