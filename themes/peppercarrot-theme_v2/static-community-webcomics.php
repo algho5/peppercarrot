@@ -82,7 +82,7 @@ function communityEpisodeData($lang, $baselink, $filepath, $titlePrefix) {
 /**
  * HTML markup for "Back to index" button on bottom of page
  */
-function show_navigator_back_button($link) {
+function showNavigatorBackButton($link) {
     echo '
     <div style="clear:both;"></div>
     <div class="button col sml-centered lrg-3" style="display:block">
@@ -103,9 +103,8 @@ function show_navigator_back_button($link) {
  * @param  buttonthemeInactive  string                  css class for deactivated links
  *
  */
-function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, $buttonthemeActive, $buttonthemeInactive) {
+function showNavigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, $buttonthemeActive, $buttonthemeInactive) {
     global $plxShow;
-    # TODO more width
     ?>
 <div class="readernav col sml-12 med-12 lrg-12 sml-centered">
   <div class="grid">
@@ -217,7 +216,6 @@ if(isset($_GET['page'])) {
         echo '</div>';
         echo '<div style="clear:both;"></div> ';
 
-
         # Episode path + filename for localized version
         $pages = glob($pathcommunityfolder.'/'.$activefolder.'/'.$lang.$episodeprefixwithoutlang.'*.???');
 
@@ -249,11 +247,11 @@ if(isset($_GET['page'])) {
             'link' => '#',
             'title' => ''
         );
-        $lastEpisode = communityEpisodeData($lang, $baselink, $episodes[count($episodes) - 1], $titlePrefix);
         $nextEpisode = array(
             'link' => '#',
             'title' => ''
         );
+        $lastEpisode = communityEpisodeData($lang, $baselink, $episodes[count($episodes) - 1], $titlePrefix);
 
         $current = 'en'.$langimagewithoutlang;
         $number_of_episodes = count($episodes);
@@ -270,7 +268,7 @@ if(isset($_GET['page'])) {
         }
 
         # Show the navigator
-        show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, '', '');
+        showNavigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, '', '');
 
         # Write the viewer:
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
@@ -282,10 +280,10 @@ if(isset($_GET['page'])) {
             echo '<a href="'.$pagepath.'" ><img src="'.$pagepath.'" ></a><br/>';
         }
 
-        show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, 'button', 'button moka');
+        showNavigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, 'button', 'button moka');
         echo '<br/><br/>';
 
-        show_navigator_back_button($lang.'/'.$baselink.'/');
+        showNavigatorBackButton($lang.'/'.$baselink.'/');
 
         echo '</section>';
         echo '<br/><br/><br/>';
@@ -394,7 +392,7 @@ if(isset($_GET['page'])) {
         }
 
         # Link back to main menu
-        show_navigator_back_button($lang.'/static11/communitywebcomics/');
+        showNavigatorBackButton($lang.'/static11/communitywebcomics/');
         echo '</section>';
         echo '<br/><br/><br/>';
     }
