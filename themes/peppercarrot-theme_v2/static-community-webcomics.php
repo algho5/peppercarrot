@@ -29,6 +29,15 @@ function localize_image($lang, $filepath) {
     return $lang.$matches[1];
 }
 
+function show_navigator_back_button($link) {
+    echo '
+    <div style="clear:both;"></div>
+    <div class="button col sml-centered lrg-3" style="display:block">
+        <a href="'.$link.'" class="readernavbutton">← Back to index</a>
+    </div>
+    ';
+}
+
 
 function show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, $buttonthemeActive, $buttonthemeInactive) {
     global $plxShow;
@@ -197,9 +206,7 @@ if(isset($_GET['page'])) {
         show_navigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, 'button', 'button moka');
         echo '<br/><br/>';
 
-        echo '<div class="button col sml-centered lrg-3">';
-        echo '    <a href="'.$lang.'/'.$baselink.'/" class="readernavbutton">← Back to index</a>';
-        echo '</div>';
+        show_navigator_back_button($lang.'/'.$baselink.'/');
 
         echo '</section>';
         echo '<br/><br/><br/>';
@@ -306,7 +313,11 @@ if(isset($_GET['page'])) {
             echo $row;
           }
         }
+
+        # Link back to main menu
+        show_navigator_back_button($lang.'/static11/communitywebcomics/');
         echo '</section>';
+        echo '<br/><br/><br/>';
     }
 
 } else {
