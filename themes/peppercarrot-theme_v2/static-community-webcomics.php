@@ -165,11 +165,9 @@ if(isset($_GET['page'])) {
 
     # We can't count on contributions having a structured git repo, so we list the contribution links here.
     # Empty link means don't show any "add a translation" buttons for ths active folder.
-    $contributionlinks = array(
-        'Pepper-and-Carrot_by_Holger-Kraemer' => '',
-        'Pepper-and-Carrot-Mini_by_Nartance' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
-    );
-    $contributionlink = $contributionlinks[$activefolder];
+    $episode_info = json_decode(file_get_contents($pathartworks.'/links.json'));
+    $translation_documentation = $episode_info->{'translation-documentation'};
+    $git_repository = $episode_info->{'git-repository'};
 
 
 # Image viewer mode : display the artwork
@@ -201,7 +199,7 @@ if(isset($_GET['page'])) {
                         'pageurl' => '{LANG}/'.$baselink.'&display={LANG}'.$langimagewithoutlang,
                         'testdir' => $pathartworks,
                         'includewebsite' => false,
-                        'contributionlink' => $contributionlink
+                        'contributionlink' => $translation_documentation
                 )));
               echo '</div>';
             echo '</nav>';
@@ -297,7 +295,7 @@ if(isset($_GET['page'])) {
                         'testdir' => $pathartworks,
                         'includewebsite' => false,
                         'statstemplate' => $pathartworks.'/{LANG}_[A-Za-z-]*_E[0-9][0-9]*[A-Za-z_-]*.jpg',
-                        'contributionlink' => $contributionlink
+                        'contributionlink' => $translation_documentation
                 )));
               echo '</div>';
             echo '</nav>';
