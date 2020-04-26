@@ -43,7 +43,11 @@ include(dirname(__FILE__) . '/header.php');
       </article>
 
       <?php
-        showBottomArticleLinks();
+        showBottomArticleLinks(
+          $plxShow->callHook('MyMultiLingueSourceLink'),
+          $plxShow->callHook('MyMultiLingueCommentLink'),
+          $plxShow->callHook('MyMultiLingueFramagitLink')
+        );
       ?>
 
     </section>

@@ -87,12 +87,8 @@ if(isset($_GET['page'])) {
 
     $baselink = "static11/communitywebcomics&page=$activefolder";
 
-    # We can't count on contributions having a structured git repo, so we list the contribution links here.
-    # Empty link means don't show any "add a translation" buttons for ths active folder.
+    # Community art can contribute a json file with links to their repo
     $episode_info = json_decode(file_get_contents($pathartworks.'/links.json'));
-    $translation_documentation = $episode_info->{'translation-documentation'};
-    $git_repository = $episode_info->{'git-repository'};
-
 
 # Image viewer mode : display the artwork
 # =======================================
@@ -123,7 +119,7 @@ if(isset($_GET['page'])) {
                         'pageurl' => '{LANG}/'.$baselink.'&display={LANG}'.$langimagewithoutlang,
                         'testdir' => $pathartworks,
                         'includewebsite' => false,
-                        'contributionlink' => $translation_documentation
+                        'contributionlink' => $episode_info->{'translation-documentation'}
                 )));
               echo '</div>';
             echo '</nav>';
@@ -197,7 +193,10 @@ if(isset($_GET['page'])) {
             echo '<a href="'.$pagepath.'" ><img src="'.$pagepath.'" ></a><br/>';
         }
 
-        showNavigator($navigator_links, 'button', 'button moka');
+        echo '<br/><br/>';
+
+        showBottomArticleLinks($pathartworks, array(), $episode_info->{'git-repository'}, $navigator_links);
+
         echo '<br/><br/>';
 
         showNavigatorBackButton($lang.'/'.$baselink.'/');
@@ -221,7 +220,7 @@ if(isset($_GET['page'])) {
                         'testdir' => $pathartworks,
                         'includewebsite' => false,
                         'statstemplate' => $pathartworks.'/{LANG}_[A-Za-z-]*_E[0-9][0-9]*[A-Za-z_-]*.jpg',
-                        'contributionlink' => $translation_documentation
+                        'contributionlink' => $episode_info->{'translation-documentation'}
                 )));
               echo '</div>';
             echo '</nav>';
@@ -332,12 +331,12 @@ if(isset($_GET['page'])) {
   foreach ($mainfolders as $folderpath) {
     # Name extraction
     $data = communityComicData($folderpath);
+    $link = $lang.'/static11/communitywebcomics&page='.$folderpath.'/';
 
     echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-    echo '<a href="'.$lang.'/static11/communitywebcomics&page='.$folderpath.'/" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    echo '<a href="'.$link.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
     echo '<figcaption class="text-center" >
-    <a href="'.$pathcommunityfolder.'/'.$folderpath.'/" >
-    '.$data['title'].'</a>';
+    <a href="'.$link.'" >'.$data['title'].'</a>';
     if (!empty($data['author'])) {
         echo  '<br/><span class="detail">'.$ccbystring.' ' . $data['author'].'</span>';
     }
