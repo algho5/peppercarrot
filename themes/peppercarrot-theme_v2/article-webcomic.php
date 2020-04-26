@@ -1,5 +1,8 @@
 <?php
+if(!defined('PLX_ROOT')) exit;
+
 include_once(dirname(__FILE__).'/bottom_links.php');
+include_once(dirname(__FILE__).'/navigation.php');
 
 include(dirname(__FILE__) . '/header.php');
 
@@ -31,11 +34,7 @@ include(dirname(__FILE__) . '/header.php');
 
         <?php eval($plxShow->callHook('MyMultiLingueComicHeader')) ?>
 
-        <?php
-        $buttonthemeA = '';
-        $buttonthemeB = '';
-        include(dirname(__FILE__).'/navigation.php');
-        ?>
+        <?php showWebcomicNavigator('', ''); ?>
 
         <section class="text-center">
           <?php eval($plxShow->callHook('MyMultiLingueComicDisplay')) ?>

@@ -1,5 +1,9 @@
 <?php
-function showBottomArticleLinks() {
+if(!defined('PLX_ROOT')) exit;
+
+include_once(dirname(__FILE__).'/navigation.php');
+
+function showBottomArticleLinks($navigator_links = array()) {
   global $plxShow;
   ?>
 <div class="content">
@@ -55,9 +59,12 @@ function showBottomArticleLinks() {
       </div>
 
     <?php
-    $buttonthemeA = 'button';
-    $buttonthemeB = 'button moka';
-    include(dirname(__FILE__).'/navigation.php');
+      if (empty($navigator_links)) {
+        showWebcomicNavigator('button', 'button moka');
+
+      } else {
+        showNavigator($navigator_links, 'button', 'button moka');
+      }
     ?>
       <br/>
 
