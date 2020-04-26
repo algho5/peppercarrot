@@ -31,25 +31,18 @@ $pathcommunityfolder = '0_sources/0ther/community';
  * @return array with keys 'title' and 'author'
  */
 function communityComicData($path) {
-    $parts = explode('_', basename($path));
-    $title = '';
-    $author = '';
-    $mode = 'title';
-    foreach ($parts as $part) {
-        if ($part === 'by') {
-            $mode = 'author';
-            continue;
-        }
-        if ($mode === 'title') {
-            $title .= str_replace('-', ' ', $part) . ' ';
-        } else {
-            $author .= str_replace('-', ' ', $part) . ' ';
-        }
+    $parts = explode('_by_', basename($path));
+    # In case the filename isn't well-formed
+    if (count($parts) != 2) {
+        return array(
+            'title' => str_replace('-', ' ', str_replace('_', ' ', $path)),
+            'author' => ''
+        );
     }
 
     return array(
-        'title' => $title,
-        'author' => $author
+        'title' => str_replace('-', ' ', $parts[0]),
+        'author' => str_replace('-', ' ', $parts[1])
     );
 }
 
