@@ -412,7 +412,7 @@ if(isset($_GET['page'])) {
     echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
     echo '<a href="'.$lang.'/static11/communitywebcomics&page='.$folderpath.'/" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
     echo '<figcaption class="text-center" >
-    <a href="0_sources/0ther/fan-art/'.$filename.'" >
+    <a href="'.$pathcommunityfolder.'/'.$folderpath.'/" >
     '.$data['title'].'</a>';
     if (!empty($data['author'])) {
         echo  '<br/><span class="detail">'.$ccbystring.' ' . $data['author'].'</span>';
