@@ -1078,26 +1078,27 @@ class plxMyMultiLingue extends plxPlugin {
       if ($showstats) {
         # Calculate statistics and add info to link title & text
 
-        # Use flat 10% for website statistics
-        $websitetranslated = $includewebsite && $langinfo->websitetranslated ? 10 : 0;
-
         # Get episode folders for statistics
         $translationcompletion = count(glob(str_replace('{LANG}', $lang, $statstemplate)));
 
-        $percent = ( $translationcompletion / $totalepisodecount ) * ($includewebsite ? 90 : 100) + $websitetranslated;
+        $percent = ( $translationcompletion / $totalepisodecount ) * 100;
         $percent = round($percent, 0);
 
         $LangString .= ' title=\"'.$translationcompletion.' of '.$totalepisodecount.' episodes translated';
         if ($includewebsite) {
-          if ($websitetranslated == 10 ) {
-            $LangString .= ', website is translated.';
-          } else {
-            $LangString .= ', website is not translated.';
+          if ($includewebsite) {
+            if ($langinfo->websitetranslated) {
+              $LangString .= ', website is translated.';
+            } else {
+              $LangString .= ', website is not translated.';
+            }
           }
         }
         $LangString .= '\">'.$langinfo->{'local_name'}.' ';
         $LangString .= '<span class=\"percent\" >'.$percent.'%</span> ';
-        if ($percent == 100 ) {
+
+        # Show congratulations if website + 100% of the comic have been translated
+        if ($percent == 100 && (!$includewebsite || $langinfo->websitetranslated)) {
           $LangString .= '<img src=\"themes/peppercarrot-theme_v2/ico/star.svg\" alt=\"star,\" title=\"Translation complete! Congratulations.\"/>';
         }
       } else {
