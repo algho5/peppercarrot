@@ -218,7 +218,6 @@ if(isset($_GET['page'])) {
                 eval($plxShow->callHook('MyMultiLingueLanguageMenu', array(
                         'pageurl' => '{LANG}/'.$baselink,
                         'testdir' => $pathartworks,
-                        'includewebsite' => false,
                         'statstemplate' => $pathartworks.'/{LANG}_[A-Za-z-]*_E[0-9][0-9]*[A-Za-z_-]*.jpg',
                         'contributionlink' => $episode_info->{'translation-documentation'}
                 )));
