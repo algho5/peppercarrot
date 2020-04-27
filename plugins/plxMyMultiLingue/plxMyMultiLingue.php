@@ -1060,15 +1060,12 @@ class plxMyMultiLingue extends plxPlugin {
       $contributionlink = '?static14/documentation&page=010_Translate_the_comic';
     }
 
-    $langlabel = "English";
-
     $plxShow = plxShow::getInstance();
 
     # Collect language entries
     foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
       $sel = '';
       if ($this->lang === $lang) {
-        $langlabel = $langinfo->{'local_name'};
         $sel = ' active';
       }
 
@@ -1113,7 +1110,7 @@ class plxMyMultiLingue extends plxPlugin {
 
     # Print menu
     ?>
-    <label for="langmenu" style="display: inline-block;"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
+    <label for="langmenu" style="display: inline-block;"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $this->languageConfig->{$this->lang}->{'local_name'} ?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
     <input type="checkbox" id="langmenu">
     <ul class="langmenu expanded">
       <?php echo $LangString;
