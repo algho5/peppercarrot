@@ -1060,15 +1060,12 @@ class plxMyMultiLingue extends plxPlugin {
       $contributionlink = '?static14/documentation&page=010_Translate_the_comic';
     }
 
-    $langlabel = "English";
-
     $plxShow = plxShow::getInstance();
 
     # Collect language entries
     foreach($this->getAvailableLanguagesForPage($testdir, $includewebsite) as $lang => $langinfo) {
       $sel = '';
       if ($this->lang === $lang) {
-        $langlabel = $langinfo->{'local_name'};
         $sel = ' active';
       }
 
@@ -1081,26 +1078,27 @@ class plxMyMultiLingue extends plxPlugin {
       if ($showstats) {
         # Calculate statistics and add info to link title & text
 
-        # Use flat 10% for website statistics
-        $websitetranslated = $includewebsite && $langinfo->websitetranslated ? 10 : 0;
-
         # Get episode folders for statistics
         $translationcompletion = count(glob(str_replace('{LANG}', $lang, $statstemplate)));
 
-        $percent = ( $translationcompletion / $totalepisodecount ) * ($includewebsite ? 90 : 100) + $websitetranslated;
+        $percent = ( $translationcompletion / $totalepisodecount ) * 100;
         $percent = round($percent, 0);
 
         $LangString .= ' title=\"'.$translationcompletion.' of '.$totalepisodecount.' episodes translated';
         if ($includewebsite) {
-          if ($websitetranslated == 10 ) {
-            $LangString .= ', website is translated.';
-          } else {
-            $LangString .= ', website is not translated.';
+          if ($includewebsite) {
+            if ($langinfo->websitetranslated) {
+              $LangString .= ', website is translated.';
+            } else {
+              $LangString .= ', website is not translated.';
+            }
           }
         }
         $LangString .= '\">'.$langinfo->{'local_name'}.' ';
         $LangString .= '<span class=\"percent\" >'.$percent.'%</span> ';
-        if ($percent == 100 ) {
+
+        # Show congratulations if website + 100% of the comic have been translated
+        if ($percent == 100 && (!$includewebsite || $langinfo->websitetranslated)) {
           $LangString .= '<img src=\"themes/peppercarrot-theme_v2/ico/star.svg\" alt=\"star,\" title=\"Translation complete! Congratulations.\"/>';
         }
       } else {
@@ -1113,7 +1111,7 @@ class plxMyMultiLingue extends plxPlugin {
 
     # Print menu
     ?>
-    <label for="langmenu" style="display: inline-block;"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $langlabel;?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
+    <label for="langmenu" style="display: inline-block;"><span class="translabutton"><img src="themes/peppercarrot-theme_v2/ico/language.svg" alt=""/> <?php echo $this->languageConfig->{$this->lang}->{'local_name'} ?><img src="themes/peppercarrot-theme_v2/ico/dropdown.svg" alt=""/></span></label>
     <input type="checkbox" id="langmenu">
     <ul class="langmenu expanded">
       <?php echo $LangString;
