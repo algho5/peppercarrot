@@ -215,8 +215,37 @@ class Comic {
 
     $comicpage_link = $this->pagefiles[$comicpage_number];
 
-    # Build a useful alternative link in case of a page not loading...
-    $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$this->episode_number.' ['.$lang.'], '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
+    # Build a useful alternative link in case of a page not loading, and for screen readers
+    if (!$this->transcript_button->status() && file_exists($this->transcripts[$comicpage_number])) {
+      # If we're not displaying the transcript anyway, put it in the alt text.
+      $transcript = file_get_contents($this->transcripts[$comicpage_number]);
+
+      $comicpage_alt = '';
+
+      # Strip HTML markup
+      $lines = explode("\n", $transcript);
+      foreach ($lines as $line) {
+          $patterns = array(
+          '/<dt><strong>(.*)<\/strong><\/dt>/ui',
+          '/<dd>(.*)<\/dd>/ui'
+          );
+            $replacements = array(
+            '\\1: ',
+            '\\1. '
+          );
+
+          $line = preg_replace($patterns, $replacements, trim($line));
+          $comicpage_alt .= $line;
+      }
+      $comicpage_alt = trim(preg_replace('/\s*<dl>(.*)<\/dl>\s*/i', '\\1', $comicpage_alt));
+
+    } else if ($comicpage_number > 0) {
+      $comicpage_alt = $plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
+    } else {
+      # TODO replace with title from JSON and translate Pepper&amp;Carrot
+      $comicpage_alt = 'Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$this->episode_number;
+    }
+
     # Define the anchor link
     $comicpage_anchorlink = ''.$plxShow->Getlang('UTIL_PAGE').''.$comicpage_number.'';
     # Get the geometry size of the comic page for correct display ratio on HTML
@@ -1182,11 +1211,6 @@ class plxMyMultiLingue extends plxPlugin {
         if ($this->comic->transcript_button->status()) {
           # User requested transcript, so we show it
           readfile($this->comic->transcripts[$comicpage_number]);
-        } else {
-          # Show tiny text anyway so that screen readers can pick it up
-          echo '<div class="hidden">';
-          readfile($this->comic->transcripts[$comicpage_number]);
-          echo '</div>';
         }
       }
     }
@@ -1246,11 +1270,6 @@ class plxMyMultiLingue extends plxPlugin {
           echo ''.$plxShow->Getlang('NAVIGATION_TRANSCRIPT_UNAVAILABLE').'';
         echo '</div>';
       }
-    } else if ($transcript_exists) {
-      # User didn't request a transcript, but we show it for screen readers anyway.
-      echo '<div class="hidden">';
-      readfile($this->comic->transcripts[0]);
-      echo '</div>';
     }
   }
 
