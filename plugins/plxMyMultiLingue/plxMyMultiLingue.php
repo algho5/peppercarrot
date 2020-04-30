@@ -206,7 +206,7 @@ class Comic {
    *
    * @return void
    */
-  public function displayPage($comicpage_number, $lang, $plxShow) {
+  public function displayPage($comicpage_number, $lang, $directory, $plxShow) {
     if ($this->episode_number < 1) {
       # Just in case we forgot to call initialize
       echo '<div>Something went wrong with collecting the episode data. This should not have happened.</div>';
@@ -242,8 +242,14 @@ class Comic {
     } else if ($comicpage_number > 0) {
       $comicpage_alt = $plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
     } else {
-      # TODO replace with title from JSON and translate Pepper&amp;Carrot
-      $comicpage_alt = 'Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$this->episode_number;
+      # Get the title from json if available
+      $titles = json_decode(file_get_contents($directory.'/hi-res/titles.json'));
+      $comicpage_alt = $titles->{$this->usedlang};
+
+      if (empty($comicpage_alt)) {
+        # Fall back to constructed string
+        $comicpage_alt = $plxShow->Getlang('UTIL_EPISODE').' '.$this->episode_number;
+      }
     }
 
     # Define the anchor link
@@ -1204,7 +1210,7 @@ class plxMyMultiLingue extends plxPlugin {
 
     # For all remaining pages, show image and transcript
     foreach ($keys as $comicpage_number) {
-      $this->comic->displayPage($comicpage_number, $this->lang, $plxShow);
+      $this->comic->displayPage($comicpage_number, $this->lang, $this->episodeData()['directory'], $plxShow);
 
       # Include html file with transcript if available
       if (array_key_exists($comicpage_number, $this->comic->transcripts)) {
@@ -1240,7 +1246,7 @@ class plxMyMultiLingue extends plxPlugin {
       echo '</div>';
     }
 
-    $this->comic->displayPage(0, $this->lang, $plxShow);
+    $this->comic->displayPage(0, $this->lang, $this->episodeData()['directory'], $plxShow);
 
     $transcript_exists = array_key_exists(0, $this->comic->transcripts);
 
