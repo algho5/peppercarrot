@@ -1197,11 +1197,28 @@ class plxMyMultiLingue extends plxPlugin {
         if ($this->comic->transcript_button->status()) {
           # User requested transcript, so we show it
           readfile($this->comic->transcripts[$comicpage_number]);
-        } else {
-          # Show tiny text anyway so that screen readers can pick it up
-          echo '<div class="hidden">';
-          readfile($this->comic->transcripts[$comicpage_number]);
-          echo '</div>';
+        } else if (file_exists($this->comic->transcripts[$comicpage_number])) {
+          # Show hidden text anyway so that screen readers can pick it up
+          $transcript = file_get_contents($this->comic->transcripts[$comicpage_number]);
+
+          # Change description list entries into paragraphs to make screen readers less noisy
+          $transcript_text = '';
+          $lines = explode("\n", $transcript);
+          foreach ($lines as $line) {
+              $patterns = array(
+              '/<dt><strong>(.*)<\/strong><\/dt>/ui',
+              '/<dd>(.*)<\/dd>/ui'
+              );
+                $replacements = array(
+                '</p><p></p>\\1: ',
+                '\\1.<br />'
+              );
+
+              $line = preg_replace($patterns, $replacements, trim($line));
+              $transcript_text .= $line;
+          }
+          $transcript_text = trim(preg_replace('/\s*<dl>(.*)<\/dl>\s*/i', '<p>\\1</p>', $transcript_text));
+          print('<div class="hidden">' . $transcript_text . '</div>');
         }
       }
     }
