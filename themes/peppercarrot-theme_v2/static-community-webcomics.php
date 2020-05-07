@@ -1,4 +1,6 @@
-<?php include(dirname(__FILE__).'/header.php');
+<?php if(!defined('PLX_ROOT')) exit;
+
+include(dirname(__FILE__).'/header.php');
 # add library to parse markdown files
 include(dirname(__FILE__).'/lib-parsedown.php');
 
@@ -31,25 +33,18 @@ $pathcommunityfolder = '0_sources/0ther/community';
  * @return array with keys 'title' and 'author'
  */
 function communityComicData($path) {
-    $parts = explode('_', basename($path));
-    $title = '';
-    $author = '';
-    $mode = 'title';
-    foreach ($parts as $part) {
-        if ($part === 'by') {
-            $mode = 'author';
-            continue;
-        }
-        if ($mode === 'title') {
-            $title .= str_replace('-', ' ', $part) . ' ';
-        } else {
-            $author .= str_replace('-', ' ', $part) . ' ';
-        }
+    $parts = explode('_by_', basename($path));
+    # In case the filename isn't well-formed
+    if (count($parts) != 2) {
+        return array(
+            'title' => str_replace('-', ' ', str_replace('_', ' ', $path)),
+            'author' => ''
+        );
     }
 
     return array(
-        'title' => $title,
-        'author' => $author
+        'title' => str_replace('-', ' ', $parts[0]),
+        'author' => str_replace('-', ' ', $parts[1])
     );
 }
 
@@ -79,85 +74,6 @@ function communityEpisodeData($lang, $baselink, $filepath, $titlePrefix) {
     );
 }
 
-/**
- * HTML markup for "Back to index" button on bottom of page
- */
-function showNavigatorBackButton($link) {
-    echo '
-    <div style="clear:both;"></div>
-    <div class="button col sml-centered lrg-3" style="display:block">
-        <a href="'.$link.'" class="readernavbutton">← Back to index</a>
-    </div>
-    ';
-}
-
-/**
- * Shows a horizontal First/Previous/Next/Last navigator.
- * Adapted from vignette->artPrevNext.
- *
- * @param  firstEpisode         communityEpisodeData()  link info for first episode
- * @param  previousEpisode      communityEpisodeData()  link info for previous episode
- * @param  nextEpisode          communityEpisodeData()  link info for next episode
- * @param  lastEpisode          communityEpisodeData()  link info for last episode
- * @param  buttonthemeActive    string                  css class for active links
- * @param  buttonthemeInactive  string                  css class for deactivated links
- *
- */
-function showNavigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, $buttonthemeActive, $buttonthemeInactive) {
-    global $plxShow;
-    ?>
-<div class="readernav col sml-12 med-12 lrg-12 sml-centered">
-  <div class="grid">
-
-  <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
-    <div class="<?php echo ''.$buttonthemeActive.''; ?>">
-      <a class="readernavbutton" style="text-align:left;" href="<?php print($firstEpisode['url']); ?>" alt="<?php print($firstEpisode['title']); ?>" title="<?php print($firstEpisode['title']); ?>">
-        &nbsp; « &nbsp; <?php $plxShow->lang('FIRST') ?>
-      </a>
-    </div>
-  </div>
-
-  <div class="col sml-6 med-3 lrg-3">
-    <div class="<?php
-        if ($previousEpisode['link'] === '#') {
-            echo ''.$buttonthemeInactive.' off';
-        } else {
-            echo ''.$buttonthemeActive.'';
-        }
-    ?>">
-      <a class="readernavbutton" style="text-align:left;" href="<?php print($previousEpisode['url']); ?>" alt="<?php print($previousEpisode['title']); ?>" title="<?php print($previousEpisode['title']); ?>">
-        &nbsp; &lt; &nbsp; <?php $plxShow->lang('UTIL_PREVIOUS_EPISODE') ?>
-      </a>
-    </div>
-  </div>
-
-  <div class="col sml-6 med-3 lrg-3">
-    <div class="<?php
-        if ($nextEpisode['link'] === '#') {
-            echo ''.$buttonthemeInactive.' off';
-        } else {
-            echo ''.$buttonthemeActive.'';
-        }
-    ?>">
-      <a class="readernavbutton" style="text-align:right;" href="<?php print($nextEpisode['url']); ?>" alt="<?php print($nextEpisode['title']); ?>" title="<?php print($nextEpisode['title']); ?>">
-        <?php $plxShow->lang('UTIL_NEXT_EPISODE') ?>&nbsp; &gt; &nbsp;
-      </a>
-    </div>
-  </div>
-
-  <div class="col sml-hide sml-12 med-3 lrg-3 med-show">
-    <div class="<?php echo ''.$buttonthemeActive.''; ?>">
-      <a class="readernavbutton" style="text-align:right;" href="<?php print($lastEpisode['url']); ?>" alt="<?php print($lastEpisode['title']); ?>" title="<?php print($lastEpisode['title']); ?>">
-        <?php $plxShow->lang('LAST') ?>&nbsp; » &nbsp;
-      </a>
-    </div>
-  </div>
-
-  </div>
-</div>
-    <?php
-}
-
 ?>
 <div class="container">
 	<main class="main grid" role="main">
@@ -165,19 +81,14 @@ function showNavigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpiso
 <?php
 # [page] datas are in the URL
 if(isset($_GET['page'])) {
+    include_once(dirname(__FILE__).'/bottom_links.php');
 
     $pathartworks = $pathcommunityfolder .'/'.$activefolder;
 
     $baselink = "static11/communitywebcomics&page=$activefolder";
 
-    # We can't count on contributions having a structured git repo, so we list the contribution links here.
-    # Empty link means don't show any "add a translation" buttons for ths active folder.
-    $contributionlinks = array(
-        'Pepper-and-Carrot_by_Holger-Kraemer' => '',
-        'Pepper-and-Carrot-Mini_by_Nartance' => 'https://framagit.org/peppercarrot/derivations/peppercarrot_mini/blob/master/CONTRIBUTING.md'
-    );
-    $contributionlink = $contributionlinks[$activefolder];
-
+    # Community art can contribute a json file with links to their repo
+    $episode_info = json_decode(file_get_contents($pathartworks.'/links.json'));
 
 # Image viewer mode : display the artwork
 # =======================================
@@ -208,7 +119,7 @@ if(isset($_GET['page'])) {
                         'pageurl' => '{LANG}/'.$baselink.'&display={LANG}'.$langimagewithoutlang,
                         'testdir' => $pathartworks,
                         'includewebsite' => false,
-                        'contributionlink' => $contributionlink
+                        'contributionlink' => $episode_info->{'translation-documentation'}
                 )));
               echo '</div>';
             echo '</nav>';
@@ -242,33 +153,35 @@ if(isset($_GET['page'])) {
         }
 
         # Get links with titles for navigator
-        $firstEpisode = communityEpisodeData($lang, $baselink, $episodes[0], $titlePrefix);
-        $previousEpisode = array(
-            'link' => '#',
-            'title' => ''
+        $navigator_links = array(
+            'first' => communityEpisodeData($lang, $baselink, $episodes[0], $titlePrefix),
+            'previous' => array(
+                    'link' => '#',
+                    'title' => ''
+                ),
+            'next' => array(
+                    'link' => '#',
+                    'title' => ''
+                ),
+            'last' => communityEpisodeData($lang, $baselink, $episodes[count($episodes) - 1], $titlePrefix),
         );
-        $nextEpisode = array(
-            'link' => '#',
-            'title' => ''
-        );
-        $lastEpisode = communityEpisodeData($lang, $baselink, $episodes[count($episodes) - 1], $titlePrefix);
 
         $current = 'en'.$langimagewithoutlang;
         $number_of_episodes = count($episodes);
         for ($i = 0; $i < $number_of_episodes; $i++) {
             if (basename($episodes[$i]) === $current) {
                 if ($i > 0) {
-                    $previousEpisode = communityEpisodeData($lang, $baselink, $episodes[$i - 1], $titlePrefix);
+                    $navigator_links['previous'] = communityEpisodeData($lang, $baselink, $episodes[$i - 1], $titlePrefix);
                 }
                 if ($i < $number_of_episodes - 1) {
-                    $nextEpisode = communityEpisodeData($lang, $baselink, $episodes[$i + 1], $titlePrefix);
+                    $navigator_links['next'] = communityEpisodeData($lang, $baselink, $episodes[$i + 1], $titlePrefix);
                 }
                 break;
             }
         }
 
         # Show the navigator
-        showNavigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, '', '');
+        showNavigator($navigator_links, '', '');
 
         # Write the viewer:
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
@@ -280,7 +193,10 @@ if(isset($_GET['page'])) {
             echo '<a href="'.$pagepath.'" ><img src="'.$pagepath.'" ></a><br/>';
         }
 
-        showNavigator($firstEpisode, $previousEpisode, $nextEpisode, $lastEpisode, 'button', 'button moka');
+        echo '<br/><br/>';
+
+        showBottomArticleLinks($pathartworks, array(), $episode_info->{'git-repository'}, $navigator_links);
+
         echo '<br/><br/>';
 
         showNavigatorBackButton($lang.'/'.$baselink.'/');
@@ -303,7 +219,7 @@ if(isset($_GET['page'])) {
                         'pageurl' => '{LANG}/'.$baselink,
                         'testdir' => $pathartworks,
                         'statstemplate' => $pathartworks.'/{LANG}_[A-Za-z-]*_E[0-9][0-9]*[A-Za-z_-]*.jpg',
-                        'contributionlink' => $contributionlink
+                        'contributionlink' => $episode_info->{'translation-documentation'}
                 )));
               echo '</div>';
             echo '</nav>';
@@ -414,12 +330,12 @@ if(isset($_GET['page'])) {
   foreach ($mainfolders as $folderpath) {
     # Name extraction
     $data = communityComicData($folderpath);
+    $link = $lang.'/static11/communitywebcomics&page='.$folderpath.'/';
 
     echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-    echo '<a href="'.$lang.'/static11/communitywebcomics&page='.$folderpath.'/" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    echo '<a href="'.$link.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$pathcommunityfolder .'/'.$folderpath.'/00_cover.jpg&amp;w=370&amp;h=370&amp;s=1&amp;q=92" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
     echo '<figcaption class="text-center" >
-    <a href="0_sources/0ther/fan-art/'.$filename.'" >
-    '.$data['title'].'</a>';
+    <a href="'.$link.'" >'.$data['title'].'</a>';
     if (!empty($data['author'])) {
         echo  '<br/><span class="detail">'.$ccbystring.' ' . $data['author'].'</span>';
     }

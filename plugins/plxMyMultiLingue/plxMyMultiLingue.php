@@ -360,10 +360,10 @@ class plxMyMultiLingue extends plxPlugin {
     $this->addHook('MyMultiLingueComicToggleButtons', 'MyMultiLingueComicToggleButtons');
     $this->addHook('MyMultiLingueComicDisplay', 'MyMultiLingueComicDisplay');
     $this->addHook('MyMultiLingueComicHeader', 'MyMultiLingueComicHeader');
-    $this->addHook('MyMultiLingueSourceLinkDisplay', 'MyMultiLingueSourceLinkDisplay');
+    $this->addHook('MyMultiLingueSourceLink', 'MyMultiLingueSourceLink');
     $this->addHook('MyMultiLingueBackgroundColor', 'MyMultiLingueBackgroundColor');
-    $this->addHook('MyMultiLingueFramagitLinkDisplay', 'MyMultiLingueFramagitLinkDisplay');
-    $this->addHook('MyMultiLingueCommentLinkDisplay', 'MyMultiLingueCommentLinkDisplay');
+    $this->addHook('MyMultiLingueFramagitLink', 'MyMultiLingueFramagitLink');
+    $this->addHook('MyMultiLingueCommentLink', 'MyMultiLingueCommentLink');
 
     # récupération des langues enregistrées dans le fichier de configuration du plugin
 
@@ -1290,13 +1290,13 @@ class plxMyMultiLingue extends plxPlugin {
 /* Display the link to Source   */
 /********************************/
 /**
- * Method to display a link to the source of the active webcomic
+ * Method to obtain a link to the source of the active webcomic
  * @author: David Revoy
  **/
-public function MyMultiLingueSourceLinkDisplay() {
+public function MyMultiLingueSourceLink() {
   # pattern : index.php?fr/static6/sources&page=ep02_Rainbow-potions
   $sourcelink = basename($this->episodeData()['directory']);
-  plxShow::getInstance()->urlRewrite('?static6/sources&page='.$sourcelink);
+  return plxMotor::getInstance()->urlRewrite($this->lang.'/static6/sources&page='.$sourcelink);
 }
 
 /**********************************************/
@@ -1321,52 +1321,30 @@ public function MyMultiLingueBackgroundColor() {
 /* Display a link to Framagit   */
 /********************************/
 /**
- * Method to display a link to the Framagit folder of the active webcomic
+ * Method to obtain a link to the Framagit folder of the active webcomic
  * @author: David Revoy
  **/
-public function MyMultiLingueFramagitLinkDisplay() {
+public function MyMultiLingueFramagitLink() {
 
   # pattern : https://framagit.org/peppercarrot/webcomics/tree/master/ep01_Orange/lang/fr
   $sourcelink = basename($this->episodeData()['directory']);
-  echo 'https://framagit.org/peppercarrot/webcomics/tree/master/'.$sourcelink.'/lang/'.$this->lang.'';
+  return 'https://framagit.org/peppercarrot/webcomics/tree/master/'.$sourcelink.'/lang/'.$this->lang.'';
 }
 
 /**************************************************************/
 /* Display the number of comments and url from DR website     */
 /**************************************************************/
 /**
- * Method to display comments url on davidrevoy.com or number
- * nb_com = comment number
- * url = raw url
- * @author: David Revoy
+ * Method to obtain comments url and number on davidrevoy.com
+ * @author: David Revoy, GunChleoc
+ *
+ * @return array with keys url, nb_com
  **/
-public function MyMultiLingueCommentLinkDisplay($params) {
+public function MyMultiLingueCommentLink() {
+  $commentlinks = json_decode(file_get_contents('0_sources/comments.json'), true);
 
-  if(isset($params)) {
-    if(is_array($params)) {
-      $type = empty($params[0])?'':$params[0];
-    }
-  } else {
-    $type = '';
-  }
-
-  $jsonpath = "0_sources/comments.json";
-  $contents = file_get_contents($jsonpath);
-  $get = json_decode($contents);
-
-  # retrieve epXX
-  $episodeid = 'ep' . $this->episodeData()['number'];
-
-  # Display depending what variable user pass:
-  if($type == 'url') {
-    $comurl = $get->{$episodeid}->{'url'};
-    echo $comurl;
-  } else if ($type == 'nb_com') {
-    $comnb = $get->{$episodeid}->{'nb_com'};
-    echo $comnb;
-  } else {
-    echo '';
-  }
+  # Retrieve comment info for epXX
+  return $commentlinks['ep' . $this->episodeData()['number']];
 }
 
 }
