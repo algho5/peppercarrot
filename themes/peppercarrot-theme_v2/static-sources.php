@@ -15,6 +15,26 @@ $activefolder = preg_replace('/[^A-Za-z0-9\._-]/', '', $activefolder);
 $requestedlang = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedlang);
 $requestedepisode = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedepisode);
 
+
+/**
+ * Print a translator name + optional link as description data item
+ * Names + links have the format 'Name <http|mailto ...>'
+ * Links can be omitted for just a name
+ */
+function print_translatorinfos($translatorinfos) {
+  natcasesort($translatorinfos);
+  foreach ($translatorinfos as $translatorinfo) {
+    preg_match('/(.*)\s+\<((http|mailto).*)\>/', $translatorinfo, $matches);
+    echo '<dd>';
+    if (count($matches) == 4) {
+      echo '<a href="' . $matches[2] . '">'. filter_var($matches[1], FILTER_SANITIZE_STRING) .'</a>';
+    } else {
+      echo filter_var($translatorinfo, FILTER_SANITIZE_STRING);
+    }
+    echo '</dd>';
+  }
+}
+
 # debug
 #echo $activefolder;
 
@@ -972,6 +992,8 @@ echo '<div class="grid">';
           $search = glob($projectpath."/low-res/en_*E??.jpg");
           # we loop on found episodes
           if (!empty($search)){
+            # Get episode info for general editor credits
+            $episodeinfos = json_decode(file_get_contents($projectpath.'/info.json'), true);
             foreach ($search as $filepath) {
               # filename extraction
               $fileweight = (filesize($filepath) / 1024) / 1024;
@@ -986,15 +1008,48 @@ echo '<div class="grid">';
               # if cover exist; translation exist: we display
               if (file_exists($filepathtranslated)) {
                 if ( $singlelangcount == $totalepisodecount ) {
-                # all is translated!
-                echo '<td align="center" style="background-color:#D5F1B3;color:#6FA62C">';
-                $fulltranslacounter = $fulltranslacounter + 1;
+                  # all is translated!
+                  echo '<td align="left" style="background-color:#D5F1B3;color:#6FA62C">';
+                  $fulltranslacounter = $fulltranslacounter + 1;
                 } else {
-                # partial
-                echo '<td align="center" style="background-color:#FFFD9E;color:#C3922A">';
+                  # partial
+                  echo '<td align="left" style="background-color:#FFFD9E;color:#C3922A">';
                 }
                 # for all
-                echo '<small>'.date ("Y.m.d", filemtime($svgpathtranslated)).'</small>';
+                echo '<small>';
+
+                # Translator credits
+                $infopathtranslated = $projectpath.'/lang/'.$lang.'/info.json';
+                if (file_exists($infopathtranslated)) {
+                      echo '<dl>';
+                      $translatorinfos = json_decode(file_get_contents($infopathtranslated), true);
+
+                      if (isset($translatorinfos['credits']['translation'])) {
+                        echo '<dt><strong>Translation</strong></dt>';
+                        print_translatorinfos($translatorinfos['credits']['translation']);
+                      }
+                      if (isset($translatorinfos['credits']['proofreading'])) {
+                        echo '<dt><strong>Proofreading</strong><dt>';
+                        print_translatorinfos($translatorinfos['credits']['proofreading']);
+                      }
+
+                      # We also have general editing credits in the episode info, so we merge them
+                      $editingcredits = array();
+                      if (isset($translatorinfos['credits']['editing'])) {
+                        $editingcredits = $translatorinfos['credits']['editing'];
+                      }
+                      if (isset($episodeinfos['credits']['editing'])) {
+                        $editingcredits = array_merge($editingcredits, $episodeinfos['credits']['editing']);
+                      }
+                      if (!empty($editingcredits)) {
+                        echo '<dt><strong>Editing</strong><dt>';
+                        print_translatorinfos($editingcredits);
+                      }
+                      echo '</dl>';
+                }
+                # Date
+                echo date ("Y.m.d", filemtime($svgpathtranslated));
+                echo '</small>';
                 echo ' </td>';
                 $translacounter = $translacounter + 1;
               } else {
