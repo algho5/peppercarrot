@@ -206,7 +206,7 @@ class Comic {
    *
    * @return void
    */
-  public function displayPage($comicpage_number, $lang, $plxShow) {
+  public function displayPage($comicpage_number, $lang, $directory, $plxShow) {
     if ($this->episode_number < 1) {
       # Just in case we forgot to call initialize
       echo '<div>Something went wrong with collecting the episode data. This should not have happened.</div>';
@@ -215,8 +215,23 @@ class Comic {
 
     $comicpage_link = $this->pagefiles[$comicpage_number];
 
-    # Build a useful alternative link in case of a page not loading...
-    $comicpage_alt = 'A webcomic page of Pepper&amp;Carrot, '.$plxShow->Getlang('UTIL_EPISODE').' '.$this->episode_number.' ['.$lang.'], '.$plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
+    # Build a useful alternative link in case of a page not loading, and for screen readers
+    $comicpage_alt = '';
+    if ($comicpage_number > 0) {
+      $comicpage_alt = $plxShow->Getlang('UTIL_PAGE').' '.$comicpage_number;
+    } else if (!$this->transcript_button->status() || empty($this->transcripts)) {
+      # ^ We only want to show title text if it's not being shown by the transcript already anyway.
+
+      # Get the title from json if available
+      $titles = json_decode(file_get_contents($directory.'/hi-res/titles.json'));
+      $comicpage_alt = $titles->{$this->usedlang};
+
+      if (empty($comicpage_alt)) {
+        # Fall back to constructed string
+        $comicpage_alt = $plxShow->Getlang('UTIL_EPISODE').' '.$this->episode_number;
+      }
+    }
+
     # Define the anchor link
     $comicpage_anchorlink = ''.$plxShow->Getlang('UTIL_PAGE').''.$comicpage_number.'';
     # Get the geometry size of the comic page for correct display ratio on HTML
@@ -1175,18 +1190,35 @@ class plxMyMultiLingue extends plxPlugin {
 
     # For all remaining pages, show image and transcript
     foreach ($keys as $comicpage_number) {
-      $this->comic->displayPage($comicpage_number, $this->lang, $plxShow);
+      $this->comic->displayPage($comicpage_number, $this->lang, $this->episodeData()['directory'], $plxShow);
 
       # Include html file with transcript if available
       if (array_key_exists($comicpage_number, $this->comic->transcripts)) {
         if ($this->comic->transcript_button->status()) {
           # User requested transcript, so we show it
           readfile($this->comic->transcripts[$comicpage_number]);
-        } else {
-          # Show tiny text anyway so that screen readers can pick it up
-          echo '<div class="hidden">';
-          readfile($this->comic->transcripts[$comicpage_number]);
-          echo '</div>';
+        } else if (file_exists($this->comic->transcripts[$comicpage_number])) {
+          # Show hidden text anyway so that screen readers can pick it up
+          $transcript = file_get_contents($this->comic->transcripts[$comicpage_number]);
+
+          # Change description list entries into paragraphs to make screen readers less noisy
+          $transcript_text = '';
+          $lines = explode("\n", $transcript);
+          foreach ($lines as $line) {
+              $patterns = array(
+              '/<dt><strong>(.*)<\/strong><\/dt>/ui',
+              '/<dd>(.*)<\/dd>/ui'
+              );
+                $replacements = array(
+                '</p><p></p>\\1: ',
+                '\\1.<br />'
+              );
+
+              $line = preg_replace($patterns, $replacements, trim($line));
+              $transcript_text .= $line;
+          }
+          $transcript_text = trim(preg_replace('/\s*<dl>(.*)<\/dl>\s*/i', '<p>\\1</p>', $transcript_text));
+          print('<div class="hidden">' . $transcript_text . '</div>');
         }
       }
     }
@@ -1216,7 +1248,7 @@ class plxMyMultiLingue extends plxPlugin {
       echo '</div>';
     }
 
-    $this->comic->displayPage(0, $this->lang, $plxShow);
+    $this->comic->displayPage(0, $this->lang, $this->episodeData()['directory'], $plxShow);
 
     $transcript_exists = array_key_exists(0, $this->comic->transcripts);
 
