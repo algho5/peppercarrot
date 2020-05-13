@@ -446,8 +446,12 @@ echo '<div class="grid">';
 
           echo '<section class="col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
 
-          # Display pages:
+          # Display XYZ Comic pages:
           $search = glob($projectpath."/low-res/".$lang."_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
+          # Fallback to English if no other options:(often the case in early development)
+          if (empty($search)) {
+            $search = glob($projectpath."/low-res/en_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
+          }
           if (!empty($search)) {
             foreach ($search as $key => $filepath) {
               # extracting from the path the filename and path itself
