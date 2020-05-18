@@ -77,7 +77,7 @@ $LANG = array(
 # Page: Blog
 # when contents are not English (no need to warn user the content is english only here):
 #'LIMITATIONS' 	=> ' Content available in english only ',
-'LIMITATIONS' => '',
+'LIMITATIONS' => ' Synsans kavadow yn Sowsnek hepken ',
 'TRANSLATION_FALLBACK' => '(Treylyans ankavadow. Omskoodhya war Sowsnek)',
 
 ################################################################################
