@@ -33,7 +33,7 @@
             <?php eval($plxShow->callHook("vignetteArtList", array('
             <figure class="thumbnail #translationstatus col sml-12 med-6 lrg-4" style="padding:0 1rem 0 0;">
               <a href="#art_url" title="#art_title">
-                <img class="#translationstatus" src="plugins/vignette/plxthumbnailer.php?src=#episode_vignette&amp;w=400&amp;h=270&amp;s=1&amp;q=92" alt="#art_title" title="#art_title, click to read #translationmessage" >
+                <img class="#translationstatus" src="plugins/vignette/plxthumbnailer.php?src=#episode_vignette&amp;w=400&amp;s=1&amp;q=92" alt="#art_title" title="#art_title, click to read #translationmessage" >
               </a>
               <figcaption class="#translationstatus text-center"><a href="#art_url" title="#art_title"><span class="detail">#overlay</span></a></figcaption>
             </figure>
