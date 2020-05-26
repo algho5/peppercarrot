@@ -1023,11 +1023,9 @@ echo '<div class="grid">';
                 echo '<small>';
 
                 # Translator credits
-                $infopathtranslated = $projectpath.'/lang/'.$lang.'/info.json';
-                if (file_exists($infopathtranslated)) {
+                $translatorinfos = json_decode(file_get_contents($projectpath.'/lang/'.$lang.'/info.json'), true);
+                if (isset($translatorinfos['credits'])) {
                       echo '<dl>';
-                      $translatorinfos = json_decode(file_get_contents($infopathtranslated), true);
-
                       if (isset($translatorinfos['credits']['translation'])) {
                         echo '<dt><strong>Translation</strong></dt>';
                         print_translatorinfos($translatorinfos['credits']['translation']);
