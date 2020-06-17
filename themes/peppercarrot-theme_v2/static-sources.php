@@ -430,7 +430,7 @@ echo '<div class="grid">';
     echo '    </div>';
 
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
-    echo '<p><b>Spoiler alert! Please, do not reshare this page</b>: This episode is still in development and is not meant to be ready for public. It\s published here only to help proofreader and contributors of Pepper&Carrot. If you want to help and give a feedback, <a href="https://framagit.org/peppercarrot/webcomics/issues?scope=all&utf8=%E2%9C%93&state=all&label_name[]=future%20episode">join our latest thread on Framagit here.</a>. Note you can also preview renderings of active Merge Request <a href="https://peppercarrot.frama.io/gitlab-renderer/">on the Gitlab-renderer</a></p>';
+    echo '<p><b style="color:red"><br/><br/>[SPOILER ALERT]</b> <br/><b>This page is a work in Progress of the future episode. Please, do not reshare it: it is not ready.</b><br/> It\'s published here only to provide a preview to contributors of Pepper&Carrot during the process.<br/> Join them on <a href="https://framagit.org/peppercarrot/webcomics/issues?scope=all&utf8=%E2%9C%93&state=all&label_name[]=future%20episode">our latest thread on Framagit here</a> to read and participate to this episode. </p><br/><br/><hr><br/><br/>';
     echo '</div>';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered" style="padding:0 0;">';
 
@@ -444,7 +444,7 @@ echo '<div class="grid">';
       if(is_dir($projectpath)) {
         if (strpos($foldername, 'new-') !== false) {
 
-          echo '<section class="col sml-12 med-12 lrg-12 sml-centered sml-text-center">';
+         echo '</section>';
 
           # Display XYZ Comic pages:
           $search = glob($projectpath."/low-res/".$lang."_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
@@ -467,7 +467,7 @@ echo '<div class="grid">';
               }
             }
           }
-
+          echo '<br/><br/><hr><h2> Scenario </h2><br/><br/>';
           # Display markdown scenario:
           $mdsearch = glob($projectpath."/*script.md");
           if (!empty($mdsearch)) {
@@ -489,7 +489,6 @@ echo '<div class="grid">';
 
         }
       }
-      echo '</section>';
     }
     # top button
     echo '</section>';
