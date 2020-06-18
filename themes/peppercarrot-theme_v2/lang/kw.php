@@ -9,7 +9,7 @@ $LANG = array(
 # Header HTML infos for search engine and title in tab:
 'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE' => 'Puber ha Karetysen', // literal translation of the spice and the vegetable
-'Website_DESCRIPTION'    => 'Gwisva sodhek a Pepper&amp;Carrot, roskomik rydh(libre) ha fenten ygor a-dro dhe Pepper, gwragh yowynk, ha hy hath, Carrot. Trigys esons yn ollvys fantasiek a ismek, pystri ha kroaduryon.',
+'Website_DESCRIPTION'    => 'Gwiasva sodhek Pepper&amp;Carrot, roskomik rydh(libre) ha fenten ygor a-dro dhe Pepper, gwragh yowynk, ha hy hath, Carrot. Trigys esons yn ollvys fantasiek a ismek, pystri ha kroaduryon.',
 'SUBTITLE'               => 'An Roskomik Ygor gans David Revoy',
 
 ################################################################################
