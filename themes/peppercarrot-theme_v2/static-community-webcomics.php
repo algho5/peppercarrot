@@ -36,6 +36,9 @@ function communityComicData($path) {
     $parts = explode('_by_', basename($path));
     # In case the filename isn't well-formed
     if (count($parts) != 2) {
+        $parts = explode('-by-', basename($path));
+    }
+    if (count($parts) != 2) {
         return array(
             'title' => str_replace('-', ' ', str_replace('_', ' ', $path)),
             'author' => ''
