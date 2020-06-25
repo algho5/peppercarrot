@@ -183,7 +183,7 @@ class plxShow {
 	 * @parm	format		format d'affichage (ex: home=#title - #subtitle;article=#title)
 	 *						paramètres: home, categorie, article, static, archives, tags, erreur
 	 * @parm	sep			caractère de séparation dans le format d'affichage entre les paramètres
-	 * @return	stdout
+	 * @return	title string
 	 * @scope	global
 	 * @author	Stéphane F
 	 **/
@@ -193,23 +193,23 @@ class plxShow {
 		if(eval($this->plxMotor->plxPlugins->callHook('plxShowPageTitle'))) return;
 
 		if($this->plxMotor->mode == 'home') {
-			$title = $this->plxMotor->aConf['title'];
+			$title = $this->Getlang('PEPPERCARROT_TITLE');
 			$subtitle = $this->plxMotor->aConf['description'];
 		}
 		elseif($this->plxMotor->mode == 'categorie') {
 			$title_htmltag = $this->plxMotor->aCats[$this->plxMotor->cible ]['title_htmltag'];
 			$title = $title_htmltag !='' ? $title_htmltag : $this->plxMotor->aCats[$this->plxMotor->cible]['name'];
-			$subtitle = $this->plxMotor->aConf['title'];
+			$subtitle = $this->Getlang('PEPPERCARROT_TITLE');
 		}
 		elseif($this->plxMotor->mode == 'article') {
 			$title_htmltag = $this->plxMotor->plxRecord_arts->f('title_htmltag');
 			$title = $title_htmltag !='' ? $title_htmltag : $this->plxMotor->plxRecord_arts->f('title');
-			$subtitle = $this->plxMotor->aConf['title'];
+			$subtitle = $this->Getlang('PEPPERCARROT_TITLE');
 		}
 		elseif($this->plxMotor->mode == 'static') {
 			$title_htmltag =  $this->plxMotor->aStats[$this->plxMotor->cible ]['title_htmltag'];
 			$title = $title_htmltag !='' ? $title_htmltag : $this->plxMotor->aStats[$this->plxMotor->cible]['name'];
-			$subtitle = $this->plxMotor->aConf['title'];
+			$subtitle = $this->Getlang('PEPPERCARROT_TITLE');
 		}
 		elseif($this->plxMotor->mode == 'archives') {
 			preg_match('/^(\d{4})(\d{2})?(\d{2})?/',$this->plxMotor->cible, $capture);
@@ -217,18 +217,18 @@ class plxShow {
 			$month = !empty($capture[2]) ? ' '.plxDate::getCalendar('month', $capture[2]) : '';
 			$day = !empty($capture[3]) ? ' '.plxDate::getCalendar('day', $capture[3]) : '';
 			$title = L_PAGETITLE_ARCHIVES.$day.$month.$year;
-			$subtitle = $this->plxMotor->aConf['title'];
+			$subtitle = $this->Getlang('PEPPERCARROT_TITLE');
 		}
 		elseif($this->plxMotor->mode == 'tags') {
 			$title = L_PAGETITLE_TAG.' '.$this->plxMotor->cibleName;
-			$subtitle = $this->plxMotor->aConf['title'];
+			$subtitle = $this->Getlang('PEPPERCARROT_TITLE');
 		}
 		elseif($this->plxMotor->mode == 'erreur') {
 			$title = $this->plxMotor->plxErreur->getMessage();
-			$subtitle = $this->plxMotor->aConf['title'];
+			$subtitle = $this->Getlang('PEPPERCARROT_TITLE');
 		}
 		else { # mode par défaut
-			$title = $this->plxMotor->aConf['title'];
+			$title = $this->Getlang('PEPPERCARROT_TITLE');
 			$subtitle = $this->plxMotor->aConf['description'];
 		}
 
@@ -239,7 +239,7 @@ class plxShow {
 		$format = $fmt=='' ? '#title - #subtitle' : $fmt;
 		$txt = str_replace('#title', trim($title), $format);
 		$txt = str_replace('#subtitle', trim($subtitle), $txt);
-		echo plxUtils::strCheck(trim($txt, ' - '));
+		return plxUtils::strCheck(trim($txt, ' - '));
 
 	}
 
@@ -303,7 +303,7 @@ class plxShow {
 	 **/
 	public function mainTitle($type='') {
 
-		$title = plxUtils::strCheck($this->plxMotor->aConf['title']);
+		$title = plxUtils::strCheck($this->Getlang('PEPPERCARROT_TITLE'));
 		if($type == 'link') # Type lien
 			echo '<a class="maintitle" href="'.$this->plxMotor->urlRewrite().'" title="'.$title.'">'.$title.'</a>';
 		else # Type normal
@@ -456,7 +456,7 @@ class plxShow {
 		# Mode home
 		elseif($this->plxMotor->mode == 'home') {
 			if($type == 'link')
-				echo '<a href="'.$this->plxMotor->urlRewrite().'" title="'.plxUtils::strCheck($this->plxMotor->aConf['title']).'">'.L_HOMEPAGE.'</a>';
+				echo '<a href="'.$this->plxMotor->urlRewrite().'" title="'.plxUtils::strCheck($this->Getlang('PEPPERCARROT_TITLE')).'">'.L_HOMEPAGE.'</a>';
 			else
 				echo L_HOMEPAGE;
 		} else {
@@ -989,7 +989,7 @@ class plxShow {
 		else
 			return $id;
 	}
-  
+
   /** [hack] for quick admin **/
 	public function artBlogRedirect() {
 
@@ -999,10 +999,10 @@ class plxShow {
     $id = $id + 200;
     }
     $id = str_pad($id,4,'0',STR_PAD_LEFT);
-    
+
     # Build the new URL:
     $url = 'https://www.davidrevoy.com/article'.$id.'/';
-    
+
     # Redirect:
     ob_start();
     header('Location: '.$url);

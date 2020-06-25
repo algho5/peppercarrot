@@ -16,7 +16,10 @@ if($idMode=="home"){ $status = "active"; } else { $status = "no-active"; }
       <   '◡    >   <   Full sources on framagit.org/peppercarrot/website  |
         '''|  \      |_____________________________________________________|
 
-V.<?php echo $version ?>
+V.<?php
+  echo $version;
+  $title = $plxShow->callHook('MyMultiLinguePageTitle');
+?>
 -->
 <head>
   <meta charset="<?php $plxShow->charset('min'); ?>">
@@ -27,14 +30,14 @@ V.<?php echo $version ?>
   <?php $idMode = $plxShow->mode(); ?>
 <?php if($idMode=="article"){ ?>
   <meta property="og:url" content="<?php $plxShow->artUrl() ?>"/>
-  <meta property="og:title" content="<?php $plxShow->artTitle() ?>"/>
+  <meta property="og:title" content="<?php print($title); ?>"/>
   <meta property="og:image" content="<?php $plxShow->racine() ?><?php eval($plxShow->callHook('showVignette', 'true')); ?>"/>
   <meta property="og:image:type" content="image/jpeg" />
 <?php } else { ?>
 <meta property="og:image" content="<?php $plxShow->racine() ?>data/images/static/preview/<?php $plxShow->staticTitle() ?>.jpg"/>
   <meta property="og:image:type" content="image/jpeg" />
   <?php } ?>
-<title><?php $plxShow->pageTitle(); ?></title>
+<title><?php print(html_entity_decode($title)); ?></title>
   <meta name="description" content="<?php $plxShow->lang('Website_DESCRIPTION') ?>">
   <?php $plxShow->meta('keywords') ?>
   <?php $plxShow->meta('author') ?>

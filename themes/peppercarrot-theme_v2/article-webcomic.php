@@ -31,7 +31,6 @@ include(dirname(__FILE__) . '/header.php');
 
         <div style="clear:both;">
         </div>
-
         <?php eval($plxShow->callHook('MyMultiLingueComicHeader')) ?>
 
         <?php showWebcomicNavigator('', ''); ?>
