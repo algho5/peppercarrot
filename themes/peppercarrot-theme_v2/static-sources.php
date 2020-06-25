@@ -1005,7 +1005,7 @@ echo '<div class="grid">';
               # guess cover filename and path
               $filenamewithoutenprefix = substr($filename, 2);
               $filenameshort = substr($filename, 36); // eg. en_Pepper-and-Carrot_by-David-Revoy_
-              $filenameshort = str_replace('.jpg', '.svg', $filenameshort);
+              $filenameshort = str_replace('.jpg', 'P00.svg', $filenameshort);
               $filepathtranslated = ''.$fullpath.'/'.$lang.''.$filenamewithoutenprefix.'';
               $svgpathtranslated = ''.$projectpath.'/lang/'.$lang.'/'.$filenameshort.'';
               # if cover exist; translation exist: we display
