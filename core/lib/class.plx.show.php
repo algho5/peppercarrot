@@ -208,7 +208,17 @@ class plxShow {
 		}
 		elseif($this->plxMotor->mode == 'static') {
 			$title_htmltag =  $this->plxMotor->aStats[$this->plxMotor->cible ]['title_htmltag'];
-			$title = $title_htmltag !='' ? $title_htmltag : $this->plxMotor->aStats[$this->plxMotor->cible]['name'];
+			if ($title_htmltag !='') {
+				$title = $title_htmltag;
+			} else {
+				$title = $this->plxMotor->aStats[$this->plxMotor->cible]['name'];
+				# Translate title if key exists in translation file
+				$title_uppercase = strtoupper($title);
+				$title_translated = $this->Getlang($title_uppercase);
+				if ($title_translated != $title_uppercase) {
+					$title = $title_translated;
+				}
+			}
 			$subtitle = $this->Getlang('PEPPERCARROT_TITLE');
 		}
 		elseif($this->plxMotor->mode == 'archives') {
