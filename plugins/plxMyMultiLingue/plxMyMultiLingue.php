@@ -358,6 +358,7 @@ class plxMyMultiLingue extends plxPlugin {
     $this->addHook('MyMultiLingueEpisodeData', 'MyMultiLingueEpisodeData');
     $this->addHook('MyMultiLingueLanguageMenu', 'MyMultiLingueLanguageMenu');
     $this->addHook('MyMultiLingueComicToggleButtons', 'MyMultiLingueComicToggleButtons');
+    $this->addHook('MyMultiLinguePageTitle', 'MyMultiLinguePageTitle');
     $this->addHook('MyMultiLingueComicDisplay', 'MyMultiLingueComicDisplay');
     $this->addHook('MyMultiLingueComicHeader', 'MyMultiLingueComicHeader');
     $this->addHook('MyMultiLingueSourceLink', 'MyMultiLingueSourceLink');
@@ -472,7 +473,12 @@ class plxMyMultiLingue extends plxPlugin {
 
     # The listing of episode files and language detection is based on the information given by the 'thumbnail' of the article:
     # Start of the method is to breakdown the 'thumbnail' information to get the source directory of the episode.
-    $vignette_pathinfo = pathinfo(plxMotor::getInstance()->plxRecord_arts->f('thumbnail'));
+    if (plxMotor::getInstance()->plxRecord_arts) {
+      $vignette_pathinfo = pathinfo(plxMotor::getInstance()->plxRecord_arts->f('thumbnail'));
+    } else {
+      # We are not on a comic page
+      return array();
+    }
 
     # In full logic, source directory of an episode is one folder parent of the directory of the 'thumbnail'
     $directory = pathinfo($vignette_pathinfo['dirname'], PATHINFO_DIRNAME);
@@ -1221,6 +1227,34 @@ class plxMyMultiLingue extends plxPlugin {
           print('<div class="hidden">' . $transcript_text . '</div>');
         }
       }
+    }
+  }
+
+  /**
+   * Method to get the page title.
+   *
+   * Returns the comic page's title if available and calls $plxShow->pageTitle(); otherwise
+   *
+   * @author: GunChleoc
+   **/
+  public function MyMultiLinguePageTitle() {
+    $plxShow = plxShow::getInstance();
+    $episodedata = $this->episodeData();
+    if (empty($episodedata)) {
+      # Not a comic page, so we get whatever pluXML has
+      return $plxShow->pageTitle();
+    } else {
+      $titles = json_decode(file_get_contents($episodedata['directory'].'/hi-res/titles.json'));
+      $title = $titles->{$this->lang};
+      if (empty($title)) {
+        # English fallback, just in case
+        $title = $titles->{'en'};
+      }
+      if (empty($title)) {
+        # e.g. the JSON file is missing, get whatever pluXML has
+        return $plxShow->pageTitle();
+      }
+      return $title . ' - ' . $plxShow->Getlang('PEPPERCARROT_TITLE');
     }
   }
 
