@@ -468,8 +468,8 @@ echo '<div class="grid">';
             }
           }
           echo '<br/><br/><hr><h2> Scenario </h2><br/><br/>';
-          # Display markdown scenario:
-          $mdsearch = glob($projectpath."/*script.md");
+          # Display markdown scenario(s):
+          $mdsearch = glob($projectpath."/*script*.md");
           if (!empty($mdsearch)) {
             foreach ($mdsearch as $key => $mdfilepath) {
               # extracting from the path the filename and path itself
