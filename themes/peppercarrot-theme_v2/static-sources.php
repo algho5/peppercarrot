@@ -1088,10 +1088,8 @@ echo '<div class="grid">';
     echo '</div>';
     echo "</div>";
 
-
-
-  } elseif ($activefolder == "original") {
-  # ===========  Original ================
+  # ===========  SKETCHBOOK ================
+  } elseif ($activefolder == "sketchbook" || $activefolder == "inks" || $activefolder == "original") {
     # main HTML container:
     echo '<div class="container">';
     echo '<main class="main grid" role="main">';
@@ -1099,112 +1097,44 @@ echo '<div class="grid">';
     echo '<div class="grid">';
 
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
-    echo '<h2>Original artworks scanned</h2>';
-    echo '<p>Original drawings: pencil on paper , Raw Scan at 300ppi with Xsane.<br/> </p>';
-    echo '<br/><br/>';
+    echo '<h2>Sketchbook</h2>';
+    echo '<p>All the sketches are available as: <b>low</b>-resolution, <b>hi</b>-resolution, or with the layered <b>src</b>/sources krita files.</p>';
+    echo '<br/>';
     echo '</div>';
-    echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
+    echo '<section class="col sml-12 med-12 lrg-11 sml-centered sml-text-center" style="padding:0 0;">';
     #variables:
-    $pathartworks = '0_sources/0ther/original';
+    $pathartworks = '0_sources/0ther/sketchbook';
     $hide = array('.', '..');
     $mainfolders = array_diff(scandir($pathartworks), $hide);
     rsort($mainfolders);
-    $search = glob($pathartworks."/*.jpg");
+    $search = glob($pathartworks."/low-res/*.jpg");
+    # newer on bottom
+    sort($search);
     # we loop on found episodes
     if (!empty($search)){
     foreach ($search as $filepath) {
     # filename extraction
-    $fileweight = (filesize($filepath) / 1024) / 1024;
     $filename = basename($filepath);
     $fullpath = dirname($filepath);
-    $notavailable="Not-available";
-    if (strlen(strstr($filename,$notavailable))>0) {
-      echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-      echo '<a href="0_sources/0ther/original/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;h=210&amp;w=210&amp;s=1&amp;zc=2&amp;q=84&amp" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
-      $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
-      $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
-      $filenameclean = str_replace('Not-available', '', $filenameclean);
-      $filenameclean = str_replace('_', ' ', $filenameclean);
-      $filenameclean = str_replace('-', ' ', $filenameclean);
-      $filenamezip = str_replace('jpg', 'zip', $filename);
-      echo '<figcaption class="sourcescaptions text-center" >
-      <a href="0_sources/0ther/original/'.$filename.'" >'.$filenameclean.'</a><br/>
-      </figcaption>';
-      echo '</figure>';
-    } else {
-      echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-      echo '<a href="0_sources/0ther/original/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;h=210&amp;w=210&amp;zc=2&amp;s=1&amp;q=84&amp" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
-      $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
-      $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
-      $filenameclean = str_replace('Not-available', '', $filenameclean);
-      $filenameclean = str_replace('_', ' ', $filenameclean);
-      $filenameclean = str_replace('-', ' ', $filenameclean);
-      $filenamezip = str_replace('jpg', 'zip', $filename);
-      echo '<figcaption class="sourcescaptions text-center" >
-      <a href="0_sources/0ther/original/'.$filename.'" >'.$filenameclean.'</a><br/>
-      </figcaption>';
-      echo '</figure>';
-    }
-    }
-    }
-    echo '</section>';
-    echo '</div>';
-
-  } elseif ($activefolder == "inks") {
-  # ===========  Inks ================
-    # main HTML container:
-    echo '<div class="container">';
-    echo '<main class="main grid" role="main">';
-    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
-    echo '<div class="grid">';
-
-    echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
-    echo '<h2>Inks</h2>';
-    echo '<p>Drawings made with inks, daily made during <a href="http://mrjakeparker.com/inktober">Inktober</a>.<br/>This drawings are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" title="For more information, read the Creative Commons Attribution 4.0">CC-By license</a> to <a href="http://www.davidrevoy.com">David Revoy</a>. </p>';
-    echo '<br/><br/>';
-    echo '</div>';
-    echo '<section class="col sml-12 med-12 lrg-10 sml-centered" style="padding:0 0;">';
-    #variables:
-    $pathartworks = '0_sources/0ther/inks';
-    $hide = array('.', '..');
-    $mainfolders = array_diff(scandir($pathartworks), $hide);
-    rsort($mainfolders);
-    $search = glob($pathartworks."/*.jpg");
-    # we loop on found episodes
-    if (!empty($search)){
-    foreach ($search as $filepath) {
-    # filename extraction
-    $fileweight = (filesize($filepath) / 1024) / 1024;
-    $filename = basename($filepath);
-    $fullpath = dirname($filepath);
-    $largepicture="_00";
-    if (strlen(strstr($filename,$largepicture))>0) {
-      # header
-      $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
-      $filenameclean = preg_replace('/\d+/u', '', $filenameclean);
-      $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
-      $filenameclean = str_replace('_', ' ', $filenameclean);
-      $filenameclean = str_replace('-', ' ', $filenameclean);
-      $anchornameclean = str_replace(' ', '', $filenameclean);
-      echo '<div style="clear:both;"></div>';
-      echo '<br/><br/><h2 style="text-transform: capitalize;margin-left: 14px; color: 000;">
-      <a href="#'.$anchornameclean.'" name="'.$anchornameclean.'"><img class="svg" src="themes/peppercarrot-theme_v2/ico/link.svg" alt="link"/></a>
-      '.$filenameclean.'
-      </h2>';
-      echo '<figure class="thumbnail col sml-12">';
-      echo '<a href="0_sources/0ther/inks/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;h=600&amp;q=90&amp" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
-      echo '</figure>';
-      echo '<div style="clear:both;"></div><br/>';
-    } else {
-      echo '<figure class="thumbnail col sml-6 med-2 lrg-2">';
-      echo '<a href="0_sources/0ther/inks/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;h=136&amp;w=136&amp;s=1&amp;q=84&amp" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
-      $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
-      $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
-      $filenameclean = str_replace('_', ' ', $filenameclean);
-      $filenameclean = str_replace('-', ' ', $filenameclean);
-      $filenamezip = str_replace('jpg', 'zip', $filename);
-      echo '</figure>';
-    }
+    $filenamezip = str_replace('.jpg', '.zip', $filename);
+    $zippath = $fullpath.'/../zip/'.$filenamezip.'';
+    $fileweight = (filesize($zippath) / 1024) / 1024;
+    echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
+    echo '<a href="0_sources/0ther/sketchbook/hi-res/'.$filename.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;s=1&amp;zc=2&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
+    $filenameclean = substr($filenameclean, 11);
+    $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
+    $filenameclean = str_replace('_', ' ', $filenameclean);
+    $filenameclean = str_replace('-', ' ', $filenameclean);
+    $filenamezip = str_replace('jpg', 'zip', $filename);
+    echo '<figcaption class="sourcescaptions text-center" >
+    <b>'.$filenameclean.'</b><br/>
+    [
+    <a href="0_sources/0ther/sketchbook/low-res/'.$filename.'" >low</a> |
+    <a href="0_sources/0ther/sketchbook/hi-res/'.$filename.'" >hi</a> |
+    <a href="0_sources/0ther/sketchbook/zip/'.$filenamezip.'" >src <em class="filesize">('.round($fileweight, 2).'MB)</em></a> ]
+    </figcaption>';
+    echo '</figure>';
     }
     }
     echo '</section>';
@@ -1305,27 +1235,15 @@ echo '<div class="grid">';
           echo '</a></figcaption>';
           echo '</figure>';
 
-          # INKS
+          # SKETCHBOOK
           echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
           echo '<a href="';
-          $plxShow->urlRewrite('?static6/sources&page=inks');
+          $plxShow->urlRewrite('?static6/sources&page=sketchbook');
           echo '" >';
           echo '<img src="data/images/static/sourcesthumb-inks.jpg" alt="" title="" ><br/>';
           echo '<figcaption class="sourcescaptions text-center" >';
-          echo '<b>Inks</b><br/>';
-          echo 'Inked artworks';
-          echo '</a></figcaption>';
-          echo '</figure>';
-
-          # ORIGINALS
-          echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
-          echo '<a href="';
-          $plxShow->urlRewrite('?static6/sources&page=original');
-          echo '" >';
-          echo '<img src="data/images/static/sourcesthumb-originals.jpg" title="" ><br/>';
-          echo '<figcaption class="sourcescaptions text-center" >';
-          echo '<b>Originals</b><br/>';
-          echo 'raw scan of drawings';
+          echo '<b>Sketchbook</b><br/>';
+          echo 'Studies and sketches';
           echo '</a></figcaption>';
           echo '</figure>';
 
