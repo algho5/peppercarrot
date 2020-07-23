@@ -35,6 +35,29 @@ function print_translatorinfos($translatorinfos) {
   }
 }
 
+/**
+ * Same function than above, but printed "inline", commas separated and ending dot.
+ */
+function print_inlinetranslatorinfos($translatorinfos) {
+  natcasesort($translatorinfos);
+  $number = count($translatorinfos);
+  $counter = 0;
+  foreach ($translatorinfos as $translatorinfo) {
+    preg_match('/(.*)\s+\<((http|mailto).*)\>/', $translatorinfo, $matches);
+    if (count($matches) == 4) {
+      echo '<a style="color: #412813;" href="' . $matches[2] . '">'. filter_var($matches[1], FILTER_SANITIZE_STRING) .'</a>';
+    } else {
+      echo filter_var($translatorinfo, FILTER_SANITIZE_STRING).'';
+    }
+  $counter = $counter + 1;
+    if ($counter < $number) {
+      echo ", ";
+    } else {
+      echo ".";
+    }
+  }
+}
+
 # debug
 #echo $activefolder;
 
@@ -1088,6 +1111,242 @@ echo '<div class="grid">';
     echo '</div>';
     echo "</div>";
 
+  } elseif ($activefolder == "credits") {
+  # =======  CREDITS GENERATOR ===========
+    # main HTML container:
+    echo '<div class="containercomic">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
+    echo '<div style="clear: both;"></div>';
+    echo '<section class="col sml-12 med-9 lrg-9 sml-centered" style="clear:both;">';
+
+    echo '<div class="col sml-12 sml-text-right">';
+    echo '      <nav class="nav" role="navigation">';
+    echo '        <div class="responsive-langmenu">';
+    eval($plxShow->callHook('MyMultiLingueLanguageMenu', array('pageurl' => '{LANG}/static6/sources&page=credits')));
+    echo '        </div>';
+    echo '      </nav>';
+    echo '    </div>';
+
+    # Disclaimer
+    # ----------
+    echo '<h2>Full Attribution credits generator</h2>';
+    echo '<br/>';
+    
+    # Disclaimer
+    # ----------
+    echo '<div style="font-size: 0.9em; padding: 20px; background: #fff7d7; color:#777; clear:both;">';
+    echo '<strong>Note:</strong><br/>';
+    echo 'This page is work-in-progress; a lot of work is happening on the credits right now.<br/>';
+    echo '</div>';
+    echo '<br/>';
+
+    echo '<em style="font-size:0.8em;">Document generated on '.date("Y-m-d").'.</em><br/>';
+    echo '<br/>';
+
+    # Legal
+    # -----
+    echo '<strong>Copyright © David Revoy '.date("Y").'.<br/>';
+    echo '<a href="https://www.peppercarrot.com">www.peppercarrot.com</a><br/>';
+    echo 'This work is licensed under a Creative Commons Attribution 4.0 International license.<br/>';
+    echo 'The text of the license is available at <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>.<br/></strong>';
+    echo '<br/>';
+    
+    # Sources
+    # -----
+    echo '<strong>Sources:</strong><br/>';
+    echo 'Artworks, translations and more can be found here: <a href="https://www.peppercarrot.com/static6/sources">https://www.peppercarrot.com/static6/sources</a>.<br/>';
+    echo '<br/>';
+
+    # The universe
+    # ------------
+    echo '<strong>Hereva, the universe of Pepper&Carrot:</strong><br/>';
+    echo 'Hereva was created by David Revoy, with contributions by Craig Maloney and Nicolas Artance.<br/>';
+    echo 'Corrections/Small-contributions: ArloJamesBarnes, Willem Sonke, Moini, Hali, Cgand, scribblemaniac and Alex Gryson.<br/>';
+    echo 'You can read more about Hereva on the wiki of Pepper&Carrot: <a href="https://www.peppercarrot.com/en/static8/wiki">https://www.peppercarrot.com/en/static8/wiki.</a><br/>';
+    echo '<br/>';
+
+    # Project-global
+    # --------------
+    $path = '0_sources/';
+    $technicalinfos = json_decode(file_get_contents($path.'/info.json'), true);
+    echo '<strong>Project management:</strong><br/>';
+    echo '<strong>Technical maintenance and scripting: </strong><br/>';
+    print_inlinetranslatorinfos($technicalinfos['project-global']['technic-and-scripting']);
+    echo '<br/>';
+    echo '<strong>General maintenance of the database of SVGs: </strong><br/>';
+    print_inlinetranslatorinfos($technicalinfos['project-global']['svg-database']);
+    echo '<br/>';
+    echo '<strong>Website maintenance and new features: </strong><br/>';
+    print_inlinetranslatorinfos($technicalinfos['project-global']['website-code']);
+    echo ' (on the top of a modified <a href="https://www.pluxml.org">PluXML</a> with plugin <a href="https://github.com/Pluxopolis/plxMyMultiLingue">plxMyMultiLingue</a>)<br/>';
+    echo '<br/>';
+
+    # The episodes
+    # ------------
+    # Loop on the folders for headers
+    $path = '0_sources/';
+    $hide = array('.', '..', '0ther', '0_archives', '.thumbs', 'New', '2010-10-10_Older-comics', '2010-10-09_Press-kit', '.git', '.ci', '0_transcripts', 'fonts');
+    $mainfolders = array_diff(scandir($path), $hide);
+    sort($mainfolders);
+    foreach($mainfolders as $foldername) {
+      $projectpath = $path.$foldername;
+      #Ensure a folder exist
+      if(is_dir($projectpath)) {
+        # Fallback to english in case of missing translation:
+        if(is_dir($projectpath.'/lang/'.$lang)) {
+          #good
+        } else {
+          $lang = 'en';
+        }
+        # Read all infos from json on 0_sources:
+        $episodeinfos = json_decode(file_get_contents($projectpath.'/info.json'), true);
+        $episodetitle = json_decode(file_get_contents($projectpath.'/hi-res/titles.json'), true);
+        $translatorinfos = json_decode(file_get_contents($projectpath.'/lang/'.$lang.'/info.json'), true);
+        # Write the episode title in local $lang:
+        echo '<strong>'.$episodetitle[$lang].'</strong>';
+        # Date
+        if (isset($episodeinfos['published'])) {
+          echo '<br/>';
+          echo '<em style="font-size:0.8em;">Published on '.$episodeinfos['published'].'</em>.';
+        }
+        # Art
+        if (isset($episodeinfos['credits']['art'])) {
+          echo '<br/>';
+          echo 'Art: ';
+          print_inlinetranslatorinfos($episodeinfos['credits']['scenario']);
+        }
+        # Scenario
+        if (isset($episodeinfos['credits']['scenario'])) {
+          echo '<br/>';
+          echo 'Scenario: ';
+          print_inlinetranslatorinfos($episodeinfos['credits']['scenario']);
+        }
+        # inspiration
+        if (isset($episodeinfos['credits']['inspiration'])) {
+          echo '<br/>';
+          echo 'Inspiration: ';
+          print_inlinetranslatorinfos($episodeinfos['credits']['inspiration']);
+        }
+        # script-doctor
+        if (isset($episodeinfos['credits']['script-doctor'])) {
+          echo '<br/>';
+          echo 'Script-doctor: ';
+          print_inlinetranslatorinfos($episodeinfos['credits']['script-doctor']);
+        }
+        # Beta-readers
+        if (isset($episodeinfos['credits']['beta-readers'])) {
+          echo '<br/>';
+          echo 'Beta-readers: ';
+          print_inlinetranslatorinfos($episodeinfos['credits']['beta-readers']);
+        }
+        if (isset($translatorinfos['credits'])) {
+          if (isset($translatorinfos['credits']['translation'])) {
+            echo '<br/>';
+            echo 'Translation: ';
+            print_inlinetranslatorinfos($translatorinfos['credits']['translation']);
+          }
+          if (isset($translatorinfos['credits']['proofreading'])) {
+            echo '<br/>';
+            echo 'Proofreading: ';
+            print_inlinetranslatorinfos($translatorinfos['credits']['proofreading']);
+          }
+
+          # We also have general editing credits in the episode info, so we merge them
+          $editingcredits = array();
+          if (isset($translatorinfos['credits']['editing'])) {
+            $editingcredits = $translatorinfos['credits']['editing'];
+          }
+          if (isset($episodeinfos['credits']['editing'])) {
+            $editingcredits = array_merge($editingcredits, $episodeinfos['credits']['editing']);
+          }
+          if (!empty($editingcredits)) {
+            echo '<br/>';
+            echo 'Editing: ';
+            print_inlinetranslatorinfos($editingcredits);
+          }
+        }
+        echo '<br/>';
+        echo '<br/>';
+      }
+    }
+
+    # Special thanks: 
+    # ------------------
+    echo '<strong>Special thanks to:</strong><br/>';
+    echo '<br/>';
+    # to all translators
+    # ------------------
+    echo '<strong>All patrons of Pepper&amp;Carrot! Your support made all of this possible.</strong><br/>';
+    echo '<br/>';
+    # to all translators
+    # ------------------
+    echo '<strong>All translators on Pepper&amp;Carrot for their contributions:</strong><br/>';
+        # Loop on the folders for headers
+    $alltranslators = array();
+    $allLangs = json_decode(file_get_contents('0_sources/langs.json'), true);
+    $languageCodes = array_keys($allLangs);
+    sort($languageCodes);
+    foreach($languageCodes as $lang) {
+      $langinfo = $allLangs[$lang];
+      $projectpath = $validlangdir.$lang;
+      $path = '0_sources/';
+      $hide = array('.', '..', '0ther', '0_archives', '.thumbs', 'New', '2010-10-10_Older-comics', '2010-10-09_Press-kit', '.git', '.ci', '0_transcripts', 'fonts');
+      $mainfolders = array_diff(scandir($path), $hide);
+      sort($mainfolders);
+      foreach($mainfolders as $foldername) {
+        $projectpath = $path.$foldername;
+        #Ensure a folder exist
+        if(is_dir($projectpath.'/lang/'.$lang)) {
+          $translatorinfos = json_decode(file_get_contents($projectpath.'/lang/'.$lang.'/info.json'), true);
+          if (isset($translatorinfos['credits'])) {
+            if (isset($translatorinfos['credits']['translation'])) {
+              #$localname = $langinfo['local_name'];
+              #echo ''.$localname.'';
+              #$alltranslators[] = $translatorinfos['credits']['translation'];
+              foreach ($translatorinfos['credits']['translation'] as $translator) {
+                $alltranslators[] = $translator;
+              }
+            }
+          }
+        }
+      }
+    }
+    $result = array_unique($alltranslators);
+    print_inlinetranslatorinfos($result);
+    echo '<br/><br/>';
+
+    # to the projects
+    # ----------------
+
+    echo '<strong>The Framasoft team</strong> for hosting our oversized repositories via their Gitlab instance Framagit.';
+    echo '<br/><br/>';
+
+    echo '<strong>The Freenode staff</strong> for our #pepper&carrot IRC community channel.';
+    echo '<br/><br/>';
+
+    echo '<strong>All Free/Libre and open-source software</strong> because Pepper&Carrot episodes are created using 100% Free/Libre software on a GNU/Linux operating system. The main one used in production being:<br/>';
+    echo '- <strong>Krita</strong> for artworks (krita.org).<br/>';
+    echo '- <strong>Inkscape</strong> for vector and speechbubbles (inkscape.org).<br/>';
+    echo '- <strong>Blender</strong> for arworks and video editing (blender.org).<br/>';
+    echo '- <strong>Kdenlive</strong> for video editing (kdenlive.org).<br/>';
+    echo '- <strong>Scribus</strong> for the book project (scribus.net).<br/>';
+    echo '- <strong>Gmic</strong> for filters and effects (gmic.eu).<br/>';
+    echo '- <strong>Imagemagick</strong> & <strong>Bash</strong> for 90% of automation on the project.<br/>';
+    echo '<br/>';
+
+    # to the bug fix heroes
+    # ----------------------
+    $path = '0_sources/';
+    $technicalinfos = json_decode(file_get_contents($path.'/info.json'), true);
+    echo '<strong>And finally to all developpers who interacted on fixing Pepper&Carrot specific bug-reports:</strong> <br/>';
+    print_inlinetranslatorinfos($technicalinfos['project-global']['bug-fix-heroes']);
+    echo '.. <strong>and anyone I\'ve missed.</strong>';
+    echo '<br/><br/>';
+
+
+
   # ===========  SKETCHBOOK ================
   } elseif ($activefolder == "sketchbook" || $activefolder == "inks" || $activefolder == "original") {
     # main HTML container:
@@ -1340,6 +1599,18 @@ echo '<div class="grid">';
           echo '<figcaption class="sourcescaptions text-center" >';
           echo '<b>Scenarios</b><br/>';
           echo 'collaborative stories';
+          echo '</a></figcaption>';
+          echo '</figure>';
+
+          # CREDITS GENERATOR
+          echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
+          echo '<a href="';
+          $plxShow->urlRewrite('?static6/sources&page=credits');
+          echo '" >';
+          echo '<img src="data/images/static/sourcesthumb-credits.jpg" alt="" title="" ><br/>';
+          echo '<figcaption class="sourcescaptions text-center" >';
+          echo '<b>Credits Generator</b><br/>';
+          echo 'A tool to generate the full credits';
           echo '</a></figcaption>';
           echo '</figure>';
 
