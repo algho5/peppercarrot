@@ -186,6 +186,7 @@ div.hidden { height:0px; max-height:0px; width:0px; max-width:0px; opacity:0.0;}
 .readme ul {  margin: 0; padding: 0; }
 .readme li { margin: 0; padding: 0; }
 .readme h1,.readme h2 { font-size: 1.4rem;}
+.tabletransla a {color: #3A2619; text-decoration: none;}
 
 /* Footer */
 .footer { color: #3A2619; background: url('../img/header-bg.jpg') center center; border-top: 1px solid rgba(64,56,52,0.1); box-shadow: 0 -0.1rem 0.2rem rgba(49,20,0,0.2); padding: 0.6rem 0 1rem 0; }

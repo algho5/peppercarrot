@@ -943,20 +943,18 @@ echo '<div class="grid">';
     echo "<tr>";
     echo "<th></th>";
     # Loop on the folders for headers
-    $path = '0_sources/';
-    $hide = array('.', '..', '0ther', '0_archives', '.thumbs', 'New', '2010-10-10_Older-comics', '2010-10-09_Press-kit', '.git', '.ci', '0_transcripts', 'fonts');
-    $mainfolders = array_diff(scandir($path), $hide);
+    $mainfolders = glob("0_sources/ep[0-9][0-9]*");
     sort($mainfolders);
-    foreach($mainfolders as $foldername) {
-      $projectpath = $path.$foldername;
+    foreach($mainfolders as $projectpath) {
+      $foldername=basename($projectpath);
       #Ensure a folder exist
       if(is_dir($projectpath)) {
         $episodenumber = substr($foldername, 1);
         $episodenumber = preg_replace('/[^0-9.]+/', '', $foldername);
         echo '<th><a href="';
         $plxShow->urlRewrite('?static6/sources&page='.$foldername);
-        echo'" title="'.$projectpath.'"> ep'.$episodenumber.'';
-        echo'<img src="plugins/vignette/plxthumbnailer.php?src='.$projectpath.'/low-res/gfx-only/gfx_Pepper-and-Carrot_by-David-Revoy_E'.$episodenumber.'.jpg&amp;h=40&amp;w=75&amp;s=1&amp;q=84&amp"></a></th>';
+        echo '" title="'.$projectpath.'"> Episode '.$episodenumber.'<br/>';
+        echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$projectpath.'/low-res/gfx-only/gfx_Pepper-and-Carrot_by-David-Revoy_E'.$episodenumber.'.jpg&amp;h=100&amp;w=170&amp;s=1&amp;q=84&amp"></a></th>';
         $totalepisodecount = $totalepisodecount + 1;
         }
     }
@@ -1009,11 +1007,9 @@ echo '<div class="grid">';
         #Ensure a folder exist
         if(is_dir($projectpath)) {
           # we are in comic source folder
-          # beautify name
-          $foldername = str_replace('ep', ' Episode ', $foldername);
-          $foldername = substr($foldername, 19);
-          $foldername = str_replace('_', ' : ', $foldername);
-          $foldername = str_replace('-', ' ', $foldername);
+          # Get the episode number
+          $episodenumber = substr($foldername, 1);
+          $episodenumber = preg_replace('/[^0-9.]+/', '', $foldername);
           # we scan all en vignette to define all episodes , it's a constant
           $search = glob($projectpath."/low-res/en_*E??.jpg");
           # we loop on found episodes
@@ -1035,14 +1031,19 @@ echo '<div class="grid">';
               if (file_exists($filepathtranslated)) {
                 if ( $singlelangcount == $totalepisodecount ) {
                   # all is translated!
-                  echo '<td align="left" style="background-color:#D5F1B3;color:#6FA62C">';
+                  echo '<td align="left" style="background-color:#f5ffe7;vertical-align:top;">';
                   $fulltranslacounter = $fulltranslacounter + 1;
                 } else {
                   # partial
-                  echo '<td align="left" style="background-color:#FFFD9E;color:#C3922A">';
+                  echo '<td align="left" style="background-color:#fffff3;vertical-align:top;">';
                 }
                 # for all
-                echo '<small>';
+                echo '<div style="text-align: center; padding: 0 0px; margin: 0 0; font-size: 0.75rem; white-space: nowrap; text-overflow: clip;">';
+
+                # Top bar info of cells: ep number + lang + last date
+                echo '<span style="color:#666;">[ep'.$episodenumber.'/'.$lang.']&nbsp;&nbsp;&nbsp;';
+                echo date ("Y.m.d", filemtime($svgpathtranslated));
+                echo '</span>';
 
                 # Translator credits
                 $translatorinfos = json_decode(file_get_contents($projectpath.'/lang/'.$lang.'/info.json'), true);
@@ -1056,24 +1057,15 @@ echo '<div class="grid">';
                         echo '<dt><strong>Proofreading</strong><dt>';
                         print_translatorinfos($translatorinfos['credits']['proofreading']);
                       }
-
-                      # We also have general editing credits in the episode info, so we merge them
-                      $editingcredits = array();
-                      if (isset($translatorinfos['credits']['editing'])) {
-                        $editingcredits = $translatorinfos['credits']['editing'];
-                      }
-                      if (isset($episodeinfos['credits']['editing'])) {
-                        $editingcredits = array_merge($editingcredits, $episodeinfos['credits']['editing']);
-                      }
-                      if (!empty($editingcredits)) {
-                        echo '<dt><strong>Editing</strong><dt>';
-                        print_translatorinfos($editingcredits);
+                      if (isset($translatorinfos['credits']['contribution'])) {
+                        echo '<dt><strong>Contribution</strong><dt>';
+                        print_translatorinfos($translatorinfos['credits']['contribution']);
                       }
                       echo '</dl>';
+                } else {
+                  echo '<br/><span style="font-size:20px; color:red;">X</span><br/>info.json is missing.';
                 }
-                # Date
-                echo date ("Y.m.d", filemtime($svgpathtranslated));
-                echo '</small>';
+                echo '</div>';
                 echo ' </td>';
                 $translacounter = $translacounter + 1;
               } else {

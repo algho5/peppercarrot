@@ -61,8 +61,6 @@ caption, th { text-align: left;}
 table { border-collapse: collapse; border-spacing: 0;}
 td, th { border: 1px solid #bbb; padding: .4rem .7rem;}
 tfoot, thead { background-color: #e1e1e1;}
-tr:hover { background-color: #fff8dc;}
-tfoot tr:hover, thead tr:hover { background-color: inherit;}
 .scrollable-table { overflow: auto;}
 
 /* NAVIGATION
