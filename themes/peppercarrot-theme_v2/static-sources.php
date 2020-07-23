@@ -1184,13 +1184,13 @@ echo '<div class="grid">';
     $technicalinfos = json_decode(file_get_contents($path.'/info.json'), true);
     echo '<strong>Project management:</strong><br/>';
     echo '<strong>Technical maintenance and scripting: </strong><br/>';
-    print_inlinetranslatorinfos($technicalinfos['project-global']['technic-and-scripting']);
+    print_inlinetranslatorinfos($technicalinfos['project-global-credits']['technic-and-scripting']);
     echo '<br/>';
     echo '<strong>General maintenance of the database of SVGs: </strong><br/>';
-    print_inlinetranslatorinfos($technicalinfos['project-global']['svg-database']);
+    print_inlinetranslatorinfos($technicalinfos['project-global-credits']['svg-database']);
     echo '<br/>';
     echo '<strong>Website maintenance and new features: </strong><br/>';
-    print_inlinetranslatorinfos($technicalinfos['project-global']['website-code']);
+    print_inlinetranslatorinfos($technicalinfos['project-global-credits']['website-code']);
     echo ' (on the top of a modified <a href="https://www.pluxml.org">PluXML</a> with plugin <a href="https://github.com/Pluxopolis/plxMyMultiLingue">plxMyMultiLingue</a>)<br/>';
     echo '<br/>';
 
@@ -1352,7 +1352,7 @@ echo '<div class="grid">';
     $path = '0_sources/';
     $technicalinfos = json_decode(file_get_contents($path.'/info.json'), true);
     echo '<strong>And finally to all developpers who interacted on fixing Pepper&Carrot specific bug-reports:</strong> <br/>';
-    print_inlinetranslatorinfos($technicalinfos['project-global']['bug-fix-heroes']);
+    print_inlinetranslatorinfos($technicalinfos['project-global-credits']['bug-fix-heroes']);
     echo '.. <strong>and anyone I\'ve missed.</strong>';
     echo '<br/><br/>';
 
