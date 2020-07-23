@@ -1181,7 +1181,7 @@ echo '<div class="grid">';
     # Project-global
     # --------------
     $path = '0_sources/';
-    $technicalinfos = json_decode(file_get_contents($path.'/info.json'), true);
+    $technicalinfos = json_decode(file_get_contents($path.'/project-global-credits.json'), true);
     echo '<strong>Project management:</strong><br/>';
     echo '<strong>Technical maintenance and scripting: </strong><br/>';
     print_inlinetranslatorinfos($technicalinfos['project-global-credits']['technic-and-scripting']);
@@ -1349,7 +1349,7 @@ echo '<div class="grid">';
     # to the bug fix heroes
     # ----------------------
     $path = '0_sources/';
-    $technicalinfos = json_decode(file_get_contents($path.'/info.json'), true);
+    $technicalinfos = json_decode(file_get_contents($path.'/project-global-credits.json'), true);
     echo '<strong>And finally to all developpers who interacted on fixing Pepper&Carrot specific bug-reports:</strong> <br/>';
     print_inlinetranslatorinfos($technicalinfos['project-global-credits']['bug-fix-heroes']);
     echo '.. <strong>and anyone I\'ve missed.</strong>';
