@@ -1162,9 +1162,20 @@ echo '<div class="grid">';
     # The universe
     # ------------
     echo '<strong>Hereva, the universe of Pepper&Carrot:</strong><br/>';
-    echo 'Hereva was created by David Revoy, with contributions by Craig Maloney and Nicolas Artance.<br/>';
-    echo 'Corrections/Small-contributions: ArloJamesBarnes, Willem Sonke, Moini, Hali, Cgand, scribblemaniac and Alex Gryson.<br/>';
-    echo 'You can read more about Hereva on the wiki of Pepper&Carrot: <a href="https://www.peppercarrot.com/en/static8/wiki">https://www.peppercarrot.com/en/static8/wiki.</a><br/>';
+    $path = 'data/wiki/';
+    $technicalinfos = json_decode(file_get_contents($path.'/info.json'), true);
+    echo '<strong>Creation:</strong> ';
+    print_inlinetranslatorinfos($technicalinfos['hereva-world-credits']['creation']);
+    echo '<br/>';
+    echo '<strong>Lead maintainer:</strong> ';
+    print_inlinetranslatorinfos($technicalinfos['hereva-world-credits']['lead-maintainer']);
+    echo '<br/>';
+    echo '<strong>Writers:</strong> ';
+    print_inlinetranslatorinfos($technicalinfos['hereva-world-credits']['writers']);
+    echo '<br/>';
+    echo '<strong>Correctors:</strong> ';
+    print_inlinetranslatorinfos($technicalinfos['hereva-world-credits']['correctors']);
+    echo '<br/>';
     echo '<br/>';
 
     # Project-global
