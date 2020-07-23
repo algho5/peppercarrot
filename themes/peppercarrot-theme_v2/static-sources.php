@@ -1215,6 +1215,10 @@ echo '<div class="grid">';
         $episodeinfos = json_decode(file_get_contents($projectpath.'/info.json'), true);
         $episodetitle = json_decode(file_get_contents($projectpath.'/hi-res/titles.json'), true);
         $translatorinfos = json_decode(file_get_contents($projectpath.'/lang/'.$lang.'/info.json'), true);
+        $allLangs = json_decode(file_get_contents('0_sources/langs.json'), true);
+        $langinfo = $allLangs[$lang];
+        $localname = $langinfo['local_name'];
+
         # Write the episode title in local $lang:
         echo '<strong>'.$episodetitle[$lang].'</strong>';
         # Date
@@ -1254,9 +1258,14 @@ echo '<div class="grid">';
         }
         if (isset($translatorinfos['credits'])) {
           if (isset($translatorinfos['credits']['translation'])) {
-            echo '<br/>';
-            echo 'Translation: ';
-            print_inlinetranslatorinfos($translatorinfos['credits']['translation']);
+            if (in_array('original version', $translatorinfos['credits']['translation'])) {
+              echo '<br/>';
+              echo ''.$localname.' (original version)';
+            } else {
+              echo '<br/>';
+              echo 'Translation ['.$localname.']: ';
+              print_inlinetranslatorinfos($translatorinfos['credits']['translation']);
+            }
           }
           if (isset($translatorinfos['credits']['proofreading'])) {
             echo '<br/>';
@@ -1264,18 +1273,10 @@ echo '<div class="grid">';
             print_inlinetranslatorinfos($translatorinfos['credits']['proofreading']);
           }
 
-          # We also have general editing credits in the episode info, so we merge them
-          $editingcredits = array();
-          if (isset($translatorinfos['credits']['editing'])) {
-            $editingcredits = $translatorinfos['credits']['editing'];
-          }
-          if (isset($episodeinfos['credits']['editing'])) {
-            $editingcredits = array_merge($editingcredits, $episodeinfos['credits']['editing']);
-          }
-          if (!empty($editingcredits)) {
+          if (isset($translatorinfos['credits']['contribution'])) {
             echo '<br/>';
-            echo 'Editing: ';
-            print_inlinetranslatorinfos($editingcredits);
+            echo 'Contribution: ';
+            print_inlinetranslatorinfos($translatorinfos['credits']['contribution']);
           }
         }
         echo '<br/>';
@@ -1313,9 +1314,6 @@ echo '<div class="grid">';
           $translatorinfos = json_decode(file_get_contents($projectpath.'/lang/'.$lang.'/info.json'), true);
           if (isset($translatorinfos['credits'])) {
             if (isset($translatorinfos['credits']['translation'])) {
-              #$localname = $langinfo['local_name'];
-              #echo ''.$localname.'';
-              #$alltranslators[] = $translatorinfos['credits']['translation'];
               foreach ($translatorinfos['credits']['translation'] as $translator) {
                 $alltranslators[] = $translator;
               }
@@ -1325,6 +1323,7 @@ echo '<div class="grid">';
       }
     }
     $result = array_unique($alltranslators);
+    $result = array_diff($result, array("original version"));
     print_inlinetranslatorinfos($result);
     echo '<br/><br/>';
 
