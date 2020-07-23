@@ -1238,17 +1238,17 @@ echo '<div class="grid">';
           echo 'Scenario: ';
           print_inlinetranslatorinfos($episodeinfos['credits']['scenario']);
         }
-        # inspiration
-        if (isset($episodeinfos['credits']['inspiration'])) {
-          echo '<br/>';
-          echo 'Inspiration: ';
-          print_inlinetranslatorinfos($episodeinfos['credits']['inspiration']);
-        }
         # script-doctor
         if (isset($episodeinfos['credits']['script-doctor'])) {
           echo '<br/>';
           echo 'Script-doctor: ';
           print_inlinetranslatorinfos($episodeinfos['credits']['script-doctor']);
+        }
+        # inspiration
+        if (isset($episodeinfos['credits']['inspiration'])) {
+          echo '<br/>';
+          echo 'Inspiration: ';
+          print_inlinetranslatorinfos($episodeinfos['credits']['inspiration']);
         }
         # Beta-readers
         if (isset($episodeinfos['credits']['beta-readers'])) {
