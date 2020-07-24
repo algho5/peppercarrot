@@ -306,13 +306,10 @@ echo '<div class="grid">';
     echo '</div>';
     echo '<section class="col sml-12 med-12 lrg-10 sml-centered sml-text-center" style="padding:0 0;">';
 
-    $path = '0_sources/';
-    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git', '.ci', '0_transcripts');
-    $mainfolders = array_diff(scandir($path), $hide);
+    $mainfolders = glob("0_sources/*ep[0-9][0-9]*");
     sort($mainfolders);
-    # Loop on the folders
-    foreach($mainfolders as $foldername) {
-      $projectpath = $path.$foldername;
+    foreach($mainfolders as $projectpath) {
+      $foldername = basename($projectpath);
       if(is_dir($projectpath)) {
         # we are in comic source folder
         # beautify name
@@ -366,13 +363,10 @@ echo '<div class="grid">';
     echo '<section class="col sml-12 med-12 lrg-10 sml-centered" style="padding:0 0;">';
 
     $overviewpagecount = 0;
-    $path = '0_sources/';
-    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git', '.ci', '0_transcripts');
-    $mainfolders = array_diff(scandir($path), $hide);
+    $mainfolders = glob("0_sources/ep[0-9][0-9]*");
     sort($mainfolders);
-    # Loop on the folders
-    foreach($mainfolders as $foldername) {
-      $projectpath = $path.$foldername;
+    foreach($mainfolders as $projectpath) {
+      $foldername = basename($projectpath);
       if(is_dir($projectpath)) {
         echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
         # beautify name
@@ -439,13 +433,10 @@ echo '<div class="grid">';
     echo '</div>';
     echo '<section class="col sml-12 med-12 lrg-12 sml-centered" style="padding:0 0;">';
 
-    $path = '0_sources/';
-    $hide = array('.', '..', '0_archives','0_Storyboard', '0ther', '.thumbs', 'New', '.git', '.ci', '0_transcripts');
-    $mainfolders = array_diff(scandir($path), $hide);
+    $mainfolders = glob("0_sources/*ep[0-9][0-9]*");
     sort($mainfolders);
-    # Loop on the folders
-    foreach($mainfolders as $foldername) {
-      $projectpath = $path.$foldername;
+    foreach($mainfolders as $projectpath) {
+      $foldername = basename($projectpath);
       if(is_dir($projectpath)) {
         if (strpos($foldername, 'new-') !== false) {
 
@@ -957,12 +948,10 @@ echo '<div class="grid">';
         echo $localname;
       echo' </strong></td>';
       $path = '0_sources/';
-      $hide = array('.', '..', '0_archives', '0ther', '.thumbs', 'New', 'fonts');
-      $mainfolders = array_diff(scandir($path), $hide);
+      $mainfolders = glob("0_sources/ep[0-9][0-9]*");
       sort($mainfolders);
-
-      foreach($mainfolders as $foldername) {
-        $projectpath = $path.$foldername;
+      foreach($mainfolders as $projectpath) {
+        $foldername = basename($projectpath);
         #Ensure a folder exist
         if(is_dir($projectpath)) {
           $search = glob($projectpath."/low-res/en_*E??.jpg");
@@ -984,8 +973,8 @@ echo '<div class="grid">';
         }
       }
 
-      foreach($mainfolders as $foldername) {
-        $projectpath = $path.$foldername;
+      foreach($mainfolders as $projectpath) {
+        $foldername = basename($projectpath);
         #Ensure a folder exist
         if(is_dir($projectpath)) {
           # we are in comic source folder
@@ -1177,12 +1166,11 @@ echo '<div class="grid">';
     # The episodes
     # ------------
     # Loop on the folders for headers
-    $path = '0_sources/';
-    $hide = array('.', '..', '0ther', '0_archives', '.thumbs', 'New', '2010-10-10_Older-comics', '2010-10-09_Press-kit', '.git', '.ci', '0_transcripts', 'fonts');
-    $mainfolders = array_diff(scandir($path), $hide);
+    # 
+    $mainfolders = glob("0_sources/ep[0-9][0-9]*");
     sort($mainfolders);
-    foreach($mainfolders as $foldername) {
-      $projectpath = $path.$foldername;
+    foreach($mainfolders as $projectpath) {
+      $foldername = basename($projectpath);
       #Ensure a folder exist
       if(is_dir($projectpath)) {
         # Fallback to english in case of missing translation:
@@ -1288,13 +1276,10 @@ echo '<div class="grid">';
     sort($languageCodes);
     foreach($languageCodes as $lang) {
       $langinfo = $allLangs[$lang];
-      $projectpath = $validlangdir.$lang;
-      $path = '0_sources/';
-      $hide = array('.', '..', '0ther', '0_archives', '.thumbs', 'New', '2010-10-10_Older-comics', '2010-10-09_Press-kit', '.git', '.ci', '0_transcripts', 'fonts');
-      $mainfolders = array_diff(scandir($path), $hide);
+      $mainfolders = glob("0_sources/*ep[0-9][0-9]*");
       sort($mainfolders);
-      foreach($mainfolders as $foldername) {
-        $projectpath = $path.$foldername;
+      foreach($mainfolders as $projectpath) {
+        $foldername = basename($projectpath);
         #Ensure a folder exist
         if(is_dir($projectpath.'/lang/'.$lang)) {
           $translatorinfos = json_decode(file_get_contents($projectpath.'/lang/'.$lang.'/info.json'), true);
