@@ -337,6 +337,9 @@ echo '<div class="grid">';
               echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
             }
           }
+        } else {
+          # Fallback thumbnail for XYZ version.
+          echo '<img src="plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/misc/low-res/2019-05-22_beta-readers_by-David-Revoy.jpg&&amp;w=260&amp;h=190&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
         }
         echo '</a><figcaption class="sourcescaptions text-center" ><a href="';
         $plxShow->urlRewrite('?static6/sources&page='.$foldername);
@@ -1105,11 +1108,11 @@ echo '<div class="grid">';
     
     # Disclaimer
     # ----------
-    echo '<div style="font-size: 0.9em; padding: 20px; background: #fff7d7; color:#777; clear:both;">';
-    echo '<strong>Note:</strong><br/>';
-    echo 'This page is work-in-progress; a lot of work is happening on the credits right now.<br/>';
-    echo '</div>';
-    echo '<br/>';
+    #echo '<div style="font-size: 0.9em; padding: 20px; background: #fff7d7; color:#777; clear:both;">';
+    #echo '<strong>Note:</strong><br/>';
+    #echo 'This page is work-in-progress; a lot of work is happening on the credits right now.<br/>';
+    #echo '</div>';
+    #echo '<br/>';
 
     echo '<em style="font-size:0.8em;">Document generated on '.date("Y-m-d").'.</em><br/>';
     echo '<br/>';
