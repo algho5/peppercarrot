@@ -15,30 +15,12 @@ $activefolder = preg_replace('/[^A-Za-z0-9\._-]/', '', $activefolder);
 $requestedlang = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedlang);
 $requestedepisode = preg_replace('/[^A-Za-z0-9\._-]/', '', $requestedepisode);
 
-
 /**
  * Print a translator name + optional link as description data item
  * Names + links have the format 'Name <http|mailto ...>'
  * Links can be omitted for just a name
  */
-function print_translatorinfos($translatorinfos) {
-  natcasesort($translatorinfos);
-  foreach ($translatorinfos as $translatorinfo) {
-    preg_match('/(.*)\s+\<((http|mailto).*)\>/', $translatorinfo, $matches);
-    echo '<dd>';
-    if (count($matches) == 4) {
-      echo '<a href="' . $matches[2] . '">'. filter_var($matches[1], FILTER_SANITIZE_STRING) .'</a>';
-    } else {
-      echo filter_var($translatorinfo, FILTER_SANITIZE_STRING);
-    }
-    echo '</dd>';
-  }
-}
-
-/**
- * Same function than above, but printed "inline", commas separated and ending dot.
- */
-function print_inlinetranslatorinfos($translatorinfos) {
+function print_translatorinfos($translatorinfos, $separators, $ending) {
   natcasesort($translatorinfos);
   $number = count($translatorinfos);
   $counter = 0;
@@ -51,9 +33,9 @@ function print_inlinetranslatorinfos($translatorinfos) {
     }
   $counter = $counter + 1;
     if ($counter < $number) {
-      echo ", ";
+      echo $separators;
     } else {
-      echo ".";
+      echo $ending;
     }
   }
 }
@@ -1051,15 +1033,21 @@ echo '<div class="grid">';
                       echo '<dl>';
                       if (isset($translatorinfos['credits']['translation'])) {
                         echo '<dt><strong>Translation</strong></dt>';
-                        print_translatorinfos($translatorinfos['credits']['translation']);
+                        print_translatorinfos($translatorinfos['credits']['translation'], "<br/>", "");
                       }
                       if (isset($translatorinfos['credits']['proofreading'])) {
-                        echo '<dt><strong>Proofreading</strong><dt>';
-                        print_translatorinfos($translatorinfos['credits']['proofreading']);
+                        echo '<dt><strong>Proofreading</strong></dt>';
+                        print_translatorinfos($translatorinfos['credits']['proofreading'], "<br/>", "");
                       }
                       if (isset($translatorinfos['credits']['contribution'])) {
-                        echo '<dt><strong>Contribution</strong><dt>';
-                        print_translatorinfos($translatorinfos['credits']['contribution']);
+                        echo '<dt><strong>Contribution</strong></dt>';
+                        print_translatorinfos($translatorinfos['credits']['contribution'], "<br/>", "");
+                      }
+                      if (isset($translatorinfos['credits']['notes'])) {
+                        echo '<dt><strong>Notes</strong></dt>';
+                        echo '<div style="width:160px; white-space : normal;">';
+                        print_translatorinfos($translatorinfos['credits']['notes'], "<br/>", "");
+                        echo '</div>';
                       }
                       echo '</dl>';
                 } else {
@@ -1157,16 +1145,16 @@ echo '<div class="grid">';
     $path = 'data/wiki/';
     $technicalinfos = json_decode(file_get_contents($path.'/info.json'), true);
     echo '<strong>Creation:</strong> ';
-    print_inlinetranslatorinfos($technicalinfos['hereva-world-credits']['creation']);
+    print_translatorinfos($technicalinfos['hereva-world-credits']['creation'], ", ", ".");
     echo '<br/>';
     echo '<strong>Lead maintainer:</strong> ';
-    print_inlinetranslatorinfos($technicalinfos['hereva-world-credits']['lead-maintainer']);
+    print_translatorinfos($technicalinfos['hereva-world-credits']['lead-maintainer'], ", ", ".");
     echo '<br/>';
     echo '<strong>Writers:</strong> ';
-    print_inlinetranslatorinfos($technicalinfos['hereva-world-credits']['writers']);
+    print_translatorinfos($technicalinfos['hereva-world-credits']['writers'], ", ", ".");
     echo '<br/>';
     echo '<strong>Correctors:</strong> ';
-    print_inlinetranslatorinfos($technicalinfos['hereva-world-credits']['correctors']);
+    print_translatorinfos($technicalinfos['hereva-world-credits']['correctors'], ", ", ".");
     echo '<br/>';
     echo '<br/>';
 
@@ -1176,14 +1164,14 @@ echo '<div class="grid">';
     $technicalinfos = json_decode(file_get_contents($path.'/project-global-credits.json'), true);
     echo '<strong>Project management:</strong><br/>';
     echo '<strong>Technical maintenance and scripting: </strong><br/>';
-    print_inlinetranslatorinfos($technicalinfos['project-global-credits']['technic-and-scripting']);
+    print_translatorinfos($technicalinfos['project-global-credits']['technic-and-scripting'], ", ", ".");
     echo '<br/>';
     echo '<strong>General maintenance of the database of SVGs: </strong><br/>';
-    print_inlinetranslatorinfos($technicalinfos['project-global-credits']['svg-database']);
+    print_translatorinfos($technicalinfos['project-global-credits']['svg-database'], ", ", ".");
     echo '<br/>';
     echo '<strong>Website maintenance and new features: </strong><br/>';
-    print_inlinetranslatorinfos($technicalinfos['project-global-credits']['website-code']);
-    echo ' (on the top of a modified <a href="https://www.pluxml.org">PluXML</a> with plugin <a href="https://github.com/Pluxopolis/plxMyMultiLingue">plxMyMultiLingue</a>)<br/>';
+    print_translatorinfos($technicalinfos['project-global-credits']['website-code'], ", ", "");
+    echo ' (on the top of a modified <a href="https://www.pluxml.org">PluXML</a> with plugin <a href="https://github.com/Pluxopolis/plxMyMultiLingue">plxMyMultiLingue</a>).<br/>';
     echo '<br/>';
 
     # The episodes
@@ -1222,31 +1210,31 @@ echo '<div class="grid">';
         if (isset($episodeinfos['credits']['art'])) {
           echo '<br/>';
           echo 'Art: ';
-          print_inlinetranslatorinfos($episodeinfos['credits']['scenario']);
+          print_translatorinfos($episodeinfos['credits']['scenario'], ", ", ".");
         }
         # Scenario
         if (isset($episodeinfos['credits']['scenario'])) {
           echo '<br/>';
           echo 'Scenario: ';
-          print_inlinetranslatorinfos($episodeinfos['credits']['scenario']);
+          print_translatorinfos($episodeinfos['credits']['scenario'], ", ", ".");
         }
         # script-doctor
         if (isset($episodeinfos['credits']['script-doctor'])) {
           echo '<br/>';
           echo 'Script-doctor: ';
-          print_inlinetranslatorinfos($episodeinfos['credits']['script-doctor']);
+          print_translatorinfos($episodeinfos['credits']['script-doctor'], ", ", ".");
         }
         # inspiration
         if (isset($episodeinfos['credits']['inspiration'])) {
           echo '<br/>';
           echo 'Inspiration: ';
-          print_inlinetranslatorinfos($episodeinfos['credits']['inspiration']);
+          print_translatorinfos($episodeinfos['credits']['inspiration'], ", ", ".");
         }
         # Beta-readers
         if (isset($episodeinfos['credits']['beta-readers'])) {
           echo '<br/>';
           echo 'Beta-readers: ';
-          print_inlinetranslatorinfos($episodeinfos['credits']['beta-readers']);
+          print_translatorinfos($episodeinfos['credits']['beta-readers'], ", ", ".");
         }
         if (isset($translatorinfos['credits'])) {
           if (isset($translatorinfos['credits']['translation'])) {
@@ -1256,19 +1244,25 @@ echo '<div class="grid">';
             } else {
               echo '<br/>';
               echo 'Translation ['.$localname.']: ';
-              print_inlinetranslatorinfos($translatorinfos['credits']['translation']);
+              print_translatorinfos($translatorinfos['credits']['translation'], ", ", ".");
             }
           }
           if (isset($translatorinfos['credits']['proofreading'])) {
             echo '<br/>';
             echo 'Proofreading: ';
-            print_inlinetranslatorinfos($translatorinfos['credits']['proofreading']);
+            print_translatorinfos($translatorinfos['credits']['proofreading'], ", ", ".");
           }
 
           if (isset($translatorinfos['credits']['contribution'])) {
             echo '<br/>';
             echo 'Contribution: ';
-            print_inlinetranslatorinfos($translatorinfos['credits']['contribution']);
+            print_translatorinfos($translatorinfos['credits']['contribution'], ", ", ".");
+          }
+          
+          if (isset($translatorinfos['credits']['notes'])) {
+            echo '<br/>';
+            echo 'Notes: ';
+            print_translatorinfos($translatorinfos['credits']['notes'], " ", " ");
           }
         }
         echo '<br/>';
@@ -1316,7 +1310,7 @@ echo '<div class="grid">';
     }
     $result = array_unique($alltranslators);
     $result = array_diff($result, array("original version"));
-    print_inlinetranslatorinfos($result);
+    print_translatorinfos($result, " <small>★</small> ", ".");
     echo '<br/><br/>';
 
     # to the projects
@@ -1343,8 +1337,8 @@ echo '<div class="grid">';
     $path = '0_sources/';
     $technicalinfos = json_decode(file_get_contents($path.'/project-global-credits.json'), true);
     echo '<strong>And finally to all developpers who interacted on fixing Pepper&Carrot specific bug-reports:</strong> <br/>';
-    print_inlinetranslatorinfos($technicalinfos['project-global-credits']['bug-fix-heroes']);
-    echo '.. <strong>and anyone I\'ve missed.</strong>';
+    print_translatorinfos($technicalinfos['project-global-credits']['bug-fix-heroes'], " <small>★</small> ", ".");
+    echo '<br/><br/>... <strong>and anyone I\'ve missed.</strong>';
     echo '<br/><br/>';
 
 
