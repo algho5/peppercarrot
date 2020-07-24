@@ -1136,16 +1136,16 @@ echo '<div class="grid">';
     echo '<strong>Hereva, the universe of Pepper&Carrot:</strong><br/>';
     $path = 'data/wiki/';
     $technicalinfos = json_decode(file_get_contents($path.'/info.json'), true);
-    echo '<strong>Creation:</strong> ';
+    echo 'Creation: ';
     print_translatorinfos($technicalinfos['hereva-world-credits']['creation'], ", ", ".");
     echo '<br/>';
-    echo '<strong>Lead maintainer:</strong> ';
+    echo 'Lead maintainer: ';
     print_translatorinfos($technicalinfos['hereva-world-credits']['lead-maintainer'], ", ", ".");
     echo '<br/>';
-    echo '<strong>Writers:</strong> ';
+    echo 'Writers: ';
     print_translatorinfos($technicalinfos['hereva-world-credits']['writers'], ", ", ".");
     echo '<br/>';
-    echo '<strong>Correctors:</strong> ';
+    echo 'Correctors: ';
     print_translatorinfos($technicalinfos['hereva-world-credits']['correctors'], ", ", ".");
     echo '<br/>';
     echo '<br/>';
@@ -1155,13 +1155,13 @@ echo '<div class="grid">';
     $path = '0_sources/';
     $technicalinfos = json_decode(file_get_contents($path.'/project-global-credits.json'), true);
     echo '<strong>Project management:</strong><br/>';
-    echo '<strong>Technical maintenance and scripting: </strong><br/>';
+    echo '<strong>Technical maintenance and scripting: </strong>';
     print_translatorinfos($technicalinfos['project-global-credits']['technic-and-scripting'], ", ", ".");
     echo '<br/>';
-    echo '<strong>General maintenance of the database of SVGs: </strong><br/>';
+    echo '<strong>General maintenance of the database of SVGs: </strong>';
     print_translatorinfos($technicalinfos['project-global-credits']['svg-database'], ", ", ".");
     echo '<br/>';
-    echo '<strong>Website maintenance and new features: </strong><br/>';
+    echo '<strong>Website maintenance and new features: </strong>';
     print_translatorinfos($technicalinfos['project-global-credits']['website-code'], ", ", "");
     echo ' (on the top of a modified <a href="https://www.pluxml.org">PluXML</a> with plugin <a href="https://github.com/Pluxopolis/plxMyMultiLingue">plxMyMultiLingue</a>).<br/>';
     echo '<br/>';
@@ -1194,8 +1194,7 @@ echo '<div class="grid">';
         echo '<strong>'.$episodetitle[$lang].'</strong>';
         # Date
         if (isset($episodeinfos['published'])) {
-          echo '<br/>';
-          echo '<em style="font-size:0.8em;">Published on '.$episodeinfos['published'].'</em>.';
+          echo ' <em style="font-size:0.8em;">(published on '.$episodeinfos['published'].')</em>';
         }
         # Art
         if (isset($episodeinfos['credits']['art'])) {
@@ -1205,8 +1204,7 @@ echo '<div class="grid">';
         }
         # Scenario
         if (isset($episodeinfos['credits']['scenario'])) {
-          echo '<br/>';
-          echo 'Scenario: ';
+          echo '&nbsp;&nbsp;&nbsp;Scenario: ';
           print_translatorinfos($episodeinfos['credits']['scenario'], ", ", ".");
         }
         # script-doctor
@@ -1298,7 +1296,7 @@ echo '<div class="grid">';
     }
     $result = array_unique($alltranslators);
     $result = array_diff($result, array("original version"));
-    print_translatorinfos($result, " <small>★</small> ", ".");
+    print_translatorinfos($result, ", ", ".");
     echo '<br/><br/>';
 
     # to the projects
@@ -1324,8 +1322,8 @@ echo '<div class="grid">';
     # ----------------------
     $path = '0_sources/';
     $technicalinfos = json_decode(file_get_contents($path.'/project-global-credits.json'), true);
-    echo '<strong>And finally to all developpers who interacted on fixing Pepper&Carrot specific bug-reports:</strong> <br/>';
-    print_translatorinfos($technicalinfos['project-global-credits']['bug-fix-heroes'], " <small>★</small> ", ".");
+    echo '<strong>And finally to all developers who interacted on fixing Pepper&Carrot specific bug-reports:</strong> <br/>';
+    print_translatorinfos($technicalinfos['project-global-credits']['bug-fix-heroes'], ", ", ".");
     echo '<br/><br/>... <strong>and anyone I\'ve missed.</strong>';
     echo '<br/><br/>';
 
