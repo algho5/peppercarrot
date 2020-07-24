@@ -27,7 +27,7 @@ function print_translatorinfos($translatorinfos, $separators, $ending) {
   foreach ($translatorinfos as $translatorinfo) {
     preg_match('/(.*)\s+\<((http|mailto).*)\>/', $translatorinfo, $matches);
     if (count($matches) == 4) {
-      echo '<a style="color: #412813;" href="' . $matches[2] . '">'. filter_var($matches[1], FILTER_SANITIZE_STRING) .'</a>';
+      echo '<a href="' . $matches[2] . '">'. filter_var($matches[1], FILTER_SANITIZE_STRING) .'</a>';
     } else {
       echo filter_var($translatorinfo, FILTER_SANITIZE_STRING).'';
     }

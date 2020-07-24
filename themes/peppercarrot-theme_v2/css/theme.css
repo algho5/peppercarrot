@@ -6,8 +6,8 @@
 /* Typo */
 @font-face { font-family: 'PepperCarrot'; src: url('../font/PepperCarrot.woff') format('woff'); font-weight: normal; font-style: normal; }
 body { color: #412813; font-family: ubuntu, arial, sans-serif; }
-a { background: transparent; color: #4f901b; text-decoration: none; }
-a:active, a:hover { color: #444; outline: 0; text-decoration: none; }
+a { background: transparent; color: #337283; text-decoration: underline; text-decoration-color: #97bac2;}
+a:active, a:hover { color: #258fd6; outline: 0; text-decoration: underline; text-decoration-color: #258fd6; }
 pre,code { color:#111; background-color: #FFF9F2; padding: 8px; line-height: 2rem!important; font: 13px Consolas, "Liberation Mono", Menlo, Courier, monospace; overflow:auto; }
 h1, h2, h3, h4, h5, h6 { font-family: 'PepperCarrot', cursive, sans-serif;}
 h1 { font-size:2.4rem; }
@@ -175,7 +175,7 @@ div.hidden { height:0px; max-height:0px; width:0px; max-width:0px; opacity:0.0;}
 /* Sources page */
 .source { background-color: #FFF; margin-bottom: 2rem; font-size: 1rem; }
 .filesize { font-size: 0.7rem; color: #999; }
-.sourcescaptions {height: 3rem;}
+.sourcescaptions a {height: 3rem; text-decoration: none;}
 .buttonkrazip { background: #AE6A6A; background-image: linear-gradient(to bottom, #f7f7f7, #ababab); border-radius: 0.6rem; color: #262526; border: solid #DADADA 1px; margin: 0 0 0 0; padding: 0.6rem;}
 .buttonkrazip .ico{ font-size: 24px; float:left; color: #888; margin: 5px 10px 0 5px; }
 .buttonlangzip {background: #AE6A6A; background-image: linear-gradient(to bottom, #f7f7f7, #ababab); border-radius: 0.6rem; color: #262526; border: solid #DADADA 1px; margin: 1rem 0 2rem 0; padding: 0.6rem;}
@@ -186,7 +186,6 @@ div.hidden { height:0px; max-height:0px; width:0px; max-width:0px; opacity:0.0;}
 .readme ul {  margin: 0; padding: 0; }
 .readme li { margin: 0; padding: 0; }
 .readme h1,.readme h2 { font-size: 1.4rem;}
-.tabletransla a {color: #3A2619; text-decoration: none;}
 
 /* Footer */
 .footer { color: #3A2619; background: url('../img/header-bg.jpg') center center; border-top: 1px solid rgba(64,56,52,0.1); box-shadow: 0 -0.1rem 0.2rem rgba(49,20,0,0.2); padding: 0.6rem 0 1rem 0; }
