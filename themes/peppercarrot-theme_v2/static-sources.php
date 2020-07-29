@@ -1390,8 +1390,8 @@ echo '<div class="grid">';
     echo '<div class="grid">';
 
     echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
-    echo '<h2>Sketchbook</h2>';
-    echo '<p>All the sketches are available as: <b>low</b>-resolution, <b>hi</b>-resolution, or with the layered <b>src</b>/sources krita files.</p>';
+    echo '<h2>Vector art</h2>';
+    echo '<p>All SVG the files are available rendered: <b>low</b>-jpg-resolution, <b>hi</b>-png-resolution, or with the <b>src</b>-svg Inkscape files.</p>';
     echo '<br/>';
     echo '</div>';
     echo '<section class="col sml-12 med-12 lrg-11 sml-centered sml-text-center" style="padding:0 0;">';
