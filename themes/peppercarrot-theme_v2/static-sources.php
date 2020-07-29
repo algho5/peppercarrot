@@ -1381,6 +1381,58 @@ echo '<div class="grid">';
     echo '</section>';
     echo '</div>';
 
+  # ===========  VECTOR  ================
+  } elseif ($activefolder == "vector") {
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
+
+    echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
+    echo '<h2>Sketchbook</h2>';
+    echo '<p>All the sketches are available as: <b>low</b>-resolution, <b>hi</b>-resolution, or with the layered <b>src</b>/sources krita files.</p>';
+    echo '<br/>';
+    echo '</div>';
+    echo '<section class="col sml-12 med-12 lrg-11 sml-centered sml-text-center" style="padding:0 0;">';
+    #variables:
+    $pathartworks = '0_sources/0ther/vector';
+    $hide = array('.', '..');
+    $mainfolders = array_diff(scandir($pathartworks), $hide);
+    rsort($mainfolders);
+    $search = glob($pathartworks."/low-res/*.jpg");
+    sort($search);
+    # we loop on found episodes
+    if (!empty($search)){
+      foreach ($search as $filepath) {
+        # filename extraction
+        $filename = basename($filepath);
+        $fullpath = dirname($filepath);
+        $filenamesvg= str_replace('.jpg', '.svg', $filename);
+        $filenamepng= str_replace('.jpg', '.png', $filename);
+        $svgpath = $fullpath.'/../'.$filenamesvg.'';
+        $svgpath = str_replace("_by-David-Revoy", '', $svgpath);
+        $fileweight = (filesize($svgpath) / 1024) / 1024;
+        echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
+        echo '<a href="0_sources/0ther/vector/hi-res/'.$filenamepng.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;s=1&amp;zc=2&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+        $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
+        $filenameclean = substr($filenameclean, 0);
+        $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
+        $filenameclean = str_replace('_', ' ', $filenameclean);
+        $filenameclean = str_replace('-', ' ', $filenameclean);
+        echo '<figcaption class="sourcescaptions text-center" >
+        <b>'.$filenameclean.'</b><br/>
+        [
+        <a href="0_sources/0ther/vector/low-res/'.$filename.'" >low</a> |
+        <a href="0_sources/0ther/vector/hi-res/'.$filenamepng.'" >hi</a> |
+        <a href="'.$svgpath.'" >svg <em class="filesize">('.round($fileweight, 2).'MB)</em></a> ]
+        </figcaption>';
+        echo '</figure>';
+      }
+    }
+    echo '</section>';
+    echo '</div>';
+
   } else {
   # =========== Error Page ================
     # main HTML container:
@@ -1497,6 +1549,18 @@ echo '<div class="grid">';
           echo '<figcaption class="sourcescaptions text-center" >';
           echo '<b>3D</b><br/>';
           echo '3D Blender files';
+          echo '</a></figcaption>';
+          echo '</figure>';
+          
+          # Vector
+          echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
+          echo '<a href="';
+          $plxShow->urlRewrite('?static6/sources&page=vector');
+          echo '" >';
+          echo '<img src="data/images/static/sourcesthumb-vector.jpg" alt="" title="" ><br/>';
+          echo '<figcaption class="sourcescaptions text-center" >';
+          echo '<b>Vector</b><br/>';
+          echo 'SVG art files';
           echo '</a></figcaption>';
           echo '</figure>';
 
