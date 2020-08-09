@@ -102,8 +102,8 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .responsive-langmenu ul { display: none; column-count: 4; margin: 0 0 1rem 0; border: 1px solid #cecece; border-radius: 5px; box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.1); }
 .responsive-langmenu label, .responsive-langmenu ul li {display: block; margin-left: 0}
 .responsive-langmenu ul li:hover {background-color: #ddd;}
-.responsive-langmenu ul li a {display: block;padding: .425rem .7rem;}
-.responsive-langmenu ul li a:hover {text-decoration: none;}
+.responsive-langmenu ul li a {display: block;padding: .425rem .7rem; text-decoration: none!important;}
+.responsive-langmenu ul li a:hover {text-decoration: none!important;}
 .responsive-langmenu .langmenu.breadcrumb li + li:before, .responsive-langmenu .langmenu.expanded.breadcrumb > li + li a:before {content: none;}
 .responsive-langmenu ul li.active a, .responsive-langmenu ul li.active:hover {background-color: #258fd6;color: #fff;}
 .percent { color: #808080; font-size: 0.8rem; }
@@ -124,7 +124,7 @@ figure + em, img + em, h1 + p em { display: block; max-width: 75%; margin: 0 aut
 .thumbnail figcaption{ min-height: 2.3rem; text-decoration: none; font-size: 0.85rem; overflow: hidden; white-space: nowrap; margin-bottom: 0.3rem; }
 .thumbnail figcaption a { color: #444; }
 .thumbnail figcaption a:hover { text-decoration: none; color: #258fd6; }
-.thumbnail .detail, .thumbnail .detail a{ color: #BBB; font-size: 0.8rem; }
+.thumbnail .detail, .thumbnail .detail a, .notranslation a{color: #BBB; font-size: 0.8rem; text-decoration: none!important;}
 .notranslation img { filter: sepia(0.8); opacity: 0.42; }
 
 /* prev/next button webcomic */
@@ -166,7 +166,7 @@ div.hidden { height:0px; max-height:0px; width:0px; max-width:0px; opacity:0.0;}
 .scenario blockquote { font-family: "Georgia", Times, serif; font-style: normal; background-color: #fafaf6; margin: 0px 0px; padding: 1px 20px 10px 20px; border-radius: 10px; }
 .scenario p { margin: 20px 0 5px 0; }
 .wikivertimenu { padding-top: 1rem;}
-.wikibutton { width: 100%; display: block; box-sizing: border-box; padding: 0.2rem 0.7rem 0.4rem 1rem; margin-bottom: 0.5rem; border-radius: 4px; box-shadow: 0 0 0 2px #F0ECE9 inset, 0 0 0 3px rgba(222,168,131,0.55) inset, 1px 1px 2px 0 rgba(20,0,0,0.50); background: url('../img/bg.jpg'); font: normal 1.4rem 'PepperCarrot', cursive; text-align: left;  color: #412813; transition: all 0.2s ease-in;}
+.wikibutton { width: 100%; display: block; box-sizing: border-box; padding: 0.2rem 0.7rem 0.4rem 1rem; margin-bottom: 0.5rem; border-radius: 4px; box-shadow: 0 0 0 2px #F0ECE9 inset, 0 0 0 3px rgba(222,168,131,0.55) inset, 1px 1px 2px 0 rgba(20,0,0,0.50); background: url('../img/bg.jpg'); font: normal 1.4rem 'PepperCarrot', cursive; text-align: left;  color: #412813; transition: all 0.2s ease-in; text-decoration: none!important;}
 .wikibutton.active { color: #111; background: #fff;}
 .wikibutton:hover { text-shadow: 1px 0px 30px green, 1px 0px 20px yellow, 1px 0px 10px yellow, 1px 0px 5px white, 1px 0px 5px white; text-decoration: none; transition: all 0.2s ease-in;}
 .edit { padding-left: 1.2rem; line-height: 1.6;}
