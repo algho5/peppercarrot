@@ -6,7 +6,7 @@
 /* Typo */
 @font-face { font-family: 'PepperCarrot'; src: url('../font/PepperCarrot.woff') format('woff'); font-weight: normal; font-style: normal; }
 body { color: #412813; font-family: ubuntu, arial, sans-serif; }
-a { background: transparent; color: #337283; text-decoration: underline; text-decoration-color: #97bac2;}
+a { background: transparent; color: #175eb3; text-decoration: underline; text-decoration-color: #97bac2;}
 a:active, a:hover { color: #258fd6; outline: 0; text-decoration: underline; text-decoration-color: #258fd6; }
 pre,code { color:#111; background-color: #FFF9F2; padding: 8px; line-height: 2rem!important; font: 13px Consolas, "Liberation Mono", Menlo, Courier, monospace; overflow:auto; }
 h1, h2, h3, h4, h5, h6 { font-family: 'PepperCarrot', cursive, sans-serif;}
