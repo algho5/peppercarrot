@@ -16,12 +16,13 @@ if(!isset($_GET['page'])) {
 }
 
 // Initiate page
-echo '<div class="container wikibg">'."\n";
-echo '  <main class="main grid" role="main">'."\n";
+echo '<div class="'.$wikitheme.'">'."\n";
+echo '  <div class="container">'."\n";
+echo '    <main class="main grid" role="main">'."\n";
 
 // Start sidebar
-echo '    <aside class="wikivertimenu col sml-12 med-12 lrg-3" role="complementary">'."\n";
-echo '      <section class="wikibuttonmenu col sml-12 med-12 lrg-12" style="padding:0 0;">'."\n";
+echo '      <aside class="wikivertimenu col sml-12 med-12 lrg-3" role="complementary">'."\n";
+echo '        <section class="wikibuttonmenu col sml-12 med-12 lrg-12" style="padding:0 0;">'."\n";
 
 // Create array database
 $allpages = array();
@@ -81,18 +82,18 @@ echo '	  <section class="page col sml-12 med-12 lrg-9">'."\n";
 
 // Display edit buttons
 function _Displayeditbuttons() {
-  global $repositoryURL, $page;
+  global $repositoryURL, $page, $wikiicons;
   echo '     <div class="edit" >'."\n";
   echo '       <div class="button moka" >'."\n";
   echo '        <a href="'.$repositoryURL.'/commits/master/'.$page.'.md" target="_blank" title="External history link to see all changes made to this page" >'."\n";
-  echo '          <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history.svg" alt=""/>'."\n";
+  echo '          <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/history'.$wikiicons.'.svg" alt=""/>'."\n";
   echo '            View history'."\n";
   echo '        </a>'."\n";
   echo '       </div>'."\n";
 
   echo '       <div class="button moka" >'."\n";
   echo '        <a href="'.$repositoryURL.'/edit/master/'.$page.'.md" target="_blank" title="Edit this page with an external editor" >'."\n";
-  echo '          <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/edit.svg" alt=""/>'."\n";
+  echo '          <img width="16px" height="16px" src="themes/peppercarrot-theme_v2/ico/edit'.$wikiicons.'.svg" alt=""/>'."\n";
   echo '            Edit'."\n";
   echo '        </a>'."\n";
   echo '       </div>'."\n";
@@ -142,8 +143,9 @@ _Displayeditbuttons();
 echo '	    <div style="clear:both"></div>'."\n";
 echo '	    <br/><br/>'."\n";
 
-echo '	  </section>'."\n";
-echo '	</main>'."\n";
+echo '	    </section>'."\n";
+echo '	  </main>'."\n";
+echo '  </div>'."\n";
 echo '</div>'."\n";
 echo ''."\n";
 ?>

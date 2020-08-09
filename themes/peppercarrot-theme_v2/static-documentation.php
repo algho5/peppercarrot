@@ -6,6 +6,8 @@ include(dirname(__FILE__).'/lib-parsedown.php');
 $repositoryURL = "https://framagit.org/peppercarrot/documentation";
 $currentpage = "?static14/documentation";
 $datapath = "data/documentation/";
+$wikitheme = "wikidoc";
+$wikiicons = "_b";
 
 include(dirname(__FILE__).'/lib-wiki.php');
 

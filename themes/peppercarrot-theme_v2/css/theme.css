@@ -149,7 +149,7 @@ div.hidden { height:0px; max-height:0px; width:0px; max-width:0px; opacity:0.0;}
 .philo .button a { display: block; max-width: 300px; margin: 0 auto 2.5rem auto;}
 
 /* Scenario page */
-.scenariolist { color: #6e523c; font-size: 1.6rem; display: block; margin: 5px auto 0 auto; text-align: center; }
+.scenariolist { color: #6e523c; font-size: 1.6rem; display: block; margin: 5px auto 0 auto; text-align: center; text-decoration: none!important;}
 .notes { color: #a45d25; font-size: 1rem; }
 
 /* Wiki and default pages themes */
@@ -171,6 +171,27 @@ div.hidden { height:0px; max-height:0px; width:0px; max-width:0px; opacity:0.0;}
 .wikibutton:hover { text-shadow: 1px 0px 30px green, 1px 0px 20px yellow, 1px 0px 10px yellow, 1px 0px 5px white, 1px 0px 5px white; text-decoration: none; transition: all 0.2s ease-in;}
 .edit { padding-left: 1.2rem; line-height: 1.6;}
 .page .credits { font-size: 1rem; text-align: center; padding-top: 2.6rem; background: transparent url('../img/bordure.png') no-repeat top center;}
+
+/* Wiki theme specific for documentation */
+.wikidoc { background: url('../img/carrot_doc-bg.jpg'); color: #333;}
+.wikidoc .page { background: #FFF; border: none; border-image: none; padding: 15px 120px 0 120px; font-family: ubuntu, arial, sans-serif; text-align: left; font-size: 1rem; margin-top: 16px;}
+.wikidoc .page hr { border: dashed 1px #A79281; margin: 50px 0px;}
+.wikidoc .page img { max-width: 100%; display: block; text-align: center; border: 1px solid #CCC; border-image: none; }
+.wikidoc .page .edit { text-align: right; margin-right: -18%;}
+.wikidoc .page .edit .button { display:inline-block; font-size: 1rem;}
+.wikidoc .page .edit img { display: inline; max-width: 100%; text-align: center; margin-left: 0; margin-right: 0; border: none; transform: translate(0, 0); }
+.wikidoc .moka a { color: #258fd6!important; background: #FFF; box-shadow: none!important; }
+.wikidoc pre, .code { border-radius: 6px; font-family: monospace; font-size: 0.85rem; color:#1C4054; background-color:#F0F3F5; margin: 10px 0 10px 0; border:1px dotted #EDF0F2; padding: 16px; overflow:auto; border: 1px solid #ddd; line-height: 1.6; page-break-inside: avoid; word-wrap: break-word; display: block; max-width: 100%;}
+.wikidoc code { border-radius: 2px; font-family: monospace; font-size: 0.85rem; color:#1C4054; background-color:#F0F3F5; padding: 2px; }
+.darkroom a.license{ color: #999;}
+.wikidoc .page h1{ font-size: 2.8rem; text-align: left; padding-bottom: 1.6rem; background: none; font-family: ubuntu, arial, sans-serif;}
+.wikidoc .page h2{ color: #111; font-size: 1.9rem; text-align: left; margin-bottom: 2rem; font-family: ubuntu, arial, sans-serif;}
+.wikidoc .page h3{ color: #111; font-size: 1.2rem; text-align: left; margin-bottom: 1.2rem; font-family: ubuntu, arial, sans-serif;}
+.wikidoc .page h4{ color: #111; font-size: 1rem; text-align: left; margin-bottom: 1.2rem; font-family: ubuntu, arial, sans-serif;}
+.wikidoc .wikibutton { margin-bottom: 0; padding: 0.7rem 1.5rem 0.8rem 1.8rem; border-radius: 0; box-shadow: none; background: #FFF; font: normal 1rem ubuntu, arial, sans-serif;}
+.wikidoc .wikibutton.active { background: #3daee9; color: #FFF; }
+.wikidoc .wikibutton:hover { text-shadow: none; text-decoration: none;}
+.wikidoc .page .credits { font-size: 1rem; text-align: center; padding-top: 2.6rem; background: none;}
 
 /* Sources page */
 .source { background-color: #FFF; margin-bottom: 2rem; font-size: 1rem; }
