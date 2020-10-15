@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'       =>  'Forráskód',
 'AUTHOR'        =>  'Szerző',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'Üzlet',
+'SHOP'         =>  'Üzlet',
 'FOLLOW'        =>  'Kövesd a Paprika&amp;Sárgarépát (angolul) az alábbi csatornákon:',
 
 # Top menu website buttons:

@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'       =>  'Originaldateien',
 'AUTHOR'        =>  'Autor',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'Geschäft',
+'SHOP'         =>  'Geschäft',
 'FOLLOW'        =>  'Folg Pepper&amp;Wuddel op:',
 
 # Top menu website buttons:

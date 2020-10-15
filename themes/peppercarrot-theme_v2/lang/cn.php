@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'       =>  '源文件',
 'AUTHOR'        =>  '作者',
 'EXTRAS'        =>  'Extras',
-'ESHOP'        =>   '商店',
+'SHOP'        =>   '商店',
 'FOLLOW'        =>  '小辣椒与萝卜头的社交足迹：',
 
 # Top menu website buttons:

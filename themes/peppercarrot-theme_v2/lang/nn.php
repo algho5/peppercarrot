@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'    => 'Kjeldefiler',
 'AUTHOR'     => 'Serieskaparen',
 'EXTRAS'     => 'Ekstrastoff',
-'ESHOP'      => 'Nettbutikk',
+'SHOP'      => 'Nettbutikk',
 'FOLLOW'     => 'Følg Pepar &amp; Gulrot på:',
 
 # Top menu website buttons:

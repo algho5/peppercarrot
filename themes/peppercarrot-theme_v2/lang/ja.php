@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'       =>  'ソース',
 'AUTHOR'        =>  '作者',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'ショップ',
+'SHOP'         =>  'ショップ',
 'FOLLOW'        =>  'ペッパー&amp;キャロットをフォロー:',
 
 # Top menu website buttons:

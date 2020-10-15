@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'       =>  'Fontoj',
 'AUTHOR'        =>  'Aŭtoro',
 'EXTRAS'        =>  'Aliaĵoj',
-'ESHOP'         =>  'Ret‑butiko',
+'SHOP'         =>  'Ret‑butiko',
 'FOLLOW'        =>  'Sekvi Pipron kaj Karoĉjon ĉe:',
 
 # Top menu website buttons:

@@ -22,7 +22,7 @@ $LANG = array(
 'SOURCES'       =>  'ka ve zbasu',
 'AUTHOR'        =>  'finti',
 'EXTRAS'        =>  'ekstra',
-'ESHOP'         => 'eShop',
+'SHOP'         => 'SHOP',
 'FOLLOW'        =>  "zgana le'e nuzba",
 
 # Top menu website buttons:

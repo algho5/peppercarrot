@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'    => 'Surse',
 'AUTHOR'     => 'Autor',
 'EXTRAS'     => 'Extra',
-'ESHOP'      => 'eMagazin',
+'SHOP'      => 'eMagazin',
 'FOLLOW'     => 'Urmărește Pepper&amp;Carrot pe:',
 
 # Top menu website buttons:

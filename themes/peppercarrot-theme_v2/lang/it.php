@@ -21,7 +21,7 @@ $LANG = array(
 'SOURCES'       =>  'Sorgenti',
 'AUTHOR'        =>  'Autore',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'Negozio',
+'SHOP'         =>  'Negozio',
 'FOLLOW'        =>  'Seguite Pepper&amp;Carrot su:',
 
 # Top menu website buttons:

@@ -99,14 +99,14 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
                   <?php if( $idStat=="015" OR $idStat=="009" OR $idStat=="010" OR $idStat=="011"){ $status = "active"; } else { $status = "no-active"; }?><li class="<?php echo $status; ?>" >
                     <a href="<?php $plxShow->urlRewrite('?static15/extras') ?>" id="active"><?php $plxShow->lang('EXTRAS') ?></a>
                   </li>
-                  <?php if($idStat=="016"){ $status = "active"; } else { $status = "no-active"; }?><li class="<?php echo $status; ?>" >
-                    <a href="<?php $plxShow->urlRewrite('?static16/eshop') ?>" id="active"><?php $plxShow->lang('ESHOP') ?></a>
-                  </li>
                   <?php if($idStat=="006" OR $idStat=="014"){ $status = "active"; } else { $status = "no-active"; }?><li class="<?php echo $status; ?>" >
                     <a href="<?php $plxShow->urlRewrite('?static6/sources') ?>"><?php $plxShow->lang('SOURCES') ?></a>
                   </li>
                   <?php if($idStat=="007"){ $status = "active"; } else { $status = "no-active"; }?><li class="<?php echo $status; ?>" >
                     <a href="<?php $plxShow->urlRewrite('?static7/author') ?>" id="active"><?php $plxShow->lang('AUTHOR') ?></a>
+                  </li>
+                  <li class="external">
+                    <a href="https://www.davidrevoy.com/store" target="blank"><?php $plxShow->lang('SHOP') ?>  <img src="themes/peppercarrot-theme_v2/ico/external-menu.svg" alt=""/></a>
                   </li>
                   <li class="external">
                     <a href="https://www.davidrevoy.com/blog" target="blank"><?php $plxShow->lang('BLOG') ?> <img src="themes/peppercarrot-theme_v2/ico/external-menu.svg" alt=""/></a>

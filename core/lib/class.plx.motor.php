@@ -242,6 +242,27 @@ class plxMotor {
 				$this->error404(L_DOCUMENT_NOT_FOUND);
 			}
 		}
+    # Custom set of redirection for the shop on www.davidrevoy.com after using www.peppercarrot.com/shop* URL: 
+		elseif($this->get AND preg_match('/^store?/',$this->get,$capture)) {
+			header('Location: https://www.davidrevoy.com/static9/shop', true, 301);
+      die();
+		}
+		elseif($this->get AND preg_match('/^Store?/',$this->get,$capture)) {
+			header('Location: https://www.davidrevoy.com/static9/shop', true, 301);
+      die();
+		}
+		elseif($this->get AND preg_match('/^eShop?/',$this->get,$capture)) {
+			header('Location: https://www.davidrevoy.com/static9/shop', true, 301);
+      die();
+		}
+		elseif($this->get AND preg_match('/^Shop?/',$this->get,$capture)) {
+			header('Location: https://www.davidrevoy.com/static9/shop', true, 301);
+      die();
+		}
+		elseif($this->get AND preg_match('/^shop?/',$this->get,$capture)) {
+			header('Location: https://www.davidrevoy.com/static9/shop', true, 301);
+      die();
+		}
 		else {
 			$this->error404(L_ERR_PAGE_NOT_FOUND);
 		}

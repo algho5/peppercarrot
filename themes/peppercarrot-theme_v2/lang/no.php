@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'       =>  'Kildefiler',
 'AUTHOR'        =>  'Forfatter',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'Butikk',
+'SHOP'         =>  'Butikk',
 'FOLLOW'        =>  'F&oslash;lg Pepper&amp;Gulrot p&aring;:',
 
 # Top menu website buttons:

@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'    => 'Bronnen',
 'AUTHOR'     => 'Auteur',
 'EXTRAS'     => 'Extras',
-'ESHOP'      => 'Winkel',
+'SHOP'      => 'Winkel',
 'FOLLOW'     => 'Volg Pepper&amp;Carrot op:',
 
 # Top menu website buttons:

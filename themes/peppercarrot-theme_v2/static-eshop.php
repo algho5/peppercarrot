@@ -10,7 +10,7 @@ include(dirname(__FILE__).'/lib-transla-static.php');
 echo '  <div class="col sml-12 med-10 lrg-10 sml-centered sml-text-center">';
 
 echo '<h2>';
-$plxShow->lang('ESHOP');
+$plxShow->lang('SHOP');
 echo '</h2>';
 
 // Comic Print on demand service: commented for now.
@@ -49,7 +49,7 @@ $plxShow->urlRewrite('?static6/sources&page=eshop');
 echo '">';
 $plxShow->lang('SOURCES');
 echo ' (';
-$plxShow->lang('ESHOP');
+$plxShow->lang('SHOP');
 echo ') </a>';
 echo '      </br>';
 echo '      </br>';

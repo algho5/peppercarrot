@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'       =>  'Mammenno&ugrave;',
 'AUTHOR'        =>  'Oberour',
 'EXTRAS'        =>  'Extras',
-'ESHOP'        =>   'eBoutique',
+'SHOP'        =>   'eBoutique',
 'FOLLOW'        =>  'Heulia&ntilde; Pepper&amp;Carrot war :',
 
 # Top menu website buttons:

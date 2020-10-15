@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'       =>  'Sumber',
 'AUTHOR'        =>  'Pengarang',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'Toko',
+'SHOP'         =>  'Toko',
 'FOLLOW'        =>  'Ikuti Pepper&amp;Carrot di:',
 
 # Top menu website buttons:

@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'       =>  'Fonts',
 'AUTHOR'        =>  'Autor',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'Botiga',
+'SHOP'         =>  'Botiga',
 'FOLLOW'        =>  'Seguir Pepper&amp;Carrot sus :',
 
 # Top menu website buttons:

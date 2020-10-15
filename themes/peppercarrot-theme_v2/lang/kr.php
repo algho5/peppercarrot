@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'       =>  '소스',
 'AUTHOR'        =>  '작가',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  '가게',
+'SHOP'         =>  '가게',
 'FOLLOW'        =>  '후추와 당근 팔로우하기：',
 
 # Top menu website buttons:

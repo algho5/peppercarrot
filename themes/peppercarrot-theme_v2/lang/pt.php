@@ -23,7 +23,7 @@ $LANG = array(
 'SOURCES'       =>  'Sources',
 'AUTHOR'        =>  'Autor',
 'EXTRAS'        =>  'Extras',
-'ESHOP'         =>  'Fazer compras',
+'SHOP'         =>  'Fazer compras',
 'FOLLOW'        =>  'Siga Pepper&amp;Carrot no:',
 
 # Top menu website buttons:

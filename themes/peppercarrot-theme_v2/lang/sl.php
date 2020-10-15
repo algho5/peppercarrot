@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'    => 'Viri',
 'AUTHOR'     => 'Avtor',
 'EXTRAS'     => 'Extra',
-'ESHOP'      => 'Trgovina',
+'SHOP'      => 'Trgovina',
 'FOLLOW'     => 'Sledi Pepper&amp;Carrot na:',
 
 # Top menu website buttons:

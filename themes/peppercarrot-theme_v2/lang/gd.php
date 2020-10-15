@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'    => 'Bun-tùs',
 'AUTHOR'     => 'Ùghdar',
 'EXTRAS'     => 'Barrachd',
-'ESHOP'      => 'Bùth',
+'SHOP'      => 'Bùth',
 'FOLLOW'     => 'Lean ri Pepper&amp;Carrot air:',
 
 # Top menu website buttons:
