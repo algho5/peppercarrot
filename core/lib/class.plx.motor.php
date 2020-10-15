@@ -255,6 +255,10 @@ class plxMotor {
 			header('Location: https://www.davidrevoy.com/static9/shop', true, 301);
       die();
 		}
+		elseif($this->get AND preg_match('/^eshop?/',$this->get,$capture)) {
+			header('Location: https://www.davidrevoy.com/static9/shop', true, 301);
+      die();
+		}
 		elseif($this->get AND preg_match('/^Shop?/',$this->get,$capture)) {
 			header('Location: https://www.davidrevoy.com/static9/shop', true, 301);
       die();

@@ -106,7 +106,7 @@ if (strpos($_SERVER['SERVER_NAME'], "localhost") !== false){
                     <a href="<?php $plxShow->urlRewrite('?static7/author') ?>" id="active"><?php $plxShow->lang('AUTHOR') ?></a>
                   </li>
                   <li class="external">
-                    <a href="https://www.davidrevoy.com/store" target="blank"><?php $plxShow->lang('SHOP') ?>  <img src="themes/peppercarrot-theme_v2/ico/external-menu.svg" alt=""/></a>
+                    <a href="https://www.davidrevoy.com/shop" target="blank"><?php $plxShow->lang('SHOP') ?>  <img src="themes/peppercarrot-theme_v2/ico/external-menu.svg" alt=""/></a>
                   </li>
                   <li class="external">
                     <a href="https://www.davidrevoy.com/blog" target="blank"><?php $plxShow->lang('BLOG') ?> <img src="themes/peppercarrot-theme_v2/ico/external-menu.svg" alt=""/></a>
