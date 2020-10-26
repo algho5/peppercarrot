@@ -39,6 +39,15 @@ include(dirname(__FILE__) . '/header.php');
         <section class="text-center">
           <?php eval($plxShow->callHook('MyMultiLingueComicDisplay')) ?>
         </section>
+        
+        <!-- Temporary banneer to help with the launch of books -->
+        <div class="container">
+          <section class="col sml-12 med-12 lrg-12">
+            <a href="https://www.davidrevoy.com/shop">
+              <img src="<?php $plxShow->template(); ?>/img/books-available.jpg" style="max-width:1200px;margin-bottom:20px;border-radius:5px">
+            </a>
+        </section>
+        </div>
 
       </article>
 

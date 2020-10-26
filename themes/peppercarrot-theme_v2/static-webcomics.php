@@ -26,6 +26,13 @@
           </div>
         </section>
 
+        <!-- Temporary banneer to help with the launch of books -->
+        <section class="col sml-12 med-12 lrg-12">
+          <a href="https://www.davidrevoy.com/shop">
+            <img src="<?php $plxShow->template(); ?>/img/books-available.jpg" style="width:100%;margin-top:10px;border-radius:5px">
+          </a>
+        </section>
+
         <section class="col sml-12 med-12 lrg-12">
           <div class="homebox">
             <h2 style="margin-top: 0.8rem;"><?php $plxShow->lang('WEBCOMIC_EPISODE') ?></h2>
