@@ -681,6 +681,61 @@ echo '<div class="grid">';
     echo '</section>';
     echo '</div>';
 
+  } elseif ($activefolder == "book-publishing") {
+  # =======  BOOK-PUBLISHING ===========
+    # main HTML container:
+    echo '<div class="container">';
+    echo '<main class="main grid" role="main">';
+    echo '<section class="col sml-12 med-12 lrg-12 sml-centered">';
+    echo '<div class="grid">';
+
+    echo '<div class="col sml-12 med-12 lrg-12 sml-text-center">';
+    echo '<h2>Book-publishing</h2>';
+    echo '<p>A specific page for the pictures used in the official printed books of Pepper&amp;Carrot:<br/>';
+    echo '<b>If you look for the repository with Scribus files, go to <a href="https://framagit.org/peppercarrot/book-publishing">book-publishing on git</a>.</b><br/><br/>';
+    echo '</p>';
+    echo '<br/><br/>';
+    echo '</div>';
+    echo '<section class="col sml-12 med-12 lrg-11 sml-centered sml-text-center" style="padding:0 0;">';
+    #variables:
+    $pathartworks = '0_sources/0ther/book-publishing';
+    $hide = array('.', '..');
+    $mainfolders = array_diff(scandir($pathartworks), $hide);
+    rsort($mainfolders);
+    $search = glob($pathartworks."/low-res/*.jpg");
+    # newer on top
+    rsort($search);
+    # we loop on found episodes
+    if (!empty($search)){
+    foreach ($search as $filepath) {
+    # filename extraction
+    $filename = basename($filepath);
+    $filenamepng = str_replace('_by-David-Revoy', '', $filename);
+    $filenamepng = str_replace('.jpg', '.png', $filenamepng);
+    $fullpath = dirname($filepath);
+    $filenamezip = str_replace('.jpg', '.zip', $filename);
+    $zippath = $fullpath.'/../zip/'.$filenamezip.'';
+    $fileweight = (filesize($zippath) / 1024) / 1024;
+    echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
+    echo '<a href="0_sources/0ther/book-publishing/hi-res/'.$filenamepng.'" ><img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;s=1&amp;zc=2&amp;q=88&amp;a=t" alt="'.$filename.'" title="'.$filename.'" ></a><br/>';
+    $filenameclean = preg_replace('/\\.[^.\\s]{3,4}$/', '', $filename);
+    $filenameclean = str_replace('_by-David-Revoy', '', $filenameclean);
+    $filenameclean = str_replace('_', ' ', $filenameclean);
+    $filenameclean = str_replace('-', ' ', $filenameclean);
+    $filenamezip = str_replace('jpg', 'zip', $filename);
+    echo '<figcaption class="sourcescaptions text-center" >
+    <b>'.$filenameclean.'</b><br/>
+    [
+    <a href="0_sources/0ther/book-publishing/low-res/'.$filename.'" >low</a> |
+    <a href="0_sources/0ther/book-publishing/hi-res/'.$filenamepng.'" >hi</a> |
+    <a href="0_sources/0ther/book-publishing/zip/'.$filenamezip.'" >src <em class="filesize">('.round($fileweight, 2).'MB)</em></a> ]
+    </figcaption>';
+    echo '</figure>';
+    }
+    }
+    echo '</section>';
+    echo '</div>';
+
   } elseif ($activefolder == "eshop") {
   # =======  E-SHOP ===========
     # main HTML container:
@@ -1597,6 +1652,18 @@ echo '<div class="grid">';
           echo '<figcaption class="sourcescaptions text-center" >';
           echo '<b>Eshop</b><br/>';
           echo 'Sources of the official eshop';
+          echo '</a></figcaption>';
+          echo '</figure>';
+
+          # BOOK-PUBLISHING
+          echo '<figure class="thumbnail col sml-6 med-3 lrg-3">';
+          echo '<a href="';
+          $plxShow->urlRewrite('?static6/sources&page=book-publishing');
+          echo '" >';
+          echo '<img src="data/images/static/sourcesthumb-bookpublishing.jpg" alt="" title="" ><br/>';
+          echo '<figcaption class="sourcescaptions text-center" >';
+          echo '<b>Book-publishing</b><br/>';
+          echo 'Sources of the official books';
           echo '</a></figcaption>';
           echo '</figure>';
 
