@@ -10,7 +10,7 @@ $LANG = array(
 'PEPPERCARROT_TITLE'    =>  'Pepar&#xa0;&amp;&#xa0;Gulrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE' => 'Pepar&#xa0;&amp;&#xa0;Gulrot', // literal translation of the spice and the vegetable
 'Website_DESCRIPTION'    => 'Offisiell heimeside til Pepar &amp; Gulrot, ein fri teikneserie om den unge heksa Pepar og katten hennar, Gulrot. Dei lever i ei fantasiverd full av trylledrikkar, magi og fantastiske skapningar.',
-'SUBTITLE'               => 'Den frie teikneserien laga av David Revoy',
+'SUBTITLE'               => 'Den frie teikne­serien laga av David Revoy',
 
 ################################################################################
 # Top menu website:
@@ -67,7 +67,7 @@ $LANG = array(
 'WEBCOMIC_EPISODE'              => 'Episodar',
 'WEBCOMIC_MAKINGOF'             => 'Historia bak',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' => '
-<p>Historia bak og <a href="http://www.davidrevoy.com/categorie5/tutorials">teiknetips</a> er spesialbonusar sponsa av <a href="https://www.patreon.com/join/davidrevoy?">Patreon-«heltane» mine</a></p>
+<p>Historia bak og <a href="http://www.davidrevoy.com/categorie5/tutorials">teiknetips</a> er spesial­bonusar sponsa av <a href="https://www.patreon.com/join/davidrevoy?">Patreon-«heltane» mine</a></p>
 ',
 'WEBCOMIC_ARTWORK'              => 'Galleri',
 'WEBCOMIC_SKETCHES'             => 'Skisser',
@@ -85,8 +85,8 @@ $LANG = array(
 'PHILOSOPHY_TOP'    => '
  <h2>Støtta av lesarane</h2>
 
-    <p>Pepar &amp; Gulrot er utelukkande finansiert av lesarar – frå heile verda.
-    Kvar sponsor betalar litt for kvar nye episode og vert takka i teksten på slutten av episoden.
+    <p>Pepar &amp; Gulrot er utelukkande finansiert av lesarane, som kjem frå heile verda.
+    Ein lesar som vel å sponsa teikne­serien, betalar litt for kvar nye episode og vert takka i teksten på slutten av episoden.
     Denne ordninga gjer at Pepar &amp; Gulrot held fram med å vera uavhengig, og nettstaden treng aldri ha reklame eller andre forstyrrande element.</p>
 ',
 'DONATE_INTRO'    => '
@@ -110,8 +110,8 @@ $LANG = array(
 
     <p>Eg ynskjer å gje alle retten til å dela, bruka, byggja og til og med tena pengar på det eg har laga.
     Alle sidene, teikningane og innhaldet er laga med fri programvare på GNU/Linux, og alle tilhøyrande kjeldefiler er tilgjengelege her på nettstaden (sjå «Kjeldefiler» i menyen).
-    Eg oppfordrar til kommersiell bruk, omsetjing, teikningar av figurane, trykte bøker, filmar, dataspel og anna vidareformidling.
-    Berre hugs å kreditera opphavspersonane (teiknarar, korrekturlesarar og omsetjarar som har vore med på å laga materialet du ynskjer å bruka), oppgje lenkje/adresse til lisensen og opplys om du sjølv har gjort endringar. Alle rimelege måtar å gjera dette på er greitt, men du kan ikkje gjera det på ein måte som gjer at det verkar som at opphavspersonane støttar deg eller måten du har brukt materialet på.</p>
+    Eg oppfordrar til kommersiell bruk, omsetjing, teikningar av figurane, trykte bøker, filmar, dataspel og anna vidare­formidling.
+    Berre hugs å kreditera opphavs­personane (teiknarar, korrektur­lesarar og omsetjarar som har vore med på å laga materialet du ynskjer å bruka), oppgje lenkje/adresse til lisensen og opplys om du sjølv har gjort endringar. Alle rimelege måtar å gjera dette på er greitt, men du kan ikkje gjera det på ein måte som gjer at det verkar som at opphavs­personane støttar deg eller måten du har brukt materialet på.</p>
 
     <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/" title="For meir informasjon, les lisensvilkåra i Creative Commons Attribution 4.0">
@@ -124,7 +124,7 @@ $LANG = array(
     <h2>Kvalitets­underhaldning for alle, alle stadar</h2>
 
     <p>Pepar &amp; Gulrot er ein humoristisk teikneserie for alle, uansett alder.
-    Teikneserien inneheld aldri vakseninnhald eller vald. Som ein fri teikneserie med opne kjelder er Pepar &amp; Gulrot eit flott eksempel på kor kul fri kultur kan vera.
+    Teikneserien inneheld aldri vaksen­innhald eller vald. Som ein fri teikneserie med opne kjelder er Pepar &amp; Gulrot eit flott eksempel på kor kul fri kultur kan vera.
     Eg legg mykje vekt på kvalitet, etikk og profesjonalitet, sidan fri bruk og opne kjelder ikkje tyder sekunda vare – tvert imot!</p>
 
         <img alt="Illustrasjon: Teikneseriesider som svevar rundt jordkloden" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
@@ -132,8 +132,8 @@ $LANG = array(
     <h2>La oss endra teikneserie­bransjen!</h2>
 
     <p>
-      Utan ein mellommann mellom serieskaparen og publikum betalar du mindre og eg får meir. Du støttar meg direkte.
-      Ikkje noko forlag, distributør, PR-team eller motepoliti kan tvinga meg til å endra Pepar &amp; Gulrot til å passa deira syn på «marknaden».
+      Utan nokon mellom­mann mellom serie­skaparen og publikum betalar du mindre og eg får meir. Du støttar meg direkte.
+      Ikkje noko forlag, distributør, PR-team eller mote­politi kan tvinga meg til å endra Pepar &amp; Gulrot til å passa deira syn på «marknaden».
       Kan ikkje ein einskild suksess forandra ein heil bransje i krise? Me får sjå …
     </p>
 
@@ -168,7 +168,7 @@ $LANG = array(
 'CONTRIBUTE_TRANSLATION' => '
     <h2>Omsetjing og korrekturlesing</h2>
 
-    <p>Nettstaden til Pepar &amp; Gulrot er laga for å vera fleirspråkleg og støtta alle språk (òg utdøydde språk og fantasispråk). Kjeldefilene for nettstaden er tilgjengelege for deg å omsetja. Sjå <a href="?static14/documentation&page=010_Translate_the_comic">omsetjings­dokumentasjonen</a> for meir informasjon om korleis du lagar di eiga omsetjing.</p>
+    <p>Nettstaden til Pepar &amp; Gulrot er laga for å vera fleir­språkleg og støtta alle språk (òg utdøydde språk og fantasi­språk). Kjeldefilene for nett­staden er tilgjengelege for deg å omsetja. Sjå <a href="?static14/documentation&page=010_Translate_the_comic">omsetjings­dokumentasjonen</a> for meir informasjon om korleis du lagar di eiga omsetjing.</p>
 ',
 
 'CONTRIBUTE_SOCIAL'      => 'Sosiale nettverk',
@@ -176,7 +176,7 @@ $LANG = array(
 'CONTRIBUTE_PRESS'       => '
     <h2>Presse</h2>
 
-    <p>Vert sjølv utgjevar av Pepar &amp; Gulrot! Skriv artiklar eller blogginnlegg, del episodane og skap engasjement på dei sosiale media du er på. Du kan òg lasta ned ein eigen <a href="?static6/sources" title="Kjeldesida">pressepakke</a> frå «Kjeldefiler»-sida.</p>
+    <p>Vert sjølv utgjevar av Pepar &amp; Gulrot! Skriv artiklar eller blogg­innlegg, del episodane og skap engasjement på dei sosiale media du er på. Du kan òg lasta ned ein eigen <a href="?static6/sources" title="Kjeldesida">pressepakke</a> frå «Kjeldefiler»-sida.</p>
 ',
 
 'CONTRIBUTE_OTHER'       => '
@@ -225,7 +225,7 @@ $LANG = array(
 'AUTHOR_BIO'                         => '
     <p>Hei, eg er David Revoy, ein fransk kunstnar fødd i 1981. Eg er sjølvlært, med lidenskap for teikning, måling, kattar, datamaskiner, GNU/Linux, fri programvare, fri kultur, Internett, tradisjonelle RPG-dataspel, gammal manga og anime, tradisjonell kunst, japansk kultur, fantasy, …<br/>
     <br/>
-    Etter meir enn ti år som frilansar innan digital teikning, undervising og som illustratør for dataspel og animasjonsfilmar valde eg å starta mitt eige prosjekt. Endeleg fann eg ein måte å kombinera alle lidenskapane mine – og resultatet er Pepar &amp; Gulrot.</p>
+    Etter meir enn ti år som frilansar innan digital teikning, undervising og som illustratør for dataspel og animasjons­filmar valde eg å starta mitt eige prosjekt. Endeleg fann eg ein måte å kombinera alle lidenskapane mine – og resultatet er Pepar &amp; Gulrot.</p>
 
     <p>Portefølje:</p>
 ',
