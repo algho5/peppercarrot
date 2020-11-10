@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'    => 'Sources',
 'AUTHOR'     => 'Author',
 'EXTRAS'     => 'Extras',
-'SHOP'      => 'Shop',
+'SHOP'       => 'Shop',
 'FOLLOW'     => 'Follow Pepper&amp;Carrot on:',
 
 # Top menu website buttons:
@@ -162,7 +162,7 @@ $LANG = array(
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Derivatives</h2>
 
-    <p>Pepper&amp;Carrot can be adapted to many project or products, why not do your own or join an existing one?</p>
+    <p>Pepper&amp;Carrot can be adapted to many projects or products, why not do your own or join an existing one?</p>
 ',
 
 'CONTRIBUTE_TRANSLATION' => '
