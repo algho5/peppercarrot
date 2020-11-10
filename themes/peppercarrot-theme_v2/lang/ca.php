@@ -3,14 +3,14 @@
 $LANG = array(
 
 # Global
-'TRANSLATED_BY' 		    => 'Traducció: Juan José Segura</a>',
+'TRANSLATED_BY' 		    => 'Traducció: Juan José Segura, Carles Barrobés',
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
 'PEPPERCARROT_TITLE'    =>  'Pepper&amp;Carrot', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'Pepper i Carrot', // traducció literal de pebre + pastanaga
-'Website_DESCRIPTION'        =>  'Web oficial de Pepper&amp;Carrot, un webcòmic free/libre/lliure i open-source sobre la Pepper, una bruixeta, i el seu gat, en Carrot. Tots dos viuen en un univers fantàstic ple de pocions, màgia, i criatures de tot tipus.',
-'SUBTITLE'                  =>  'el webcòmic obert per David Revoy',
+'Website_DESCRIPTION'        =>  'Web oficial de Pepper&amp;Carrot, un webcòmic free/libre/lliure i de codi obert sobre la Pepper, una bruixeta, i el seu gat, en Carrot. Tots dos viuen en un univers fantàstic ple de pocions, màgia, i criatures de tot tipus.',
+'SUBTITLE'                  =>  'el webcòmic obert de David Revoy',
 
 ################################################################################
 # Top menu website:
@@ -24,19 +24,19 @@ $LANG = array(
 'SOURCES'       =>  'Fonts',
 'AUTHOR'        =>  'Autor',
 'EXTRAS'        =>  'Extras',
-'SHOP'        =>   'Botiga',
+'SHOP'          =>  'Botiga',
 'FOLLOW'        =>  'Segueix Pepper&amp;Carrot a:',
 
 # Top menu website buttons:
-'NAVIGATION_TRANSCRIPT' => 'Transcript',
-'NAVIGATION_TRANSCRIPT_ON' => 'Click to show transcript',
-'NAVIGATION_TRANSCRIPT_OFF' => 'Click to hide transcript',
-'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Transcript not available for this episode and this language.',
+'NAVIGATION_TRANSCRIPT' => 'Transcripció',
+'NAVIGATION_TRANSCRIPT_ON' => 'Fes clic per mostrar la transcripció',
+'NAVIGATION_TRANSCRIPT_OFF' => 'Fes clic per amagar la transcripció',
+'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Transcripció en català no disponible per aquest episodi.',
 'NAVIGATION_HD' => 'HD 2400px',
-'NAVIGATION_HD_ON' => 'Click to display high resolution images',
-'NAVIGATION_HD_OFF' => 'Click to display standard resolution images',
-'NAVIGATION_DICTIONARY' => 'Dictionary',
-'NAVIGATION_DICTIONARY_ALT' => 'Click to open with Wordlink for fast dictionary search',
+'NAVIGATION_HD_ON' => 'Fes clic per mostrar imatges d\'alta resolució',
+'NAVIGATION_HD_OFF' => 'Fes clic per mostrar imatges de resolució estàndar',
+'NAVIGATION_DICTIONARY' => 'Diccionari',
+'NAVIGATION_DICTIONARY_ALT' => 'Fes clic per fer una cerca ràpida de diccionari amb Wordlink',
 
 ################################################################################
 # Top and bottom translation panel
@@ -46,20 +46,20 @@ $LANG = array(
 ################################################################################
 # Page: Homepage
 'HOMEPAGE_BIG_TEXT'		    =>  '
-    Un webcòmic gratuït, libre/lliure i open-source <br/>
+    Un webcòmic gratuït, lliure i de codi obert<br/>
     finançat directament pels seus mecenes<br/>
     per tal de canviar la indústria del còmic!<br/>
 ',
-'HOMEPAGE_PATREON_INFO'     =>  'Per tan sols 1$ per cada nou episodi, esdevingues un mecenes avui a Patreon',
+'HOMEPAGE_PATREON_INFO'     =>  'Per tan sols 1$ per cada nou episodi, fes-te mecenes avui a Patreon',
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'Més informació',
-'HOMEPAGE_PATREON_BUTTON'   =>  'Converteix-te en mecenes de Pepper&amp;Carrot a Patreon',
-'PATRONAGE_BUTTON'          =>  'Converteix-te en mecenes de P&amp;C',
-'HOMEPAGE_LAST_EPISODE'     =>  'Últim episodi:',
-'HOMEPAGE_NEWS_UPDATE'      =>  'Notícies i novetats:',
-'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Més posts',
+'HOMEPAGE_PATREON_BUTTON'   =>  'Fes-te mecenes de Pepper&amp;Carrot a Patreon',
+'PATRONAGE_BUTTON'          =>  'Fes-te mecenes de Pepper&amp;Carrot',
+'HOMEPAGE_LAST_EPISODE'     =>  'Últim episodi',
+'HOMEPAGE_NEWS_UPDATE'      =>  'Notícies i novetats',
+'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Més articles',
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
 'HOMEPAGE_SUPPORTED_BY'     =>  'finançat per mecenes.',
-'HOMEPAGE_ALTERNATIVES'     =>  'Alternativa:',
+'HOMEPAGE_ALTERNATIVES'     =>  'Alternatives:',
 'HOMEPAGE_FANART'           =>  'Fan-art',
 
 ################################################################################
@@ -69,49 +69,48 @@ $LANG = array(
 'WEBCOMIC_MAKINGOF_DESCRIPTION' =>  '
     <p> La creació i <a href="http://www.davidrevoy.com/categorie5/tutorials"> els tutorials </a> són bonus especials finançats pels meus <a href="https://www.patreon.com/join/davidrevoy?">Patreons &#39;heroes&#39;</a></p>
 ',
-'WEBCOMIC_ARTWORK'		    =>  'Galeria d\'art',
+'WEBCOMIC_ARTWORK'		    =>  'Galeria d&rsquo;art',
 'WEBCOMIC_SKETCHES'		    =>  'Esbossos',
-# TODO translate this:
-'WEBCOMIC_OLDER_COMICS'         => 'Older webcomics by the same author',
+'WEBCOMIC_OLDER_COMICS'     => 'Webcòmics més antics del mateix autor',
 
 ################################################################################
 # Page: Blog
 # when content are not English (no need to warn user the content is english only here):
 #'LIMITATIONS' 	=> ' Content available in english only ',
 'LIMITATIONS' 		=> '',
-'TRANSLATION_FALLBACK' => '(Translation is missing. Falling back to English)',
+'TRANSLATION_FALLBACK' => '(No hi ha traducció. Mostrant la versió en anglès)',
 
 ################################################################################
 # Page: Philosophy
 'PHILOSOPHY_TOP'    =>  '
  <h2>Finançat per mecenes</h2>
 
-    <p>El projecte Pepper&amp;Carrot és finançat tan sols pels seus mecenes, de totes les parts del món.
-    Cada mecenes dóna uns quants diners per cada nou episodi publicat i el seu nom apareix als crèdits del final de cada capítol.
-    Gràcies a aquest sistema, Pepper&amp;Carrot pot ser independent i mai fa servir publicitat o qualsevol altre tipus de contaminació per marketing.</p>
+    <p>El projecte Pepper&amp;Carrot és finançat tan sols pels seus mecenes, de tot arreu del món.
+    Cada mecenes dóna uns quants diners per cada nou episodi publicat i el seu nom apareix als crèdits del final de cada nou capítol.
+    Gràcies a aquest sistema, Pepper&amp;Carrot pot ser independent i mai haver de fer servir publicitat o qualsevol altre tipus de contaminació per marketing.</p>
 ',
 'DONATE_INTRO'		=> '
     <p>
     És molt fàcil esdevenir un mecenes de Pepper&amp;Carrot per tan sols 1$ per cada nou episodi <a href="https://www.patreon.com/join/davidrevoy?">a Patreon</a>.
-    Patreon accepta targetes de crèdit de tot el món, i fins i tot pots emprar paypal a Patreon.
+    Patreon accepta targetes de crèdit de tot el món, a més de Paypal.
     </p>
 ',
 'PHILOSOPHY_BOTTOM'    =>  '
-    <img alt="illustration representing patronage" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
+    <img alt="il·lustració representant mecenatge" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_01-support_by-David-Revoy.jpg">
 
-    <h2>100% free, forever, no paywall</h2>
+    <h2>100% lliure, per sempre, sense peatges</h2>
 
-    <p>Tot el contingut que produeixo sobre Pepper&amp;Carrot està dins aquesta plana web, gratuït i disponible per tothom.
+    <p>Tot el contingut que produeixo sobre Pepper&amp;Carrot està dins aquesta plana web, lliure i disponible per tothom.
     Us respecto a tots per igual: amb o sense diners. Tots els bonus especials que faig pels meus mecenes també es troben aquí.
-    Pepper&amp;Carrot mai et demanarà diners o que et subscriguis per tal d\'accedir a cap contingut.</p>
+    Pepper&amp;Carrot mai et demanarà diners o que et subscriguis per tal d&rsquo;accedir a cap contingut.</p>
 
-        <img alt="illustration representing paywall" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
+        <img alt="il·lustració representant peatge" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_03-paywall_by-David-Revoy.jpg">
 
-    <h2>Open-source and permissive</h2>
+    <h2>De codi obert i permissiu</h2>
 
-    <p>Vull donar a la gent el dret a compartir, fer servir, construir i fins i tot obtenir diners pel treball que he fet.
-    Totes les pàgines, il·lustracions i continguts han estat fets utilitzant eines Free/Libre/lliure i Open-Sources en Gnu/Linux, i totes les fonts d\'aquesta plana web, &#39;Source&#39;.
-    Us encoratjo a fer-ne us comercial, afegir traduccions, fer-ne fan-art, impressions, pel·lícules, videojocs, compartir, reproduir...
+    <p>Vull donar a la gent el dret a compartir, fer servir, construir i fins i tot fer diners a partir de la meva obra.
+    Totes les pàgines, il·lustracions i continguts han estat fets utilitzant eines lliures i de codi obert sobre GNU/Linux, i totes les fonts d\'aquesta plana web, al menú &#39;Fonts&#39;.
+    Us encoratjo a fer-ne ús comercial, afegir-hi traduccions, fer-ne fan-art, impressions, pel·lícules, videojocs, compartir, reproduir...
     Només heu de donar el reconeixement pertinent als autors (artistes, correctors, traductors... dels quals la vostra nova obra n\'hagi utilitzat els recursos), proporcionar un enllaç a la llicència i indicar-hi els canvis efectuats si n\'hi ha hagut algun. Heu de fer-ho d\'una manera raonable, però no de cap manera que pugui suggerir que els autors han format part activa del vostre projecte en concret si no n\'és el cas.</p>
 
     <div class="button">
@@ -120,29 +119,29 @@ $LANG = array(
         </a>
     </div>
 
-        <img alt="illustration representing open-source medias" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
+        <img alt="il·lustració representant mitjans de codi obert" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_04-open-source_by-David-Revoy.jpg">
 
     <h2>Entreteniment de qualitat per a tothom, arreu.</h2>
 
     <p>Pepper&amp;Carrot és un webcòmic de to humorístic dirigit a tothom i a totes les edats.
-    No hi ha contingut adult ni violent. Gratuït i open-source, Pepper&amp;Carrot és un orgullós exemple de com de guai pot ser la cultura lliure.
-    Em centro en la qualitat, perquè gratuït i open-source no són sinònims de dolent o amateur. Tot el contrari.</p>
+    No hi ha contingut adult ni violent. Lliure i de codi obert, Pepper&amp;Carrot és un orgullós exemple de com de guai pot ser la cultura lliure.
+    Em centro en la qualitat, perquè lliure i de codi obert no són sinònims de dolent o amateur. Tot el contrari.</p>
 
-        <img alt="" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
+        <img alt="il·lustració representant pàgines de còmic volant al voltant del món" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
     <h2>Canviem la inústria del còmic!</h2>
 
-    <p>Com menys intermediaris entre l\'audiència i l\'autor tu pagues menys i jo guanyo més. Em financíes directament.
-    Cap editorial/distribuïdora/marketing/moda em pot forçar a canviar Pepper&amp;Carrot per tal d\'ajustar-la a la seva visió del mercat;.
-    &nbsp;.&nbsp;.&nbsp;.&nbsp;Per quina raó una reeixida no pot començar un gran canvi a la indústria? Fem-ho possible!</p>
+    <p>Com menys intermediaris hi ha entre l\'audiència i l\'autor, tu pagues menys i jo guanyo més. Em financíes directament.
+    Cap editorial, distribuïdora, equip de marketing o policia de la moda em pot forçar a canviar Pepper&amp;Carrot per tal d\'ajustar-la a la seva visió del &lquo;mercat&rquo;.
+    Perquè no podria un èxit individual iniciar un gran canvi a una indústria en crisi? Fem-ho possible!</p>
 
     <div class="button">
-      <a href="?static12/donate" title="For only 1$ per new episode, become a patreon of Pepper&amp;Carrot">
-          ajuda\'m a donar empenta a Pepper&amp;Carrot avui
+      <a href="?static12/donate" title="Fer només 1$ per episodi nou, fes-te un mecenes de Pepper&amp;Carrot">
+          Ajuda\'m a impulsar la producció de Pepper&amp;Carrot avui.
       </a>
     </div>
 
-    <img alt="illustration: comic book industry VS patreon support" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
+    <img alt="il·lustració: indústria del còmic VS suport a patreon" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_06-industry-change_by-David-Revoy.jpg">
 
  ',
 
@@ -150,28 +149,28 @@ $LANG = array(
 # Page: Contribute
 'CONTRIBUTE_TITLE'		=> 'Contribueix-hi',
 'CONTRIBUTE_TOP'		=> '
-    <p>Gràcies a <a href="?static6/sources" title="Sources page"> les open sources</a> i a la llicència <a href="http://creativecommons.org/licenses/by/4.0/">
-    creative commons </a> tu pots contribuir a Pepper&amp;Carrot de moltes maneres:</p>
+    <p>Gràcies a <a href="?static6/sources" title="Sources page">les fonts obertes</a> i a la <a href="http://creativecommons.org/licenses/by/4.0/">
+    llicència creative commons</a> tu pots contribuir a Pepper&amp;Carrot de moltes maneres:</p>
 ',
 
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-art</h2>
 
-    <p> Els fan-arts són benviguts a Pepper&amp;Carrot: Dibuixos, escenes, esculptures, figures 3D, fan-ficitions... Envieu-me\'ls (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> , o doneu-me un toc a les xarxes socials) i apareixereu a la galeria de fan-art:</p>
+    <p> Els fan-arts són benviguts a Pepper&amp;Carrot: dibuixos, escenes, escultures, figures 3D, fan-ficcions... Envieu-me\'ls (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> , o doneu-me un toc a les xarxes socials) i apareixereu a la galeria de fan-art:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
-    <h2> Derivations:</h2>
+    <h2> Derivacions:</h2>
 
-    <p>Pepper&amp;Carrot pot ser adapatat a molts projectes, per què no comences el teu propi projecte o t\'uneixes a un ja existent?</p>
+    <p>Pepper&amp;Carrot pot ser adapatat a molts projectes o productes, per què no comences el teu propi projecte o t\'uneixes a un ja existent?</p>
 ',
 
 'CONTRIBUTE_TRANSLATION'	    => '
-    <h2>Translations and corrections:</h2>
+    <h2>Traduccions i correccions:</h2>
 
-    <p> La plana web de Pepper&amp;Carrot està dissenyada per tal de ser multilíngüe i accepta qualsevol llengua (incloent-hi les extingides i les inventades!). Les fonts són a la teva disposició per tal que les puguis traduir. Mira la <a href="?static14/documentation&page=010_Translate_the_comic">reference tutorial</a> per tal de trobar més informació sobre com afegir una traducció.</p>
+    <p>La plana web de Pepper&amp;Carrot està dissenyada per tal de ser multilíngüe i acceptar qualsevol llengua (incloent-hi les extingides i les inventades). Les fonts son a la teva disposició per tal que les puguis traduir. Mira la <a href="?static14/documentation&page=010_Translate_the_comic">reference tutorial</a> per tal de trobar més informació sobre com afegir una traducció.</p>
 ',
 
-'CONTRIBUTE_SOCIAL'	    => 'Xarxa social:',
+'CONTRIBUTE_SOCIAL'	    => 'Xarxes socials:',
 
 'CONTRIBUTE_PRESS'	    => '
     <h2>Premsa:</h2>
@@ -180,99 +179,99 @@ $LANG = array(
 ',
 
 'CONTRIBUTE_OTHER'	    => '
-    <h2> Other contributions ideas&nbsp;.&nbsp;.&nbsp;.&nbsp;</h2>
+    <h2>Altres idees per contribuir…</h2>
 
-    <p> Tothom pot contribuir de diferents maneres: <br/>
+    <p>Tothom pot contribuir de diferents maneres:<br/>
         <b>Programadors:</b>  Creant una aplicació per tal de llegir Pepper&amp;Carrot a smartphones i tauletes.<br />
         <b>Músics:</b>  Creant temes musicals per Pepper&amp;Carrot.<br />
-        <b>Escriptors: </b>  Proposant idees per fer històries a Pepper&amp;Carrot.<br />
-        <b>Periodistes: </b> Informa al món sobre Pepper&amp;Carrot (premsa escrita, tv, podcast, etc.)<br />
-        <b>Impressions:</b> Imprimeix pòsters i tota classe de coses amb la imatge de Pepper&amp;Carrot.<br />
+        <b>Escriptors: </b> Proposant idees i guions per a Pepper&amp;Carrot.<br />
+        <b>Periodistes: </b> Informant sobre Pepper&amp;Carrot als mitjans tradicionals (premsa escrita, tv, etc.)<br />
+        <b>Impressors:</b> Imprimeix pòsters i tota mena de coses amb la imatge de Pepper&amp;Carrot.<br />
     </p>
 ',
 
 'CONTRIBUTE_IRC'	    => '
     <h2 id="irc"> Canal IRC:</h2>
 
-    <p> Xateja i parla sobre Pepper&amp;Carrot. Hi seré durant l\'horari europeu (nick:deevad) <br/>
+    <p>Xateja i parla sobre Pepper&amp;Carrot. Hi seré durant l\'horari europeu (nick:deevad) <br/>
 ',
 
 ################################################################################
 # Page: Sources
 'SOURCES_TITLE'		    => 'Fonts',
 'SOURCES_TOP'	        => '
-    <p><b>Benvigut a la central de descàrrega de fonts!</b><br/>
+    <p><b>Benvigut/da a la central de descàrrega de fonts!</b><br/>
     Aquí hi trobaràs els fitxers de Pepper&amp;Carrot i moltes més coses.<br/>
-    Tots els fitxers digitals de pintura i dibuix són compatibles amb la última versió de <a href="https://krita.org/">Krita</a>.</p>
+    Tots els fitxers digitals de dibuix són compatibles amb la última versió de <a href="https://krita.org/">Krita</a>.</p>
 ',
 'SOURCES_BOTTOM'	    => '
-    <p>Al descarregar i treballar amb aquests fitxers accedeixes a acceptar les condicions de<br/>
-    <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license</a>.
-    Llegeix el fitxer README de cada arxiu per tal de tenir més informació.</p>
+    <p>Al descarregar i treballar amb aquests fitxers acceptes respectar les condicions de la<br/>
+    <a href="http://creativecommons.org/licenses/by/4.0/">llicència Creative Commons d&rsquo;atribució</a>.
+    Llegeix el fitxer README de cada projecte per a més informació.</p>
 
-    <p><b> Code repositories for translations, script, website, graphism,etc.:</b><br/></p>
+    <p><b>Repositoris de codi per traduccions, guions, el lloc web, grafismes, etc.:</b><br/></p>
 ',
-'SOURCE_COVER'   =>  'Portades',
-'SOURCE_KRITA'   =>  'Fitxers font per Krita',
-'SOURCE_TRANSLATOR'=>  'Pack per a traduccions',
-'SOURCE_WEB'      =>  'Web <span class="sourceinfos"> 90ppi, lightweight jpg </span>',
-'SOURCE_PRINT'        =>  'Print <span class="sourceinfos"> 300ppi, lossless quality </span>',
-'SOURCE_MONTAGE'   =>  'Montage <span class="sourceinfos"> Totes les vinyetes en una sola plana </span>',
+'SOURCE_COVER'      =>  'Portades',
+'SOURCE_KRITA'      =>  'Fitxers font per Krita',
+'SOURCE_TRANSLATOR' =>  'Pack per a traduccions',
+'SOURCE_WEB'        =>  'Web: <span class="sourceinfos"> 90ppi, jpg lleuger</span>',
+'SOURCE_PRINT'      =>  'Impressió: <span class="sourceinfos">300ppi, sense pèrdua de qualitat</span>',
+'SOURCE_MONTAGE'    =>  'Muntatge: <span class="sourceinfos">totes les vinyetes en una sola plana</span>',
 
 ################################################################################
 # Page: Author
 'AUTHOR_TITLE'		=> 'Sobre en David Revoy',
 'AUTHOR_BIO'	    => '
-    <p>Hola! Em dic David Revoy i sóc un artista francès nascut al 1981. Sóc autodidacte i un apassionat del dibuix, la pintura, els gats, els ordinadors, la cultura Gnu/Linux open-source, Internet, els videojocs RPG antics, els vells mangas i animes, l\'art tradicional, la cultura japonesa, la fantasia&nbsp;.&nbsp;.&nbsp;.&nbsp;<br />
+    <p>Hola! Em dic David Revoy i sóc un artista francès nascut el 1981. Sóc autodidacte i un apassionat del dibuix, la pintura, els gats, els ordinadors, la cultura GNU/Linux de codi obert, Internet, els videojocs RPG antics, els vells mangas i animes, l\'art tradicional, la cultura japonesa, la fantasia…<br />
     <br />
-    Després de més de 10 anys com a artista independent en pintura digital, art conceptual, il·lustracions, direcció artística, professor... He decidit començar el meu propi projecte. Finalment vaig trobar una manera de posar totes les meves passions al mateix lloc; i el resultat és Pepper&amp;Carrot.</p>
+    Després de més de 10 anys com a artista independent en pintura digital, art conceptual, il·lustració i direcció artística vaig decidir començar el meu propi projecte. Finalment vaig trobar una manera de posar totes les meves passions al mateix lloc, i el resultat n&rsquo&és Pepper&amp;Carrot.</p>
 
     <p>El meu portafoli:</p>
 ',
 'AUTHOR_TODO_DREAM'	=> '
-    <h3 id="dream">Llista de desitjos per aconseguir:</h3>
+    <h3 id="dream">Llista de desitjos somniats</h3>
 
     <p>
-    ☐ Fer una xerrada a una convenció japonesa sobre Pepper&amp;Carrot<br/>
+    ☐ Fer una xerrada a una convenció japonesa de còmic sobre Pepper&amp;Carrot<br/>
     ☐ Jugar amb un gamepad a un joc de Pepper&amp;Carrot<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Aconseguir tenir 100 fan-arts a la galeria</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Tenir una plana a Wikipedia</a><br/>
     ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Rebre una foto d\'algú disfressat de la Pepper</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Rebre una foto d\'un gat taronja al que hagin anomenat Carrot</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Tenir 500 patreons</a><br/>
-    ☐ Arribar als 100 capítols<br/>
+    ☐ Arribar als 100 capítols!<br/>
     </p>
 ',
 
-'AUTHOR_CARREER_TITLE'				 => 'la meva carrera en 7 bombolles:',
+'AUTHOR_CARREER_TITLE'				 => 'La meva carrera en 7 bombolles',
 'AUTHOR_CARREER_BUBBLE_DESCRIPTIONS' => '<p></p>',
 
 ################################################################################
 # Website General: Footer
 'FOOTER_CONTENT'    => '
-    <p>El webcòmic, artworks i textos tenen llicència a <a href="https://creativecommons.org/licenses/by/4.0/deed.ca" title="For more information, read the Creative Commons Attribution 4.0">Creative Commons Attribution 4.0</a> license, a no ser que la plana ho especifiqui d\'una altra manera.</a><br/>
-    Atribucions a "David Revoy, www.davidrevoy.com". Contacteu-me: <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> si voleu més informació.</a></p>
+    <p>El webcòmic, obres d&rsquo;art i textos tenen  llicència <a href="https://creativecommons.org/licenses/by/4.0/deed.ca" title="For more information, read the Creative Commons Attribution 4.0">Creative Commons Attribution 4.0</a>, a no ser que la plana especifiqui el contrari.</a><br/>
+    Atribució a "David Revoy, www.davidrevoy.com". Contacteu-me: <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> si voleu més informació.</a></p>
 
     <p>Plana web funcionant amb <a href="http://www.pluxml.org" title="PlXml">PluXml</a></p>
 ',
 ################################################################################
 # Eshop
-'ESHOP_COMIC'           => 'Comic books and artbooks are on:',
-'ESHOP_SHOP'            => 'Prints, mugs, tee-shirts and more on:',
+'ESHOP_COMIC'           => 'Àlbums de còmic i llibres d&rsquo;art estan a:',
+'ESHOP_SHOP'            => 'Pòsters, tasses, samarretes i més a:',
 ################################################################################
 # various utils:
 'UTIL_NEXT_EPISODE'      =>  'següent episodi',
-'UTIL_PREVIOUS_EPISODE'  =>  'episodi passat',
-'UTIL_EPISODE'   =>  'episodi',
-'UTIL_BACK_TO_GALLERY'      =>  'tornar a la galeria',
-'UTIL_MORE'      =>  'més',
-'UTIL_PAGE'      =>  'pàgina',
-'UTIL_BY'        =>  'per',
-'UTIL_LICENSE'   =>  'llicència',
-'UTIL_DOT'   =>  '.',
-'FIRST'        =>  'primer',
-'LAST'   =>  'passat',
-
+'UTIL_PREVIOUS_EPISODE'  =>  'episodi anterior',
+'UTIL_EPISODE'           =>  'episodi',
+'UTIL_BACK_TO_GALLERY'   =>  'tornar a la galeria',
+'UTIL_MORE'              =>  'més',
+'UTIL_PAGE'              =>  'pàgina',
+'UTIL_BY'                =>  'per',
+'UTIL_LICENSE'           =>  'llicència',
+'UTIL_DOT'               =>  '.',
+'FIRST'                  =>  'primer',
+'LAST'                   =>  'últim',
 );
 
+# vim: set et ts=4 sw=4 :
 ?>
