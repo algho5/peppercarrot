@@ -33,7 +33,7 @@ $LANG = array(
 'NAVIGATION_TRANSCRIPT_OFF' => 'Fes clic per amagar la transcripció',
 'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Transcripció en català no disponible per aquest episodi.',
 'NAVIGATION_HD' => 'HD 2400px',
-'NAVIGATION_HD_ON' => 'Fes clic per mostrar imatges d\'alta resolució',
+'NAVIGATION_HD_ON' => 'Fes clic per mostrar imatges d&rsquo;alta resolució',
 'NAVIGATION_HD_OFF' => 'Fes clic per mostrar imatges de resolució estàndar',
 'NAVIGATION_DICTIONARY' => 'Diccionari',
 'NAVIGATION_DICTIONARY_ALT' => 'Fes clic per fer una cerca ràpida de diccionari amb Wordlink',
@@ -109,9 +109,9 @@ $LANG = array(
     <h2>De codi obert i permissiu</h2>
 
     <p>Vull donar a la gent el dret a compartir, fer servir, construir i fins i tot fer diners a partir de la meva obra.
-    Totes les pàgines, il·lustracions i continguts han estat fets utilitzant eines lliures i de codi obert sobre GNU/Linux, i totes les fonts d\'aquesta plana web, al menú &#39;Fonts&#39;.
+    Totes les pàgines, il·lustracions i continguts han estat fets utilitzant eines lliures i de codi obert sobre GNU/Linux, i totes les fonts d&rsquo;aquesta plana web, al menú &#39;Fonts&#39;.
     Us encoratjo a fer-ne ús comercial, afegir-hi traduccions, fer-ne fan-art, impressions, pel·lícules, videojocs, compartir, reproduir...
-    Només heu de donar el reconeixement pertinent als autors (artistes, correctors, traductors... dels quals la vostra nova obra n\'hagi utilitzat els recursos), proporcionar un enllaç a la llicència i indicar-hi els canvis efectuats si n\'hi ha hagut algun. Heu de fer-ho d\'una manera raonable, però no de cap manera que pugui suggerir que els autors han format part activa del vostre projecte en concret si no n\'és el cas.</p>
+    Només heu de donar el reconeixement pertinent als autors (artistes, correctors, traductors... dels quals la vostra nova obra n&rsquo;hagi utilitzat els recursos), proporcionar un enllaç a la llicència i indicar-hi els canvis efectuats si n&rsquo;hi ha hagut algun. Heu de fer-ho d&rsquo;una manera raonable, però no de cap manera que pugui suggerir que els autors han format part activa del vostre projecte en concret si no n&rsquo;és el cas.</p>
 
     <div class="button">
         <a href="https://creativecommons.org/licenses/by/4.0/deed.ca" title="For more information, read the Creative Commons Attribution 4.0">
@@ -131,13 +131,13 @@ $LANG = array(
 
     <h2>Canviem la inústria del còmic!</h2>
 
-    <p>Com menys intermediaris hi ha entre l\'audiència i l\'autor, tu pagues menys i jo guanyo més. Em financíes directament.
-    Cap editorial, distribuïdora, equip de marketing o policia de la moda em pot forçar a canviar Pepper&amp;Carrot per tal d\'ajustar-la a la seva visió del &lquo;mercat&rquo;.
+    <p>Com menys intermediaris hi ha entre l&rsquo;audiència i l&rsquo;autor, tu pagues menys i jo guanyo més. Em financies directament.
+    Cap editorial, distribuïdora, equip de marketing o policia de la moda em pot forçar a canviar Pepper&amp;Carrot per tal d&rsquo;ajustar-la a la seva visió del &ldquo;mercat&rdquo;.
     Perquè no podria un èxit individual iniciar un gran canvi a una indústria en crisi? Fem-ho possible!</p>
 
     <div class="button">
       <a href="?static12/donate" title="Fer només 1$ per episodi nou, fes-te un mecenes de Pepper&amp;Carrot">
-          Ajuda\'m a impulsar la producció de Pepper&amp;Carrot avui.
+          Ajuda&rsquo;m a impulsar la producció de Pepper&amp;Carrot avui.
       </a>
     </div>
 
@@ -156,12 +156,12 @@ $LANG = array(
 'CONTRIBUTE_FANART'	    => '
     <h2>Fan-art</h2>
 
-    <p> Els fan-arts són benviguts a Pepper&amp;Carrot: dibuixos, escenes, escultures, figures 3D, fan-ficcions... Envieu-me\'ls (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> , o doneu-me un toc a les xarxes socials) i apareixereu a la galeria de fan-art:</p>
+    <p> Els fan-arts són benviguts a Pepper&amp;Carrot: dibuixos, escenes, escultures, figures 3D, fan-ficcions... Envieu-me&rsquo;ls (<a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> , o doneu-me un toc a les xarxes socials) i apareixereu a la galeria de fan-art:</p>
 ',
 'CONTRIBUTE_DERIVATIONS' => '
     <h2> Derivacions:</h2>
 
-    <p>Pepper&amp;Carrot pot ser adapatat a molts projectes o productes, per què no comences el teu propi projecte o t\'uneixes a un ja existent?</p>
+    <p>Pepper&amp;Carrot pot ser adapatat a molts projectes o productes, per què no comences el teu propi projecte o t&rsquo;uneixes a un ja existent?</p>
 ',
 
 'CONTRIBUTE_TRANSLATION'	    => '
@@ -175,7 +175,7 @@ $LANG = array(
 'CONTRIBUTE_PRESS'	    => '
     <h2>Premsa:</h2>
 
-    <p>Publica sobre Pepper&amp;Carrot! Escriu articles, crea posts a planes web, comparteix i crea una comunitat a les teves xarxes socials preferides. Pots descarregar el <a href="?static6/sources" title="Sources page">kit de premsa</a> a l\'apartat "fonts".</p>
+    <p>Publica sobre Pepper&amp;Carrot! Escriu articles, crea posts a planes web, comparteix i crea una comunitat a les teves xarxes socials preferides. Pots descarregar el <a href="?static6/sources" title="Sources page">kit de premsa</a> a l&rsquo;apartat "fonts".</p>
 ',
 
 'CONTRIBUTE_OTHER'	    => '
@@ -193,7 +193,7 @@ $LANG = array(
 'CONTRIBUTE_IRC'	    => '
     <h2 id="irc"> Canal IRC:</h2>
 
-    <p>Xateja i parla sobre Pepper&amp;Carrot. Hi seré durant l\'horari europeu (nick:deevad) <br/>
+    <p>Xateja i parla sobre Pepper&amp;Carrot. Hi seré durant l&rsquo;horari europeu (nick:deevad) <br/>
 ',
 
 ################################################################################
@@ -222,9 +222,9 @@ $LANG = array(
 # Page: Author
 'AUTHOR_TITLE'		=> 'Sobre en David Revoy',
 'AUTHOR_BIO'	    => '
-    <p>Hola! Em dic David Revoy i sóc un artista francès nascut el 1981. Sóc autodidacte i un apassionat del dibuix, la pintura, els gats, els ordinadors, la cultura GNU/Linux de codi obert, Internet, els videojocs RPG antics, els vells mangas i animes, l\'art tradicional, la cultura japonesa, la fantasia…<br />
+    <p>Hola! Em dic David Revoy i sóc un artista francès nascut el 1981. Sóc autodidacte i un apassionat del dibuix, la pintura, els gats, els ordinadors, la cultura GNU/Linux de codi obert, Internet, els videojocs RPG antics, els vells mangas i animes, l&rsquo;art tradicional, la cultura japonesa, la fantasia…<br />
     <br />
-    Després de més de 10 anys com a artista independent en pintura digital, art conceptual, il·lustració i direcció artística vaig decidir començar el meu propi projecte. Finalment vaig trobar una manera de posar totes les meves passions al mateix lloc, i el resultat n&rsquo&és Pepper&amp;Carrot.</p>
+    Després de més de 10 anys com a artista independent en pintura digital, art conceptual, il·lustració i direcció artística vaig decidir començar el meu propi projecte. Finalment vaig trobar una manera de posar totes les meves passions al mateix lloc, i el resultat n&rsquo;és Pepper&amp;Carrot.</p>
 
     <p>El meu portafoli:</p>
 ',
@@ -236,8 +236,8 @@ $LANG = array(
     ☐ Jugar amb un gamepad a un joc de Pepper&amp;Carrot<br/>
     ☑ <a href="http://www.peppercarrot.com/en/article457/dream-to-do-list-100-fan-arts"> Aconseguir tenir 100 fan-arts a la galeria</a><br/>
     ☑ <a href="http://www.peppercarrot.com/en/article376/dream-to-do-list-a-wikipedia-page">Tenir una plana a Wikipedia</a><br/>
-    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Rebre una foto d\'algú disfressat de la Pepper</a><br/>
-    ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Rebre una foto d\'un gat taronja al que hagin anomenat Carrot</a><br/>
+    ☑ <a href="https://www.davidrevoy.com/tag/cosplay">Rebre una foto d&rsquo;algú disfressat de la Pepper</a><br/>
+    ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">Rebre una foto d&rsquo;un gat taronja al que hagin anomenat Carrot</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">Tenir 500 patreons</a><br/>
     ☐ Arribar als 100 capítols!<br/>
     </p>
