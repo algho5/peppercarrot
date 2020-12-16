@@ -46,7 +46,7 @@ $LANG = array(
 ################################################################################
 # Page: Homepage
 'HOMEPAGE_BIG_TEXT'         => '
-	sitelen ni pi toki musi li nasin jo pi jan mute, li nasin Free(libre), li nasin Open-source,<br/>
+	sitelen ni pi toki musi li nasin jo pi jan mute, <br/>li nasin Free(libre), li nasin Open-source,<br/>
     li tan mani tan jan pona mute.<br/>
     tan ni la, nasin esun pi sitelen musi li ken ante!<br/>
 ',
@@ -264,12 +264,12 @@ $LANG = array(
 'UTIL_EPISODE'          => 'wan',
 'UTIL_BACK_TO_GALLERY'  => 'sitelen ale',
 'UTIL_MORE'             => 'mute pana',
-'UTIL_PAGE'             => 'wan lipu',
+'UTIL_PAGE'             => 'wan lipu nanpa',
 'UTIL_BY'               => 'tan',
 'UTIL_LICENSE'          => 'nasin lawa',
 'UTIL_DOT'              => '.',
-'FIRST'                 => 'wan sin',
-'LAST'                  => 'wan nanpa pini',
+'FIRST'                 => 'wan nanpa pini',
+'LAST'                  => 'wan sin',
 );
 
 # vim: set et ts=4 sw=4 :
