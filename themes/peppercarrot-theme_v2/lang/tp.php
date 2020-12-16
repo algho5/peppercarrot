@@ -10,7 +10,7 @@ $LANG = array(
 'PEPPERCARROT_TITLE'    =>  'jan Pepa&amp;soweli Kawa', // the title on top of the website
 'PEPPERCARROT_VEGETABLE' => 'ko namako pimeja moku en kili pi loje jelo', // literal translation of the spice and the vegetable
 'Website_DESCRIPTION'    => 'ni li lipu mama pi sitelen pi jan Pepa&amp;soweli Kawa. sitelen ni li li nasin jo pi jan ale, li nasin Free(libre), li nasin Open-source. toki pi sitelen ni li toki e jan lili Pepa pi wawa nasa, e soweli ona Kawa. ona tu li lon ma pi wawa nasa pi soweli sewi pi telo ken.',
-'SUBTITLE'               => 'sitelen pi toki musi tan jan David Revoy',
+'SUBTITLE'               => 'sitelen pi toki musi pi jo pi jan ale tan jan David Revoy',
 
 ################################################################################
 # Top menu website:
@@ -185,7 +185,7 @@ $LANG = array(
         <b>jan musi kalama:</b> sina ken pali e kalama musi tawa jan Pepa&amp;soweli Kawa.<br/>
         <b>jan pi musi nimi:</b> sina ken pali e toki musi sin tawa jan Pepa&amp;soweli Kawa.<br/>
         <b>jan toki pi ijo sin:</b> sina ken toki e jan Pepa&amp;soweli Kawa kepeken kulupu esun sona (kepeken ilo poki sitelen, kepeken kulupu pi lipu toki, kepeken ante)<br/>
-        <b>ilo pi lipu sitelen:</b> sina ken pali e sitelen lipu kepeken ilo pi lipu sitelen, li ken pali e ijo esun. jan Pepa&amp;soweli Kawa li lon sitelen ona.<br/>
+        <b>jan pi ilo pi lipu sitelen:</b> sina ken pali e sitelen lipu kepeken ilo pi lipu sitelen, li ken pali e ijo esun. jan Pepa&amp;soweli Kawa li lon sitelen ona.<br/>
     </p>
 ',
 
