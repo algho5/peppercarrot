@@ -24,7 +24,7 @@ $LANG = array(
 'SOURCES'    => 'mama pali',
 'AUTHOR'     => 'jan musi',
 'EXTRAS'     => 'musi ante',
-'ESHOP'      => 'esun',
+'SHOP'      => 'esun',
 'FOLLOW'     => 'sina ken lukin e jan Pepa&amp;soweli Kawa lon ilo ni:',
 
 # Top menu website buttons:
