@@ -270,7 +270,7 @@ $LANG = array(
 'UTIL_DOT'              => '.',
 'FIRST'                 => 'wan sin',
 'LAST'                  => 'wan nanpa pini',
-);#TODO
+);
 
 # vim: set et ts=4 sw=4 :
 ?>
