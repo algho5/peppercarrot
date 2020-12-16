@@ -3,7 +3,7 @@
 $LANG = array(
 
 # Global
-'TRANSLATED_BY'              => 'ante toki: jan Ke (Ret Samys)',
+'TRANSLATED_BY'              => 'ante toki: jan Ke Tami (Ret Samys)',
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
