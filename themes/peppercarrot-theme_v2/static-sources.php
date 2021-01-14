@@ -311,40 +311,44 @@ echo '<div class="grid">';
     foreach($mainfolders as $projectpath) {
       $foldername = basename($projectpath);
       if(is_dir($projectpath)) {
-        # we are in comic source folder
-        # beautify name
-        $humanfoldername = str_replace('_', ' : ', $foldername);
-        $humanfoldername = str_replace('-', ' ', $humanfoldername);
-        echo '<figure class="thumbnail col sml-6 med-3 lrg-3"><a href="';
-        $plxShow->urlRewrite('?static6/sources&page='.$foldername);
-        echo '" title="'.$humanfoldername.'" >';
-        # we scan all en vignette to define all episodes , it's a constant
-        $search = glob($projectpath."/low-res/en_*E??.jpg");
-        # we loop on found episodes
-        if (!empty($search)){
-          foreach ($search as $filepath) {
-            # filename extraction
-            $fileweight = (filesize($filepath) / 1024) / 1024;
-            $filename = basename($filepath);
-            $fullpath = dirname($filepath);
-            # guess from pattern name of hypothetic translation
-            $filenamewithoutenprefix = substr($filename, 2);
-            $filepathtranslated = ''.$fullpath.'/'.$lang.''.$filenamewithoutenprefix.'';
-            # if our hypothetic translation exist, display. Else, fallback to english :
-            if (file_exists($filepathtranslated)) {
-              echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$filepathtranslated.'&amp;w=260&amp;h=190&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
-            } else {
-              echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
+      # Should we display this episode? it might be a secret project, check and skip if it is the case.
+        $secrettoken = ''.$projectpath.'/secret';
+          if (!file_exists($secrettoken)) {
+          # we are in comic source folder
+          # beautify name
+          $humanfoldername = str_replace('_', ' : ', $foldername);
+          $humanfoldername = str_replace('-', ' ', $humanfoldername);
+          echo '<figure class="thumbnail col sml-6 med-3 lrg-3"><a href="';
+          $plxShow->urlRewrite('?static6/sources&page='.$foldername);
+          echo '" title="'.$humanfoldername.'" >';
+          # we scan all en vignette to define all episodes , it's a constant
+          $search = glob($projectpath."/low-res/en_*E??.jpg");
+          # we loop on found episodes
+          if (!empty($search)){
+            foreach ($search as $filepath) {
+              # filename extraction
+              $fileweight = (filesize($filepath) / 1024) / 1024;
+              $filename = basename($filepath);
+              $fullpath = dirname($filepath);
+              # guess from pattern name of hypothetic translation
+              $filenamewithoutenprefix = substr($filename, 2);
+              $filepathtranslated = ''.$fullpath.'/'.$lang.''.$filenamewithoutenprefix.'';
+              # if our hypothetic translation exist, display. Else, fallback to english :
+              if (file_exists($filepathtranslated)) {
+                echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$filepathtranslated.'&amp;w=260&amp;h=190&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
+              } else {
+                echo '<img src="plugins/vignette/plxthumbnailer.php?src='.$filepath.'&amp;w=260&amp;h=190&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
+              }
             }
+          } else {
+            # Fallback thumbnail for XYZ version.
+            echo '<img src="plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/misc/low-res/2019-05-22_beta-readers_by-David-Revoy.jpg&&amp;w=260&amp;h=190&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
           }
-        } else {
-          # Fallback thumbnail for XYZ version.
-          echo '<img src="plugins/vignette/plxthumbnailer.php?src=0_sources/0ther/misc/low-res/2019-05-22_beta-readers_by-David-Revoy.jpg&&amp;w=260&amp;h=190&amp;s=1&amp;q=88" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ><br/>';
+          echo '</a><figcaption class="sourcescaptions text-center" ><a href="';
+          $plxShow->urlRewrite('?static6/sources&page='.$foldername);
+          echo '" >'.$humanfoldername.'</a></figcaption>';
+          echo '</figure>';
         }
-        echo '</a><figcaption class="sourcescaptions text-center" ><a href="';
-        $plxShow->urlRewrite('?static6/sources&page='.$foldername);
-        echo '" >'.$humanfoldername.'</a></figcaption>';
-        echo '</figure>';
       }
     }
     # top button
