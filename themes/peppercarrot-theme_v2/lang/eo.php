@@ -7,7 +7,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
-'PEPPERCARROT_TITLE'    =>  'Pipro<span style="font-size: 1.5rem;"> kaj </span>Karoĉjo', // the title on top of the website
+'PEPPERCARROT_TITLE'    =>  'Pipro ⳤ Karoĉjo', // the title on top of the website
 'PEPPERCARROT_VEGETABLE'    =>  'Pipro kaj Karoĉjo', // litteral translation of spices + vegetable
 'Website_DESCRIPTION'        =>  'Oficiala retejo de Pipro kaj Karoĉjo, libera kaj malfermkoda retkomikso pri Pipro - juna sorĉistino - kaj ŝia kato - Karoĉjo. Ili loĝas en fantazia mondo de sorĉtrinkaĵoj, magio kaj bestaĉoj.',
 'SUBTITLE'                  =>  'malfermkoda retkomikso de David REVOY',
@@ -71,8 +71,7 @@ $LANG = array(
 ',
 'WEBCOMIC_ARTWORK'		    =>  'Galerio de artaĵoj',
 'WEBCOMIC_SKETCHES'		    =>  'Skizoj',
-# TODO translate this:
-'WEBCOMIC_OLDER_COMICS'         => 'Antaŭaj retkomiksoj de la sama aŭtoro',
+'WEBCOMIC_OLDER_COMICS'     => 'Malnovaj retkomiksoj de la sama aŭtoro',
 
 ################################################################################
 # Page: Blog
@@ -130,12 +129,12 @@ $LANG = array(
 
         <img alt="ilustraĵo montranta komiksajn paĝojn flugantaj ĉirkaŭ la mondo" src="0_sources/0ther/misc/low-res/2015-02-09_philosophy_05-everyone_by-David-Revoy.jpg">
 
-    <h2>Ni ŝanĝu la sektoron de bildrakontoj!</h2>
+    <h2>Ni ŝanĝu la sektoron de bildrakontoj !</h2>
 
     <p>
       Sen perantoj inter artisto kaj spektantoj vi pagas malpli kaj mi profitas pli. Vi subtenas min senpere.
       Neniu eldonisto/distribuisto/reklamisto povas devigi min ŝanĝi Pipron kaj Karoĉjon por kongrui kun lia aspekto de “merkato”.
-      &nbsp;.&nbsp;.&nbsp;.&nbsp;Ĉu estas eble por ke unu eta sukceso influu la tutan sektoron? Ni provu!
+      &nbsp;.&nbsp;.&nbsp;.&nbsp;Ĉu estas eble por ke unu eta sukceso influu la tutan sektoron ? Ni provu !
     </p>
 
     <div class="button">
@@ -163,7 +162,7 @@ $LANG = array(
 'CONTRIBUTE_DERIVATIONS' => '
     <h2>Idoj:</h2>
 
-    <p>Pipro kaj Karoĉjo povas esti adaptita al multe da projektoj kaj produktoj, kial ne fari vian propran aŭ aliĝi al ekzista?</p>
+    <p>Pipro kaj Karoĉjo povas esti adaptita al multe da projektoj kaj produktoj, kial ne fari vian propran aŭ aliĝi al ekzista ?</p>
 ',
 
 'CONTRIBUTE_TRANSLATION'	    => '
@@ -177,7 +176,7 @@ $LANG = array(
 'CONTRIBUTE_PRESS'	    => '
     <h2>Gazetaro:</h2>
 
-    <p>Estu eldoniston de Pipro kaj Karoĉjo! Skribu artikolojn, afiŝu en retejoj, kunhavigu kaj kreu la komunumon per viaj ŝatataj interkonaj retejoj. Vi povas elŝuti la <a href="?static6/sources" title="retpaĝo de fontoj">gazetaraĵon</a> sur retpaĝo de fontoj.</p>
+    <p>Estu eldonisto de Pipro kaj Karoĉjo ! Skribu artikolojn, afiŝu en retejoj, kunhavigu kaj kreu la komunumon per viaj ŝatataj interkonaj retejoj. Vi povas elŝuti la <a href="?static6/sources" title="retpaĝo de fontoj">gazetaraĵon</a> sur retpaĝo de fontoj.</p>
 ',
 
 'CONTRIBUTE_OTHER'	    => '
