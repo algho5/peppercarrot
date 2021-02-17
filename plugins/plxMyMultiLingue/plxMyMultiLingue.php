@@ -1094,7 +1094,7 @@ class plxMyMultiLingue extends plxPlugin {
       # ?fr/static11/communitywebcomics&page=Pepper-and-Carrot-Mini_by_Nartance&display=fr_PCMINI_E01_by-Nartance.jpg
       $localized_pageurl = str_replace('{LANG}', $lang, $pageurl);
 
-      $LangString .= '<?php echo "<li class=\"'.$sel.'\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$localized_pageurl.'")."\"';
+      $LangString .= '<?php echo "<li class=\"'.$sel.'\" dir=\"auto\"><a href=\"".$plxShow->plxMotor->urlRewrite("'.$localized_pageurl.'")."\"';
 
       if ($showstats) {
         # Calculate statistics and add info to link title & text
