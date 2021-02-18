@@ -7,7 +7,7 @@ $LANG = array(
 
 ################################################################################
 # Header HTML infos for search engine and title in tab:
-'PEPPERCARROT_TITLE'    =>  'jan Pepa&amp;soweli Kawa', // the title on top of the website
+'PEPPERCARROT_TITLE'    =>  'jan Pepa&amp;&#8203;soweli Kawa', // the title on top of the website
 'PEPPERCARROT_VEGETABLE' => 'ko namako pimeja moku en kili pi loje jelo', // literal translation of the spice and the vegetable
 'Website_DESCRIPTION'    => 'ni li lipu mama pi sitelen pi jan Pepa&amp;soweli Kawa. sitelen ni li li nasin jo pi jan ale, li nasin Free(libre), li nasin Open-source. toki pi sitelen ni li toki e jan lili Pepa pi wawa nasa, e soweli ona Kawa. ona tu li lon ma pi wawa nasa pi soweli sewi pi telo ken.',
 'SUBTITLE'               => 'sitelen pi toki musi pi jo pi jan ale tan jan David Revoy',
@@ -46,9 +46,9 @@ $LANG = array(
 ################################################################################
 # Page: Homepage
 'HOMEPAGE_BIG_TEXT'         => '
-	sitelen ni pi toki musi li nasin jo pi jan mute, <br/>li nasin Free(libre), li nasin Open-source,<br/>
-    li tan mani tan jan pona mute.<br/>
-    tan ni la, nasin esun pi sitelen musi li ken ante!<br/>
+	sitelen ni pi toki musi <br/>li nasin jo pi jan mute, <br/>li nasin Free(libre),<wbr/> li nasin Open-source,<br/>
+    li tan mani<wbr/> tan jan pona mute.<br/>
+    tan ni la,<br/> nasin esun pi sitelen musi li ken ante!<br/>
 ',
 'HOMEPAGE_PATREON_INFO'     => 'sina ken pana e mani $1 tawa wan sin ale lon ilo Patreon',
 'HOMEPAGE_MOREINFO_BUTTON'  => 'sona nasin',
