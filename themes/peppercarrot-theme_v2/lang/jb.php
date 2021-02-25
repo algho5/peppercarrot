@@ -26,14 +26,14 @@ $LANG = array(
 'FOLLOW'        =>  "zgana le'e nuzba",
 
 # Top menu website buttons:
-'NAVIGATION_TRANSCRIPT' => 'Transcript',
-'NAVIGATION_TRANSCRIPT_ON' => 'Click to show transcript',
-'NAVIGATION_TRANSCRIPT_OFF' => 'Click to hide transcript',
+'NAVIGATION_TRANSCRIPT' => 'uenzi tcila be le lisri',
+'NAVIGATION_TRANSCRIPT_ON' => 'cuxna ja\'e lo nu tcidu le uenzi tcila',
+'NAVIGATION_TRANSCRIPT_OFF' => 'cuxna ja\'e lo nu na zgana le uenzi tcila',
 'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Transcript not available for this episode and this language.',
 'NAVIGATION_HD' => 'HD 2400px',
-'NAVIGATION_HD_ON' => 'Click to display high resolution images',
-'NAVIGATION_HD_OFF' => 'Click to display standard resolution images',
-'NAVIGATION_DICTIONARY' => 'Dictionary',
+'NAVIGATION_HD_ON' => 'cuxna ja\'e lo nu zgana le pixra poi se selci so\'i iudai da',
+'NAVIGATION_HD_OFF' => 'Ccuxna ja\'e lo nu zgana le pixra poi se selci so\'o rau da',
+'NAVIGATION_DICTIONARY' => 'vlaste',
 'NAVIGATION_DICTIONARY_ALT' => 'Click to open with Wordlink for fast dictionary search',
 
 ################################################################################
