@@ -274,6 +274,7 @@ $LANG = array(
 'UTIL_DOT'               =>  '.',
 'FIRST'                  =>  'primero',
 'LAST'                   =>  'último',
+);
 
 # vim: set et ts=4 sw=4 :
 ?>
