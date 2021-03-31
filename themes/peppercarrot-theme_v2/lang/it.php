@@ -15,7 +15,7 @@ $LANG = array(
 'WEBCOMICS'     =>  'Webcomics',
 'BLOG'          =>  'Blog',
 'PHILOSOPHY'    =>  'Filosofia',
-'CONTRIBUTE'    =>  'Contribuire',
+'CONTRIBUTE'    =>  'Collaborare',
 'COMMUNITY'     =>  'Comunità',
 'WIKI'          =>  'Wiki',
 'SOURCES'       =>  'Sorgenti',
@@ -25,15 +25,15 @@ $LANG = array(
 'FOLLOW'        =>  'Seguite Pepper&amp;Carrot su:',
 
 # Top menu website buttons:
-'NAVIGATION_TRANSCRIPT' => 'Transcript',
-'NAVIGATION_TRANSCRIPT_ON' => 'Click to show transcript',
-'NAVIGATION_TRANSCRIPT_OFF' => 'Click to hide transcript',
-'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Transcript not available for this episode and this language.',
+'NAVIGATION_TRANSCRIPT' => 'Trascrizione',
+'NAVIGATION_TRANSCRIPT_ON' => 'Click per mostrare la trascrizione',
+'NAVIGATION_TRANSCRIPT_OFF' => 'Click per nascondere la trascrizione',
+'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'Trascrizione non disponibile per questo episosio e per questa lingua.',
 'NAVIGATION_HD' => 'HD 2400px',
-'NAVIGATION_HD_ON' => 'Click to display high resolution images',
-'NAVIGATION_HD_OFF' => 'Click to display standard resolution images',
-'NAVIGATION_DICTIONARY' => 'Dictionary',
-'NAVIGATION_DICTIONARY_ALT' => 'Click to open with Wordlink for fast dictionary search',
+'NAVIGATION_HD_ON' => 'Click per mostrarele immagini ad alta risoluzione',
+'NAVIGATION_HD_OFF' => 'Click per mostrare le immagini a risoluzione standard',
+'NAVIGATION_DICTIONARY' => 'Dizionario',
+'NAVIGATION_DICTIONARY_ALT' => 'Click per effettuare unar ricerca più veloce nel dizionario tramite Wordlink',
 
 ################################################################################
 # Top and bottom translation panel
@@ -46,15 +46,15 @@ $LANG = array(
     direttamente supportato dai suoi lettori<br/>
     per spingere l&#8217;industria dei fumetti al cambiamento!<br/>
 ',
-'HOMEPAGE_PATREON_INFO'     =>  'Diventate oggi un sostenitore con Patreon con appena 1€ per nuovo episodio',
+'HOMEPAGE_PATREON_INFO'     =>  'Diventa oggi un sostenitore con Patreon con appena 1€ per nuovo episodio',
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'Maggiori informazioni',
-'HOMEPAGE_PATREON_BUTTON'   =>  'Diventa un sostenitore di Pepper&amp;Carrot on Patreon',
+'HOMEPAGE_PATREON_BUTTON'   =>  'Diventa un sostenitore di Pepper&amp;Carrot con Patreon',
 'PATRONAGE_BUTTON'          =>  'Diventa un sostenitore di Pepper&amp;Carrot',
 'HOMEPAGE_LAST_EPISODE'     =>  'Ultimo episodio:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'News ed aggiornamenti:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Altri posts',
 'HOMEPAGE_MAINSERVICE_LINK' =>  'https://www.patreon.com/join/davidrevoy?',
-'HOMEPAGE_SUPPORTED_BY'     =>  'supportato dai lettori.',
+'HOMEPAGE_SUPPORTED_BY'     =>  'col supporto dei lettori.',
 'HOMEPAGE_ALTERNATIVES'     =>  'Alternative:',
 'HOMEPAGE_FANART'           =>  'Fan-art',
 
@@ -68,19 +68,19 @@ $LANG = array(
 'WEBCOMIC_ARTWORK'		    =>  'Galleria dei lavori artistici',
 'WEBCOMIC_SKETCHES'		    =>  'Schizzi',
 # TODO translate this:
-'WEBCOMIC_OLDER_COMICS'         => 'Older webcomics by the same author',
+'WEBCOMIC_OLDER_COMICS'         => 'Webcomics precedenti dello stesso autore',
 
 ################################################################################
 # Page: Blog
 # when content are not English (no need to warn user the content is english only here):
 #'LIMITATIONS' 	=> ' Content available in english only ',
 'LIMITATIONS' 		=> ' Contentuti disponibili soltanto in lingua inglese ',
-'TRANSLATION_FALLBACK' => '(Translation is missing. Falling back to English)',
+'TRANSLATION_FALLBACK' => '(Traduzione mancante. Ritorno alla versione English)',
 
 ################################################################################
 # Page: Philosophy
 'PHILOSOPHY_TOP'    =>  '
- <h2>Supportato dai lettori</h2>
+ <h2>Con il supporto dei lettori</h2>
 
     <p>Il progetto Pepper&amp;Carrot si basa soltanto sui suoi lettori sparsi in tutto il mondo.
     Ogni sostenitore contribuisce con un po&#8217; di denaro per ogni nuovo episodio pubblicato e compare nei crediti al termine di ogni episodio.
@@ -88,7 +88,7 @@ $LANG = array(
 ',
 'DONATE_INTRO'		=> '
     <p>
-    &#200; cos&#236; semplice divenire lettori di Pepper&amp;Carrot con solo 1€ per nuovo episodio con <a href="https://www.patreon.com/join/davidrevoy?">Patreon</a>.
+    &#200; cos&#236; semplice divenire sostenitore di Pepper&amp;Carrot con solo 1€ per nuovo episodio con <a href="https://www.patreon.com/join/davidrevoy?">Patreon</a>.
     Patreon accetta le carte di credito da tutto il mondo; inoltre potrete pagare anche con il vostro account Paypal.
     </p>
 ',
@@ -140,9 +140,9 @@ $LANG = array(
 
 ################################################################################
 # Page: Contribute
-'CONTRIBUTE_TITLE'		=> 'Contribuire',
+'CONTRIBUTE_TITLE'		=> 'Collaborare',
 'CONTRIBUTE_TOP'		=> '
-    <p>Potrete contribuire in molti modi a Pepper&amp;Carrot grazie all&#39;<a href="?static6/sources" title="pagina dei sorgenti">open source</a> e alla licenza<a href="http://creativecommons.org/licenses/by/4.0/">
+    <p>Potrete collaborare in molti modi a Pepper&amp;Carrot grazie all&#39;<a href="?static6/sources" title="pagina dei sorgenti">open source</a> e alla licenza<a href="http://creativecommons.org/licenses/by/4.0/">
     creative commons</a>:</p>
 ',
 
@@ -172,7 +172,7 @@ $LANG = array(
 'CONTRIBUTE_OTHER'	    => '
     <h2> Altri contributi&nbsp;.&nbsp;.&nbsp;.&nbsp;</h2>
 
-    <p> Chiunque pu&#242; contribuire in diversi modi: <br/>
+    <p> Chiunque pu&#242; collaborare in diversi modi: <br/>
         <b>Sviluppatori:</b>  creazione di un&#39;applicazione per la lettura di Pepper&amp;Carrot in mobilit&#224;.<br />
         <b>Musicisti:</b>  creazione di temi musicali per Pepper&amp;Carrot.<br />
         <b>Scrittori: </b>  proposte di nuove sceneggiature per Pepper&amp;Carrot.<br />
