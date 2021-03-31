@@ -46,10 +46,10 @@ $LANG = array(
     direttamente supportato dai suoi lettori<br/>
     per spingere l&#8217;industria dei fumetti al cambiamento!<br/>
 ',
-'HOMEPAGE_PATREON_INFO'     =>  'Diventate oggi un lettore con Patreon con appena 1€ per nuovo episodio',
+'HOMEPAGE_PATREON_INFO'     =>  'Diventate oggi un sostenitore con Patreon con appena 1€ per nuovo episodio',
 'HOMEPAGE_MOREINFO_BUTTON'  =>  'Maggiori informazioni',
-'HOMEPAGE_PATREON_BUTTON'   =>  'Diventa un lettore di Pepper&amp;Carrot on Patreon',
-'PATRONAGE_BUTTON'          =>  'Diventa un lettore di Pepper&amp;Carrot',
+'HOMEPAGE_PATREON_BUTTON'   =>  'Diventa un sostenitore di Pepper&amp;Carrot on Patreon',
+'PATRONAGE_BUTTON'          =>  'Diventa un sostenitore di Pepper&amp;Carrot',
 'HOMEPAGE_LAST_EPISODE'     =>  'Ultimo episodio:',
 'HOMEPAGE_NEWS_UPDATE'      =>  'News ed aggiornamenti:',
 'HOMEPAGE_MOREPOSTS_BUTTON' =>  'Altri posts',
@@ -83,7 +83,7 @@ $LANG = array(
  <h2>Supportato dai lettori</h2>
 
     <p>Il progetto Pepper&amp;Carrot si basa soltanto sui suoi lettori sparsi in tutto il mondo.
-    Ogni lettore contribuisce con un po&#8217; di denaro per ogni nuovo episodio pubblicato e compare nei crediti al termine di ogni episodio.
+    Ogni sostenitore contribuisce con un po&#8217; di denaro per ogni nuovo episodio pubblicato e compare nei crediti al termine di ogni episodio.
     Grazie a questo sistema, Pepper&amp;Carrot pu&#242; essere indipendente e mai sar&#224; infarcito da annunci pubbicitari oppure da qualsiasi altra trovata commerciale.</p>
 ',
 'DONATE_INTRO'		=> '
@@ -130,7 +130,7 @@ $LANG = array(
     </p>
 
     <div class="button">
-      <a href="?static12/donate" title="Diventa un lettore di Pepper&amp;Carrot per solo 1€ per ogni nuovo episodio">
+      <a href="?static12/donate" title="Diventa un sostenitore di Pepper&amp;Carrot per solo 1€ per ogni nuovo episodio">
         Aiutatemi ad aumentare da oggi la produzione di Pepper&amp;Carrot.
       </a>
     </div>
