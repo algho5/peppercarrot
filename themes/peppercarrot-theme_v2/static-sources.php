@@ -446,50 +446,50 @@ echo '<div class="grid">';
       $foldername = basename($projectpath);
       if(is_dir($projectpath)) {
         if (strpos($foldername, 'new-') !== false) {
-
-         echo '</section>';
-
+          $secrettoken = ''.$projectpath.'/secret';
+          if (!file_exists($secrettoken)) {
           # Display XYZ Comic pages:
-          $search = glob($projectpath."/low-res/".$lang."_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
-          # Fallback to English if no other options:(often the case in early development)
-          if (empty($search)) {
-            $search = glob($projectpath."/low-res/en_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
-          }
-          if (!empty($search)) {
-            foreach ($search as $key => $filepath) {
-              # extracting from the path the filename and path itself
-              $filename = basename($filepath);
-              $fullpath = dirname($filepath);
-              if (file_exists($filepath)) {
-                # Our page is existing, it exclude the renamed P00.jpg, start the tag
-                  # display page
-                  echo '<img src="'.$filepath.'" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ></a>';
-                  # Add a page count caption
-                  echo '<figcaption class="text-center" style="color:#ABABAB">'.$overviewpagecount.'</figcaption>';
-                  echo '</figure>';
+          echo '</section>';
+            $search = glob($projectpath."/low-res/".$lang."_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
+            # Fallback to English if no other options:(often the case in early development)
+            if (empty($search)) {
+              $search = glob($projectpath."/low-res/en_Pepper-and-Carrot_by-David-Revoy_E[0-9][0-9]P[0-9][0-9].*");
+            }
+            if (!empty($search)) {
+              foreach ($search as $key => $filepath) {
+                # extracting from the path the filename and path itself
+                $filename = basename($filepath);
+                $fullpath = dirname($filepath);
+                if (file_exists($filepath)) {
+                  # Our page is existing, it exclude the renamed P00.jpg, start the tag
+                    # display page
+                    echo '<img src="'.$filepath.'" alt="'.$humanfoldername.'" title="'.$humanfoldername.'" ></a>';
+                    # Add a page count caption
+                    echo '<figcaption class="text-center" style="color:#ABABAB">'.$overviewpagecount.'</figcaption>';
+                    echo '</figure>';
+                }
+              }
+            }
+            echo '<br/><br/><hr><h2> Scenario </h2><br/><br/>';
+            # Display markdown scenario(s):
+            $mdsearch = glob($projectpath."/*script*.md");
+            if (!empty($mdsearch)) {
+              foreach ($mdsearch as $key => $mdfilepath) {
+                # extracting from the path the filename and path itself
+                $mdfilename = basename($mdfilepath);
+                $mdfullpath = dirname($mdfilepath);
+                if (file_exists($mdfilepath)) {
+                    // Display content
+                    $contents = file_get_contents(''.$mdfilepath.'');
+                    $Parsedown = new Parsedown();
+                    echo '<div class="page scenario col sml-12 med-10 sml-centered">';
+                    echo $Parsedown->text($contents);
+                    echo '	    <br/><br/>'."\n";
+                    echo '</div>';
+                }
               }
             }
           }
-          echo '<br/><br/><hr><h2> Scenario </h2><br/><br/>';
-          # Display markdown scenario(s):
-          $mdsearch = glob($projectpath."/*script*.md");
-          if (!empty($mdsearch)) {
-            foreach ($mdsearch as $key => $mdfilepath) {
-              # extracting from the path the filename and path itself
-              $mdfilename = basename($mdfilepath);
-              $mdfullpath = dirname($mdfilepath);
-              if (file_exists($mdfilepath)) {
-                  // Display content
-                  $contents = file_get_contents(''.$mdfilepath.'');
-                  $Parsedown = new Parsedown();
-                  echo '<div class="page scenario col sml-12 med-10 sml-centered">';
-                  echo $Parsedown->text($contents);
-                  echo '	    <br/><br/>'."\n";
-                  echo '</div>';
-              }
-            }
-          }
-
         }
       }
     }
