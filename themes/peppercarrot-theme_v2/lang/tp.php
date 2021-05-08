@@ -31,7 +31,7 @@ $LANG = array(
 'NAVIGATION_TRANSCRIPT' => 'ale toki',
 'NAVIGATION_TRANSCRIPT_ON' => 'nena ni li pana e ale toki',
 'NAVIGATION_TRANSCRIPT_OFF' => 'nena ni li weka e ale toki',
-'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'toki pona la, wan ni la, ale toki li ala.',
+'NAVIGATION_TRANSCRIPT_UNAVAILABLE' => 'toki pona la, lipu musi ni la, ale toki li ala.',
 'NAVIGATION_HD' => 'suli 2400px',
 'NAVIGATION_HD_ON' => 'nena ni li pana e sitelen pi suli mute',
 'NAVIGATION_HD_OFF' => 'nena ni li pana e sitelen pi suli lili',
@@ -50,11 +50,11 @@ $LANG = array(
     li tan mani<wbr/> tan jan pona mute.<br/>
     tan ni la,<br/> nasin esun pi sitelen musi li ken ante!<br/>
 ',
-'HOMEPAGE_PATREON_INFO'     => 'sina ken pana e mani $1 tawa wan sin ale lon ilo Patreon',
+'HOMEPAGE_PATREON_INFO'     => 'sina ken pana e mani $1 tawa lipu musi sin ale lon ilo Patreon',
 'HOMEPAGE_MOREINFO_BUTTON'  => 'sona nasin',
 'HOMEPAGE_PATREON_BUTTON'   => 'sina ken kama pi jan pona pi jan Pepa&amp;soweli Kawa lon ilo Patreon',
 'PATRONAGE_BUTTON'          => 'sina ken pana e mani tawa jan Pepa&amp;soweli Kawa',
-'HOMEPAGE_LAST_EPISODE'     => 'wan sin',
+'HOMEPAGE_LAST_EPISODE'     => 'lipu sin',
 'HOMEPAGE_NEWS_UPDATE'      => 'ijo sin en ante sin',
 'HOMEPAGE_MOREPOSTS_BUTTON' => 'mute',
 'HOMEPAGE_MAINSERVICE_LINK' => 'https://www.patreon.com/join/davidrevoy?',
@@ -64,7 +64,7 @@ $LANG = array(
 
 ################################################################################
 # Page: Webcomics
-'WEBCOMIC_EPISODE'              => 'wan ale',
+'WEBCOMIC_EPISODE'              => 'lipu musi ale',
 'WEBCOMIC_MAKINGOF'             => 'pali pi sitelen musi',
 'WEBCOMIC_MAKINGOF_DESCRIPTION' => '
 <p>pali sitelen musi en <a href="http://www.davidrevoy.com/categorie5/tutorials">nasin pi pali ni</a> li pali suli tan mani tan <a href="https://www.patreon.com/join/davidrevoy?">jan pona mani</a> mi.</p>
@@ -85,11 +85,11 @@ $LANG = array(
 'PHILOSOPHY_TOP'    => '
  <h2>jan pona li pana pona</h2>
 
-    <p>pali jan Pepa&amp;soweli Kawa li kama taso tan jan pona pi pana mani. jan ni li kama tan ma mute tan ma ale. jan wan ni li pana e mani lili tawa wan toki wan. tan ni la, nimi ona li sitelen lon wan toki sin. nasin ni la, jan Pepa&amp;soweli Kawa li ken awen kepeken wile ona taso kepeken nasin ona taso. sitelen esun ike en toki esun ike li wile ala.</p>
+    <p>pali jan Pepa&amp;soweli Kawa li kama taso tan jan pona pi pana mani. jan ni li kama tan ma mute tan ma ale. jan wan ni li pana e mani lili tawa lipu toki wan. tan ni la, nimi ona li sitelen lon lipu toki sin. nasin ni la, jan Pepa&amp;soweli Kawa li ken awen kepeken wile ona taso kepeken nasin ona taso. sitelen esun ike en toki esun ike li wile ala.</p>
 ',
 'DONATE_INTRO'    => '
     <p>
-    sina ken kama jan pona tawa jan Pepa&amp;soweli Kawa kepeken mani $1 tawa wan toki sin wan <a href="https://www.patreon.com/join/davidrevoy?">lon ilo Patreon</a>.
+    sina ken kama jan pona tawa jan Pepa&amp;soweli Kawa kepeken mani $1 tawa lipu toki sin wan <a href="https://www.patreon.com/join/davidrevoy?">lon ilo Patreon</a>.
     ilo Patreon la, lipu ilo esun en ilo Paypal li ken.
     </p>
 ',
@@ -107,7 +107,7 @@ $LANG = array(
     <h2>nasin Open-source en ken mute</h2>
 
     <p>mi wile pana e ken jo, e ken pana, e ken pali, e ken esun, e ken mani tawa jan ale kepeken pali mi.
-    wan ala en sitelen ala en musi ala en pali ala li kepeken taso ilo Free(Libre) pi nasin Open-Source lon ilo GNU/Linux. mama pali ale li lon lipu ni, lon wan "mama pali".
+    lipu ale en sitelen ale en musi ale en pali ale li kepeken taso ilo Free(Libre) pi nasin Open-Source lon ilo GNU/Linux. mama pali ale li lon lipu ni, lon lipu "mama pali".
     mi wile e ni: sina ante toki e pali mi, li pali e sitelen sama pali mi, li sitelen ilo e sitelen mi, li tawa e sitelen mi, li pali e musi pi pali mi, li pana e pali mi tawa jan ante, li esun e pali mi.
     pali ni taso li wile taso: o nimi e jan musi (sina wile kepeken musi la, jan musi li jan musi sitelen, li jan pi ante toki, li jan pi pona pali.), o pana e nasin ilo tawa nasin lawa, o toki e ante sina. sina ken pali mute. sina o toki ala e ni, o pali ala sama ni: sina anu pali sina li pona tawa jan pi mama pali anu jan musi</p>
 
@@ -136,7 +136,7 @@ $LANG = array(
     </p>
 
     <div class="button">
-      <a href="?static12/donate" title="sina ken pana e mani $1 taso tawa wan sitelen sin wan, li ken kama jan pona pi pana pona tawa jan Pepa&amp;soweli Kawa">
+      <a href="?static12/donate" title="sina ken pana e mani $1 taso tawa lipu sitelen sin wan, li ken kama jan pona pi pana pona tawa jan Pepa&amp;soweli Kawa">
         o kama! sina ken pana e pona tawa mi la, mi ken pali mute e pali pi jan Pepa&amp;soweli Kawa.
       </a>
     </div>
@@ -206,7 +206,7 @@ $LANG = array(
 'SOURCES_BOTTOM'    => '
     <p>sina kama jo e pali ni li pali e pali ni la, sina o kepeken nasin lawa <br/>
     <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a>.
-    wile sona sina la, o lukin e lipu lili README lon wan ale</p>
+    wile sona sina la, o lukin e lipu lili README lon lipu ale</p>
 
     <p><b>ante toki en toki en lipu ni en sitelen lawa en pali ante li tan mama pali pi ilo sona ni:</b><br/></p>
 ',
@@ -238,7 +238,7 @@ $LANG = array(
     ☑ <a href="https://www.davidrevoy.com/tag/cosplay">jan li len sama jan Pepa li pana e sitelen ijo tawa mi.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article304/dream-to-do-list-a-cat-named-carrot">jan li pana e sitelen ilo pi soweli loje tawa mi.</a><br/>
     ☑ <a href="http://www.peppercarrot.com/article302/peppercarrot-has-over-500-supporters">jan 500 li pana e mani.</a><br/>
-    ☐ wan nanpa 100 li lon!<br/>
+    ☐ lipu musi nanpa 100 li lon!<br/>
     </p>
 ',
 
@@ -251,7 +251,7 @@ $LANG = array(
     <p>ante li toki ala lon lipu la, ni li lon: sitelen pi toki musi en musi sitelen en toki li nasin lawa <a href="https://creativecommons.org/licenses/by/4.0/" title="wile sona sina la, sina ken lukin e nasin Creative Commons Attribution 4.0">Creative Commons Attribution 4.0</a><br/>
     o nimi e jan "David Revoy, www.davidrevoy.com". wile sona sina la, sina ken sitelen tawa mi: <a href="mailto:info@davidrevoy.com">info@davidrevoy.com</a> </p>
 
-    <p>lipu ni li kepeken ilo <a href="http://www.pluxml.org" title="PluXml">PluXml</a></p>
+    <p>lipu ilo ni li kepeken ilo <a href="http://www.pluxml.org" title="PluXml">PluXml</a></p>
 ',
 ################################################################################
 # Eshop
@@ -259,17 +259,17 @@ $LANG = array(
 'ESHOP_SHOP'            => 'sitelen lipu en poki telo musi en len musi en ijo ante li lon ni:',
 ################################################################################
 # various utils:
-'UTIL_NEXT_EPISODE'     => 'wan kama',
-'UTIL_PREVIOUS_EPISODE' => 'wan pini',
-'UTIL_EPISODE'          => 'wan',
+'UTIL_NEXT_EPISODE'     => 'lipu kama',
+'UTIL_PREVIOUS_EPISODE' => 'lipu pini',
+'UTIL_EPISODE'          => 'lipu',
 'UTIL_BACK_TO_GALLERY'  => 'sitelen ale',
 'UTIL_MORE'             => 'mute pana',
-'UTIL_PAGE'             => 'wan lipu nanpa',
+'UTIL_PAGE'             => 'lipu lili nanpa',
 'UTIL_BY'               => 'tan',
 'UTIL_LICENSE'          => 'nasin lawa',
 'UTIL_DOT'              => '.',
-'FIRST'                 => 'wan nanpa pini',
-'LAST'                  => 'wan sin',
+'FIRST'                 => 'lipu nanpa pini',
+'LAST'                  => 'lipu sin',
 );
 
 # vim: set et ts=4 sw=4 :
